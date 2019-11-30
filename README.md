@@ -1,7 +1,7 @@
 # NEM-Relay-CAD
 Highly-parametrized OpenSCAD model of NEM relay for FEM, layout generation, and design space exploration
 
-<img src="examples/relay_default.png" alt="Example Relay Top View" width="100"/><img src="examples/relay_default_bottom.png" alt="Example Relay Bottom View" width="100"/>
+<img src="examples/relay_default.png" alt="Example Relay Top View" width="400"/><img src="examples/relay_default_bottom.png" alt="Example Relay Bottom View" width="400"/>
 
 ## Usage instructions
 - Install [OpenSCAD](https://www.openscad.org/)
