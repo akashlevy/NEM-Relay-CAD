@@ -2,13 +2,13 @@
 // Author: Akash Levy
 
 // RELAY PARAMETERS (lengths are in units of um)
-g_act = 0.2;                // actuation gap: gap between 
+g_act = 0.08;               // actuation gap: gap between 
 
-t_poly = 0.5;               // thickness of poly-SiGe layer
-L_plate = 4;                // side length of parallel plate
+t_poly = 0.2;               // thickness of poly-SiGe layer
+L_plate = 5;                // side length of parallel plate
 
 L_cant = L_plate;           // length of cantilever
-W_cant = 0.25;              // width of cantilever
+W_cant = 0.2;               // width of cantilever
 g_cant = W_cant;            // gap between plate and cantilever
 
 L_via = 0.5;                // side length of via
@@ -17,7 +17,7 @@ L_anc = L_via + 0.25;       // side length of anchor attachment
 n_cont = 4;                 // number of contacts
 L_cont = 0.5;               // side length of contact
 r_cont = 1.5;               // radius of circle along which to place contacts
-t_cont = 0.1;               // thickness of contact
+t_cont = 0.04;              // thickness of contact
 
 t_sub = 0.1;                // substrate thickness
 
