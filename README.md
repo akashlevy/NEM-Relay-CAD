@@ -3,11 +3,20 @@ Highly-parametrized OpenSCAD model of NEM relay for FEM, layout generation, and 
 
 <img src="examples/relay_default.png" alt="Example Relay Top View" width="400"/><img src="examples/relay_default_bottom.png" alt="Example Relay Bottom View" width="400"/>
 
-## Usage instructions
+## Model usage instructions
 - Install [OpenSCAD](https://www.openscad.org/)
 - Open `relay.scad` in OpenSCAD
 - Modify parameters according to your desired design specifications
 - Compile and export as STL/DXF
+
+## Hand calculation plotting instructions
+- Run `gen_handcalcs.py` with Python
+
+## FreeCAD instructions for finding spring constant
+- Run `gen_stl.py` to export STLs programmatically
+- Open exported STL files in FreeCAD
+- Run script freecad/FEM-spring-const.FCMacro
+- Run CalculiX and view results under CCX_Results
 
 ## Future CAD goals
 - Add insulating layer to model for GDS layouts

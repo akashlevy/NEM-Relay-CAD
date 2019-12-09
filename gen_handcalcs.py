@@ -46,7 +46,7 @@ F_A_mult = 22500 # N/m^2
 rho_W = 55e-9 # Ohm m
 H_W = 1.1e9 # Pa
 lambda_W = 33e-09 # m
-xi_W = 0.2
+xi_W = 0.3
 
 
 # Calculations
@@ -63,7 +63,7 @@ def calcs():
     L_c1 = (L_cant - W_cant / 2) / 2
     L_c2 = 3 * W_cant / 4 
 
-    k_tot = (2 * E_poly * W_cant * t_poly**3) / (L_c1**3 + L_c2**3)
+    k_tot = (E_poly * W_cant * t_poly**3) / (2*(L_c1**3 + L_c2**3))
 
     M = rho_poly * A_plate * t_poly
 
@@ -75,7 +75,7 @@ def calcs():
 
     F_net = lambda V_gb, x: F_E(V_gb, x) - k_tot * x
 
-    A_r = F_net(V_pi * OV, t_cont) / (xi_W * H_W)
+    A_r = F_net(V_pi * OV, t_cont) / (xi_W * H_W * N_cont)
 
     R_cont = 4 * rho_W * lambda_W / (3 * A_r)
 
@@ -144,7 +144,9 @@ plt.figure(figsize=(4, 3))
 plt.title('$k_{tot}$ vs. $t_{poly}$')
 plt.xlabel('Poly Thickness $t_{poly}$ (nm)')
 plt.ylabel('Spring Constant $k_{tot}$ (N/m)')
-plt.plot(t_poly_is * 1E9, k_tot)
+plt.plot(t_poly_is * 1E9, k_tot, label='Analytical model')
+plt.plot(np.linspace(0.1e-6, 1e-6, 10) * 1E9, [1.203369434, 8.547008547, 27.02702703, 60.24096386, 112.3595506, 186.5671642, 282.4858757, 413.2231405, 564.9717514, 763.3587786], label='FEM result')
+plt.legend()
 plt.tight_layout()
 plt.savefig('plots/' + plt.gca().get_title().replace('$','').replace('{','').replace(',','').replace(' ', '_').replace('}', '').replace('.', '') + '.pdf')
 plt.close()
@@ -184,7 +186,9 @@ plt.figure(figsize=(4, 3))
 plt.title('$k_{tot}$ vs. $L_{plate}$')
 plt.xlabel('Relay Side Length $L_{plate}$ (nm)')
 plt.ylabel('Spring Constant $k_{tot}$ (N/m)')
-plt.plot(L_plate_is * 1E9, k_tot)
+plt.plot(L_plate_is * 1E9, k_tot, label='Analytical model')
+plt.plot(np.linspace(3e-6, 10e-6, 8) * 1E9, [50, 17.54385965, 8.547008547, 4.807692308, 2.915451895, 2.040816327, 1.390820584, 1.030927835], label='FEM result')
+plt.legend()
 plt.tight_layout()
 plt.savefig('plots/' + plt.gca().get_title().replace('$','').replace('{','').replace(',','').replace(' ', '_').replace('}', '').replace('.', '') + '.pdf')
 plt.close()
@@ -224,7 +228,9 @@ plt.figure(figsize=(4, 3))
 plt.title('$k_{tot}$ vs. $W_{cant}$')
 plt.xlabel('Cantilever Width $W_{cant}$ (nm)')
 plt.ylabel('Spring Constant $k_{tot}$ (N/m)')
-plt.plot(W_cant_is * 1E9, k_tot)
+plt.plot(W_cant_is * 1E9, k_tot, label='Analytical model')
+plt.plot(np.linspace(0.1e-6, 1e-6, 10) * 1E9, [5.154639175, 8.547008547, 15.15151515, 18.97533207, 22.57336343, 26.66666667, 31.15264798, 36.10108303, 42.55319149, 47.61904762], label='FEM result')
+plt.legend()
 plt.tight_layout()
 plt.savefig('plots/' + plt.gca().get_title().replace('$','').replace('{','').replace(',','').replace(' ', '_').replace('}', '').replace('.', '') + '.pdf')
 plt.close()
