@@ -1,11 +1,65 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="4mm" height="4mm" viewBox="-2 -2 4 4" xmlns="http://www.w3.org/2000/svg" version="1.1">
-<title>OpenSCAD Model</title>
-<path d="
-M 0.199997,-1.2 L -0.199997,-1.2 L -0.199997,-0.799988 L 0.199997,-0.799988 z
-M -0.799988,-0.199997 L -1.2,-0.199997 L -1.2,0.199997 L -0.799988,0.199997 z
-M 1.2,-0.199997 L 0.799988,-0.199997 L 0.799988,0.199997 L 1.2,0.199997 z
-M 0.199997,0.799988 L -0.199997,0.799988 L -0.199997,1.2 L 0.199997,1.2 z
-" stroke="black" fill="lightgray" stroke-width="0.5"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0beta1 (32d4812, 2019-09-19)"
+   sodipodi:docname="cont.svg"
+   id="svg26"
+   version="1.1"
+   viewBox="-2 -2 4 4"
+   height="4mm"
+   width="4mm">
+  <metadata
+     id="metadata32">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs30" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg26"
+     inkscape:window-maximized="0"
+     inkscape:window-y="706"
+     inkscape:window-x="0"
+     inkscape:cy="7.5590551"
+     inkscape:cx="7.5590551"
+     inkscape:zoom="17.991667"
+     showgrid="false"
+     id="namedview28"
+     inkscape:window-height="480"
+     inkscape:window-width="661"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     inkscape:document-rotation="0"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <title
+     id="title22">OpenSCAD Model</title>
+  <path
+     id="path40"
+     d="M 0.199997,0.799988 H -0.199997 V 1.2 h 0.399994 z" />
+  <path
+     id="path38"
+     d="M 1.2,-0.199997 H 0.799988 V 0.199997 H 1.2 Z" />
+  <path
+     id="path36"
+     d="M -0.799988,-0.199997 H -1.2 v 0.399994 h 0.400012 z" />
+  <path
+     id="path24"
+     d="m 0.199997,-1.2 h -0.399994 v 0.400012 h 0.399994 z" />
 </svg>
