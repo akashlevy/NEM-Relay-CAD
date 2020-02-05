@@ -2,10 +2,10 @@
 // Author: Akash Levy
 
 // RELAY PARAMETERS (lengths are in units of um)
-g_act = 0.08;               // actuation gap: gap between 
+g_act = 0.1;                // actuation gap: gap between c
 
 t_poly = 0.2;               // thickness of poly-SiGe layer
-L_plate = 5;                // side length of parallel plate
+L_plate = 3;                // side length of parallel plate
 
 L_cant = L_plate;           // length of cantilever
 W_cant = 0.2;               // width of cantilever
@@ -15,8 +15,8 @@ L_via = 0.5;                // side length of via
 L_anc = L_via + 0.25;       // side length of anchor attachment
 
 n_cont = 4;                 // number of contacts
-L_cont = 0.5;               // side length of contact
-r_cont = 1.5;               // radius of circle along which to place contacts
+L_cont = 0.4;               // side length of contact
+r_cont = 1;                 // radius of circle along which to place contacts
 t_cont = 0.04;              // thickness of contact
 
 t_sub = 0.1;                // substrate thickness
@@ -31,6 +31,7 @@ contact_on = 1;
 substrate_on = 0;
 scale_factor = 1;
 
+//projection()
 scale(scale_factor)
 union () {
     // POLY LAYER AND VIA LAYER
@@ -44,8 +45,8 @@ union () {
             rotate([0, 0, 90*i]) {
                 // Cantilever
                 if (poly_on)
-                translate([L_cant/2 + g_cant + W_cant/2, 0, 0])
-                cube([W_cant, L_plate, t_poly], center=true);
+                translate([L_cant/2 + g_cant + W_cant/2, -W_cant/2, 0])
+                cube([W_cant, L_plate + W_cant, t_poly], center=true);
                 
                 // Cantilever attachment
                 if (poly_on)
@@ -53,7 +54,7 @@ union () {
                 cube([g_cant, W_cant, t_poly], center=true);
                 
                 // Anchors (attachments + vias)
-                translate([L_plate/2 + g_cant + L_anc/2, -L_plate/2 - L_anc/2, 0]) {
+                translate([L_plate/2 + g_cant + L_anc/2, -L_plate/2 - L_anc/2 - W_cant, 0]) {
                     // Attachments (anchors - vias)
                     if (poly_on)
                     difference() {
@@ -84,15 +85,15 @@ union () {
         for(i=[0:3]) {
             rotate([0, 0, 90*i]) {
                 // Cantilever
-                translate([L_plate/2 + g_cant + W_cant/2, 0, 0])
-                cube([W_cant, L_plate, t_sp], center=true);
+                translate([L_plate/2 + g_cant + W_cant/2, -W_cant/2, 0])
+                cube([W_cant, L_plate + W_cant, t_sp], center=true);
                 
                 // Cantilever attachment
                 translate([L_plate/2 + g_cant/2, L_plate/2 - W_cant/2, 0])
                 cube([g_cant, W_cant, t_sp], center=true);
                 
                 // Anchors (attachments + vias)
-                translate([L_plate/2 + g_cant + L_anc/2, -L_plate/2 - L_anc/2, 0]) {
+                translate([L_plate/2 + g_cant + L_anc/2, -L_plate/2 - L_anc/2 - W_cant, 0]) {
                     // Attachments (anchors - vias)
                     difference() {
                         cube([L_anc, L_anc, t_sp], center=true);
@@ -112,7 +113,6 @@ union () {
         color([0.5, 0, 0.5])
         cube([L_cont, L_cont, t_cont], center=true);
     }
-
 
     // SUBSTRATE LAYER
     if (substrate_on)

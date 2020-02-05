@@ -14,10 +14,10 @@ plt.rc('font', family='serif', serif='Times')
 
 
 # Default parameters
-g_act = 0.08E-6
+g_act = 0.1E-6
 
 t_poly = 0.2E-6
-L_plate = 5E-6
+L_plate = 3E-6
 
 L_cant = L_plate
 W_cant = 0.2E-6
@@ -27,8 +27,8 @@ L_via = 0.5E-6
 L_anc = L_via + 0.25E-6
 
 n_cont = N_cont = 4
-L_cont = 0.5E-6
-r_cont = 1.5E-6
+L_cont = 0.4E-6
+r_cont = 1E-6
 t_cont = 0.04E-6
 
 t_sub = 0.1E-6
@@ -46,6 +46,7 @@ F_A_mult = 22500 # N/m^2
 rho_W = 55e-9 # Ohm m
 H_W = 1.1e9 # Pa
 lambda_W = 33e-09 # m
+k = 4.7 # dielectric constant of Castor oil
 xi_W = 0.3
 
 
@@ -58,7 +59,7 @@ def calcs():
     A_cont = L_cont**2
     A_act = A_plate - N_cont * A_cont
 
-    F_E = lambda V_gb, x: (eps_0 * A_act * V_gb**2) / (2 * (g_act - x)**2)
+    F_E = lambda V_gb, x: (k * eps_0 * A_act * V_gb**2) / (2 * (g_act - x)**2)
 
     L_c1 = (L_cant - W_cant / 2) / 2
     L_c2 = 3 * W_cant / 4 
@@ -67,11 +68,11 @@ def calcs():
 
     M = rho_poly * A_plate * t_poly
 
-    V_pi = ((8 * k_tot * g_act**3)/(27 * eps_0 * A_act))**0.5
+    V_pi = ((8 * k_tot * g_act**3)/(27 * k * eps_0 * A_act))**0.5
 
     F_A = F_A_mult * N_cont * A_cont
 
-    V_po = ((2 * (k_tot * t_cont - F_A) * (g_act - t_cont)**2)/(eps_0 * A_act))**0.5
+    V_po = ((2 * (k_tot * t_cont - F_A) * (g_act - t_cont)**2)/(k * eps_0 * A_act))**0.5
 
     F_net = lambda V_gb, x: F_E(V_gb, x) - k_tot * x
 
