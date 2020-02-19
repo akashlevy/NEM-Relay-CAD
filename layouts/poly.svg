@@ -1,68 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0beta1 (32d4812, 2019-09-19)"
-   sodipodi:docname="poly.svg"
-   id="svg14"
-   version="1.1"
-   viewBox="-3 -3 6 6"
-   height="6mm"
-   width="6mm">
-  <metadata
-     id="metadata20">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs18" />
-  <sodipodi:namedview
-     inkscape:current-layer="svg14"
-     inkscape:window-maximized="0"
-     inkscape:window-y="706"
-     inkscape:window-x="0"
-     inkscape:cy="10.742738"
-     inkscape:cx="11.408682"
-     inkscape:zoom="28.530903"
-     showgrid="false"
-     id="namedview16"
-     inkscape:window-height="855"
-     inkscape:window-width="1440"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
-     borderopacity="1"
-     inkscape:document-rotation="0"
-     bordercolor="#666666"
-     pagecolor="#ffffff" />
-  <title
-     id="title10">OpenSCAD Model</title>
-  <path
-     id="path30"
-     d="m 1.825,2.325 v -0.5 h 0.5 v 0.5 z" />
-  <path
-     id="path28"
-     d="m -2.325,2.325 v -0.5 h 0.5 v 0.5 z" />
-  <path
-     id="path26"
-     d="m 1.825,-1.825 v -0.5 h 0.5 v 0.5 z" />
-  <path
-     id="path24"
-     d="m -2.325,-1.825 v -0.5 h 0.5 v 0.5 z" />
-  <path
-     id="path12"
-     d="M -1.7,1.89999 H 1.5 V -1.29999 H 1.7 V 2.45 H 2.45 V 1.7 H 1.89999 V -1.5 H -1.29999 V -1.7 H 2.45 V -2.45 H 1.7 v 0.55001 H -1.5 V 1.29999 H -1.7 V -2.45 h -0.75 v 0.75 h 0.55001 V 1.5 H 1.29999 V 1.7 H -2.45 v 0.75 h 0.75 z" />
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="20mm" height="20mm" viewBox="-10 -10 20 20" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<title>OpenSCAD Model</title>
+<path d="
+M -6.42317,7.17883 L 5.6675,7.17883 L 5.6675,-4.91183 L 6.42317,-4.91183 L 6.42317,9.25691 L 9.25691,9.25691
+ L 9.25691,6.42317 L 7.17883,6.42317 L 7.17883,-5.6675 L -4.91183,-5.6675 L -4.91183,-6.42317 L 9.25691,-6.42317
+ L 9.25691,-9.25691 L 6.42317,-9.25691 L 6.42317,-7.17883 L -5.6675,-7.17883 L -5.6675,4.91183 L -6.42317,4.91183
+ L -6.42317,-9.25691 L -9.25691,-9.25691 L -9.25691,-6.42317 L -7.17883,-6.42317 L -7.17883,5.6675 L 4.91183,5.6675
+ L 4.91183,6.42317 L -9.25691,6.42317 L -9.25691,9.25691 L -6.42317,9.25691 z
+M -8.78462,-6.89546 L -8.78462,-8.78462 L -6.89546,-8.78462 L -6.89546,-6.89546 z
+M 6.89546,-6.89546 L 6.89546,-8.78462 L 8.78462,-8.78462 L 8.78462,-6.89546 z
+M -8.78462,8.78462 L -8.78462,6.89546 L -6.89546,6.89546 L -6.89546,8.78462 z
+M 6.89546,8.78462 L 6.89546,6.89546 L 8.78462,6.89546 L 8.78462,8.78462 z
+" stroke="black" fill="lightgray" stroke-width="0.5"/>
 </svg>

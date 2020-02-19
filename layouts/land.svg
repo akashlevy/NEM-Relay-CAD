@@ -8,14 +8,14 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:version="1.0beta1 (32d4812, 2019-09-19)"
-   sodipodi:docname="cont.svg"
-   id="svg263"
+   sodipodi:docname="land.svg"
+   id="svg639"
    version="1.1"
    viewBox="-5 -5 10 10"
    height="10mm"
    width="10mm">
   <metadata
-     id="metadata269">
+     id="metadata645">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -26,19 +26,19 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs267" />
+     id="defs643" />
   <sodipodi:namedview
-     inkscape:current-layer="svg263"
+     inkscape:current-layer="svg639"
      inkscape:window-maximized="0"
-     inkscape:window-y="23"
+     inkscape:window-y="0"
      inkscape:window-x="0"
      inkscape:cy="18.897638"
      inkscape:cx="1.597962"
      inkscape:zoom="7.1966667"
      showgrid="false"
-     id="namedview265"
-     inkscape:window-height="480"
-     inkscape:window-width="746"
+     id="namedview641"
+     inkscape:window-height="900"
+     inkscape:window-width="1440"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      guidetolerance="10"
@@ -49,53 +49,53 @@
      bordercolor="#666666"
      pagecolor="#ffffff" />
   <title
-     id="title259">OpenSCAD Model</title>
+     id="title635">OpenSCAD Model</title>
   <path
-     id="path301"
+     id="path677"
      d="M 1.11494,3.3279 H 0.359268 V 4.08356 H 1.11494 Z" />
   <path
-     id="path299"
+     id="path675"
      d="M -0.359268,3.3279 H -1.11494 v 0.75566 h 0.755672 z" />
   <path
-     id="path297"
+     id="path673"
      d="M 2.47696,2.76373 H 1.72128 v 0.75566 h 0.75568 z" />
   <path
-     id="path295"
+     id="path671"
      d="m -1.72128,2.76373 h -0.75568 v 0.75566 h 0.75568 z" />
   <path
-     id="path293"
+     id="path669"
      d="m -2.76373,1.72128 h -0.75566 v 0.75568 h 0.75566 z" />
   <path
-     id="path291"
+     id="path667"
      d="M 3.51939,1.72128 H 2.76373 v 0.75568 h 0.75566 z" />
   <path
-     id="path289"
+     id="path665"
      d="M 4.08356,0.359268 H 3.3279 V 1.11494 h 0.75566 z" />
   <path
-     id="path287"
+     id="path663"
      d="M -3.3279,0.359268 H -4.08356 V 1.11494 h 0.75566 z" />
   <path
-     id="path285"
+     id="path661"
      d="m -3.3279,-1.11494 h -0.75566 v 0.755672 h 0.75566 z" />
   <path
-     id="path283"
+     id="path659"
      d="M 4.08356,-1.11494 H 3.3279 v 0.755672 h 0.75566 z" />
   <path
-     id="path281"
+     id="path657"
      d="m -2.76373,-2.47696 h -0.75566 v 0.75568 h 0.75566 z" />
   <path
-     id="path279"
+     id="path655"
      d="M 3.51939,-2.47696 H 2.76373 v 0.75568 h 0.75566 z" />
   <path
-     id="path277"
+     id="path653"
      d="m -1.72128,-3.51939 h -0.75568 v 0.75566 h 0.75568 z" />
   <path
-     id="path275"
+     id="path651"
      d="M 2.47696,-3.51939 H 1.72128 v 0.75566 h 0.75568 z" />
   <path
-     id="path273"
+     id="path649"
      d="M 1.11494,-4.08356 H 0.359268 V -3.3279 H 1.11494 Z" />
   <path
-     id="path261"
+     id="path637"
      d="M -0.359268,-4.08356 H -1.11494 v 0.75566 h 0.755672 z" />
 </svg>

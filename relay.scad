@@ -14,24 +14,28 @@ g_cant = W_cant;            // gap between plate and cantilever
 L_via = 0.5;                // side length of via
 L_anc = L_via + 0.25;       // side length of anchor attachment
 
-n_cont = 4;                 // number of contacts
-L_cont = 0.4;               // side length of contact
+circ_cont = 1;              // circular or grid contact mode
+n_cont = 16;                // number of contacts
+L_cont = 0.2;               // side length of contact
 r_cont = 1;                 // radius of circle along which to place contacts
 t_cont = 0.04;              // thickness of contact
+t_chan = 0.02;              // thickness of channel
 
-t_sub = 0.1;                // substrate thickness
+t_land = 0.1;            // thickness of landing contact
 
 t_sp = 0.025;               // thickness of spacer
 
 // RENDERING OPTIONS
-poly_on = 1;
-spacer_on = 1;
-via_on = 1;
-contact_on = 1;
-substrate_on = 0;
-scale_factor = 1;
+poly_on = 0;
+spacer_on = 0;
+via_on = 0;
+contact_on = 0;
+channel_on = 0;
+landing_on = 1;
+//scale_factor = 1;
+scale_factor = 3/0.794; // for layout export
 
-//projection()
+projection() // for layout export
 scale(scale_factor)
 union () {
     // POLY LAYER AND VIA LAYER
@@ -59,15 +63,15 @@ union () {
                     if (poly_on)
                     difference() {
                         cube([L_anc, L_anc, t_poly], center=true);
-                        translate([0, 0, -t_sub/2 - g_act/2])
-                        cube([L_via, L_via, t_poly + g_act + t_sub + 0.1], center=true);
+                        translate([0, 0, -t_land/2 - g_act/2])
+                        cube([L_via, L_via, t_poly + g_act + t_land + 0.1], center=true);
                     }
                         
                     // Vias
                     if (via_on)
                     color([1, 0, 0])
-                    translate([0, 0, -t_sub/2 - g_act/2 - t_sp/2])
-                    cube([L_via, L_via, t_poly + g_act + t_sub + t_sp], center=true);
+                    translate([0, 0, -t_land/2 - g_act/2 - t_sp/2])
+                    cube([L_via, L_via, t_poly + g_act + t_land + t_sp], center=true);
                 }
             }
         }
@@ -97,8 +101,8 @@ union () {
                     // Attachments (anchors - vias)
                     difference() {
                         cube([L_anc, L_anc, t_sp], center=true);
-                        translate([0, 0, -t_sub/2 - g_act/2])
-                        cube([L_via, L_via, t_poly + g_act + t_sub + 0.1], center=true);
+                        translate([0, 0, -t_land/2 - g_act/2])
+                        cube([L_via, L_via, t_poly + g_act + t_land + 0.1], center=true);
                     }
                 }
             }
@@ -108,16 +112,25 @@ union () {
     // CONTACT LAYER
     if (contact_on)
     for(i=[1:n_cont]) {
-        rotate([0, 0, 360/n_cont*i])
-        translate([0, r_cont, g_act - t_cont/2])
+        translate([r_cont * cos(360*(i-0.5)/n_cont), r_cont * sin(360*(i-0.5)/n_cont), g_act - t_cont/2])
         color([0.5, 0, 0.5])
         cube([L_cont, L_cont, t_cont], center=true);
     }
-
-    // SUBSTRATE LAYER
-    if (substrate_on)
-    color([0.5,0.5,0.5])
-    translate([0, 0, -t_sub/2]) {
-        cube([L_plate*3, L_plate*3, t_sub], center=true);
+    
+    // CHANNEL LAYER
+    if (channel_on)
+    for(i=[1:n_cont/2]) {
+        rotate(360*i/n_cont*2)
+        translate([r_cont*cos(180/n_cont), 0, g_act-t_chan/2])
+        color([0, 0, 1])
+        cube([L_cont, 3.14*r_cont/n_cont*2, t_chan], center=true);
+    }
+    
+    // LANDING LAYER
+    if (landing_on)
+    color([0.5, 0.5, 0.5])
+    for(i=[1:n_cont]) {
+        translate([r_cont * cos(360*(i-0.5)/n_cont), r_cont * sin(360*(i-0.5)/n_cont), 0])
+        cube([L_cont, L_cont, t_land], center=true);
     }
 }
