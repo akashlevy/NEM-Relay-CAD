@@ -4,7 +4,7 @@ FILE_DESCRIPTION(('FreeCAD Model'),'2;1');
 FILE_NAME(
 '/Users/akashlevy/OneDrive - 
 Levylab/Documents/Research/NEM-Relay-CAD/nembody.step',
-  '2020-03-06T06:11:35',('Author'),(''),
+  '2020-03-06T08:42:26',('Author'),(''),
   'Open CASCADE STEP processor 7.3','FreeCAD','Unknown');
 FILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));
 ENDSEC;
