@@ -1,0 +1,13 @@
+/out,relay_anf.out
+finish
+/prep7
+*dim,_ciflays,char,0
+*dim,_ciflthk,,0
+*dim,_cifmat,,0
+*dim,_cifsub,,0
+_numciflays = 0
+allsel
+cmsel,all
+finish
+/go 
+/out
