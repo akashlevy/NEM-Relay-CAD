@@ -11,8 +11,8 @@ L_cant = L_plate;           // length of cantilever
 W_cant = 0.2;               // width of cantilever
 g_cant = W_cant;            // gap between plate and cantilever
 
-L_via = 0.5;                // side length of via
-L_anc = L_via + 0.25;       // side length of anchor attachment
+L_via = 0.4;                // side length of via
+L_anc = L_via + 0.2;        // side length of anchor attachment
 
 circ_cont = 1;              // circular or grid contact mode
 n_cont = 16;                // number of contacts
@@ -21,21 +21,21 @@ r_cont = 1;                 // radius of circle along which to place contacts
 t_cont = 0.04;              // thickness of contact
 t_chan = 0.02;              // thickness of channel
 
-t_land = 0.1;            // thickness of landing contact
+t_land = 0.1;               // thickness of landing contact
 
 t_sp = 0.025;               // thickness of spacer
 
 // RENDERING OPTIONS
-poly_on = 0;
-spacer_on = 0;
-via_on = 0;
-contact_on = 0;
-channel_on = 0;
-landing_on = 1;
-//scale_factor = 1;
-scale_factor = 3/0.794; // for layout export
+poly_on = 1;
+spacer_on = 1;
+via_on = 1;
+contact_on = 1;
+channel_on = 1;
+//landing_on = 1;
+scale_factor = 1;
+//scale_factor = 3/0.794; // for layout export
 
-projection() // for layout export
+//projection() // for layout export
 scale(scale_factor)
 union () {
     // POLY LAYER AND VIA LAYER
@@ -123,7 +123,7 @@ union () {
         rotate(360*i/n_cont*2)
         translate([r_cont*cos(180/n_cont), 0, g_act-t_chan/2])
         color([0, 0, 1])
-        cube([L_cont, 3.14*r_cont/n_cont*2, t_chan], center=true);
+        cube([L_cont,                                                                                                                                            , t_chan], center=true);
     }
     
     // LANDING LAYER
