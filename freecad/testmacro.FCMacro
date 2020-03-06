@@ -1,0 +1,46 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: /Users/akashlevy/OneDrive - Levylab/Documents/Research/NEM-Relay-CAD/freecad/testmacro.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+import FreeCAD
+import Part
+
+#Gui.runCommand('Std_DlgMacroRecord',0)
+#### Begin command Part_Builder
+from FreeCAD import Base
+#### End command Part_Builder
+#Gui.Selection.clearSelection()
+#Gui.Selection.addSelection('nembody','Shape004','Edge1',-1.9,0.449385,0)
+#Gui.Selection.addSelection('nembody','Shape005','Edge1',-2.04363,1.7,0)
+#Gui.Selection.addSelection('nembody','Shape006','Edge1',-2.3,1.91524,0)
+#Gui.Selection.addSelection('nembody','Shape007','Edge1',-1.84034,2.3,0)
+#Gui.Selection.addSelection('nembody','Shape008','Edge1',-1.7,1.77614,0)
+#Gui.Selection.addSelection('nembody','Shape009','Edge1',-1.54075,-1.3,0)
+#Gui.Selection.addSelection('nembody','Shape010','Edge1',-1.5,-1.04857,0)
+#Gui.Selection.addSelection('nembody','Shape011','Edge1',0.28889,1.9,0)
+#Gui.Selection.addSelection('nembody','Shape012','Edge1',1.7,2.05433,0)
+#Gui.Selection.addSelection('nembody','Shape013','Edge1',2.09713,2.3,0)
+#Gui.Selection.addSelection('nembody','Shape014','Edge1',2.3,1.80824,0)
+#Gui.Selection.addSelection('nembody','Shape015','Edge1',1.97943,1.7,0)
+#Gui.Selection.addSelection('nembody','Shape016','Edge1',-1.3,1.57285,0)
+#Gui.Selection.addSelection('nembody','Shape017','Edge1',-0.909469,1.5,0)
+#Gui.Selection.addSelection('nembody','Shape018','Edge1',1.9,0.663378,0)
+#Gui.Selection.addSelection('nembody','Shape019','Edge1',2.10783,-1.7,0)
+#Gui.Selection.addSelection('nembody','Shape020','Edge1',2.3,-1.92594,0)
+#Gui.Selection.addSelection('nembody','Shape021','Edge1',2.07573,-2.3,0)
+#Gui.Selection.addSelection('nembody','Shape022','Edge1',1.7,-1.97943,0)
+#Gui.Selection.addSelection('nembody','Shape023','Edge1',1.62635,1.3,0)
+#Gui.Selection.addSelection('nembody','Shape024','Edge1',1.5,1.05926,0)
+#Gui.Selection.addSelection('nembody','Shape025','Edge1',0.567081,-1.9,0)
+#Gui.Selection.addSelection('nembody','Shape026','Edge1',-1.7,-2.08643,0)
+#Gui.Selection.addSelection('nembody','Shape027','Edge1',-1.89384,-2.3,0)
+#Gui.Selection.addSelection('nembody','Shape','Edge1',-2.3,-2.02223,0)
+#Gui.Selection.addSelection('nembody','Shape001','Edge1',-1.29466,-1.7,0)
+#Gui.Selection.addSelection('nembody','Shape002','Edge1',1.3,-1.63705,0)
+#Gui.Selection.addSelection('nembody','Shape003','Edge1',1.12346,-1.5,0)
+_=Part.makeFilledFace(Part.__sortEdges__([App.ActiveDocument.Shape004.Shape.Edge1, App.ActiveDocument.Shape005.Shape.Edge1, App.ActiveDocument.Shape006.Shape.Edge1, App.ActiveDocument.Shape007.Shape.Edge1, App.ActiveDocument.Shape008.Shape.Edge1, App.ActiveDocument.Shape009.Shape.Edge1, App.ActiveDocument.Shape010.Shape.Edge1, App.ActiveDocument.Shape011.Shape.Edge1, App.ActiveDocument.Shape012.Shape.Edge1, App.ActiveDocument.Shape013.Shape.Edge1, App.ActiveDocument.Shape014.Shape.Edge1, App.ActiveDocument.Shape015.Shape.Edge1, App.ActiveDocument.Shape016.Shape.Edge1, App.ActiveDocument.Shape017.Shape.Edge1, App.ActiveDocument.Shape018.Shape.Edge1, App.ActiveDocument.Shape019.Shape.Edge1, App.ActiveDocument.Shape020.Shape.Edge1, App.ActiveDocument.Shape021.Shape.Edge1, App.ActiveDocument.Shape022.Shape.Edge1, App.ActiveDocument.Shape023.Shape.Edge1, App.ActiveDocument.Shape024.Shape.Edge1, App.ActiveDocument.Shape025.Shape.Edge1, App.ActiveDocument.Shape026.Shape.Edge1, App.ActiveDocument.Shape027.Shape.Edge1, App.ActiveDocument.Shape.Shape.Edge1, App.ActiveDocument.Shape001.Shape.Edge1, App.ActiveDocument.Shape002.Shape.Edge1, App.ActiveDocument.Shape003.Shape.Edge1, ]))
+if _.isNull(): raise RuntimeError('Failed to create face')
+App.ActiveDocument.addObject('Part::Feature','Face').Shape=_
+del _
+
+#Gui.Selection.clearSelection()
+# Macro End: /Users/akashlevy/OneDrive - Levylab/Documents/Research/NEM-Relay-CAD/freecad/testmacro.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++

@@ -56,6 +56,7 @@ nemanc = layout.layer(1, 0)
 nemchan = layout.layer(2, 0)
 nemcont = layout.layer(3, 0)
 nembody = layout.layer(4, 0)
+nemholes = layout.layer(5, 0)
 
 # Create anchors
 ancloc = L_plate/2 + W_cant + L_anc/2
@@ -85,7 +86,8 @@ for i, n in enumerate(n_hole):
     for h in range(n):
         holeloc = pya.Point(r*cos(2*pi/n*h), r*sin(2*pi/n*h))
         hole = pya.Box(-L_hole/2, -L_hole/2, L_hole/2, L_hole/2).moved(holeloc)
-        relay.insert_hole(hole)
+        top.shapes(nemholes).insert(hole)
+        #relay.insert_hole(hole)
 top.shapes(nembody).insert(relay)
 
 # Create contact layer
@@ -112,3 +114,22 @@ for i in range(n_cont/2):
 layout.write("relay.gds")
 layout.write("relay.dxf")
 layout.write("relay.cif")
+
+# Write out individual layers for FreeCAD conversion
+outopts = pya.SaveLayoutOptions()
+layerinfo = pya.LayerInfo()
+outopts.set_format_from_filename("relay.dxf")
+outopts.add_layer(0, layerinfo)
+layout.write("nemanc.dxf", outopts)
+outopts.deselect_all_layers()
+outopts.add_layer(1, layerinfo)
+layout.write("nemchan.dxf", outopts)
+outopts.deselect_all_layers()
+outopts.add_layer(2, layerinfo)
+layout.write("nemcont.dxf", outopts)
+outopts.deselect_all_layers()
+outopts.add_layer(3, layerinfo)
+layout.write("nembody.dxf", outopts)
+outopts.deselect_all_layers()
+outopts.add_layer(4, layerinfo)
+layout.write("nemholes.dxf", outopts)
