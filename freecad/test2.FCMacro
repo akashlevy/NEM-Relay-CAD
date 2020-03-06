@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: /Users/akashlevy/OneDrive - Levylab/Documents/Research/NEM-Relay-CAD/freecad/test2.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+import FreeCAD
+
+#Gui.runCommand('Std_DlgMacroRecord',0)
+#Gui.Selection.addSelection('nemcont','Shape032','Edge1',-1.08,0.190919,0)
+#Gui.Selection.clearSelection()
+#Gui.Selection.addSelection('nemcont','Shape033','Edge1',-0.979715,0.295,0)
+#Gui.Selection.addSelection('nemcont','Shape034','Edge1',-0.88,0.200967,0)
+#Gui.Selection.addSelection('nemcont','Shape035','Edge1',-0.934498,0.095,0)
+#Gui.Selection.addSelection('nemcont','Shape032','Edge1',-1.08,0.200967,0)
+App.ActiveDocument.addObject('Part::Feature','Face').Shape==Part.makeFilledFace(Part.__sortEdges__([App.ActiveDocument.Shape.Shape.Edge1, App.ActiveDocument.Shape001.Shape.Edge1, App.ActiveDocument.Shape002.Shape.Edge1, App.ActiveDocument.Shape003.Shape.Edge1, ]))
+
+#Gui.Selection.clearSelection()
+# Macro End: /Users/akashlevy/OneDrive - Levylab/Documents/Research/NEM-Relay-CAD/freecad/test2.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++

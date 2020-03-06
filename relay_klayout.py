@@ -117,6 +117,7 @@ layout.write("relay.cif")
 
 # Write out individual layers for FreeCAD conversion
 outopts = pya.SaveLayoutOptions()
+outopts.dxf_polygon_mode = 2
 layerinfo = pya.LayerInfo()
 outopts.set_format_from_filename("relay.dxf")
 outopts.add_layer(0, layerinfo)

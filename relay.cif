@@ -1,4 +1,4 @@
-(CIF file written 2020-03-06 06:01:08 by KLayout);
+(CIF file written 2020-03-06 12:22:02 by KLayout);
 DS 1 1 10;
 9 TOP;
 L L1D0;
