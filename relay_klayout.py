@@ -32,10 +32,10 @@ t_land = 0.1                # thickness of landing contact
 t_sp = 0.025                # thickness of spacer
 
 L_hole = 80                 # side length of release hole
-r_hole_pl = 0.78*L_plate/2   # distance from center
+r_hole_pl = 0.784*L_plate/2 # distance from center
 d_hole_pl = 200             # distance apart from release hole
 max_hole = 3                # last hole to have full circle in range
-n_hole = [1, 6, 12, 18, 24] # number of release holes at each layer
+n_hole = [1, 6, 12, 16, 24] # number of release holes at each layer
 
 
 # Create layout and top cell
