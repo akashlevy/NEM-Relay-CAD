@@ -32,9 +32,10 @@ t_land = 0.1                # thickness of landing contact
 t_sp = 0.025                # thickness of spacer
 
 L_hole = 80                 # side length of release hole
-r_hole_pl = 0.8*L_plate/2   # distance from center
+r_hole_pl = 0.78*L_plate/2   # distance from center
 d_hole_pl = 200             # distance apart from release hole
-n_hole = [1, 6, 12, 18]     # number of release holes at each layer
+max_hole = 3                # last hole to have full circle in range
+n_hole = [1, 6, 12, 18, 24] # number of release holes at each layer
 
 
 # Create layout and top cell
@@ -81,13 +82,15 @@ for _ in range(n_sides):
 relay = ep.merge_to_polygon(relaycomps, 0, True, True)[0]
 
 # Insert relay holes
+bound = pya.Box(-r_hole_pl, -r_hole_pl, r_hole_pl, r_hole_pl)
 for i, n in enumerate(n_hole):
-    r = float(i) / (len(n_hole)-1) * r_hole_pl
+    r = float(i) / max_hole * r_hole_pl
     for h in range(n):
         holeloc = pya.Point(r*cos(2*pi/n*h), r*sin(2*pi/n*h))
-        hole = pya.Box(-L_hole/2, -L_hole/2, L_hole/2, L_hole/2).moved(holeloc)
-        top.shapes(nemholes).insert(hole)
-        #relay.insert_hole(hole)
+        if bound.contains(holeloc):
+            hole = pya.Box(-L_hole/2, -L_hole/2, L_hole/2, L_hole/2).moved(holeloc)
+            top.shapes(nemholes).insert(hole)
+            #relay.insert_hole(hole)
 top.shapes(nembody).insert(relay)
 
 # Create contact layer
@@ -114,23 +117,3 @@ for i in range(n_cont/2):
 layout.write("relay.gds")
 layout.write("relay.dxf")
 layout.write("relay.cif")
-
-# Write out individual layers for FreeCAD conversion
-outopts = pya.SaveLayoutOptions()
-outopts.dxf_polygon_mode = 0
-layerinfo = pya.LayerInfo()
-outopts.set_format_from_filename("relay.dxf")
-outopts.add_layer(0, layerinfo)
-layout.write("nemanc.dxf", outopts)
-outopts.deselect_all_layers()
-outopts.add_layer(1, layerinfo)
-layout.write("nemchan.dxf", outopts)
-outopts.deselect_all_layers()
-outopts.add_layer(2, layerinfo)
-layout.write("nemcont.dxf", outopts)
-outopts.deselect_all_layers()
-outopts.add_layer(3, layerinfo)
-layout.write("nembody.dxf", outopts)
-outopts.deselect_all_layers()
-outopts.add_layer(4, layerinfo)
-layout.write("nemholes.dxf", outopts)
