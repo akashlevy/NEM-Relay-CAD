@@ -1,5 +1,5 @@
 
- ANSYS Academic Teaching Introductory              
+ ANSYS Mechanical Enterprise                       
 
 
  *------------------------------------------------------------------*
@@ -62,9 +62,41 @@
      
  Point Releases and Patches installed:   
      
- Academic Student 2020 R1
- Aqwa 2020 R1
+ ANSYS, Inc. Products 2020 R1
+ SpaceClaim 2020 R1  
+ AIM 2020 R1 
+ Live (includes SpaceClaim) 2020 R1  
+ Autodyn 2020 R1 
+ LS-DYNA 2020 R1 
+ CFX (includes CFD-Post) 2020 R1 
+ Chemkin 2020 R1 
+ EnSight 2020 R1 
  FENSAP-ICE 2020 R1  
+ Fluent (includes CFD-Post) 2020 R1  
+ Forte 2020 R1   
+ Polyflow (includes CFD-Post) 2020 R1
+ TurboGrid 2020 R1   
+ ICEM CFD 2020 R1
+ Aqwa 2020 R1
+ Customization Files for User Programmable Features 2020 R1  
+ Mechanical Products 2020 R1 
+ Additive 2020 R1
+ ANSYS Sherlock 2020 R1  
+ Icepak (includes CFD-Post) 2020 R1  
+ ACIS Geometry Interface 2020 R1 
+ AutoCAD Geometry Interface 2020 R1  
+ Catia, Version 4 Geometry Interface 2020 R1 
+ Catia, Version 5 Geometry Interface 2020 R1 
+ Catia, Version 6 Geometry Interface 2020 R1 
+ Creo Elements/Direct Modeling Geometry Interface 2020 R1
+ Creo Parametric Geometry Interface 2020 R1  
+ Inventor Geometry Interface 2020 R1 
+ JTOpen Geometry Interface 2020 R1   
+ NX Geometry Interface 2020 R1   
+ Parasolid Geometry Interface  2020 R1   
+ Solid Edge Geometry Interface 2020 R1   
+ SOLIDWORKS Geometry Interface 2020 R1   
+ ANSYS, Inc. License Manager 2020 R1 
 
 
           *****  ANSYS COMMAND LINE ARGUMENTS  *****
@@ -73,14 +105,13 @@
   DISTRIBUTED MEMORY PARALLEL REQUESTED
        2 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
     TOTAL OF     2 CORES REQUESTED
-  DESIGNXPLORER REQUESTED
-  INPUT FILE NAME              = C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\_ProjectScratch\Scr179E\dummy.dat
-  OUTPUT FILE NAME             = C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\_ProjectScratch\Scr179E\solve.out
+  INPUT FILE NAME              = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\_ProjectScratch\Scr97A9\dummy.dat
+  OUTPUT FILE NAME             = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\_ProjectScratch\Scr97A9\solve.out
   START-UP FILE MODE           = NOREAD
   STOP FILE MODE               = NOREAD
 
  RELEASE= 2020 R1              BUILD= 20.1      UP20191203   VERSION=WINDOWS x64 
- CURRENT JOBNAME=file0  20:06:11  APR 03, 2020 CP=      0.578
+ CURRENT JOBNAME=file0  01:32:55  APR 04, 2020 CP=      0.516
 
 
  PARAMETER _DS_PROGRESS =     999.0000000    
@@ -89,11 +120,11 @@
 
 
 
- *** NOTE ***                            CP =       0.844   TIME= 20:06:13
+ *** NOTE ***                            CP =       0.750   TIME= 01:32:55
  The /CONFIG,NOELDB command is not valid in a Distributed ANSYS          
  solution.  Command is ignored.                                          
 
- *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  20.1036111    
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  1.54861111    
 
  TITLE= 
  relay--Spring Constant (A5)                                                   
@@ -102,17 +133,17 @@
  SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
   TYPE=STRI  DIMENSIONS=      248        1        1
 
- PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\_ProjectScratch\Scr179E\
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\_ProjectScratch\Scr97A9\
 
  SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
   TYPE=STRI  DIMENSIONS=      248        1        1
 
- PARAMETER _WB_SOLVERFILES_DIR(1) = C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\relay_files\dp0\SYS\MECH\
+ PARAMETER _WB_SOLVERFILES_DIR(1) = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\relay_files\dp0\SYS\MECH\
 
  SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR
   TYPE=STRI  DIMENSIONS=      248        1        1
 
- PARAMETER _WB_USERFILES_DIR(1) = C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\relay_files\user_files\
+ PARAMETER _WB_USERFILES_DIR(1) = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\relay_files\user_files\
  --- Data in consistent MKS units. See Solving Units in the help system for more
 
  MKS UNITS SPECIFIED FOR INTERNAL    
@@ -138,9 +169,9 @@
  INPUT  UNITS ARE ALSO SET TO MKS 
 
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
- DISTRIBUTED ANSYS Academic Teaching Introductory              
+ DISTRIBUTED ANSYS Mechanical Enterprise                       
 
- 01055371  VERSION=WINDOWS x64   20:06:14  APR 03, 2020 CP=      0.922
+ 20120530  VERSION=WINDOWS x64   01:32:55  APR 04, 2020 CP=      0.750
 
  relay--Spring Constant (A5)                                                   
 
@@ -156,7 +187,7 @@
  *********** Create Direct FE , Forces ****
 
 
- ***** ROUTINE COMPLETED *****  CP =         1.812
+ ***** ROUTINE COMPLETED *****  CP =         0.859
 
 
  --- Number of total nodes = 10724
@@ -167,7 +198,7 @@
  --- Number of condensed parts = 0
  --- Number of total elements = 5460
 
- *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  20.1038889    
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  1.54888889    
  ****************************************************************************
  *************************    SOLUTION       ********************************
  ****************************************************************************
@@ -261,21 +292,21 @@
 
  *ENDIF
 
- *** NOTE ***                            CP =       2.016   TIME= 20:06:15
+ *** NOTE ***                            CP =       0.922   TIME= 01:32:56
  The automatic domain decomposition logic has selected the MESH domain   
  decomposition method with 2 processes per solution.                     
 
  *****  ANSYS SOLVE    COMMAND  *****
 
- *** WARNING ***                         CP =       2.031   TIME= 20:06:15
+ *** WARNING ***                         CP =       0.922   TIME= 01:32:56
  Element shape checking is currently inactive.  Issue SHPP,ON or         
  SHPP,WARN to reactivate, if desired.                                    
 
- *** NOTE ***                            CP =       2.047   TIME= 20:06:15
+ *** NOTE ***                            CP =       0.938   TIME= 01:32:56
  The model data was checked and warning messages were found.             
-  Please review output or errors file (                                  
- C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\_ProjectScratch\Scr17 
- 79E\file0.err ) for these warning messages.                             
+  Please review output or errors file ( C:\Users\Akash                   
+ Levy\Documents\NEM-Relay-CAD\_ProjectScratch\Scr97A9\file0.err ) for    
+ these warning messages.                                                 
 
  *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
       --- GIVE SUGGESTIONS AND RESET THE KEY OPTIONS ---
@@ -286,9 +317,9 @@
 
 
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
- DISTRIBUTED ANSYS Academic Teaching Introductory              
+ DISTRIBUTED ANSYS Mechanical Enterprise                       
 
- 01055371  VERSION=WINDOWS x64   20:06:15  APR 03, 2020 CP=      2.078
+ 20120530  VERSION=WINDOWS x64   01:32:56  APR 04, 2020 CP=      0.938
 
  relay--Spring Constant (A5)                                                   
 
@@ -305,11 +336,11 @@
    NEWTON-RAPHSON OPTION . . . . . . . . . . . . .PROGRAM CHOSEN   
    GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
 
- *** NOTE ***                            CP =       2.078   TIME= 20:06:15
+ *** NOTE ***                            CP =       0.969   TIME= 01:32:56
  This nonlinear analysis defaults to using the full Newton-Raphson       
  solution procedure.  This can be modified using the NROPT command.      
 
- *** NOTE ***                            CP =       2.078   TIME= 20:06:15
+ *** NOTE ***                            CP =       0.969   TIME= 01:32:56
  The conditions for direct assembly have been met.  No .emat or .erot    
  files will be produced.                                                 
 
@@ -359,24 +390,24 @@
 
    TOTAL RIGID BODY MASS MATRIX ABOUT ORIGIN
                Translational mass               |   Coupled translational/rotational mass
-        0.11050E-13    0.0000        0.0000     |     0.0000       0.10498E-20   0.75232E-36
-         0.0000       0.11050E-13    0.0000     |   -0.10498E-20    0.0000      -0.18056E-34
-         0.0000        0.0000       0.11050E-13 |   -0.75232E-36   0.18056E-34    0.0000    
+        0.11050E-13    0.0000        0.0000     |     0.0000       0.10498E-20   0.22569E-35
+         0.0000       0.11050E-13    0.0000     |   -0.10498E-20    0.0000      -0.14294E-34
+         0.0000        0.0000       0.11050E-13 |   -0.15046E-35   0.14294E-34    0.0000    
      ------------------------------------------ | ------------------------------------------
                                                 |         Rotational mass (inertia)
-                                                |    0.16158E-25   0.35807E-32   0.89190E-40
-                                                |    0.35807E-32   0.16158E-25   0.22874E-39
-                                                |    0.89235E-40   0.22874E-39   0.32029E-25
+                                                |    0.16158E-25   0.35807E-32   0.89235E-40
+                                                |    0.35807E-32   0.16158E-25   0.22851E-39
+                                                |    0.89145E-40   0.22856E-39   0.32029E-25
 
    TOTAL MASS = 0.11050E-13
      The mass principal axes coincide with the global Cartesian axes
 
-   CENTER OF MASS (X,Y,Z)=  -0.16340E-20  -0.68085E-22   0.95006E-07
+   CENTER OF MASS (X,Y,Z)=  -0.12936E-20  -0.20425E-21   0.95006E-07
 
    TOTAL INERTIA ABOUT CENTER OF MASS
-        0.16058E-25   0.35807E-32   0.87474E-40
-        0.35807E-32   0.16058E-25   0.22867E-39
-        0.87474E-40   0.22867E-39   0.32029E-25
+        0.16058E-25   0.35807E-32   0.87877E-40
+        0.35807E-32   0.16058E-25   0.22830E-39
+        0.87877E-40   0.22830E-39   0.32029E-25
      The inertia principal axes coincide with the global Cartesian axes
 
 
@@ -392,8 +423,8 @@
    *** ELEMENT MATRIX FORMULATION TIMES
      TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-        1      5460  SOLID187      2.219   0.000406
- Time at end of element matrix formulation CP = 4.015625.                
+        1      5460  SOLID187      0.844   0.000155
+ Time at end of element matrix formulation CP = 1.78125.                 
 
  ALL CURRENT ANSYS DATA WRITTEN TO FILE NAME= file.rdb
   FOR POSSIBLE RESUME FROM THIS POINT
@@ -402,32 +433,32 @@
  DISTRIBUTED SPARSE MATRIX DIRECT SOLVER.
   Number of equations =       31920,    Maximum wavefront =    288
 
-  Local memory allocated for solver              =     62.356 MB
-  Local memory required for in-core solution     =     52.609 MB
-  Local memory required for out-of-core solution =     25.236 MB
+  Local memory allocated for solver              =     61.894 MB
+  Local memory required for in-core solution     =     52.168 MB
+  Local memory required for out-of-core solution =     25.070 MB
 
-  Total memory allocated for solver              =    121.438 MB
-  Total memory required for in-core solution     =    102.080 MB
-  Total memory required for out-of-core solution =     49.508 MB
+  Total memory allocated for solver              =    121.550 MB
+  Total memory required for in-core solution     =    102.188 MB
+  Total memory required for out-of-core solution =     49.523 MB
 
- *** NOTE ***                            CP =       4.594   TIME= 20:06:22
+ *** NOTE ***                            CP =       2.109   TIME= 01:32:57
  The Distributed Sparse Matrix Solver is currently running in the        
  in-core memory mode.  This memory mode uses the most amount of memory   
  in order to avoid using the hard drive as much as possible, which most  
  often results in the fastest solution time.  This mode is recommended   
  if enough physical memory is present to accommodate all of the solver   
  data.                                                                   
- curEqn=  16056  totEqn=  16056 Job CP sec=      5.453
-      Factor Done= 100% Factor Wall sec=      2.377 rate=     525.8 Mflops
+ curEqn=  15792  totEqn=  15792 Job CP sec=      2.469
+      Factor Done= 100% Factor Wall sec=      0.336 rate=    3798.7 Mflops
  Distributed sparse solver maximum pivot= 144201.348 at node 7644 UZ.    
- Distributed sparse solver minimum pivot= 10.2356879 at node 662 UZ.     
- Distributed sparse solver minimum pivot in absolute value= 10.2356879   
- at node 662 UZ.                                                         
+ Distributed sparse solver minimum pivot= 9.96432868 at node 1231 UZ.    
+ Distributed sparse solver minimum pivot in absolute value= 9.96432868   
+ at node 1231 UZ.                                                        
      DISP CONVERGENCE VALUE   =  0.5147E-07  CRITERION=  0.2626E-08
     EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.5147E-07
      FORCE CONVERGENCE VALUE  =  0.1164E-04  CRITERION=  0.5206E-04 <<< CONVERGED
 
- *** WARNING ***                         CP =       6.781   TIME= 20:06:29
+ *** WARNING ***                         CP =       2.781   TIME= 01:32:58
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
  reference FORCE CONVERGENCE VALUE = 2.204328257E-06 is less than a      
@@ -441,12 +472,12 @@
    *** ELEMENT RESULT CALCULATION TIMES
      TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-        1      5460  SOLID187      1.312   0.000240
+        1      5460  SOLID187      0.609   0.000112
 
    *** NODAL LOAD CALCULATION TIMES
      TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-        1      5460  SOLID187      0.234   0.000043
+        1      5460  SOLID187      0.125   0.000023
  *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      2
  *** TIME =   1.00000         TIME INC =   1.00000    
 
@@ -462,21 +493,21 @@
  ****************************************************
  *************** FINISHED SOLVE FOR LS 1 *************
 
- *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  20.1091667    
+ *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  1.54972222    
 
  PRINTOUT RESUMED BY /GOP
 
  FINISH SOLUTION PROCESSING
 
 
- ***** ROUTINE COMPLETED *****  CP =         8.812
+ ***** ROUTINE COMPLETED *****  CP =         3.656
 
 
 
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
- DISTRIBUTED ANSYS Academic Teaching Introductory              
+ DISTRIBUTED ANSYS Mechanical Enterprise                       
 
- 01055371  VERSION=WINDOWS x64   20:06:33  APR 03, 2020 CP=      8.828
+ 20120530  VERSION=WINDOWS x64   01:33:00  APR 04, 2020 CP=      3.688
 
  relay--Spring Constant (A5)                                                   
 
@@ -484,7 +515,7 @@
 
           ***** ANSYS RESULTS INTERPRETATION (POST1) *****
 
- *** NOTE ***                            CP =       8.859   TIME= 20:06:33
+ *** NOTE ***                            CP =       3.688   TIME= 01:33:00
  Reading results into the database (SET command) will update the current 
  displacement and force boundary conditions in the database with the     
  values from the results file for that load set.  Note that any          
@@ -502,29 +533,29 @@
  EXIT THE ANSYS POST1 DATABASE PROCESSOR
 
 
- ***** ROUTINE COMPLETED *****  CP =         8.938
+ ***** ROUTINE COMPLETED *****  CP =         3.734
 
 
 
  PRINTOUT RESUMED BY /GOP
 
- *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  20.1091667    
+ *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  1.55000000    
 
  PARAMETER _PREPTIME =     1.000000000    
 
- PARAMETER _SOLVTIME =     19.00000000    
+ PARAMETER _SOLVTIME =     3.000000000    
 
- PARAMETER _POSTTIME =     0.000000000    
+ PARAMETER _POSTTIME =     1.000000000    
 
- PARAMETER _TOTALTIM =     20.00000000    
+ PARAMETER _TOTALTIM =     5.000000000    
 
  *GET  _DLBRATIO  FROM  ACTI  ITEM=SOLU DLBR  VALUE=  1.00000000    
 
- *GET  _COMBTIME  FROM  ACTI  ITEM=SOLU COMB  VALUE= 0.322664300    
+ *GET  _COMBTIME  FROM  ACTI  ITEM=SOLU COMB  VALUE= 0.135263600    
  --- Number of total nodes = 10724
  --- Number of total elements = 5460
  --- Element load balance ratio = 1
- --- Time to combine distributed files = 0.3226643
+ --- Time to combine distributed files = 0.1352636
 
  EXIT ANSYS WITHOUT SAVING DATABASE
 
@@ -535,18 +566,18 @@
 +--------- D I S T R I B U T E D   A N S Y S   S T A T I S T I C S ------------+
 
 Release: 2020 R1            Build: 20.1       Update: UP20191203   Platform: WINDOWS x64 
-Date Run: 04/03/2020   Time: 20:06     Process ID: 12032
+Date Run: 04/04/2020   Time: 01:33     Process ID: 5524
 Operating System: Windows 10  (Build: 18363)
 
-Processor Model: Intel(R) Core(TM)2 Quad  CPU   Q8200  @ 2.33GHz
+Processor Model: Intel(R) Core(TM) i5-6360U CPU @ 2.00GHz
 
 Compiler: Intel(R) FORTRAN Compiler Version 19.0.0  (Build: 20190206)
           Intel(R) C/C++ Compiler Version 19.0.0  (Build: 20190206)
           Intel(R) Math Kernel Library Version 2019.0.3 Product Build 20190125
 
 Number of machines requested            :    1
-Total number of cores available         :    4
-Number of physical cores available      :    4
+Total number of cores available         :    2
+Number of physical cores available      :    2
 Number of processes requested           :    2
 Number of threads per process requested :    1
 Total number of cores requested         :    2 (Distributed Memory Parallel)               
@@ -561,26 +592,26 @@ Input File: dummy.dat
 
   Core                Machine Name   Working Directory
  -----------------------------------------------------
-     0             DESKTOP-8U7FQ8E   C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\_ProjectScratch\Scr179E
-     1             DESKTOP-8U7FQ8E   C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\_ProjectScratch\Scr179E
+     0             DESKTOP-H2RNGL6   C:\Users\Akash Levy\Documents\NEM-Relay-CAD\_ProjectScratch\Scr97A9
+     1             DESKTOP-H2RNGL6   C:\Users\Akash Levy\Documents\NEM-Relay-CAD\_ProjectScratch\Scr97A9
  
-Latency time from master to core     1 =   27.144 microseconds
+Latency time from master to core     1 =   34.637 microseconds
  
-Communication speed from master to core     1 =   401.53 MB/sec
+Communication speed from master to core     1 =  1069.05 MB/sec
 
-Total CPU time for main thread                    :        8.0 seconds
-Total CPU time summed for all threads             :        9.0 seconds
+Total CPU time for main thread                    :        3.7 seconds
+Total CPU time summed for all threads             :        3.9 seconds
 
-Elapsed time spent obtaining a license            :        2.3 seconds
-Elapsed time spent pre-processing model (/PREP7)  :        1.0 seconds
-Elapsed time spent solution - preprocessing       :        1.2 seconds
-Elapsed time spent computing solution             :       15.6 seconds
-Elapsed time spent solution - postprocessing      :        0.3 seconds
+Elapsed time spent obtaining a license            :        1.1 seconds
+Elapsed time spent pre-processing model (/PREP7)  :        0.1 seconds
+Elapsed time spent solution - preprocessing       :        0.1 seconds
+Elapsed time spent computing solution             :        3.5 seconds
+Elapsed time spent solution - postprocessing      :        0.1 seconds
 Elapsed time spent post-processing model (/POST1) :        0.1 seconds
  
 Equation solver used                              :            Sparse (symmetric)
-Equation solver computational rate                :        3.0 Gflops
-Equation solver effective I/O rate                :        2.2 GB/sec
+Equation solver computational rate                :        7.3 Gflops
+Equation solver effective I/O rate                :        9.7 GB/sec
 
 Maximum total memory used                         :      305.0 MB
 Maximum total memory allocated                    :     3136.0 MB
@@ -607,7 +638,7 @@ Total amount of I/O read from disk                :        0.1 GB
  |                                                                           |
  |---------------------------------------------------------------------------|
  |                                                                           |
- |        CP Time      (sec) =          9.031       Time  =  20:06:35        |
- |        Elapsed Time (sec) =         29.000       Date  =  04/03/2020      |
+ |        CP Time      (sec) =          3.859       Time  =  01:33:00        |
+ |        Elapsed Time (sec) =          7.000       Date  =  04/04/2020      |
  |                                                                           |
  *---------------------------------------------------------------------------*

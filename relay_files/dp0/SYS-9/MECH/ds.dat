@@ -2,14 +2,14 @@
 /config,noeldb,1     ! force off writing results to database
 *get,_wallstrt,active,,time,wall
 ! ANSYS input file written by Workbench version 2020 R1
-! File used for geometry attach: C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\relay_files\dp0\SYS\DM\SYS.scdoc
-/title,relay--EM Transient Full (F5)
+! File used for geometry attach: C:\Users\Akash Levy\Documents\NEM-Relay-CAD\relay_files\dp0\SYS\DM\SYS.scdoc
+/title,relay--EM Transient Full (E5)
 *DIM,_wb_ProjectScratch_dir,string,248
-_wb_ProjectScratch_dir(1) = 'C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\_ProjectScratch\Scr88FD\'
+_wb_ProjectScratch_dir(1) = 'C:\Users\Akash Levy\Documents\NEM-Relay-CAD\_ProjectScratch\ScrAC77\'
 *DIM,_wb_SolverFiles_dir,string,248
-_wb_SolverFiles_dir(1) = 'C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\relay_files\dp0\SYS-9\MECH\'
+_wb_SolverFiles_dir(1) = 'C:\Users\Akash Levy\Documents\NEM-Relay-CAD\relay_files\dp0\SYS-9\MECH\'
 *DIM,_wb_userfiles_dir,string,248
-_wb_userfiles_dir(1) = 'C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\relay_files\user_files\'
+_wb_userfiles_dir(1) = 'C:\Users\Akash Levy\Documents\NEM-Relay-CAD\relay_files\user_files\'
 /com,--- Data in consistent MKS units. See Solving Units in the help system for more information.
 /units,MKS
 /nopr
@@ -22457,7 +22457,7 @@ outres,v,all,
 outres,a,all,
 ! ****** Begin Command Snippet ******
 *set,ARG1,4.7
-*set,ARG2,10.
+*set,ARG2,1.
 !   Commands inserted into this file will be executed just prior to the ANSYS SOLVE command.
 !   These commands may supersede command settings set by Workbench.
 
@@ -22472,8 +22472,6 @@ fini                                ! LEAVE THE SOLUTION PROCESSOR
 /prep7
 esel,s,ename,,126
 *get,nelems,elem,,count             ! nelems = NUMBER OF THESE ELEMENTS
-print "HELLO"
-PRINT nelems
 elm=0                               ! INITIALIZE ELEMENT NUMBER
 *do,i,1,nelems
  elm=elnext(elm)                    ! elm = NEXT HIGHEST ELEMENT NUMBER

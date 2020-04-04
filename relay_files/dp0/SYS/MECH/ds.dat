@@ -2,14 +2,14 @@
 /config,noeldb,1     ! force off writing results to database
 *get,_wallstrt,active,,time,wall
 ! ANSYS input file written by Workbench version 2020 R1
-! File used for geometry attach: C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\relay_files\dp0\SYS\DM\SYS.scdoc
+! File used for geometry attach: C:\Users\Akash Levy\Documents\NEM-Relay-CAD\relay_files\dp0\SYS\DM\SYS.scdoc
 /title,relay--Spring Constant (A5)
 *DIM,_wb_ProjectScratch_dir,string,248
-_wb_ProjectScratch_dir(1) = 'C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\_ProjectScratch\Scr179E\'
+_wb_ProjectScratch_dir(1) = 'C:\Users\Akash Levy\Documents\NEM-Relay-CAD\_ProjectScratch\Scr97A9\'
 *DIM,_wb_SolverFiles_dir,string,248
-_wb_SolverFiles_dir(1) = 'C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\relay_files\dp0\SYS\MECH\'
+_wb_SolverFiles_dir(1) = 'C:\Users\Akash Levy\Documents\NEM-Relay-CAD\relay_files\dp0\SYS\MECH\'
 *DIM,_wb_userfiles_dir,string,248
-_wb_userfiles_dir(1) = 'C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\relay_files\user_files\'
+_wb_userfiles_dir(1) = 'C:\Users\Akash Levy\Documents\NEM-Relay-CAD\relay_files\user_files\'
 /com,--- Data in consistent MKS units. See Solving Units in the help system for more information.
 /units,MKS
 /nopr

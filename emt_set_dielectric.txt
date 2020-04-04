@@ -6,6 +6,7 @@
 !                See Solving Units in the help system for more information.
 
 epsr=ARG1                           ! USED TO DEFINE THE RELATIVE PERMITTIVITY
+kn=ARG2                             ! USED TO DEFINE THE RELATIVE STIFFNESS
                                     ! IN THE DETAILS OF THE COMMAND FILE
 fini                                ! LEAVE THE SOLUTION PROCESSOR
 /prep7
@@ -18,6 +19,10 @@ elm=0                               ! INITIALIZE ELEMENT NUMBER
  *get,r7,rcon,rnum,const,7          ! r7 = VALUE OF 7th REAL CONSTANT IN REAL CONSTANT SET #rnum
  r7_new=epsr*r7                     ! MODIFIED VALUE TO SUBSTITUTE FOR ORIGINAL VALUE
  rmod,rnum,7,r7_new                 ! MODIFY THE 7th REAL OF REAL CONSTANT SET ID #rnum
+ 
+ *get,r5,rcon,rnum,const,5          ! r5 = VALUE OF 5th REAL CONSTANT IN REAL CONSTANT SET #rnum
+ r5_new=kn*r5                       ! MODIFIED VALUE TO SUBSTITUTE FOR ORIGINAL VALUE
+ rmod,rnum,5,r5_new                 ! MODIFY THE 5th REAL OF REAL CONSTANT SET ID #rnum
 *enddo
  
 

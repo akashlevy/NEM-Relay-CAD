@@ -1,0 +1,56 @@
+/COM,ANSYS RELEASE 2020 R1           BUILD 20.1      UP20191203       01:58:34
+
+ *** WARNING ***                         CP =      10.656   TIME= 01:58:51
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =      10.688   TIME= 01:58:51
+ Material number 3 (used by element 5461) should normally have at least  
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** WARNING ***                         CP =      12.031   TIME= 01:58:54
+ Pivoting has been activated for the Distributed Sparse Matrix Solver .  
+ The memory required may greatly exceed the predicted amount.  In that   
+ event, use the DSPOPTION command to change the memory mode and/or       
+ memory size used by the Distributed Sparse Matrix Solver.               
+
+ *** WARNING ***                         CP =      13.125   TIME= 01:58:58
+ A reference force value times the tolerance is used by the              
+ Newton-Raphson method for checking convergence.  The calculated         
+ reference FORCE CONVERGENCE VALUE = 1.244204977E-08 is less than a      
+ threshold.  This threshold defaults to 1.0 or is specified as MINREF    
+ on the CNVTOL command.  Check results carefully.                        
+
+ *** WARNING ***                         CP =     186.719   TIME= 02:02:06
+ Material number 3 (used by element 5461) should normally have at least  
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** WARNING ***                         CP =     188.234   TIME= 02:02:08
+ A reference force value times the tolerance is used by the              
+ Newton-Raphson method for checking convergence.  The calculated         
+ reference FORCE CONVERGENCE VALUE = 2.864321741E-05 is less than a      
+ threshold.  This threshold defaults to 1.0 or is specified as MINREF    
+ on the CNVTOL command.  Check results carefully.                        
+
+ *** WARNING ***                         CP =     188.922   TIME= 02:02:08
+ Material number 3 (used by element 5461) should normally have at least  
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** WARNING ***                         CP =     190.578   TIME= 02:02:10
+ A reference force value times the tolerance is used by the              
+ Newton-Raphson method for checking convergence.  The calculated         
+ reference FORCE CONVERGENCE VALUE = 2.811158859E-05 is less than a      
+ threshold.  This threshold defaults to 1.0 or is specified as MINREF    
+ on the CNVTOL command.  Check results carefully.                        
+
+ *** WARNING ***                         CP =     554.250   TIME= 02:11:01
+ During this session the elapsed time exceeds the CPU time by 36%.       
+ Often this indicates either a lack of physical memory (RAM) required    
+ to efficiently handle this simulation or it indicates a particularly    
+ slow hard drive configuration.  This simulation can be expected to run  
+ faster on identical hardware if additional RAM or a faster hard drive   
+ configuration is made available.  For more details, please see the      
+ ANSYS Performance Guide which is part of the ANSYS Help system.         
