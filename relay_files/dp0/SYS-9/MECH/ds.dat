@@ -5,7 +5,7 @@
 ! File used for geometry attach: C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\relay_files\dp0\SYS\DM\SYS.scdoc
 /title,relay--EM Transient Full (F5)
 *DIM,_wb_ProjectScratch_dir,string,248
-_wb_ProjectScratch_dir(1) = 'C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\_ProjectScratch\Scr679B\'
+_wb_ProjectScratch_dir(1) = 'C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\_ProjectScratch\Scr88FD\'
 *DIM,_wb_SolverFiles_dir,string,248
 _wb_SolverFiles_dir(1) = 'C:\Users\AkashLevy\Documents\GitHub\NEM-Relay-CAD\relay_files\dp0\SYS-9\MECH\'
 *DIM,_wb_userfiles_dir,string,248

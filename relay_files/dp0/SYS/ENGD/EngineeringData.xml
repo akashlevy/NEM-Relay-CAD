@@ -257,6 +257,9 @@
         </BulkDetails>
       </Material>
       <Metadata>
+        <ParameterDetails id="pa0">
+          <Name>Red</Name>
+        </ParameterDetails>
         <ParameterDetails id="pa1">
           <Name>Green</Name>
         </ParameterDetails>
@@ -277,6 +280,10 @@
           <Name>Temperature</Name>
           <Units name="Temperature" />
         </ParameterDetails>
+        <ParameterDetails id="pa7">
+          <Name>Young's Modulus</Name>
+          <Units name="Stress" />
+        </ParameterDetails>
         <ParameterDetails id="pa8">
           <Name>Poisson's Ratio</Name>
         </ParameterDetails>
@@ -291,13 +298,6 @@
         <ParameterDetails id="pa11">
           <Name>Resistivity</Name>
           <Units name="Electrical Resistivity" />
-        </ParameterDetails>
-        <ParameterDetails id="pa0">
-          <Name>Red</Name>
-        </ParameterDetails>
-        <ParameterDetails id="pa7">
-          <Name>Young's Modulus</Name>
-          <Units name="Stress" />
         </ParameterDetails>
         <PropertyDetails id="pr0">
           <Name>Color</Name>
@@ -318,15 +318,13 @@
     <Materials>
       <Material>
         <Name>Poly-SiGe</Name>
-        <DataTransferID>66d6f2b2-673a-4dbc-a150-4f46ddae2abc</DataTransferID>
-        <PreviousTransferIDs>
-        </PreviousTransferIDs>
+        <DataTransferID>b4f85a4f-f5b3-4d06-aedb-0f79513873dd</DataTransferID>
+        <PreviousTransferIDs>66d6f2b2-673a-4dbc-a150-4f46ddae2abc,,f0b4b3c0-ed4c-4070-9b03-2340b492d61d,,</PreviousTransferIDs>
       </Material>
       <Material>
         <Name>Tungsten</Name>
-        <DataTransferID>f98f1a3f-2637-427a-974f-59b58f103090</DataTransferID>
-        <PreviousTransferIDs>
-        </PreviousTransferIDs>
+        <DataTransferID>3a25439d-8a02-4612-94fa-aff7fa051351</DataTransferID>
+        <PreviousTransferIDs>f98f1a3f-2637-427a-974f-59b58f103090,,b4b63daf-4a4f-48d6-b919-c41548e851c1,,</PreviousTransferIDs>
       </Material>
     </Materials>
   </ANSYSWBTransferData>
