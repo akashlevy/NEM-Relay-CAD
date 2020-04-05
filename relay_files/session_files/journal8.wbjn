@@ -1,0 +1,160 @@
+# encoding: utf-8
+# 2020 R1
+SetScriptVersion(Version="20.1.164")
+template1 = GetTemplate(TemplateName="Mechanical Model")
+system1 = GetSystem(Name="SYS")
+system2 = template1.CreateSystem(
+    Position="Below",
+    RelativeTo=system1)
+engineeringData1 = system2.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+material1.Delete()
+matl1 = engineeringData1.CreateMaterial(Name="Poly-SiGe")
+favorites1 = EngData.LoadFavoriteItems()
+engineeringDataComponent1 = system2.GetComponent(Name="Engineering Data")
+engineeringDataComponent2 = system1.GetComponent(Name="Engineering Data")
+engineeringDataComponent1.ReplaceWithShare(
+    TargetSystem=system2,
+    ComponentToShare=engineeringDataComponent2,
+    SourceSystem=system1)
+engineeringDataComponent1.DeleteShare(System=system2)
+geometry1 = system2.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.Exit()
+engineeringDataComponent2.ReplaceWithShare(
+    TargetSystem=system1,
+    ComponentToShare=engineeringDataComponent1,
+    SourceSystem=system2)
+geometryComponent1 = system1.GetComponent(Name="Geometry")
+geometryComponent2 = system2.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system1,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system2)
+modelComponent1 = system2.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system2.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+model1.Exit()
+Refresh()
+model2 = system1.GetContainer(ComponentName="Model")
+model2.Edit()
+model1.Edit()
+template2 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system3 = template2.CreateSystem(
+    ComponentsToShare=[engineeringDataComponent1, geometryComponent2, modelComponent1],
+    Position="Below",
+    RelativeTo=system1)
+modelComponent2 = system1.GetComponent(Name="Model")
+modelComponent2.Reset()
+modelComponent2.Clean()
+modelComponent2.Refresh()
+model2.Edit()
+model2.Exit()
+system1.Delete()
+system4 = GetSystem(Name="SYS 3")
+system4.Delete()
+system5 = GetSystem(Name="SYS 1")
+system5.Delete()
+system6 = GetSystem(Name="SYS 6")
+system6.Delete()
+system7 = GetSystem(Name="SYS 2")
+system7.Delete()
+library1 = EngData.OpenLibrary(
+    Name="EngineeringData",
+    Source=ANSYS::Disk::C:\Users\Akash Levy\Documents\NEM-Relay-CAD\relay_files\dp0\SYS\ENGD\EngineeringData.xml)
+engineeringData2 = system2.GetContainer(ComponentName="Engineering Data")
+material2 = engineeringData2.GetMaterial(Name="Tungsten")
+material2.Unlink()
+template3 = GetTemplate(TemplateName="EngData")
+system8 = template3.CreateSystem(
+    Position="Below",
+    RelativeTo=system2)
+engineeringData3 = system8.GetContainer(ComponentName="Engineering Data")
+matl2 = engineeringData3.CreateMaterial(Name="Poly-SiGe")
+library2 = EngData.OpenLibrary(
+    Name="General Materials",
+    Source="General_Materials.xml")
+engineeringDataComponent3 = system8.GetComponent(Name="Engineering Data")
+engineeringDataComponent3.ReplaceWithShare(
+    TargetSystem=system8,
+    ComponentToShare=engineeringDataComponent1,
+    SourceSystem=system2)
+engineeringDataComponent3.DeleteShare(System=system8)
+EngData.EnableFilter(Enable=False)
+EngData.EnableFilter()
+engineeringData4 = system8.GetContainer(ComponentName="Engineering Data")
+material3 = engineeringData4.GetMaterial(Name="Tungsten")
+matlProp1 = material3.CreateProperty(
+    Name="Resistivity",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+matlProp1.SetData(
+    Index=-1,
+    Variables=["Resistivity"],
+    Values=[["5.6E-08 [ohm m]"]])
+library3 = EngData.OpenLibrary(
+    Name="Additive Manufacturing Materials",
+    Source="Additive_Manufacturing_Materials.xml")
+library4 = EngData.OpenLibrary(
+    Name="Granta Design Sample Materials",
+    Source="Granta_Design_Typical_Materials.xml")
+library5 = EngData.OpenLibrary(
+    Name="Fluid Materials",
+    Source="Fluid_Materials.xml")
+EngData.EnableFilter(Enable=False)
+matl3 = material3.Duplicate(TargetContainer=engineeringData4)
+library1.Close()
+material4 = engineeringData4.GetMaterial(Name="Poly-SiGe")
+material4.Unlink()
+matl3.Delete()
+matl4 = engineeringData4.CreateMaterial(Name="Castor Oil")
+matlProp2 = matl4.CreateProperty(
+    Name="Density",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp2.SetData(
+    Index=-1,
+    Variables=["Density"],
+    Values=[["961 [kg m^-3]"]])
+matlProp3 = matl4.CreateProperty(
+    Name="Viscosity",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp4 = matl4.CreateProperty(
+    Name="Viscosity",
+    Definition="Bulk",
+    Qualifiers={"Definition": "Bulk", "Behavior": ""})
+matlProp4.SetData(
+    SheetName="Viscosity",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=-1,
+    Variables=["Viscosity"],
+    Values=[["0.585 [Pa s]"]])
+matlProp5 = matl4.CreateProperty(
+    Name="Speed of Sound",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp5.SetData(
+    Index=-1,
+    Variables=["Speed of Sound"],
+    Values=[["1490 [m s^-1]"]])
+matlProp4.Delete(Definition="Bulk")
+matlProp5.SetData(
+    SheetName="Speed of Sound",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Variables=["Temperature"],
+    Values=[["25 [C]"]])
+Save(Overwrite=True)
+EngData.EnableFilter()
+EngData.EnableFilter(Enable=False)
+engineeringDataComponent3.ReplaceWithShare(
+    TargetSystem=system8,
+    ComponentToShare=engineeringDataComponent1,
+    SourceSystem=system2)
+model1.Exit()
+Save(Overwrite=True)

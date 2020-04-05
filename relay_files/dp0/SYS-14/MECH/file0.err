@@ -1,0 +1,40 @@
+/COM,ANSYS RELEASE 2020 R1           BUILD 20.1      UP20191203       11:32:57
+
+ *** WARNING ***                         CP =       9.625   TIME= 11:33:06
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       9.766   TIME= 11:33:07
+ Maximum contact stiffness 2.809944716E+20 is too big which can cause an 
+ accuracy problem, you may scale the force units in the model.           
+
+ *** WARNING ***                         CP =       9.766   TIME= 11:33:07
+ Minimum contact depth 2.443885472E-08 is too small which can cause an   
+ accuracy problem, you may scale the length units in the model.          
+
+ *** WARNING ***                         CP =      11.094   TIME= 11:33:12
+ Pivoting has been activated for the Distributed Sparse Matrix Solver .  
+ The memory required may greatly exceed the predicted amount.  In that   
+ event, use the DSPOPTION command to change the memory mode and/or       
+ memory size used by the Distributed Sparse Matrix Solver.               
+
+ *** WARNING ***                         CP =      12.156   TIME= 11:33:14
+ A reference force value times the tolerance is used by the              
+ Newton-Raphson method for checking convergence.  The calculated         
+ reference FORCE CONVERGENCE VALUE = 1.077068352E-08 is less than a      
+ threshold.  This threshold defaults to 1.0 or is specified as MINREF    
+ on the CNVTOL command.  Check results carefully.                        
+
+ *** WARNING ***                         CP =      88.766   TIME= 11:34:49
+ A reference force value times the tolerance is used by the              
+ Newton-Raphson method for checking convergence.  The calculated         
+ reference FORCE CONVERGENCE VALUE = 3.530577772E-07 is less than a      
+ threshold.  This threshold defaults to 1.0 or is specified as MINREF    
+ on the CNVTOL command.  Check results carefully.                        
+
+ *** WARNING ***                         CP =      94.984   TIME= 11:34:57
+ A reference force value times the tolerance is used by the              
+ Newton-Raphson method for checking convergence.  The calculated         
+ reference FORCE CONVERGENCE VALUE = 1.126071568E-06 is less than a      
+ threshold.  This threshold defaults to 1.0 or is specified as MINREF    
+ on the CNVTOL command.  Check results carefully.                        

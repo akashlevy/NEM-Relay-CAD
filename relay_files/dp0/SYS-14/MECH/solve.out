@@ -1,0 +1,3480 @@
+
+ ANSYS Mechanical Enterprise                       
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *            ANSYS 2020 R1          LEGAL NOTICES             *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2020 ANSYS, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of ANSYS, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the ANSYS, Inc. online documentation or the ANSYS, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * ANSYS, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * ANSYS, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the ANSYS, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the ANSYS, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ 2020 R1 
+     
+ Point Releases and Patches installed:   
+     
+ ANSYS, Inc. Products 2020 R1
+ SpaceClaim 2020 R1  
+ AIM 2020 R1 
+ Live (includes SpaceClaim) 2020 R1  
+ Autodyn 2020 R1 
+ LS-DYNA 2020 R1 
+ CFX (includes CFD-Post) 2020 R1 
+ Chemkin 2020 R1 
+ EnSight 2020 R1 
+ FENSAP-ICE 2020 R1  
+ Fluent (includes CFD-Post) 2020 R1  
+ Forte 2020 R1   
+ Polyflow (includes CFD-Post) 2020 R1
+ TurboGrid 2020 R1   
+ ICEM CFD 2020 R1
+ Aqwa 2020 R1
+ Customization Files for User Programmable Features 2020 R1  
+ Mechanical Products 2020 R1 
+ Additive 2020 R1
+ ANSYS Sherlock 2020 R1  
+ Icepak (includes CFD-Post) 2020 R1  
+ ACIS Geometry Interface 2020 R1 
+ AutoCAD Geometry Interface 2020 R1  
+ Catia, Version 4 Geometry Interface 2020 R1 
+ Catia, Version 5 Geometry Interface 2020 R1 
+ Catia, Version 6 Geometry Interface 2020 R1 
+ Creo Elements/Direct Modeling Geometry Interface 2020 R1
+ Creo Parametric Geometry Interface 2020 R1  
+ Inventor Geometry Interface 2020 R1 
+ JTOpen Geometry Interface 2020 R1   
+ NX Geometry Interface 2020 R1   
+ Parasolid Geometry Interface  2020 R1   
+ Solid Edge Geometry Interface 2020 R1   
+ SOLIDWORKS Geometry Interface 2020 R1   
+ ANSYS, Inc. License Manager 2020 R1 
+
+
+          *****  ANSYS COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = NOLIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  DISTRIBUTED MEMORY PARALLEL REQUESTED
+       2 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
+    TOTAL OF     2 CORES REQUESTED
+  INPUT FILE NAME              = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\_ProjectScratch\Scr7E87\dummy.dat
+  OUTPUT FILE NAME             = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\_ProjectScratch\Scr7E87\solve.out
+  START-UP FILE MODE           = NOREAD
+  STOP FILE MODE               = NOREAD
+
+ RELEASE= 2020 R1              BUILD= 20.1      UP20191203   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file0  11:32:59  APR 04, 2020 CP=      0.453
+
+
+ PARAMETER _DS_PROGRESS =     999.0000000    
+
+ /INPUT FILE= ds.dat  LINE=       0
+
+
+
+ *** NOTE ***                            CP =       0.641   TIME= 11:32:59
+ The /CONFIG,NOELDB command is not valid in a Distributed ANSYS          
+ solution.  Command is ignored.                                          
+
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  11.5497222    
+
+ TITLE= 
+ relay--Transient (E5)                                                         
+
+
+ SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\_ProjectScratch\Scr7E87\
+
+ SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_SOLVERFILES_DIR(1) = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\relay_files\dp0\SYS-14\MECH\
+
+ SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_USERFILES_DIR(1) = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\relay_files\user_files\
+ --- Data in consistent MKS units. See Solving Units in the help system for more
+
+ MKS UNITS SPECIFIED FOR INTERNAL    
+  LENGTH        (l)  = METER (M)
+  MASS          (M)  = KILOGRAM (KG)
+  TIME          (t)  = SECOND (SEC)
+  TEMPERATURE   (T)  = CELSIUS (C)
+  TOFFSET            = 273.0
+  CHARGE        (Q)  = COULOMB
+  FORCE         (f)  = NEWTON (N) (KG-M/SEC2)
+  HEAT               = JOULE (N-M)
+
+  PRESSURE           = PASCAL (NEWTON/M**2)
+  ENERGY        (W)  = JOULE (N-M)
+  POWER         (P)  = WATT (N-M/SEC)
+  CURRENT       (i)  = AMPERE (COULOMBS/SEC)
+  CAPACITANCE   (C)  = FARAD
+  INDUCTANCE    (L)  = HENRY
+  MAGNETIC FLUX      = WEBER
+  RESISTANCE    (R)  = OHM
+  ELECTRIC POTENTIAL = VOLT
+
+ INPUT  UNITS ARE ALSO SET TO MKS 
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
+ DISTRIBUTED ANSYS Mechanical Enterprise                       
+
+ 20120530  VERSION=WINDOWS x64   11:32:59  APR 04, 2020 CP=      0.641
+
+ relay--Transient (E5)                                                         
+
+
+
+          ***** ANSYS ANALYSIS DEFINITION (PREP7) *****
+ *********** Nodes for the whole assembly ***********
+ *********** Elements for Body 1 "Relay" ***********
+ *********** Elements for Body 2 "Contact 1" ***********
+ *********** Elements for Body 3 "Contact 2" ***********
+ *********** Elements for Body 4 "Contact 3" ***********
+ *********** Elements for Body 5 "Contact 4" ***********
+ *********** Elements for Body 6 "Contact 5" ***********
+ *********** Elements for Body 7 "Contact 6" ***********
+ *********** Elements for Body 8 "Contact 7" ***********
+ *********** Elements for Body 9 "Contact 8" ***********
+ *********** Send User Defined Coordinate System(s) ***********
+ *********** Set Reference Temperature ***********
+ *********** Send Materials ***********
+ *********** Create Contact "Contact Region 10" ***********
+             Real Constant Set For Above Contact Is 11 & 10
+ *********** Create Contact "Contact Region 11" ***********
+             Real Constant Set For Above Contact Is 13 & 12
+ *********** Create Contact "Contact Region 12" ***********
+             Real Constant Set For Above Contact Is 15 & 14
+ *********** Create Contact "Contact Region 13" ***********
+             Real Constant Set For Above Contact Is 17 & 16
+ *********** Create Contact "Contact Region 14" ***********
+             Real Constant Set For Above Contact Is 19 & 18
+ *********** Create Contact "Contact Region 15" ***********
+             Real Constant Set For Above Contact Is 21 & 20
+ *********** Create Contact "Contact Region 16" ***********
+             Real Constant Set For Above Contact Is 23 & 22
+ *********** Create Contact "Contact Region 17" ***********
+             Real Constant Set For Above Contact Is 25 & 24
+ *********** Fixed Supports ***********
+ *********** Create Structural MEMS Load ***********
+  
+ *** EMTGEN Command Macro
+  
+
+ *** NOTE *** Display device has not yet been specified with the /SHOW command.  Display commands ignored. 
+
+  LISTING OF THE DATA ON FILE _emtgen.out
+  
+  ____________________ EMTGEN MACRO SUMMARY ________________________
+  
+  Macro has generated successfully 1394 TRANS126 elements.
+  
+  Component of structural boundary nodes: _CMMEMS179 .
+  Component name of generated EMT elements = EMTELM .
+  Component name of generated EMT plane nodes = _CM179 .
+  Active structural DOF for TRANS126 elements = UZ .
+  Initial gap between I and J nodes of EMT element = -1.E-07 .
+  Minimal gap between I and J nodes = 4.E-08 .
+  Modulus of elasticity for EMT contact stiffness = 1.45E+09 .
+  Free-space permittivity value = 8.854E-12 .
+  EMT stiffness method = AUGM .
+  
+  ______________________________________________________________________
+
+
+ ***** ROUTINE COMPLETED *****  CP =         9.359
+
+
+ --- Number of total nodes = 11941
+ --- Number of contact elements = 1646
+ --- Number of spring elements = 0
+ --- Number of bearing elements = 0
+ --- Number of solid elements = 4450
+ --- Number of condensed parts = 0
+ --- Number of total elements = 7490
+
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  11.5516667    
+ ****************************************************************************
+ *************************    SOLUTION       ********************************
+ ****************************************************************************
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ PERFORM A TRANSIENT ANALYSIS
+  THIS WILL BE A NEW ANALYSIS
+
+ LARGE DEFORMATION ANALYSIS
+
+ STEP BOUNDARY CONDITION KEY= 1
+
+ PARAMETER _THICKRATIO =     0.000000000    
+
+ USE SPARSE MATRIX DIRECT SOLVER
+
+ CONTACT INFORMATION PRINTOUT LEVEL       1
+
+ DO NOT COMBINE ELEMENT MATRIX FILES (.emat) AFTER DISTRIBUTED PARALLEL SOLUTION
+
+ DO NOT COMBINE ELEMENT SAVE DATA FILES (.esav) AFTER DISTRIBUTED PARALLEL SOLUTION
+
+ PERFORM A FULL TRANSIENT ANALYSIS
+  USING HHT ALGORITHM
+
+ USE SETTINGS FOR IMPACT APPLICATIONS
+ SECOND ORDER TRANSIENT PARAMETERS
+   GAMMA=  0.000      (ALPHA= 0.2500      DELTA= 0.5000    )
+
+ USE DEFAULT FIRST ORDER TRANSIENT PARAMETER THETA= 0.5000    
+
+ USE DEFAULT FIRST ORDER OSCILLATION LIMIT OF  0.5000     FOR AUTO LOADING
+  WITH A TOLERANCE OF  0.2000    
+
+ NLDIAG: Nonlinear diagnostics CONT option is set to ON. 
+         Writing frequency : each ITERATION.
+
+ DEFINE RESTART CONTROL FOR LOADSTEP LAST
+ AT FREQUENCY OF LAST AND NUMBER FOR OVERWRITE IS   -1
+
+ DELETE RESTART FILES OF ENDSTEP
+ ****************************************************
+ ******************* SOLVE FOR LS 1 OF 3 ****************
+
+ PRINTOUT RESUMED BY /GOP
+
+ SPECIFIED CONSTRAINT VOLT FOR PICKED NODES 
+ REAL=_LOADVARI179   IMAG=  0.00000000    
+
+ SPECIFIED CONSTRAINT VOLT FOR PICKED NODES 
+ REAL=  0.00000000       IMAG=  0.00000000    
+
+ SPECIFIED CONSTRAINT UX   FOR PICKED NODES 
+ REAL=  0.00000000       IMAG=  0.00000000    
+
+ SPECIFIED CONSTRAINT UY   FOR PICKED NODES 
+ REAL=  0.00000000       IMAG=  0.00000000    
+
+ SPECIFIED CONSTRAINT UZ   FOR PICKED NODES 
+ REAL=  0.00000000       IMAG=  0.00000000    
+
+ ALL SELECT   FOR ITEM=NODE COMPONENT=    
+  IN RANGE         1 TO      11941 STEP          1
+
+      11941  NODES (OF      11941  DEFINED) SELECTED BY NSEL  COMMAND.
+
+ ALL SELECT   FOR ITEM=ELEM COMPONENT=    
+  IN RANGE         1 TO      10900 STEP          1
+
+       7490  ELEMENTS (OF       7490  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ USE AUTOMATIC TIME STEPPING THIS LOAD STEP
+
+ USE      20 SUBSTEPS INITIALLY THIS LOAD STEP FOR ALL  DEGREES OF FREEDOM
+ FOR AUTOMATIC TIME STEPPING:
+   USE    100 SUBSTEPS AS A MAXIMUM
+   USE     10 SUBSTEPS AS A MINIMUM
+
+ TIME= 0.15000E-06
+
+ INCLUDE TRANSIENT EFFECTS FOR  ALL DEGREES OF FREEDOM THIS LOAD STEP
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE RSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EANG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE ETMP ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE VENG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE STRS ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPEL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPPL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE CONT ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE V    ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE A    ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ PARAMETER ARG1 =     4.700000000    
+
+ PARAMETER ARG2 =    0.1000000000    
+
+ PARAMETER EPSR =     4.700000000    
+
+ PARAMETER KN =    0.1000000000    
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         9.375
+
+
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
+ DISTRIBUTED ANSYS Mechanical Enterprise                       
+
+ 20120530  VERSION=WINDOWS x64   11:33:06  APR 04, 2020 CP=      9.375
+
+                                                                               
+
+
+
+          ***** ANSYS ANALYSIS DEFINITION (PREP7) *****
+
+ SELECT       FOR ITEM=ENAM COMPONENT=    
+  IN RANGE       126 TO        126 STEP          1
+
+       1394  ELEMENTS (OF       7490  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ *GET  NELEMS    FROM  ELEM  ITEM=COUN           VALUE=  1394.00000    
+
+ PARAMETER ELM =     0.000000000    
+
+ *DO LOOP ON PARAMETER= I FROM  1.0000     TO  1394.0     BY  1.0000    
+
+ PARAMETER ELM =     9507.000000    
+
+ *GET  RNUM      FROM  ELEM      9507  ITEM=ATTR REAL      VALUE=  26.0000000    
+
+ *GET  R7        FROM  RCON     26  ITEM=CONS 7     VALUE= 0.430479885E-25
+
+ PARAMETER R7_NEW =    0.2023255458E-24
+
+ MODIFY REAL CONSTANTS FOR SET     26  STARTING WITH  7  NEW VALUES ARE
+
+   0.20233E-24   0.0000       0.0000       0.0000       0.0000       0.0000    
+
+ *GET  R5        FROM  RCON     26  ITEM=CONS 5     VALUE=  70.4987387    
+
+ PARAMETER R5_NEW =     7.049873873    
+
+ MODIFY REAL CONSTANTS FOR SET     26  STARTING WITH  5  NEW VALUES ARE
+
+    7.0499       0.0000      0.20233E-24   0.0000       0.0000       0.0000    
+
+ *ENDDO  INDEX= I                               
+
+
+ ***** ROUTINE COMPLETED *****  CP =         9.625
+
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ SELECT ALL ENTITIES OF TYPE= ALL  AND BELOW
+
+ *GET  ANSINTER_  FROM  ACTI  ITEM=INT        VALUE=  0.00000000    
+
+ *IF  ANSINTER_                         ( =   0.00000     )  NE  
+      0                                 ( =   0.00000     )  THEN    
+
+ *ENDIF
+
+ *** NOTE ***                            CP =       9.625   TIME= 11:33:06
+ The automatic domain decomposition logic has selected the MESH domain   
+ decomposition method with 2 processes per solution.                     
+
+ *****  ANSYS SOLVE    COMMAND  *****
+
+ *** NOTE ***                            CP =       9.625   TIME= 11:33:06
+ There is no title defined for this analysis.                            
+
+ *** WARNING ***                         CP =       9.625   TIME= 11:33:06
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** NOTE ***                            CP =       9.625   TIME= 11:33:06
+ The model data was checked and warning messages were found.             
+  Please review output or errors file ( C:\Users\Akash                   
+ Levy\Documents\NEM-Relay-CAD\_ProjectScratch\Scr7E87\file0.err ) for    
+ these warning messages.                                                 
+
+ *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
+      --- GIVE SUGGESTIONS AND RESET THE KEY OPTIONS ---
+
+ ELEMENT TYPE    1 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+ ELEMENT TYPE    2 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE    3 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE    4 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE    5 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE    6 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+ ELEMENT TYPE    7 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+ ELEMENT TYPE    8 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+ ELEMENT TYPE    9 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
+ DISTRIBUTED ANSYS Mechanical Enterprise                       
+
+ 20120530  VERSION=WINDOWS x64   11:33:06  APR 04, 2020 CP=      9.625
+
+                                                                               
+
+
+
+                       S O L U T I O N   O P T I O N S
+
+   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  
+   DEGREES OF FREEDOM. . . . . . UX   UY   UZ   VOLT
+   ANALYSIS TYPE . . . . . . . . . . . . . . . . .TRANSIENT            
+      SOLUTION METHOD. . . . . . . . . . . . . . .FULL                 
+   OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  273.15    
+   NONLINEAR GEOMETRIC EFFECTS . . . . . . . . . .ON
+   EQUATION SOLVER OPTION. . . . . . . . . . . . .SPARSE             
+   NEWTON-RAPHSON OPTION . . . . . . . . . . . . .PROGRAM CHOSEN   
+   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .UNSYMMETRIC
+
+ *** NOTE ***                            CP =       9.641   TIME= 11:33:06
+ The Solution Control Option is only valid for single field structural,  
+ single field thermal, single field diffusion, coupled                   
+ thermal-diffusion analyses and coupled-field analyses with structural   
+ degrees of freedom.  The SOLCONTROL,ON command (if present) has been    
+ de-activated.                                                           
+
+ *** NOTE ***                            CP =       9.641   TIME= 11:33:06
+ This nonlinear analysis defaults to using the full Newton-Raphson       
+ solution procedure.  This can be modified using the NROPT command.      
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 10 and contact element type 10 has been set up.  The       
+ companion pair has real constant set ID 11.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.24380E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.11895E-07
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.82910E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.16582E-06
+ Average contact pair depth                   0.11895E-06
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.59475E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Max.  Initial penetration 0 was detected between contact element 7921   
+ and target element 8024.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 11 and contact element type 10 has been set up.  The       
+ companion pair has real constant set ID 10.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.24380E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.24439E-08
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.31213E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.62426E-07
+ Average contact pair depth                   0.24439E-07
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.12219E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Max.  Initial penetration 0 was detected between contact element 7981   
+ and target element 7879.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 12 and contact element type 12 has been set up.  The       
+ companion pair has real constant set ID 13.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.26104E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.11109E-07
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.82189E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.16438E-06
+ Average contact pair depth                   0.11109E-06
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.55547E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Max.  Initial penetration 0 was detected between contact element 8118   
+ and target element 8220.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 13 and contact element type 12 has been set up.  The       
+ companion pair has real constant set ID 12.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.26104E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.24439E-08
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.31213E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.62426E-07
+ Average contact pair depth                   0.24439E-07
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.12219E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Max.  Initial penetration 0 was detected between contact element 8177   
+ and target element 8066.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 14 and contact element type 14 has been set up.  The       
+ companion pair has real constant set ID 15.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.23942E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.12112E-07
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.82639E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.16528E-06
+ Average contact pair depth                   0.12112E-06
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.60562E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Max.  Initial penetration 0 was detected between contact element 8315   
+ and target element 8445.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 15 and contact element type 14 has been set up.  The       
+ companion pair has real constant set ID 14.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.23942E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.26261E-08
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.31213E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.62426E-07
+ Average contact pair depth                   0.26261E-07
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.13130E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Max.  Initial penetration 0 was detected between contact element 8373   
+ and target element 8259.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 16 and contact element type 16 has been set up.  The       
+ companion pair has real constant set ID 17.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.23710E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.12231E-07
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.84863E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.16973E-06
+ Average contact pair depth                   0.12231E-06
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.61156E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Max.  Initial penetration 0 was detected between contact element 8508   
+ and target element 8609.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 17 and contact element type 16 has been set up.  The       
+ companion pair has real constant set ID 16.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.23710E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.26261E-08
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.31213E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.62426E-07
+ Average contact pair depth                   0.26261E-07
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.13130E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Max.  Initial penetration 0 was detected between contact element 8565   
+ and target element 8454.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 18 and contact element type 18 has been set up.  The       
+ companion pair has real constant set ID 19.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.28099E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.10320E-07
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.75699E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.15140E-06
+ Average contact pair depth                   0.10320E-06
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.51602E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Max.  Initial penetration 0 was detected between contact element 8702   
+ and target element 8830.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 19 and contact element type 18 has been set up.  The       
+ companion pair has real constant set ID 18.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.28099E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.26943E-08
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.37864E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.75727E-07
+ Average contact pair depth                   0.26943E-07
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.13471E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Max.  Initial penetration 0 was detected between contact element 8761   
+ and target element 8663.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 20 and contact element type 20 has been set up.  The       
+ companion pair has real constant set ID 21.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.25728E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.11272E-07
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.77586E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.15517E-06
+ Average contact pair depth                   0.11272E-06
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.56359E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Max.  Initial penetration 0 was detected between contact element 8919   
+ and target element 9048.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 21 and contact element type 20 has been set up.  The       
+ companion pair has real constant set ID 20.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.25728E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.26962E-08
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.37034E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.74068E-07
+ Average contact pair depth                   0.26962E-07
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.13481E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Max.  Initial penetration 0 was detected between contact element 8971   
+ and target element 8869.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 22 and contact element type 22 has been set up.  The       
+ companion pair has real constant set ID 23.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.26268E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.11040E-07
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.82214E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.16443E-06
+ Average contact pair depth                   0.11040E-06
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.55199E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Max.  Initial penetration 0 was detected between contact element 9126   
+ and target element 9260.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 23 and contact element type 22 has been set up.  The       
+ companion pair has real constant set ID 22.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.26268E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.26111E-08
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.36457E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.72915E-07
+ Average contact pair depth                   0.26111E-07
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.13056E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Max.  Initial penetration 0 was detected between contact element 9173   
+ and target element 9120.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 24 and contact element type 24 has been set up.  The       
+ companion pair has real constant set ID 25.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.27861E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.10409E-07
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.76866E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.15373E-06
+ Average contact pair depth                   0.10409E-06
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.52044E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Max.  Initial penetration 0 was detected between contact element 9341   
+ and target element 9486.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 25 and contact element type 24 has been set up.  The       
+ companion pair has real constant set ID 24.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Default contact stiffness factor FKN          1.0000    
+ The resulting initial contact stiffness      0.27861E+20
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.25938E-08
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.37214E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.74428E-07
+ Average contact pair depth                   0.25938E-07
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.12969E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.766   TIME= 11:33:07
+ Max.  Initial penetration 0 was detected between contact element 9399   
+ and target element 9300.                                                
+ ****************************************
+  
+
+ *** WARNING ***                         CP =       9.766   TIME= 11:33:07
+ Maximum contact stiffness 2.809944716E+20 is too big which can cause an 
+ accuracy problem, you may scale the force units in the model.           
+
+ *** WARNING ***                         CP =       9.766   TIME= 11:33:07
+ Minimum contact depth 2.443885472E-08 is too small which can cause an   
+ accuracy problem, you may scale the length units in the model.          
+  
+  
+
+  
+  
+     D I S T R I B U T E D   D O M A I N   D E C O M P O S E R
+  
+  ...Number of elements: 7490
+  ...Number of nodes:    11941
+  ...Decompose to 2 CPU domains
+  ...Element load balance ratio =     1.208
+
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
+   TIME AT END OF THE LOAD STEP. . . . . . . . . . 0.15000E-06
+   AUTOMATIC TIME STEPPING . . . . . . . . . . . .    ON
+      INITIAL NUMBER OF SUBSTEPS . . . . . . . . .    20
+      MAXIMUM NUMBER OF SUBSTEPS . . . . . . . . .   100
+      MINIMUM NUMBER OF SUBSTEPS . . . . . . . . .    10
+   MAXIMUM NUMBER OF EQUILIBRIUM ITERATIONS. . . .    25
+   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .   YES
+   TRANSIENT (INERTIA) EFFECTS
+      STRUCTURAL DOFS. . . . . . . . . . . . . . .    ON
+      ELECTRIC DOFS. . . . . . . . . . . . . . . .    ON
+   TRANSIENT INTEGRATION PARAMETERS
+      GAMMA. . . . . . . . . . . . . . . . . . . .  0.0000    
+      ALPHA. . . . . . . . . . . . . . . . . . . . 0.25000    
+      DELTA. . . . . . . . . . . . . . . . . . . . 0.50000    
+      USING HHT TIME INTEGRATION
+      ALPHAF . . . . . . . . . . . . . . . . . . .  0.0000    
+      ALPHAM . . . . . . . . . . . . . . . . . . .  0.0000    
+      THETA. . . . . . . . . . . . . . . . . . . . 0.50000    
+      OSCILLATION LIMIT CRITERION. . . . . . . . . 0.50000    
+      TOLERANCE. . . . . . . . . . . . . . . . . . 0.20000    
+   TERMINATE ANALYSIS IF NOT CONVERGED . . . . . .YES (EXIT)  
+   CONVERGENCE CONTROLS. . . . . . . . . . . . . .USE DEFAULTS
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+      NSOL        ALL               
+      RSOL        ALL               
+      EANG        ALL               
+      ETMP        ALL               
+      VENG        ALL               
+      STRS        ALL               
+      EPEL        ALL               
+      EPPL        ALL               
+      CONT        ALL               
+      V           ALL               
+      A           ALL               
+
+
+ *** NOTE ***                            CP =       9.938   TIME= 11:33:08
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 12 and contact element type 12 has been set up.  The       
+ companion pair has real constant set ID 13.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.26104E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.11109E-07
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.82189E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.16438E-06
+ Average contact pair depth                   0.11109E-06
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.55547E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.938   TIME= 11:33:08
+ Max.  Initial penetration 0 was detected between contact element 8118   
+ and target element 8220.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.938   TIME= 11:33:08
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 13 and contact element type 12 has been set up.  The       
+ companion pair has real constant set ID 12.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.26104E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.24439E-08
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.31213E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.62426E-07
+ Average contact pair depth                   0.24439E-07
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.12219E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.938   TIME= 11:33:08
+ Max.  Initial penetration 0 was detected between contact element 8177   
+ and target element 8066.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.938   TIME= 11:33:08
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 14 and contact element type 14 has been set up.  The       
+ companion pair has real constant set ID 15.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.23942E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.12112E-07
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.82639E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.16528E-06
+ Average contact pair depth                   0.12112E-06
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.60562E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.938   TIME= 11:33:08
+ Max.  Initial penetration 0 was detected between contact element 8315   
+ and target element 8445.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.938   TIME= 11:33:08
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 15 and contact element type 14 has been set up.  The       
+ companion pair has real constant set ID 14.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.23942E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.26261E-08
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.31213E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.62426E-07
+ Average contact pair depth                   0.26261E-07
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.13130E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.938   TIME= 11:33:08
+ Max.  Initial penetration 0 was detected between contact element 8373   
+ and target element 8259.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.938   TIME= 11:33:08
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 18 and contact element type 18 has been set up.  The       
+ companion pair has real constant set ID 19.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.28099E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.10320E-07
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.75699E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.15140E-06
+ Average contact pair depth                   0.10320E-06
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.51602E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.938   TIME= 11:33:08
+ Max.  Initial penetration 0 was detected between contact element 8702   
+ and target element 8830.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.938   TIME= 11:33:08
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 19 and contact element type 18 has been set up.  The       
+ companion pair has real constant set ID 18.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.28099E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.26943E-08
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.37864E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.75727E-07
+ Average contact pair depth                   0.26943E-07
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.13471E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.938   TIME= 11:33:08
+ Max.  Initial penetration 0 was detected between contact element 8761   
+ and target element 8663.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.938   TIME= 11:33:08
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 22 and contact element type 22 has been set up.  The       
+ companion pair has real constant set ID 23.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.26268E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.11040E-07
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.82214E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.16443E-06
+ Average contact pair depth                   0.11040E-06
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.55199E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.938   TIME= 11:33:08
+ Max.  Initial penetration 0 was detected between contact element 9126   
+ and target element 9260.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       9.938   TIME= 11:33:08
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 23 and contact element type 22 has been set up.  The       
+ companion pair has real constant set ID 22.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.26268E+21
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.26111E-08
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.36457E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.72915E-07
+ Average contact pair depth                   0.26111E-07
+ Default pinball region factor PINB           0.50000    
+ The resulting pinball region                 0.13056E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       9.938   TIME= 11:33:08
+ Max.  Initial penetration 0 was detected between contact element 9173   
+ and target element 9120.                                                
+ ****************************************
+  
+
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          12
+
+ *** NOTE ***                            CP =      10.594   TIME= 11:33:11
+ Contact pair is inactive.                                               
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          13
+ Max.  Penetration of 0 has been detected between contact element 8177   
+ and target element 8066.                                                
+ For total 39 contact elements, there are 39 elements are in contact.    
+ There are 39 elements are in sticking.                                  
+ Contacting area 1.18E-13.                                               
+ Max.  Pinball distance 1.221942736E-08.                                 
+ One of the contact searching regions contains at least 12 target        
+ elements.                                                               
+ Max.  Pressure/force 1.447354499E-03.                                   
+ Max.  Normal stiffness 2.610423226E+19.                                 
+ Min.  Normal stiffness 2.610423226E+19.                                 
+ Max.  Tangential stiffness 1.957817419E+18.                             
+ Min.  Tangential stiffness 1.957817419E+18.                             
+ *************************************************
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          14
+
+ *** NOTE ***                            CP =      10.594   TIME= 11:33:11
+ Contact pair is inactive.                                               
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          15
+ Max.  Penetration of 0 has been detected between contact element 8373   
+ and target element 8259.                                                
+ For total 39 contact elements, there are 39 elements are in contact.    
+ There are 39 elements are in sticking.                                  
+ Contacting area 1.18E-13.                                               
+ Max.  Pinball distance 1.3130476E-08.                                   
+ One of the contact searching regions contains at least 12 target        
+ elements.                                                               
+ Max.  Pressure/force 1.327487618E-03.                                   
+ Max.  Normal stiffness 2.39423342E+19.                                  
+ Min.  Normal stiffness 2.39423342E+19.                                  
+ Max.  Tangential stiffness 1.795675065E+18.                             
+ Min.  Tangential stiffness 1.795675065E+18.                             
+ *************************************************
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          18
+
+ *** NOTE ***                            CP =      10.594   TIME= 11:33:11
+ Contact pair is inactive.                                               
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          19
+ Max.  Penetration of 0 has been detected between contact element 8761   
+ and target element 8663.                                                
+ For total 52 contact elements, there are 52 elements are in contact.    
+ There are 52 elements are in sticking.                                  
+ Contacting area 1.21748E-13.                                            
+ Max.  Pinball distance 1.347137224E-08.                                 
+ One of the contact searching regions contains at least 10 target        
+ elements.                                                               
+ Max.  Pressure/force 1.889949392E-03.                                   
+ Max.  Normal stiffness 2.809944716E+19.                                 
+ Min.  Normal stiffness 2.809944716E+19.                                 
+ Max.  Tangential stiffness 2.107458537E+18.                             
+ Min.  Tangential stiffness 2.107458537E+18.                             
+ *************************************************
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          22
+
+ *** NOTE ***                            CP =      10.594   TIME= 11:33:11
+ Contact pair is inactive.                                               
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          23
+ Max.  Penetration of 0 has been detected between contact element 9173   
+ and target element 9120.                                                
+ For total 54 contact elements, there are 54 elements are in contact.    
+ There are 54 elements are in sticking.                                  
+ Contacting area 1.21748E-13.                                            
+ Max.  Pinball distance 1.305572935E-08.                                 
+ One of the contact searching regions contains at least 11 target        
+ elements.                                                               
+ Max.  Pressure/force 1.701180123E-03.                                   
+ Max.  Normal stiffness 2.626848939E+19.                                 
+ Min.  Normal stiffness 2.626848939E+19.                                 
+ Max.  Tangential stiffness 1.970136704E+18.                             
+ Min.  Tangential stiffness 1.970136704E+18.                             
+ *************************************************
+
+
+                         ***********  PRECISE MASS SUMMARY  ***********
+
+   TOTAL RIGID BODY MASS MATRIX ABOUT ORIGIN
+               Translational mass               |   Coupled translational/rotational mass
+        0.11535E-13    0.0000        0.0000     |     0.0000       0.10411E-20   0.75232E-36
+         0.0000       0.11535E-13    0.0000     |   -0.10411E-20    0.0000       0.18808E-36
+         0.0000        0.0000       0.11535E-13 |   -0.75232E-36   0.18808E-36    0.0000    
+     ------------------------------------------ | ------------------------------------------
+                                                |         Rotational mass (inertia)
+                                                |    0.16400E-25   0.35807E-32  -0.24999E-40
+                                                |    0.35807E-32   0.16400E-25  -0.16237E-39
+                                                |   -0.25022E-40  -0.16228E-39   0.32514E-25
+
+   TOTAL MASS = 0.11535E-13
+     The mass principal axes coincide with the global Cartesian axes
+
+   CENTER OF MASS (X,Y,Z)=   0.16305E-22  -0.65221E-22   0.90252E-07
+
+   TOTAL INERTIA ABOUT CENTER OF MASS
+        0.16306E-25   0.35807E-32  -0.24982E-40
+        0.35807E-32   0.16306E-25  -0.16244E-39
+       -0.24982E-40  -0.16244E-39   0.32514E-25
+     The inertia principal axes coincide with the global Cartesian axes
+
+
+  *** MASS SUMMARY BY ELEMENT TYPE ***
+
+  TYPE      MASS
+     1  0.109177E-13
+     2  0.764280E-16
+     3  0.764280E-16
+     4  0.764280E-16
+     5  0.764280E-16
+     6  0.778747E-16
+     7  0.778747E-16
+     8  0.778747E-16
+     9  0.778747E-16
+
+ Range of element maximum matrix coefficients in global coordinates
+ Maximum = 187899.816 at element 3541.                                   
+ Minimum = 665.080115 at element 9447.                                   
+
+   *** ELEMENT MATRIX FORMULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1      3308  SOLID187      0.609   0.000184
+        2        54  SOLID186      0.016   0.000289
+        3        54  SOLID186      0.031   0.000579
+        4        48  SOLID186      0.000   0.000000
+        5        48  SOLID186      0.016   0.000326
+        6       223  SOLID187      0.000   0.000000
+        7       230  SOLID187      0.000   0.000000
+        8       242  SOLID187      0.047   0.000194
+        9       243  SOLID187      0.062   0.000257
+       10        99  CONTA174      0.000   0.000000
+       11        99  TARGE170      0.000   0.000000
+       12        98  CONTA174      0.031   0.000319
+       13        98  TARGE170      0.000   0.000000
+       14        98  CONTA174      0.016   0.000159
+       15        98  TARGE170      0.000   0.000000
+       16        96  CONTA174      0.016   0.000163
+       17        96  TARGE170      0.000   0.000000
+       18       111  CONTA174      0.047   0.000422
+       19       111  TARGE170      0.000   0.000000
+       20       107  CONTA174      0.016   0.000146
+       21       107  TARGE170      0.000   0.000000
+       22       101  CONTA174      0.000   0.000000
+       23       101  TARGE170      0.000   0.000000
+       24       113  CONTA174      0.016   0.000138
+       25       113  TARGE170      0.000   0.000000
+       26      1394  TRANS126      0.047   0.000034
+ Time at end of element matrix formulation CP = 10.59375.                
+
+ ALL CURRENT ANSYS DATA WRITTEN TO FILE NAME= file.rdb
+  FOR POSSIBLE RESUME FROM THIS POINT
+     FORCE CONVERGENCE VALUE  =  0.1215E-15  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=   0.000    
+
+ DISTRIBUTED SPARSE MATRIX DIRECT SOLVER.
+  Number of equations =       31389,    Maximum wavefront =    640
+
+  Local memory allocated for solver              =    115.115 MB
+  Local memory required for in-core solution     =     95.089 MB
+  Local memory required for out-of-core solution =     44.263 MB
+
+  Total memory allocated for solver              =    230.843 MB
+  Total memory required for in-core solution     =    190.897 MB
+  Total memory required for out-of-core solution =     88.241 MB
+
+ *** NOTE ***                            CP =      11.094   TIME= 11:33:12
+ The Distributed Sparse Matrix Solver is currently running in the        
+ in-core memory mode.  This memory mode uses the most amount of memory   
+ in order to avoid using the hard drive as much as possible, which most  
+ often results in the fastest solution time.  This mode is recommended   
+ if enough physical memory is present to accommodate all of the solver   
+ data.                                                                   
+
+ *** WARNING ***                         CP =      11.094   TIME= 11:33:12
+ Pivoting has been activated for the Distributed Sparse Matrix Solver .  
+ The memory required may greatly exceed the predicted amount.  In that   
+ event, use the DSPOPTION command to change the memory mode and/or       
+ memory size used by the Distributed Sparse Matrix Solver.               
+
+ *** NOTE ***                            CP =      11.094   TIME= 11:33:12
+ The system matrix is unsymmetric.                                       
+ curEqn=  15702  totEqn=  15702 Job CP sec=     11.719
+      Factor Done=  99% Factor Wall sec=      0.497 rate=    4215.9 Mflops
+ Distributed sparse solver maximum pivot= 229626.7 at node 8716 UZ.      
+ Distributed sparse solver minimum pivot= 123.288035 at node 374 UZ.     
+ Distributed sparse solver minimum pivot in absolute value= 123.288035   
+ at node 374 UZ.                                                         
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=   4.000    
+     FORCE CONVERGENCE VALUE  =  0.1077E-07  CRITERION=  0.1000E-02 <<< CONVERGED
+
+ *** WARNING ***                         CP =      12.156   TIME= 11:33:14
+ A reference force value times the tolerance is used by the              
+ Newton-Raphson method for checking convergence.  The calculated         
+ reference FORCE CONVERGENCE VALUE = 1.077068352E-08 is less than a      
+ threshold.  This threshold defaults to 1.0 or is specified as MINREF    
+ on the CNVTOL command.  Check results carefully.                        
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4685E-24 <<< CONVERGED
+     FORCE CONVERGENCE VALUE  =  0.1077E-07  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4685E-24 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   2
+     FORCE CONVERGENCE VALUE  =  0.1077E-07  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4685E-24 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   2
+
+   *** ELEMENT RESULT CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1      3308  SOLID187      0.531   0.000161
+        2        54  SOLID186      0.000   0.000000
+        3        54  SOLID186      0.016   0.000289
+        4        48  SOLID186      0.031   0.000651
+        5        48  SOLID186      0.031   0.000651
+        6       223  SOLID187      0.062   0.000280
+        7       230  SOLID187      0.016   0.000068
+        8       242  SOLID187      0.047   0.000194
+        9       243  SOLID187      0.016   0.000064
+       10        99  CONTA174      0.000   0.000000
+       12        98  CONTA174      0.016   0.000159
+       14        98  CONTA174      0.016   0.000159
+       16        96  CONTA174      0.000   0.000000
+       18       111  CONTA174      0.016   0.000141
+       20       107  CONTA174      0.031   0.000292
+       22       101  CONTA174      0.000   0.000000
+       24       113  CONTA174      0.016   0.000138
+       26      1394  TRANS126      0.016   0.000011
+
+   *** NODAL LOAD CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1      3308  SOLID187      0.125   0.000038
+        2        54  SOLID186      0.000   0.000000
+        3        54  SOLID186      0.016   0.000289
+        4        48  SOLID186      0.000   0.000000
+        5        48  SOLID186      0.000   0.000000
+        6       223  SOLID187      0.000   0.000000
+        7       230  SOLID187      0.000   0.000000
+        8       242  SOLID187      0.000   0.000000
+        9       243  SOLID187      0.016   0.000064
+       10        99  CONTA174      0.000   0.000000
+       12        98  CONTA174      0.000   0.000000
+       14        98  CONTA174      0.000   0.000000
+       16        96  CONTA174      0.000   0.000000
+       18       111  CONTA174      0.000   0.000000
+       20       107  CONTA174      0.000   0.000000
+       22       101  CONTA174      0.000   0.000000
+       24       113  CONTA174      0.000   0.000000
+       26      1394  TRANS126      0.000   0.000000
+ *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      2
+ *** TIME =  0.750000E-08     TIME INC =  0.750000E-08
+ *** RESPONSE FREQ = 0.8754E+14   PERIOD=  0.1142E-13  PTS/CYC = 0.15E-05
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.37500E-08  DECREASED (FACTOR = 0.5000)
+
+     FORCE CONVERGENCE VALUE  =  0.1077E-07  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4685E-24
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.1276E-09
+     FORCE CONVERGENCE VALUE  =  0.1474E-09  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4796E-12 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP     2  COMPLETED.    CUM ITER =      3
+ *** TIME =  0.112500E-07     TIME INC =  0.375000E-08
+ *** RESPONSE FREQ = 0.1382E+08   PERIOD=  0.7237E-07  PTS/CYC =  19.    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.36184E-08  DECREASED (FACTOR = 0.9649)
+
+     FORCE CONVERGENCE VALUE  =  0.3191E-07  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4796E-12
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.4613E-09
+     FORCE CONVERGENCE VALUE  =  0.1358E-08  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1384E-11 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP     3  COMPLETED.    CUM ITER =      4
+ *** TIME =  0.148684E-07     TIME INC =  0.361845E-08
+ *** RESPONSE FREQ = 0.8793E+07   PERIOD=  0.1137E-06  PTS/CYC =  31.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.36184E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.6470E-07  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1384E-11
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.8729E-09
+     FORCE CONVERGENCE VALUE  =  0.5070E-08  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2295E-11 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP     4  COMPLETED.    CUM ITER =      5
+ *** TIME =  0.184869E-07     TIME INC =  0.361845E-08
+ *** RESPONSE FREQ = 0.6725E+07   PERIOD=  0.1487E-06  PTS/CYC =  41.    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.54277E-08  INCREASED (FACTOR = 1.5000)
+
+     FORCE CONVERGENCE VALUE  =  0.7028E-07  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2295E-11
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.2095E-08
+     FORCE CONVERGENCE VALUE  =  0.2868E-07  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3672E-11 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP     5  COMPLETED.    CUM ITER =      6
+ *** TIME =  0.239146E-07     TIME INC =  0.542767E-08
+ *** RESPONSE FREQ = 0.6781E+07   PERIOD=  0.1475E-06  PTS/CYC =  27.    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.73734E-08  INCREASED (FACTOR = 1.3585)
+
+     FORCE CONVERGENCE VALUE  =  0.7782E-07  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3672E-11
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.4000E-08
+     FORCE CONVERGENCE VALUE  =  0.1058E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5544E-11 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP     6  COMPLETED.    CUM ITER =      7
+ *** TIME =  0.312879E-07     TIME INC =  0.737335E-08
+ *** RESPONSE FREQ = 0.6481E+07   PERIOD=  0.1543E-06  PTS/CYC =  21.    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.77148E-08  INCREASED (FACTOR = 1.0463)
+
+     FORCE CONVERGENCE VALUE  =  0.1389E-06  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5544E-11
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.5375E-08
+     FORCE CONVERGENCE VALUE  =  0.1906E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.7462E-11 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP     7  COMPLETED.    CUM ITER =      8
+ *** TIME =  0.390027E-07     TIME INC =  0.771477E-08
+ *** RESPONSE FREQ = 0.6142E+07   PERIOD=  0.1628E-06  PTS/CYC =  21.    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.81413E-08  INCREASED (FACTOR = 1.0553)
+
+     FORCE CONVERGENCE VALUE  =  0.2140E-06  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.7462E-11
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.6461E-08
+     FORCE CONVERGENCE VALUE  =  0.2749E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.9355E-11 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP     8  COMPLETED.    CUM ITER =      9
+ *** TIME =  0.471439E-07     TIME INC =  0.814126E-08
+ *** RESPONSE FREQ = 0.5623E+07   PERIOD=  0.1778E-06  PTS/CYC =  22.    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.88915E-08  INCREASED (FACTOR = 1.0921)
+
+     FORCE CONVERGENCE VALUE  =  0.2892E-06  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.9355E-11
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.7206E-08
+     FORCE CONVERGENCE VALUE  =  0.3427E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1111E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP     9  COMPLETED.    CUM ITER =     10
+ *** TIME =  0.560354E-07     TIME INC =  0.889147E-08
+ *** RESPONSE FREQ = 0.4649E+07   PERIOD=  0.2151E-06  PTS/CYC =  24.    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.10754E-07  INCREASED (FACTOR = 1.2095)
+
+     FORCE CONVERGENCE VALUE  =  0.3501E-06  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1111E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.8259E-08
+     FORCE CONVERGENCE VALUE  =  0.4485E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1248E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    10  COMPLETED.    CUM ITER =     11
+ *** TIME =  0.667896E-07     TIME INC =  0.107542E-07
+ *** RESPONSE FREQ = 0.2087E+07   PERIOD=  0.4791E-06  PTS/CYC =  45.    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.15000E-07  INCREASED (FACTOR = 1.3948)
+
+     FORCE CONVERGENCE VALUE  =  0.4505E-06  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1248E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.9670E-08
+     FORCE CONVERGENCE VALUE  =  0.6160E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1351E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    11  COMPLETED.    CUM ITER =     12
+ *** TIME =  0.817896E-07     TIME INC =  0.150000E-07
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.15000E-07  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.6169E-06  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1351E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.8367E-08
+     FORCE CONVERGENCE VALUE  =  0.4599E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1784E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    12  COMPLETED.    CUM ITER =     13
+ *** TIME =  0.967896E-07     TIME INC =  0.150000E-07
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.15000E-07  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.4617E-06  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1784E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.1186E-07
+     FORCE CONVERGENCE VALUE  =  0.1963E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=   0.000     <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    13  COMPLETED.    CUM ITER =     14
+ *** TIME =  0.111790E-06     TIME INC =  0.150000E-07
+ *** RESPONSE FREQ = 0.1916E+09   PERIOD=  0.5220E-08  PTS/CYC = 0.35    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.75000E-08  DECREASED (FACTOR = 0.5000)
+
+     FORCE CONVERGENCE VALUE  =  0.1951E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=   0.000    
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.3328E-08
+     FORCE CONVERGENCE VALUE  =  0.1539E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=   0.000     <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    14  COMPLETED.    CUM ITER =     15
+ *** TIME =  0.119290E-06     TIME INC =  0.750000E-08
+ *** RESPONSE FREQ = 0.1985E+09   PERIOD=  0.5037E-08  PTS/CYC = 0.67    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.37500E-08  DECREASED (FACTOR = 0.5000)
+
+     FORCE CONVERGENCE VALUE  =  0.8712E-06  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=   0.000    
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.3968E-08
+     FORCE CONVERGENCE VALUE  =  0.7711E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3295E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    15  COMPLETED.    CUM ITER =     16
+ *** TIME =  0.123040E-06     TIME INC =  0.375000E-08
+ *** RESPONSE FREQ = 0.3311E+08   PERIOD=  0.3021E-07  PTS/CYC =  8.1    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.18750E-08  DECREASED (FACTOR = 0.5000)
+
+     FORCE CONVERGENCE VALUE  =  0.1474E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3295E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.3812E-08
+     FORCE CONVERGENCE VALUE  =  0.9344E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=   0.000     <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    16  COMPLETED.    CUM ITER =     17
+ *** TIME =  0.124915E-06     TIME INC =  0.187500E-08
+ *** RESPONSE FREQ = 0.2007E+09   PERIOD=  0.4981E-08  PTS/CYC =  2.7    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.15000E-08  DECREASED (FACTOR = 0.8000)
+
+     FORCE CONVERGENCE VALUE  =  0.1825E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=   0.000    
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.3211E-08
+     FORCE CONVERGENCE VALUE  =  0.3186E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=   0.000     <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    17  COMPLETED.    CUM ITER =     18
+ *** TIME =  0.126415E-06     TIME INC =  0.150000E-08
+ *** RESPONSE FREQ = 0.1731E+09   PERIOD=  0.5776E-08  PTS/CYC =  3.9    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.15000E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2736E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=   0.000    
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.4842E-08
+     FORCE CONVERGENCE VALUE  =  0.1295E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1562E-09 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    18  COMPLETED.    CUM ITER =     19
+ *** TIME =  0.127915E-06     TIME INC =  0.150000E-08
+ *** RESPONSE FREQ = 0.6412E+08   PERIOD=  0.1560E-07  PTS/CYC =  10.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.15000E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2381E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1562E-09
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.6241E-08
+     FORCE CONVERGENCE VALUE  =  0.1027E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.9027E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    19  COMPLETED.    CUM ITER =     20
+ *** TIME =  0.129415E-06     TIME INC =  0.150000E-08
+ *** RESPONSE FREQ = 0.4089E+08   PERIOD=  0.2445E-07  PTS/CYC =  16.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.15000E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1695E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.9027E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.3756E-08
+     FORCE CONVERGENCE VALUE  =  0.1823E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.7078E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    20  COMPLETED.    CUM ITER =     21
+ *** TIME =  0.130915E-06     TIME INC =  0.150000E-08
+ *** RESPONSE FREQ = 0.1428E+08   PERIOD=  0.7005E-07  PTS/CYC =  47.    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.22500E-08  INCREASED (FACTOR = 1.5000)
+
+     FORCE CONVERGENCE VALUE  =  0.1650E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.7078E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.9208E-08
+     FORCE CONVERGENCE VALUE  =  0.1699E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6212E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    21  COMPLETED.    CUM ITER =     22
+ *** TIME =  0.133165E-06     TIME INC =  0.225000E-08
+ *** RESPONSE FREQ = 0.5512E+08   PERIOD=  0.1814E-07  PTS/CYC =  8.1    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.15000E-08  DECREASED (FACTOR = 0.6667)
+
+     FORCE CONVERGENCE VALUE  =  0.2842E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6212E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.8162E-08
+     FORCE CONVERGENCE VALUE  =  0.1946E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4568E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    22  COMPLETED.    CUM ITER =     23
+ *** TIME =  0.134665E-06     TIME INC =  0.150000E-08
+ *** RESPONSE FREQ = 0.5663E+08   PERIOD=  0.1766E-07  PTS/CYC =  12.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.15000E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2652E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4568E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.6387E-08
+     FORCE CONVERGENCE VALUE  =  0.1188E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4592E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    23  COMPLETED.    CUM ITER =     24
+ *** TIME =  0.136165E-06     TIME INC =  0.150000E-08
+ *** RESPONSE FREQ = 0.5176E+08   PERIOD=  0.1932E-07  PTS/CYC =  13.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.15000E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1923E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4592E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.3906E-08
+     FORCE CONVERGENCE VALUE  =  0.7213E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4913E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    24  COMPLETED.    CUM ITER =     25
+ *** TIME =  0.137665E-06     TIME INC =  0.150000E-08
+ *** RESPONSE FREQ = 0.3872E+08   PERIOD=  0.2582E-07  PTS/CYC =  17.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.15000E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1940E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4913E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.4594E-08
+     FORCE CONVERGENCE VALUE  =  0.1443E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4026E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    25  COMPLETED.    CUM ITER =     26
+ *** TIME =  0.139165E-06     TIME INC =  0.150000E-08
+ *** RESPONSE FREQ = 0.5982E+08   PERIOD=  0.1672E-07  PTS/CYC =  11.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.15000E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2077E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4026E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.6110E-08
+     FORCE CONVERGENCE VALUE  =  0.1104E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3176E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    26  COMPLETED.    CUM ITER =     27
+ *** TIME =  0.140665E-06     TIME INC =  0.150000E-08
+ *** RESPONSE FREQ = 0.6292E+08   PERIOD=  0.1589E-07  PTS/CYC =  11.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.15000E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1665E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3176E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.4495E-08
+     FORCE CONVERGENCE VALUE  =  0.2004E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3474E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    27  COMPLETED.    CUM ITER =     28
+ *** TIME =  0.142165E-06     TIME INC =  0.150000E-08
+ *** RESPONSE FREQ = 0.3084E+08   PERIOD=  0.3243E-07  PTS/CYC =  22.    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.16214E-08  INCREASED (FACTOR = 1.0809)
+
+     FORCE CONVERGENCE VALUE  =  0.1873E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3474E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5323E-08
+     FORCE CONVERGENCE VALUE  =  0.5106E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3396E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    28  COMPLETED.    CUM ITER =     29
+ *** TIME =  0.143786E-06     TIME INC =  0.162140E-08
+ *** RESPONSE FREQ = 0.5287E+08   PERIOD=  0.1891E-07  PTS/CYC =  12.    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.15000E-08  DECREASED (FACTOR = 0.9251)
+
+     FORCE CONVERGENCE VALUE  =  0.2370E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3396E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.7930E-08
+     FORCE CONVERGENCE VALUE  =  0.1169E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2344E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    29  COMPLETED.    CUM ITER =     30
+ *** TIME =  0.145286E-06     TIME INC =  0.150000E-08
+ *** RESPONSE FREQ = 0.5524E+08   PERIOD=  0.1810E-07  PTS/CYC =  12.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.15000E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2524E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2344E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.8736E-08
+     FORCE CONVERGENCE VALUE  =  0.2641E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2191E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    30  COMPLETED.    CUM ITER =     31
+ *** TIME =  0.146786E-06     TIME INC =  0.150000E-08
+ *** RESPONSE FREQ = 0.6266E+08   PERIOD=  0.1596E-07  PTS/CYC =  11.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.15000E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.3118E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2191E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.3785E-08
+     FORCE CONVERGENCE VALUE  =  0.2761E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2599E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    31  COMPLETED.    CUM ITER =     32
+ *** TIME =  0.148286E-06     TIME INC =  0.150000E-08
+ *** RESPONSE FREQ = 0.3472E+08   PERIOD=  0.2880E-07  PTS/CYC =  19.    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.85700E-09  DECREASED (FACTOR = 0.5713)
+
+     FORCE CONVERGENCE VALUE  =  0.2751E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2599E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.2675E-08
+     FORCE CONVERGENCE VALUE  =  0.8397E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2419E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    32  COMPLETED.    CUM ITER =     33
+ *** TIME =  0.149143E-06     TIME INC =  0.857004E-09
+ *** RESPONSE FREQ = 0.6821E+08   PERIOD=  0.1466E-07  PTS/CYC =  17.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.85700E-09  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2569E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2419E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.2811E-08
+     FORCE CONVERGENCE VALUE  =  0.2133E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2087E-10 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     1   SUBSTEP    33  COMPLETED.    CUM ITER =     34
+ *** TIME =  0.150000E-06     TIME INC =  0.857004E-09
+ *** RESPONSE FREQ = 0.4523E+08   PERIOD=  0.2211E-07  PTS/CYC =  26.    
+
+
+ *** ANSYS BINARY FILE STATISTICS
+  BUFFER SIZE USED= 16384
+        0.188 MB WRITTEN ON ELEMENT MATRIX FILE: file0.emat
+       10.812 MB WRITTEN ON ELEMENT SAVED DATA FILE: file0.esav
+       14.062 MB WRITTEN ON ASSEMBLED MATRIX FILE: file0.full
+       47.188 MB WRITTEN ON RESULTS FILE: file0.rst
+ *************** Write FE CONNECTORS *********
+
+ WRITE OUT CONSTRAINT EQUATIONS TO FILE= file.ce                                                                                                                                                                                                                                                             
+ ****************************************************
+ *************** FINISHED SOLVE FOR LS 1 *************
+ ****************************************************
+ ******************* SOLVE FOR LS 2 OF 3 ****************
+
+ PRINTOUT RESUMED BY /GOP
+
+ USE AUTOMATIC TIME STEPPING THIS LOAD STEP
+
+ USE       1 SUBSTEPS INITIALLY THIS LOAD STEP FOR ALL  DEGREES OF FREEDOM
+ FOR AUTOMATIC TIME STEPPING:
+   USE      1 SUBSTEPS AS A MAXIMUM
+   USE      1 SUBSTEPS AS A MINIMUM
+
+ TIME= 0.15100E-06
+
+ INCLUDE TRANSIENT EFFECTS FOR  ALL DEGREES OF FREEDOM THIS LOAD STEP
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE RSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EANG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE ETMP ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE VENG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE STRS ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPEL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPPL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE CONT ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE V    ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE A    ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ *****  ANSYS SOLVE    COMMAND  *****
+
+ *** NOTE ***                            CP =      86.531   TIME= 11:34:47
+ The Solution Control Option is only valid for single field structural,  
+ single field thermal, single field diffusion, coupled                   
+ thermal-diffusion analyses and coupled-field analyses with structural   
+ degrees of freedom.  The SOLCONTROL,ON command (if present) has been    
+ de-activated.                                                           
+
+ *** NOTE ***                            CP =      86.531   TIME= 11:34:47
+ This nonlinear analysis defaults to using the full Newton-Raphson       
+ solution procedure.  This can be modified using the NROPT command.      
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
+ DISTRIBUTED ANSYS Mechanical Enterprise                       
+
+ 20120530  VERSION=WINDOWS x64   11:34:47  APR 04, 2020 CP=     86.562
+
+                                                                               
+
+
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     2
+   TIME AT END OF THE LOAD STEP. . . . . . . . . . 0.15100E-06
+   AUTOMATIC TIME STEPPING . . . . . . . . . . . .    ON
+      INITIAL NUMBER OF SUBSTEPS . . . . . . . . .     1
+      MAXIMUM NUMBER OF SUBSTEPS . . . . . . . . .     1
+      MINIMUM NUMBER OF SUBSTEPS . . . . . . . . .     1
+   MAXIMUM NUMBER OF EQUILIBRIUM ITERATIONS. . . .    25
+   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .   YES
+   TRANSIENT (INERTIA) EFFECTS
+      STRUCTURAL DOFS. . . . . . . . . . . . . . .    ON
+      ELECTRIC DOFS. . . . . . . . . . . . . . . .    ON
+   TRANSIENT INTEGRATION PARAMETERS
+      GAMMA. . . . . . . . . . . . . . . . . . . .  0.0000    
+      ALPHA. . . . . . . . . . . . . . . . . . . . 0.25000    
+      DELTA. . . . . . . . . . . . . . . . . . . . 0.50000    
+      USING HHT TIME INTEGRATION
+      ALPHAF . . . . . . . . . . . . . . . . . . .  0.0000    
+      ALPHAM . . . . . . . . . . . . . . . . . . .  0.0000    
+      THETA. . . . . . . . . . . . . . . . . . . . 0.50000    
+      OSCILLATION LIMIT CRITERION. . . . . . . . . 0.50000    
+      TOLERANCE. . . . . . . . . . . . . . . . . . 0.20000    
+   TERMINATE ANALYSIS IF NOT CONVERGED . . . . . .YES (EXIT)  
+   CONVERGENCE CONTROLS. . . . . . . . . . . . . .USE DEFAULTS
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+      NSOL        ALL               
+      RSOL        ALL               
+      EANG        ALL               
+      ETMP        ALL               
+      VENG        ALL               
+      STRS        ALL               
+      EPEL        ALL               
+      EPPL        ALL               
+      CONT        ALL               
+      V           ALL               
+      A           ALL               
+
+
+     FORCE CONVERGENCE VALUE  =  0.2330E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2087E-10
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  -4.000    
+     FORCE CONVERGENCE VALUE  =  0.5404E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+
+ *** WARNING ***                         CP =      88.766   TIME= 11:34:49
+ A reference force value times the tolerance is used by the              
+ Newton-Raphson method for checking convergence.  The calculated         
+ reference FORCE CONVERGENCE VALUE = 3.530577772E-07 is less than a      
+ threshold.  This threshold defaults to 1.0 or is specified as MINREF    
+ on the CNVTOL command.  Check results carefully.                        
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4942E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+     FORCE CONVERGENCE VALUE  =  0.5404E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4942E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     2   SUBSTEP     1  COMPLETED.    CUM ITER =     35
+ *** TIME =  0.151000E-06     TIME INC =  0.100000E-08
+ *** RESPONSE FREQ = 0.7386E+08   PERIOD=  0.1354E-07  PTS/CYC =  14.    
+ ****************************************************
+ *************** FINISHED SOLVE FOR LS 2 *************
+ ****************************************************
+ ******************* SOLVE FOR LS 3 OF 3 ****************
+
+ PRINTOUT RESUMED BY /GOP
+
+ USE AUTOMATIC TIME STEPPING THIS LOAD STEP
+
+ USE      20 SUBSTEPS INITIALLY THIS LOAD STEP FOR ALL  DEGREES OF FREEDOM
+ FOR AUTOMATIC TIME STEPPING:
+   USE    100 SUBSTEPS AS A MAXIMUM
+   USE     10 SUBSTEPS AS A MINIMUM
+
+ TIME= 0.30000E-06
+
+ INCLUDE TRANSIENT EFFECTS FOR  ALL DEGREES OF FREEDOM THIS LOAD STEP
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE RSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EANG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE ETMP ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE VENG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE STRS ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPEL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPPL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE CONT ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE V    ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE A    ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ *****  ANSYS SOLVE    COMMAND  *****
+
+ *** NOTE ***                            CP =      91.531   TIME= 11:34:52
+ The Solution Control Option is only valid for single field structural,  
+ single field thermal, single field diffusion, coupled                   
+ thermal-diffusion analyses and coupled-field analyses with structural   
+ degrees of freedom.  The SOLCONTROL,ON command (if present) has been    
+ de-activated.                                                           
+
+ *** NOTE ***                            CP =      91.531   TIME= 11:34:52
+ This nonlinear analysis defaults to using the full Newton-Raphson       
+ solution procedure.  This can be modified using the NROPT command.      
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
+ DISTRIBUTED ANSYS Mechanical Enterprise                       
+
+ 20120530  VERSION=WINDOWS x64   11:34:53  APR 04, 2020 CP=     91.609
+
+                                                                               
+
+
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     3
+   TIME AT END OF THE LOAD STEP. . . . . . . . . . 0.30000E-06
+   AUTOMATIC TIME STEPPING . . . . . . . . . . . .    ON
+      INITIAL NUMBER OF SUBSTEPS . . . . . . . . .    20
+      MAXIMUM NUMBER OF SUBSTEPS . . . . . . . . .   100
+      MINIMUM NUMBER OF SUBSTEPS . . . . . . . . .    10
+   MAXIMUM NUMBER OF EQUILIBRIUM ITERATIONS. . . .    25
+   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .   YES
+   TRANSIENT (INERTIA) EFFECTS
+      STRUCTURAL DOFS. . . . . . . . . . . . . . .    ON
+      ELECTRIC DOFS. . . . . . . . . . . . . . . .    ON
+   TRANSIENT INTEGRATION PARAMETERS
+      GAMMA. . . . . . . . . . . . . . . . . . . .  0.0000    
+      ALPHA. . . . . . . . . . . . . . . . . . . . 0.25000    
+      DELTA. . . . . . . . . . . . . . . . . . . . 0.50000    
+      USING HHT TIME INTEGRATION
+      ALPHAF . . . . . . . . . . . . . . . . . . .  0.0000    
+      ALPHAM . . . . . . . . . . . . . . . . . . .  0.0000    
+      THETA. . . . . . . . . . . . . . . . . . . . 0.50000    
+      OSCILLATION LIMIT CRITERION. . . . . . . . . 0.50000    
+      TOLERANCE. . . . . . . . . . . . . . . . . . 0.20000    
+   TERMINATE ANALYSIS IF NOT CONVERGED . . . . . .YES (EXIT)  
+   CONVERGENCE CONTROLS. . . . . . . . . . . . . .USE DEFAULTS
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+      NSOL        ALL               
+      RSOL        ALL               
+      EANG        ALL               
+      ETMP        ALL               
+      VENG        ALL               
+      STRS        ALL               
+      EPEL        ALL               
+      EPPL        ALL               
+      CONT        ALL               
+      V           ALL               
+      A           ALL               
+
+
+     FORCE CONVERGENCE VALUE  =  0.8122E-06  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4942E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.1788E-07
+     FORCE CONVERGENCE VALUE  =  0.4199E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+
+ *** WARNING ***                         CP =      94.984   TIME= 11:34:57
+ A reference force value times the tolerance is used by the              
+ Newton-Raphson method for checking convergence.  The calculated         
+ reference FORCE CONVERGENCE VALUE = 1.126071568E-06 is less than a      
+ threshold.  This threshold defaults to 1.0 or is specified as MINREF    
+ on the CNVTOL command.  Check results carefully.                        
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4486E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+     FORCE CONVERGENCE VALUE  =  0.4199E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4486E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP     1  COMPLETED.    CUM ITER =     36
+ *** TIME =  0.158450E-06     TIME INC =  0.745000E-08
+ *** RESPONSE FREQ = 0.1667E+08   PERIOD=  0.6000E-07  PTS/CYC =  8.1    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.37250E-08  DECREASED (FACTOR = 0.5000)
+
+     FORCE CONVERGENCE VALUE  =  0.4383E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4486E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.1666E-07
+     FORCE CONVERGENCE VALUE  =  0.4904E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2634E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP     2  COMPLETED.    CUM ITER =     37
+ *** TIME =  0.162175E-06     TIME INC =  0.372500E-08
+ *** RESPONSE FREQ = 0.4307E+08   PERIOD=  0.2322E-07  PTS/CYC =  6.2    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.18625E-08  DECREASED (FACTOR = 0.5000)
+
+     FORCE CONVERGENCE VALUE  =  0.5076E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2634E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.6789E-08
+     FORCE CONVERGENCE VALUE  =  0.9417E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2914E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP     3  COMPLETED.    CUM ITER =     38
+ *** TIME =  0.164037E-06     TIME INC =  0.186250E-08
+ *** RESPONSE FREQ = 0.4268E+08   PERIOD=  0.2343E-07  PTS/CYC =  13.    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.14900E-08  DECREASED (FACTOR = 0.8000)
+
+     FORCE CONVERGENCE VALUE  =  0.1941E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2914E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.4293E-08
+     FORCE CONVERGENCE VALUE  =  0.8602E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3256E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP     4  COMPLETED.    CUM ITER =     39
+ *** TIME =  0.165527E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.4842E+08   PERIOD=  0.2065E-07  PTS/CYC =  14.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2058E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3256E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.4946E-08
+     FORCE CONVERGENCE VALUE  =  0.1599E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2549E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP     5  COMPLETED.    CUM ITER =     40
+ *** TIME =  0.167017E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.6242E+08   PERIOD=  0.1602E-07  PTS/CYC =  11.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2168E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2549E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5480E-08
+     FORCE CONVERGENCE VALUE  =  0.7479E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1994E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP     6  COMPLETED.    CUM ITER =     41
+ *** TIME =  0.168507E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.6494E+08   PERIOD=  0.1540E-07  PTS/CYC =  10.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1320E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1994E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.3477E-08
+     FORCE CONVERGENCE VALUE  =  0.1424E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2109E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP     7  COMPLETED.    CUM ITER =     42
+ *** TIME =  0.169997E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.3155E+08   PERIOD=  0.3170E-07  PTS/CYC =  21.    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.15850E-08  INCREASED (FACTOR = 1.0637)
+
+     FORCE CONVERGENCE VALUE  =  0.1787E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2109E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5279E-08
+     FORCE CONVERGENCE VALUE  =  0.6744E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1894E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP     8  COMPLETED.    CUM ITER =     43
+ *** TIME =  0.171582E-06     TIME INC =  0.158496E-08
+ *** RESPONSE FREQ = 0.6889E+08   PERIOD=  0.1452E-07  PTS/CYC =  9.2    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.14900E-08  DECREASED (FACTOR = 0.9401)
+
+     FORCE CONVERGENCE VALUE  =  0.2132E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1894E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.7392E-08
+     FORCE CONVERGENCE VALUE  =  0.1294E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1303E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP     9  COMPLETED.    CUM ITER =     44
+ *** TIME =  0.173072E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.6643E+08   PERIOD=  0.1505E-07  PTS/CYC =  10.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2309E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1303E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.7595E-08
+     FORCE CONVERGENCE VALUE  =  0.2147E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1430E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    10  COMPLETED.    CUM ITER =     45
+ *** TIME =  0.174562E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.7745E+08   PERIOD=  0.1291E-07  PTS/CYC =  8.7    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2419E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1430E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.3056E-08
+     FORCE CONVERGENCE VALUE  =  0.1606E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1550E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    11  COMPLETED.    CUM ITER =     46
+ *** TIME =  0.176052E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5657E+08   PERIOD=  0.1768E-07  PTS/CYC =  12.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1308E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1550E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.3164E-08
+     FORCE CONVERGENCE VALUE  =  0.1198E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1216E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    12  COMPLETED.    CUM ITER =     47
+ *** TIME =  0.177542E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.8251E+08   PERIOD=  0.1212E-07  PTS/CYC =  8.1    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1752E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1216E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.4507E-08
+     FORCE CONVERGENCE VALUE  =  0.1015E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1186E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    13  COMPLETED.    CUM ITER =     48
+ *** TIME =  0.179032E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.8721E+08   PERIOD=  0.1147E-07  PTS/CYC =  7.7    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1510E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1186E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.3528E-08
+     FORCE CONVERGENCE VALUE  =  0.6701E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.8537E-24 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    14  COMPLETED.    CUM ITER =     49
+ *** TIME =  0.180522E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.8270E+08   PERIOD=  0.1209E-07  PTS/CYC =  8.1    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1255E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.8537E-24
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.2345E-08
+     FORCE CONVERGENCE VALUE  =  0.6273E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.9289E-24 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    15  COMPLETED.    CUM ITER =     50
+ *** TIME =  0.182012E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.1384E+09   PERIOD=  0.7226E-08  PTS/CYC =  4.8    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1313E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.9289E-24
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.3779E-08
+     FORCE CONVERGENCE VALUE  =  0.5057E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6710E-24 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    16  COMPLETED.    CUM ITER =     51
+ *** TIME =  0.183502E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.8886E+08   PERIOD=  0.1125E-07  PTS/CYC =  7.6    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1768E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6710E-24
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.7207E-08
+     FORCE CONVERGENCE VALUE  =  0.2871E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4893E-24 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    17  COMPLETED.    CUM ITER =     52
+ *** TIME =  0.184992E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.1077E+09   PERIOD=  0.9289E-08  PTS/CYC =  6.2    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.3236E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4893E-24
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.4656E-08
+     FORCE CONVERGENCE VALUE  =  0.5856E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4435E-24 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    18  COMPLETED.    CUM ITER =     53
+ *** TIME =  0.186482E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.1003E+09   PERIOD=  0.9967E-08  PTS/CYC =  6.7    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.9849E-06  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4435E-24
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.2032E-08
+     FORCE CONVERGENCE VALUE  =  0.3847E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3774E-24 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    19  COMPLETED.    CUM ITER =     54
+ *** TIME =  0.187972E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.2161E+09   PERIOD=  0.4628E-08  PTS/CYC =  3.1    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1145E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3774E-24
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.3366E-08
+     FORCE CONVERGENCE VALUE  =  0.4499E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.8818E-24 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    20  COMPLETED.    CUM ITER =     55
+ *** TIME =  0.189462E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.1057E+09   PERIOD=  0.9458E-08  PTS/CYC =  6.3    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1632E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.8818E-24
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.6084E-08
+     FORCE CONVERGENCE VALUE  =  0.9936E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4579E-24 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    21  COMPLETED.    CUM ITER =     56
+ *** TIME =  0.190952E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.9990E+08   PERIOD=  0.1001E-07  PTS/CYC =  6.7    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1856E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4579E-24
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.6117E-08
+     FORCE CONVERGENCE VALUE  =  0.1210E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4010E-24 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    22  COMPLETED.    CUM ITER =     57
+ *** TIME =  0.192442E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.1081E+09   PERIOD=  0.9247E-08  PTS/CYC =  6.2    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1278E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4010E-24
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.1752E-08
+     FORCE CONVERGENCE VALUE  =  0.1373E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.9355E-24 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    23  COMPLETED.    CUM ITER =     58
+ *** TIME =  0.193932E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.7569E+08   PERIOD=  0.1321E-07  PTS/CYC =  8.9    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1423E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.9355E-24
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.3909E-08
+     FORCE CONVERGENCE VALUE  =  0.1188E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1385E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    24  COMPLETED.    CUM ITER =     59
+ *** TIME =  0.195422E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.9981E+08   PERIOD=  0.1002E-07  PTS/CYC =  6.7    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1828E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1385E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5321E-08
+     FORCE CONVERGENCE VALUE  =  0.1493E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1140E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    25  COMPLETED.    CUM ITER =     60
+ *** TIME =  0.196912E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.7947E+08   PERIOD=  0.1258E-07  PTS/CYC =  8.4    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2039E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1140E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.4065E-08
+     FORCE CONVERGENCE VALUE  =  0.6614E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1237E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    26  COMPLETED.    CUM ITER =     61
+ *** TIME =  0.198402E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.8805E+08   PERIOD=  0.1136E-07  PTS/CYC =  7.6    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1148E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1237E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.2391E-08
+     FORCE CONVERGENCE VALUE  =  0.1225E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1690E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    27  COMPLETED.    CUM ITER =     62
+ *** TIME =  0.199892E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.3911E+08   PERIOD=  0.2557E-07  PTS/CYC =  17.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1805E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1690E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.5673E-08
+     FORCE CONVERGENCE VALUE  =  0.6910E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1585E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    28  COMPLETED.    CUM ITER =     63
+ *** TIME =  0.201382E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.7409E+08   PERIOD=  0.1350E-07  PTS/CYC =  9.1    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2197E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1585E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.8073E-08
+     FORCE CONVERGENCE VALUE  =  0.2386E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1454E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    29  COMPLETED.    CUM ITER =     64
+ *** TIME =  0.202872E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.7291E+08   PERIOD=  0.1372E-07  PTS/CYC =  9.2    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.3118E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1454E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.6845E-08
+     FORCE CONVERGENCE VALUE  =  0.1349E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2213E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    30  COMPLETED.    CUM ITER =     65
+ *** TIME =  0.204362E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5869E+08   PERIOD=  0.1704E-07  PTS/CYC =  11.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2029E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2213E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.4146E-08
+     FORCE CONVERGENCE VALUE  =  0.5508E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2633E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    31  COMPLETED.    CUM ITER =     66
+ *** TIME =  0.205852E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5399E+08   PERIOD=  0.1852E-07  PTS/CYC =  12.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1644E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2633E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.3968E-08
+     FORCE CONVERGENCE VALUE  =  0.5973E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2424E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    32  COMPLETED.    CUM ITER =     67
+ *** TIME =  0.207342E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5210E+08   PERIOD=  0.1919E-07  PTS/CYC =  13.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1567E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2424E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.6134E-08
+     FORCE CONVERGENCE VALUE  =  0.1028E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2661E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    33  COMPLETED.    CUM ITER =     68
+ *** TIME =  0.208832E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.6684E+08   PERIOD=  0.1496E-07  PTS/CYC =  10.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1849E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2661E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.4664E-08
+     FORCE CONVERGENCE VALUE  =  0.9416E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3255E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    34  COMPLETED.    CUM ITER =     69
+ *** TIME =  0.210322E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.4480E+08   PERIOD=  0.2232E-07  PTS/CYC =  15.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1980E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3255E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.3980E-08
+     FORCE CONVERGENCE VALUE  =  0.2756E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3321E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    35  COMPLETED.    CUM ITER =     70
+ *** TIME =  0.211812E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5074E+08   PERIOD=  0.1971E-07  PTS/CYC =  13.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2140E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3321E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.7128E-08
+     FORCE CONVERGENCE VALUE  =  0.9339E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3083E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    36  COMPLETED.    CUM ITER =     71
+ *** TIME =  0.213302E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.4690E+08   PERIOD=  0.2132E-07  PTS/CYC =  14.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2574E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3083E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.9170E-08
+     FORCE CONVERGENCE VALUE  =  0.2418E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3684E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    37  COMPLETED.    CUM ITER =     72
+ *** TIME =  0.214792E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5962E+08   PERIOD=  0.1677E-07  PTS/CYC =  11.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.3394E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3684E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.5817E-08
+     FORCE CONVERGENCE VALUE  =  0.6832E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4425E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    38  COMPLETED.    CUM ITER =     73
+ *** TIME =  0.216282E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5047E+08   PERIOD=  0.1982E-07  PTS/CYC =  13.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1799E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4425E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.4127E-08
+     FORCE CONVERGENCE VALUE  =  0.5099E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4108E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    39  COMPLETED.    CUM ITER =     74
+ *** TIME =  0.217772E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.3429E+08   PERIOD=  0.2916E-07  PTS/CYC =  20.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1657E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4108E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.5778E-08
+     FORCE CONVERGENCE VALUE  =  0.6643E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4568E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    40  COMPLETED.    CUM ITER =     75
+ *** TIME =  0.219262E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5438E+08   PERIOD=  0.1839E-07  PTS/CYC =  12.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1826E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4568E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.5586E-08
+     FORCE CONVERGENCE VALUE  =  0.9367E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5597E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    41  COMPLETED.    CUM ITER =     76
+ *** TIME =  0.220752E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5087E+08   PERIOD=  0.1966E-07  PTS/CYC =  13.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2266E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5597E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.4883E-08
+     FORCE CONVERGENCE VALUE  =  0.2087E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6049E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    42  COMPLETED.    CUM ITER =     77
+ *** TIME =  0.222242E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5809E+08   PERIOD=  0.1722E-07  PTS/CYC =  12.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2565E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6049E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.4341E-08
+     FORCE CONVERGENCE VALUE  =  0.3174E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5042E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    43  COMPLETED.    CUM ITER =     78
+ *** TIME =  0.223732E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.2447E+08   PERIOD=  0.4087E-07  PTS/CYC =  27.    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.20435E-08  INCREASED (FACTOR = 1.3715)
+
+     FORCE CONVERGENCE VALUE  =  0.1726E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5042E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.1044E-07
+     FORCE CONVERGENCE VALUE  =  0.2609E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5539E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    44  COMPLETED.    CUM ITER =     79
+ *** TIME =  0.225776E-06     TIME INC =  0.204346E-08
+ *** RESPONSE FREQ = 0.5164E+08   PERIOD=  0.1936E-07  PTS/CYC =  9.5    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.14900E-08  DECREASED (FACTOR = 0.7292)
+
+     FORCE CONVERGENCE VALUE  =  0.3436E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5539E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.7350E-08
+     FORCE CONVERGENCE VALUE  =  0.1090E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.7063E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    45  COMPLETED.    CUM ITER =     80
+ *** TIME =  0.227266E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.6015E+08   PERIOD=  0.1662E-07  PTS/CYC =  11.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2197E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.7063E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.4328E-08
+     FORCE CONVERGENCE VALUE  =  0.3216E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6372E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    46  COMPLETED.    CUM ITER =     81
+ *** TIME =  0.228756E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.4380E+08   PERIOD=  0.2283E-07  PTS/CYC =  15.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1346E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6372E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.4327E-08
+     FORCE CONVERGENCE VALUE  =  0.3883E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6401E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    47  COMPLETED.    CUM ITER =     82
+ *** TIME =  0.230246E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5190E+08   PERIOD=  0.1927E-07  PTS/CYC =  13.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1662E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6401E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.4644E-08
+     FORCE CONVERGENCE VALUE  =  0.8752E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.8416E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    48  COMPLETED.    CUM ITER =     83
+ *** TIME =  0.231736E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5635E+08   PERIOD=  0.1775E-07  PTS/CYC =  12.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2040E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.8416E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.4456E-08
+     FORCE CONVERGENCE VALUE  =  0.2028E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.8390E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    49  COMPLETED.    CUM ITER =     84
+ *** TIME =  0.233226E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.7349E+08   PERIOD=  0.1361E-07  PTS/CYC =  9.1    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2418E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.8390E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.3790E-08
+     FORCE CONVERGENCE VALUE  =  0.2980E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6025E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    50  COMPLETED.    CUM ITER =     85
+ *** TIME =  0.234716E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.3969E+08   PERIOD=  0.2519E-07  PTS/CYC =  17.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1371E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6025E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.5055E-08
+     FORCE CONVERGENCE VALUE  =  0.9730E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6166E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    51  COMPLETED.    CUM ITER =     86
+ *** TIME =  0.236206E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.6532E+08   PERIOD=  0.1531E-07  PTS/CYC =  10.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2243E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6166E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.6271E-08
+     FORCE CONVERGENCE VALUE  =  0.8673E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.9378E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    52  COMPLETED.    CUM ITER =     87
+ *** TIME =  0.237696E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.7265E+08   PERIOD=  0.1377E-07  PTS/CYC =  9.2    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2069E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.9378E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.5867E-08
+     FORCE CONVERGENCE VALUE  =  0.9095E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.7179E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    53  COMPLETED.    CUM ITER =     88
+ *** TIME =  0.239186E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.7922E+08   PERIOD=  0.1262E-07  PTS/CYC =  8.5    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1567E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.7179E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.4946E-08
+     FORCE CONVERGENCE VALUE  =  0.1005E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5382E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    54  COMPLETED.    CUM ITER =     89
+ *** TIME =  0.240676E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.7560E+08   PERIOD=  0.1323E-07  PTS/CYC =  8.9    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1254E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5382E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.2523E-08
+     FORCE CONVERGENCE VALUE  =  0.2001E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6994E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    55  COMPLETED.    CUM ITER =     90
+ *** TIME =  0.242166E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.7181E+08   PERIOD=  0.1393E-07  PTS/CYC =  9.3    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1663E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6994E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5142E-08
+     FORCE CONVERGENCE VALUE  =  0.2573E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.7638E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    56  COMPLETED.    CUM ITER =     91
+ *** TIME =  0.243656E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.1004E+09   PERIOD=  0.9961E-08  PTS/CYC =  6.7    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2721E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.7638E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.4723E-08
+     FORCE CONVERGENCE VALUE  =  0.9617E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5660E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    57  COMPLETED.    CUM ITER =     92
+ *** TIME =  0.245146E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.8456E+08   PERIOD=  0.1183E-07  PTS/CYC =  7.9    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1406E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5660E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.2464E-08
+     FORCE CONVERGENCE VALUE  =  0.3627E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2260E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    58  COMPLETED.    CUM ITER =     93
+ *** TIME =  0.246636E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.1373E+09   PERIOD=  0.7283E-08  PTS/CYC =  4.9    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.9894E-06  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2260E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.2585E-08
+     FORCE CONVERGENCE VALUE  =  0.2694E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6372E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    59  COMPLETED.    CUM ITER =     94
+ *** TIME =  0.248126E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.1105E+09   PERIOD=  0.9052E-08  PTS/CYC =  6.1    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1576E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6372E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.5082E-08
+     FORCE CONVERGENCE VALUE  =  0.9524E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4953E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    60  COMPLETED.    CUM ITER =     95
+ *** TIME =  0.249616E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.1102E+09   PERIOD=  0.9078E-08  PTS/CYC =  6.1    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1613E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4953E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.5809E-08
+     FORCE CONVERGENCE VALUE  =  0.1567E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3834E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    61  COMPLETED.    CUM ITER =     96
+ *** TIME =  0.251106E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.1006E+09   PERIOD=  0.9944E-08  PTS/CYC =  6.7    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1924E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3834E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.2779E-08
+     FORCE CONVERGENCE VALUE  =  0.4118E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1909E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    62  COMPLETED.    CUM ITER =     97
+ *** TIME =  0.252596E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.1549E+09   PERIOD=  0.6454E-08  PTS/CYC =  4.3    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1224E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1909E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.4240E-08
+     FORCE CONVERGENCE VALUE  =  0.9491E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2491E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    63  COMPLETED.    CUM ITER =     98
+ *** TIME =  0.254086E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.1339E+09   PERIOD=  0.7470E-08  PTS/CYC =  5.0    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1885E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2491E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.6428E-08
+     FORCE CONVERGENCE VALUE  =  0.1218E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5710E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    64  COMPLETED.    CUM ITER =     99
+ *** TIME =  0.255576E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.8829E+08   PERIOD=  0.1133E-07  PTS/CYC =  7.6    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1949E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5710E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5898E-08
+     FORCE CONVERGENCE VALUE  =  0.8663E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6327E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    65  COMPLETED.    CUM ITER =    100
+ *** TIME =  0.257066E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.1035E+09   PERIOD=  0.9665E-08  PTS/CYC =  6.5    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1401E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6327E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.2814E-08
+     FORCE CONVERGENCE VALUE  =  0.1880E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4792E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    66  COMPLETED.    CUM ITER =    101
+ *** TIME =  0.258556E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.7287E+08   PERIOD=  0.1372E-07  PTS/CYC =  9.2    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1090E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4792E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.3047E-08
+     FORCE CONVERGENCE VALUE  =  0.4492E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6784E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    67  COMPLETED.    CUM ITER =    102
+ *** TIME =  0.260046E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.9322E+08   PERIOD=  0.1073E-07  PTS/CYC =  7.2    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1581E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6784E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.5158E-08
+     FORCE CONVERGENCE VALUE  =  0.1126E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.9401E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    68  COMPLETED.    CUM ITER =    103
+ *** TIME =  0.261536E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.7573E+08   PERIOD=  0.1321E-07  PTS/CYC =  8.9    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1914E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.9401E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.4355E-08
+     FORCE CONVERGENCE VALUE  =  0.2293E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.7494E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    69  COMPLETED.    CUM ITER =    104
+ *** TIME =  0.263026E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.8181E+08   PERIOD=  0.1222E-07  PTS/CYC =  8.2    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2647E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.7494E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.3191E-08
+     FORCE CONVERGENCE VALUE  =  0.2683E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5657E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    70  COMPLETED.    CUM ITER =    105
+ *** TIME =  0.264516E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5974E+08   PERIOD=  0.1674E-07  PTS/CYC =  11.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1508E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5657E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5409E-08
+     FORCE CONVERGENCE VALUE  =  0.8722E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.7318E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    71  COMPLETED.    CUM ITER =    106
+ *** TIME =  0.266006E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5812E+08   PERIOD=  0.1721E-07  PTS/CYC =  12.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2376E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.7318E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.6983E-08
+     FORCE CONVERGENCE VALUE  =  0.9824E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.8553E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    72  COMPLETED.    CUM ITER =    107
+ *** TIME =  0.267496E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.7134E+08   PERIOD=  0.1402E-07  PTS/CYC =  9.4    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2206E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.8553E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.6330E-08
+     FORCE CONVERGENCE VALUE  =  0.9178E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6351E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    73  COMPLETED.    CUM ITER =    108
+ *** TIME =  0.268986E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5784E+08   PERIOD=  0.1729E-07  PTS/CYC =  12.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1880E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6351E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5569E-08
+     FORCE CONVERGENCE VALUE  =  0.1010E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6281E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    74  COMPLETED.    CUM ITER =    109
+ *** TIME =  0.270476E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5763E+08   PERIOD=  0.1735E-07  PTS/CYC =  12.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1661E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6281E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.3892E-08
+     FORCE CONVERGENCE VALUE  =  0.6560E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.7841E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    75  COMPLETED.    CUM ITER =    110
+ *** TIME =  0.271966E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.3858E+08   PERIOD=  0.2592E-07  PTS/CYC =  17.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2147E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.7841E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.4563E-08
+     FORCE CONVERGENCE VALUE  =  0.1823E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6889E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    76  COMPLETED.    CUM ITER =    111
+ *** TIME =  0.273456E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.6647E+08   PERIOD=  0.1504E-07  PTS/CYC =  10.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2199E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6889E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5634E-08
+     FORCE CONVERGENCE VALUE  =  0.7676E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5281E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    77  COMPLETED.    CUM ITER =    112
+ *** TIME =  0.274946E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5139E+08   PERIOD=  0.1946E-07  PTS/CYC =  13.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1686E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5281E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.4497E-08
+     FORCE CONVERGENCE VALUE  =  0.3018E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5735E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    78  COMPLETED.    CUM ITER =    113
+ *** TIME =  0.276436E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.4042E+08   PERIOD=  0.2474E-07  PTS/CYC =  17.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2148E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.5735E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5429E-08
+     FORCE CONVERGENCE VALUE  =  0.5328E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6274E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    79  COMPLETED.    CUM ITER =    114
+ *** TIME =  0.277926E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.4982E+08   PERIOD=  0.2007E-07  PTS/CYC =  13.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2515E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.6274E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.7362E-08
+     FORCE CONVERGENCE VALUE  =  0.1035E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4758E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    80  COMPLETED.    CUM ITER =    115
+ *** TIME =  0.279416E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5420E+08   PERIOD=  0.1845E-07  PTS/CYC =  12.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2431E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4758E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.8317E-08
+     FORCE CONVERGENCE VALUE  =  0.2105E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4102E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    81  COMPLETED.    CUM ITER =    116
+ *** TIME =  0.280906E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5576E+08   PERIOD=  0.1794E-07  PTS/CYC =  12.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2779E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4102E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.4204E-08
+     FORCE CONVERGENCE VALUE  =  0.2851E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4725E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    82  COMPLETED.    CUM ITER =    117
+ *** TIME =  0.282396E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.2949E+08   PERIOD=  0.3390E-07  PTS/CYC =  23.    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.16952E-08  INCREASED (FACTOR = 1.1377)
+
+     FORCE CONVERGENCE VALUE  =  0.1729E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4725E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5121E-08
+     FORCE CONVERGENCE VALUE  =  0.2493E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4442E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    83  COMPLETED.    CUM ITER =    118
+ *** TIME =  0.284091E-06     TIME INC =  0.169521E-08
+ *** RESPONSE FREQ = 0.5296E+08   PERIOD=  0.1888E-07  PTS/CYC =  11.    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.14900E-08  DECREASED (FACTOR = 0.8789)
+
+     FORCE CONVERGENCE VALUE  =  0.3081E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.4442E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5587E-08
+     FORCE CONVERGENCE VALUE  =  0.8009E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3678E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    84  COMPLETED.    CUM ITER =    119
+ *** TIME =  0.285581E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5176E+08   PERIOD=  0.1932E-07  PTS/CYC =  13.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1790E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3678E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5106E-08
+     FORCE CONVERGENCE VALUE  =  0.6655E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3550E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    85  COMPLETED.    CUM ITER =    120
+ *** TIME =  0.287071E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5430E+08   PERIOD=  0.1842E-07  PTS/CYC =  12.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1924E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3550E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.4559E-08
+     FORCE CONVERGENCE VALUE  =  0.4621E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3606E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    86  COMPLETED.    CUM ITER =    121
+ *** TIME =  0.288561E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.3863E+08   PERIOD=  0.2589E-07  PTS/CYC =  17.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2107E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.3606E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5621E-08
+     FORCE CONVERGENCE VALUE  =  0.6476E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2755E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    87  COMPLETED.    CUM ITER =    122
+ *** TIME =  0.290051E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5041E+08   PERIOD=  0.1984E-07  PTS/CYC =  13.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2429E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2755E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.9078E-08
+     FORCE CONVERGENCE VALUE  =  0.1911E-05  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2188E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    88  COMPLETED.    CUM ITER =    123
+ *** TIME =  0.291541E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.6275E+08   PERIOD=  0.1594E-07  PTS/CYC =  11.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.2659E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2188E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.6656E-08
+     FORCE CONVERGENCE VALUE  =  0.8134E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2538E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    89  COMPLETED.    CUM ITER =    124
+ *** TIME =  0.293031E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5003E+08   PERIOD=  0.1999E-07  PTS/CYC =  13.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1923E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2538E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.3677E-08
+     FORCE CONVERGENCE VALUE  =  0.3057E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2625E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    90  COMPLETED.    CUM ITER =    125
+ *** TIME =  0.294521E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.5759E+08   PERIOD=  0.1736E-07  PTS/CYC =  12.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1445E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2625E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.3793E-08
+     FORCE CONVERGENCE VALUE  =  0.7672E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2042E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    91  COMPLETED.    CUM ITER =    126
+ *** TIME =  0.296011E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.4841E+08   PERIOD=  0.2066E-07  PTS/CYC =  14.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.14900E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1741E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.2042E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5137E-08
+     FORCE CONVERGENCE VALUE  =  0.8840E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1857E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    92  COMPLETED.    CUM ITER =    127
+ *** TIME =  0.297501E-06     TIME INC =  0.149000E-08
+ *** RESPONSE FREQ = 0.7311E+08   PERIOD=  0.1368E-07  PTS/CYC =  9.2    
+ *** AUTO TIME STEP:  NEXT TIME INC = 0.12494E-08  DECREASED (FACTOR = 0.8385)
+
+     FORCE CONVERGENCE VALUE  =  0.1817E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1857E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.3130E-08
+     FORCE CONVERGENCE VALUE  =  0.5409E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1922E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    93  COMPLETED.    CUM ITER =    128
+ *** TIME =  0.298751E-06     TIME INC =  0.124943E-08
+ *** RESPONSE FREQ = 0.6359E+08   PERIOD=  0.1573E-07  PTS/CYC =  13.    
+ *** AUTO STEP TIME:  NEXT TIME INC = 0.12494E-08  UNCHANGED
+
+     FORCE CONVERGENCE VALUE  =  0.1630E-05  CRITERION=  0.1000E-02
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1922E-23
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.2804E-08
+     FORCE CONVERGENCE VALUE  =  0.7243E-06  CRITERION=  0.1000E-02 <<< CONVERGED
+     CURRENT CONVERGENCE VALUE=   0.000      CRITERION=  0.1605E-23 <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   1
+ *** LOAD STEP     3   SUBSTEP    94  COMPLETED.    CUM ITER =    129
+ *** TIME =  0.300000E-06     TIME INC =  0.124943E-08
+ *** RESPONSE FREQ = 0.7146E+08   PERIOD=  0.1399E-07  PTS/CYC =  11.    
+ ****************************************************
+ *************** FINISHED SOLVE FOR LS 3 *************
+
+ *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  11.6488889    
+
+ PRINTOUT RESUMED BY /GOP
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =       315.078
+
+
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
+ DISTRIBUTED ANSYS Mechanical Enterprise                       
+
+ 20120530  VERSION=WINDOWS x64   11:39:03  APR 04, 2020 CP=    315.109
+
+                                                                               
+
+
+
+          ***** ANSYS RESULTS INTERPRETATION (POST1) *****
+
+ *** NOTE ***                            CP =     315.109   TIME= 11:39:03
+ The model contains an element type ( TRANS126 ) that operates entirely  
+ in the nodal coordinate system.  Viewing nodal displacements or forces  
+ in other than the nodal coordinate system may be invalid.  See the      
+ elements manual description for more information.                       
+
+ *** NOTE ***                            CP =     315.109   TIME= 11:39:03
+ Reading results into the database (SET command) will update the current 
+ displacement and force boundary conditions in the database with the     
+ values from the results file for that load set.  Note that any          
+ subsequent solutions will use these values unless action is taken to    
+ either SAVE the current values or not overwrite them (/EXIT,NOSAVE).    
+
+ Set Encoding of XML File to:ISO-8859-1
+
+ Set Output of XML File to:
+     PARM,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,
+         ,     ,     ,     ,     ,     ,     ,
+
+ DATABASE WRITTEN ON FILE  parm.xml                                                                                                                                                                                                                                                            
+
+ EXIT THE ANSYS POST1 DATABASE PROCESSOR
+
+
+ ***** ROUTINE COMPLETED *****  CP =       315.203
+
+
+
+ PRINTOUT RESUMED BY /GOP
+
+ *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  11.6511111    
+
+ PARAMETER _PREPTIME =     7.000000000    
+
+ PARAMETER _SOLVTIME =     350.0000000    
+
+ PARAMETER _POSTTIME =     8.000000000    
+
+ PARAMETER _TOTALTIM =     365.0000000    
+
+ *GET  _DLBRATIO  FROM  ACTI  ITEM=SOLU DLBR  VALUE=  1.20776526    
+
+ *GET  _COMBTIME  FROM  ACTI  ITEM=SOLU COMB  VALUE=  7.45403350    
+ --- Number of total nodes = 11941
+ --- Number of total elements = 7490
+ --- Element load balance ratio = 1.20776526
+ --- Time to combine distributed files = 7.4540335
+
+ EXIT ANSYS WITHOUT SAVING DATABASE
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          7
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          0
+
+ *** NOTE ***                            CP =     315.391   TIME= 11:39:04
+ The solution for the current simulation was performed using 2 cores.    
+ The parallel performance of this simulation on this hardware indicates  
+ that this simulation would benefit from using additional CPU cores.     
+ Consider using more CPU cores, which may require additional HPC         
+ licenses, when running this simulation again on the same hardware.      
+
++--------- D I S T R I B U T E D   A N S Y S   S T A T I S T I C S ------------+
+
+Release: 2020 R1            Build: 20.1       Update: UP20191203   Platform: WINDOWS x64 
+Date Run: 04/04/2020   Time: 11:39     Process ID: 11664
+Operating System: Windows 10  (Build: 18363)
+
+Processor Model: Intel(R) Core(TM) i5-6360U CPU @ 2.00GHz
+
+Compiler: Intel(R) FORTRAN Compiler Version 19.0.0  (Build: 20190206)
+          Intel(R) C/C++ Compiler Version 19.0.0  (Build: 20190206)
+          Intel(R) Math Kernel Library Version 2019.0.3 Product Build 20190125
+
+Number of machines requested            :    1
+Total number of cores available         :    2
+Number of physical cores available      :    2
+Number of processes requested           :    2
+Number of threads per process requested :    1
+Total number of cores requested         :    2 (Distributed Memory Parallel)               
+MPI Type: INTELMPI
+MPI Version: Intel(R) MPI Library 2018 Update 3 for Windows* OS
+
+
+GPU Acceleration: Not Requested
+
+Job Name: file0
+Input File: dummy.dat
+
+  Core                Machine Name   Working Directory
+ -----------------------------------------------------
+     0             DESKTOP-H2RNGL6   C:\Users\Akash Levy\Documents\NEM-Relay-CAD\_ProjectScratch\Scr7E87
+     1             DESKTOP-H2RNGL6   C:\Users\Akash Levy\Documents\NEM-Relay-CAD\_ProjectScratch\Scr7E87
+ 
+Latency time from master to core     1 =   10.908 microseconds
+ 
+Communication speed from master to core     1 =  1370.91 MB/sec
+
+Total CPU time for main thread                    :      311.9 seconds
+Total CPU time summed for all threads             :      315.4 seconds
+
+Elapsed time spent obtaining a license            :        1.0 seconds
+Elapsed time spent pre-processing model (/PREP7)  :        7.1 seconds
+Elapsed time spent solution - preprocessing       :        1.5 seconds
+Elapsed time spent computing solution             :      347.3 seconds
+Elapsed time spent solution - postprocessing      :        7.5 seconds
+Elapsed time spent post-processing model (/POST1) :        0.1 seconds
+ 
+Equation solver used                              :            Sparse (unsymmetric)
+Equation solver computational rate                :       18.6 Gflops
+Equation solver effective I/O rate                :        7.3 GB/sec
+
+Maximum total memory used                         :      338.0 MB
+Maximum total memory allocated                    :     3136.0 MB
+Total physical memory available                   :          4 GB
+
+Total amount of I/O written to disk               :       12.3 GB
+Total amount of I/O read from disk                :       25.4 GB
+
++------ E N D   D I S T R I B U T E D   A N S Y S   S T A T I S T I C S -------+
+
+
+ *---------------------------------------------------------------------------*
+ |                                                                           |
+ |                       DISTRIBUTED ANSYS RUN COMPLETED                     |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Ansys 2020 R1               Build 20.1         UP20191203     WINDOWS x64 |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Database Requested(-db)  1024 MB    Scratch Memory Requested      1024 MB |
+ | Maximum Database Used      11 MB    Maximum Scratch Memory Used    158 MB |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ |        CP Time      (sec) =        315.375       Time  =  11:39:04        |
+ |        Elapsed Time (sec) =        368.000       Date  =  04/04/2020      |
+ |                                                                           |
+ *---------------------------------------------------------------------------*

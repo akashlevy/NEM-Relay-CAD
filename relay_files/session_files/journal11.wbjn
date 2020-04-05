@@ -1,0 +1,71 @@
+# encoding: utf-8
+# 2020 R1
+SetScriptVersion(Version="20.1.164")
+system1 = GetSystem(Name="ENGD")
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="Castor Oil")
+matl1 = material1.Duplicate(TargetContainer=engineeringData1)
+material2 = engineeringData1.GetMaterial(Name="Poly-SiGe")
+matl2 = material2.Duplicate(TargetContainer=engineeringData1)
+material3 = engineeringData1.GetMaterial(Name="Tungsten")
+matl3 = material3.Duplicate(TargetContainer=engineeringData1)
+library1 = EngData.OpenLibrary(
+    Name="EngineeringData",
+    Source=ANSYS::Disk::C:\Users\Akash Levy\Documents\NEM-Relay-CAD\relay_files\dp0\SYS-10\ENGD\EngineeringData.xml)
+library2 = EngData.OpenLibrary(
+    Name="EngineeringData",
+    Source="C:/Users/Akash Levy/Documents/NEM-Relay-CAD/relay_files/dp0/SYS/ENGD/EngineeringData.xml")
+library2.Close()
+library1.Close()
+library3 = EngData.OpenLibrary(
+    Name="Fluid Materials",
+    Source="Fluid_Materials.xml")
+ClearMessages()
+matl1.Delete()
+matl2.Delete()
+matl3.Delete()
+material1.Refresh(Source="C:/Users/Akash Levy/Documents/NEM-Relay-CAD/relay_files/dp0/SYS-10/ENGD/EngineeringData.xml")
+material2.Refresh(Source="C:/Users/Akash Levy/Documents/NEM-Relay-CAD/relay_files/dp0/SYS-10/ENGD/EngineeringData.xml")
+material3.Refresh(Source="C:/Users/Akash Levy/Documents/NEM-Relay-CAD/relay_files/dp0/SYS-10/ENGD/EngineeringData.xml")
+system1.Delete()
+system2 = GetSystem(Name="SYS 4")
+modelComponent1 = system2.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system2.GetContainer(ComponentName="Model")
+model1.Edit()
+template1 = GetTemplate(
+    TemplateName="Modal",
+    Solver="ANSYS")
+system3 = GetSystem(Name="SYS 5")
+engineeringDataComponent1 = system3.GetComponent(Name="Engineering Data")
+geometryComponent1 = system3.GetComponent(Name="Geometry")
+modelComponent2 = system3.GetComponent(Name="Model")
+system4 = template1.CreateSystem(
+    ComponentsToShare=[engineeringDataComponent1, geometryComponent1, modelComponent2],
+    Position="Right",
+    RelativeTo=system3)
+template2 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+engineeringDataComponent2 = system2.GetComponent(Name="Engineering Data")
+geometryComponent2 = system2.GetComponent(Name="Geometry")
+system5 = template2.CreateSystem(
+    ComponentsToShare=[engineeringDataComponent2, geometryComponent2, modelComponent1],
+    Position="Below",
+    RelativeTo=system3)
+template3 = GetTemplate(
+    TemplateName="Transient Structural",
+    Solver="ANSYS")
+system6 = template3.CreateSystem(
+    ComponentsToShare=[engineeringDataComponent2, geometryComponent2, modelComponent1],
+    Position="Below",
+    RelativeTo=system5)
+system6.Delete()
+ClearMessages()
+schematicSettings1 = GetSchematicSettings()
+schematicSettings1.Notes = "okk"
+schematicSettings1.Notes = ""
+Save(Overwrite=True)
+Save(Overwrite=True)
+model1.Exit()
+Refresh()

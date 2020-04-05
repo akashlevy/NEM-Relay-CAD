@@ -1,0 +1,17 @@
+# encoding: utf-8
+# 2020 R1
+SetScriptVersion(Version="20.1.164")
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+system1 = GetSystem(Name="ENGD")
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="Castor Oil")
+material1.Unlink()
+material2 = engineeringData1.GetMaterial(Name="Poly-SiGe")
+material2.Unlink()
+material3 = engineeringData1.GetMaterial(Name="Tungsten")
+material3.Unlink()
+Save(Overwrite=True)
