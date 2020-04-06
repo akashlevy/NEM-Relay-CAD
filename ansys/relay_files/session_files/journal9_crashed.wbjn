@@ -1,0 +1,120 @@
+# encoding: utf-8
+# 2020 R1
+SetScriptVersion(Version="20.1.164")
+library1 = EngData.OpenLibrary(
+    Name="EngineeringData",
+    Source=ANSYS::Disk::C:\Users\Akash Levy\Documents\NEM-Relay-CAD\relay_files\dp0\SYS\ENGD\EngineeringData.xml)
+system1 = GetSystem(Name="ENGD")
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.ImportMaterial(
+    Name="Poly-SiGe",
+    Source="C:/Users/Akash Levy/Documents/NEM-Relay-CAD/relay_files/dp0/SYS/ENGD/EngineeringData.xml")
+matl2 = engineeringData1.ImportMaterial(
+    Name="Tungsten",
+    Source="C:/Users/Akash Levy/Documents/NEM-Relay-CAD/relay_files/dp0/SYS/ENGD/EngineeringData.xml")
+matl3 = engineeringData1.ImportMaterial(
+    Name="Tungsten",
+    Source="C:/Users/Akash Levy/Documents/NEM-Relay-CAD/relay_files/dp0/SYS/ENGD/EngineeringData.xml")
+ClearMessages()
+matl1.Delete()
+matl2.Delete()
+matl3.Delete()
+material1 = engineeringData1.GetMaterial(Name="Poly-SiGe")
+material1.Unlink()
+material2 = engineeringData1.GetMaterial(Name="Tungsten")
+material2.Unlink()
+material3 = engineeringData1.GetMaterial(Name="Water Liquid")
+material3.Unlink()
+material3.DisplayName = "Castor Oil"
+matlProp1 = material3.GetProperty(Name="Density")
+matlProp1.SetData(
+    Variables=["Density"],
+    Values=[["9.579 [kg m^-3]"]])
+matlProp1.SetVariableProperty(
+    VariableName="Density",
+    Property="Unit",
+    Value="g cm^-3")
+matlProp1.SetData(
+    Variables=["Density"],
+    Values=[["0.009579 [g cm^-3]"]])
+matlProp1.SetData(
+    Variables=["Density"],
+    Values=[["9.579 [g cm^-3]"]])
+matlProp1.SetData(
+    Variables=["Density"],
+    Values=[["0.9579 [g cm^-3]"]])
+matlProp1.SetData(
+    Variables=["Density"],
+    Values=[["9.579 [g cm^-3]"]])
+matlProp1.SetData(
+    Variables=["Density"],
+    Values=[["0.9579 [g cm^-3]"]])
+matlProp2 = material3.GetProperty(Name="Thermal Conductivity")
+matlProp2.Delete(Behavior="Isotropic")
+matlProp3 = material3.GetProperty(Name="Specific Heat")
+matlProp3.Delete(Definition="Constant Pressure")
+matlProp4 = material3.GetProperty(Name="Viscosity")
+matlProp4.SetData(
+    Variables=["Viscosity"],
+    Values=[["0.585 [Pa s]"]])
+matlProp5 = material3.GetProperty(Name="Vaporization Temperature")
+matlProp5.Delete()
+matlProp6 = material3.GetProperty(Name="Boiling Point")
+matlProp6.Delete()
+matlProp7 = material3.GetProperty(Name="Volatile Fraction")
+matlProp7.Delete()
+matlProp8 = material3.GetProperty(Name="Binary Diffusivity")
+matlProp8.Delete()
+matlProp9 = material3.GetProperty(Name="Dpm Surften")
+matlProp9.Delete()
+matlProp10 = material3.GetProperty(Name="Absorption Coefficient")
+matlProp10.Delete()
+matlProp11 = material3.GetProperty(Name="Molecular Weight")
+matlProp11.Delete()
+matlProp12 = material3.GetProperty(Name="Species Phase")
+matlProp12.Delete()
+matlProp13 = material3.GetProperty(Name="Formation Enthalpy")
+matlProp13.Delete()
+matlProp14 = material3.GetProperty(Name="Reference Temperature")
+matlProp14.Delete()
+matlProp15 = material3.GetProperty(Name="Lennard Jones Length")
+matlProp15.Delete()
+matlProp16 = material3.GetProperty(Name="Lennard Jones Energy")
+matlProp16.Delete()
+matlProp17 = material3.GetProperty(Name="Formation Entropy")
+matlProp17.Delete()
+matlProp18 = material3.GetProperty(Name="Latent Heat")
+matlProp18.Delete()
+matlProp19 = material3.GetProperty(Name="Vapor Pressure")
+matlProp19.Delete()
+matlProp20 = material3.GetProperty(Name="Speed of Sound")
+matlProp20.SetData(
+    Variables=["Speed of Sound"],
+    Values=[["1490 [m s^-1]"]])
+materialPropertyData1 = matlProp20.GetPropertyData(
+    Name="Speed of Sound",
+    Qualifiers={"Definition": "", "Behavior": ""})
+PropertyDataVariable1 = materialPropertyData1.CreateVariable(
+    Name="Temperature",
+    Qualifiers={"Field Variable": "Temperature", "Field Units": "C", "Default Data": "22", "Lower Limit": "Program Controlled", "Upper Limit": "Program Controlled"},
+    CustomData={"Independent": "True", "Quantity Type": "Temperature"})
+matlProp20.SetData(
+    SheetName="Speed of Sound",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Variables=["Temperature"],
+    Values=[["25 [C]"]])
+matlProp21 = material2.CreateProperty(
+    Name="Resistivity",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+matlProp21.SetData(
+    Index=-1,
+    Variables=["Resistivity"],
+    Values=[["52.8 [ohm m]"]])
+matlProp21.SetData(
+    Variables=["Resistivity"],
+    Values=[["5 [ohm m]"]])
+matlProp21.SetData(
+    Variables=["Resistivity"],
+    Values=[["5.6E-08 [ohm m]"]])
+Save(Overwrite=True)

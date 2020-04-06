@@ -1,0 +1,17 @@
+# encoding: utf-8
+# 2020 R1
+SetScriptVersion(Version="20.1.164")
+Refresh()
+system1 = GetSystem(Name="SYS")
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+Refresh()
+Refresh()
+Save(Overwrite=True)
+Refresh()
+Save(Overwrite=True)
+Reset()
+Extensions.UnloadExtension(
+    Id="5e7e01a6-8601-11e8-9f8c-28f10e13ffe6",
+    Version="2020.1",
+    Format="Binary")

@@ -1,0 +1,93 @@
+# encoding: utf-8
+# 2020 R1
+SetScriptVersion(Version="20.1.164")
+system1 = GetSystem(Name="SYS")
+setup1 = system1.GetContainer(ComponentName="Setup")
+setup1.Edit()
+ClearMessages()
+system2 = GetSystem(Name="SYS 1")
+system2.DisplayText = "EM Static Coarse"
+system3 = GetSystem(Name="SYS 3")
+system3.DisplayText = "EM Transient"
+system4 = GetSystem(Name="SYS 4")
+system4.DisplayText = "EM Static Fine"
+system1.DisplayText = "Spring Constant"
+Save(Overwrite=True)
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsSpaceClaimGeometry=True)
+system4.Delete()
+system5 = GetSystem(Name="SYS 5")
+system5.Delete()
+system2.DisplayText = "EM Static Coarse Full"
+system6 = GetSystem(Name="SYS 6")
+system6.DisplayText = "EM Static Coarse Face"
+system3.DisplayText = "EM Transient Full"
+system7 = GetSystem(Name="SYS 4")
+system7.DisplayText = "EM Transient Face"
+system3.Delete()
+system7.Delete()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Exit()
+template1 = GetTemplate(TemplateName="EngData")
+system8 = template1.CreateSystem(
+    Position="Left",
+    RelativeTo=system1)
+template2 = GetTemplate(TemplateName="Geometry")
+system9 = template2.CreateSystem(
+    Position="Below",
+    RelativeTo=system8)
+geometryComponent1 = system9.GetComponent(Name="Geometry")
+geometryComponent2 = system1.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system9,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system1)
+geometryComponent1.DeleteShare(System=system9)
+engineeringDataComponent1 = system8.GetComponent(Name="Engineering Data")
+engineeringDataComponent2 = system1.GetComponent(Name="Engineering Data")
+engineeringDataComponent1.ReplaceWithShare(
+    TargetSystem=system8,
+    ComponentToShare=engineeringDataComponent2,
+    SourceSystem=system1)
+engineeringDataComponent1.DeleteShare(System=system8)
+template3 = GetTemplate(TemplateName="Mechanical Model")
+system10 = template3.CreateSystem(
+    Position="Above",
+    RelativeTo=system9)
+engineeringDataComponent3 = system10.GetComponent(Name="Engineering Data")
+engineeringDataComponent3.ReplaceWithShare(
+    TargetSystem=system10,
+    ComponentToShare=engineeringDataComponent2,
+    SourceSystem=system1)
+geometryComponent3 = system10.GetComponent(Name="Geometry")
+geometryComponent3.ReplaceWithShare(
+    TargetSystem=system10,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system1)
+engineeringDataComponent3.DeleteShare(System=system10)
+geometryComponent3.DeleteShare(System=system10)
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.TransferData(TargetComponent=geometryComponent3)
+CleanSystem(Systems=[system10])
+system11 = template3.CreateSystem(
+    Position="Above",
+    RelativeTo=system10)
+modelComponent2 = system11.GetComponent(Name="Model")
+modelComponent1.TransferData(TargetComponent=modelComponent2)
+modelComponent2.Refresh()
+system11.Delete()
+system10.Delete()
+system8.Delete()
+system9.Delete()
+model1.Edit()
+Save(Overwrite=True)
+Refresh()
+Refresh()
+Save(Overwrite=True)
+system12 = GetSystem(Name="SYS 5")
+system12.DisplayText = "EM Transient Face"
+system13 = GetSystem(Name="SYS 3")
+system13.DisplayText = "EM Transient Full"
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)

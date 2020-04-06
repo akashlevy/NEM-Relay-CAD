@@ -1,0 +1,12 @@
+# encoding: utf-8
+# 2020 R1
+SetScriptVersion(Version="20.1.164")
+ClearMessages()
+system1 = GetSystem(Name="SYS")
+setup1 = system1.GetContainer(ComponentName="Setup")
+setup1.Edit()
+system2 = GetSystem(Name="SYS 5")
+system2.Delete()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Exit()
+Save(Overwrite=True)
