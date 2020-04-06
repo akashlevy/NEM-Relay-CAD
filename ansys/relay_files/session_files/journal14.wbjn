@@ -1,0 +1,9 @@
+# encoding: utf-8
+# 2020 R1
+SetScriptVersion(Version="20.1.164")
+system1 = GetSystem(Name="SYS 4")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.Exit()
+Refresh()
+geometry1.SetFile(FilePath="C:/Users/Akash Levy/Documents/NEM-Relay-CAD/ansys/relay.scdoc")
