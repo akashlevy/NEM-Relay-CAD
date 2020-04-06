@@ -1,719 +1,322 @@
-/COM,ANSYS RELEASE 2020 R1           BUILD 20.1      UP20191203       00:24:08
+/COM,ANSYS RELEASE 2020 R1           BUILD 20.1      UP20191203       18:36:25
 
- *** WARNING ***                         CP =      11.438   TIME= 00:24:38
+ *** WARNING ***                         CP =      11.531   TIME= 18:36:39
  Element shape checking is currently inactive.  Issue SHPP,ON or         
  SHPP,WARN to reactivate, if desired.                                    
 
- *** WARNING ***                         CP =      11.766   TIME= 00:24:38
+ *** WARNING ***                         CP =      11.734   TIME= 18:36:39
  Maximum contact stiffness 2.809944716E+20 is too big which can cause an 
  accuracy problem, you may scale the force units in the model.           
 
- *** WARNING ***                         CP =      11.766   TIME= 00:24:38
+ *** WARNING ***                         CP =      11.734   TIME= 18:36:39
  Minimum contact depth 2.443885472E-08 is too small which can cause an   
  accuracy problem, you may scale the length units in the model.          
 
- *** WARNING ***                         CP =      13.344   TIME= 00:24:40
+ *** WARNING ***                         CP =      13.438   TIME= 18:36:43
  Pivoting has been activated for the Distributed Sparse Matrix Solver .  
  The memory required may greatly exceed the predicted amount.  In that   
  event, use the DSPOPTION command to change the memory mode and/or       
  memory size used by the Distributed Sparse Matrix Solver.               
 
- *** WARNING ***                         CP =      14.672   TIME= 00:24:42
+ *** WARNING ***                         CP =      14.562   TIME= 18:36:46
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 6.731677199E-12 is less than a      
+ reference FORCE CONVERGENCE VALUE = 6.7316772E-12 is less than a        
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      17.109   TIME= 00:24:45
+ *** WARNING ***                         CP =      17.000   TIME= 18:36:52
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.187226652E-09 is less than a      
+ reference FORCE CONVERGENCE VALUE = 1.478381798E-09 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      21.234   TIME= 00:24:50
+ *** WARNING ***                         CP =      22.812   TIME= 18:37:00
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 3.167829066E-09 is less than a      
+ reference FORCE CONVERGENCE VALUE = 3.94482671E-09 is less than a       
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      25.172   TIME= 00:24:54
+ *** WARNING ***                         CP =      30.625   TIME= 18:37:10
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 5.944565959E-09 is less than a      
+ reference FORCE CONVERGENCE VALUE = 7.402722341E-09 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      29.141   TIME= 00:24:58
+ *** WARNING ***                         CP =      37.859   TIME= 18:37:19
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 9.522464092E-09 is less than a      
+ reference FORCE CONVERGENCE VALUE = 1.185837072E-08 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      33.359   TIME= 00:25:03
+ *** WARNING ***                         CP =      44.750   TIME= 18:37:28
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.390803016E-08 is less than a      
+ reference FORCE CONVERGENCE VALUE = 1.731992654E-08 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      37.328   TIME= 00:25:07
+ *** WARNING ***                         CP =      49.891   TIME= 18:37:33
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.910950172E-08 is less than a      
+ reference FORCE CONVERGENCE VALUE = 2.379771405E-08 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      41.250   TIME= 00:25:12
+ *** WARNING ***                         CP =      54.172   TIME= 18:37:38
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.513691983E-08 is less than a      
+ reference FORCE CONVERGENCE VALUE = 3.130431898E-08 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      45.188   TIME= 00:25:16
+ *** WARNING ***                         CP =      58.406   TIME= 18:37:43
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 3.200222052E-08 is less than a      
+ reference FORCE CONVERGENCE VALUE = 3.9854704E-08 is less than a        
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      49.141   TIME= 00:25:20
+ *** WARNING ***                         CP =      62.625   TIME= 18:37:47
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 3.971934662E-08 is less than a      
+ reference FORCE CONVERGENCE VALUE = 4.94663499E-08 is less than a       
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      52.906   TIME= 00:25:25
+ *** WARNING ***                         CP =      66.828   TIME= 18:37:52
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 4.830438243E-08 is less than a      
+ reference FORCE CONVERGENCE VALUE = 6.015942563E-08 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      57.000   TIME= 00:25:29
+ *** WARNING ***                         CP =      70.938   TIME= 18:37:57
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 5.777571437E-08 is less than a      
+ reference FORCE CONVERGENCE VALUE = 7.195699113E-08 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      60.906   TIME= 00:25:34
+ *** WARNING ***                         CP =      75.391   TIME= 18:38:02
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 6.815422142E-08 is less than a      
+ reference FORCE CONVERGENCE VALUE = 8.488523794E-08 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      64.875   TIME= 00:25:38
+ *** WARNING ***                         CP =      79.672   TIME= 18:38:06
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 7.946350012E-08 is less than a      
+ reference FORCE CONVERGENCE VALUE = 9.897377367E-08 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      68.984   TIME= 00:25:42
+ *** WARNING ***                         CP =      84.875   TIME= 18:38:12
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 9.173013027E-08 is less than a      
+ reference FORCE CONVERGENCE VALUE = 1.142559579E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      72.781   TIME= 00:25:47
+ *** WARNING ***                         CP =      89.141   TIME= 18:38:17
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.049839886E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 1.307692991E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      76.766   TIME= 00:25:51
+ *** WARNING ***                         CP =      93.188   TIME= 18:38:21
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.192586195E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 1.485559243E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      80.859   TIME= 00:25:56
+ *** WARNING ***                         CP =      97.453   TIME= 18:38:26
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.345916755E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 1.676631363E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      84.859   TIME= 00:26:00
+ *** WARNING ***                         CP =     101.703   TIME= 18:38:31
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.510254402E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 1.881440777E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      88.828   TIME= 00:26:05
+ *** WARNING ***                         CP =     105.969   TIME= 18:38:35
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.686074549E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 2.100585254E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      92.984   TIME= 00:26:09
+ *** WARNING ***                         CP =     110.234   TIME= 18:38:40
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.873912708E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 2.33473846E-07 is less than a       
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =      97.000   TIME= 00:26:14
+ *** WARNING ***                         CP =     114.484   TIME= 18:38:45
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.074373597E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 2.584661536E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     101.000   TIME= 00:26:18
+ *** WARNING ***                         CP =     118.812   TIME= 18:38:49
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.288142231E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 2.85121721E-07 is less than a       
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     106.000   TIME= 00:26:24
+ *** WARNING ***                         CP =     124.172   TIME= 18:38:55
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.516025972E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 3.135423577E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     110.625   TIME= 00:26:29
+ *** WARNING ***                         CP =     129.828   TIME= 18:39:01
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.758872859E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 3.438349406E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     115.656   TIME= 00:26:35
+ *** WARNING ***                         CP =     135.234   TIME= 18:39:07
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 3.01772539E-07 is less than a       
+ reference FORCE CONVERGENCE VALUE = 3.761311017E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     120.562   TIME= 00:26:40
+ *** WARNING ***                         CP =     140.078   TIME= 18:39:13
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 3.293767487E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 4.105804348E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     125.469   TIME= 00:26:46
+ *** WARNING ***                         CP =     144.688   TIME= 18:39:19
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 3.588377659E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 4.473573091E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     130.406   TIME= 00:26:52
+ *** WARNING ***                         CP =     149.297   TIME= 18:39:24
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 3.903174317E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 4.866666893E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     135.812   TIME= 00:26:58
+ *** WARNING ***                         CP =     156.172   TIME= 18:39:34
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 4.240075732E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 5.287518563E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     141.844   TIME= 00:27:05
+ *** WARNING ***                         CP =     164.484   TIME= 18:39:44
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 4.601483601E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 5.73918202E-07 is less than a       
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     147.984   TIME= 00:27:12
+ *** WARNING ***                         CP =     171.281   TIME= 18:39:52
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 4.990049129E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 6.225027778E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     154.172   TIME= 00:27:19
+ *** WARNING ***                         CP =     178.828   TIME= 18:40:02
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 5.409291155E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 6.749546075E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     160.734   TIME= 00:27:26
+ *** WARNING ***                         CP =     184.609   TIME= 18:40:09
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 5.863553364E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 7.318292701E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     168.453   TIME= 00:27:35
+ *** WARNING ***                         CP =     191.578   TIME= 18:40:17
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 6.358638533E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 7.93872282E-07 is less than a       
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     175.656   TIME= 00:27:43
+ *** WARNING ***                         CP =     200.234   TIME= 18:40:31
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 6.90165434E-07 is less than a       
+ reference FORCE CONVERGENCE VALUE = 8.619985711E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     182.703   TIME= 00:27:50
+ *** WARNING ***                         CP =     207.375   TIME= 18:40:40
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 7.502852857E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 9.375363092E-07 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     190.719   TIME= 00:27:59
+ *** WARNING ***                         CP =     220.125   TIME= 18:40:57
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 8.177308535E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 1.022454308E-06 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     199.719   TIME= 00:28:09
+ *** WARNING ***                         CP =     229.875   TIME= 18:41:08
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 8.94708505E-07 is less than a       
+ reference FORCE CONVERGENCE VALUE = 1.119659323E-06 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     209.859   TIME= 00:28:20
+ *** WARNING ***                         CP =     239.062   TIME= 18:41:18
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 9.849713507E-07 is less than a      
+ reference FORCE CONVERGENCE VALUE = 1.23416923E-06 is less than a       
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     221.828   TIME= 00:28:34
+ *** WARNING ***                         CP =     250.453   TIME= 18:41:31
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.095827991E-06 is less than a      
+ reference FORCE CONVERGENCE VALUE = 1.376006478E-06 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     237.984   TIME= 00:28:52
+ *** WARNING ***                         CP =     267.438   TIME= 18:41:50
  A reference force value times the tolerance is used by the              
  Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.245769709E-06 is less than a      
+ reference FORCE CONVERGENCE VALUE = 1.571946461E-06 is less than a      
  threshold.  This threshold defaults to 1.0 or is specified as MINREF    
  on the CNVTOL command.  Check results carefully.                        
 
- *** WARNING ***                         CP =     295.719   TIME= 00:29:54
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.571954678E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     309.109   TIME= 00:30:09
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.834217533E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     313.078   TIME= 00:30:13
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.835430809E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     317.500   TIME= 00:30:18
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.836612219E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     321.328   TIME= 00:30:22
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.837745425E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     325.453   TIME= 00:30:26
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.838894392E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     329.344   TIME= 00:30:31
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.840030693E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     333.391   TIME= 00:30:35
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.841150125E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     337.359   TIME= 00:30:39
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.840889545E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     341.156   TIME= 00:30:44
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.839737151E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     345.188   TIME= 00:30:48
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.838576253E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     349.125   TIME= 00:30:52
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.837401762E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     352.781   TIME= 00:30:57
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.836226096E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     356.641   TIME= 00:31:01
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.835004666E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     360.391   TIME= 00:31:05
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.833768716E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     364.453   TIME= 00:31:09
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.832539657E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     368.438   TIME= 00:31:14
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.831245902E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     372.391   TIME= 00:31:18
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.829929277E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     376.375   TIME= 00:31:22
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.828538681E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     380.266   TIME= 00:31:27
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.826924576E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     384.469   TIME= 00:31:31
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.824815136E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     389.281   TIME= 00:31:37
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.820166396E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     393.156   TIME= 00:31:41
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.814502916E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     398.062   TIME= 00:31:46
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.800269849E-06 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     416.766   TIME= 00:32:06
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 5.652261596E-07 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     422.609   TIME= 00:32:13
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 5.193685278E-07 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     428.594   TIME= 00:32:19
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 4.773020275E-07 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     434.469   TIME= 00:32:26
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 4.385242441E-07 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     439.500   TIME= 00:32:31
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 4.026399142E-07 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
+ *** ERROR ***                           CP =     389.094   TIME= 18:44:05
+ Solution not converged at time 41.9333333 (load step 42 substep 3).     
+  Run terminated.                                                        
 
- *** WARNING ***                         CP =     444.500   TIME= 00:32:36
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 3.693072383E-07 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     449.156   TIME= 00:32:41
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 3.382803949E-07 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     453.984   TIME= 00:32:47
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 3.093453368E-07 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     459.000   TIME= 00:32:52
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.823237779E-07 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     464.000   TIME= 00:32:57
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.570654984E-07 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     468.984   TIME= 00:33:03
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.334426669E-07 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     472.969   TIME= 00:33:07
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.113473499E-07 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     477.078   TIME= 00:33:11
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.906804637E-07 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     480.953   TIME= 00:33:16
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.713622651E-07 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     484.797   TIME= 00:33:20
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.533205267E-07 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     488.828   TIME= 00:33:24
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.364918261E-07 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     492.906   TIME= 00:33:29
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.208202652E-07 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     496.719   TIME= 00:33:33
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.062564277E-07 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     500.750   TIME= 00:33:37
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 9.275652803E-08 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     503.547   TIME= 00:33:40
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 8.028187371E-08 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     506.328   TIME= 00:33:43
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 6.879747571E-08 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     509.375   TIME= 00:33:47
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 5.827307273E-08 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     512.141   TIME= 00:33:50
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 4.86814338E-08 is less than a       
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     514.906   TIME= 00:33:53
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 3.999844882E-08 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     518.688   TIME= 00:33:57
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 3.220289652E-08 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     522.531   TIME= 00:34:01
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 2.527594478E-08 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     526.406   TIME= 00:34:05
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.920134821E-08 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     530.484   TIME= 00:34:10
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.396498789E-08 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     534.547   TIME= 00:34:14
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 9.554798333E-09 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     538.281   TIME= 00:34:18
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 5.960646809E-09 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     542.625   TIME= 00:34:23
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 3.174234719E-09 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     546.734   TIME= 00:34:28
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 1.189022279E-09 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     550.625   TIME= 00:34:32
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 6.731677199E-12 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
-
- *** WARNING ***                         CP =     554.797   TIME= 00:34:36
- A reference force value times the tolerance is used by the              
- Newton-Raphson method for checking convergence.  The calculated         
- reference FORCE CONVERGENCE VALUE = 3.957066828E-10 is less than a      
- threshold.  This threshold defaults to 1.0 or is specified as MINREF    
- on the CNVTOL command.  Check results carefully.                        
+ *** WARNING ***                         CP =     389.094   TIME= 18:44:05
+ The unconverged solution (identified as time 42 substep 999999) is      
+ output for analysis debug purposes.  Results should not be used for     
+ any other purpose.                                                      
