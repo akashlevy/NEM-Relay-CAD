@@ -1,0 +1,232 @@
+
+ ANSYS Mechanical Enterprise                       
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *            ANSYS 2020 R1          LEGAL NOTICES             *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2020 ANSYS, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of ANSYS, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the ANSYS, Inc. online documentation or the ANSYS, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * ANSYS, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * ANSYS, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the ANSYS, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the ANSYS, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ 2020 R1 
+     
+ Point Releases and Patches installed:   
+     
+ ANSYS, Inc. Products 2020 R1
+ SpaceClaim 2020 R1  
+ AIM 2020 R1 
+ Live (includes SpaceClaim) 2020 R1  
+ Autodyn 2020 R1 
+ LS-DYNA 2020 R1 
+ CFX (includes CFD-Post) 2020 R1 
+ Chemkin 2020 R1 
+ EnSight 2020 R1 
+ FENSAP-ICE 2020 R1  
+ Fluent (includes CFD-Post) 2020 R1  
+ Forte 2020 R1   
+ Polyflow (includes CFD-Post) 2020 R1
+ TurboGrid 2020 R1   
+ ICEM CFD 2020 R1
+ Aqwa 2020 R1
+ Customization Files for User Programmable Features 2020 R1  
+ Mechanical Products 2020 R1 
+ Additive 2020 R1
+ ANSYS Sherlock 2020 R1  
+ Icepak (includes CFD-Post) 2020 R1  
+ ACIS Geometry Interface 2020 R1 
+ AutoCAD Geometry Interface 2020 R1  
+ Catia, Version 4 Geometry Interface 2020 R1 
+ Catia, Version 5 Geometry Interface 2020 R1 
+ Catia, Version 6 Geometry Interface 2020 R1 
+ Creo Elements/Direct Modeling Geometry Interface 2020 R1
+ Creo Parametric Geometry Interface 2020 R1  
+ Inventor Geometry Interface 2020 R1 
+ JTOpen Geometry Interface 2020 R1   
+ NX Geometry Interface 2020 R1   
+ Parasolid Geometry Interface  2020 R1   
+ Solid Edge Geometry Interface 2020 R1   
+ SOLIDWORKS Geometry Interface 2020 R1   
+ ANSYS, Inc. License Manager 2020 R1 
+
+
+          *****  ANSYS COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = NOLIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  DISTRIBUTED MEMORY PARALLEL REQUESTED
+       2 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
+    TOTAL OF     2 CORES REQUESTED
+  INPUT FILE NAME              = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr0BD6\dummy.dat
+  OUTPUT FILE NAME             = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr0BD6\solve.out
+  START-UP FILE MODE           = NOREAD
+  STOP FILE MODE               = NOREAD
+  CONNECTION TO COUPLING SERVER REQUESTED
+    SYSTEM NAME                = Solution 2
+    HOST NAME                  = DESKTOP-H2RNGL6
+    SERVER PORT REQUESTED      = 54531       
+
+ RELEASE= 2020 R1              BUILD= 20.1      UP20191203   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file0  07:09:19  APR 07, 2020 CP=      0.656
+
+
+MAPDL is connecting to the system coupling service on DESKTOP-H2RNGL6 through port  54531 ...
+   ... connected
+
+ PARAMETER _DS_PROGRESS =     999.0000000    
+
+ /INPUT FILE= ds.dat  LINE=       0
+
+
+
+ *** NOTE ***                            CP =       0.875   TIME= 07:09:21
+ The /CONFIG,NOELDB command is not valid in a Distributed ANSYS          
+ solution.  Command is ignored.                                          
+
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  7.15583333    
+
+ TITLE= 
+ relay--EM Transient (E5)                                                      
+
+
+ SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr0BD6\
+
+ SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_SOLVERFILES_DIR(1) = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\dp0\SYS-14\MECH\
+
+ SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_USERFILES_DIR(1) = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\user_files\
+ --- Data in consistent MKS units. See Solving Units in the help system for more
+
+ MKS UNITS SPECIFIED FOR INTERNAL    
+  LENGTH        (l)  = METER (M)
+  MASS          (M)  = KILOGRAM (KG)
+  TIME          (t)  = SECOND (SEC)
+  TEMPERATURE   (T)  = CELSIUS (C)
+  TOFFSET            = 273.0
+  CHARGE        (Q)  = COULOMB
+  FORCE         (f)  = NEWTON (N) (KG-M/SEC2)
+  HEAT               = JOULE (N-M)
+
+  PRESSURE           = PASCAL (NEWTON/M**2)
+  ENERGY        (W)  = JOULE (N-M)
+  POWER         (P)  = WATT (N-M/SEC)
+  CURRENT       (i)  = AMPERE (COULOMBS/SEC)
+  CAPACITANCE   (C)  = FARAD
+  INDUCTANCE    (L)  = HENRY
+  MAGNETIC FLUX      = WEBER
+  RESISTANCE    (R)  = OHM
+  ELECTRIC POTENTIAL = VOLT
+
+ INPUT  UNITS ARE ALSO SET TO MKS 
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
+ DISTRIBUTED ANSYS Mechanical Enterprise                       
+
+ 20120530  VERSION=WINDOWS x64   07:09:21  APR 07, 2020 CP=      0.875
+
+ relay--EM Transient (E5)                                                      
+
+
+
+          ***** ANSYS ANALYSIS DEFINITION (PREP7) *****
+ *********** Nodes for the whole assembly ***********
+ *********** Elements for Body 1 "Relay" ***********
+ *********** Elements for Body 2 "Contact 1" ***********
+ *********** Elements for Body 3 "Contact 2" ***********
+ *********** Elements for Body 4 "Contact 3" ***********
+ *********** Elements for Body 5 "Contact 4" ***********
+ *********** Elements for Body 6 "Contact 5" ***********
+ *********** Elements for Body 7 "Contact 6" ***********
+ *********** Elements for Body 8 "Contact 7" ***********
+ *********** Elements for Body 9 "Contact 8" ***********
+ *********** Elements for Body 10 "Substrate" ***********
+ *********** Send User Defined Coordinate System(s) ***********
+ *********** Set Reference Temperature ***********
+ *********** Send Materials ***********
+ *********** Create Contact "Contact Region 11" ***********
+             Real Constant Set For Above Contact Is 12 & 11
+ *********** Create Contact "Contact Region 12" ***********
+             Real Constant Set For Above Contact Is 14 & 13
+ *********** Create Contact "Contact Region 13" ***********
+             Real Constant Set For Above Contact Is 16 & 15
+ *********** Create Contact "Contact Region 14" ***********
+             Real Constant Set For Above Contact Is 18 & 17
+ *********** Create Contact "Contact Region 15" ***********
+             Real Constant Set For Above Contact Is 20 & 19
+ *********** Create Contact "Contact Region 16" ***********
+             Real Constant Set For Above Contact Is 22 & 21
+ *********** Create Contact "Contact Region 17" ***********
+             Real Constant Set For Above Contact Is 24 & 23
+ *********** Create Contact "Contact Region 18" ***********
+             Real Constant Set For Above Contact Is 26 & 25
+ *********** Create Contact "Contact Region 19" ***********
+             Real Constant Set For Above Contact Is 28 & 27
+ *********** Send Named Selection as Node Component ***********
+ *********** Fixed Supports ***********
+ *********** Create FSI Flags ***********
+
+ *** WARNING ***                         CP =       1.078   TIME= 07:09:22
+ Some of the defined and selected elements did not require FSIN.  Use    
+ the SFELIST,ALL,fluid-solid interaction surfaces command to view a      
+ list of elements that did have the fluid-solid interaction surfaces     
+ surface load stored.                                                    
+ *********** Create Structural MEMS Load ***********
+  
+ *** EMTGEN Command Macro
+  

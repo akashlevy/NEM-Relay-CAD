@@ -1,0 +1,18 @@
+#
+# ANSYS(R) System Coupling 2020 R1
+# Tue Apr  7 09:39:02 2020
+#
+
+FORMAT
+type:                         master_server gold
+
+MULTIPLE_CASEFILES
+total number of cfiles:       2
+cfiles pattern:               Results_*.case
+cfiles start number:          0
+cfiles increment:             1
+
+SERVERS
+number of servers:            2 repeat
+machine id:                   localhost
+executable:                   ensight201.server

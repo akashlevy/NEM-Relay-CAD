@@ -1,0 +1,13 @@
+
+Build Time: Dec  2 2019 14:15:02 EST 
+Executable Path: C:/PROGRA~1/ANSYSI~1/v201/fluent/ntbin/win64/fluent.exe
+
+-------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID   Vendor                     
+-------------------------------------------------------------------------------
+n0*   DESKTOP-H2RNGL6  1/2  Windows-x64  6704  Intel(R) Core(TM) i5-6360U 
+host  DESKTOP-H2RNGL6       Windows-x64  8500  Intel(R) Core(TM) i5-6360U 
+
+MPI Option Selected: ibmmpi
+Selected system interconnect: default
+-------------------------------------------------------------------------------

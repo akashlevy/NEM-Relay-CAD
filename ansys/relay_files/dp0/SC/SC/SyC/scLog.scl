@@ -1,6 +1,6 @@
 
 ===============================================================================
-Transcript output started: 2020-04-07 07:08:46
+Transcript output started: 2020-04-07 08:17:21
 
 
 ===============================================================================
@@ -20,7 +20,7 @@ Transcript output started: 2020-04-07 07:08:46
 |    Option :                                                         EndTime |
 |    End Time :                                                     5e-09 [s] |
 | Step Control                                                                |
-|    Maximum Iterations :                                                   5 |
+|    Maximum Iterations :                                                  20 |
 |    Minimum Iterations :                                                   1 |
 |    Time Step Size :                                               1e-09 [s] |
 |                                                                             |
@@ -138,9 +138,2270 @@ Awaiting connections from coupling participants... done.
 ===============================================================================
 
 
++=============================================================================+
+| COUPLING STEP = 1                         SIMULATION TIME = 1.00000E-09 [s] |
 +-----------------------------------------------------------------------------+
-| Error when making a remote call to participant Solution 2.                  |
+|                                     |      Source            Target         |
 +-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 1                            |
++-----------------------------------------------------------------------------+
+|                               MAPPING SUMMARY                               |
++- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -+
+| interface-1                         |                                       |
+|   Data Transfer                     |                                       |
+|     Mapped Area [%]                 |        100               100          |
+|     Mapped Elements [%]             |        100               100          |
+|     Mapped Nodes [%]                |        100               100          |
+|   Data Transfer 2                   |                                       |
+|     Mapped Area [%]                 |        100               100          |
+|     Mapped Elements [%]             |        100               100          |
+|     Mapped Nodes [%]                |        100               100          |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     1.00E+00          1.00E+00        |
+|       Values Sum x                  |     0.00E+00          0.00E+00        |
+|       Values Sum y                  |     0.00E+00          0.00E+00        |
+|       Values Sum z                  |     0.00E+00          0.00E+00        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |         Not yet converged             |
+|       RMS Change                    |     1.00E+00          1.00E+00        |
+|       Values Average x              |    -3.58E-25         -2.16E-25        |
+|       Values Average y              |     3.72E-25          2.31E-25        |
+|       Values Average z              |    -7.09E-24          5.94E-24        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 2                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     5.46E-03          7.00E-03        |
+|       Values Sum x                  |    -1.88E-16          1.58E-16        |
+|       Values Sum y                  |     9.70E-18          1.52E-15        |
+|       Values Sum z                  |     4.70E-16         -7.68E-16        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     3.04E-05          2.46E-05        |
+|       Values Average x              |     6.83E-21          4.29E-21        |
+|       Values Average y              |     2.42E-20          1.68E-20        |
+|       Values Average z              |    -5.71E-20         -4.77E-20        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 3                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     6.28E-03          6.88E-03        |
+|       Values Sum x                  |    -3.62E-16         -3.53E-16        |
+|       Values Sum y                  |     2.15E-16          2.33E-16        |
+|       Values Sum z                  |     1.18E-16          2.62E-16        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     2.66E-05          2.14E-05        |
+|       Values Average x              |    -7.69E-21         -6.39E-21        |
+|       Values Average y              |     5.66E-21          4.08E-21        |
+|       Values Average z              |    -4.63E-20         -3.97E-20        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 4                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     6.73E-03          1.08E-02        |
+|       Values Sum x                  |    -4.91E-15         -4.89E-15        |
+|       Values Sum y                  |     3.00E-15          3.01E-15        |
+|       Values Sum z                  |    -3.16E-16          3.55E-16        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.55E-05          1.40E-05        |
+|       Values Average x              |    -1.10E-19         -8.92E-20        |
+|       Values Average y              |     6.68E-20          5.35E-20        |
+|       Values Average z              |    -3.32E-20         -2.61E-20        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 5                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     1.98E-02          4.90E-02        |
+|       Values Sum x                  |    -3.56E-14         -3.56E-14        |
+|       Values Sum y                  |     2.26E-14          2.27E-14        |
+|       Values Sum z                  |     3.51E-15          1.30E-14        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.27E-04          1.12E-04        |
+|       Values Average x              |    -7.82E-19         -6.44E-19        |
+|       Values Average y              |     5.01E-19          4.04E-19        |
+|       Values Average z              |    -3.19E-19         -2.69E-19        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 6                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     2.82E-02          8.91E-02        |
+|       Values Sum x                  |    -2.74E-13         -2.73E-13        |
+|       Values Sum y                  |     1.57E-13          1.57E-13        |
+|       Values Sum z                  |    -9.61E-15         -9.25E-14        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.32E-03          1.31E-03        |
+|       Values Average x              |    -6.03E-18         -4.93E-18        |
+|       Values Average y              |     3.50E-18          2.80E-18        |
+|       Values Average z              |     6.50E-18          6.44E-18        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 7                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     2.78E-02          8.13E-02        |
+|       Values Sum x                  |    -2.29E-12         -2.29E-12        |
+|       Values Sum y                  |     1.25E-12          1.25E-12        |
+|       Values Sum z                  |     1.21E-12          1.56E-12        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     8.45E-03          8.31E-03        |
+|       Values Average x              |    -4.86E-17         -4.06E-17        |
+|       Values Average y              |     2.81E-17          2.25E-17        |
+|       Values Average z              |     3.52E-17          3.54E-17        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 8                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     4.25E-02          2.59E-01        |
+|       Values Sum x                  |    -1.74E-11         -1.59E-11        |
+|       Values Sum y                  |     6.56E-12          6.59E-12        |
+|       Values Sum z                  |     3.56E-12         -3.08E-11        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |         Not yet converged             |
+|       RMS Change                    |     2.45E-01          2.41E-01        |
+|       Values Average x              |    -3.43E-16         -2.86E-16        |
+|       Values Average y              |     1.49E-16          1.14E-16        |
+|       Values Average z              |     2.34E-15          2.28E-15        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 9                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     3.56E-02          1.97E-01        |
+|       Values Sum x                  |    -1.01E-10         -9.39E-11        |
+|       Values Sum y                  |     3.82E-11          3.84E-11        |
+|       Values Sum z                  |     3.15E-11         -1.41E-10        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |         Not yet converged             |
+|       RMS Change                    |     3.51E-01          3.46E-01        |
+|       Values Average x              |    -2.01E-15         -1.67E-15        |
+|       Values Average y              |     8.59E-16          6.62E-16        |
+|       Values Average z              |     1.25E-14          1.22E-14        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 10                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     2.18E-02          7.42E-02        |
+|       Values Sum x                  |    -2.54E-10         -2.37E-10        |
+|       Values Sum y                  |     8.72E-11          8.88E-11        |
+|       Values Sum z                  |     9.19E-11         -1.56E-10        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |         Not yet converged             |
+|       RMS Change                    |     2.20E-01          2.17E-01        |
+|       Values Average x              |    -5.03E-15         -4.21E-15        |
+|       Values Average y              |     1.99E-15          1.54E-15        |
+|       Values Average z              |     2.37E-14          2.29E-14        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 11                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     1.39E-02          1.20E-01        |
+|       Values Sum x                  |    -3.22E-10         -2.98E-10        |
+|       Values Sum y                  |     1.05E-10          1.06E-10        |
+|       Values Sum z                  |     4.67E-11         -4.95E-10        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |         Not yet converged             |
+|       RMS Change                    |     1.66E-01          1.67E-01        |
+|       Values Average x              |    -6.44E-15         -5.34E-15        |
+|       Values Average y              |     2.43E-15          1.87E-15        |
+|       Values Average z              |     3.69E-14          3.59E-14        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 12                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     6.52E-03          6.42E-02        |
+|       Values Sum x                  |    -3.22E-10         -3.03E-10        |
+|       Values Sum y                  |     1.03E-10          1.05E-10        |
+|       Values Sum z                  |     1.22E-10         -2.50E-10        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |         Not yet converged             |
+|       RMS Change                    |     6.67E-02          6.80E-02        |
+|       Values Average x              |    -6.52E-15         -5.43E-15        |
+|       Values Average y              |     2.48E-15          1.90E-15        |
+|       Values Average z              |     3.22E-14          3.11E-14        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 13                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     4.98E-03          4.94E-02        |
+|       Values Sum x                  |    -3.22E-10         -3.02E-10        |
+|       Values Sum y                  |     1.05E-10          1.06E-10        |
+|       Values Sum z                  |     1.08E-10         -3.91E-10        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |         Not yet converged             |
+|       RMS Change                    |     5.55E-02          5.72E-02        |
+|       Values Average x              |    -6.51E-15         -5.42E-15        |
+|       Values Average y              |     2.48E-15          1.89E-15        |
+|       Values Average z              |     3.76E-14          3.63E-14        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 14                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     8.83E-04          8.14E-03        |
+|       Values Sum x                  |    -3.36E-10         -3.10E-10        |
+|       Values Sum y                  |     1.08E-10          1.09E-10        |
+|       Values Sum z                  |     5.01E-11         -4.69E-10        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |         Not yet converged             |
+|       RMS Change                    |     2.27E-02          1.96E-02        |
+|       Values Average x              |    -6.71E-15         -5.57E-15        |
+|       Values Average y              |     2.49E-15          1.92E-15        |
+|       Values Average z              |     3.63E-14          3.54E-14        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 15                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     5.47E-03          5.43E-02        |
+|       Values Sum x                  |    -3.24E-10         -3.05E-10        |
+|       Values Sum y                  |     1.05E-10          1.07E-10        |
+|       Values Sum z                  |     1.21E-10         -2.52E-10        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |         Not yet converged             |
+|       RMS Change                    |     5.94E-02          5.95E-02        |
+|       Values Average x              |    -6.54E-15         -5.46E-15        |
+|       Values Average y              |     2.50E-15          1.92E-15        |
+|       Values Average z              |     3.29E-14          3.17E-14        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 16                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     2.16E-03          2.15E-02        |
+|       Values Sum x                  |    -3.25E-10         -3.06E-10        |
+|       Values Sum y                  |     1.07E-10          1.09E-10        |
+|       Values Sum z                  |     1.21E-10         -3.09E-10        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |         Not yet converged             |
+|       RMS Change                    |     2.35E-02          2.39E-02        |
+|       Values Average x              |    -6.59E-15         -5.49E-15        |
+|       Values Average y              |     2.54E-15          1.94E-15        |
+|       Values Average z              |     3.48E-14          3.36E-14        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 17                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     4.33E-04          4.33E-03        |
+|       Values Sum x                  |    -3.23E-10         -3.04E-10        |
+|       Values Sum y                  |     1.04E-10          1.06E-10        |
+|       Values Sum z                  |     1.21E-10         -3.23E-10        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |         Not yet converged             |
+|       RMS Change                    |     1.20E-02          1.07E-02        |
+|       Values Average x              |    -6.55E-15         -5.46E-15        |
+|       Values Average y              |     2.48E-15          1.90E-15        |
+|       Values Average z              |     3.51E-14          3.39E-14        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 18                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     6.56E-03          6.52E-02        |
+|       Values Sum x                  |    -3.18E-10         -3.00E-10        |
+|       Values Sum y                  |     1.03E-10          1.04E-10        |
+|       Values Sum z                  |     1.57E-10         -1.18E-10        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |         Not yet converged             |
+|       RMS Change                    |     8.56E-02          8.70E-02        |
+|       Values Average x              |    -6.41E-15         -5.38E-15        |
+|       Values Average y              |     2.42E-15          1.88E-15        |
+|       Values Average z              |     2.87E-14          2.76E-14        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 19                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     3.79E-03          3.77E-02        |
+|       Values Sum x                  |    -3.21E-10         -3.01E-10        |
+|       Values Sum y                  |     1.04E-10          1.05E-10        |
+|       Values Sum z                  |     1.29E-10         -2.42E-10        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |         Not yet converged             |
+|       RMS Change                    |     4.73E-02          4.71E-02        |
+|       Values Average x              |    -6.44E-15         -5.38E-15        |
+|       Values Average y              |     2.44E-15          1.87E-15        |
+|       Values Average z              |     3.21E-14          3.10E-14        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 20                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     6.93E-03          6.84E-02        |
+|       Values Sum x                  |    -3.35E-10         -3.10E-10        |
+|       Values Sum y                  |     1.08E-10          1.08E-10        |
+|       Values Sum z                  |     4.71E-11         -5.03E-10        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |         Not yet converged             |
+|       RMS Change                    |     7.34E-02          7.40E-02        |
+|       Values Average x              |    -6.69E-15         -5.56E-15        |
+|       Values Average y              |     2.48E-15          1.91E-15        |
+|       Values Average z              |     3.77E-14          3.68E-14        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++=============================================================================+
 
-Transcript output stopped: 2020-04-07 07:09:27
++=============================================================================+
+| COUPLING STEP = 2                         SIMULATION TIME = 2.00000E-09 [s] |
++-----------------------------------------------------------------------------+
+|                                     |      Source            Target         |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 1                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     5.67E-03          5.63E-02        |
+|       Values Sum x                  |    -3.26E-10         -3.07E-10        |
+|       Values Sum y                  |     1.07E-10          1.09E-10        |
+|       Values Sum z                  |     1.12E-10         -2.88E-10        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |         Not yet converged             |
+|       RMS Change                    |     9.18E-01          9.04E-01        |
+|       Values Average x              |    -3.01E-14         -2.21E-14        |
+|       Values Average y              |     9.79E-15          8.25E-15        |
+|       Values Average z              |    -6.54E-12         -5.28E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 2                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     3.55E-02          3.54E-01        |
+|       Values Sum x                  |    -3.76E-10         -3.54E-10        |
+|       Values Sum y                  |     1.67E-10          1.68E-10        |
+|       Values Sum z                  |     1.35E-10         -1.03E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     8.69E-03          9.44E-03        |
+|       Values Average x              |    -3.12E-14         -2.32E-14        |
+|       Values Average y              |     1.13E-14          9.39E-15        |
+|       Values Average z              |    -6.48E-12         -5.24E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 3                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     8.66E-04          8.67E-03        |
+|       Values Sum x                  |    -3.75E-10         -3.53E-10        |
+|       Values Sum y                  |     1.63E-10          1.64E-10        |
+|       Values Sum z                  |     1.37E-10         -1.01E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.90E-04          2.09E-04        |
+|       Values Average x              |    -3.12E-14         -2.32E-14        |
+|       Values Average y              |     1.12E-14          9.37E-15        |
+|       Values Average z              |    -6.49E-12         -5.24E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 4                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     5.19E-04          5.20E-03        |
+|       Values Sum x                  |    -3.73E-10         -3.52E-10        |
+|       Values Sum y                  |     1.62E-10          1.63E-10        |
+|       Values Sum z                  |     1.36E-10         -9.99E-10        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.18E-04          1.30E-04        |
+|       Values Average x              |    -3.12E-14         -2.32E-14        |
+|       Values Average y              |     1.12E-14          9.37E-15        |
+|       Values Average z              |    -6.49E-12         -5.24E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 5                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.03E-04          1.04E-03        |
+|       Values Sum x                  |    -3.77E-10         -3.55E-10        |
+|       Values Sum y                  |     1.69E-10          1.70E-10        |
+|       Values Sum z                  |     1.37E-10         -1.00E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     2.98E-05          2.98E-05        |
+|       Values Average x              |    -3.12E-14         -2.32E-14        |
+|       Values Average y              |     1.13E-14          9.40E-15        |
+|       Values Average z              |    -6.49E-12         -5.24E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 6                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     2.50E-04          2.51E-03        |
+|       Values Sum x                  |    -3.75E-10         -3.53E-10        |
+|       Values Sum y                  |     1.67E-10          1.68E-10        |
+|       Values Sum z                  |     1.32E-10         -1.01E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     5.96E-05          6.50E-05        |
+|       Values Average x              |    -3.12E-14         -2.32E-14        |
+|       Values Average y              |     1.13E-14          9.39E-15        |
+|       Values Average z              |    -6.49E-12         -5.24E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 7                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.57E-04          1.57E-03        |
+|       Values Sum x                  |    -3.75E-10         -3.54E-10        |
+|       Values Sum y                  |     1.68E-10          1.69E-10        |
+|       Values Sum z                  |     1.33E-10         -1.01E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     4.17E-05          4.29E-05        |
+|       Values Average x              |    -3.12E-14         -2.32E-14        |
+|       Values Average y              |     1.13E-14          9.40E-15        |
+|       Values Average z              |    -6.49E-12         -5.24E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 8                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     3.52E-04          3.54E-03        |
+|       Values Sum x                  |    -3.74E-10         -3.52E-10        |
+|       Values Sum y                  |     1.66E-10          1.67E-10        |
+|       Values Sum z                  |     1.39E-10         -1.00E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     7.46E-05          8.22E-05        |
+|       Values Average x              |    -3.12E-14         -2.32E-14        |
+|       Values Average y              |     1.13E-14          9.39E-15        |
+|       Values Average z              |    -6.49E-12         -5.24E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 9                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.43E-04          1.41E-03        |
+|       Values Sum x                  |    -3.74E-10         -3.52E-10        |
+|       Values Sum y                  |     1.61E-10          1.62E-10        |
+|       Values Sum z                  |     1.35E-10         -1.01E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     2.67E-05          2.89E-05        |
+|       Values Average x              |    -3.12E-14         -2.32E-14        |
+|       Values Average y              |     1.12E-14          9.36E-15        |
+|       Values Average z              |    -6.49E-12         -5.24E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 10                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.05E-04          1.03E-03        |
+|       Values Sum x                  |    -3.74E-10         -3.52E-10        |
+|       Values Sum y                  |     1.67E-10          1.68E-10        |
+|       Values Sum z                  |     1.39E-10         -1.00E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.36E-05          1.33E-05        |
+|       Values Average x              |    -3.12E-14         -2.32E-14        |
+|       Values Average y              |     1.13E-14          9.39E-15        |
+|       Values Average z              |    -6.49E-12         -5.24E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 11                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.23E-04          1.20E-03        |
+|       Values Sum x                  |    -3.73E-10         -3.51E-10        |
+|       Values Sum y                  |     1.63E-10          1.64E-10        |
+|       Values Sum z                  |     1.31E-10         -1.01E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     7.38E-05          7.35E-05        |
+|       Values Average x              |    -3.12E-14         -2.32E-14        |
+|       Values Average y              |     1.12E-14          9.37E-15        |
+|       Values Average z              |    -6.49E-12         -5.24E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 12                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     8.96E-03          8.31E-02        |
+|       Values Sum x                  |    -3.83E-10         -3.62E-10        |
+|       Values Sum y                  |     1.68E-10          1.69E-10        |
+|       Values Sum z                  |     8.95E-11         -1.27E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.98E-03          2.16E-03        |
+|       Values Average x              |    -3.14E-14         -2.33E-14        |
+|       Values Average y              |     1.13E-14          9.41E-15        |
+|       Values Average z              |    -6.48E-12         -5.23E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 13                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     9.22E-03          9.25E-02        |
+|       Values Sum x                  |    -3.74E-10         -3.52E-10        |
+|       Values Sum y                  |     1.65E-10          1.65E-10        |
+|       Values Sum z                  |     1.36E-10         -9.96E-10        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.98E-03          2.17E-03        |
+|       Values Average x              |    -3.12E-14         -2.32E-14        |
+|       Values Average y              |     1.12E-14          9.38E-15        |
+|       Values Average z              |    -6.49E-12         -5.24E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 14                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.17E-04          1.18E-03        |
+|       Values Sum x                  |    -3.72E-10         -3.51E-10        |
+|       Values Sum y                  |     1.62E-10          1.63E-10        |
+|       Values Sum z                  |     1.35E-10         -1.00E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     2.02E-05          2.18E-05        |
+|       Values Average x              |    -3.12E-14         -2.32E-14        |
+|       Values Average y              |     1.12E-14          9.37E-15        |
+|       Values Average z              |    -6.49E-12         -5.24E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 15                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     4.05E-05          4.05E-04        |
+|       Values Sum x                  |    -3.74E-10         -3.52E-10        |
+|       Values Sum y                  |     1.66E-10          1.67E-10        |
+|       Values Sum z                  |     1.38E-10         -9.98E-10        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     9.20E-06          9.01E-06        |
+|       Values Average x              |    -3.12E-14         -2.32E-14        |
+|       Values Average y              |     1.12E-14          9.39E-15        |
+|       Values Average z              |    -6.49E-12         -5.24E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 16                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     4.28E-05          4.33E-04        |
+|       Values Sum x                  |    -3.73E-10         -3.52E-10        |
+|       Values Sum y                  |     1.65E-10          1.65E-10        |
+|       Values Sum z                  |     1.34E-10         -1.00E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.55E-05          1.54E-05        |
+|       Values Average x              |    -3.12E-14         -2.32E-14        |
+|       Values Average y              |     1.12E-14          9.38E-15        |
+|       Values Average z              |    -6.49E-12         -5.24E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 17                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     7.21E-05          7.16E-04        |
+|       Values Sum x                  |    -3.73E-10         -3.52E-10        |
+|       Values Sum y                  |     1.65E-10          1.65E-10        |
+|       Values Sum z                  |     1.31E-10         -1.01E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     3.16E-05          3.09E-05        |
+|       Values Average x              |    -3.12E-14         -2.32E-14        |
+|       Values Average y              |     1.12E-14          9.38E-15        |
+|       Values Average z              |    -6.49E-12         -5.24E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 18                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     4.81E-04          4.82E-03        |
+|       Values Sum x                  |    -3.75E-10         -3.53E-10        |
+|       Values Sum y                  |     1.64E-10          1.65E-10        |
+|       Values Sum z                  |     1.34E-10         -1.02E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     8.86E-05          1.00E-04        |
+|       Values Average x              |    -3.12E-14         -2.32E-14        |
+|       Values Average y              |     1.12E-14          9.37E-15        |
+|       Values Average z              |    -6.49E-12         -5.24E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 19                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.55E-04          1.55E-03        |
+|       Values Sum x                  |    -3.75E-10         -3.54E-10        |
+|       Values Sum y                  |     1.67E-10          1.68E-10        |
+|       Values Sum z                  |     1.34E-10         -1.02E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     3.79E-05          4.08E-05        |
+|       Values Average x              |    -3.12E-14         -2.32E-14        |
+|       Values Average y              |     1.13E-14          9.39E-15        |
+|       Values Average z              |    -6.49E-12         -5.24E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 20                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     3.17E-05          3.17E-04        |
+|       Values Sum x                  |    -3.75E-10         -3.53E-10        |
+|       Values Sum y                  |     1.68E-10          1.69E-10        |
+|       Values Sum z                  |     1.32E-10         -1.02E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     6.22E-06          6.57E-06        |
+|       Values Average x              |    -3.12E-14         -2.32E-14        |
+|       Values Average y              |     1.13E-14          9.40E-15        |
+|       Values Average z              |    -6.49E-12         -5.24E-12        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++=============================================================================+
+
++=============================================================================+
+| COUPLING STEP = 3                         SIMULATION TIME = 3.00000E-09 [s] |
++-----------------------------------------------------------------------------+
+|                                     |      Source            Target         |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 1                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     9.72E-05          9.64E-04        |
+|       Values Sum x                  |    -3.74E-10         -3.53E-10        |
+|       Values Sum y                  |     1.63E-10          1.64E-10        |
+|       Values Sum z                  |     1.30E-10         -1.03E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |         Not yet converged             |
+|       RMS Change                    |     6.88E-01          6.74E-01        |
+|       Values Average x              |    -6.79E-14         -4.69E-14        |
+|       Values Average y              |     2.22E-14          2.06E-14        |
+|       Values Average z              |    -2.62E-11         -2.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 2                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     1.37E-01          4.07E-01        |
+|       Values Sum x                  |    -4.45E-10         -4.23E-10        |
+|       Values Sum y                  |     2.45E-10          2.44E-10        |
+|       Values Sum z                  |     7.88E-11         -4.17E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     7.96E-03          8.76E-03        |
+|       Values Average x              |    -6.93E-14         -4.80E-14        |
+|       Values Average y              |     2.35E-14          2.14E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 3                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     2.25E-03          6.79E-03        |
+|       Values Sum x                  |    -4.44E-10         -4.21E-10        |
+|       Values Sum y                  |     2.42E-10          2.40E-10        |
+|       Values Sum z                  |     8.44E-11         -4.10E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.15E-04          1.29E-04        |
+|       Values Average x              |    -6.93E-14         -4.80E-14        |
+|       Values Average y              |     2.35E-14          2.14E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 4                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.59E-04          4.67E-04        |
+|       Values Sum x                  |    -4.46E-10         -4.24E-10        |
+|       Values Sum y                  |     2.37E-10          2.36E-10        |
+|       Values Sum z                  |     7.42E-11         -4.12E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     2.93E-05          2.79E-05        |
+|       Values Average x              |    -6.93E-14         -4.81E-14        |
+|       Values Average y              |     2.34E-14          2.14E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 5                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     6.36E-04          1.91E-03        |
+|       Values Sum x                  |    -4.46E-10         -4.24E-10        |
+|       Values Sum y                  |     2.45E-10          2.44E-10        |
+|       Values Sum z                  |     8.52E-11         -4.12E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     3.44E-05          3.77E-05        |
+|       Values Average x              |    -6.93E-14         -4.80E-14        |
+|       Values Average y              |     2.35E-14          2.14E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 6                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     6.13E-04          1.84E-03        |
+|       Values Sum x                  |    -4.45E-10         -4.23E-10        |
+|       Values Sum y                  |     2.41E-10          2.39E-10        |
+|       Values Sum z                  |     7.98E-11         -4.11E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     4.01E-05          4.34E-05        |
+|       Values Average x              |    -6.93E-14         -4.80E-14        |
+|       Values Average y              |     2.34E-14          2.14E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 7                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.47E-04          4.42E-04        |
+|       Values Sum x                  |    -4.46E-10         -4.23E-10        |
+|       Values Sum y                  |     2.39E-10          2.38E-10        |
+|       Values Sum z                  |     8.60E-11         -4.10E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.04E-05          1.12E-05        |
+|       Values Average x              |    -6.93E-14         -4.80E-14        |
+|       Values Average y              |     2.34E-14          2.14E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 8                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.95E-04          5.81E-04        |
+|       Values Sum x                  |    -4.48E-10         -4.26E-10        |
+|       Values Sum y                  |     2.44E-10          2.43E-10        |
+|       Values Sum z                  |     8.46E-11         -4.11E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.11E-05          1.21E-05        |
+|       Values Average x              |    -6.93E-14         -4.81E-14        |
+|       Values Average y              |     2.35E-14          2.14E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 9                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     8.40E-05          2.45E-04        |
+|       Values Sum x                  |    -4.45E-10         -4.23E-10        |
+|       Values Sum y                  |     2.41E-10          2.39E-10        |
+|       Values Sum z                  |     8.60E-11         -4.11E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     2.69E-06          2.71E-06        |
+|       Values Average x              |    -6.93E-14         -4.80E-14        |
+|       Values Average y              |     2.34E-14          2.14E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 10                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     6.09E-05          1.82E-04        |
+|       Values Sum x                  |    -4.45E-10         -4.23E-10        |
+|       Values Sum y                  |     2.43E-10          2.42E-10        |
+|       Values Sum z                  |     8.64E-11         -4.10E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     3.19E-06          3.52E-06        |
+|       Values Average x              |    -6.93E-14         -4.80E-14        |
+|       Values Average y              |     2.35E-14          2.14E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 11                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.30E-04          3.94E-04        |
+|       Values Sum x                  |    -4.44E-10         -4.22E-10        |
+|       Values Sum y                  |     2.41E-10          2.40E-10        |
+|       Values Sum z                  |     7.70E-11         -4.12E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     4.56E-06          5.15E-06        |
+|       Values Average x              |    -6.93E-14         -4.80E-14        |
+|       Values Average y              |     2.34E-14          2.14E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 12                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.28E-03          3.82E-03        |
+|       Values Sum x                  |    -4.44E-10         -4.22E-10        |
+|       Values Sum y                  |     2.45E-10          2.44E-10        |
+|       Values Sum z                  |     7.76E-11         -4.15E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     7.48E-05          8.24E-05        |
+|       Values Average x              |    -6.93E-14         -4.80E-14        |
+|       Values Average y              |     2.35E-14          2.14E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 13                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     8.81E-05          2.65E-04        |
+|       Values Sum x                  |    -4.44E-10         -4.23E-10        |
+|       Values Sum y                  |     2.44E-10          2.42E-10        |
+|       Values Sum z                  |     8.15E-11         -4.14E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     6.06E-06          6.48E-06        |
+|       Values Average x              |    -6.93E-14         -4.80E-14        |
+|       Values Average y              |     2.35E-14          2.14E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 14                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.39E-03          4.18E-03        |
+|       Values Sum x                  |    -4.47E-10         -4.25E-10        |
+|       Values Sum y                  |     2.42E-10          2.40E-10        |
+|       Values Sum z                  |     8.61E-11         -4.10E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     7.63E-05          8.45E-05        |
+|       Values Average x              |    -6.93E-14         -4.81E-14        |
+|       Values Average y              |     2.34E-14          2.14E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 15                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     7.89E-04          2.37E-03        |
+|       Values Sum x                  |    -4.44E-10         -4.22E-10        |
+|       Values Sum y                  |     2.46E-10          2.44E-10        |
+|       Values Sum z                  |     8.62E-11         -4.12E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     4.75E-05          5.19E-05        |
+|       Values Average x              |    -6.93E-14         -4.80E-14        |
+|       Values Average y              |     2.35E-14          2.15E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 16                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     8.62E-04          2.59E-03        |
+|       Values Sum x                  |    -4.44E-10         -4.21E-10        |
+|       Values Sum y                  |     2.39E-10          2.37E-10        |
+|       Values Sum z                  |     8.40E-11         -4.10E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     5.44E-05          5.92E-05        |
+|       Values Average x              |    -6.93E-14         -4.80E-14        |
+|       Values Average y              |     2.34E-14          2.14E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 17                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     2.50E-04          7.52E-04        |
+|       Values Sum x                  |    -4.45E-10         -4.22E-10        |
+|       Values Sum y                  |     2.43E-10          2.42E-10        |
+|       Values Sum z                  |     8.31E-11         -4.11E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.38E-05          1.53E-05        |
+|       Values Average x              |    -6.93E-14         -4.80E-14        |
+|       Values Average y              |     2.35E-14          2.14E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 18                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     6.88E-05          2.03E-04        |
+|       Values Sum x                  |    -4.43E-10         -4.21E-10        |
+|       Values Sum y                  |     2.39E-10          2.38E-10        |
+|       Values Sum z                  |     8.29E-11         -4.11E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     2.15E-06          2.20E-06        |
+|       Values Average x              |    -6.93E-14         -4.80E-14        |
+|       Values Average y              |     2.34E-14          2.14E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 19                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     6.78E-04          2.03E-03        |
+|       Values Sum x                  |    -4.42E-10         -4.21E-10        |
+|       Values Sum y                  |     2.40E-10          2.39E-10        |
+|       Values Sum z                  |     7.80E-11         -4.13E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     4.19E-05          4.56E-05        |
+|       Values Average x              |    -6.93E-14         -4.80E-14        |
+|       Values Average y              |     2.34E-14          2.14E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 20                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     5.41E-04          1.63E-03        |
+|       Values Sum x                  |    -4.43E-10         -4.21E-10        |
+|       Values Sum y                  |     2.39E-10          2.38E-10        |
+|       Values Sum z                  |     8.19E-11         -4.11E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     3.50E-05          3.78E-05        |
+|       Values Average x              |    -6.93E-14         -4.80E-14        |
+|       Values Average y              |     2.34E-14          2.14E-14        |
+|       Values Average z              |    -2.60E-11         -2.09E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++=============================================================================+
+
++=============================================================================+
+| COUPLING STEP = 4                         SIMULATION TIME = 4.00000E-09 [s] |
++-----------------------------------------------------------------------------+
+|                                     |      Source            Target         |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 1                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     9.28E-05          2.75E-04        |
+|       Values Sum x                  |    -4.44E-10         -4.22E-10        |
+|       Values Sum y                  |     2.44E-10          2.42E-10        |
+|       Values Sum z                  |     8.43E-11         -4.11E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |         Not yet converged             |
+|       RMS Change                    |     4.54E-01          4.45E-01        |
+|       Values Average x              |    -1.04E-13         -7.26E-14        |
+|       Values Average y              |     3.33E-14          3.29E-14        |
+|       Values Average z              |    -5.13E-11         -4.13E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 2                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     1.56E-01          2.56E-01        |
+|       Values Sum x                  |    -5.03E-10         -4.72E-10        |
+|       Values Sum y                  |     2.84E-10          2.77E-10        |
+|       Values Sum z                  |     2.75E-11         -7.65E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     4.80E-03          5.28E-03        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.40E-14          3.32E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 3                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     2.39E-03          3.97E-03        |
+|       Values Sum x                  |    -5.04E-10         -4.72E-10        |
+|       Values Sum y                  |     2.82E-10          2.75E-10        |
+|       Values Sum z                  |     3.08E-11         -7.59E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     6.37E-05          7.15E-05        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.40E-14          3.32E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 4                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     7.09E-05          1.18E-04        |
+|       Values Sum x                  |    -5.02E-10         -4.71E-10        |
+|       Values Sum y                  |     2.85E-10          2.78E-10        |
+|       Values Sum z                  |     2.48E-11         -7.59E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.31E-06          1.41E-06        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.40E-14          3.32E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 5                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     2.81E-04          4.69E-04        |
+|       Values Sum x                  |    -5.02E-10         -4.71E-10        |
+|       Values Sum y                  |     2.82E-10          2.76E-10        |
+|       Values Sum z                  |     2.72E-11         -7.59E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     6.85E-06          7.73E-06        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.40E-14          3.32E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 6                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     7.24E-05          1.19E-04        |
+|       Values Sum x                  |    -5.03E-10         -4.72E-10        |
+|       Values Sum y                  |     2.75E-10          2.69E-10        |
+|       Values Sum z                  |     2.56E-11         -7.59E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     2.58E-06          2.70E-06        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.39E-14          3.31E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 7                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.56E-04          2.59E-04        |
+|       Values Sum x                  |    -5.04E-10         -4.73E-10        |
+|       Values Sum y                  |     2.83E-10          2.76E-10        |
+|       Values Sum z                  |     2.87E-11         -7.59E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     4.86E-06          5.35E-06        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.40E-14          3.32E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 8                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     5.14E-05          8.47E-05        |
+|       Values Sum x                  |    -5.02E-10         -4.71E-10        |
+|       Values Sum y                  |     2.84E-10          2.78E-10        |
+|       Values Sum z                  |     2.59E-11         -7.59E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.57E-06          1.68E-06        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.40E-14          3.32E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 9                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     4.07E-05          6.68E-05        |
+|       Values Sum x                  |    -5.05E-10         -4.74E-10        |
+|       Values Sum y                  |     2.84E-10          2.77E-10        |
+|       Values Sum z                  |     3.03E-11         -7.58E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.24E-06          1.31E-06        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.40E-14          3.32E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 10                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     2.90E-05          4.85E-05        |
+|       Values Sum x                  |    -5.04E-10         -4.73E-10        |
+|       Values Sum y                  |     2.84E-10          2.78E-10        |
+|       Values Sum z                  |     3.26E-11         -7.58E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     8.48E-07          8.70E-07        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.40E-14          3.32E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 11                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     2.42E-05          3.96E-05        |
+|       Values Sum x                  |    -5.02E-10         -4.71E-10        |
+|       Values Sum y                  |     2.84E-10          2.78E-10        |
+|       Values Sum z                  |     2.48E-11         -7.59E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     9.38E-07          8.80E-07        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.40E-14          3.32E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 12                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.95E-04          3.24E-04        |
+|       Values Sum x                  |    -5.02E-10         -4.71E-10        |
+|       Values Sum y                  |     2.77E-10          2.71E-10        |
+|       Values Sum z                  |     2.23E-11         -7.60E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     5.22E-06          5.80E-06        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.39E-14          3.31E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 13                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     6.83E-05          1.12E-04        |
+|       Values Sum x                  |    -5.03E-10         -4.71E-10        |
+|       Values Sum y                  |     2.83E-10          2.77E-10        |
+|       Values Sum z                  |     2.70E-11         -7.59E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     2.02E-06          2.00E-06        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.40E-14          3.32E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 14                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     3.87E-05          6.42E-05        |
+|       Values Sum x                  |    -5.02E-10         -4.71E-10        |
+|       Values Sum y                  |     2.85E-10          2.79E-10        |
+|       Values Sum z                  |     2.80E-11         -7.59E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.20E-06          1.30E-06        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.40E-14          3.32E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 15                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     3.05E-04          5.09E-04        |
+|       Values Sum x                  |    -5.03E-10         -4.72E-10        |
+|       Values Sum y                  |     2.84E-10          2.77E-10        |
+|       Values Sum z                  |     3.28E-11         -7.58E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     7.52E-06          8.47E-06        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.40E-14          3.32E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 16                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.70E-04          2.83E-04        |
+|       Values Sum x                  |    -5.04E-10         -4.73E-10        |
+|       Values Sum y                  |     2.81E-10          2.74E-10        |
+|       Values Sum z                  |     3.46E-11         -7.58E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     4.62E-06          5.17E-06        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.40E-14          3.32E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 17                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     6.17E-05          1.03E-04        |
+|       Values Sum x                  |    -5.04E-10         -4.72E-10        |
+|       Values Sum y                  |     2.82E-10          2.76E-10        |
+|       Values Sum z                  |     3.13E-11         -7.59E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.16E-06          1.27E-06        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.40E-14          3.32E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 18                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     8.52E-05          1.42E-04        |
+|       Values Sum x                  |    -5.04E-10         -4.72E-10        |
+|       Values Sum y                  |     2.83E-10          2.76E-10        |
+|       Values Sum z                  |     3.00E-11         -7.59E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     2.86E-06          3.08E-06        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.40E-14          3.32E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 19                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.76E-04          2.92E-04        |
+|       Values Sum x                  |    -5.03E-10         -4.72E-10        |
+|       Values Sum y                  |     2.82E-10          2.76E-10        |
+|       Values Sum z                  |     2.90E-11         -7.59E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     4.70E-06          5.24E-06        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.40E-14          3.32E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 20                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     2.93E-04          4.89E-04        |
+|       Values Sum x                  |    -5.03E-10         -4.72E-10        |
+|       Values Sum y                  |     2.83E-10          2.77E-10        |
+|       Values Sum z                  |     2.45E-11         -7.60E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     7.25E-06          8.17E-06        |
+|       Values Average x              |    -1.05E-13         -7.36E-14        |
+|       Values Average y              |     3.40E-14          3.32E-14        |
+|       Values Average z              |    -5.11E-11         -4.11E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++=============================================================================+
+
++=============================================================================+
+| COUPLING STEP = 5                         SIMULATION TIME = 5.00000E-09 [s] |
++-----------------------------------------------------------------------------+
+|                                     |      Source            Target         |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 1                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     3.14E-04          5.24E-04        |
+|       Values Sum x                  |    -5.03E-10         -4.71E-10        |
+|       Values Sum y                  |     2.83E-10          2.77E-10        |
+|       Values Sum z                  |     2.74E-11         -7.59E-09        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |         Not yet converged             |
+|       RMS Change                    |     2.93E-01          2.86E-01        |
+|       Values Average x              |    -1.39E-13         -1.00E-13        |
+|       Values Average y              |     4.19E-14          4.14E-14        |
+|       Values Average z              |    -7.46E-11         -5.98E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 2                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |         Not yet converged             |
+|       RMS Change                    |     1.36E-01          1.61E-01        |
+|       Values Sum x                  |    -5.49E-10         -5.16E-10        |
+|       Values Sum y                  |     3.13E-10          3.04E-10        |
+|       Values Sum z                  |    -3.59E-11         -1.07E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     2.96E-03          3.25E-03        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.25E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 3                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.85E-03          2.22E-03        |
+|       Values Sum x                  |    -5.48E-10         -5.15E-10        |
+|       Values Sum y                  |     3.08E-10          2.99E-10        |
+|       Values Sum z                  |    -3.47E-11         -1.06E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     3.41E-05          3.84E-05        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.24E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 4                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     2.85E-04          3.42E-04        |
+|       Values Sum x                  |    -5.48E-10         -5.15E-10        |
+|       Values Sum y                  |     3.11E-10          3.02E-10        |
+|       Values Sum z                  |    -3.33E-11         -1.06E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     5.37E-06          6.04E-06        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.25E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 5                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     5.02E-05          5.89E-05        |
+|       Values Sum x                  |    -5.49E-10         -5.16E-10        |
+|       Values Sum y                  |     3.12E-10          3.03E-10        |
+|       Values Sum z                  |    -3.67E-11         -1.06E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     9.33E-07          9.82E-07        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.25E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 6                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.49E-04          1.78E-04        |
+|       Values Sum x                  |    -5.50E-10         -5.17E-10        |
+|       Values Sum y                  |     3.13E-10          3.04E-10        |
+|       Values Sum z                  |    -3.45E-11         -1.06E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     2.65E-06          2.97E-06        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.25E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 7                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     2.81E-05          3.23E-05        |
+|       Values Sum x                  |    -5.49E-10         -5.16E-10        |
+|       Values Sum y                  |     3.18E-10          3.09E-10        |
+|       Values Sum z                  |    -3.63E-11         -1.06E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.90E-06          1.86E-06        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.25E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 8                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     2.02E-04          2.42E-04        |
+|       Values Sum x                  |    -5.49E-10         -5.15E-10        |
+|       Values Sum y                  |     3.15E-10          3.06E-10        |
+|       Values Sum z                  |    -4.08E-11         -1.06E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     3.78E-06          4.23E-06        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.25E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 9                            |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     3.44E-04          4.12E-04        |
+|       Values Sum x                  |    -5.47E-10         -5.14E-10        |
+|       Values Sum y                  |     3.09E-10          3.00E-10        |
+|       Values Sum z                  |    -3.98E-11         -1.06E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     6.34E-06          7.11E-06        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.24E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 10                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     2.85E-04          3.40E-04        |
+|       Values Sum x                  |    -5.50E-10         -5.17E-10        |
+|       Values Sum y                  |     3.12E-10          3.03E-10        |
+|       Values Sum z                  |    -3.63E-11         -1.06E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     6.43E-06          7.10E-06        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.25E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 11                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     7.96E-05          9.50E-05        |
+|       Values Sum x                  |    -5.49E-10         -5.16E-10        |
+|       Values Sum y                  |     3.10E-10          3.01E-10        |
+|       Values Sum z                  |    -3.66E-11         -1.06E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     1.39E-06          1.56E-06        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.24E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 12                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     3.09E-04          3.70E-04        |
+|       Values Sum x                  |    -5.45E-10         -5.12E-10        |
+|       Values Sum y                  |     3.10E-10          3.01E-10        |
+|       Values Sum z                  |    -3.22E-11         -1.06E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     6.31E-06          7.04E-06        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.25E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 13                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     2.07E-04          2.46E-04        |
+|       Values Sum x                  |    -5.49E-10         -5.16E-10        |
+|       Values Sum y                  |     3.12E-10          3.03E-10        |
+|       Values Sum z                  |    -3.41E-11         -1.06E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     4.73E-06          5.21E-06        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.25E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 14                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     2.22E-04          2.65E-04        |
+|       Values Sum x                  |    -5.48E-10         -5.15E-10        |
+|       Values Sum y                  |     3.12E-10          3.03E-10        |
+|       Values Sum z                  |    -3.35E-11         -1.06E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     5.60E-06          6.10E-06        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.25E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 15                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     2.82E-04          3.37E-04        |
+|       Values Sum x                  |    -5.49E-10         -5.16E-10        |
+|       Values Sum y                  |     3.13E-10          3.04E-10        |
+|       Values Sum z                  |    -3.61E-11         -1.06E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     6.19E-06          6.83E-06        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.25E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 16                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.85E-04          2.19E-04        |
+|       Values Sum x                  |    -5.46E-10         -5.13E-10        |
+|       Values Sum y                  |     3.08E-10          2.99E-10        |
+|       Values Sum z                  |    -3.38E-11         -1.06E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     3.05E-06          3.38E-06        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.24E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 17                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     7.50E-05          8.63E-05        |
+|       Values Sum x                  |    -5.47E-10         -5.14E-10        |
+|       Values Sum y                  |     3.11E-10          3.02E-10        |
+|       Values Sum z                  |    -4.02E-11         -1.06E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     2.44E-06          2.51E-06        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.25E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 18                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     4.30E-04          5.16E-04        |
+|       Values Sum x                  |    -5.45E-10         -5.12E-10        |
+|       Values Sum y                  |     3.05E-10          2.97E-10        |
+|       Values Sum z                  |    -3.59E-11         -1.06E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     8.13E-06          9.10E-06        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.24E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 19                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     4.47E-04          5.36E-04        |
+|       Values Sum x                  |    -5.49E-10         -5.16E-10        |
+|       Values Sum y                  |     3.11E-10          3.02E-10        |
+|       Values Sum z                  |    -4.04E-11         -1.06E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     8.37E-06          9.38E-06        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.25E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++-----------------------------------------------------------------------------+
+|                           COUPLING ITERATION = 20                           |
++-----------------------------------------------------------------------------+
+| EM Transient                        |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer                   |             Converged                 |
+|       RMS Change                    |     1.82E-04          2.16E-04        |
+|       Values Sum x                  |    -5.44E-10         -5.11E-10        |
+|       Values Sum y                  |     3.08E-10          2.99E-10        |
+|       Values Sum z                  |    -3.40E-11         -1.06E-08        |
++-----------------------------------------------------------------------------+
+| Fluid Flow (Fluent)                 |                                       |
+|   Interface: interface-1            |                                       |
+|     Data Transfer 2                 |             Converged                 |
+|       RMS Change                    |     2.51E-06          2.80E-06        |
+|       Values Average x              |    -1.40E-13         -1.01E-13        |
+|       Values Average y              |     4.24E-14          4.17E-14        |
+|       Values Average z              |    -7.44E-11         -5.96E-11        |
++-----------------------------------------------------------------------------+
+| Participant solution status         |                                       |
+|   EM Transient                      |             Converged                 |
+|   Fluid Flow (Fluent)               |         Not yet converged             |
++=============================================================================+
+
+===============================================================================
++=============================================================================+
+|                                                                             |
+|                                  Shut Down                                  |
+|                                                                             |
++=============================================================================+
+===============================================================================
+
++=============================================================================+
+|                             Timing Summary [s]                              |
++=============================================================================+
+| Coupling Engine Time :                                           8.6481E+01 |
+| Coupling Participant Time                                                   |
+|    EM Transient :                                                2.9699E+02 |
+|    Fluid Flow (Fluent) :                                         4.5187E+03 |
+| Total Time :                                                     4.9021E+03 |
++=============================================================================+
+
++=============================================================================+
+|                 System coupling run completed successfully.                 |
++=============================================================================+
+
+
+Transcript output stopped: 2020-04-07 09:39:21
 ===============================================================================

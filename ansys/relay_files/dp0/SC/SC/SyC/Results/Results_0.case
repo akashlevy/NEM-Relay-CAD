@@ -1,0 +1,29 @@
+#
+# ANSYS(R) System Coupling 2020 R1
+# Tue Apr  7 09:39:02 2020
+#
+
+FORMAT
+type:                         ensight gold
+
+GEOMETRY
+model: 1                      Results_0_******.geo
+
+VARIABLE
+scalar per node: 1  "MappedNodes-interface-1-Side2-Cons_Node"            "Results_0_MappedNodes-interface-1-Side2-Cons_node_******.dat"
+scalar per node: 1  "MappedNodes-interface-1-Side1-Prof_Node"            "Results_0_MappedNodes-interface-1-Side1-Prof_node_******.dat"
+vector per node: 1  "total-displacement_Node"                            "Results_0_total-displacement_node_******.dat"
+vector per node: 1  "FORC_Node"                                          "Results_0_FORC_node_******.dat"
+vector per node: 1  "INCD_Node"                                          "Results_0_INCD_node_******.dat"
+vector per node: 1  "displacement_Node"                                  "Results_0_displacement_node_******.dat"
+scalar per element: 1  "MappedElements-interface-1-Side2-Cons_Face"      "Results_0_MappedElements-interface-1-Side2-Cons_face_******.dat"
+scalar per element: 1  "MappedElements-interface-1-Side1-Prof_Face"      "Results_0_MappedElements-interface-1-Side1-Prof_face_******.dat"
+vector per element: 1  "force_Face"                                      "Results_0_force_face_******.dat"
+vector per element: 1  "FORC-per-unit-area"                              "Results_0_FORC-per-unit-area_******.dat"
+vector per element: 1  "force-per-unit-area"                             "Results_0_force-per-unit-area_******.dat"
+
+TIME
+time set:                     1
+number of steps:              5
+filename numbers file:        Results.filenames
+time values file:             Results.time

@@ -1,0 +1,859 @@
+# State file created:  2020/04/07 06:15:53
+# CFX-20.1
+
+CALCULATOR:
+  Case Name = Case FFF 1
+  Function = area
+  Verbose = Off
+END
+COMMAND FILE:
+  CFX Post Version = 11.0
+END
+COMMENT:User Data
+  Comment Exists = True
+  Comment Heading = User Data
+  Heading Level = 1
+END
+DATA READER:
+  Active Case Name = Case FFF 1
+  Append Results = False
+  Apply X Offset = false
+  Apply Y Offset = false
+  Apply Z Offset = false
+  Clear All Objects = False
+  Construct Variables From Fourier Coefficients = True
+  Current Case List = Case FFF 1
+  Current Case Name = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\\
+relay_files\dp0\FFF-1\Fluent\FFF-1.2-2-00001.dat.gz
+  Current Results File = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\\
+relay_files\dp0\FFF-1\Fluent\FFF-1.2-2-00001.dat.gz
+  Current Timestep = -1
+  Current Timevalue = 1e-08
+  Edit Case Names = false
+  File Angle Units = rad
+  File Chemical Amount Units = kmol
+  File Current Units = A
+  File Length Units = m
+  File Light Units = cd
+  File Mass Units = kg
+  File Solid Angle Units = sr
+  File Temperature Units = K
+  File Time Units = s
+  Force File Reload = False
+  Keep Camera Position = True
+  Load Particle Tracks = true
+  Multi Configuration File Load Option = Single Case
+  Open in New View = False
+  Open to Compare = false
+  Reference Acoustic Pressure = 2.0e-5 [Pa]
+  Reference Length = 1.0 [m]
+  Reference Velocity = 1.0 [m s^-1]
+  Timestep Match Criterion = Same Step
+  Timestep Sync Mode = By Time Value
+  Timevalue Match Criterion = Same Value
+  CASE:Case FFF 1
+    Construct Variables From Fourier Coefficients = True
+    Current Case Name = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\\
+relay_files\dp0\FFF-1\Fluent\FFF-1.2-2-00001.dat.gz
+    Current Results File = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\\
+relay_files\dp0\FFF-1\Fluent\FFF-1.2-2-00001.dat.gz
+    Current Timestep = -1
+    Current Timevalue = 1e-08
+    File Angle Units = rad
+    File Chemical Amount Units = kmol
+    File Current Units = A
+    File Length Units = m
+    File Light Units = cd
+    File Mass Units = kg
+    File Solid Angle Units = sr
+    File Temperature Units = K
+    File Time Units = s
+    Multi Configuration File Load Option = Single Case
+    Workbench ID = 1
+    BOUNDARY:inside_wall
+      Apply Instancing Transform = On
+      Apply Texture = Off
+      Blend Texture = On
+      Colour = 0.2, 0.5, 1
+      Colour Map = Default Colour Map
+      Colour Mode = Constant
+      Colour Scale = Linear
+      Colour Variable Boundary Values = Hybrid
+      Culling Mode = No Culling
+      Draw Faces = On
+      Draw Lines = Off
+      Instancing Transform = Default Transform
+      Lighting = true
+      Line Colour = 0, 0, 0
+      Line Colour Mode = Default
+      Line Width = 1
+      Range = Global
+      Render Edge Angle = 0 [degree]
+      Specular Lighting = On
+      Surface Drawing = Smooth Shading
+      Texture Angle = 0
+      Texture Direction = 0.0, 1.0, 0.0
+      Texture Material = Metal
+      Texture Position = 0.0, 0.0
+      Texture Scale = 1.0
+      Texture Type = Predefined
+      Tile Texture = Off
+      Transform Texture = Off
+      Transparency = 0.0
+      Visibility = false
+    END
+    BOUNDARY:outside_wall
+      Apply Instancing Transform = On
+      Apply Texture = Off
+      Blend Texture = On
+      Colour = 0.2, 0.5, 1
+      Colour Map = Default Colour Map
+      Colour Mode = Constant
+      Colour Scale = Linear
+      Colour Variable Boundary Values = Hybrid
+      Culling Mode = No Culling
+      Draw Faces = On
+      Draw Lines = Off
+      Instancing Transform = Default Transform
+      Lighting = true
+      Line Colour = 0, 0, 0
+      Line Colour Mode = Default
+      Line Width = 1
+      Range = Global
+      Render Edge Angle = 0 [degree]
+      Specular Lighting = On
+      Surface Drawing = Smooth Shading
+      Texture Angle = 0
+      Texture Direction = 0.0, 1.0, 0.0
+      Texture Material = Metal
+      Texture Position = 0.0, 0.0
+      Texture Scale = 1.0
+      Texture Type = Predefined
+      Tile Texture = Off
+      Transform Texture = Off
+      Transparency = 0.0
+      Visibility = false
+    END
+    DOMAIN:enclosure_enclosure
+      Angle Definition Method = Instances in 360
+      Apply Reflection = false
+      Apply Rotation = true
+      Apply Translation = false
+      Axis From File = Custom
+      Background Mesh Density = 2000
+      Background Mesh Generation Method = Quasi Orthogonal
+      Blade Aligned Variable Available = false
+      Create Additional Turbo Variables = false
+      Do Cylindrical Initialization = False
+      Domain Type = Normal
+      Full Circle = Off
+      Hub Curve Mode = From Turbo Region
+      Inlet Curve Mode = From Turbo Region
+      Instance Definition = From File
+      Linear Blade Aligned Variable Available = false
+      Number of Components in 360 = 1
+      Number of Copies = 1
+      Number of Data Instances = 1
+      Number of Passages in 360 = 1
+      Number of Passages in Component = 1
+      Outlet Curve Mode = From Turbo Region
+      Principal Axis = Z
+      Reflection Plane Option = From Plane
+      Rotation Angle = 0 [degree]
+      Rotation Axis From = 0.0, 0.0, 0.0
+      Rotation Axis To = 1.0, 0.0, 0.0
+      Rotation Axis Type = Principal Axis
+      Shroud Curve Mode = From Turbo Region
+      TBR User Theta Correction = 0.0
+      Translation Vector = 0.0, 0.0, 0.0
+      Turbo 360 Case without Periodics = false
+      X = 0.0
+      Y = 0.0
+      Z = 0.0
+    END
+  END
+  CASE COMPARISON:
+    Absolute Value of Difference = false
+    Mode Is Active = false
+    Same Mesh Detection Mode = Auto Detect
+    Synchronize Camera on Activate = true
+    Synchronize Visibility on Activate = true
+  END
+END
+DEFAULT INSTANCE TRANSFORM:Default Transform
+  Angle Definition Method = Instances in 360
+  Apply Reflection = false
+  Apply Rotation = true
+  Apply Translation = false
+  Full Circle = Off
+  Instancing Info From Domain = true
+  Number of Components in 360 = 12
+  Number of Copies = 1
+  Number of Passages in 360 = 12
+  Number of Passages in Component = 1
+  Principal Axis = Z
+  Reflection Plane Option = From Plane
+  Rotation Angle = 0 [degree]
+  Rotation Axis From = 0.0, 0.0, 0.0
+  Rotation Axis To = 1.0, 0.0, 0.0
+  Rotation Axis Type = Principal Axis
+  Translation Vector = 0.0, 0.0, 0.0
+  X = 0.0
+  Y = 0.0
+  Z = 0.0
+END
+DEFAULT LEGEND:Default Legend View 1
+  Colour = 0, 0, 0
+  Font = Sans Serif
+  Legend Aspect = 0.07
+  Legend Format = %10.3e
+  Legend Orientation = Vertical
+  Legend Plot = /DEFAULT LEGEND:Default Legend View 1
+  Legend Position = 0.02, 0.15
+  Legend Resolution = 256
+  Legend Shading = Smooth
+  Legend Size = 0.6
+  Legend Ticks = 5
+  Legend Title = Legend
+  Legend Title Mode = Variable and Location
+  Legend X Justification = Left
+  Legend Y Justification = Top
+  Related Object = View 1
+  Show Legend Units = On
+  Text Colour Mode = Default
+  Text Height = 0.024
+  Text Rotation = 0
+  Visibility = true
+END
+DEFAULT LEGEND:Default Legend View 2
+  Colour = 0, 0, 0
+  Font = Sans Serif
+  Legend Aspect = 0.07
+  Legend Format = %10.3e
+  Legend Orientation = Vertical
+  Legend Position = 0.02, 0.15
+  Legend Resolution = 256
+  Legend Shading = Smooth
+  Legend Size = 0.6
+  Legend Ticks = 5
+  Legend Title = Legend
+  Legend Title Mode = Variable and Location
+  Legend X Justification = Left
+  Legend Y Justification = Top
+  Related Object = View 2
+  Show Legend Units = On
+  Text Colour Mode = Default
+  Text Height = 0.024
+  Text Rotation = 0
+  Visibility = true
+END
+DEFAULT LEGEND:Default Legend View 3
+  Colour = 0, 0, 0
+  Font = Sans Serif
+  Legend Aspect = 0.07
+  Legend Format = %10.3e
+  Legend Orientation = Vertical
+  Legend Position = 0.02, 0.15
+  Legend Resolution = 256
+  Legend Shading = Smooth
+  Legend Size = 0.6
+  Legend Ticks = 5
+  Legend Title = Legend
+  Legend Title Mode = Variable and Location
+  Legend X Justification = Left
+  Legend Y Justification = Top
+  Related Object = View 3
+  Show Legend Units = On
+  Text Colour Mode = Default
+  Text Height = 0.024
+  Text Rotation = 0
+  Visibility = true
+END
+DEFAULT LEGEND:Default Legend View 4
+  Colour = 0, 0, 0
+  Font = Sans Serif
+  Legend Aspect = 0.07
+  Legend Format = %10.3e
+  Legend Orientation = Vertical
+  Legend Position = 0.02, 0.15
+  Legend Resolution = 256
+  Legend Shading = Smooth
+  Legend Size = 0.6
+  Legend Ticks = 5
+  Legend Title = Legend
+  Legend Title Mode = Variable and Location
+  Legend X Justification = Left
+  Legend Y Justification = Top
+  Related Object = View 4
+  Show Legend Units = On
+  Text Colour Mode = Default
+  Text Height = 0.024
+  Text Rotation = 0
+  Visibility = true
+END
+DEFORMATION INFO:
+  Deformation Scale = 1
+END
+FILE PROCESSING:
+  Path Stack = .
+  Processing Mode = None
+  Supress File Replacement Warnings = false
+END
+LIBRARY:
+  CEL:
+    EXPRESSIONS:
+      Accumulated Time Step = 1
+      Current Time Step = 1
+      Reference Pressure = 0 [Pa]
+      Sequence Step = 1
+      Time = 1e-08 [s]
+      atstep = Accumulated Time Step
+      ctstep = Current Time Step
+      sstep = Sequence Step
+      t = Time
+    END
+  END
+END
+MASS FLOW CALC OPTION ON PHYSICAL SURFACES:
+  Option = Interpolated
+END
+REPORT:
+  Report Items = /TITLE PAGE,/REPORT/FILE INFORMATION OPTIONS,/REPORT/MESH \
+STATISTICS OPTIONS,/REPORT/PHYSICS SUMMARY OPTIONS,/REPORT/SOLUTION SUMMARY \
+OPTIONS,/REPORT/OPERATING MAPS,/COMMENT:User Data
+  FILE INFORMATION OPTIONS:
+    Include In Report = true
+    This Exists = true
+  END
+  MESH STATISTICS OPTIONS:
+    Include In Report = true
+    Show Connectivity Number = false
+    Show Edge Length Ratio = false
+    Show Element Volume Ratio = false
+    Show Max Face Angle = false
+    Show Min Face Angle = false
+    Show Number of Elements = true
+    Show Number of Hexahedra = false
+    Show Number of Nodes = true
+    Show Number of Polyhedra = false
+    Show Number of Pyramids = false
+    Show Number of Tetrahedra = false
+    Show Number of Wedges = false
+    This Exists = true
+  END
+  OPERATING MAPS:
+    Include In Report = true
+    This Exists = true
+  END
+  PHYSICS SUMMARY OPTIONS:
+    Include In Report = true
+    Show Boundary Physics = true
+    Show Domain Physics = true
+    This Exists = true
+  END
+  PREVIEW:
+    This Exists = true
+    OUTPUT SETTINGS:
+      Chart Image Type = png
+      Chart Size = Same As Figure
+      Custom Chart Size Height = 384
+      Custom Chart Size Width = 512
+      Custom Figure Size Height = 384
+      Custom Figure Size Width = 512
+      Figure Image Type = png
+      Figure Size = 512 x 384
+      Fit Views = false
+      This Exists = true
+    END
+  END
+  PUBLISH:
+    Default Report Name = Report
+    Generate 3D Viewer Files = false
+    Report Format = HTML
+    Report Path = ./Report.htm
+    Save Images In Separate Folder = true
+    This Exists = true
+    OUTPUT SETTINGS:
+      Chart Image Type = png
+      Chart Size = Same As Figure
+      Custom Chart Size Height = 384
+      Custom Chart Size Width = 512
+      Custom Figure Size Height = 384
+      Custom Figure Size Width = 512
+      Figure Image Type = png
+      Figure Size = 512 x 384
+      Fit Views = false
+      This Exists = true
+    END
+  END
+  SOLUTION SUMMARY OPTIONS:
+    Include In Report = false
+    Show Boundary Flow Summary = true
+    Show Force and Torque Summary = true
+    Show Forces = true
+    Show Torques = true
+    This Exists = true
+  END
+END
+SCALAR VARIABLE:Approximated Mass Flow
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Area
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Cell Volume Derivative
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Connectivity Number
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Density
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Eddy Viscosity
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Edge Length Ratio
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Element Volume Inverse
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Element Volume Ratio
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Force X
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Force Y
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Force Z
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Heat Flux
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Interpolated Mass Flow
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Length
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Mass Flow
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Maximum Face Angle
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Minimum Face Angle
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Normal X
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Normal Y
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Normal Z
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Pressure
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Turbulence Eddy Frequency
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Turbulence Kinetic Energy
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity u
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity u.Gradient X
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity u.Gradient Y
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity u.Gradient Z
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity v
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity v.Gradient X
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity v.Gradient Y
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity v.Gradient Z
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity w
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity w.Gradient X
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity w.Gradient Y
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity w.Gradient Z
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Absolute Helicity
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Curl X
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Curl Y
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Curl Z
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Divergence
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Helicity
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Invariant Q
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Lambda 2
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Normal Eigen Helicity
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Real Eigen Helicity
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Real Eigenvalue
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Stretched Swirling Strength
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Swirling Discriminant
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Swirling Normal X
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Swirling Normal Y
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Swirling Normal Z
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Swirling Strength
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Swirling Vector X
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Swirling Vector Y
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Velocity.Swirling Vector Z
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Volume
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Wall Heat Flux
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Wall Radiative Heat Flux
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Wall Shear X
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Wall Shear Y
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Wall Shear Z
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:X
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Y
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Z
+  Boundary Values = Conservative
+END
+SYMBOL CONTROL:
+  Symbol Size = 1
+END
+SYSTEM COLOUR MAP:Blue to White
+  Colour Map Colours = 0, 0, 0, 1, 1, 1, 1, 1, 1, 1
+  Colour Map Divisions = 2
+  Colour Map Storage Type = System
+  Colour Map Type = Gradient
+END
+SYSTEM COLOUR MAP:FLUENT Rainbow
+  Colour Map Colours = 0, 0, 0, 1, 1, 0.278, 0, 1, 1, 1, 0.389, 0, 1, 0.5, 1, \
+0.444, 0, 1, 0, 1, 0.667, 1, 1, 0, 1, 1, 1, 0, 0, 1
+  Colour Map Divisions = 2
+  Colour Map Storage Type = System
+  Colour Map Type = Gradient
+END
+SYSTEM COLOUR MAP:Greyscale
+  Colour Map Colours = 0, 0.01, 0.01, 0.01, 1, 1, 0.99, 0.99, 0.99, 1
+  Colour Map Divisions = 2
+  Colour Map Storage Type = System
+  Colour Map Type = Gradient
+END
+SYSTEM COLOUR MAP:Inverse Greyscale
+  Colour Map Colours = 0, 0.99, 0.99, 0.99, 1, 1, 0.01, 0.01, 0.01, 1
+  Colour Map Divisions = 2
+  Colour Map Storage Type = System
+  Colour Map Type = Gradient
+END
+SYSTEM COLOUR MAP:Inverse Rainbow
+  Colour Map Colours = 0, 1, 0, 0, 1, 0.10, 1, 0.5, 0, 1, 0.25, 1, 1, 0, 1, \
+0.43, 0.5, 1, 0, 1, 0.50, 0, 1, 0, 1, 0.56, 0, 1, 0.5, 1, 0.75, 0, 1, 1, 1, 0.90,\
+ 0, 0.5, 1, 1, 1, 0, 0, 1, 1
+  Colour Map Divisions = 2
+  Colour Map Storage Type = System
+  Colour Map Type = Gradient
+END
+SYSTEM COLOUR MAP:Inverse Rainbow 6
+  Colour Map Colours = 0, 1, 0, 1, 1, 0.1, 1, 0, 0.5, 1, 0.2, 1, 0, 0, 1, 0.28,\
+ 1, 0.5, 0, 1, 0.4, 1, 1, 0, 1, 0.55, 0.5, 1, 0, 1, 0.6, 0, 1, 0, 1, 0.65, 0, 1, \
+0.5, 1, 0.8, 0, 1, 1, 1, 0.92, 0, 0.5, 1, 1, 1, 0, 0, 1, 1
+  Colour Map Divisions = 2
+  Colour Map Storage Type = System
+  Colour Map Type = Gradient
+END
+SYSTEM COLOUR MAP:Minimal Map
+  Colour Map Colours = 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0
+  Colour Map Divisions = 2
+  Colour Map Storage Type = System
+  Colour Map Type = Gradient
+END
+SYSTEM COLOUR MAP:Rainbow
+  Colour Map Colours = 0, 0, 0, 1, 1, 0.10, 0, 0.5, 1, 1, 0.25, 0, 1, 1, 1, \
+0.44, 0, 1, 0.5, 1, 0.50, 0, 1, 0, 1, 0.57, 0.5, 1, 0, 1, 0.75, 1, 1, 0, 1, 0.90,\
+ 1, 0.5, 0, 1, 1, 1, 0, 0, 1
+  Colour Map Divisions = 2
+  Colour Map Storage Type = System
+  Colour Map Type = Gradient
+END
+SYSTEM COLOUR MAP:Rainbow 6
+  Colour Map Colours = 0, 0, 0, 1, 1, 0.08, 0, 0.5, 1, 1, 0.2, 0, 1, 1, 1, \
+0.35, 0, 1, 0.5, 1, 0.4, 0, 1, 0, 1, 0.45, 0.5, 1, 0, 1, 0.6, 1, 1, 0, 1, 0.72, \
+1, 0.5, 0, 1, 0.8, 1, 0, 0, 1, 0.9, 1, 0, 0.5, 1, 1, 1, 0, 1, 1
+  Colour Map Divisions = 2
+  Colour Map Storage Type = System
+  Colour Map Type = Gradient
+END
+SYSTEM COLOUR MAP:Transparency
+  Colour Map Colours = 0, 1, 1, 1, 0, 1, 1, 1, 1, 1
+  Colour Map Divisions = 2
+  Colour Map Storage Type = System
+  Colour Map Type = Gradient
+END
+SYSTEM COLOUR MAP:White to Blue
+  Colour Map Colours = 0, 1, 1, 1, 1, 1, 0, 0, 1, 1
+  Colour Map Divisions = 2
+  Colour Map Storage Type = System
+  Colour Map Type = Gradient
+END
+SYSTEM COLOUR MAP:Zebra
+  Colour Map Colours = 0, 1, 1, 1, 1, 1.0, 0, 0, 0, 1
+  Colour Map Divisions = 5
+  Colour Map Storage Type = System
+  Colour Map Type = Zebra
+END
+TITLE PAGE:
+  Include ANSYS Logo = true
+  Include Custom Logo = false
+  Include Date = true
+  Include TOC = true
+  Show Captions in TOC = true
+  Title Page Exists = true
+END
+UNIT SYSTEM:
+  Preferred Units System = SI
+  Update Units to Preferred = Off
+END
+VECTOR VARIABLE:Force
+  Boundary Values = Conservative
+END
+VECTOR VARIABLE:Normal
+  Boundary Values = Conservative
+END
+VECTOR VARIABLE:Velocity
+  Boundary Values = Conservative
+END
+VECTOR VARIABLE:Velocity u.Gradient
+  Boundary Values = Conservative
+END
+VECTOR VARIABLE:Velocity v.Gradient
+  Boundary Values = Conservative
+END
+VECTOR VARIABLE:Velocity w.Gradient
+  Boundary Values = Conservative
+END
+VECTOR VARIABLE:Velocity.Curl
+  Boundary Values = Conservative
+END
+VECTOR VARIABLE:Velocity.Swirling Normal
+  Boundary Values = Conservative
+END
+VECTOR VARIABLE:Velocity.Swirling Vector
+  Boundary Values = Conservative
+END
+VECTOR VARIABLE:Wall Shear
+  Boundary Values = Conservative
+END
+VIEW:View 1
+  Angular Coord Shift = 0.0
+  Auto Center = false
+  Axis Visibility = true
+  Border Visibility = false
+  Camera Mode = User Specified
+  Clip Scene = false
+  Coord Transform = Cartesian
+  Hide Difference Case = false
+  Highlight Type = Surface Mesh
+  Is A Figure = false
+  Light Angle = 50, 110
+  Object Visibility List = /DEFAULT LEGEND:Default Legend View 1,/\
+WIREFRAME:Wireframe
+  Projection = Orthographic
+  Ruler Visibility = true
+  Standard View = Isometric Y
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pan = 0,0
+    Pivot Point = 0,0,1.45e-06
+    Rotation = -90, 0, 0
+    Rotation Quaternion = 0.279848,-0.364705,-0.115917,0.880476
+    Scale = 112750
+    Send To Viewer = True
+  END
+END
+VIEW:View 2
+  Angular Coord Shift = 0.0
+  Auto Center = false
+  Axis Visibility = true
+  Border Visibility = false
+  Camera Mode = User Specified
+  Clip Scene = false
+  Coord Transform = Cartesian
+  Hide Difference Case = false
+  Highlight Type = Surface Mesh
+  Is A Figure = false
+  Light Angle = 50, 110
+  Object Visibility List = /DEFAULT LEGEND:Default Legend View 2,/\
+WIREFRAME:Wireframe
+  Projection = Orthographic
+  Ruler Visibility = true
+  Standard View = Isometric Y
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pan = 0,0
+    Pivot Point = 0,0,0
+    Rotation = -90, 0, 0
+    Rotation Quaternion = 0.279848,-0.364705,-0.115917,0.880476
+    Scale = 1
+    Send To Viewer = True
+  END
+END
+VIEW:View 3
+  Angular Coord Shift = 0.0
+  Auto Center = false
+  Axis Visibility = true
+  Border Visibility = false
+  Camera Mode = User Specified
+  Clip Scene = false
+  Coord Transform = Cartesian
+  Hide Difference Case = false
+  Highlight Type = Surface Mesh
+  Is A Figure = false
+  Light Angle = 50, 110
+  Object Visibility List = /DEFAULT LEGEND:Default Legend View 3,/\
+WIREFRAME:Wireframe
+  Projection = Orthographic
+  Ruler Visibility = true
+  Standard View = Isometric Y
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pan = 0,0
+    Pivot Point = 0,0,0
+    Rotation = -90, 0, 0
+    Rotation Quaternion = 0.279848,-0.364705,-0.115917,0.880476
+    Scale = 1
+    Send To Viewer = True
+  END
+END
+VIEW:View 4
+  Angular Coord Shift = 0.0
+  Auto Center = false
+  Axis Visibility = true
+  Border Visibility = false
+  Camera Mode = User Specified
+  Clip Scene = false
+  Coord Transform = Cartesian
+  Hide Difference Case = false
+  Highlight Type = Surface Mesh
+  Is A Figure = false
+  Light Angle = 50, 110
+  Object Visibility List = /DEFAULT LEGEND:Default Legend View 4,/\
+WIREFRAME:Wireframe
+  Projection = Orthographic
+  Ruler Visibility = true
+  Standard View = Isometric Y
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pan = 0,0
+    Pivot Point = 0,0,0
+    Rotation = -90, 0, 0
+    Rotation Quaternion = 0.279848,-0.364705,-0.115917,0.880476
+    Scale = 1
+    Send To Viewer = True
+  END
+END
+VIEWPORT MANAGER:
+  Background Colour = 0.42, 0.55, 0.871
+  Background Colour 2 = 1,1,1
+  Background Colour Type = Top-Bottom Gradient
+  Background Image = Mountains
+  Background Image Mapping = Flat
+  Background Image Type = Predefined
+  Background Type = Colour
+  Global Edge Colour = 0,0,0
+  Global Text Colour = 0,0,0
+  Maximized Viewport = -1
+  Synchronize Camera = false
+  Synchronize Visibility = true
+  View Length Units = m
+  Viewport 1 View = View 1
+  Viewport 2 View = View 2
+  Viewport 3 View = View 3
+  Viewport 4 View = View 4
+  Viewport Layout = No Split
+  X Split = 0.5
+  Y Split = 0.5
+END
+WIREFRAME:Wireframe
+  Apply Instancing Transform = On
+  Colour = 0, 0, 0
+  Domain List = All Domains
+  Edge Angle = 30 [degree]
+  Instancing Transform = Default Transform
+  Line Colour Mode = Default
+  Line Width = 1
+  Show Surface Mesh = Off
+  Visibility = On
+END

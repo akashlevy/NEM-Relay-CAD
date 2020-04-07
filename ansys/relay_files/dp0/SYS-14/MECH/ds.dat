@@ -5,7 +5,7 @@
 ! File used for geometry attach: C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay.scdoc
 /title,relay--EM Transient (E5)
 *DIM,_wb_ProjectScratch_dir,string,248
-_wb_ProjectScratch_dir(1) = 'C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr0BD6\'
+_wb_ProjectScratch_dir(1) = 'C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\ScrBE13\'
 *DIM,_wb_SolverFiles_dir,string,248
 _wb_SolverFiles_dir(1) = 'C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\dp0\SYS-14\MECH\'
 *DIM,_wb_userfiles_dir,string,248

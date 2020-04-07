@@ -1,4 +1,4 @@
-# State file created:  2020/04/07 06:15:53
+# State file created:  2020/04/07 10:15:25
 # CFX-20.1
 
 CALCULATOR:
@@ -15,20 +15,20 @@ COMMENT:User Data
   Heading Level = 1
 END
 DATA READER:
-  Active Case Name = Case FFF 1
-  Append Results = False
+  Active Case Name = Case EM Transient
+  Append Results = True
   Apply X Offset = false
   Apply Y Offset = false
   Apply Z Offset = false
   Clear All Objects = False
   Construct Variables From Fourier Coefficients = True
-  Current Case List = Case FFF 1
+  Current Case List = Case FFF 1,Case EM Transient
   Current Case Name = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\\
-relay_files\dp0\FFF-1\Fluent\FFF-1.2-2-00001.dat.gz
+relay_files\dp0\SYS-14\MECH\file.rst
   Current Results File = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\\
-relay_files\dp0\FFF-1\Fluent\FFF-1.2-2-00001.dat.gz
+relay_files\dp0\SYS-14\MECH\file.rst
   Current Timestep = -1
-  Current Timevalue = 1e-08
+  Current Timevalue = 5e-09
   Edit Case Names = false
   File Angle Units = rad
   File Chemical Amount Units = kmol
@@ -54,11 +54,11 @@ relay_files\dp0\FFF-1\Fluent\FFF-1.2-2-00001.dat.gz
   CASE:Case FFF 1
     Construct Variables From Fourier Coefficients = True
     Current Case Name = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\\
-relay_files\dp0\FFF-1\Fluent\FFF-1.2-2-00001.dat.gz
+relay_files\dp0\FFF-1\Fluent\FFF-1.2-6-00005.dat.gz
     Current Results File = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\\
-relay_files\dp0\FFF-1\Fluent\FFF-1.2-2-00001.dat.gz
+relay_files\dp0\FFF-1\Fluent\FFF-1.2-6-00005.dat.gz
     Current Timestep = -1
-    Current Timevalue = 1e-08
+    Current Timevalue = 5e-09
     File Angle Units = rad
     File Chemical Amount Units = kmol
     File Current Units = A
@@ -100,7 +100,7 @@ relay_files\dp0\FFF-1\Fluent\FFF-1.2-2-00001.dat.gz
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
-      Visibility = false
+      Visibility = On
     END
     BOUNDARY:outside_wall
       Apply Instancing Transform = On
@@ -132,9 +132,9 @@ relay_files\dp0\FFF-1\Fluent\FFF-1.2-2-00001.dat.gz
       Tile Texture = Off
       Transform Texture = Off
       Transparency = 0.0
-      Visibility = false
+      Visibility = On
     END
-    DOMAIN:enclosure_enclosure
+    DOMAIN:relay_enclosure
       Angle Definition Method = Instances in 360
       Apply Reflection = false
       Apply Rotation = true
@@ -170,6 +170,281 @@ relay_files\dp0\FFF-1\Fluent\FFF-1.2-2-00001.dat.gz
       X = 0.0
       Y = 0.0
       Z = 0.0
+    END
+  END
+  CASE:Case EM Transient
+    Construct Variables From Fourier Coefficients = True
+    Current Case Name = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\\
+relay_files\dp0\SYS-14\MECH\file.rst
+    Current Results File = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\\
+relay_files\dp0\SYS-14\MECH\file.rst
+    Current Timestep = -1
+    Current Timevalue = 5e-09
+    File Angle Units = rad
+    File Chemical Amount Units = mol
+    File Current Units = A
+    File Length Units = m
+    File Light Units = cd
+    File Mass Units = kg
+    File Money Units = GBP
+    File Solid Angle Units = sr
+    File Temperature Units = C
+    File Time Units = s
+    Multi Configuration File Load Option = Single Case
+    Workbench ID = 3
+    BOUNDARY:Default Boundary
+      Apply Instancing Transform = On
+      Apply Texture = Off
+      Blend Texture = On
+      Colour = 0.2, 0.5, 1
+      Colour Map = Default Colour Map
+      Colour Mode = Constant
+      Colour Scale = Linear
+      Colour Variable = Pressure
+      Colour Variable Boundary Values = Conservative
+      Culling Mode = No Culling
+      Draw Faces = On
+      Draw Lines = Off
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
+      Line Colour = 0, 0, 0
+      Line Colour Mode = Default
+      Line Width = 1
+      Max = 0.0
+      Min = 0.0
+      Range = Global
+      Render Edge Angle = 0 [degree]
+      Specular Lighting = On
+      Surface Drawing = Smooth Shading
+      Texture Angle = 0
+      Texture Direction = 0 , 1 , 0
+      Texture Material = Metal
+      Texture Position = 0 , 0
+      Texture Scale = 1
+      Texture Type = Predefined
+      Tile Texture = Off
+      Transform Texture = Off
+      Transparency = 0.0
+      Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
+    END
+    DOMAIN:Default Domain
+      Angle Definition Method = Instances in 360
+      Apply Reflection = false
+      Apply Rotation = true
+      Apply Translation = false
+      Axis From File = Custom
+      Background Mesh Density = 2000
+      Background Mesh Generation Method = Quasi Orthogonal
+      Blade Aligned Variable Available = false
+      Create Additional Turbo Variables = false
+      Do Cylindrical Initialization = False
+      Domain Type = Normal
+      Full Circle = Off
+      Hub Curve Mode = From Turbo Region
+      Inlet Curve Mode = From Turbo Region
+      Instance Definition = From File
+      Linear Blade Aligned Variable Available = false
+      Number of Components in 360 = 1
+      Number of Copies = 1
+      Number of Data Instances = 1
+      Number of Passages in 360 = 1
+      Number of Passages in Component = 1
+      Outlet Curve Mode = From Turbo Region
+      Principal Axis = Z
+      Reflection Plane Option = From Plane
+      Rotation Angle = 0 [degree]
+      Rotation Axis From = 0.0, 0.0, 0.0
+      Rotation Axis To = 1.0, 0.0, 0.0
+      Rotation Axis Type = Principal Axis
+      Shroud Curve Mode = From Turbo Region
+      TBR User Theta Correction = 0.0
+      Translation Vector = 0.0, 0.0, 0.0
+      Turbo 360 Case without Periodics = false
+      X = 0.0
+      Y = 0.0
+      Z = 0.0
+    END
+    PRIMITIVE2D:Face_nodes
+      Apply Instancing Transform = On
+      Apply Texture = Off
+      Blend Texture = On
+      Colour = 1, 0.5, 0
+      Colour Map = Default Colour Map
+      Colour Mode = Constant
+      Colour Scale = Linear
+      Colour Variable Boundary Values = Hybrid
+      Culling Mode = No Culling
+      Draw Faces = On
+      Draw Lines = Off
+      Instancing Transform = Default Transform
+      Lighting = true
+      Line Colour = 0, 0, 0
+      Line Colour Mode = Default
+      Line Width = 1
+      Range = Global
+      Render Edge Angle = 0 [degree]
+      Set Number = 3
+      Specular Lighting = On
+      Surface Drawing = Smooth Shading
+      Texture Angle = 0
+      Texture Direction = 0.0, 1.0, 0.0
+      Texture Material = Metal
+      Texture Position = 0.0, 0.0
+      Texture Scale = 1.0
+      Texture Type = Predefined
+      Tile Texture = Off
+      Transform Texture = Off
+      Transparency = 0.0
+      Visibility = On
+    END
+    PRIMITIVE2D:Fluidic_interface
+      Apply Instancing Transform = On
+      Apply Texture = Off
+      Blend Texture = On
+      Colour = 1, 0.5, 0
+      Colour Map = Default Colour Map
+      Colour Mode = Constant
+      Colour Scale = Linear
+      Colour Variable Boundary Values = Hybrid
+      Culling Mode = No Culling
+      Draw Faces = On
+      Draw Lines = Off
+      Instancing Transform = Default Transform
+      Lighting = true
+      Line Colour = 0, 0, 0
+      Line Colour Mode = Default
+      Line Width = 1
+      Range = Global
+      Render Edge Angle = 0 [degree]
+      Set Number = 4,5
+      Specular Lighting = On
+      Surface Drawing = Smooth Shading
+      Texture Angle = 0
+      Texture Direction = 0.0, 1.0, 0.0
+      Texture Material = Metal
+      Texture Position = 0.0, 0.0
+      Texture Scale = 1.0
+      Texture Type = Predefined
+      Tile Texture = Off
+      Transform Texture = Off
+      Transparency = 0.0
+      Visibility = On
+    END
+    PRIMITIVE2D:Fsin_1
+      Apply Instancing Transform = On
+      Apply Texture = Off
+      Blend Texture = On
+      Colour = 1, 0.5, 0
+      Colour Map = Default Colour Map
+      Colour Mode = Constant
+      Colour Scale = Linear
+      Colour Variable Boundary Values = Hybrid
+      Culling Mode = No Culling
+      Draw Faces = On
+      Draw Lines = Off
+      Instancing Transform = Default Transform
+      Lighting = true
+      Line Colour = 0, 0, 0
+      Line Colour Mode = Default
+      Line Width = 1
+      Range = Global
+      Render Edge Angle = 0 [degree]
+      Set Number = 6,7
+      Specular Lighting = On
+      Surface Drawing = Smooth Shading
+      Texture Angle = 0
+      Texture Direction = 0.0, 1.0, 0.0
+      Texture Material = Metal
+      Texture Position = 0.0, 0.0
+      Texture Scale = 1.0
+      Texture Type = Predefined
+      Tile Texture = Off
+      Transform Texture = Off
+      Transparency = 0.0
+      Visibility = On
+    END
+    PRIMITIVE2D:N_cmmems179
+      Apply Instancing Transform = On
+      Apply Texture = Off
+      Blend Texture = On
+      Colour = 1, 0.5, 0
+      Colour Map = Default Colour Map
+      Colour Mode = Constant
+      Colour Scale = Linear
+      Colour Variable Boundary Values = Hybrid
+      Culling Mode = No Culling
+      Draw Faces = On
+      Draw Lines = Off
+      Instancing Transform = Default Transform
+      Lighting = true
+      Line Colour = 0, 0, 0
+      Line Colour Mode = Default
+      Line Width = 1
+      Range = Global
+      Render Edge Angle = 0 [degree]
+      Set Number = 8
+      Specular Lighting = On
+      Surface Drawing = Smooth Shading
+      Texture Angle = 0
+      Texture Direction = 0.0, 1.0, 0.0
+      Texture Material = Metal
+      Texture Position = 0.0, 0.0
+      Texture Scale = 1.0
+      Texture Type = Predefined
+      Tile Texture = Off
+      Transform Texture = Off
+      Transparency = 0.0
+      Visibility = On
+    END
+    PRIMITIVE2D:N_fixedsu
+      Apply Instancing Transform = On
+      Apply Texture = Off
+      Blend Texture = On
+      Colour = 1, 0.5, 0
+      Colour Map = Default Colour Map
+      Colour Mode = Constant
+      Colour Scale = Linear
+      Colour Variable Boundary Values = Hybrid
+      Culling Mode = No Culling
+      Draw Faces = On
+      Draw Lines = Off
+      Instancing Transform = Default Transform
+      Lighting = true
+      Line Colour = 0, 0, 0
+      Line Colour Mode = Default
+      Line Width = 1
+      Range = Global
+      Render Edge Angle = 0 [degree]
+      Set Number = 9
+      Specular Lighting = On
+      Surface Drawing = Smooth Shading
+      Texture Angle = 0
+      Texture Direction = 0.0, 1.0, 0.0
+      Texture Material = Metal
+      Texture Position = 0.0, 0.0
+      Texture Scale = 1.0
+      Texture Type = Predefined
+      Tile Texture = Off
+      Transform Texture = Off
+      Transparency = 0.0
+      Visibility = On
     END
   END
   CASE COMPARISON:
@@ -208,7 +483,7 @@ DEFAULT LEGEND:Default Legend View 1
   Legend Aspect = 0.07
   Legend Format = %10.3e
   Legend Orientation = Vertical
-  Legend Plot = /DEFAULT LEGEND:Default Legend View 1
+  Legend Plot = /DATA READER/CASE:Case EM Transient/PRIMITIVE2D:N_fixedsu
   Legend Position = 0.02, 0.15
   Legend Resolution = 256
   Legend Shading = Smooth
@@ -231,6 +506,7 @@ DEFAULT LEGEND:Default Legend View 2
   Legend Aspect = 0.07
   Legend Format = %10.3e
   Legend Orientation = Vertical
+  Legend Plot = /DATA READER/CASE:Case EM Transient/PRIMITIVE2D:N_fixedsu
   Legend Position = 0.02, 0.15
   Legend Resolution = 256
   Legend Shading = Smooth
@@ -253,6 +529,7 @@ DEFAULT LEGEND:Default Legend View 3
   Legend Aspect = 0.07
   Legend Format = %10.3e
   Legend Orientation = Vertical
+  Legend Plot = /DATA READER/CASE:Case EM Transient/PRIMITIVE2D:N_fixedsu
   Legend Position = 0.02, 0.15
   Legend Resolution = 256
   Legend Shading = Smooth
@@ -275,6 +552,7 @@ DEFAULT LEGEND:Default Legend View 4
   Legend Aspect = 0.07
   Legend Format = %10.3e
   Legend Orientation = Vertical
+  Legend Plot = /DATA READER/CASE:Case EM Transient/PRIMITIVE2D:N_fixedsu
   Legend Position = 0.02, 0.15
   Legend Resolution = 256
   Legend Shading = Smooth
@@ -302,11 +580,11 @@ END
 LIBRARY:
   CEL:
     EXPRESSIONS:
-      Accumulated Time Step = 1
-      Current Time Step = 1
+      Accumulated Time Step = -1
+      Current Time Step = -1
       Reference Pressure = 0 [Pa]
-      Sequence Step = 1
-      Time = 1e-08 [s]
+      Sequence Step = 4
+      Time = 5e-09 [s]
       atstep = Accumulated Time Step
       ctstep = Current Time Step
       sstep = Sequence Step
@@ -395,6 +673,15 @@ OPTIONS,/REPORT/OPERATING MAPS,/COMMENT:User Data
     This Exists = true
   END
 END
+SCALAR VARIABLE:Acceleration X
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Acceleration Y
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Acceleration Z
+  Boundary Values = Conservative
+END
 SCALAR VARIABLE:Approximated Mass Flow
   Boundary Values = Conservative
 END
@@ -414,6 +701,33 @@ SCALAR VARIABLE:Eddy Viscosity
   Boundary Values = Conservative
 END
 SCALAR VARIABLE:Edge Length Ratio
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Elastic Equivalent Strain
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Elastic Strain Intensity
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Electric Flux X
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Electric Flux Y
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Electric Flux Z
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Electric Gradient X
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Electric Gradient Y
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Electric Gradient Z
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Electric Potential
   Boundary Values = Conservative
 END
 SCALAR VARIABLE:Element Volume Inverse
@@ -449,6 +763,33 @@ END
 SCALAR VARIABLE:Minimum Face Angle
   Boundary Values = Conservative
 END
+SCALAR VARIABLE:Normal Elastic Strain X
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Normal Elastic Strain Y
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Normal Elastic Strain Z
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Normal Stress X
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Normal Stress Y
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Normal Stress Z
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Normal Total Mechanical and Thermal Strain X
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Normal Total Mechanical and Thermal Strain Y
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Normal Total Mechanical and Thermal Strain Z
+  Boundary Values = Conservative
+END
 SCALAR VARIABLE:Normal X
   Boundary Values = Conservative
 END
@@ -459,6 +800,78 @@ SCALAR VARIABLE:Normal Z
   Boundary Values = Conservative
 END
 SCALAR VARIABLE:Pressure
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Principal Elastic Strain 1
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Principal Elastic Strain 2
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Principal Elastic Strain 3
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Principal Stress 1
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Principal Stress 2
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Principal Stress 3
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Principal Total Mechanical and Thermal Strain 1
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Principal Total Mechanical and Thermal Strain 2
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Principal Total Mechanical and Thermal Strain 3
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Shear Elastic Strain XY
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Shear Elastic Strain YZ
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Shear Elastic Strain ZX
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Shear Stress XY
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Shear Stress YZ
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Shear Stress ZX
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Shear Total Mechanical and Thermal Strain XY
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Shear Total Mechanical and Thermal Strain YZ
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Shear Total Mechanical and Thermal Strain ZX
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Stress Intensity
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Total Mechanical and Thermal Equivalent Strain
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Total Mechanical and Thermal Strain Intensity
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Total Mesh Displacement X
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Total Mesh Displacement Y
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Total Mesh Displacement Z
   Boundary Values = Conservative
 END
 SCALAR VARIABLE:Turbulence Eddy Frequency
@@ -564,6 +977,9 @@ SCALAR VARIABLE:Velocity.Swirling Vector Z
   Boundary Values = Conservative
 END
 SCALAR VARIABLE:Volume
+  Boundary Values = Conservative
+END
+SCALAR VARIABLE:Von Mises Stress
   Boundary Values = Conservative
 END
 SCALAR VARIABLE:Wall Heat Flux
@@ -686,10 +1102,22 @@ UNIT SYSTEM:
   Preferred Units System = SI
   Update Units to Preferred = Off
 END
+VECTOR VARIABLE:Acceleration
+  Boundary Values = Conservative
+END
+VECTOR VARIABLE:Electric Flux
+  Boundary Values = Conservative
+END
+VECTOR VARIABLE:Electric Gradient
+  Boundary Values = Conservative
+END
 VECTOR VARIABLE:Force
   Boundary Values = Conservative
 END
 VECTOR VARIABLE:Normal
+  Boundary Values = Conservative
+END
+VECTOR VARIABLE:Total Mesh Displacement
   Boundary Values = Conservative
 END
 VECTOR VARIABLE:Velocity
@@ -728,8 +1156,14 @@ VIEW:View 1
   Highlight Type = Surface Mesh
   Is A Figure = false
   Light Angle = 50, 110
-  Object Visibility List = /DEFAULT LEGEND:Default Legend View 1,/\
-WIREFRAME:Wireframe
+  Object Visibility List = /DATA READER/CASE:Case EM Transient/\
+BOUNDARY:Default Boundary,/DATA READER/CASE:Case EM Transient/\
+PRIMITIVE2D:Face_nodes,/DATA READER/CASE:Case EM Transient/\
+PRIMITIVE2D:Fluidic_interface,/DATA READER/CASE:Case EM Transient/\
+PRIMITIVE2D:Fsin_1,/DATA READER/CASE:Case EM Transient/PRIMITIVE2D:N_cmmems179,/\
+DATA READER/CASE:Case EM Transient/PRIMITIVE2D:N_fixedsu,/DATA READER/CASE:Case \
+FFF 1/BOUNDARY:inside_wall,/DATA READER/CASE:Case FFF 1/BOUNDARY:outside_wall,/\
+DEFAULT LEGEND:Default Legend View 1,/WIREFRAME:Wireframe
   Projection = Orthographic
   Ruler Visibility = true
   Standard View = Isometric Y

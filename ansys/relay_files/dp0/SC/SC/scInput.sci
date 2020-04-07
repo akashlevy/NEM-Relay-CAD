@@ -70,7 +70,7 @@
       <Time PropType="double" UCat="Time" Unt="s">5E-09<!--This input is only required if Duration Option=1--></Time>
     </Duration>
     <Step Ver="1">
-      <MaximumIterations PropType="int">5<!--For single coupling iteration, both MinimumIterations and MaximumIterations should be 1--></MaximumIterations>
+      <MaximumIterations PropType="int">20<!--For single coupling iteration, both MinimumIterations and MaximumIterations should be 1--></MaximumIterations>
       <MinimumIterations PropType="int">1</MinimumIterations>
       <Size PropType="double" UCat="Time" Unt="s">1E-09</Size>
       <Option PropType="int">1<!--0=Nondimensional Steps, 1=Step size value specified, (Unsupported: 2=Step size scaled by iteration convergence)--></Option>
