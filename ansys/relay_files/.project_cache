@@ -1,8 +1,6 @@
 ﻿dp0/ENGD/ENGD/EngineeringData.xml
 dp0/FFF-1/Fluent/FFF-1.2-2-00000.cas.gz
 dp0/FFF-1/Fluent/FFF-1.2-2-00000.dat.gz
-dp0/FFF-1/Fluent/FFF-1.2-2-00001.cas.gz
-dp0/FFF-1/Fluent/FFF-1.2-2-00001.dat.gz
 dp0/FFF-1/Fluent/FFF-1.2-Setup-Output.cas.gz
 dp0/FFF-1/Fluent/FFF-1.2.ip
 dp0/FFF-1/Fluent/FFF-1.2.set
@@ -22,6 +20,7 @@ dp0/SC/SC/scStop
 dp0/SC/SC/wb2cosim.py
 dp0/SYS/ENGD/EngineeringData.xml
 dp0/SYS/ENGD/material.engd
+dp0/SYS-10/DM/SYS-10.scdoc
 dp0/SYS-10/ENGD/EngineeringData.xml
 dp0/SYS-10/ENGD/material.engd
 dp0/SYS-11/MECH/CAERep.xml
@@ -64,6 +63,7 @@ session_files/journal14.wbjn
 session_files/journal14_crashed.wbjn
 session_files/journal15.wbjn
 session_files/journal16.wbjn
+session_files/journal17.wbjn
 session_files/journal1_crashed.wbjn
 session_files/journal2.wbjn
 session_files/journal3_crashed.wbjn
