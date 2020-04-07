@@ -245,20 +245,12 @@
           <Name>Red</Name>
           <Unitless />
         </ParameterDetails>
-        <ParameterDetails id="pa1">
-          <Name>Green</Name>
-          <Unitless />
-        </ParameterDetails>
         <ParameterDetails id="pa2">
           <Name>Blue</Name>
           <Unitless />
         </ParameterDetails>
         <ParameterDetails id="pa3">
           <Name>Material Property</Name>
-          <Unitless />
-        </ParameterDetails>
-        <ParameterDetails id="pa4">
-          <Name>Options Variable</Name>
           <Unitless />
         </ParameterDetails>
         <ParameterDetails id="pa5">
@@ -271,6 +263,14 @@
               <Name>m</Name>
             </Unit>
           </Units>
+        </ParameterDetails>
+        <ParameterDetails id="pa1">
+          <Name>Green</Name>
+          <Unitless />
+        </ParameterDetails>
+        <ParameterDetails id="pa4">
+          <Name>Options Variable</Name>
+          <Unitless />
         </ParameterDetails>
         <ParameterDetails id="pa6">
           <Name>Temperature</Name>

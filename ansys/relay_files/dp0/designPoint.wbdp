@@ -2,17 +2,21 @@
 <Storage>
   <Project Version="9.1" />
   <Addins>
-    <addin-list valType="String">[Ansys.ParameterManager.ParameterManagerAddin, Ansys.Dpdb.DpdbAddin, Ansys.Simulation.Core.Addin, Ansys.EngineeringData.Commands.Addin, Ansys.DesignModeler.Core.Addin]</addin-list>
+    <addin-list valType="String">[Ansys.ParameterManager.ParameterManagerAddin, Ansys.CFX.CFDPost.CFDPostAddin, Ansys.Dpdb.DpdbAddin, Ansys.Fluent.Addin, Ansys.Simulation.Core.Addin, Ansys.Meshing.Core.Addin, Ansys.EngineeringData.Commands.Addin, Ansys.MultiphysicsCoupling.Core.Addin, Ansys.DesignModeler.Core.Addin]</addin-list>
     <Addin Name="Ansys.ParameterManager.ParameterManagerAddin" Version="7.3" />
+    <Addin Name="Ansys.CFX.CFDPost.CFDPostAddin" Version="17.0.0.0" />
     <Addin Name="Ansys.Dpdb.DpdbAddin" Version="4.0">
       <is-optional-on-resume valType="Boolean">true</is-optional-on-resume>
     </Addin>
+    <Addin Name="Ansys.Fluent.Addin" Version="19.5.0.0" />
     <Addin Name="Ansys.Simulation.Core.Addin" Version="20.1.0.0" />
+    <Addin Name="Ansys.Meshing.Core.Addin" Version="18.0.0.0" />
     <Addin Name="Ansys.EngineeringData.Commands.Addin" Version="20.1.0.181" />
+    <Addin Name="Ansys.MultiphysicsCoupling.Core.Addin" Version="19.2.0.0" />
     <Addin Name="Ansys.DesignModeler.Core.Addin" Version="20.1.1.0" />
   </Addins>
   <Containers>
-    <container-map valType="String">{"Scopes": Ansys.ParameterManager.ParameterManagerAddin:scopes, "Solution 4": Ansys.Simulation.Core.Addin:SimulationSolution, "Setup 4": Ansys.Simulation.Core.Addin:SimulationSetup, "Engineering Data 4": "Ansys.EngineeringData.Commands.Addin:Engineering Data", "Geometry 4": Ansys.DesignModeler.Core.Addin:Geometry, "Model 4": Ansys.Simulation.Core.Addin:SimulationModel, "Results 4": Ansys.Simulation.Core.Addin:SimulationResults, "Setup": Ansys.Simulation.Core.Addin:SimulationSetup, "Solution": Ansys.Simulation.Core.Addin:SimulationSolution, "Results": Ansys.Simulation.Core.Addin:SimulationResults, "Setup 1": Ansys.Simulation.Core.Addin:SimulationSetup, "Solution 1": Ansys.Simulation.Core.Addin:SimulationSolution, "Results 1": Ansys.Simulation.Core.Addin:SimulationResults, "Setup 2": Ansys.Simulation.Core.Addin:SimulationSetup, "Solution 2": Ansys.Simulation.Core.Addin:SimulationSolution, "Results 2": Ansys.Simulation.Core.Addin:SimulationResults}</container-map>
+    <container-map valType="String">{"Scopes": Ansys.ParameterManager.ParameterManagerAddin:scopes, "Solution 4": Ansys.Simulation.Core.Addin:SimulationSolution, "Setup 4": Ansys.Simulation.Core.Addin:SimulationSetup, "Engineering Data 4": "Ansys.EngineeringData.Commands.Addin:Engineering Data", "Geometry 4": Ansys.DesignModeler.Core.Addin:Geometry, "Model 4": Ansys.Simulation.Core.Addin:SimulationModel, "Results 4": Ansys.Simulation.Core.Addin:SimulationResults, "Setup": Ansys.Simulation.Core.Addin:SimulationSetup, "Solution": Ansys.Simulation.Core.Addin:SimulationSolution, "Results": Ansys.Simulation.Core.Addin:SimulationResults, "Setup 1": Ansys.Simulation.Core.Addin:SimulationSetup, "Solution 1": Ansys.Simulation.Core.Addin:SimulationSolution, "Results 1": Ansys.Simulation.Core.Addin:SimulationResults, "Setup 2": Ansys.Simulation.Core.Addin:SimulationSetup, "Solution 2": Ansys.Simulation.Core.Addin:SimulationSolution, "Results 2": Ansys.Simulation.Core.Addin:SimulationResults, "Mesh": Ansys.Meshing.Core.Addin:SimulationModel, "Setup 3": Ansys.Fluent.Addin:SetupContainer, "Solution 3": Ansys.Fluent.Addin:SolutionContainer, "Setup 5": Ansys.MultiphysicsCoupling.Core.Addin:Setup, "Solution 5": Ansys.MultiphysicsCoupling.Core.Addin:Solution, "Results 3": Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer}</container-map>
     <static-container-ids valType="String">{"Scopes": Scopes}</static-container-ids>
     <Container Name="Scopes" Version="1.0">
       <container-type valType="String">Ansys.ParameterManager.ParameterManagerAddin:scopes</container-type>
@@ -33,10 +37,10 @@
       <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationSolution</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">90412</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 90407, "Input": 90407, "Output": 90407}</last-modified-by-usage>
+      <last-updated valType="Int64">94934</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 94929, "Input": 94929, "Output": 94929}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 89017, "Setup 4": 90411, "Engineering Data 4": 88975, "Geometry 4": 90358, "Model 4": 90393, "Results 4": 89839, "Setup": 89419, "Solution": 89455, "Results": 89456, "Setup 1": 89830, "Solution 1": 89831, "Results 1": 89834, "Setup 2": 90320, "Solution 2": 90321, "Results 2": 90322, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "SpaceClaimSessionContainer": 0}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 94917, "Setup 4": 94933, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 94918, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 94707, "Solution 2": 94762, "Results 2": 94432, "Mesh": 93628, "Setup 3": 94643, "Solution 3": 0, "Setup 5": 94719, "Solution 5": 94398, "Results 3": 94430, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-11</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Solution 4/MechanicalSystemType:SystemClass for Structural|Static|ANSYS" Version="1.0">
@@ -102,10 +106,10 @@
       <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationSetup</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">90411</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 90406, "Input": 90406, "Output": 90406}</last-modified-by-usage>
+      <last-updated valType="Int64">94933</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 94928, "Input": 94928, "Output": 94928}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 89017, "Setup 4": 89016, "Engineering Data 4": 88975, "Geometry 4": 90358, "Model 4": 90393, "Results 4": 89839, "Setup": 89419, "Solution": 89455, "Results": 89456, "Setup 1": 89830, "Solution 1": 89831, "Results 1": 89834, "Setup 2": 90320, "Solution 2": 90321, "Results 2": 90322, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "SpaceClaimSessionContainer": 0}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 94917, "Setup 4": 94916, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 94918, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 94707, "Solution 2": 94762, "Results 2": 94432, "Mesh": 93628, "Setup 3": 94643, "Solution 3": 0, "Setup 5": 94719, "Solution 5": 94398, "Results 3": 94430, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-11</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Setup 4/MechanicalSystemType:SystemClass for Structural|Static|ANSYS" Version="1.0">
@@ -165,9 +169,9 @@
       <DefaultSolidMaterial valType="String"></DefaultSolidMaterial>
       <DefaultFluidMaterial valType="String">EDA_UNINITIALIZED_EDA</DefaultFluidMaterial>
       <Source_DataObject valType="StringArray">
-        <ArrayEntry Index="0">Poly-SiGe::ANSYS%:%:Disk%:%:C%:\Users\Akash Levy\Documents\NEM-Relay-CAD\relay_files\dp0\SYS-10\ENGD\EngineeringData.xml::Poly-SiGe</ArrayEntry>
-        <ArrayEntry Index="1">Tungsten::ANSYS%:%:Disk%:%:C%:\Users\Akash Levy\Documents\NEM-Relay-CAD\relay_files\dp0\SYS-10\ENGD\EngineeringData.xml::Tungsten</ArrayEntry>
-        <ArrayEntry Index="2">Castor Oil::ANSYS%:%:Disk%:%:C%:\Users\Akash Levy\Documents\NEM-Relay-CAD\relay_files\dp0\SYS-10\ENGD\EngineeringData.xml::Castor Oil</ArrayEntry>
+        <ArrayEntry Index="0">Poly-SiGe::ANSYS%:%:Disk%:%:C%:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\dp0\SYS-10\ENGD\EngineeringData.xml::Poly-SiGe</ArrayEntry>
+        <ArrayEntry Index="1">Tungsten::ANSYS%:%:Disk%:%:C%:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\dp0\SYS-10\ENGD\EngineeringData.xml::Tungsten</ArrayEntry>
+        <ArrayEntry Index="2">Castor Oil::ANSYS%:%:Disk%:%:C%:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\dp0\SYS-10\ENGD\EngineeringData.xml::Castor Oil</ArrayEntry>
       </Source_DataObject>
       <AdaptedEntityMap valType="String">[typ]Material[/typ][mat]Poly-SiGe[/mat]::9060d7cf-a1de-48b4-831e-b86fb34fed6e$$[typ]MaterialProperty[/typ][mat]Poly-SiGe[/mat][prp]Appearance[/prp]::79bfd8d6-5dbb-49a7-bddf-5541305362ec$$[typ]MaterialPropertyData[/typ][mat]Poly-SiGe[/mat][prp]Appearance[/prp][tbl]Color[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl]::67ee1f01-9612-40cf-9cbd-77978033c1c9$$[typ]MaterialVariable[/typ][mat]Poly-SiGe[/mat][prp]Appearance[/prp][tbl]Color[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Red[/var]::94e71ba3-e052-48a2-90ee-0a7de090299d$$[typ]MaterialVariable[/typ][mat]Poly-SiGe[/mat][prp]Appearance[/prp][tbl]Color[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Green[/var]::6d317618-4a6e-4eab-9de4-879bf631c318$$[typ]MaterialVariable[/typ][mat]Poly-SiGe[/mat][prp]Appearance[/prp][tbl]Color[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Blue[/var]::68061e58-7f12-4527-8622-53e051fd79c0$$[typ]MaterialProperty[/typ][mat]Poly-SiGe[/mat][prp]Density[/prp]::baeb4ada-b19d-4192-add5-e5d561131fa3$$[typ]MaterialPropertyData[/typ][mat]Poly-SiGe[/mat][prp]Density[/prp][tbl]Density[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl]::5142bcea-b3c3-4652-9158-cd17cdc31aea$$[typ]MaterialVariable[/typ][mat]Poly-SiGe[/mat][prp]Density[/prp][tbl]Density[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Density[/var]::ef23675e-8f1b-40f1-8804-8245a0d55de7$$[typ]MaterialVariable[/typ][mat]Poly-SiGe[/mat][prp]Density[/prp][tbl]Density[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Temperature[qual]Field Variable%:%:Temperature%$%$Default Data%:%:22%$%$Field Units%:%:C%$%$Upper Limit%:%:Program Controlled%$%$Lower Limit%:%:Program Controlled[/qual][/var]::50ccaa1a-5b64-42f9-a254-cd2bbb644357$$[typ]MaterialVariable[/typ][mat]Poly-SiGe[/mat][prp]Density[/prp][tbl]Density[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Interpolation Options[qual]AlgorithmType%:%:Linear Multivariate%:%:Linear Multivariate%,%,Nearest Neighbor%,%,Radial Basis%$%$Normalized%:%:True%:%:False%,%,True%$%$Cached%:%:True%:%:False%,%,True[/qual][/var]::ccad3317-7c93-4aaa-ad51-8ce6b12e423a$$[typ]MaterialProperty[/typ][mat]Poly-SiGe[/mat][prp]Elasticity[/prp]::fca05847-9fac-4084-b5cd-d37bbb62995b$$[typ]MaterialPropertyData[/typ][mat]Poly-SiGe[/mat][prp]Elasticity[/prp][tbl]Elasticity[qual]Definition%:%:%$%$Behavior%:%:Isotropic%$%$Derive from%:%:Shear Modulus and Young's Modulus%:%:Bulk Modulus and Poisson's Ratio%,%,Bulk Modulus and Shear Modulus%,%,Bulk Modulus and Young's Modulus%,%,Shear Modulus and Poisson's Ratio%,%,Shear Modulus and Young's Modulus%,%,Young's Modulus and Poisson's Ratio[/qual][/tbl]::293caa09-ffd7-484b-b22b-3f8deab28457$$[typ]MaterialVariable[/typ][mat]Poly-SiGe[/mat][prp]Elasticity[/prp][tbl]Elasticity[qual]Definition%:%:%$%$Behavior%:%:Isotropic%$%$Derive from%:%:Shear Modulus and Young's Modulus%:%:Bulk Modulus and Poisson's Ratio%,%,Bulk Modulus and Shear Modulus%,%,Bulk Modulus and Young's Modulus%,%,Shear Modulus and Poisson's Ratio%,%,Shear Modulus and Young's Modulus%,%,Young's Modulus and Poisson's Ratio[/qual][/tbl][var]Young's Modulus[/var]::0c93fdb8-ac54-4d28-b256-a7abf1125e40$$[typ]MaterialVariable[/typ][mat]Poly-SiGe[/mat][prp]Elasticity[/prp][tbl]Elasticity[qual]Definition%:%:%$%$Behavior%:%:Isotropic%$%$Derive from%:%:Shear Modulus and Young's Modulus%:%:Bulk Modulus and Poisson's Ratio%,%,Bulk Modulus and Shear Modulus%,%,Bulk Modulus and Young's Modulus%,%,Shear Modulus and Poisson's Ratio%,%,Shear Modulus and Young's Modulus%,%,Young's Modulus and Poisson's Ratio[/qual][/tbl][var]Poisson's Ratio[/var]::7e40cd4e-0e9a-4db5-96e0-3e1f46ac0a19$$[typ]MaterialVariable[/typ][mat]Poly-SiGe[/mat][prp]Elasticity[/prp][tbl]Elasticity[qual]Definition%:%:%$%$Behavior%:%:Isotropic%$%$Derive from%:%:Shear Modulus and Young's Modulus%:%:Bulk Modulus and Poisson's Ratio%,%,Bulk Modulus and Shear Modulus%,%,Bulk Modulus and Young's Modulus%,%,Shear Modulus and Poisson's Ratio%,%,Shear Modulus and Young's Modulus%,%,Young's Modulus and Poisson's Ratio[/qual][/tbl][var]Bulk Modulus[/var]::3f07953f-f380-4047-95b5-860a210cdd31$$[typ]MaterialVariable[/typ][mat]Poly-SiGe[/mat][prp]Elasticity[/prp][tbl]Elasticity[qual]Definition%:%:%$%$Behavior%:%:Isotropic%$%$Derive from%:%:Shear Modulus and Young's Modulus%:%:Bulk Modulus and Poisson's Ratio%,%,Bulk Modulus and Shear Modulus%,%,Bulk Modulus and Young's Modulus%,%,Shear Modulus and Poisson's Ratio%,%,Shear Modulus and Young's Modulus%,%,Young's Modulus and Poisson's Ratio[/qual][/tbl][var]Shear Modulus[/var]::9ae68594-321d-47b9-b24c-96c824c32398$$[typ]MaterialVariable[/typ][mat]Poly-SiGe[/mat][prp]Elasticity[/prp][tbl]Elasticity[qual]Definition%:%:%$%$Behavior%:%:Isotropic%$%$Derive from%:%:Shear Modulus and Young's Modulus%:%:Bulk Modulus and Poisson's Ratio%,%,Bulk Modulus and Shear Modulus%,%,Bulk Modulus and Young's Modulus%,%,Shear Modulus and Poisson's Ratio%,%,Shear Modulus and Young's Modulus%,%,Young's Modulus and Poisson's Ratio[/qual][/tbl][var]Temperature[qual]Field Variable%:%:Temperature%$%$Default Data%:%:22%$%$Field Units%:%:C%$%$Upper Limit%:%:Program Controlled%$%$Lower Limit%:%:Program Controlled[/qual][/var]::c50cabd1-ad33-4d0d-a6e3-af3265765b36$$[typ]MaterialVariable[/typ][mat]Poly-SiGe[/mat][prp]Elasticity[/prp][tbl]Elasticity[qual]Definition%:%:%$%$Behavior%:%:Isotropic%$%$Derive from%:%:Shear Modulus and Young's Modulus%:%:Bulk Modulus and Poisson's Ratio%,%,Bulk Modulus and Shear Modulus%,%,Bulk Modulus and Young's Modulus%,%,Shear Modulus and Poisson's Ratio%,%,Shear Modulus and Young's Modulus%,%,Young's Modulus and Poisson's Ratio[/qual][/tbl][var]Interpolation Options[qual]AlgorithmType%:%:Linear Multivariate%:%:Linear Multivariate%,%,Nearest Neighbor%,%,Radial Basis%$%$Normalized%:%:True%:%:False%,%,True%$%$Cached%:%:True%:%:False%,%,True[/qual][/var]::f6398ec1-eefb-4a1e-821d-6c1af9a94191$$[typ]MaterialProperty[/typ][mat]Poly-SiGe[/mat][prp]Resistivity[/prp]::14fd8e9a-e0dd-446c-9ae8-1c7ee74a4586$$[typ]MaterialPropertyData[/typ][mat]Poly-SiGe[/mat][prp]Resistivity[/prp][tbl]Resistivity[qual]Definition%:%:%$%$Behavior%:%:Isotropic[/qual][/tbl]::a085759a-ce77-428e-bb5a-9f3a34027e1c$$[typ]MaterialVariable[/typ][mat]Poly-SiGe[/mat][prp]Resistivity[/prp][tbl]Resistivity[qual]Definition%:%:%$%$Behavior%:%:Isotropic[/qual][/tbl][var]Resistivity[/var]::7689f8b3-64f8-4496-a6a2-67d79130bd30$$[typ]MaterialVariable[/typ][mat]Poly-SiGe[/mat][prp]Resistivity[/prp][tbl]Resistivity[qual]Definition%:%:%$%$Behavior%:%:Isotropic[/qual][/tbl][var]Temperature[/var]::25bb1ff2-3102-48f5-add3-651d98c5d92e$$[typ]Material[/typ][mat]Tungsten[/mat]::c8b3fba6-80b9-4945-8e56-7b8b34af174d$$[typ]MaterialProperty[/typ][mat]Tungsten[/mat][prp]Appearance[/prp]::fb42e710-d95f-4bf6-90fc-825257dd841b$$[typ]MaterialPropertyData[/typ][mat]Tungsten[/mat][prp]Appearance[/prp][tbl]Color[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl]::35f9d010-4b61-4e03-b804-417554c27801$$[typ]MaterialVariable[/typ][mat]Tungsten[/mat][prp]Appearance[/prp][tbl]Color[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Red[/var]::e6f584b8-455b-4ad2-89be-ac7113c784ad$$[typ]MaterialVariable[/typ][mat]Tungsten[/mat][prp]Appearance[/prp][tbl]Color[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Green[/var]::9005c66b-fdc0-4849-a0eb-91e351a086d3$$[typ]MaterialVariable[/typ][mat]Tungsten[/mat][prp]Appearance[/prp][tbl]Color[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Blue[/var]::b022800f-48e0-444e-b036-eea95961eb33$$[typ]MaterialProperty[/typ][mat]Tungsten[/mat][prp]Density[/prp]::5cd24349-cf33-4025-a8f2-55b2f712561f$$[typ]MaterialPropertyData[/typ][mat]Tungsten[/mat][prp]Density[/prp][tbl]Density[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl]::c4beed51-e4ae-4ef5-aae5-7600e3a991c3$$[typ]MaterialVariable[/typ][mat]Tungsten[/mat][prp]Density[/prp][tbl]Density[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Density[/var]::4291499b-8417-453c-ab74-31394900c4ff$$[typ]MaterialVariable[/typ][mat]Tungsten[/mat][prp]Density[/prp][tbl]Density[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Temperature[qual]Field Variable%:%:Temperature%$%$Default Data%:%:22%$%$Field Units%:%:C%$%$Upper Limit%:%:Program Controlled%$%$Lower Limit%:%:Program Controlled[/qual][/var]::e10de2ed-c193-49d8-8e5b-8795511909f4$$[typ]MaterialVariable[/typ][mat]Tungsten[/mat][prp]Density[/prp][tbl]Density[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Interpolation Options[qual]AlgorithmType%:%:Linear Multivariate%:%:Linear Multivariate%,%,Nearest Neighbor%,%,Radial Basis%$%$Normalized%:%:True%:%:False%,%,True%$%$Cached%:%:True%:%:False%,%,True[/qual][/var]::99df7037-5797-4905-9dc4-ca612cd12a42$$[typ]MaterialProperty[/typ][mat]Tungsten[/mat][prp]Elasticity[/prp]::768b9f26-dccc-4787-8e38-af0f18884f48$$[typ]MaterialPropertyData[/typ][mat]Tungsten[/mat][prp]Elasticity[/prp][tbl]Elasticity[qual]Definition%:%:%$%$Behavior%:%:Isotropic%$%$Derive from%:%:Young's Modulus and Poisson's Ratio%:%:Bulk Modulus and Poisson's Ratio%,%,Bulk Modulus and Shear Modulus%,%,Bulk Modulus and Young's Modulus%,%,Shear Modulus and Poisson's Ratio%,%,Shear Modulus and Young's Modulus%,%,Young's Modulus and Poisson's Ratio[/qual][/tbl]::3c70445e-43ff-4607-9621-72f64dbbaa86$$[typ]MaterialVariable[/typ][mat]Tungsten[/mat][prp]Elasticity[/prp][tbl]Elasticity[qual]Definition%:%:%$%$Behavior%:%:Isotropic%$%$Derive from%:%:Young's Modulus and Poisson's Ratio%:%:Bulk Modulus and Poisson's Ratio%,%,Bulk Modulus and Shear Modulus%,%,Bulk Modulus and Young's Modulus%,%,Shear Modulus and Poisson's Ratio%,%,Shear Modulus and Young's Modulus%,%,Young's Modulus and Poisson's Ratio[/qual][/tbl][var]Young's Modulus[/var]::56e009b3-7486-4cf8-bee4-4b1b42eff937$$[typ]MaterialVariable[/typ][mat]Tungsten[/mat][prp]Elasticity[/prp][tbl]Elasticity[qual]Definition%:%:%$%$Behavior%:%:Isotropic%$%$Derive from%:%:Young's Modulus and Poisson's Ratio%:%:Bulk Modulus and Poisson's Ratio%,%,Bulk Modulus and Shear Modulus%,%,Bulk Modulus and Young's Modulus%,%,Shear Modulus and Poisson's Ratio%,%,Shear Modulus and Young's Modulus%,%,Young's Modulus and Poisson's Ratio[/qual][/tbl][var]Poisson's Ratio[/var]::2ffb8a67-406e-47f5-b28e-8dfd54a93ba3$$[typ]MaterialVariable[/typ][mat]Tungsten[/mat][prp]Elasticity[/prp][tbl]Elasticity[qual]Definition%:%:%$%$Behavior%:%:Isotropic%$%$Derive from%:%:Young's Modulus and Poisson's Ratio%:%:Bulk Modulus and Poisson's Ratio%,%,Bulk Modulus and Shear Modulus%,%,Bulk Modulus and Young's Modulus%,%,Shear Modulus and Poisson's Ratio%,%,Shear Modulus and Young's Modulus%,%,Young's Modulus and Poisson's Ratio[/qual][/tbl][var]Bulk Modulus[/var]::1d260986-859b-4884-8464-ce5c2054390b$$[typ]MaterialVariable[/typ][mat]Tungsten[/mat][prp]Elasticity[/prp][tbl]Elasticity[qual]Definition%:%:%$%$Behavior%:%:Isotropic%$%$Derive from%:%:Young's Modulus and Poisson's Ratio%:%:Bulk Modulus and Poisson's Ratio%,%,Bulk Modulus and Shear Modulus%,%,Bulk Modulus and Young's Modulus%,%,Shear Modulus and Poisson's Ratio%,%,Shear Modulus and Young's Modulus%,%,Young's Modulus and Poisson's Ratio[/qual][/tbl][var]Shear Modulus[/var]::7ef1f81b-a2a2-496b-b393-4fe0e4ae017a$$[typ]MaterialVariable[/typ][mat]Tungsten[/mat][prp]Elasticity[/prp][tbl]Elasticity[qual]Definition%:%:%$%$Behavior%:%:Isotropic%$%$Derive from%:%:Young's Modulus and Poisson's Ratio%:%:Bulk Modulus and Poisson's Ratio%,%,Bulk Modulus and Shear Modulus%,%,Bulk Modulus and Young's Modulus%,%,Shear Modulus and Poisson's Ratio%,%,Shear Modulus and Young's Modulus%,%,Young's Modulus and Poisson's Ratio[/qual][/tbl][var]Temperature[qual]Field Variable%:%:Temperature%$%$Default Data%:%:22%$%$Field Units%:%:C%$%$Upper Limit%:%:Program Controlled%$%$Lower Limit%:%:Program Controlled[/qual][/var]::e3b5713b-a46f-4f19-95f9-b8cdcb706327$$[typ]MaterialVariable[/typ][mat]Tungsten[/mat][prp]Elasticity[/prp][tbl]Elasticity[qual]Definition%:%:%$%$Behavior%:%:Isotropic%$%$Derive from%:%:Young's Modulus and Poisson's Ratio%:%:Bulk Modulus and Poisson's Ratio%,%,Bulk Modulus and Shear Modulus%,%,Bulk Modulus and Young's Modulus%,%,Shear Modulus and Poisson's Ratio%,%,Shear Modulus and Young's Modulus%,%,Young's Modulus and Poisson's Ratio[/qual][/tbl][var]Interpolation Options[qual]AlgorithmType%:%:Linear Multivariate%:%:Linear Multivariate%,%,Nearest Neighbor%,%,Radial Basis%$%$Normalized%:%:True%:%:False%,%,True%$%$Cached%:%:True%:%:False%,%,True[/qual][/var]::b07d1a66-a19a-4607-a107-2dcfa71ca68b$$[typ]MaterialProperty[/typ][mat]Tungsten[/mat][prp]Resistivity[/prp]::01720f43-cfab-4fec-8d9b-6fbc67f146ed$$[typ]MaterialPropertyData[/typ][mat]Tungsten[/mat][prp]Resistivity[/prp][tbl]Resistivity[qual]Definition%:%:%$%$Behavior%:%:Isotropic[/qual][/tbl]::cc666e31-47c2-453a-9bdb-ca4d97455287$$[typ]MaterialVariable[/typ][mat]Tungsten[/mat][prp]Resistivity[/prp][tbl]Resistivity[qual]Definition%:%:%$%$Behavior%:%:Isotropic[/qual][/tbl][var]Resistivity[/var]::0bf0532e-5269-4304-b961-6acc5493ead8$$[typ]MaterialVariable[/typ][mat]Tungsten[/mat][prp]Resistivity[/prp][tbl]Resistivity[qual]Definition%:%:%$%$Behavior%:%:Isotropic[/qual][/tbl][var]Temperature[/var]::9a306bac-48d6-40bf-8b59-7c8b24fdbb06$$[typ]Material[/typ][mat]Castor Oil[/mat]::2de3632e-4c41-45fc-89a1-02ac84ace20d$$[typ]MaterialProperty[/typ][mat]Castor Oil[/mat][prp]Density[/prp]::dd3a2186-3794-41ca-ae3b-8b4e1c70ffb6$$[typ]MaterialPropertyData[/typ][mat]Castor Oil[/mat][prp]Density[/prp][tbl]Density[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl]::6af019fd-c579-4730-89f7-ae6b141c62f4$$[typ]MaterialVariable[/typ][mat]Castor Oil[/mat][prp]Density[/prp][tbl]Density[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Density[/var]::41aaa589-4a28-413b-9196-4b1b9ecf4042$$[typ]MaterialVariable[/typ][mat]Castor Oil[/mat][prp]Density[/prp][tbl]Density[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Interpolation Options[qual]AlgorithmType%:%:Linear Multivariate%:%:Linear Multivariate%,%,Nearest Neighbor%,%,Radial Basis%$%$Normalized%:%:True%:%:False%,%,True%$%$Cached%:%:True%:%:False%,%,True[/qual][/var]::5ff03964-04d0-4992-b32f-662f2d5a06fd$$[typ]MaterialProperty[/typ][mat]Castor Oil[/mat][prp]Viscosity[/prp]::73738d9e-5aa1-4ebc-ac34-300a9b5078b2$$[typ]MaterialPropertyData[/typ][mat]Castor Oil[/mat][prp]Viscosity[/prp][tbl]Viscosity[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl]::84ec715b-a965-4dd7-bddf-25056257a8ab$$[typ]MaterialVariable[/typ][mat]Castor Oil[/mat][prp]Viscosity[/prp][tbl]Viscosity[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Viscosity[/var]::7df2cd2b-b8db-40a2-a190-d727d1e07150$$[typ]MaterialProperty[/typ][mat]Castor Oil[/mat][prp]Speed of Sound[/prp]::4bc03d95-77a3-42b6-be2e-6c4e6aaac91e$$[typ]MaterialPropertyData[/typ][mat]Castor Oil[/mat][prp]Speed of Sound[/prp][tbl]Speed of Sound[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl]::937aad26-31f6-4252-a761-6084308ffb39$$[typ]MaterialVariable[/typ][mat]Castor Oil[/mat][prp]Speed of Sound[/prp][tbl]Speed of Sound[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Speed of Sound[/var]::7a010558-c5ed-4fc2-aab4-2c9d46e512b3$$[typ]MaterialVariable[/typ][mat]Castor Oil[/mat][prp]Speed of Sound[/prp][tbl]Speed of Sound[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Temperature[qual]Field Variable%:%:Temperature%$%$Field Units%:%:C%$%$Default Data%:%:22%$%$Lower Limit%:%:Program Controlled%$%$Upper Limit%:%:Program Controlled[/qual][/var]::f4e2bb6d-e236-40d1-9b7e-6c6865f5918a$$[typ]MaterialProperty[/typ][mat]Castor Oil[/mat][prp]Material Unique Id[/prp]::0d97e17b-11bd-41e8-96f1-bf682586fae6$$[typ]MaterialPropertyData[/typ][mat]Castor Oil[/mat][prp]Material Unique Id[/prp][tbl]Material Unique Id[qual]Definition%:%:%$%$Behavior%:%:%$%$guid%:%:f83c60cf-347f-43e3-b0a8-aa040127236b%$%$Display%:%:False[/qual][/tbl]::4d159472-90cd-4120-8489-d1ef89ef03e9$$[typ]MaterialProperty[/typ][mat]Castor Oil[/mat][prp]Appearance[/prp]::3de9fe65-7480-453b-addd-11c8ec4add96$$[typ]MaterialPropertyData[/typ][mat]Castor Oil[/mat][prp]Appearance[/prp][tbl]Color[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl]::65f3ed56-9cb6-411c-bc5e-afa89072a4cc$$[typ]MaterialVariable[/typ][mat]Castor Oil[/mat][prp]Appearance[/prp][tbl]Color[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Red[/var]::27232519-2fa0-428b-8bd1-285775025db7$$[typ]MaterialVariable[/typ][mat]Castor Oil[/mat][prp]Appearance[/prp][tbl]Color[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Green[/var]::0e17f321-7b43-4e01-89ab-53e62d51985f$$[typ]MaterialVariable[/typ][mat]Castor Oil[/mat][prp]Appearance[/prp][tbl]Color[qual]Definition%:%:%$%$Behavior%:%:[/qual][/tbl][var]Blue[/var]::fb05f93a-b30f-4cbc-a83c-3c68fe1e1137$$</AdaptedEntityMap>
       <ModelContainerDependencyList valType="String">{"Ansys.Simulation.Core.Addin:SimulationModel":[Model 4]}</ModelContainerDependencyList>
@@ -519,15 +523,15 @@
       <container-type valType="String">Ansys.DesignModeler.Core.Addin:Geometry</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">90358</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 90781, "Input": 90356, "Output": 90356}</last-modified-by-usage>
+      <last-updated valType="Int64">94858</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 94857, "Input": 94856, "Output": 94856}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <unique-system-dir valType="String">SYS-10</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Geometry 4/Geometry:GeometryDataObject" Version="1.0">
         <class-type valType="String">Geometry</class-type>
         <object-name valType="String">GeometryDataObject</object-name>
-        <member-data valType="String">{"DisplayText": "GeometryDataObject", "_geometryFileRelativePath": r"dp0\SYS-10\DM\SYS-10.scdoc", "_geometryTeamcenterConnection": None, "_geometryPlugInName": "", "GeomFileReference": $$0db03b12-f087-4687-b1c0-838e8e25d079, "GeomRepositoryFileReference": None, "GeometryImportSolidBodies": True, "GeometryImportSurfaceBodies": True, "GeometryImportLineBodies": True, "GeometryImportParameters": "CADImportParameterType_Independent", "GeometryImportParametersFilter": "", "GeometryImportCadAttributes": True, "GeometryImportCadAttributesFilter": "", "GeometryImportNamedSelections": True, "GeometryImportNamedSelectionsFilter": "", "GeometryImportMaterialProperties": True, "GeometryImportAnalysisType": "AnalysisType_3D", "GeometryImportCadAssociativity": True, "GeometryImportCoordinateSystems": True, "GeometryImportCoordinateSystemsFilter": "", "GeometryImportWorkPoints": True, "GeometryImportSavePartFile": False, "GeometryImportImportUsingInstances": True, "GeometryImportSmartUpdate": True, "GeometryImportComparePartsOnUpdate": "ComparePartsMethod_None", "GeometryImportComparePartsTolerance": "ComparePartsTolerance_Tight", "GeometryImportProcessEnclosures": True, "GeometryImportDecomposeDisjointFaces": True, "GeometryImportMixedResolutionOption": "MixedImport_None", "GeometryImportWeightclass": "ImportWeightclass_Heavyweight", "GeometryImportFlattenAssembly": True, "GeometryImportCleanGeometryOnImport": False, "GeometryImportStitchSurfacesOnImport": "StitchPreference_None", "GeometryImportStitchTolerance": 1E-07, "GeometryImportSpaceClaimExplodeUnsharedComponents": True, "Guid": "8139bb14-a1ac-4e49-b2a5-c8dde9ca39ee", "ObjectState": 0, "UpstreamConnections": {}, "ImportedFeatures": {}, "IsSpaceClaimGeometry": True, "_isModelerModeEnabled": False, "AreParametersOutOfDate": False, "RegisteredExternalFilesInfo": {"$$0db03b12-f087-4687-b1c0-838e8e25d079": {"FilePathInDM": r"C:\Users\Akash Levy\Documents\NEM-Relay-CAD\relay_files\dp0\SYS-10\DM\SYS-10.scdoc", "FilePathAfterRepair": r"C:\Users\Akash Levy\Documents\NEM-Relay-CAD\relay_files\dp0\SYS-10\DM\SYS-10.scdoc", "IsFileRepaired": False, "CadSourceType": "SpaceClaim"}}, "AreParametersMigratedFromLegacyDatabaseImport": False}</member-data>
+        <member-data valType="String">{"DisplayText": "GeometryDataObject", "_geometryFileRelativePath": r"C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay.scdoc", "_geometryTeamcenterConnection": None, "_geometryPlugInName": "SpaceClaim[9432]", "GeomFileReference": $$7858537a-a60c-406c-ac46-a50332cd16cf, "GeomRepositoryFileReference": None, "GeometryImportSolidBodies": True, "GeometryImportSurfaceBodies": True, "GeometryImportLineBodies": False, "GeometryImportParameters": "CADImportParameterType_Independent", "GeometryImportParametersFilter": "ANS;DS", "GeometryImportCadAttributes": False, "GeometryImportCadAttributesFilter": "SDFEA;DDM", "GeometryImportNamedSelections": False, "GeometryImportNamedSelectionsFilter": "NS", "GeometryImportMaterialProperties": False, "GeometryImportAnalysisType": "AnalysisType_3D", "GeometryImportCadAssociativity": True, "GeometryImportCoordinateSystems": False, "GeometryImportCoordinateSystemsFilter": "", "GeometryImportWorkPoints": False, "GeometryImportSavePartFile": False, "GeometryImportImportUsingInstances": True, "GeometryImportSmartUpdate": True, "GeometryImportComparePartsOnUpdate": "ComparePartsMethod_None", "GeometryImportComparePartsTolerance": "ComparePartsTolerance_Tight", "GeometryImportProcessEnclosures": True, "GeometryImportDecomposeDisjointFaces": True, "GeometryImportMixedResolutionOption": "MixedImport_None", "GeometryImportWeightclass": "ImportWeightclass_Heavyweight", "GeometryImportFlattenAssembly": True, "GeometryImportCleanGeometryOnImport": False, "GeometryImportStitchSurfacesOnImport": "StitchPreference_None", "GeometryImportStitchTolerance": 1E-07, "GeometryImportSpaceClaimExplodeUnsharedComponents": True, "Guid": "8139bb14-a1ac-4e49-b2a5-c8dde9ca39ee", "ObjectState": 0, "UpstreamConnections": {}, "ImportedFeatures": {}, "IsSpaceClaimGeometry": True, "_isModelerModeEnabled": False, "AreParametersOutOfDate": False, "RegisteredExternalFilesInfo": {"$$7858537a-a60c-406c-ac46-a50332cd16cf": {"FilePathInDM": r"C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay.scdoc", "FilePathAfterRepair": r"C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay.scdoc", "IsFileRepaired": False, "CadSourceType": "SpaceClaim"}}, "AreParametersMigratedFromLegacyDatabaseImport": False}</member-data>
         <properties-setByUserFlag-data valType="String">["ObjectState"]</properties-setByUserFlag-data>
       </Object>
       <Object Name="/Geometry 4/SimulationGeneratedMesh:MeshFileObject" Version="1.0">
@@ -538,7 +542,7 @@
       <Object Name="/Geometry 4/TransferData:Geometry" Version="1.0">
         <class-type valType="String">TransferData</class-type>
         <object-name valType="String">Geometry</object-name>
-        <member-data valType="String">{"DisplayText": "Geometry", "ConnectionKeys": ["9541a0d3-11f9-4a67-9cd5-d4acaa79c176"], "Data": $$29c0ab64-8bab-4037-8758-06227491da84}</member-data>
+        <member-data valType="String">{"DisplayText": "Geometry", "ConnectionKeys": ["9541a0d3-11f9-4a67-9cd5-d4acaa79c176", "9acb0261-150b-473d-9339-61c5795bf95e"], "Data": $$29c0ab64-8bab-4037-8758-06227491da84}</member-data>
       </Object>
       <Object Name="/Geometry 4/SpaceClaimCallBackData:SCDataObject" Version="1.0">
         <class-type valType="String">SpaceClaimCallBackData</class-type>
@@ -580,21 +584,66 @@
         <object-name valType="String">SCDataObject 7</object-name>
         <member-data valType="String">{"DisplayText": "SCDataObject", "Guid": "8139bb14-a1ac-4e49-b2a5-c8dde9ca39ee"}</member-data>
       </Object>
+      <Object Name="/Geometry 4/SpaceClaimCallBackData:SCDataObject 8" Version="1.0">
+        <class-type valType="String">SpaceClaimCallBackData</class-type>
+        <object-name valType="String">SCDataObject 8</object-name>
+        <member-data valType="String">{"DisplayText": "SCDataObject", "Guid": "8139bb14-a1ac-4e49-b2a5-c8dde9ca39ee"}</member-data>
+      </Object>
+      <Object Name="/Geometry 4/SpaceClaimCallBackData:SCDataObject 9" Version="1.0">
+        <class-type valType="String">SpaceClaimCallBackData</class-type>
+        <object-name valType="String">SCDataObject 9</object-name>
+        <member-data valType="String">{"DisplayText": "SCDataObject", "Guid": "8139bb14-a1ac-4e49-b2a5-c8dde9ca39ee"}</member-data>
+      </Object>
+      <Object Name="/Geometry 4/SpaceClaimCallBackData:SCDataObject 10" Version="1.0">
+        <class-type valType="String">SpaceClaimCallBackData</class-type>
+        <object-name valType="String">SCDataObject 10</object-name>
+        <member-data valType="String">{"DisplayText": "SCDataObject", "Guid": "8139bb14-a1ac-4e49-b2a5-c8dde9ca39ee"}</member-data>
+      </Object>
+      <Object Name="/Geometry 4/SpaceClaimCallBackData:SCDataObject 11" Version="1.0">
+        <class-type valType="String">SpaceClaimCallBackData</class-type>
+        <object-name valType="String">SCDataObject 11</object-name>
+        <member-data valType="String">{"DisplayText": "SCDataObject", "Guid": "8139bb14-a1ac-4e49-b2a5-c8dde9ca39ee"}</member-data>
+      </Object>
+      <Object Name="/Geometry 4/SpaceClaimCallBackData:SCDataObject 12" Version="1.0">
+        <class-type valType="String">SpaceClaimCallBackData</class-type>
+        <object-name valType="String">SCDataObject 12</object-name>
+        <member-data valType="String">{"DisplayText": "SCDataObject", "Guid": "8139bb14-a1ac-4e49-b2a5-c8dde9ca39ee"}</member-data>
+      </Object>
+      <Object Name="/Geometry 4/SpaceClaimCallBackData:SCDataObject 13" Version="1.0">
+        <class-type valType="String">SpaceClaimCallBackData</class-type>
+        <object-name valType="String">SCDataObject 13</object-name>
+        <member-data valType="String">{"DisplayText": "SCDataObject", "Guid": "8139bb14-a1ac-4e49-b2a5-c8dde9ca39ee"}</member-data>
+      </Object>
+      <Object Name="/Geometry 4/SpaceClaimCallBackData:SCDataObject 14" Version="1.0">
+        <class-type valType="String">SpaceClaimCallBackData</class-type>
+        <object-name valType="String">SCDataObject 14</object-name>
+        <member-data valType="String">{"DisplayText": "SCDataObject", "Guid": "8139bb14-a1ac-4e49-b2a5-c8dde9ca39ee"}</member-data>
+      </Object>
+      <Object Name="/Geometry 4/SpaceClaimCallBackData:SCDataObject 15" Version="1.0">
+        <class-type valType="String">SpaceClaimCallBackData</class-type>
+        <object-name valType="String">SCDataObject 15</object-name>
+        <member-data valType="String">{"DisplayText": "SCDataObject", "Guid": "8139bb14-a1ac-4e49-b2a5-c8dde9ca39ee"}</member-data>
+      </Object>
+      <Object Name="/Geometry 4/SpaceClaimCallBackData:SCDataObject 16" Version="1.0">
+        <class-type valType="String">SpaceClaimCallBackData</class-type>
+        <object-name valType="String">SCDataObject 16</object-name>
+        <member-data valType="String">{"DisplayText": "SCDataObject", "Guid": "8139bb14-a1ac-4e49-b2a5-c8dde9ca39ee"}</member-data>
+      </Object>
     </Container>
     <Container Name="Model 4" Version="1.0">
       <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationModel</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">90393</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 90470, "Input": 90392, "Output": 90392}</last-modified-by-usage>
+      <last-updated valType="Int64">94894</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 95375, "Input": 94893, "Output": 94893}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 89017, "Setup 4": 89016, "Engineering Data 4": 88975, "Geometry 4": 90358, "Model 4": 88991, "Results 4": 89839, "Setup": 89419, "Solution": 89455, "Results": 89456, "Setup 1": 89830, "Solution 1": 89831, "Results 1": 89834, "Setup 2": 90320, "Solution 2": 90321, "Results 2": 90322, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "SpaceClaimSessionContainer": 0}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 92746, "Setup 4": 92745, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 92723, "Results 4": 92747, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 94707, "Solution 2": 94762, "Results 2": 94432, "Mesh": 93628, "Setup 3": 94643, "Solution 3": 0, "Setup 5": 94719, "Solution 5": 94398, "Results 3": 94430, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-10</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Model 4/SimulationConnection:SimulationConnection" Version="1.0">
         <class-type valType="String">SimulationConnection</class-type>
         <object-name valType="String">SimulationConnection</object-name>
-        <member-data valType="String">{"DisplayText": "SimulationConnection", "Caption": "SimulationConnection", "EventIdToDataReferenceMap": {}, "DSIdToDataReferenceMap": {"13": {"CellModel": $$2b7fb108-a237-45be-a3dd-d26a5f93a341}, "12": {"CellModel": $$2b7fb108-a237-45be-a3dd-d26a5f93a341}, "14": {"CellModel": $$2b7fb108-a237-45be-a3dd-d26a5f93a341}, "112": {"CellSetup": $$8f924644-41c4-4cf4-8dcb-c57e7df61cdf}, "113": {"CellSolution": $$bc38844b-f5a3-424d-9c13-1663f129a1ce, "CellResults": $$8921c255-6152-4db9-b0c8-3d1383ec8f8f}, "125": {"CellSetup": $$b36db146-eed8-4be6-a210-f886e0265ab0}, "126": {"CellSolution": $$493339a2-2037-4ffd-b721-6582a210b368, "CellResults": $$15f3384f-2637-45e0-9ce6-43cbe5c59aa2}, "130": {"CellSetup": $$02cf3476-ee2a-4a23-95e7-7ca907e11200}, "131": {"CellSolution": $$f9eea8c4-326d-4299-80d6-6f6359563e01, "CellResults": $$ba8a43d7-366e-4047-9294-25c3c7c87634}, "134": {"CellSetup": $$95d12056-9e55-4e17-b015-ad1c51fd408c}, "135": {"CellSolution": $$d7b72032-ab1f-4baf-a92d-5abdcbfd5239, "CellResults": $$e1000af3-11d3-44c2-af16-a3d8a7f85721}}, "Attributes": {}}</member-data>
+        <member-data valType="String">{"DisplayText": "SimulationConnection", "Caption": "SimulationConnection", "EventIdToDataReferenceMap": {"411": None, "497": None}, "DSIdToDataReferenceMap": {"13": {"CellModel": $$2b7fb108-a237-45be-a3dd-d26a5f93a341}, "12": {"CellModel": $$2b7fb108-a237-45be-a3dd-d26a5f93a341}, "14": {"CellModel": $$2b7fb108-a237-45be-a3dd-d26a5f93a341}, "112": {"CellSetup": $$8f924644-41c4-4cf4-8dcb-c57e7df61cdf}, "113": {"CellSolution": $$bc38844b-f5a3-424d-9c13-1663f129a1ce, "CellResults": $$8921c255-6152-4db9-b0c8-3d1383ec8f8f}, "125": {"CellSetup": $$b36db146-eed8-4be6-a210-f886e0265ab0}, "126": {"CellSolution": $$493339a2-2037-4ffd-b721-6582a210b368, "CellResults": $$15f3384f-2637-45e0-9ce6-43cbe5c59aa2}, "130": {"CellSetup": $$02cf3476-ee2a-4a23-95e7-7ca907e11200}, "131": {"CellSolution": $$f9eea8c4-326d-4299-80d6-6f6359563e01, "CellResults": $$ba8a43d7-366e-4047-9294-25c3c7c87634}, "134": {"CellSetup": $$95d12056-9e55-4e17-b015-ad1c51fd408c}, "135": {"CellSolution": $$d7b72032-ab1f-4baf-a92d-5abdcbfd5239, "CellResults": $$e1000af3-11d3-44c2-af16-a3d8a7f85721}}, "Attributes": {}}</member-data>
       </Object>
       <Object Name="/Model 4/MechanicalSystemType:SystemClass for Any|Mechanical|Any" Version="1.0">
         <class-type valType="String">MechanicalSystemType</class-type>
@@ -687,10 +736,10 @@
       <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationResults</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">90776</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 90774, "Input": 90774, "Output": 90774}</last-modified-by-usage>
+      <last-updated valType="Int64">94935</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 94932, "Input": 94932, "Output": 94932}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 90412, "Setup 4": 90411, "Engineering Data 4": 88975, "Geometry 4": 90358, "Model 4": 90393, "Results 4": 90467, "Setup": 90460, "Solution": 90461, "Results": 90462, "Setup 1": 89830, "Solution 1": 89831, "Results 1": 89834, "Setup 2": 90561, "Solution 2": 90562, "Results 2": 90736, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "SpaceClaimSessionContainer": 0}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 94934, "Setup 4": 94933, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 94918, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 94707, "Solution 2": 94762, "Results 2": 94432, "Mesh": 93628, "Setup 3": 94643, "Solution 3": 0, "Setup 5": 94719, "Solution 5": 94398, "Results 3": 94430, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-11</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Results 4/MechanicalSystemType:SystemClass for Structural|Static|ANSYS" Version="1.0">
@@ -759,10 +808,10 @@
       <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationSetup</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">90460</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 90451, "Input": 90451, "Output": 90451}</last-modified-by-usage>
+      <last-updated valType="Int64">92760</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 94872, "Input": 92751, "Output": 94873}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 90412, "Setup 4": 90411, "Engineering Data 4": 88975, "Geometry 4": 90358, "Model 4": 90393, "Results 4": 90413, "Setup": 90426, "Solution": 90427, "Results": 90428, "Setup 1": 89830, "Solution 1": 89831, "Results 1": 89834, "Setup 2": 90320, "Solution 2": 90321, "Results 2": 90322, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "SpaceClaimSessionContainer": 0}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 92746, "Setup 4": 92745, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 92747, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 94707, "Solution 2": 94762, "Results 2": 94432, "Mesh": 93628, "Setup 3": 94643, "Solution 3": 0, "Setup 5": 94719, "Solution 5": 94398, "Results 3": 94430, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-12</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Setup/MechanicalSystemType:SystemClass for Structural|Modal|ANSYS" Version="1.0">
@@ -818,10 +867,10 @@
       <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationSolution</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">90461</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 90452, "Input": 90452, "Output": 90452}</last-modified-by-usage>
+      <last-updated valType="Int64">92761</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 94889, "Input": 94889, "Output": 94889}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 90412, "Setup 4": 90411, "Engineering Data 4": 88975, "Geometry 4": 90358, "Model 4": 90393, "Results 4": 90413, "Setup": 90460, "Solution": 90427, "Results": 90428, "Setup 1": 89830, "Solution 1": 89831, "Results 1": 89834, "Setup 2": 90320, "Solution 2": 90321, "Results 2": 90322, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "SpaceClaimSessionContainer": 0}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 92746, "Setup 4": 92745, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 92723, "Results 4": 92747, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 94707, "Solution 2": 94762, "Results 2": 94432, "Mesh": 93628, "Setup 3": 94643, "Solution 3": 0, "Setup 5": 94719, "Solution 5": 94398, "Results 3": 94430, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-12</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Solution/MechanicalSystemType:SystemClass for Structural|Modal|ANSYS" Version="1.0">
@@ -887,10 +936,10 @@
       <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationResults</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">90462</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 90459, "Input": 90459, "Output": 90459}</last-modified-by-usage>
+      <last-updated valType="Int64">92762</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 92759, "Input": 92759, "Output": 94875}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 90412, "Setup 4": 90411, "Engineering Data 4": 88975, "Geometry 4": 90358, "Model 4": 90393, "Results 4": 90413, "Setup": 90460, "Solution": 90461, "Results": 90428, "Setup 1": 89830, "Solution 1": 89831, "Results 1": 89834, "Setup 2": 90320, "Solution 2": 90321, "Results 2": 90322, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "SpaceClaimSessionContainer": 0}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 92746, "Setup 4": 92745, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 92723, "Results 4": 92747, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 94707, "Solution 2": 94762, "Results 2": 94432, "Mesh": 93628, "Setup 3": 94643, "Solution 3": 0, "Setup 5": 94719, "Solution 5": 94398, "Results 3": 94430, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-12</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Results/MechanicalSystemType:SystemClass for Structural|Modal|ANSYS" Version="1.0">
@@ -959,10 +1008,10 @@
       <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationSetup</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">89830</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 90481, "Input": 90481, "Output": 90481}</last-modified-by-usage>
+      <last-updated valType="Int64">93848</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 94903, "Input": 94903, "Output": 94903}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 90412, "Setup 4": 90411, "Engineering Data 4": 88975, "Geometry 4": 90358, "Model 4": 90393, "Results 4": 90467, "Setup": 90460, "Solution": 90461, "Results": 90462, "Setup 1": 89830, "Solution 1": 89831, "Results 1": 89834, "Setup 2": 90320, "Solution 2": 90321, "Results 2": 90322, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "SpaceClaimSessionContainer": 0}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 92746, "Setup 4": 92745, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 92747, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 94707, "Solution 2": 94762, "Results 2": 94432, "Mesh": 93628, "Setup 3": 94643, "Solution 3": 0, "Setup 5": 94719, "Solution 5": 94398, "Results 3": 94430, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-13</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Setup 1/MechanicalSystemType:SystemClass for Structural|Static|ANSYS" Version="1.0">
@@ -983,7 +1032,7 @@
       <Object Name="/Setup 1/SystemCouplingSetupData:Setup Coupling Data" Version="1.0">
         <class-type valType="String">SystemCouplingSetupData</class-type>
         <object-name valType="String">Setup Coupling Data</object-name>
-        <member-data valType="String">{"DisplayText": "Setup Coupling Data", "DataConnections": [], "TransferDataObject": None}</member-data>
+        <member-data valType="String">{"DisplayText": "Setup Coupling Data", "DataConnections": [], "TransferDataObject": $$b0d25be6-db15-4e45-85c2-57a23f24c20e}</member-data>
       </Object>
       <Object Name="/Setup 1/DesignAssessmentSetupSettingsType:DesignAssessmentSetupSettingsType" Version="1.0">
         <class-type valType="String">DesignAssessmentSetupSettingsType</class-type>
@@ -1013,15 +1062,50 @@
           <value-keys valType="String">{"EnvironmentState": System.Int32, "AttentionRequired": System.Boolean, "ParameterValueModified": System.Boolean, "FutureIntent": System.Boolean, "IsUsingDP0BasedWorkingDirectory": System.Boolean, "MechanicalBusyPendingChange": System.Boolean, "ModelContainerInputParameterValueWhichReallyAffectsTheSetupContainerHasBeenModified": System.Boolean, "ExternalLoadsCount": System.Int32, "DesignAssessmentFileRef": System.String}</value-keys>
         </custom-data>
       </Object>
+      <Object Name="/Setup 1/SystemCouplingVariable:FORC" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">FORC</object-name>
+        <member-data valType="String">{"DisplayText": "Force", "InternalName": "FORC", "PhysicalType": "Force", "DataType": "VectorXYZ", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 1/SystemCouplingVariable:INCD" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">INCD</object-name>
+        <member-data valType="String">{"DisplayText": "Incremental Displacement", "InternalName": "INCD", "PhysicalType": "Length", "DataType": "VectorXYZ", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 1/SystemCouplingVariable:TEMP" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TEMP</object-name>
+        <member-data valType="String">{"DisplayText": "Temperature", "InternalName": "TEMP", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 1/SystemCouplingVariable:HFLW" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HFLW</object-name>
+        <member-data valType="String">{"DisplayText": "Heat Flow", "InternalName": "HFLW", "PhysicalType": "Heat Rate", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 1/SystemCouplingVariable:HCOEF" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HCOEF</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Coefficient", "InternalName": "HCOEF", "PhysicalType": "Heat Transfer Coefficient", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 1/SystemCouplingVariable:TBULK" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TBULK</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Reference Temperature", "InternalName": "TBULK", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 1/SystemCouplingSteadyCoSimulationParticipant:Solution 1" Version="1.0">
+        <class-type valType="String">SystemCouplingSteadyCoSimulationParticipant</class-type>
+        <object-name valType="String">Solution 1</object-name>
+        <member-data valType="String">{"DisplayText": "EM Static", "InternalName": "Solution 1", "UnitSystem": "MKS_STANDARD", "BaseUnits": {"Length": "m", "Mass": "kg", "Angle": "radian", "SolidAngle": "sr", "Temperature": "C", "ChemicalAmount": "mol", "Time": "s", "Current": "A", "Luminance": "cd"}, "Times": None, "Steps": None, "RegionReferences": [], "VariableReferences": [$$536176b9-01dd-43fe-8e97-75b3648869bd, $$ebc1950d-6fc2-410d-a825-0756b524bd5b], "SupportsRestarts": True, "SolverName": "MAPDL", "CouplingIterationsSupported": True}</member-data>
+      </Object>
     </Container>
     <Container Name="Solution 1" Version="1.0">
       <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationSolution</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">89831</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 90779, "Input": 90779, "Output": 90779}</last-modified-by-usage>
+      <last-updated valType="Int64">91195</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 94904, "Input": 94904, "Output": 94904}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 90412, "Setup 4": 90411, "Engineering Data 4": 88975, "Geometry 4": 90358, "Model 4": 90393, "Results 4": 90776, "Setup": 90460, "Solution": 90461, "Results": 90462, "Setup 1": 89830, "Solution 1": 89831, "Results 1": 89834, "Setup 2": 90561, "Solution 2": 90562, "Results 2": 90736, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "SpaceClaimSessionContainer": 0}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 92746, "Setup 4": 92745, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 92747, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 94707, "Solution 2": 94762, "Results 2": 94432, "Mesh": 93628, "Setup 3": 94643, "Solution 3": 0, "Setup 5": 94719, "Solution 5": 94398, "Results 3": 94430, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-13</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Solution 1/MechanicalSystemType:SystemClass for Structural|Static|ANSYS" Version="1.0">
@@ -1087,10 +1171,10 @@
       <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationResults</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">89834</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 90771, "Input": 90771, "Output": 90771}</last-modified-by-usage>
+      <last-updated valType="Int64">91196</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 91193, "Input": 91193, "Output": 94878}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 90412, "Setup 4": 90411, "Engineering Data 4": 88975, "Geometry 4": 90358, "Model 4": 90393, "Results 4": 90467, "Setup": 90460, "Solution": 90461, "Results": 90462, "Setup 1": 89830, "Solution 1": 89831, "Results 1": 89834, "Setup 2": 90561, "Solution 2": 90562, "Results 2": 90736, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "SpaceClaimSessionContainer": 0}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 92746, "Setup 4": 92745, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 92723, "Results 4": 92747, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 94707, "Solution 2": 94762, "Results 2": 94432, "Mesh": 93628, "Setup 3": 94643, "Solution 3": 0, "Setup 5": 94719, "Solution 5": 94398, "Results 3": 94430, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-13</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Results 1/MechanicalSystemType:SystemClass for Structural|Static|ANSYS" Version="1.0">
@@ -1159,10 +1243,10 @@
       <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationSetup</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">90561</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 90554, "Input": 90554, "Output": 90554}</last-modified-by-usage>
+      <last-updated valType="Int64">95350</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 95349, "Input": 95348, "Output": 95325}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 90412, "Setup 4": 90411, "Engineering Data 4": 88975, "Geometry 4": 90358, "Model 4": 90393, "Results 4": 90467, "Setup": 90460, "Solution": 90461, "Results": 90462, "Setup 1": 89830, "Solution 1": 89831, "Results 1": 89834, "Setup 2": 90320, "Solution 2": 90321, "Results 2": 90322, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "SpaceClaimSessionContainer": 0}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 94934, "Setup 4": 94933, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 94935, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 95200, "Solution 2": 0, "Results 2": 94432, "Mesh": 94986, "Setup 3": 95040, "Solution 3": 95289, "Setup 5": 95330, "Solution 5": 94398, "Results 3": 95173, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-14</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Setup 2/MechanicalSystemType:SystemClass for Structural|Transient|ANSYS" Version="1.0">
@@ -1183,7 +1267,7 @@
       <Object Name="/Setup 2/SystemCouplingSetupData:Setup Coupling Data" Version="1.0">
         <class-type valType="String">SystemCouplingSetupData</class-type>
         <object-name valType="String">Setup Coupling Data</object-name>
-        <member-data valType="String">{"DisplayText": "Setup Coupling Data", "DataConnections": [], "TransferDataObject": None}</member-data>
+        <member-data valType="String">{"DisplayText": "Setup Coupling Data", "DataConnections": ["a66192d7-4593-43a9-bb94-31cea2b0ce89"], "TransferDataObject": $$61ab0a4b-85a5-43cb-b1bc-2b56b7dd5cfc}</member-data>
       </Object>
       <Object Name="/Setup 2/DesignAssessmentSetupSettingsType:DesignAssessmentSetupSettingsType" Version="1.0">
         <class-type valType="String">DesignAssessmentSetupSettingsType</class-type>
@@ -1213,15 +1297,255 @@
           <value-keys valType="String">{"EnvironmentState": System.Int32, "AttentionRequired": System.Boolean, "ParameterValueModified": System.Boolean, "FutureIntent": System.Boolean, "IsUsingDP0BasedWorkingDirectory": System.Boolean, "MechanicalBusyPendingChange": System.Boolean, "ModelContainerInputParameterValueWhichReallyAffectsTheSetupContainerHasBeenModified": System.Boolean, "ExternalLoadsCount": System.Int32, "DesignAssessmentFileRef": System.String}</value-keys>
         </custom-data>
       </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:FORC" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">FORC</object-name>
+        <member-data valType="String">{"DisplayText": "Force", "InternalName": "FORC", "PhysicalType": "Force", "DataType": "VectorXYZ", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:INCD" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">INCD</object-name>
+        <member-data valType="String">{"DisplayText": "Incremental Displacement", "InternalName": "INCD", "PhysicalType": "Length", "DataType": "VectorXYZ", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TEMP" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TEMP</object-name>
+        <member-data valType="String">{"DisplayText": "Temperature", "InternalName": "TEMP", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HFLW" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HFLW</object-name>
+        <member-data valType="String">{"DisplayText": "Heat Flow", "InternalName": "HFLW", "PhysicalType": "Heat Rate", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HCOEF" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HCOEF</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Coefficient", "InternalName": "HCOEF", "PhysicalType": "Heat Transfer Coefficient", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TBULK" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TBULK</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Reference Temperature", "InternalName": "TBULK", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TEMP 1" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TEMP 1</object-name>
+        <member-data valType="String">{"DisplayText": "Temperature", "InternalName": "TEMP", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HFLW 1" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HFLW 1</object-name>
+        <member-data valType="String">{"DisplayText": "Heat Flow", "InternalName": "HFLW", "PhysicalType": "Heat Rate", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HCOEF 1" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HCOEF 1</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Coefficient", "InternalName": "HCOEF", "PhysicalType": "Heat Transfer Coefficient", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TBULK 1" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TBULK 1</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Reference Temperature", "InternalName": "TBULK", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TEMP 2" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TEMP 2</object-name>
+        <member-data valType="String">{"DisplayText": "Temperature", "InternalName": "TEMP", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HFLW 2" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HFLW 2</object-name>
+        <member-data valType="String">{"DisplayText": "Heat Flow", "InternalName": "HFLW", "PhysicalType": "Heat Rate", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HCOEF 2" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HCOEF 2</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Coefficient", "InternalName": "HCOEF", "PhysicalType": "Heat Transfer Coefficient", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TBULK 2" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TBULK 2</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Reference Temperature", "InternalName": "TBULK", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TEMP 3" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TEMP 3</object-name>
+        <member-data valType="String">{"DisplayText": "Temperature", "InternalName": "TEMP", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HFLW 3" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HFLW 3</object-name>
+        <member-data valType="String">{"DisplayText": "Heat Flow", "InternalName": "HFLW", "PhysicalType": "Heat Rate", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HCOEF 3" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HCOEF 3</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Coefficient", "InternalName": "HCOEF", "PhysicalType": "Heat Transfer Coefficient", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TBULK 3" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TBULK 3</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Reference Temperature", "InternalName": "TBULK", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TEMP 4" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TEMP 4</object-name>
+        <member-data valType="String">{"DisplayText": "Temperature", "InternalName": "TEMP", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HFLW 4" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HFLW 4</object-name>
+        <member-data valType="String">{"DisplayText": "Heat Flow", "InternalName": "HFLW", "PhysicalType": "Heat Rate", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HCOEF 4" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HCOEF 4</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Coefficient", "InternalName": "HCOEF", "PhysicalType": "Heat Transfer Coefficient", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TBULK 4" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TBULK 4</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Reference Temperature", "InternalName": "TBULK", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TEMP 5" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TEMP 5</object-name>
+        <member-data valType="String">{"DisplayText": "Temperature", "InternalName": "TEMP", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HFLW 5" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HFLW 5</object-name>
+        <member-data valType="String">{"DisplayText": "Heat Flow", "InternalName": "HFLW", "PhysicalType": "Heat Rate", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HCOEF 5" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HCOEF 5</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Coefficient", "InternalName": "HCOEF", "PhysicalType": "Heat Transfer Coefficient", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TBULK 5" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TBULK 5</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Reference Temperature", "InternalName": "TBULK", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TEMP 6" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TEMP 6</object-name>
+        <member-data valType="String">{"DisplayText": "Temperature", "InternalName": "TEMP", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HFLW 6" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HFLW 6</object-name>
+        <member-data valType="String">{"DisplayText": "Heat Flow", "InternalName": "HFLW", "PhysicalType": "Heat Rate", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HCOEF 6" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HCOEF 6</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Coefficient", "InternalName": "HCOEF", "PhysicalType": "Heat Transfer Coefficient", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TBULK 6" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TBULK 6</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Reference Temperature", "InternalName": "TBULK", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TEMP 7" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TEMP 7</object-name>
+        <member-data valType="String">{"DisplayText": "Temperature", "InternalName": "TEMP", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HFLW 7" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HFLW 7</object-name>
+        <member-data valType="String">{"DisplayText": "Heat Flow", "InternalName": "HFLW", "PhysicalType": "Heat Rate", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HCOEF 7" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HCOEF 7</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Coefficient", "InternalName": "HCOEF", "PhysicalType": "Heat Transfer Coefficient", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TBULK 7" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TBULK 7</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Reference Temperature", "InternalName": "TBULK", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TEMP 8" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TEMP 8</object-name>
+        <member-data valType="String">{"DisplayText": "Temperature", "InternalName": "TEMP", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HFLW 8" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HFLW 8</object-name>
+        <member-data valType="String">{"DisplayText": "Heat Flow", "InternalName": "HFLW", "PhysicalType": "Heat Rate", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HCOEF 8" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HCOEF 8</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Coefficient", "InternalName": "HCOEF", "PhysicalType": "Heat Transfer Coefficient", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TBULK 8" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TBULK 8</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Reference Temperature", "InternalName": "TBULK", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TEMP 9" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TEMP 9</object-name>
+        <member-data valType="String">{"DisplayText": "Temperature", "InternalName": "TEMP", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HFLW 9" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HFLW 9</object-name>
+        <member-data valType="String">{"DisplayText": "Heat Flow", "InternalName": "HFLW", "PhysicalType": "Heat Rate", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HCOEF 9" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HCOEF 9</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Coefficient", "InternalName": "HCOEF", "PhysicalType": "Heat Transfer Coefficient", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TBULK 9" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TBULK 9</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Reference Temperature", "InternalName": "TBULK", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TEMP 10" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TEMP 10</object-name>
+        <member-data valType="String">{"DisplayText": "Temperature", "InternalName": "TEMP", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HFLW 10" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HFLW 10</object-name>
+        <member-data valType="String">{"DisplayText": "Heat Flow", "InternalName": "HFLW", "PhysicalType": "Heat Rate", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HCOEF 10" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HCOEF 10</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Coefficient", "InternalName": "HCOEF", "PhysicalType": "Heat Transfer Coefficient", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TBULK 10" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TBULK 10</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Reference Temperature", "InternalName": "TBULK", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingRegion:FSIN_1" Version="1.0">
+        <class-type valType="String">SystemCouplingRegion</class-type>
+        <object-name valType="String">FSIN_1</object-name>
+        <member-data valType="String">{"DisplayText": "Fluid Solid Interface", "InternalName": "FSIN_1", "Topology": "Surface", "OutputVariableNames": ["INCD"], "InputVariableNames": ["FORC"]}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingTransientCoSimulationParticipant:Solution 2" Version="1.0">
+        <class-type valType="String">SystemCouplingTransientCoSimulationParticipant</class-type>
+        <object-name valType="String">Solution 2</object-name>
+        <member-data valType="String">{"DisplayText": "EM Transient", "InternalName": "Solution 2", "UnitSystem": "MKS_STANDARD", "BaseUnits": {"Length": "m", "Mass": "kg", "Angle": "radian", "SolidAngle": "sr", "Temperature": "C", "ChemicalAmount": "mol", "Time": "s", "Current": "A", "Luminance": "cd"}, "Times": [5E-09], "Steps": None, "RegionReferences": [$$7b25210f-027b-486e-a284-81aa88bb4d97], "VariableReferences": [$$6cd5413c-9dcf-46ac-86b6-b293b8e99e22, $$f3a6f686-47c6-44bb-b8c2-2b066c3508cc], "SupportsRestarts": True, "SolverName": "MAPDL", "CouplingIterationsSupported": True}</member-data>
+      </Object>
     </Container>
     <Container Name="Solution 2" Version="1.0">
       <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationSolution</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">90562</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 90555, "Input": 90555, "Output": 90555}</last-modified-by-usage>
-      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 90412, "Setup 4": 90411, "Engineering Data 4": 88975, "Geometry 4": 90358, "Model 4": 90393, "Results 4": 90467, "Setup": 90460, "Solution": 90461, "Results": 90462, "Setup 1": 89830, "Solution 1": 89831, "Results 1": 89834, "Setup 2": 90561, "Solution 2": 90321, "Results 2": 90322, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "SpaceClaimSessionContainer": 0}</last-update-regen-times>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 95374, "Input": 95374, "Output": 95379}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{"SimulationSolution": 95247, "SimulationSolutionDataInternal": 95247}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 94934, "Setup 4": 94933, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 94935, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 95350, "Solution 2": 0, "Results 2": 94432, "Mesh": 94986, "Setup 3": 95040, "Solution 3": 95289, "Setup 5": 95362, "Solution 5": 94398, "Results 3": 95173, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-14</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Solution 2/MechanicalSystemType:SystemClass for Structural|Transient|ANSYS" Version="1.0">
@@ -1236,7 +1560,15 @@
         <member-data valType="String">{"DisplayText": "SolutionData for Structural|Transient|ANSYS", "TransferType": None}</member-data>
         <custom-data>
           <dictionary-keys valType="String">[transferDataMap]</dictionary-keys>
-          <transferDataMap />
+          <transferDataMap>
+            <dictionary-keys valType="String">[MechanicalSolution]</dictionary-keys>
+            <MechanicalSolution>
+              <Name valType="String">MechanicalSolution</Name>
+              <Guid0 valType="String">0c6b2d33-7935-452c-8b1d-85c11d5f2952</Guid0>
+              <UpToDate valType="String">False</UpToDate>
+              <value-keys valType="String">{"Name": System.String, "Guid0": System.String, "UpToDate": System.Boolean}</value-keys>
+            </MechanicalSolution>
+          </transferDataMap>
         </custom-data>
       </Object>
       <Object Name="/Solution 2/SimulationSolutionDataInternal:SolutionDataInternal for Structural|Transient|ANSYS" Version="1.0">
@@ -1287,10 +1619,10 @@
       <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationResults</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">90736</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 90729, "Input": 90729, "Output": 90729}</last-modified-by-usage>
+      <last-updated valType="Int64">94432</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 94068, "Input": 94068, "Output": 95383}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 90412, "Setup 4": 90411, "Engineering Data 4": 88975, "Geometry 4": 90358, "Model 4": 90393, "Results 4": 90467, "Setup": 90460, "Solution": 90461, "Results": 90462, "Setup 1": 89830, "Solution 1": 89831, "Results 1": 89834, "Setup 2": 90561, "Solution 2": 90562, "Results 2": 90651, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "SpaceClaimSessionContainer": 0}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 94934, "Setup 4": 94933, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 94935, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 95350, "Solution 2": 0, "Results 2": 94432, "Mesh": 94986, "Setup 3": 95040, "Solution 3": 95289, "Setup 5": 95362, "Solution 5": 94398, "Results 3": 95173, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-14</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Results 2/MechanicalSystemType:SystemClass for Structural|Transient|ANSYS" Version="1.0">
@@ -1353,6 +1685,513 @@
           <ParameterValueModified valType="String">False</ParameterValueModified>
           <value-keys valType="String">{"FindAnswersState": System.Int32, "AttentionRequired": System.Boolean, "ParameterValueModified": System.Boolean}</value-keys>
         </custom-data>
+      </Object>
+    </Container>
+    <Container Name="Mesh" Version="1.0">
+      <container-type valType="String">Ansys.Meshing.Core.Addin:SimulationModel</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">94986</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 94985, "Input": 94973, "Output": 94973}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 94934, "Setup 4": 94933, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 94935, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 94707, "Solution 2": 94762, "Results 2": 94432, "Mesh": 94957, "Setup 3": 94643, "Solution 3": 0, "Setup 5": 94719, "Solution 5": 94398, "Results 3": 94430, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">FFF-1</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Mesh/SimulationConnection:SimulationConnection" Version="1.0">
+        <class-type valType="String">SimulationConnection</class-type>
+        <object-name valType="String">SimulationConnection</object-name>
+        <member-data valType="String">{"DisplayText": "SimulationConnection", "_IsAssemblyMeshing": False, "_MeshingSolverSetting": 0, "Caption": "SimulationConnection", "EventIdToDataReferenceMap": {}, "DSIdToDataReferenceMap": {"11": {"CellModel": $$6e3bfa54-6e83-4b68-a4d6-063034250c5c}, "10": {"CellModel": $$6e3bfa54-6e83-4b68-a4d6-063034250c5c}, "12": {"CellModel": $$6e3bfa54-6e83-4b68-a4d6-063034250c5c}}, "Attributes": {}}</member-data>
+      </Object>
+      <Object Name="/Mesh/MechanicalSystemType:SystemType for Fluids|Any|FLUENT" Version="1.0">
+        <class-type valType="String">MechanicalSystemType</class-type>
+        <object-name valType="String">SystemType for Fluids|Any|FLUENT</object-name>
+        <member-data valType="String">{"DisplayText": None, "PhysicsType": "Fluids", "AnalysisType": "Any", "SolverType": "FLUENT", "PhysicsTypeDisplayString": "CFD", "AnalysisTypeDisplayString": "Any", "SolverTypeDisplayString": "FLUENT", "SystemTypeCombination": None, "DelimitedSystemTypeCominbation": None, "SetupEntityType": "SimulationSetup", "SolutionEntityType": "SimulationSolution", "ResultsEntityType": "SimulationResults", "SetupDataEntityType": "MechanicalSetup", "SolutionDataEntityType": "MechanicalSolution", "ResultsDataEntityType": "MechanicalResults", "Id": None, "SystemName": "FFF", "SystemID": "FFF-1", "ICEngineAutoSetup": False, "ICEngineMeshSettings": "Edit Mesh Settings", "ICEngineMeshPanelValues": None, "RefMeshSize": "0 [mm]"}</member-data>
+      </Object>
+      <Object Name="/Mesh/MeshingMesh:MeshingMeshDataObject" Version="1.0">
+        <class-type valType="String">MeshingMesh</class-type>
+        <object-name valType="String">MeshingMeshDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "MeshingMeshDataObject", "Caption": "Mesh", "MeshId": 12}</member-data>
+        <custom-data>
+          <AttentionRequired valType="String">False</AttentionRequired>
+          <ImportedMeshFileType valType="String">0</ImportedMeshFileType>
+          <value-keys valType="String">{"AttentionRequired": System.Boolean, "ImportedMeshFileType": System.Int32}</value-keys>
+          <dictionary-keys valType="String">[transferDataMap]</dictionary-keys>
+          <transferDataMap>
+            <dictionary-keys valType="String">[FluentMesh]</dictionary-keys>
+            <FluentMesh>
+              <Name valType="String">FluentMesh</Name>
+              <Guid0 valType="String">00bec6ab-c9f4-4dd6-8b49-fa141360325d</Guid0>
+              <Data valType="String">4ad1e90d-35fb-463e-8a38-dd14780225a4</Data>
+              <UpToDate valType="String">True</UpToDate>
+              <value-keys valType="String">{"Name": System.String, "Guid0": System.String, "Data": System.String, "UpToDate": System.Boolean}</value-keys>
+            </FluentMesh>
+          </transferDataMap>
+        </custom-data>
+      </Object>
+      <Object Name="/Mesh/MeshingGeneratedMeshOutputProvider:MeshingGeneratedMeshOutputProvider" Version="1.0">
+        <class-type valType="String">MeshingGeneratedMeshOutputProvider</class-type>
+        <object-name valType="String">MeshingGeneratedMeshOutputProvider</object-name>
+        <member-data valType="String">{"DisplayText": "MeshingGeneratedMeshOutputProvider", "DataConnections": [], "TransferDataObject": $$6941e1af-6ba9-474b-8174-957920fe4cb1, "VersionNumber": 1, "PMDBFile": None, "ACMOFile": None, "Mechdb": None, "UnitSystem": None}</member-data>
+      </Object>
+      <Object Name="/Mesh/GeneratedMeshOutputForAQWAModelProvider:GeneratedMeshOutputForAQWAModelProvider" Version="1.0">
+        <class-type valType="String">GeneratedMeshOutputForAQWAModelProvider</class-type>
+        <object-name valType="String">GeneratedMeshOutputForAQWAModelProvider</object-name>
+        <member-data valType="String">{"DisplayText": "GeneratedMeshOutputForAQWAModelProvider", "DataConnections": [], "TransferDataObject": $$b057c1ad-f568-40da-8da4-5d2d32be45b3, "PMDBFile": None, "ACMOFile": None, "Mechdb": None, "UnitSystem": None}</member-data>
+      </Object>
+      <Object Name="/Mesh/OutputsGeneratedManagerDataEntityType:OutputsGeneratedManagerObject" Version="1.0">
+        <class-type valType="String">OutputsGeneratedManagerDataEntityType</class-type>
+        <object-name valType="String">OutputsGeneratedManagerObject</object-name>
+        <member-data valType="String">{"DisplayText": "OutputsGeneratedManagerObject", "outputGeneratedTimes": {"FluentMesh": 94973}}</member-data>
+      </Object>
+      <Object Name="/Mesh/MeshProperties:MeshProperties" Version="1.0">
+        <class-type valType="String">MeshProperties</class-type>
+        <object-name valType="String">MeshProperties</object-name>
+        <member-data valType="String">{"DisplayText": "MeshProperties", "saveMeshFileInSeparateFile": False}</member-data>
+      </Object>
+      <Object Name="/Mesh/ContainerConnections:ModelContainerConnections" Version="1.0">
+        <class-type valType="String">ContainerConnections</class-type>
+        <object-name valType="String">ModelContainerConnections</object-name>
+        <member-data valType="String">{"DisplayText": "ModelContainerConnections", "Connections": {"Geometry 4": {"$$29c0ab64-8bab-4037-8758-06227491da84": {"Geometry": ["9acb0261-150b-473d-9339-61c5795bf95e"]}}}}</member-data>
+      </Object>
+      <Object Name="/Mesh/MechanicalModel:MechanicalModel" Version="1.0">
+        <class-type valType="String">MechanicalModel</class-type>
+        <object-name valType="String">MechanicalModel</object-name>
+        <member-data valType="String">{"DisplayText": "MechanicalModel", "Caption": "Model", "File": $$56711b9e-d0b4-4285-bdd4-4d674d79c53d, "MeshFile": None, "EdaFile": None, "ModelId": 10, "PrototypeId": 11, "ModelHash": "d70dc6be-cb05-4288-ad4b-d06d6bf32328", "GeometryHash": "d70dc6be-cb05-4288-ad4b-d06d6bf32328", "IsResetNotRequired": False}</member-data>
+        <custom-data>
+          <File valType="String">56711b9e-d0b4-4285-bdd4-4d674d79c53d</File>
+          <FilePath valType="String"></FilePath>
+          <AttentionRequired valType="String">False</AttentionRequired>
+          <ParameterValueModified valType="String">False</ParameterValueModified>
+          <IsModifiedDueToModelAssemblyPropertyChange valType="String">False</IsModifiedDueToModelAssemblyPropertyChange>
+          <AttachType valType="String">2</AttachType>
+          <value-keys valType="String">{"File": System.String, "FilePath": System.String, "AttentionRequired": System.Boolean, "ParameterValueModified": System.Boolean, "IsModifiedDueToModelAssemblyPropertyChange": System.Boolean, "AttachType": System.Int32}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Mesh/MechanicalMeshFile:FluentMesh" Version="1.0">
+        <class-type valType="String">MechanicalMeshFile</class-type>
+        <object-name valType="String">FluentMesh</object-name>
+        <member-data valType="String">{"DisplayText": "FluentMesh", "TransferFile": $$65a25f23-1e3b-48b6-880e-68ccd06a00f7}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Setup 3" Version="1.0">
+      <container-type valType="String">Ansys.Fluent.Addin:SetupContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">95040</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 95319, "Input": 95038, "Output": 95038}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 94934, "Setup 4": 94933, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 94935, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 94707, "Solution 2": 94762, "Results 2": 94432, "Mesh": 94986, "Setup 3": 94643, "Solution 3": 0, "Setup 5": 94719, "Solution 5": 94398, "Results 3": 94430, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">FFF-1</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Setup 3/SetupData:SetupData" Version="1.0">
+        <class-type valType="String">SetupData</class-type>
+        <object-name valType="String">SetupData</object-name>
+        <member-data valType="String">{"DisplayText": "SetupData", "UpdateNumber": -1, "UpstreamConnectionObjects": [{"UpstreamObjectReference": $$7c5b5474-fae3-4438-a7d0-d2929387ec98, "guid": "00bec6ab-c9f4-4dd6-8b49-fa141360325d", "ConnectionType": "FluentMesh", "FileReference": $$65a25f23-1e3b-48b6-880e-68ccd06a00f7, "InputEntities": {}}], "InputRefsToBeRemoved": [], "MeshReference": $$65a25f23-1e3b-48b6-880e-68ccd06a00f7, "UpstreamMeshReferences": [], "FileType": "Mesh", "_fluentSolution": $$5fdfa393-97b0-4b91-95a8-8cdfd2c475b5, "SetupInfo": {"MeshInfo": {"CellZoneCount": 1, "FaceZoneCount": 3, "NodeCount": 32742, "FaceCount": 343707, "CellCount": 166992, "PartitionCount": 1, "CellZones": [], "FaceZones": [], "DomainMinX": -6.0000002E-06, "DomainMinY": -6.0000002E-06, "DomainMinZ": -3.0000001E-07, "DomainMaxX": 6.0000002E-06, "DomainMaxY": 6.0000002E-06, "DomainMaxZ": 3.2E-06, "MaxCellSquish": 0, "MaxAspectRatio": 0, "GridValid": True, "Unsteady": True}, "ModelInfo": {"rp_seg_": True, "rp_acoustics_": False, "rp_atm_": False, "rp_axi_": False, "rp_des_": False, "rp_dpm_cache_": False, "rp_dpm_cache_serial_": False, "rp_unsteady_": True, "rp_amg_": False, "rf_energy_": False, "rp_hvac_": False, "rp_inviscid_": False, "rp_ke_": False, "rp_kklw_": False, "rp_kw_": True, "rp_lam_": False, "rp_les_": False, "rp_structure_": False, "rp_structure_linear_": False, "rp_structure_nonlinear_": False, "rp_lsf_": False, "rp_net_": False, "rp_react_": False, "rp_sa_": False, "rp_sas_": False, "rp_sge_": False, "rp_spe_": False, "rp_spe_part_": False, "rp_potential_": False, "rp_lithium_": False, "rp_electro_chem_": False, "rp_spe_site_": False, "rp_spe_surf_": False, "rp_trans_one_eqn_": False, "rp_trans_sst_": False, "rp_trb_scl_": True, "rp_turb_": True, "rp_absorbing_media_": False, "rp_visc_": True, "rp_v2f_": False, "sg_cylindrical_": False, "sg_disco_": False, "sg_montecarlo_": False, "sg_bee_gees_": False, "sg_crev_": False, "sg_dpm_": False, "sg_dqmom_iem_": False, "sg_dtrm_": False, "sg_dynmesh_": True, "sg_overset_": False, "sg_ecfm_": False, "sg_geqn_": False, "sg_hg_": False, "sg_inert_": False, "sg_ignite_": False, "sg_network_": False, "sg_node_udm_": False, "sg_noniterative_": False, "sg_nox_": False, "sg_melt_": False, "sg_micro_mix_": False, "sg_mphase_": False, "sg_p1_": False, "rp_sootspecies_": False, "sg_par_premix_": False, "sg_pb_": False, "sg_pdf_": False, "sg_pdf_transport_": False, "sg_premixed_": False, "sg_pull_": False, "sg_rosseland_": False, "sg_rsm_": False, "sg_s2s_": False, "sg_soot_": False, "sg_sox_": False, "sg_spark_": False, "sg_swirl_": False, "sg_udm_": False, "sg_uds_": False, "sg_addon_": False, "sg_addon_loaded_": False, "sg_vfr_": False, "sg_solar_": False, "sg_wetsteam_": False, "sg_moistair_": False, "sg_wallfilm_": False, "hyb_init_": False, "rp_spe_surf_rc_": False, "rp_3d_": True, "rp_double_": False, "rp_graphics_": True, "rp_host_": True, "rp_thread_": False, "dpm_cache_": True, "rp_wallfilm_": True}, "ModelSummary": {"Space": "3D", "Time": "Unsteady__1st_Order_Implicit", "Viscous": "SST_k_omega_turbulence_model", "Heat_Transfer": "Disabled", "Solidification_and_Melting": "Disabled", "Species": "Disabled", "Coupled_Dispersed_Phase": "Disabled", "NOx_Pollutants": "Disabled", "SOx_Pollutants": "Disabled", "Soot": "Disabled", "Mercury_Pollutants": "Disabled", "Structure": "Disabled"}}, "GenerateSetupOutput": True, "PublishOutputParameters": True, "IsUpstreamMeshModified": False, "aimDictionaryObj": None, "aimSnapshotObj": None, "InputFileName": "FFF-1.2", "SetupGeneratedCaseFile": $$93f257ee-0a03-42bc-b194-0d5e630e055a, "UserData": {"ModelInfoFile": $$5598cd48-b884-443a-a69b-cd959060ddcd, "MeshOperations": '((expected-zone-names outside_wall inside_wall relay_enclosure) (operations-list ((type . zone-rename) (id . zone-rename-1) (arg-pair ("Old Zone Name" . relay_enclosure) ("New Zone Name" . enclosure_enclosure)))))', "BoundaryProfileFile": None, "CaseFile": None, "DataFile": None, "OtherInputFiles": {}, "IterationsSpecified": True, "UsingSolutionStrategy": False, "InitializationValid": True, "ModelInfoCompatible": True}, "ConnectionKey": "00bec6ab-c9f4-4dd6-8b49-fa141360325d", "InputEntities": {}, "AnsoftXmlString": "", "StartupSchemeFileRef": None, "AnsoftSelectedData": {}, "MeshEntity": $$7c5b5474-fae3-4438-a7d0-d2929387ec98, "CortexVarState": ""}</member-data>
+      </Object>
+      <Object Name="/Setup 3/FluentLauncherSettings:RunSettings" Version="1.0">
+        <class-type valType="String">FluentLauncherSettings</class-type>
+        <object-name valType="String">RunSettings</object-name>
+        <member-data valType="String">{"DisplayText": "Fluent Launcher Settings", "UseUpstreamLauncherSettings": True, "Dimension": "ThreeD", "Precision": "Single", "Initialization": "ProgramControlled", "InitSolutionDataFile": "", "ShowLauncher": False, "DisplayMesh": True, "EmbedGraphicsWindows": True, "WorkbenchColorScheme": True, "LoadACTStartPage": False, "UseJobScheduler": False, "FluentRootEnv": "$(FLUENT_ROOT)", "UseJournalFile": False, "JournalFile": "", "SetupCompilationEnvironment": True, "UDFPath": r"$(FLUENT_ROOT)\$(ARCH)\udf.bat", "EnvPath": {}, "PrePostOnly": False, "RunParallel": True, "NumberOfProcessorsMeshing": 1, "NumberOfProcessors": 1, "NumberOfGPGPUs": 0, "Interconnect": "default", "MpiType": "default", "UseSharedMemory": True, "MachineSpec": "MachineList", "MachineList": "", "MachineFileName": "", "CachePassword": False, "ConvertUNCPath": False, "ClusterHeadNode": "", "ClusterJobTemplate": "", "ClusterNodeGroup": "", "ClusterProcessorUnit": "Core", "StartWhenResourcesAvailable": False, "CreateJobSubmissionXML": False, "JobSubmissionXmlFile": "", "JobScheduler": "LSF", "UseLSFQueue": False, "LSFQueue": "", "UseLSFCheckpoint": False, "UseCheckpointDirectory": False, "LSFCheckpointDirectory": "", "LSFUseAutomaticCheckpointing": True, "LSFCheckpointPeriod": 60, "SGEQMaster": "localhost", "SGEQueue": "", "SGEPE": "", "SGEUseSettings": False, "SGESettings": "", "RemoteRunOnLinux": False, "RemoteFluentRootPath": "", "RemoteRshCommand": "SSH", "RemoteUseHost": False, "RemoteHostName": "", "RemoteUseWorkingDirectory": False, "RemoteWorkingDirectory": "", "RemoteRshOtherCommand": ""}</member-data>
+        <properties-setByUserFlag-data valType="String">["ShowLauncher", "DisplayMesh", "EmbedGraphicsWindows", "WorkbenchColorScheme", "SetupCompilationEnvironment", "Precision", "RunParallel"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 3/FluentSetup:SetupDataProvider" Version="1.0">
+        <class-type valType="String">FluentSetup</class-type>
+        <object-name valType="String">SetupDataProvider</object-name>
+        <member-data valType="String">{"DisplayText": "SetupDataProvider", "DataSourceRef": None}</member-data>
+      </Object>
+      <Object Name="/Setup 3/SystemCouplingSetupData:Setup Coupling Data" Version="1.0">
+        <class-type valType="String">SystemCouplingSetupData</class-type>
+        <object-name valType="String">Setup Coupling Data</object-name>
+        <member-data valType="String">{"DisplayText": "Setup Coupling Data", "DataConnections": ["f0141422-332f-443c-a88d-4fe6a438381d"], "TransferDataObject": $$595d33ae-59d7-429b-9215-e6052958d7ca}</member-data>
+      </Object>
+      <Object Name="/Setup 3/SystemCouplingVariable:displacement" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">displacement</object-name>
+        <member-data valType="String">{"DisplayText": "displacement", "InternalName": "displacement", "PhysicalType": "Length", "DataType": "VectorXYZ", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 3/SystemCouplingVariable:force" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">force</object-name>
+        <member-data valType="String">{"DisplayText": "force", "InternalName": "force", "PhysicalType": "Force", "DataType": "VectorXYZ", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 3/SystemCouplingRegion:inside_wall" Version="1.0">
+        <class-type valType="String">SystemCouplingRegion</class-type>
+        <object-name valType="String">inside_wall</object-name>
+        <member-data valType="String">{"DisplayText": "inside_wall", "InternalName": "inside_wall", "Topology": "Surface", "OutputVariableNames": ["force"], "InputVariableNames": ["displacement"]}</member-data>
+      </Object>
+      <Object Name="/Setup 3/SystemCouplingRegion:outside_wall" Version="1.0">
+        <class-type valType="String">SystemCouplingRegion</class-type>
+        <object-name valType="String">outside_wall</object-name>
+        <member-data valType="String">{"DisplayText": "outside_wall", "InternalName": "outside_wall", "Topology": "Surface", "OutputVariableNames": ["force"], "InputVariableNames": []}</member-data>
+      </Object>
+      <Object Name="/Setup 3/SystemCouplingTransientCoSimulationParticipant:Solution 3" Version="1.0">
+        <class-type valType="String">SystemCouplingTransientCoSimulationParticipant</class-type>
+        <object-name valType="String">Solution 3</object-name>
+        <member-data valType="String">{"DisplayText": "Fluid Flow (Fluent)", "InternalName": "Solution 3", "UnitSystem": "SI", "BaseUnits": {"Length": "m", "Mass": "kg", "Angle": "radian", "SolidAngle": "sr", "Temperature": "K", "ChemicalAmount": "mol", "Time": "s", "Current": "A", "Luminance": "cd"}, "Times": None, "Steps": None, "RegionReferences": [$$a3c2acb6-b571-4f53-89c7-cc14b878fcc7, $$3cdd2dc2-c8c8-4454-b8d5-759797794163], "VariableReferences": [$$6284b4f8-5a16-4fd0-adeb-aec81b712d70, $$81430170-36fc-4900-8c0a-78cf61df283d], "SupportsRestarts": True, "SolverName": "FLUENT", "CouplingIterationsSupported": True}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Solution 3" Version="1.0">
+      <container-type valType="String">Ansys.Fluent.Addin:SolutionContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">95289</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 95370, "Input": 95370, "Output": 95370}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 94934, "Setup 4": 94933, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 94935, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 95200, "Solution 2": 0, "Results 2": 94432, "Mesh": 94986, "Setup 3": 95040, "Solution 3": 0, "Setup 5": 95212, "Solution 5": 94398, "Results 3": 95173, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">FFF-1</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Solution 3/FluentSolutionProperties:SolutionData" Version="1.0">
+        <class-type valType="String">FluentSolutionProperties</class-type>
+        <object-name valType="String">SolutionData</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionData", "UpdateNumber": 2, "UpstreamConnectionObjects": [], "InputRefsToBeRemoved": [], "Setup": $$5b84b0c3-7cc0-4362-858c-bcd2ff861812, "solutionList": {"SolutionPoints": {"0": {"FlowTime": 0, "TimeStep": 0, "CrankAngle": 0, "Unsteady": True, "CaseFile": $$862b3a7b-89f9-44f1-9016-5d1c0d4f02f4, "DataFile": $$ad3dbd11-3fbe-4c14-afe7-adb6a1a986c4, "PdfFile": None, "S2sFile": None, "FlameletFile": None, "WaveFile": None, "DtrmFile": None, "UdfFile": None, "UdfLib": None, "SurfaceMonitors": None, "VolumeMonitors": None, "ReportDefFiles": None, "AnimationFiles": None, "ParticleInjections": None, "IsImportedFinalData": False}, "20": {"FlowTime": 9.9999997171806854E-10, "TimeStep": 1, "CrankAngle": 0, "Unsteady": True, "CaseFile": $$68a59b28-2dec-428b-af0a-71a9bc310481, "DataFile": $$1eccf987-0291-44d0-8321-757c12e15516, "PdfFile": None, "S2sFile": None, "FlameletFile": None, "WaveFile": None, "DtrmFile": None, "UdfFile": None, "UdfLib": None, "SurfaceMonitors": None, "VolumeMonitors": None, "ReportDefFiles": None, "AnimationFiles": None, "ParticleInjections": None, "IsImportedFinalData": False}}, "CurrentPoint": 20, "OldSolutionPoints": []}, "SolutionInfo": {"Residuals": {"continuity": 2.8393998E-09, "x-velocity": 0.0068658434, "y-velocity": 0.0068435394, "z-velocity": 0.011533136, "k": 0.0097189171, "omega": 0.00010261572}, "CurrentIteration": 20, "CurrentFlowTime": 9.9999997E-10, "CurrentTimeStep": 1, "UnsteadyFlow": True, "NewSetupInfo": {"MeshInfo": {"CellZoneCount": 1, "FaceZoneCount": 3, "NodeCount": 32742, "FaceCount": 343707, "CellCount": 166992, "PartitionCount": 1, "CellZones": [], "FaceZones": [], "DomainMinX": -6.0000002E-06, "DomainMinY": -6.0000002E-06, "DomainMinZ": -3.0000001E-07, "DomainMaxX": 6.0000002E-06, "DomainMaxY": 6.0000002E-06, "DomainMaxZ": 3.2E-06, "MaxCellSquish": 0, "MaxAspectRatio": 0, "GridValid": True, "Unsteady": True}, "ModelInfo": {"rp_seg_": True, "rp_acoustics_": False, "rp_atm_": False, "rp_axi_": False, "rp_des_": False, "rp_dpm_cache_": False, "rp_dpm_cache_serial_": False, "rp_unsteady_": True, "rp_amg_": False, "rf_energy_": False, "rp_hvac_": False, "rp_inviscid_": False, "rp_ke_": False, "rp_kklw_": False, "rp_kw_": True, "rp_lam_": False, "rp_les_": False, "rp_structure_": False, "rp_structure_linear_": False, "rp_structure_nonlinear_": False, "rp_lsf_": False, "rp_net_": False, "rp_react_": False, "rp_sa_": False, "rp_sas_": False, "rp_sge_": False, "rp_spe_": False, "rp_spe_part_": False, "rp_potential_": False, "rp_lithium_": False, "rp_electro_chem_": False, "rp_spe_site_": False, "rp_spe_surf_": False, "rp_trans_one_eqn_": False, "rp_trans_sst_": False, "rp_trb_scl_": True, "rp_turb_": True, "rp_absorbing_media_": False, "rp_visc_": True, "rp_v2f_": False, "sg_cylindrical_": False, "sg_disco_": False, "sg_montecarlo_": False, "sg_bee_gees_": False, "sg_crev_": False, "sg_dpm_": False, "sg_dqmom_iem_": False, "sg_dtrm_": False, "sg_dynmesh_": True, "sg_overset_": False, "sg_ecfm_": False, "sg_geqn_": False, "sg_hg_": False, "sg_inert_": False, "sg_ignite_": False, "sg_network_": False, "sg_node_udm_": False, "sg_noniterative_": False, "sg_nox_": False, "sg_melt_": False, "sg_micro_mix_": False, "sg_mphase_": False, "sg_p1_": False, "rp_sootspecies_": False, "sg_par_premix_": False, "sg_pb_": False, "sg_pdf_": False, "sg_pdf_transport_": False, "sg_premixed_": False, "sg_pull_": False, "sg_rosseland_": False, "sg_rsm_": False, "sg_s2s_": False, "sg_soot_": False, "sg_sox_": False, "sg_spark_": False, "sg_swirl_": False, "sg_udm_": False, "sg_uds_": False, "sg_addon_": False, "sg_addon_loaded_": False, "sg_vfr_": False, "sg_solar_": False, "sg_wetsteam_": False, "sg_moistair_": False, "sg_wallfilm_": False, "hyb_init_": False, "rp_spe_surf_rc_": False, "rp_3d_": True, "rp_double_": False, "rp_graphics_": True, "rp_host_": True, "rp_thread_": False, "dpm_cache_": True, "rp_wallfilm_": True}, "ModelSummary": {"Space": "3D", "Time": "Unsteady__1st_Order_Implicit", "Viscous": "SST_k_omega_turbulence_model", "Heat_Transfer": "Disabled", "Solidification_and_Melting": "Disabled", "Species": "Disabled", "Coupled_Dispersed_Phase": "Disabled", "NOx_Pollutants": "Disabled", "SOx_Pollutants": "Disabled", "Soot": "Disabled", "Mercury_Pollutants": "Disabled", "Structure": "Disabled"}}, "MeshInfo": {"CellZoneCount": 1, "FaceZoneCount": 3, "NodeCount": 32742, "FaceCount": 343707, "CellCount": 166992, "PartitionCount": 1, "CellZones": [], "FaceZones": [], "DomainMinX": -6.0000002E-06, "DomainMinY": -6.0000002E-06, "DomainMinZ": -3.0000001E-07, "DomainMaxX": 6.0000002E-06, "DomainMaxY": 6.0000002E-06, "DomainMaxZ": 3.2E-06, "MaxCellSquish": 0, "MaxAspectRatio": 0, "GridValid": True, "Unsteady": True}, "ModelInfo": {"rp_seg_": True, "rp_acoustics_": False, "rp_atm_": False, "rp_axi_": False, "rp_des_": False, "rp_dpm_cache_": False, "rp_dpm_cache_serial_": False, "rp_unsteady_": True, "rp_amg_": False, "rf_energy_": False, "rp_hvac_": False, "rp_inviscid_": False, "rp_ke_": False, "rp_kklw_": False, "rp_kw_": True, "rp_lam_": False, "rp_les_": False, "rp_structure_": False, "rp_structure_linear_": False, "rp_structure_nonlinear_": False, "rp_lsf_": False, "rp_net_": False, "rp_react_": False, "rp_sa_": False, "rp_sas_": False, "rp_sge_": False, "rp_spe_": False, "rp_spe_part_": False, "rp_potential_": False, "rp_lithium_": False, "rp_electro_chem_": False, "rp_spe_site_": False, "rp_spe_surf_": False, "rp_trans_one_eqn_": False, "rp_trans_sst_": False, "rp_trb_scl_": True, "rp_turb_": True, "rp_absorbing_media_": False, "rp_visc_": True, "rp_v2f_": False, "sg_cylindrical_": False, "sg_disco_": False, "sg_montecarlo_": False, "sg_bee_gees_": False, "sg_crev_": False, "sg_dpm_": False, "sg_dqmom_iem_": False, "sg_dtrm_": False, "sg_dynmesh_": True, "sg_overset_": False, "sg_ecfm_": False, "sg_geqn_": False, "sg_hg_": False, "sg_inert_": False, "sg_ignite_": False, "sg_network_": False, "sg_node_udm_": False, "sg_noniterative_": False, "sg_nox_": False, "sg_melt_": False, "sg_micro_mix_": False, "sg_mphase_": False, "sg_p1_": False, "rp_sootspecies_": False, "sg_par_premix_": False, "sg_pb_": False, "sg_pdf_": False, "sg_pdf_transport_": False, "sg_premixed_": False, "sg_pull_": False, "sg_rosseland_": False, "sg_rsm_": False, "sg_s2s_": False, "sg_soot_": False, "sg_sox_": False, "sg_spark_": False, "sg_swirl_": False, "sg_udm_": False, "sg_uds_": False, "sg_addon_": False, "sg_addon_loaded_": False, "sg_vfr_": False, "sg_solar_": False, "sg_wetsteam_": False, "sg_moistair_": False, "sg_wallfilm_": False, "hyb_init_": False, "rp_spe_surf_rc_": False, "rp_3d_": True, "rp_double_": False, "rp_graphics_": True, "rp_host_": True, "rp_thread_": False, "dpm_cache_": True, "rp_wallfilm_": True}, "ModelSummary": {"Space": "3D", "Time": "Unsteady__1st_Order_Implicit", "Viscous": "SST_k_omega_turbulence_model", "Heat_Transfer": "Disabled", "Solidification_and_Melting": "Disabled", "Species": "Disabled", "Coupled_Dispersed_Phase": "Disabled", "NOx_Pollutants": "Disabled", "SOx_Pollutants": "Disabled", "Soot": "Disabled", "Mercury_Pollutants": "Disabled", "Structure": "Disabled"}}, "InitialConditionFileReference": None, "StartFromExistingData": True, "RestartDataReference": None, "RestartInfoData": None, "SolutionTranscript": None, "EnableSolutionMonitoring": True, "residualScaleType": "Residual_Scale_Global", "GeneratePlotImages": False, "EnableDataInterpolation": True, "GeneratePostProcessingImages": True, "UpstreamSourcesRemoved": False, "EnableRunNumber": True, "solutionStatus": "Finished", "DataConnections": {"FluentSolution": ["997519f9-1b99-4d7b-9349-a970e0fe4d59"]}, "InitialConditionConnectionKey": "00000000-0000-0000-0000-000000000000", "InitialConditionEntity": None, "RunNumber": 0, "ResidualsFileReference": None, "InterpolationDataFileReference": $$7782172d-71cb-4e1d-9bb4-a27781715238}</member-data>
+      </Object>
+      <Object Name="/Solution 3/FluentLauncherSettings:RunSettings" Version="1.0">
+        <class-type valType="String">FluentLauncherSettings</class-type>
+        <object-name valType="String">RunSettings</object-name>
+        <member-data valType="String">{"DisplayText": "Fluent Launcher Settings", "UseUpstreamLauncherSettings": True, "Dimension": "ThreeD", "Precision": "Single", "Initialization": "ProgramControlled", "InitSolutionDataFile": "", "ShowLauncher": False, "DisplayMesh": True, "EmbedGraphicsWindows": True, "WorkbenchColorScheme": True, "LoadACTStartPage": False, "UseJobScheduler": False, "FluentRootEnv": "$(FLUENT_ROOT)", "UseJournalFile": False, "JournalFile": "", "SetupCompilationEnvironment": True, "UDFPath": r"$(FLUENT_ROOT)\$(ARCH)\udf.bat", "EnvPath": {}, "PrePostOnly": False, "RunParallel": True, "NumberOfProcessorsMeshing": 1, "NumberOfProcessors": 1, "NumberOfGPGPUs": 0, "Interconnect": "default", "MpiType": "default", "UseSharedMemory": True, "MachineSpec": "MachineList", "MachineList": "", "MachineFileName": "", "CachePassword": False, "ConvertUNCPath": False, "ClusterHeadNode": "", "ClusterJobTemplate": "", "ClusterNodeGroup": "", "ClusterProcessorUnit": "Core", "StartWhenResourcesAvailable": False, "CreateJobSubmissionXML": False, "JobSubmissionXmlFile": "", "JobScheduler": "LSF", "UseLSFQueue": False, "LSFQueue": "", "UseLSFCheckpoint": False, "UseCheckpointDirectory": False, "LSFCheckpointDirectory": "", "LSFUseAutomaticCheckpointing": True, "LSFCheckpointPeriod": 60, "SGEQMaster": "localhost", "SGEQueue": "", "SGEPE": "", "SGEUseSettings": False, "SGESettings": "", "RemoteRunOnLinux": False, "RemoteFluentRootPath": "", "RemoteRshCommand": "SSH", "RemoteUseHost": False, "RemoteHostName": "", "RemoteUseWorkingDirectory": False, "RemoteWorkingDirectory": "", "RemoteRshOtherCommand": ""}</member-data>
+      </Object>
+      <Object Name="/Solution 3/FluentCase:FluentCase" Version="1.0">
+        <class-type valType="String">FluentCase</class-type>
+        <object-name valType="String">FluentCase</object-name>
+        <member-data valType="String">{"DisplayText": "FluentCase"}</member-data>
+      </Object>
+      <Object Name="/Solution 3/FluentSolution:SolutionDataProvider" Version="1.0">
+        <class-type valType="String">FluentSolution</class-type>
+        <object-name valType="String">SolutionDataProvider</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionDataProvider", "DataSourceRef": None}</member-data>
+      </Object>
+      <Object Name="/Solution 3/ComponentSolveSettingsForAddin:ComponentSolveSettingsForAddin" Version="1.0">
+        <class-type valType="String">ComponentSolveSettingsForAddin</class-type>
+        <object-name valType="String">ComponentSolveSettingsForAddin</object-name>
+        <member-data valType="String">{"DisplayText": "ComponentSolveSettingsForAddin", "UpdateOption": "Foreground", "RsmUserString": None, "ConfiguredQueue": {"OptionIcons": None, "OptionLabels": "Local", "Options": "Local", "ReadOnlyOptions": None, "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None, "Value": "Local"}, "RsmJobName": "Workbench", "EnablePolling": True, "PollingInterval": "120 [s]", "ExecutionMode": "Parallel", "NumberOfProcesses": 2}</member-data>
+      </Object>
+      <Object Name="/Solution 3/ExpertProperties:ExpertProperties" Version="1.0">
+        <class-type valType="String">ExpertProperties</class-type>
+        <object-name valType="String">ExpertProperties</object-name>
+        <member-data valType="String">{"DisplayText": "ExpertProperties", "ImportantNote": "These options are visible because a development environment variable is set", "ExpertPropertiesString": "", "EnableDebug": False, "EnableValidation": False, "EnableTesting": False, "EnableErrorReporting": True, "EnableWarningReporting": True, "EnableInfoReporting": False, "EnableFileBasedCommunication": False, "EnableSocketCommunication": False, "EnableFailureCauseReporting": True}</member-data>
+      </Object>
+      <Object Name="/Solution 3/ComponentSettingsForRsmDpUpdate:ComponentSettingsForRsmDpUpdate" Version="1.0">
+        <class-type valType="String">ComponentSettingsForRsmDpUpdate</class-type>
+        <object-name valType="String">ComponentSettingsForRsmDpUpdate</object-name>
+        <member-data valType="String">{"DisplayText": "ComponentSettingsForRsmDpUpdate", "SerialOnly": False, "UseLimitOnNumberOfCores": False, "LimitOnNumberOfCores": 2}</member-data>
+      </Object>
+      <Object Name="/Solution 3/ConvergenceChart:Residual" Version="1.0">
+        <class-type valType="String">ConvergenceChart</class-type>
+        <object-name valType="String">Residual</object-name>
+        <member-data valType="String">{"DisplayText": "Residual", "XAxis": "Iteration", "Variables": [$$9e7eca6b-92ec-49e2-8b2d-9cab5f09467b, $$b9559c65-1b54-4d6a-a5b8-3c7388551b82, $$84cd3034-2753-4902-a735-a2823879be30, $$2ffca822-af1c-433f-a25f-43ac2d3aa2c6, $$eaa343d5-dc1e-4af9-aafe-cdb05f663489, $$1fb0e647-23a4-4216-9d30-1a14c7427596], "IsDefault": False, "IsUserTouched": True, "AxisX": $$1f05d5af-6915-47d0-8cc9-d588032716f7, "AxisY": $$c2234f7f-b784-445c-951b-353f4b162a19, "ChartType": "Residual"}</member-data>
+        <properties-setByUserFlag-data valType="String">["Variables"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Solution 3/AxisContinuous:AxisX" Version="1.0">
+        <class-type valType="String">AxisContinuous</class-type>
+        <object-name valType="String">AxisX</object-name>
+        <member-data valType="String">{"DisplayText": "Iteration", "QuantityName": "Iteration", "Title": "Iteration", "Scale": "Linear", "AutomaticRange": True, "RangeMinimum": -Infinity, "RangeMaximum": Infinity}</member-data>
+      </Object>
+      <Object Name="/Solution 3/AxisContinuous:AxisY" Version="1.0">
+        <class-type valType="String">AxisContinuous</class-type>
+        <object-name valType="String">AxisY</object-name>
+        <member-data valType="String">{"DisplayText": "", "QuantityName": "Iteration", "Title": "", "Scale": "CommonLog", "AutomaticRange": True, "RangeMinimum": -Infinity, "RangeMaximum": Infinity}</member-data>
+      </Object>
+      <Object Name="/Solution 3/ChartVariableData:continuity" Version="1.0">
+        <class-type valType="String">ChartVariableData</class-type>
+        <object-name valType="String">continuity</object-name>
+        <member-data valType="String">{"DisplayText": "continuity", "VariableType": "Residual", "VariableIndex": 1, "VariableDimension": ""}</member-data>
+      </Object>
+      <Object Name="/Solution 3/ChartVariableData:x-velocity" Version="1.0">
+        <class-type valType="String">ChartVariableData</class-type>
+        <object-name valType="String">x-velocity</object-name>
+        <member-data valType="String">{"DisplayText": "x-velocity", "VariableType": "Residual", "VariableIndex": 2, "VariableDimension": ""}</member-data>
+      </Object>
+      <Object Name="/Solution 3/ChartVariableData:y-velocity" Version="1.0">
+        <class-type valType="String">ChartVariableData</class-type>
+        <object-name valType="String">y-velocity</object-name>
+        <member-data valType="String">{"DisplayText": "y-velocity", "VariableType": "Residual", "VariableIndex": 3, "VariableDimension": ""}</member-data>
+      </Object>
+      <Object Name="/Solution 3/ChartVariableData:z-velocity" Version="1.0">
+        <class-type valType="String">ChartVariableData</class-type>
+        <object-name valType="String">z-velocity</object-name>
+        <member-data valType="String">{"DisplayText": "z-velocity", "VariableType": "Residual", "VariableIndex": 4, "VariableDimension": ""}</member-data>
+      </Object>
+      <Object Name="/Solution 3/ChartVariableData:k" Version="1.0">
+        <class-type valType="String">ChartVariableData</class-type>
+        <object-name valType="String">k</object-name>
+        <member-data valType="String">{"DisplayText": "k", "VariableType": "Residual", "VariableIndex": 5, "VariableDimension": ""}</member-data>
+      </Object>
+      <Object Name="/Solution 3/ChartVariableData:omega" Version="1.0">
+        <class-type valType="String">ChartVariableData</class-type>
+        <object-name valType="String">omega</object-name>
+        <member-data valType="String">{"DisplayText": "omega", "VariableType": "Residual", "VariableIndex": 6, "VariableDimension": ""}</member-data>
+      </Object>
+      <Object Name="/Solution 3/ChartVariable:continuity" Version="1.0">
+        <class-type valType="String">ChartVariable</class-type>
+        <object-name valType="String">continuity</object-name>
+        <member-data valType="String">{"DisplayText": "continuity", "QuantityName": "continuity", "ContainingChart": $$db856344-2800-4fb2-a9a7-ff6ff815014e, "ChartVariable": None, "LineWidth": 1, "Color": "255 0 0 255", "SymbolSize": 4}</member-data>
+      </Object>
+      <Object Name="/Solution 3/ChartVariable:x-velocity" Version="1.0">
+        <class-type valType="String">ChartVariable</class-type>
+        <object-name valType="String">x-velocity</object-name>
+        <member-data valType="String">{"DisplayText": "x-velocity", "QuantityName": "x-velocity", "ContainingChart": $$db856344-2800-4fb2-a9a7-ff6ff815014e, "ChartVariable": None, "LineWidth": 1, "Color": "0 0 255 255", "SymbolSize": 4}</member-data>
+      </Object>
+      <Object Name="/Solution 3/ChartVariable:y-velocity" Version="1.0">
+        <class-type valType="String">ChartVariable</class-type>
+        <object-name valType="String">y-velocity</object-name>
+        <member-data valType="String">{"DisplayText": "y-velocity", "QuantityName": "y-velocity", "ContainingChart": $$db856344-2800-4fb2-a9a7-ff6ff815014e, "ChartVariable": None, "LineWidth": 1, "Color": "0 255 0 255", "SymbolSize": 4}</member-data>
+      </Object>
+      <Object Name="/Solution 3/ChartVariable:z-velocity" Version="1.0">
+        <class-type valType="String">ChartVariable</class-type>
+        <object-name valType="String">z-velocity</object-name>
+        <member-data valType="String">{"DisplayText": "z-velocity", "QuantityName": "z-velocity", "ContainingChart": $$db856344-2800-4fb2-a9a7-ff6ff815014e, "ChartVariable": None, "LineWidth": 1, "Color": "0 0 0 255", "SymbolSize": 4}</member-data>
+      </Object>
+      <Object Name="/Solution 3/ChartVariable:k" Version="1.0">
+        <class-type valType="String">ChartVariable</class-type>
+        <object-name valType="String">k</object-name>
+        <member-data valType="String">{"DisplayText": "k", "QuantityName": "k", "ContainingChart": $$db856344-2800-4fb2-a9a7-ff6ff815014e, "ChartVariable": None, "LineWidth": 1, "Color": "255 0 255 255", "SymbolSize": 4}</member-data>
+      </Object>
+      <Object Name="/Solution 3/ChartVariable:omega" Version="1.0">
+        <class-type valType="String">ChartVariable</class-type>
+        <object-name valType="String">omega</object-name>
+        <member-data valType="String">{"DisplayText": "omega", "QuantityName": "omega", "ContainingChart": $$db856344-2800-4fb2-a9a7-ff6ff815014e, "ChartVariable": None, "LineWidth": 1, "Color": "0 255 255 255", "SymbolSize": 4}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Setup 5" Version="1.0">
+      <container-type valType="String">Ansys.MultiphysicsCoupling.Core.Addin:Setup</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">95362</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 95357, "Input": 95329, "Output": 93745}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 94934, "Setup 4": 94933, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 94935, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 95350, "Solution 2": 0, "Results 2": 94432, "Mesh": 94986, "Setup 3": 95040, "Solution 3": 95289, "Setup 5": 95361, "Solution 5": 94398, "Results 3": 95173, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">SC</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Setup 5/CouplingPartcipantConnectionsDataObject:CouplingParticipantConnections" Version="1.0">
+        <class-type valType="String">CouplingPartcipantConnectionsDataObject</class-type>
+        <object-name valType="String">CouplingParticipantConnections</object-name>
+        <member-data valType="String">{"DisplayText": "CouplingParticipantConnections", "InputConnections": $$bed1feda-93e2-44bd-b845-250ac2a6a3ef, "InputConnectionsToRemove": [], "UpstreamMpcParticipantData": {"Setup 3": $$45912178-b800-4ad3-857e-c6bfef05c75c, "Setup 2": $$6b8883d4-2e05-45cb-a882-56671d2f58ef}, "CouplingServiceInputFile": None, "HighlightLinkedNodes": True, "SetupAttributes": {}, "RefreshResult": "RefreshSuccessful"}</member-data>
+      </Object>
+      <Object Name="/Setup 5/AnalysisSettings:AnalysisSettings" Version="1.0">
+        <class-type valType="String">AnalysisSettings</class-type>
+        <object-name valType="String">AnalysisSettings</object-name>
+        <member-data valType="String">{"DisplayText": "AnalysisSettings", "AnalysisType": "Transient", "Initialization": "ProgramControlled", "StartTime": None, "StepSize": "1E-09 [s]", "DurationDefinedBy": "EndTime", "NumberOfSteps": 1, "EndTime": "5E-09 [s]", "MinimumIteration": 1, "MaximumIteration": 5, "RestartStep": 0, "RestartTime": None, "ObjectState": "UpToDate", "Messages": {}, "Errors": {}, "RestartStepTime": {}, "RestartStepFile": {}, "DisableSolutionUpdate": False}</member-data>
+        <properties-setByUserFlag-data valType="String">["EndTime", "StepSize", "MaximumIteration"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 5/ExecutionControlSettings:ExecutionControl" Version="1.0">
+        <class-type valType="String">ExecutionControlSettings</class-type>
+        <object-name valType="String">ExecutionControl</object-name>
+        <member-data valType="String">{"DisplayText": "ExecutionControl", "EngineVersion": 2}</member-data>
+      </Object>
+      <Object Name="/Setup 5/SequenceControl:SequenceControls" Version="1.0">
+        <class-type valType="String">SequenceControl</class-type>
+        <object-name valType="String">SequenceControls</object-name>
+        <member-data valType="String">{"DisplayText": "SequenceControls", "Sequence": {"$$45912178-b800-4ad3-857e-c6bfef05c75c": 2, "$$6b8883d4-2e05-45cb-a882-56671d2f58ef": 1}}</member-data>
+      </Object>
+      <Object Name="/Setup 5/DebugOutputControls:DebugOutputControls" Version="1.0">
+        <class-type valType="String">DebugOutputControls</class-type>
+        <object-name valType="String">DebugOutputControls</object-name>
+        <member-data valType="String">{"DisplayText": "DebugOutputControls", "GlobalLevel": "None", "Startup": "Default", "ParticipantConnection": "Default", "AnalysisInitialization": "Default", "SolutionInitialization": "Default", "DataTransfersLevel": "Default", "SourceMeshCoordinates": "Default", "SourceMeshTopology": "Default", "SourceData": "Default", "TargetMeshCoordinates": "Default", "TargetMeshTopology": "Default", "TargetData": "Default", "ConvergenceChecks": "Default", "Shutdown": "Default"}</member-data>
+      </Object>
+      <Object Name="/Setup 5/ExpertSettings:ExpertSettings" Version="1.0">
+        <class-type valType="String">ExpertSettings</class-type>
+        <object-name valType="String">ExpertSettings</object-name>
+        <member-data valType="String">{"DisplayText": "ExpertSettings", "Settings": {}}</member-data>
+      </Object>
+      <Object Name="/Setup 5/IntermediateResultFilesOutputControls:IntermediateResultFilesOutputControls" Version="1.0">
+        <class-type valType="String">IntermediateResultFilesOutputControls</class-type>
+        <object-name valType="String">IntermediateResultFilesOutputControls</object-name>
+        <member-data valType="String">{"DisplayText": "IntermediateResultFilesOutputControls", "OutputFrequency": "EveryStep", "StepInterval": 1, "ObjectState": "UpToDate", "Messages": {}, "Errors": {}}</member-data>
+        <properties-setByUserFlag-data valType="String">["OutputFrequency"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 5/CouplingSetupProvider:Setup 5Provider" Version="1.0">
+        <class-type valType="String">CouplingSetupProvider</class-type>
+        <object-name valType="String">Setup 5Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Setup 5Provider", "DataConnections": ["2fbc8722-dc8d-4c4c-a469-d6ded612809a"], "TransferDataObject": None}</member-data>
+      </Object>
+      <Object Name="/Setup 5/ContainerInputConnections:CouplingContainerInputConnections" Version="1.0">
+        <class-type valType="String">ContainerInputConnections</class-type>
+        <object-name valType="String">CouplingContainerInputConnections</object-name>
+        <member-data valType="String">{"DisplayText": "CouplingContainerInputConnections", "Connections": {"Setup 2": {"$$9f1b7017-65ce-4b44-abf6-31a0046a8e69": {"SystemCouplingSetupData": ["a66192d7-4593-43a9-bb94-31cea2b0ce89"]}}, "Setup 3": {"$$6d90c9e9-82c3-497d-98a0-39d97319e010": {"SystemCouplingSetupData": ["f0141422-332f-443c-a88d-4fe6a438381d"]}}}}</member-data>
+      </Object>
+      <Object Name="/Setup 5/SystemCouplingRegion:outside_wall" Version="1.0">
+        <class-type valType="String">SystemCouplingRegion</class-type>
+        <object-name valType="String">outside_wall</object-name>
+        <member-data valType="String">{"DisplayText": "outside_wall", "InternalName": "outside_wall", "Topology": "Surface", "OutputVariableNames": ["force"], "InputVariableNames": []}</member-data>
+        <properties-setByUserFlag-data valType="String">["DisplayText", "InternalName", "Topology", "OutputVariableNames[0]"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 5/SystemCouplingRegion:inside_wall" Version="1.0">
+        <class-type valType="String">SystemCouplingRegion</class-type>
+        <object-name valType="String">inside_wall</object-name>
+        <member-data valType="String">{"DisplayText": "inside_wall", "InternalName": "inside_wall", "Topology": "Surface", "OutputVariableNames": ["force"], "InputVariableNames": ["displacement"]}</member-data>
+        <properties-setByUserFlag-data valType="String">["DisplayText", "InternalName", "Topology", "OutputVariableNames[0]", "InputVariableNames[0]"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 5/SystemCouplingRegion:FSIN_1" Version="1.0">
+        <class-type valType="String">SystemCouplingRegion</class-type>
+        <object-name valType="String">FSIN_1</object-name>
+        <member-data valType="String">{"DisplayText": "Fluid Solid Interface", "InternalName": "FSIN_1", "Topology": "Surface", "OutputVariableNames": ["INCD"], "InputVariableNames": ["FORC"]}</member-data>
+        <properties-setByUserFlag-data valType="String">["DisplayText", "InternalName", "Topology", "OutputVariableNames[0]", "InputVariableNames[0]"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 5/SystemCouplingVariable:force" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">force</object-name>
+        <member-data valType="String">{"DisplayText": "force", "InternalName": "force", "PhysicalType": "Force", "DataType": "VectorXYZ", "Exposure": "Standard"}</member-data>
+        <properties-setByUserFlag-data valType="String">["DisplayText", "InternalName", "PhysicalType", "DataType", "Exposure"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 5/SystemCouplingVariable:displacement" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">displacement</object-name>
+        <member-data valType="String">{"DisplayText": "displacement", "InternalName": "displacement", "PhysicalType": "Length", "DataType": "VectorXYZ", "Exposure": "Standard"}</member-data>
+        <properties-setByUserFlag-data valType="String">["DisplayText", "InternalName", "PhysicalType", "DataType", "Exposure"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 5/SystemCouplingVariable:INCD" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">INCD</object-name>
+        <member-data valType="String">{"DisplayText": "Incremental Displacement", "InternalName": "INCD", "PhysicalType": "Length", "DataType": "VectorXYZ", "Exposure": "Standard"}</member-data>
+        <properties-setByUserFlag-data valType="String">["DisplayText", "InternalName", "PhysicalType", "DataType", "Exposure"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 5/SystemCouplingVariable:FORC" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">FORC</object-name>
+        <member-data valType="String">{"DisplayText": "Force", "InternalName": "FORC", "PhysicalType": "Force", "DataType": "VectorXYZ", "Exposure": "Standard"}</member-data>
+        <properties-setByUserFlag-data valType="String">["DisplayText", "InternalName", "PhysicalType", "DataType", "Exposure"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 5/SystemCouplingTransientCoSimulationParticipant:Solution 2" Version="1.0">
+        <class-type valType="String">SystemCouplingTransientCoSimulationParticipant</class-type>
+        <object-name valType="String">Solution 2</object-name>
+        <member-data valType="String">{"DisplayText": "EM Transient", "InternalName": "Solution 2", "UnitSystem": "MKS_STANDARD", "BaseUnits": {"Length": "m", "Mass": "kg", "Angle": "radian", "SolidAngle": "sr", "Temperature": "C", "ChemicalAmount": "mol", "Time": "s", "Current": "A", "Luminance": "cd"}, "Times": [5E-09], "Steps": None, "RegionReferences": [$$d0658859-c0b3-412e-bb98-6ad6eef670d6], "VariableReferences": [$$f4f1767c-30ca-44c8-902f-d2031f3bdbe6, $$02180c20-aa70-4485-8f88-7bc80d0bde3c], "SupportsRestarts": True, "SolverName": "MAPDL", "CouplingIterationsSupported": True}</member-data>
+        <properties-setByUserFlag-data valType="String">["DisplayText", "InternalName", "UnitSystem", "BaseUnits.Length", "BaseUnits.Mass", "BaseUnits.Angle", "BaseUnits.SolidAngle", "BaseUnits.Temperature", "BaseUnits.ChemicalAmount", "BaseUnits.Time", "BaseUnits.Current", "BaseUnits.Luminance", "Times[0]", "Steps", "RegionReferences", "VariableReferences", "SupportsRestarts", "SolverName", "CouplingIterationsSupported"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 5/SystemCouplingTransientCoSimulationParticipant:Solution 3" Version="1.0">
+        <class-type valType="String">SystemCouplingTransientCoSimulationParticipant</class-type>
+        <object-name valType="String">Solution 3</object-name>
+        <member-data valType="String">{"DisplayText": "Fluid Flow (Fluent)", "InternalName": "Solution 3", "UnitSystem": "SI", "BaseUnits": {"Length": "m", "Mass": "kg", "Angle": "radian", "SolidAngle": "sr", "Temperature": "K", "ChemicalAmount": "mol", "Time": "s", "Current": "A", "Luminance": "cd"}, "Times": None, "Steps": None, "RegionReferences": [$$7663937c-3032-4218-9f1e-262f3aeeaaf5, $$d176c936-4796-4cfb-bc32-1fe87c7abdb4], "VariableReferences": [$$2772392f-4640-4127-b968-b1573523addb, $$0500e58d-1927-4611-8ef3-02776881f2f9], "SupportsRestarts": True, "SolverName": "FLUENT", "CouplingIterationsSupported": True}</member-data>
+      </Object>
+      <Object Name="/Setup 5/DataTransfer:Data Transfer" Version="1.0">
+        <class-type valType="String">DataTransfer</class-type>
+        <object-name valType="String">Data Transfer</object-name>
+        <member-data valType="String">{"DisplayText": "Data Transfer", "SourceParticipant": $$45912178-b800-4ad3-857e-c6bfef05c75c, "TargetParticipant": $$6b8883d4-2e05-45cb-a882-56671d2f58ef, "SourceRegion": $$d176c936-4796-4cfb-bc32-1fe87c7abdb4, "TargetRegion": $$d0658859-c0b3-412e-bb98-6ad6eef670d6, "SourceVariable": $$2772392f-4640-4127-b968-b1573523addb, "TargetVariable": $$f4f1767c-30ca-44c8-902f-d2031f3bdbe6, "TransferSettings": $$8aea127e-b2ae-48c6-92c8-86ac14d30298, "IsSuppressed": False, "ObjectState": "UpToDate", "Messages": {}, "Errors": {}}</member-data>
+      </Object>
+      <Object Name="/Setup 5/DataTransfer:Data Transfer 2" Version="1.0">
+        <class-type valType="String">DataTransfer</class-type>
+        <object-name valType="String">Data Transfer 2</object-name>
+        <member-data valType="String">{"DisplayText": "Data Transfer 2", "SourceParticipant": $$6b8883d4-2e05-45cb-a882-56671d2f58ef, "TargetParticipant": $$45912178-b800-4ad3-857e-c6bfef05c75c, "SourceRegion": $$d0658859-c0b3-412e-bb98-6ad6eef670d6, "TargetRegion": $$d176c936-4796-4cfb-bc32-1fe87c7abdb4, "SourceVariable": $$02180c20-aa70-4485-8f88-7bc80d0bde3c, "TargetVariable": $$0500e58d-1927-4611-8ef3-02776881f2f9, "TransferSettings": $$bf208d57-af38-4f10-b520-a515ad25dceb, "IsSuppressed": False, "ObjectState": "UpToDate", "Messages": {}, "Errors": {}}</member-data>
+      </Object>
+      <Object Name="/Setup 5/DataTransferSettings:Data Transfer:TransferSettings" Version="1.0">
+        <class-type valType="String">DataTransferSettings</class-type>
+        <object-name valType="String">Data Transfer:TransferSettings</object-name>
+        <member-data valType="String">{"DisplayText": "Data Transfer:TransferSettings", "TransferAt": "StartOfIteration", "Ramping": "None", "UnderRelaxationFactor": 1, "ConvergenceTarget": 0.01, "ObjectState": "UpToDate", "Messages": {}, "Errors": {}}</member-data>
+      </Object>
+      <Object Name="/Setup 5/DataTransferSettings:Data Transfer 2:TransferSettings" Version="1.0">
+        <class-type valType="String">DataTransferSettings</class-type>
+        <object-name valType="String">Data Transfer 2:TransferSettings</object-name>
+        <member-data valType="String">{"DisplayText": "Data Transfer 2:TransferSettings", "TransferAt": "StartOfIteration", "Ramping": "None", "UnderRelaxationFactor": 1, "ConvergenceTarget": 0.01, "ObjectState": "UpToDate", "Messages": {}, "Errors": {}}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Solution 5" Version="1.0">
+      <container-type valType="String">Ansys.MultiphysicsCoupling.Core.Addin:Solution</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">94398</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 95389, "Input": 95365, "Output": 94687}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 94934, "Setup 4": 94933, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 94935, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 95350, "Solution 2": 0, "Results 2": 94432, "Mesh": 94986, "Setup 3": 95040, "Solution 3": 95289, "Setup 5": 95362, "Solution 5": 94398, "Results 3": 95173, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">SC</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Solution 5/SolutionConnectionsDataObject:CouplingSolutionConnections" Version="1.0">
+        <class-type valType="String">SolutionConnectionsDataObject</class-type>
+        <object-name valType="String">CouplingSolutionConnections</object-name>
+        <member-data valType="String">{"DisplayText": "CouplingSolutionConnections", "InputConnections": $$2e97d2d5-3c59-40a1-9f63-8db9367f6fd1, "InputConnectionsToRemove": [], "StandaloneStatusQuery": "MultiphysicsCoupling.BackgroundTaskGetStatus", "FinalSCLFile": "scLog.scl", "FinalSCRFile": "scResult.scr_", "SetupProvider": $$7783cbc5-3f99-451c-abf5-09f027c624c3, "ShutdownCode": 2, "SystemCouplingErrorMessage": "Error when making a remote call to participant Solution 2.  Please do not save the project if you would like to recover to the last saved state.", "NameDisplayNameMap": {"Data Transfer": "Data Transfer", "Data Transfer 2": "Data Transfer 2"}}</member-data>
+      </Object>
+      <Object Name="/Solution 5/SolutionComponentProperties:SolutionComponentProperties" Version="1.0">
+        <class-type valType="String">SolutionComponentProperties</class-type>
+        <object-name valType="String">SolutionComponentProperties</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionComponentProperties", "UpdateOption": "Foreground", "CommandLineOptions": None}</member-data>
+      </Object>
+      <Object Name="/Solution 5/SolutionInformation:solutionInformation" Version="1.0">
+        <class-type valType="String">SolutionInformation</class-type>
+        <object-name valType="String">solutionInformation</object-name>
+        <member-data valType="String">{"DisplayText": "System Coupling", "RelativePath": r"SyC\scLog.scl", "IsDefault": True, "Participant": None}</member-data>
+      </Object>
+      <Object Name="/Solution 5/SolutionInformation:Solution 2" Version="1.0">
+        <class-type valType="String">SolutionInformation</class-type>
+        <object-name valType="String">Solution 2</object-name>
+        <member-data valType="String">{"DisplayText": "EM Transient", "RelativePath": r"..\..\SYS-14\MECH\solve.out", "IsDefault": False, "Participant": $$6b8883d4-2e05-45cb-a882-56671d2f58ef}</member-data>
+      </Object>
+      <Object Name="/Solution 5/SolutionInformation:Solution 4" Version="1.0">
+        <class-type valType="String">SolutionInformation</class-type>
+        <object-name valType="String">Solution 4</object-name>
+        <member-data valType="String">{"DisplayText": "Fluid Flow (Fluent)", "RelativePath": r"..\..\..\progress_files\dp0\FFF-1\Fluent\Solution.trn", "IsDefault": False, "Participant": $$45912178-b800-4ad3-857e-c6bfef05c75c}</member-data>
+      </Object>
+      <Object Name="/Solution 5/SystemCouplingSettings:systemCouplingSettings" Version="1.0">
+        <class-type valType="String">Ansys.Core.DataModel.DataObjects.DynamicDataObject, Ans.Core</class-type>
+        <type-spec valType="String">{"SpecType": "Ansys.Core.DataModel.DataEntitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "System", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "JournalVariableName": "systemCouplingSettings", "Methods": {}, "Version": 1, "Members": {"DisplayText": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Display Text", "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": True}, "IsSceneGraphOn": {"SpecType": "Ansys.Core.DataSpecs.BooleanSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": False, "Exposure": "System", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": True, "IsParameterizable": False, "ReuseJournalVariables": False}}, "DataTypeHierarchy": "SystemCouplingSettings,DataEntity"}</type-spec>
+        <object-name valType="String">systemCouplingSettings</object-name>
+        <member-data valType="String">{"DisplayText": "systemCouplingSettings", "IsSceneGraphOn": True}</member-data>
+      </Object>
+      <Object Name="/Solution 5/ContainerInputConnections:CouplingContainerInputConnections" Version="1.0">
+        <class-type valType="String">ContainerInputConnections</class-type>
+        <object-name valType="String">CouplingContainerInputConnections</object-name>
+        <member-data valType="String">{"DisplayText": "CouplingContainerInputConnections", "Connections": {"Setup 5": {"$$7783cbc5-3f99-451c-abf5-09f027c624c3": {"CouplingSetupProvider": ["2fbc8722-dc8d-4c4c-a469-d6ded612809a"]}}}}</member-data>
+      </Object>
+      <Object Name="/Solution 5/ConvergenceChart:Chart" Version="1.0">
+        <class-type valType="String">ConvergenceChart</class-type>
+        <object-name valType="String">Chart</object-name>
+        <member-data valType="String">{"DisplayText": "Chart", "ObjectState": "UpToDate", "Errors": {}, "Warnings": {}, "XAxis": "Coupling Iteration", "Variables": [$$eb858cbf-917b-4706-a10f-b288646ce129, $$2366f76d-3fed-4487-b56b-5bf3b83075e8], "Chart": None, "IsDefault": True, "IsUserTouched": False, "AxisX": $$b44a4e40-40b9-422e-8169-27d836354cb9, "AxisY": $$768a2790-eaf9-44bc-be11-8ce0b3ce2078}</member-data>
+        <properties-setByUserFlag-data valType="String">["Variables"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Solution 5/AxisContinuous:AxisX" Version="1.0">
+        <class-type valType="String">AxisContinuous</class-type>
+        <object-name valType="String">AxisX</object-name>
+        <member-data valType="String">{"DisplayText": "Coupling Iteration", "QuantityName": "Coupling Iteration", "Title": "Coupling Iteration", "Scale": "Linear", "AutomaticRange": True, "RangeMinimum": -Infinity, "RangeMaximum": Infinity}</member-data>
+      </Object>
+      <Object Name="/Solution 5/AxisContinuous:AxisY" Version="1.0">
+        <class-type valType="String">AxisContinuous</class-type>
+        <object-name valType="String">AxisY</object-name>
+        <member-data valType="String">{"DisplayText": "", "QuantityName": "Coupling Iteration", "Title": "", "Scale": "CommonLog", "AutomaticRange": True, "RangeMinimum": -Infinity, "RangeMaximum": Infinity}</member-data>
+      </Object>
+      <Object Name="/Solution 5/ChartVariable:Solution 2:Data Transfer:Change:RMS" Version="1.0">
+        <class-type valType="String">ChartVariable</class-type>
+        <object-name valType="String">Solution 2:Data Transfer:Change:RMS</object-name>
+        <member-data valType="String">{"DisplayText": "EM Transient:Data Transfer:Change:RMS", "QualifiedName": "Solution 2:Data Transfer:Change:RMS", "RefinementLevel": "Coupling Iteration", "ContainingChart": $$7145499c-9ae1-4ab1-ac8b-697073ced822, "ChartVariable": None, "MinX": 0, "MaxX": 0, "MinY": 0, "MaxY": 0, "LineWidth": 1, "Color": "255 0 0 255", "SymbolSize": 4}</member-data>
+      </Object>
+      <Object Name="/Solution 5/ChartVariable:Solution 3:Data Transfer 2:Change:RMS" Version="1.0">
+        <class-type valType="String">ChartVariable</class-type>
+        <object-name valType="String">Solution 3:Data Transfer 2:Change:RMS</object-name>
+        <member-data valType="String">{"DisplayText": "Fluid Flow (Fluent):Data Transfer 2:Change:RMS", "QualifiedName": "Solution 3:Data Transfer 2:Change:RMS", "RefinementLevel": "Coupling Iteration", "ContainingChart": $$7145499c-9ae1-4ab1-ac8b-697073ced822, "ChartVariable": None, "MinX": 0, "MaxX": 0, "MinY": 0, "MaxY": 0, "LineWidth": 1, "Color": "0 255 0 255", "SymbolSize": 4}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Results 3" Version="1.0">
+      <container-type valType="String">Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">95173</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 95160, "Input": 95172, "Output": 93508}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 94934, "Setup 4": 94933, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 94935, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 95093, "Solution 2": 0, "Results 2": 94432, "Mesh": 94986, "Setup 3": 95040, "Solution 3": 95139, "Setup 5": 95105, "Solution 5": 94398, "Results 3": 94430, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">FFF-1</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Results 3/CFDResults:Results 3 Source" Version="1.0">
+        <class-type valType="String">CFDResults</class-type>
+        <object-name valType="String">Results 3 Source</object-name>
+        <member-data valType="String">{"DisplayText": "Results 3 Source", "DataLinks": {"$$13e4ce7a-a480-4698-85a3-ff735f59a9b2": $$9bdcdf8a-d946-4f0d-bd2e-58f888485743, "$$18d2ac27-2306-4f71-a3ea-12116f77b644": $$de0c7241-bd94-4bc3-9d62-8c2ac3afa4d3}, "UpstreamContainersRemovedSinceRefresh": False, "State": "UpToDate", "ForceRefresh": False, "ExternalFileMap": {}, "InitCCL": None, "UseInitCCL": False, "PostStateFile": $$177ea7a3-8160-4f4a-9b1e-195816cf5e55, "_reportFiles": None, "_htmReportFile": None, "_xmlReportFile": None, "MRESLoadOptionsMsg": "See Solution component properties for multi-configuration options (CFX only).", "ClearState": False, "LoadReport": "None", "CustomReportTemplate": "", "RunSessionScript": False, "UpdateScriptCCL": "", "StateInitializationFile": "", "GenerateReport": False, "ReportName": "Report", "ReportLocationDirectory": "", "LastResultsID": 4}</member-data>
+        <custom-data>
+          <DataSource1 valType="String">Solution 3</DataSource1>
+          <EntityType1 valType="String">FluentSolution</EntityType1>
+          <DataSource2 valType="String">Solution 2</DataSource2>
+          <EntityType2 valType="String">MechanicalSolution</EntityType2>
+          <value-keys valType="String">{"DataSource1": System.String, "EntityType1": System.String, "DataSource2": System.String, "EntityType2": System.String}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Results 3/CFDAnalysis:Results 3 Provider" Version="1.0">
+        <class-type valType="String">CFDAnalysis</class-type>
+        <object-name valType="String">Results 3 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Results 3 Provider", "DataSourceRef": $$c36f27f8-1407-4978-b062-33aa642f5946}</member-data>
+      </Object>
+      <Object Name="/Results 3/SolutionDataLink:SolutionDataProvider" Version="1.0">
+        <class-type valType="String">SolutionDataLink</class-type>
+        <object-name valType="String">SolutionDataProvider</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionDataProvider", "Entity": $$13e4ce7a-a480-4698-85a3-ff735f59a9b2, "DataType": "FluentSolution", "ConnectionKey": "997519f9-1b99-4d7b-9349-a970e0fe4d59", "RefreshTimestamp": 95139, "ID": 1, "SecondID": 2, "DataEntityType": "FluentSolution", "SystemName": "FFF 1", "LastFilename": {"FluentSolution": r"C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\dp0\FFF-1\Fluent\FFF-1.2-2-00001.dat.gz"}}</member-data>
+      </Object>
+      <Object Name="/Results 3/SolutionDataLink:SolutionData for Structural|Transient|ANSYS" Version="1.0">
+        <class-type valType="String">SolutionDataLink</class-type>
+        <object-name valType="String">SolutionData for Structural|Transient|ANSYS</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionData for Structural|Transient|ANSYS", "Entity": $$18d2ac27-2306-4f71-a3ea-12116f77b644, "DataType": "MechanicalSolution", "ConnectionKey": "0c6b2d33-7935-452c-8b1d-85c11d5f2952", "RefreshTimestamp": 0, "ID": 3, "SecondID": 4, "DataEntityType": "MechanicalSolution", "SystemName": "EM Transient", "LastFilename": {"MechanicalSolution": r"C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\dp0\SYS-14\MECH\file.rst"}}</member-data>
       </Object>
     </Container>
   </Containers>

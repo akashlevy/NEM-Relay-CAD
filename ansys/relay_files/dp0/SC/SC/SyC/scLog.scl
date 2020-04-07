@@ -1,0 +1,146 @@
+
+===============================================================================
+Transcript output started: 2020-04-07 07:08:46
+
+
+===============================================================================
++=============================================================================+
+|                                                                             |
+|                          Summary of Coupling Setup                          |
+|                                                                             |
++=============================================================================+
+===============================================================================
+
++=============================================================================+
+|                              Coupling Control                               |
++=============================================================================+
+|                                                                             |
+| Analysis Type :                                                   Transient |
+| Duration Control                                                            |
+|    Option :                                                         EndTime |
+|    End Time :                                                     5e-09 [s] |
+| Step Control                                                                |
+|    Maximum Iterations :                                                   5 |
+|    Minimum Iterations :                                                   1 |
+|    Time Step Size :                                               1e-09 [s] |
+|                                                                             |
++=============================================================================+
+|                              Solution Control                               |
++=============================================================================+
+|                                                                             |
+| Allow Simultaneous Update :                                           False |
+|                                                                             |
++=============================================================================+
+|                               Output Control                                |
++=============================================================================+
+|                                                                             |
+| Output Control Option :                                           EveryStep |
+|                                                                             |
++=============================================================================+
+|                        Participants Information (2)                         |
++=============================================================================+
+|                                                                             |
+| Participant: EM Transient                                                   |
+|    Type :                                                             MAPDL |
+|    Update Controls:                                                         |
+|       Option :                                            ProgramControlled |
+|    Region: Fluid Solid Interface                                            |
+|       Topology :                                                    Surface |
+|       Input Variables :                                               Force |
+|       Output Variables :                           Incremental Displacement |
+|    Coordinate Transformation:                                               |
+|       Option :                                                         None |
+|                                                                             |
++-----------------------------------------------------------------------------+
+|                                                                             |
+| Participant: Fluid Flow (Fluent)                                            |
+|    Type :                                                            FLUENT |
+|    Update Controls:                                                         |
+|       Option :                                            ProgramControlled |
+|    Region: inside_wall                                                      |
+|       Topology :                                                    Surface |
+|       Input Variables :                                        displacement |
+|       Output Variables :                                              force |
+|    Coordinate Transformation:                                               |
+|       Option :                                                         None |
+|                                                                             |
++=============================================================================+
+|                         Interfaces Information (1)                          |
++=============================================================================+
+|                                                                             |
+| Interface: interface-1                                                      |
+|    Side: One                                                                |
+|       Coupling Participant :                            Fluid Flow (Fluent) |
+|       Region List :                                             inside_wall |
+|    Side: Two                                                                |
+|       Coupling Participant :                                   EM Transient |
+|       Region List :                                   Fluid Solid Interface |
+|    Data Transfer: Data Transfer                                             |
+|       Target Side :                                                     Two |
+|       Source Variable :                                               force |
+|       Target Variable :                                               Force |
+|       Convergence Target :                                         1.00E-02 |
+|       Ramping Option :                                                 None |
+|       Relaxation Factor :                                          1.00E+00 |
+|       Mapping Type :                                   Surface Conservative |
+|       Stabilization :                                                  None |
+|    Data Transfer: Data Transfer 2                                           |
+|       Target Side :                                                     One |
+|       Source Variable :                            Incremental Displacement |
+|       Target Variable :                                        displacement |
+|       Convergence Target :                                         1.00E-02 |
+|       Ramping Option :                                                 None |
+|       Relaxation Factor :                                          1.00E+00 |
+|       Mapping Type :                             Surface Profile Preserving |
+|       Stabilization :                                                  None |
+|                                                                             |
++=============================================================================+
+
++-----------------------------------------------------------------------------+
+| Warnings were found during data model validation.                           |
++-----------------------------------------------------------------------------+
+| Participant EM Transient (CouplingParticipant:Solution 2) has the           |
+|     ExecutionControl 'Option' set to 'ExternallyManaged'. System Coupling   |
+|     will not control the startup/shutdown behavior of this participant.     |
+| Participant Fluid Flow (Fluent) (CouplingParticipant:Solution 3) has the    |
+|     ExecutionControl 'Option' set to 'ExternallyManaged'. System Coupling   |
+|     will not control the startup/shutdown behavior of this participant.     |
++-----------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+| The variable locations of force and heatflow variables for all Fluent       |
+| participants are set to 'Element'. Make sure that this is consistent with   |
+| the setup within Fluent. When importing the SCI file (this includes running |
+| inside Workbench), you can control the locations of these variables by      |
+| using the 'SYC_FLUENT_CONSNODAL' environment variable. For more             |
+| information, refer to System Coupling User's Guide.                         |
++-----------------------------------------------------------------------------+
+Awaiting connections from coupling participants... done.
+
++=============================================================================+
+|                       Participants Build Information                        |
++-----------------------------------------------------------------------------+
+| EM Transient                                                                |
+|   Mechanical APDL Release 2020 R1          Build 20.1     UP20191203        |
+|   DISTRIBUTED WINDOWS x64  Version                                          |
+| Fluid Flow (Fluent)                                                         |
+|   ANSYS Fluent 20.1.0, Build Time:Dec  2 2019 14:15:02 EST, Build Id:10114, |
+|   OS Version:win64                                                          |
++=============================================================================+
+
+===============================================================================
++=============================================================================+
+|                                                                             |
+|                              Coupled Solution                               |
+|                                                                             |
++=============================================================================+
+===============================================================================
+
+
++-----------------------------------------------------------------------------+
+| Error when making a remote call to participant Solution 2.                  |
++-----------------------------------------------------------------------------+
+
+Transcript output stopped: 2020-04-07 07:09:27
+===============================================================================
