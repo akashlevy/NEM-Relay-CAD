@@ -1,0 +1,80 @@
+<HTML>
+
+<HEAD>
+<TITLE>Verilog-A Large-Signal RF MEMS Model Library</TITLE>
+<META NAME="KEYWORDS" CONTENT="RF MEMS Device Modeling, Verilog-A">
+</HEAD>
+
+<BODY >
+
+<H1 ALIGN=CENTER>Verilog-A Large-Signal RF MEMS Model Library</H1>
+
+<H2>Examples</H2>
+
+Examples of schematics based on the <A HREF="RF_MEMS_SERIES_SWITCH.png"><I>OHMIC_CANTILEVER_RF_MEMS_SWITCH</I></A> and the <A HREF="RF_MEMS_SHUNT_SWITCH.png"><I>RF_MEMS_CAPACITOR</I></A> Verilog-A models can be downloaded.
+
+<H2>Installation</H2>
+
+<P>A SPICE solver supporting Verilog-A/Verilog-AMS, such as Agilent ADS, Cadence SpectreRF, or Synopsys HSPICE, is required. Some remarks on installing the Verilog-A models:
+
+<UL>
+<LI> 1-DOF Models:
+<UL>
+<LI>Agilent ADS (see [<A HREF="#ADS">5</A>])
+<UL>
+<LI> Copy the files with <I>ael</I> extension into the <I>networks</I> subdirectory of the ADS project.</LI>
+<LI> If necessary, make a <I>veriloga</I> subdirectory in the ADS project.</LI>
+<LI> Copy the files with <I>va</I> extension into the <I>veriloga</I> subdirectory of the ADS project.</LI>
+<LI> Close and reopen the ADS project.</LI>
+<LI> Create a new design.</LI>
+<LI> Insert a random component and swap it with <I>OHMIC_CANTILEVER_RF_MEMS_SWITCH</I> or <I>RF_MEMS_CAPACITOR</I>.</LI>
+</UL>
+</LI>
+<LI>Cadence (see [<A HREF="#SpectreRF">6</A>])
+<UL>
+<LI>CIW: File &rarr; New &rarr; Cellview...</LI>
+<LI>Create New File: Cell Name: <I>OHMIC_CANTILEVER_RF_MEMS_SWITCH</I> or <I>RF_MEMS_CAPACITOR</I>, View Name: <I>veriloga</I>, Tool: <I>VerilogA-Editor</I>. Click "OK".</LI>
+<LI>The editor will appear. Copy/paste the Verilog-A code into the editor. Save it and exit the editor.</LI>
+<LI>A dialog box will appear and ask you if you want to create a new symbol. Click "Yes".</LI>
+<LI>The <I>Symbol Generation Options</I> window will appear. Make appropriate changes and click "OK".</LI>
+<LI>Create a new schematic and insert an instance of the <I>OHMIC_CANTILEVER_RF_MEMS_SWITCH</I> component or the <I>RF_MEMS_CAPACITOR</I> component.</LI>
+</UL>
+</LI>
+<UL>
+<LI>I hope the Verilog-A models will be incorporated in the next release.</LI>
+</UL>
+</UL>
+
+<LI> Multiple DOF Models (by Dr. J. Iannacci):
+<UL>
+<LI>Cadence (see [<A HREF="#SpectreRF">6</A>])
+<UL>
+<LI>The RF MEMS compact model library is treated by Cadence as a standard design kit. This means it has to be copied in a proper location of the file system which we suppose to be <I>/users/OPUS</I>. 
+<LI>If we now name the two libraries as <I>MEMS_MODELER_CONTAINER_VerilogA</I> and <I>MEMS_MODELER_CONTAINER_SpectreHDL</I>, the components within each of them will be seen as subdirectories of the two following paths: <I>/users/OPUS/MEMS_MODELER_CONTAINER_VerilogA</I> and <I>/users/OPUS/MEMS_MODELER_CONTAINER_SpectreHDL</I>. 
+<LI>The previous absolute paths must then be added to the <I>Library Path Editor</I> within Cadence in order to make the two libraries visible and usable within Cadence together with the other pre-existing libraries and design kits.
+<LI>The new configuration must be saved in the <I>cds.lib</I> file.
+<LI>The RF MEMS compact models deal with mixed domain magnitudes, i.e. electrical and mechanical. Proper definitions for the electrical and mechanical magnitudes are declared within the libraries. Moreover, for each of them two parameters (<I>abstol</I> and <I>blowup</I>) used by the Spectre simulator to define convergence and non-convergence cases are defined for all the magnitudes. 
+<LI>In the VerilogA library the implementation definitions are included in the file <I>/users/OPUS/MEMS_MODELER_CONTAINER_VerilogA/discipline/discipline.h</I> and no special settings are required to properly link such a file.
+<LI>In the SpectreHDL the implementation information are defined within the file <I>/users/OPUS/MEMS_MODELER_CONTAINER_SpectreHDL/quantity.spectre</I>. This file must be linked to make it visible during simulations. To do this a line containing the information on where the file is located must be added to the <I>cds.lib</I> file (absolute path: <I>/users/OPUS/ cds.lib</I>) before the lines referring to the actual libraries and design kits. In this case the line has to be as follows: 
+<I>DEFINE MEMS_MODELER_CONTAINER_SpectreHDL /users/OPUS/MEMS_MODELER_CONTAINER_SpectreHDL</I>.
+</UL>
+</UL>
+
+</UL>
+
+<H2>Links</H2>
+
+<P><A NAME="Verilog-A">[1]</A> <A HREF="http://www.accellera.org/downloads/standards/v-ams/VAMS-LRM-2-3-1.pdf">Verilog-AMS Language Reference Manual, Version 2.3.1, June 1, 2009</A>, Accellera Organization, Inc.
+
+<P><A NAME="Hidden_State_in_SpectreRF">[2]</A> <A HREF="http://www.designers-guide.org/Analysis/hidden-state.pdf">Hidden State in SpectreRF, Version 1c, May 27, 2003</A>, Ken Kundert, Designer's Guide Consulting, Inc.
+
+<P><A NAME="RF_MEMS">[3]</A> <A HREF="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6132308">Modeling RF MEMS Devices</A>, Koen Van Caekenberghe, IEEE Microwave Magazine, Volume 13, Issue 1, January - February 2012 Page(s): 83 - 110.
+
+<P><A NAME="Book_Chapter_by_Jacopo_Iannacci">[4]</A> <A HREF="http://www.intechopen.com/articles/show/title/mixed-domain-fast-simulation-of-rf-and-microwave-mems-based-complex-networks-within-standard-ic-deve">Mixed-Domain Fast Simulation of RF and Microwave MEMS-based Complex Networks within Standard IC Development Frameworks</A>, Jacopo Iannacci, Fondazione Bruno Kessler - FBK, MemSRaD Research Unit, Italy
+
+<P><A NAME="ADS">[5]</A> <A HREF="http://cp.literature.agilent.com/litweb/pdf/ads2004a/pdf/veriloga.pdf">Using Verilog-A in Advanced Design System</A>
+
+<P><A NAME="SpectreRF">[6]</A> <A HREF="http://www.ee.siue.edu/~jwade/tutorial/cadence_mixed-signal/ams_tutorial.html">Cadence Mixed-Signal Tutorial</A>
+
+</BODY>
+</HTML>

@@ -1,0 +1,116 @@
+/* Verilog-A large-signal model for a fixed-fixed beam RF MEMS resonator
+Content of RF_MEMS_RESONATOR.va. Open-source code covered by BSD license.
+
+The Verilog-A large signal model can be used for operating point, small signal (AC, SP) 
+and large signal (HB, PSS, QPSS) simulations, using ADS, SpectreRF or Qucs. It includes
+large-signal electromechanical effects, as well as small-signal Brownian noise. It does
+not include electro-thermal effects yet.
+
+1st of October, 2011
+Check for update: http://www-personal.umich.edu/~vcaeken
+
+Reference: "Modeling RF MEMS Devices", by K. Van Caekenberghe, 
+IEEE Microwave Magazine, vol. 13, no. 1, pp. 83-110, Jan.-Feb. 2012 */
+
+`include "disciplines.vams"
+`include "constants.vams"
+`define EPS 1e-10
+// `define POW(x,y) pow( (x) , y )
+`define POW(x,y) pow( (x+`EPS) , y )
+
+module RF_MEMS_RESONATOR (in,out,beam);
+    inout in, out, beam;
+    electrical in, out, beam, dVindt, dVoutdt;
+    kinematic z, velocity;
+
+    // Model parameters
+    parameter real m=2.275e-13 from (0:inf]; // beam mass [kg]
+    parameter real b=2.721e-9 from (0:inf]; // damping coefficient [N.s/m]
+    parameter real k_1=1.505e3 from (0:inf]; // k_i: stiffness parameters [N/m^i]
+    parameter real k_2=0 from [-inf:inf];
+    parameter real k_3=-6.2e15 from [-inf:inf];
+    parameter real k_4=0 from [-inf:inf];
+    parameter real k_5=1.2e30 from [-inf:inf];
+    parameter real g_0=0.33e-6 from (0:inf]; // gap [m]
+    parameter real C_0=0.185e-15 from (0:inf]; // capacitance [F]
+
+    real C_m, E_max, eta, f_m, F_e, F_s, i_out_max, kappa, k_1_eff, k_3_eff, L_m, Q_m, R_m, Vin, Vout, v_in_max, z_c;
+
+    analog begin
+
+	@ ( initial_step ) begin
+
+		$strobe("\n%M: b (Damping coefficient [N.s/m]) = %E",b);
+		$strobe("%M: m (Effective beam mass [kg]) = %E",m);
+		$strobe("%M: k_1 (Stiffness parameter [N/m^1]) = %E",k_1);
+		$strobe("%M: k_2 (Stiffness parameter [N/m^2]) = %E",k_2);
+		$strobe("%M: k_3 (Stiffness parameter [N/m^3]) = %E",k_3);
+		$strobe("%M: k_4 (Stiffness parameter [N/m^4]) = %E",k_4);
+		$strobe("%M: k_5 (Stiffness parameter [N/m^5]) = %E",k_5);
+		$strobe("%M: C_0 (Transducer capacitance [F]) = %E",C_0);
+		$strobe("%M: g_0 (Transducer gap [m]) = %E",g_0);
+
+		k_1_eff=k_1-2.0*C_0*`POW(V(beam),2.0)/`POW(g_0,2.0);
+		$strobe("%M: k_1_eff (Effective stiffness parameter [N/m^1]) = %E",k_1_eff);
+		k_3_eff=k_3-4.0*C_0*`POW(V(beam),2.0)/`POW(g_0,4.0);
+		$strobe("%M: k_3_eff (Effective stiffness parameter [N/m^3]) = %E",k_3_eff);
+		f_m=sqrt(k_1_eff/m)/(2.0*`M_PI);
+		$strobe("%M: f_m_e (Mechanical resonant frequency [Hz]) = %E",f_m);
+		Q_m=sqrt(k_1_eff*m)/b;
+		$strobe("%M: Q (Mechanical Q factor []) = %E",Q_m);
+		eta=V(beam)*C_0/g_0;
+		if (eta == 0) eta=`EPS;
+		$strobe("%M: eta (Electromechanical coupling coefficient (DC-biased beam) [A.s/m]) = %E",eta);
+		R_m=sqrt(k_1_eff*m)/(Q_m*`POW(eta,2.0));
+		$strobe("%M: R_m (Motional resistance (DC-biased beam) [Ohm]) = %E",R_m);
+		C_m=`POW(eta,2.0)/k_1_eff;
+		$strobe("%M: C_m (Motional capacitance (DC-biased beam) [F]) = %E",C_m);
+		L_m=m/`POW(eta,2.0);
+		$strobe("%M: L_m (Motional inductance (DC-biased beam) [H]) = %E",L_m);
+		kappa=3.0*k_3_eff/(8.0*k_1_eff)*sqrt(k_1_eff/m);			
+		$strobe("%M: kappa (Amplitude-frequency coefficient (DC-biased beam) [1/(m^2.s)]) = %E",kappa);
+		z_c=sqrt(4.0*sqrt(k_1_eff/m))/(sqrt(3.0*sqrt(3.0)*Q_m*(-kappa)));
+		$strobe("%M: z_c (Critical displacement (DC-biased beam) [m]) = %E",z_c);
+		i_out_max=eta*sqrt(k_1_eff/m)*z_c;
+		$strobe("%M: i_out_max (Maximum output current (DC-biased beam) [A]) = %E",i_out_max);
+		v_in_max=i_out_max*R_m;
+		$strobe("%M: v_in_max (Maximum input voltage (DC-biased beam) [V]) = %E",v_in_max);
+		E_max=0.5*k_1_eff*`POW(z_c,2.0);
+		$strobe("%M: E_max (Maximum reactive energy (DC-biased beam) [J]) = %E",E_max);
+
+	end
+	
+	Vin=V(in,beam);
+	Vout=V(out,beam);
+	$strobe("\n%M: V_in [V] = %E", Vin);
+	$strobe("%M: V_out [V]= %E", Vout);
+
+        // F_e: voltage-controlled electrostatic force [N]
+	F_e=0.5*C_0*g_0/`POW(g_0-Pos(z),2.0)*`POW(V(in,beam),2.0)-0.5*C_0*g_0/`POW(g_0+Pos(z),2.0)*`POW(V(out,beam),2.0);
+	$strobe("%M: F_e (Electrostatic force [N]) = %E", F_e);
+
+        // F_s: spring force [N]
+        F_s=k_1*Pos(z)+k_2*`POW(Pos(z),2.0)+k_3*`POW(Pos(z),3.0)+k_4*`POW(Pos(z),4.0)+k_5*`POW(Pos(z),5.0);
+	$strobe("%M: F_s (Spring force [N]) = %E", F_s);
+
+	// Nonlinear state-space description
+	Pos(velocity):ddt(Pos(z))==Pos(velocity);
+	Pos(z):ddt(Pos(velocity))==1/m*(-b*Pos(velocity)-F_s+F_e+white_noise(4.0*`P_K*$temperature*b, "BROWNIAN_NOISE"));
+
+	`define SLEW    
+	`ifdef SLEW    
+		V(dVindt)<+ddt(slew(V(in,beam),1p,-1p));
+		V(dVoutdt)<+ddt(slew(V(out,beam),1p,-1p));
+	`else
+		V(dVindt) <+ddt(V(in, beam));
+		V(dVoutdt)<+ddt(V(out,beam));
+	`endif
+
+	I(out,beam)<+(C_0*g_0/(g_0+Pos(z))*V(dVoutdt)-C_0*g_0/`POW(g_0+Pos(z),2.0)*Pos(velocity)*V(out,beam));
+	I(in,beam)<+(C_0*g_0/(g_0-Pos(z))*V(dVindt)+C_0*g_0/`POW(g_0-Pos(z),2.0)*Pos(velocity)*V(in,beam));
+	I(beam)<+I(out,beam)+I(in,beam);
+
+    end
+
+endmodule
+

@@ -1,0 +1,31 @@
+create_item("OHMIC_CANTILEVER_RF_MEMS_SWITCH_DEBUG", /* Instance name */ 
+      "Ohmic Cantilever RF MEMS Switch", /* Component description */ 
+      "OHMIC_CANTILEVER_RF_MEMS_SWITCH_DEBUG", /* Instance prefix */ 
+      NULL, 
+      NULL, 
+      "OHMIC_CANTILEVER_RF_MEMS_SWITCH_DEBUG", 
+      standard_dialog, 
+      "*", 
+      ComponentNetlistFmt, 
+      "OHMIC_CANTILEVER_RF_MEMS_SWITCH_DEBUG", 
+      ComponentAnnotFmt, 
+      "SYM_S12P",
+      no_artwork, 
+      NULL, 
+      ITEM_PRIMITIVE_EX, 
+      create_parm("g_0","nominal gap height [m]", PARM_OPTIMIZABLE | PARM_STATISTICAL, "StdFileFormSet", UNITLESS_UNIT, prm("StdForm","0.6e-6")),
+      create_parm("g_d","nominal gap height minus dimple thickness [m]", PARM_OPTIMIZABLE | PARM_STATISTICAL, "StdFileFormSet", UNITLESS_UNIT, prm("StdForm","0.2e-6")),
+      create_parm("l","beam length [m]", PARM_OPTIMIZABLE | PARM_STATISTICAL, "StdFileFormSet", UNITLESS_UNIT, prm("StdForm","75e-6")),
+      create_parm("t","beam thickness [m]", PARM_OPTIMIZABLE | PARM_STATISTICAL, "StdFileFormSet", UNITLESS_UNIT, prm("StdForm","5e-6")),
+      create_parm("w","beam width [m]", PARM_OPTIMIZABLE | PARM_STATISTICAL, "StdFileFormSet", UNITLESS_UNIT, prm("StdForm","30e-6")),
+      create_parm("W_c","contact width [m]", PARM_OPTIMIZABLE | PARM_STATISTICAL, "StdFileFormSet", UNITLESS_UNIT, prm("StdForm","10e-6")),
+      create_parm("W","electrode width [m]", PARM_OPTIMIZABLE | PARM_STATISTICAL, "StdFileFormSet", UNITLESS_UNIT, prm("StdForm","15e-6")),
+      create_parm("x","beam anchor to electrode edge distance [m]", PARM_OPTIMIZABLE | PARM_STATISTICAL, "StdFileFormSet", UNITLESS_UNIT, prm("StdForm","30e-6")),
+      create_parm("R_c","contact resistance [Ohm]", PARM_OPTIMIZABLE | PARM_STATISTICAL, "StdFileFormSet", UNITLESS_UNIT, prm("StdForm","1")),
+      create_parm("rho","mass density of the beam material [kg/m^3]. The mass density of Au is 19200 kg/m^3.", PARM_OPTIMIZABLE | PARM_STATISTICAL, "StdFileFormSet", UNITLESS_UNIT, prm("StdForm","19.2e3")),
+      create_parm("E","Young's modulus of the beam material [Pa]. The Young's modulus of Au is 78 GPa.", PARM_OPTIMIZABLE | PARM_STATISTICAL, "StdFileFormSet", UNITLESS_UNIT, prm("StdForm","78e9")),
+      create_parm("lambda","mean-free path, distance covered by a molecule in a gas between successive collisions [m]", PARM_OPTIMIZABLE | PARM_STATISTICAL, "StdFileFormSet", UNITLESS_UNIT, prm("StdForm","1.5e-7")),
+      create_parm("mu","viscosity coefficient, measure of resistance of a gas to changes in the transport of molecular momentum [kg/(m.s)]", PARM_OPTIMIZABLE | PARM_STATISTICAL, "StdFileFormSet", UNITLESS_UNIT, prm("StdForm","1.845e-5")),
+      create_parm("c_1","van der Waals force coefficient [N.m]", PARM_OPTIMIZABLE | PARM_STATISTICAL, "StdFileFormSet", UNITLESS_UNIT, prm("StdForm","10e-80")),
+      create_parm("c_2","nuclear force coefficient [N.m^8]", PARM_OPTIMIZABLE | PARM_STATISTICAL, "StdFileFormSet", UNITLESS_UNIT, prm("StdForm","10e-75"))
+      );

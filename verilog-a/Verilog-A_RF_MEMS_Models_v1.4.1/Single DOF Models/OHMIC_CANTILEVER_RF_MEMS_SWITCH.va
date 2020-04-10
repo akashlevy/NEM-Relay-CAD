@@ -1,0 +1,111 @@
+/* Verilog-A large-signal model for a ohmic cantilever RF MEMS switch
+Content of OHMIC_CANTILEVER_RF_MEMS_SWITCH.va. Open-source code covered by BSD license.
+
+The Verilog-A large signal model can be used for operating point, small signal (AC, SP) 
+and large signal (HB, PSS, QPSS) simulations, using ADS, SpectreRF or Qucs. It includes
+large-signal electromechanical effects, as well as small-signal Brownian and 
+Johnson-Nyquist noise. It does not include electro-thermal effects yet.
+
+Electromechanical: C-V hysteresis, hold-down, self-actuation, 
+	displacement-compensated squeeze-film damping
+Noise: Brownian noise, Johnson-Nyquist noise (not included: 1/f noise)
+
+5th of September, 2011
+Check for update: http://www-personal.umich.edu/~vcaeken
+
+Reference: "Modeling RF MEMS Devices", by K. Van Caekenberghe, 
+IEEE Microwave Magazine, vol. 13, no. 1, pp. 83-110, Jan.-Feb. 2012 */
+
+`include "disciplines.vams"
+`include "constants.vams"
+
+module OHMIC_CANTILEVER_RF_MEMS_SWITCH(s,d,g);
+    inout s, d, g;
+    electrical s, d, g;
+    kinematic z, velocity;
+
+    // Dimensions 
+    parameter real g_0=0.6e-6 from (0:inf); // nominal gap height [m]
+    parameter real g_d=0.2e-6 from (0:inf); // nominal gap height minus dimple thickness [m]
+    parameter real l=75e-6 from (0:inf); // beam length [m]
+    parameter real t=5e-6 from (0:inf); // beam thickness [m]
+    parameter real w=30e-6 from (0:inf); // beam width [m]
+    parameter real W_c=10e-6 from (0:inf); // contact width [m]
+    parameter real W=10e-6 from (0:inf); // electrode width [m]
+    parameter real x=30e-6 from (0:inf); // beam anchor to electrode edge distance [m]
+    // Electrical parameters
+    parameter real R_c=1.0 from [0:inf); // contact resistance [Ohm]
+    // Material parameters: beam (gold)
+    parameter real rho=19.2e3 from (0:inf); // mass density [kg/m^3]
+    parameter real E=78e9 from (0:inf); // Young's modulus [Pa]
+    // Material parameters: gas (air):
+    parameter real lambda=1.5e-7 from [0:inf); // mean-free path [m]
+    parameter real mu=1.845e-5 from (0:inf); // viscosity coefficient [kg/(m.s)]
+    // van der Waals and nuclear force coefficients
+    parameter real c_1=10e-80 from [0:inf); // van der Waals force coefficient [N.m]
+    parameter real c_2=10e-75 from [0:inf); // nuclear force coefficient [N.m^8]
+
+    real A, b, C_ds, C_gs, C_u, F_c, F_e, F_s, f_m_0, I1, I2, IIP3, k_1, m, Q_e, Q_m, t_s_max, t_s_min, V_H, V_P, V_S;
+
+    analog begin
+
+	@ ( initial_step ) begin
+		A=W*w;
+		$strobe("\n%M: A (electrode area [m^2]) = %E",A);
+		m=0.4*rho*l*t*w;
+		$strobe("%M: m (effective beam mass [kg]) = %E",m);
+		k_1=2*E*w*pow(t/l,3)*(1-x/l)/(3-4*pow(x/l,3)+pow(x/l,4));
+		$strobe("%M: k_1 (spring constant [N/m]) = %E",k_1);
+		V_H=sqrt(2*k_1*(g_0-g_d)*pow(g_d,2)/(`P_EPS0*A));
+		$strobe("%M: V_H (hold-down voltage [V]) = %E",V_H);
+		V_P=sqrt(8*k_1*pow(g_0,3)/(27*A*`P_EPS0));
+		$strobe("%M: V_P (pull-in voltage [V]) = %E",V_P);
+		f_m_0=sqrt(k_1/m)/(2*`M_PI);
+		$strobe("%M: f_m_0 (mechanical resonant frequency [Hz]) = %E",f_m_0);
+		Q_m=(sqrt(E*rho)*pow(t,2)*pow(g_0,3))/(mu*pow(w*l,2));
+		$strobe("%M: Q_m (mechanical quality factor []) = %E",Q_m);
+		V_S=V_P;
+		t_s_max=27*pow(V_P,2)/(4*2*`M_PI*f_m_0*Q_m*pow(V_S,2));
+		$strobe("%M: t_s_max (maximum switching time [s], V_S = V_P) = %E",t_s_max);
+		t_s_min=3.67*V_P/(V_S*sqrt(k_1/m));
+		$strobe("%M: t_s_min (minimum switching time [s], V_S = V_P) = %E",t_s_min);
+		C_u=`P_EPS0*W_c*w/g_0;
+		$strobe("%M: C_u (up-state capacitance [F]) = %E",C_u);
+		IIP3=10*log(2*k_1*pow(g_0,2)/(`M_PI*10e9*pow(C_u*50,2)))+30;
+		$strobe("%M: IIP3 (third order intercept [dBm], C=C_u, delta_f < f_m_0, f=10 GHz, Z=50 Ohm) = %E",IIP3);
+	end
+
+	// b: damping coefficient [N.s/m] (displacement-compensated squeeze-film damping)
+	Q_e=Q_m*pow(1.1-pow(g_d*tanh(Pos(z)/g_d)/g_0,2),1.5)*(1+9.9638*pow(lambda/(g_0-g_d*tanh(Pos(z)/g_d)),1.159));
+	$strobe("\n%M: Q_e (displacement-compensated mechanical quality factor []) = %E",Q_e);
+	b=k_1/(2*`M_PI*f_m_0*Q_e);
+	$strobe("%M: b (damping coefficient [N.s/m]) = %E",b);
+
+        // Forces
+	F_c=c_1*W_c*w/pow(g_d-g_d*tanh(Pos(z)/g_d)+1e-9,3)-c_2*W_c*w/pow(g_d-g_d*tanh(Pos(z)/g_d)+1e-9,10);
+	$strobe("%M: F_c (attractive van der Waals and repulsive nuclear forces [N]) = %E",F_c);
+        F_e=`P_EPS0*A*pow(V(s,g),2)/2*1/pow(g_0-Pos(z),2);
+	//F_e=`P_EPS0*A*pow(V(s,g),2)/2*1/pow(g_0-g_d*tanh(Pos(z)/g_d),2); // Envelope simulation
+	$strobe("%M: F_e (electrostatic force [N]) = %E",F_e);
+        F_s=k_1*Pos(z);
+        //F_s=k_1*g_d*tanh(Pos(z)/g_d); // Envelope simulation
+	$strobe("%M: F_s (spring force [N]) = %E",F_s);
+
+	// Nonlinear state-space description
+	Pos(velocity):ddt(Pos(z))==Pos(velocity);
+	Pos(z):ddt(Pos(velocity))==1/m*(-b*Pos(velocity)-F_s+F_e+F_c+white_noise(4*`P_K*$temperature*b, "BROWNIAN_NOISE"));
+
+	C_ds=`P_EPS0*W_c*w/(g_0-Pos(z));
+	I1=ddt(C_ds*V(d,s));
+	I2=V(d,s)/R_c+white_noise(4*`P_K*$temperature/R_c, "JOHNSON_NYQUIST_NOISE_R_c");
+	if (Pos(z)<g_d)
+		I(d,s)<+I1;
+	else
+		I(d,s)<+I2;
+
+	C_gs=`P_EPS0*A/(g_0-Pos(z));
+	I(g,s)<+ddt(C_gs*V(g,s));
+
+    end
+
+endmodule
