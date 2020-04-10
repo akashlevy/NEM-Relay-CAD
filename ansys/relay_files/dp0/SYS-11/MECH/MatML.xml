@@ -241,10 +241,6 @@
         </BulkDetails>
       </Material>
       <Metadata>
-        <ParameterDetails id="pa0">
-          <Name>Red</Name>
-          <Unitless />
-        </ParameterDetails>
         <ParameterDetails id="pa1">
           <Name>Green</Name>
           <Unitless />
@@ -255,6 +251,18 @@
         </ParameterDetails>
         <ParameterDetails id="pa3">
           <Name>Material Property</Name>
+          <Unitless />
+        </ParameterDetails>
+        <ParameterDetails id="pa6">
+          <Name>Temperature</Name>
+          <Units name="Temperature">
+            <Unit>
+              <Name>C</Name>
+            </Unit>
+          </Units>
+        </ParameterDetails>
+        <ParameterDetails id="pa0">
+          <Name>Red</Name>
           <Unitless />
         </ParameterDetails>
         <ParameterDetails id="pa4">
@@ -269,14 +277,6 @@
             </Unit>
             <Unit power="-3">
               <Name>m</Name>
-            </Unit>
-          </Units>
-        </ParameterDetails>
-        <ParameterDetails id="pa6">
-          <Name>Temperature</Name>
-          <Units name="Temperature">
-            <Unit>
-              <Name>C</Name>
             </Unit>
           </Units>
         </ParameterDetails>

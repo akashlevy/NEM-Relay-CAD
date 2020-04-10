@@ -1,0 +1,8 @@
+
+Error [cortex] [time 4/8/20 8:0:51] Participant Solution 2 encountered a fatal error. Message: The Mechanical beginning time 0 is different from the system coupling service beginning time 5.E-09.  This may have been caused by changes made to the Mechanical setup or upstream data.
+
+Error [cortex] [time 4/8/20 19:38:0] Participant Solution 2 encountered a fatal error. Message: Element 3920 (type = 2, SOLID186) (and maybe other elements) has become highly distorted.  Excessive distortion of elements is usually a symptom indicating the need for corrective action elsewhere.
+
+Error [cortex] [time 4/9/20 17:37:44] Participant Solution 2 encountered a fatal error. Message: The Mechanical beginning time 0 is different from the system coupling service beginning time 2.3E-08.  This may have been caused by changes made to the Mechanical setup or upstream data.
+
+Error [cortex] [time 4/9/20 17:40:0] Participant Solution 2 encountered a fatal error. Message: The Mechanical beginning time 0 is different from the system coupling service beginning time 2.3E-08.  This may have been caused by changes made to the Mechanical setup or upstream data.

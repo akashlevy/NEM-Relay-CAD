@@ -1,4 +1,4 @@
-# State file created:  2020/04/07 10:15:25
+# State file created:  2020/04/09 17:34:26
 # CFX-20.1
 
 CALCULATOR:
@@ -28,7 +28,7 @@ relay_files\dp0\SYS-14\MECH\file.rst
   Current Results File = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\\
 relay_files\dp0\SYS-14\MECH\file.rst
   Current Timestep = -1
-  Current Timevalue = 5e-09
+  Current Timevalue = 2.3e-08
   Edit Case Names = false
   File Angle Units = rad
   File Chemical Amount Units = kmol
@@ -54,11 +54,11 @@ relay_files\dp0\SYS-14\MECH\file.rst
   CASE:Case FFF 1
     Construct Variables From Fourier Coefficients = True
     Current Case Name = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\\
-relay_files\dp0\FFF-1\Fluent\FFF-1.2-6-00005.dat.gz
+relay_files\dp0\FFF-1\Fluent\FFF-1.2-3-00024.dat.gz
     Current Results File = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\\
-relay_files\dp0\FFF-1\Fluent\FFF-1.2-6-00005.dat.gz
+relay_files\dp0\FFF-1\Fluent\FFF-1.2-3-00024.dat.gz
     Current Timestep = -1
-    Current Timevalue = 5e-09
+    Current Timevalue = 2.4e-08
     File Angle Units = rad
     File Chemical Amount Units = kmol
     File Current Units = A
@@ -78,15 +78,18 @@ relay_files\dp0\FFF-1\Fluent\FFF-1.2-6-00005.dat.gz
       Colour Map = Default Colour Map
       Colour Mode = Constant
       Colour Scale = Linear
-      Colour Variable Boundary Values = Hybrid
+      Colour Variable = Pressure
+      Colour Variable Boundary Values = Conservative
       Culling Mode = No Culling
       Draw Faces = On
-      Draw Lines = Off
-      Instancing Transform = Default Transform
-      Lighting = true
+      Draw Lines = On
+      Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+      Lighting = On
       Line Colour = 0, 0, 0
       Line Colour Mode = Default
       Line Width = 1
+      Max = 0.0 [Pa]
+      Min = 0.0 [Pa]
       Range = Global
       Render Edge Angle = 0 [degree]
       Specular Lighting = On
@@ -101,6 +104,23 @@ relay_files\dp0\FFF-1\Fluent\FFF-1.2-6-00005.dat.gz
       Transform Texture = Off
       Transparency = 0.0
       Visibility = On
+      OBJECT VIEW TRANSFORM:
+        Apply Reflection = Off
+        Apply Rotation = Off
+        Apply Scale = Off
+        Apply Translation = Off
+        Principal Axis = Z
+        Reflection Plane Option = XY Plane
+        Rotation Angle = 0.0 [degree]
+        Rotation Axis From = 0 [m], 0 [m], 0 [m]
+        Rotation Axis To = 0 [m], 0 [m], 0 [m]
+        Rotation Axis Type = Principal Axis
+        Scale Vector = 1 , 1 , 1
+        Translation Vector = 0 [m], 0 [m], 0 [m]
+        X = 0.0 [m]
+        Y = 0.0 [m]
+        Z = 0.0 [m]
+      END
     END
     BOUNDARY:outside_wall
       Apply Instancing Transform = On
@@ -179,7 +199,7 @@ relay_files\dp0\SYS-14\MECH\file.rst
     Current Results File = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\\
 relay_files\dp0\SYS-14\MECH\file.rst
     Current Timestep = -1
-    Current Timevalue = 5e-09
+    Current Timevalue = 2.3e-08
     File Angle Units = rad
     File Chemical Amount Units = mol
     File Current Units = A
@@ -483,7 +503,7 @@ DEFAULT LEGEND:Default Legend View 1
   Legend Aspect = 0.07
   Legend Format = %10.3e
   Legend Orientation = Vertical
-  Legend Plot = /DATA READER/CASE:Case EM Transient/PRIMITIVE2D:N_fixedsu
+  Legend Plot = /VOLUME RENDERING:Volume Rendering 1
   Legend Position = 0.02, 0.15
   Legend Resolution = 256
   Legend Shading = Smooth
@@ -506,7 +526,7 @@ DEFAULT LEGEND:Default Legend View 2
   Legend Aspect = 0.07
   Legend Format = %10.3e
   Legend Orientation = Vertical
-  Legend Plot = /DATA READER/CASE:Case EM Transient/PRIMITIVE2D:N_fixedsu
+  Legend Plot = /VOLUME RENDERING:Volume Rendering 1
   Legend Position = 0.02, 0.15
   Legend Resolution = 256
   Legend Shading = Smooth
@@ -529,7 +549,7 @@ DEFAULT LEGEND:Default Legend View 3
   Legend Aspect = 0.07
   Legend Format = %10.3e
   Legend Orientation = Vertical
-  Legend Plot = /DATA READER/CASE:Case EM Transient/PRIMITIVE2D:N_fixedsu
+  Legend Plot = /VOLUME RENDERING:Volume Rendering 1
   Legend Position = 0.02, 0.15
   Legend Resolution = 256
   Legend Shading = Smooth
@@ -552,7 +572,7 @@ DEFAULT LEGEND:Default Legend View 4
   Legend Aspect = 0.07
   Legend Format = %10.3e
   Legend Orientation = Vertical
-  Legend Plot = /DATA READER/CASE:Case EM Transient/PRIMITIVE2D:N_fixedsu
+  Legend Plot = /VOLUME RENDERING:Volume Rendering 1
   Legend Position = 0.02, 0.15
   Legend Resolution = 256
   Legend Shading = Smooth
@@ -583,8 +603,8 @@ LIBRARY:
       Accumulated Time Step = -1
       Current Time Step = -1
       Reference Pressure = 0 [Pa]
-      Sequence Step = 4
-      Time = 5e-09 [s]
+      Sequence Step = 22
+      Time = 2.3e-08 [s]
       atstep = Accumulated Time Step
       ctstep = Current Time Step
       sstep = Sequence Step
@@ -1102,6 +1122,33 @@ UNIT SYSTEM:
   Preferred Units System = SI
   Update Units to Preferred = Off
 END
+USER SCALAR VARIABLE:Pressure.Gradient X
+  Boundary Values = Conservative
+  Calculate Global Range = No
+  Component Index = 1
+  Recipe = Vector Component
+  Variable = Pressure.Gradient
+END
+USER SCALAR VARIABLE:Pressure.Gradient Y
+  Boundary Values = Conservative
+  Calculate Global Range = No
+  Component Index = 2
+  Recipe = Vector Component
+  Variable = Pressure.Gradient
+END
+USER SCALAR VARIABLE:Pressure.Gradient Z
+  Boundary Values = Conservative
+  Calculate Global Range = No
+  Component Index = 3
+  Recipe = Vector Component
+  Variable = Pressure.Gradient
+END
+USER VECTOR VARIABLE:Pressure.Gradient
+  Boundary Values = Conservative
+  Calculate Global Range = No
+  Recipe = Gradient
+  Variable to Gradient = Pressure
+END
 VECTOR VARIABLE:Acceleration
   Boundary Values = Conservative
 END
@@ -1163,7 +1210,8 @@ PRIMITIVE2D:Fluidic_interface,/DATA READER/CASE:Case EM Transient/\
 PRIMITIVE2D:Fsin_1,/DATA READER/CASE:Case EM Transient/PRIMITIVE2D:N_cmmems179,/\
 DATA READER/CASE:Case EM Transient/PRIMITIVE2D:N_fixedsu,/DATA READER/CASE:Case \
 FFF 1/BOUNDARY:inside_wall,/DATA READER/CASE:Case FFF 1/BOUNDARY:outside_wall,/\
-DEFAULT LEGEND:Default Legend View 1,/WIREFRAME:Wireframe
+DEFAULT LEGEND:Default Legend View 1,/VOLUME RENDERING:Volume Rendering 1,/\
+WIREFRAME:Wireframe
   Projection = Orthographic
   Ruler Visibility = true
   Standard View = Isometric Y
@@ -1172,8 +1220,8 @@ DEFAULT LEGEND:Default Legend View 1,/WIREFRAME:Wireframe
     Pan = 0,0
     Pivot Point = 0,0,1.45e-06
     Rotation = -90, 0, 0
-    Rotation Quaternion = 0.279848,-0.364705,-0.115917,0.880476
-    Scale = 112750
+    Rotation Quaternion = -0.583916,0.769311,0.250225,0.067894
+    Scale = 127033
     Send To Viewer = True
   END
 END
@@ -1280,14 +1328,95 @@ VIEWPORT MANAGER:
   X Split = 0.5
   Y Split = 0.5
 END
+VOLUME RENDERING:Volume Rendering 1
+  Apply Instancing Transform = On
+  Apply Texture = Off
+  Blend Texture = On
+  Clip Planes = On
+  Colour = 0.75, 0.75, 0.75
+  Colour Map = Default Colour Map
+  Colour Mode = Use Plot Variable
+  Colour Scale = Linear
+  Colour Variable = Pressure
+  Colour Variable Boundary Values = Conservative
+  Culling Mode = No Culling
+  Domain List = /DOMAIN GROUP:All Domains
+  Draw Faces = On
+  Draw Lines = Off
+  Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+  Lighting = Off
+  Line Colour = 0, 0, 0
+  Line Colour Mode = Default
+  Line Width = 1
+  Make Edges Transparent = Off
+  Max = 0.0 [Pa]
+  Min = 0.0 [Pa]
+  Range = Global
+  Render Edge Angle = 0 [degree]
+  Specular Lighting = Off
+  Surface Drawing = Smooth Shading
+  Texture Angle = 0
+  Texture Direction = 0 , 1 , 0
+  Texture Material = Metal
+  Texture Position = 0 , 0
+  Texture Scale = 1
+  Texture Type = Predefined
+  Tile Texture = Off
+  Transform Texture = Off
+  Transparency = 0.2
+  Transparency Colour Map = Transparency
+  Variable = Pressure
+  Variable Boundary Values = Conservative
+  Visibility = On
+  Volume Rendering Max = 0.0 [Pa]
+  Volume Rendering Min = 0.0 [Pa]
+  Volume Rendering Normals = 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0
+  Volume Rendering Range = Global
+  Volume Rendering Scale = Linear
+  Volume Resolution = 20
+  OBJECT VIEW TRANSFORM:
+    Apply Reflection = Off
+    Apply Rotation = Off
+    Apply Scale = Off
+    Apply Translation = Off
+    Principal Axis = Z
+    Reflection Plane Option = XY Plane
+    Rotation Angle = 0.0 [degree]
+    Rotation Axis From = 0 [m], 0 [m], 0 [m]
+    Rotation Axis To = 0 [m], 0 [m], 0 [m]
+    Rotation Axis Type = Principal Axis
+    Scale Vector = 1 , 1 , 1
+    Translation Vector = 0 [m], 0 [m], 0 [m]
+    X = 0.0 [m]
+    Y = 0.0 [m]
+    Z = 0.0 [m]
+  END
+END
 WIREFRAME:Wireframe
   Apply Instancing Transform = On
   Colour = 0, 0, 0
   Domain List = All Domains
   Edge Angle = 30 [degree]
-  Instancing Transform = Default Transform
+  Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
   Line Colour Mode = Default
   Line Width = 1
-  Show Surface Mesh = Off
+  Show Surface Mesh = On
   Visibility = On
+  OBJECT VIEW TRANSFORM:
+    Apply Reflection = Off
+    Apply Rotation = Off
+    Apply Scale = Off
+    Apply Translation = Off
+    Principal Axis = Z
+    Reflection Plane Option = XY Plane
+    Rotation Angle = 0.0 [degree]
+    Rotation Axis From = 0 [m], 0 [m], 0 [m]
+    Rotation Axis To = 0 [m], 0 [m], 0 [m]
+    Rotation Axis Type = Principal Axis
+    Scale Vector = 1 , 1 , 1
+    Translation Vector = 0 [m], 0 [m], 0 [m]
+    X = 0.0 [m]
+    Y = 0.0 [m]
+    Z = 0.0 [m]
+  END
 END

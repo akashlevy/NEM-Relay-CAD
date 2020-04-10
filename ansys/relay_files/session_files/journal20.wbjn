@@ -1,0 +1,14 @@
+# encoding: utf-8
+# 2020 R1
+SetScriptVersion(Version="20.1.164")
+system1 = GetSystem(Name="SYS 2")
+setupComponent1 = system1.GetComponent(Name="Setup")
+setupComponent1.Clean()
+system2 = GetSystem(Name="FFF")
+setupComponent2 = system2.GetComponent(Name="Setup")
+setupComponent2.Clean()
+system3 = GetSystem(Name="SC")
+solutionComponent1 = system3.GetComponent(Name="Solution")
+solutionComponent1.Clean()
+ClearMessages()
+Save(Overwrite=True)

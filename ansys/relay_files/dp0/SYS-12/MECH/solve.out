@@ -105,13 +105,13 @@
   DISTRIBUTED MEMORY PARALLEL REQUESTED
        2 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
     TOTAL OF     2 CORES REQUESTED
-  INPUT FILE NAME              = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr487B\dummy.dat
-  OUTPUT FILE NAME             = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr487B\solve.out
+  INPUT FILE NAME              = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr7EDF\dummy.dat
+  OUTPUT FILE NAME             = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr7EDF\solve.out
   START-UP FILE MODE           = NOREAD
   STOP FILE MODE               = NOREAD
 
  RELEASE= 2020 R1              BUILD= 20.1      UP20191203   VERSION=WINDOWS x64 
- CURRENT JOBNAME=file0  10:12:42  APR 07, 2020 CP=      0.516
+ CURRENT JOBNAME=file0  07:23:37  APR 08, 2020 CP=      0.406
 
 
  PARAMETER _DS_PROGRESS =     999.0000000    
@@ -120,11 +120,11 @@
 
 
 
- *** NOTE ***                            CP =       0.750   TIME= 10:12:43
+ *** NOTE ***                            CP =       0.531   TIME= 07:23:37
  The /CONFIG,NOELDB command is not valid in a Distributed ANSYS          
  solution.  Command is ignored.                                          
 
- *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  10.2119444    
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  7.39361111    
 
  TITLE= 
  relay--Modal (C5)                                                             
@@ -133,7 +133,7 @@
  SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
   TYPE=STRI  DIMENSIONS=      248        1        1
 
- PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr487B\
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr7EDF\
 
  SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
   TYPE=STRI  DIMENSIONS=      248        1        1
@@ -171,7 +171,7 @@
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
  DISTRIBUTED ANSYS Mechanical Enterprise                       
 
- 20120530  VERSION=WINDOWS x64   10:12:43  APR 07, 2020 CP=      0.750
+ 20120530  VERSION=WINDOWS x64   07:23:37  APR 08, 2020 CP=      0.531
 
  relay--Modal (C5)                                                             
 
@@ -210,22 +210,24 @@
              Real Constant Set For Above Contact Is 26 & 25
  *********** Create Contact "Contact Region 19" ***********
              Real Constant Set For Above Contact Is 28 & 27
+ *********** Create Contact "Rough - Multiple To Substrate" ***********
+             Real Constant Set For Above Contact Is 30 & 29
  *********** Send Named Selection as Node Component ***********
  *********** Fixed Supports ***********
 
 
- ***** ROUTINE COMPLETED *****  CP =         1.172
+ ***** ROUTINE COMPLETED *****  CP =         0.688
 
 
  --- Number of total nodes = 11080
- --- Number of contact elements = 1302
+ --- Number of contact elements = 3686
  --- Number of spring elements = 0
  --- Number of bearing elements = 0
  --- Number of solid elements = 4431
  --- Number of condensed parts = 0
- --- Number of total elements = 5733
+ --- Number of total elements = 8117
 
- *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  10.2119444    
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  7.39361111    
 
  *****  ANSYS SOLUTION ROUTINE  *****
 
@@ -269,20 +271,20 @@
 
  *ENDIF
 
- *** NOTE ***                            CP =       1.250   TIME= 10:12:43
+ *** NOTE ***                            CP =       0.719   TIME= 07:23:37
  The automatic domain decomposition logic has selected the MESH domain   
  decomposition method with 2 processes per solution.                     
 
  *****  ANSYS SOLVE    COMMAND  *****
 
- *** WARNING ***                         CP =       1.281   TIME= 10:12:43
+ *** WARNING ***                         CP =       0.719   TIME= 07:23:37
  Element shape checking is currently inactive.  Issue SHPP,ON or         
  SHPP,WARN to reactivate, if desired.                                    
 
- *** NOTE ***                            CP =       1.359   TIME= 10:12:44
+ *** NOTE ***                            CP =       0.750   TIME= 07:23:37
  The model data was checked and warning messages were found.             
   Please review output or errors file ( C:\Users\Akash                   
- Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr487B\file0.err )  
+ Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr7EDF\file0.err )  
  for these warning messages.                                             
 
  *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
@@ -323,7 +325,7 @@
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
  DISTRIBUTED ANSYS Mechanical Enterprise                       
 
- 20120530  VERSION=WINDOWS x64   10:12:44  APR 07, 2020 CP=      1.406
+ 20120530  VERSION=WINDOWS x64   07:23:37  APR 08, 2020 CP=      0.750
 
  relay--Modal (C5)                                                             
 
@@ -341,11 +343,11 @@
    NUMBER OF MODES TO EXPAND . . . . . . . . . . .ALL
    ELEMENT RESULTS CALCULATION . . . . . . . . . .OFF
 
- *** NOTE ***                            CP =       1.453   TIME= 10:12:44
+ *** NOTE ***                            CP =       0.781   TIME= 07:23:37
  The conditions for direct assembly have been met.  No .emat or .erot    
  files will be produced.                                                 
 
- *** NOTE ***                            CP =       1.672   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 11 and contact element type 11 has been set up.  The       
  companion pair has real constant set ID 12.  Both pairs should have     
@@ -355,8 +357,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.21047E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.21047E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.13779E-07
  Default opening contact stiffness OPSF will be used.
@@ -370,13 +372,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8012   
  and target element 8093.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 12 and contact element type 11 has been set up.  The       
  companion pair has real constant set ID 11.  Both pairs should have     
@@ -386,8 +388,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.21047E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.21047E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.28801E-08
  Default opening contact stiffness OPSF will be used.
@@ -401,13 +403,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8030   
  and target element 8001.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 13 and contact element type 13 has been set up.  The       
  companion pair has real constant set ID 14.  Both pairs should have     
@@ -417,8 +419,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.16482E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.16482E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.17595E-07
  Default opening contact stiffness OPSF will be used.
@@ -432,13 +434,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8132   
  and target element 8188.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 14 and contact element type 13 has been set up.  The       
  companion pair has real constant set ID 13.  Both pairs should have     
@@ -448,8 +450,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.16482E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.16482E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.28801E-08
  Default opening contact stiffness OPSF will be used.
@@ -463,13 +465,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8146   
  and target element 8128.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 15 and contact element type 15 has been set up.  The       
  companion pair has real constant set ID 16.  Both pairs should have     
@@ -479,8 +481,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.23299E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.23299E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.12447E-07
  Default opening contact stiffness OPSF will be used.
@@ -494,13 +496,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8250   
  and target element 8334.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 16 and contact element type 15 has been set up.  The       
  companion pair has real constant set ID 15.  Both pairs should have     
@@ -510,8 +512,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.23299E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.23299E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.28801E-08
  Default opening contact stiffness OPSF will be used.
@@ -525,13 +527,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8268   
  and target element 8237.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 17 and contact element type 17 has been set up.  The       
  companion pair has real constant set ID 18.  Both pairs should have     
@@ -541,8 +543,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.18302E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.18302E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.15845E-07
  Default opening contact stiffness OPSF will be used.
@@ -556,13 +558,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8368   
  and target element 8453.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 18 and contact element type 17 has been set up.  The       
  companion pair has real constant set ID 17.  Both pairs should have     
@@ -572,8 +574,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.18302E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.18302E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.28801E-08
  Default opening contact stiffness OPSF will be used.
@@ -587,13 +589,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8384   
  and target element 8364.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 19 and contact element type 19 has been set up.  The       
  companion pair has real constant set ID 20.  Both pairs should have     
@@ -603,8 +605,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.21572E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.21572E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.13444E-07
  Default opening contact stiffness OPSF will be used.
@@ -618,13 +620,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8508   
  and target element 8648.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 20 and contact element type 19 has been set up.  The       
  companion pair has real constant set ID 19.  Both pairs should have     
@@ -634,8 +636,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.21572E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.21572E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.27857E-08
  Default opening contact stiffness OPSF will be used.
@@ -649,13 +651,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8548   
  and target element 8493.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 21 and contact element type 21 has been set up.  The       
  companion pair has real constant set ID 22.  Both pairs should have     
@@ -665,8 +667,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.23062E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.23062E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.12575E-07
  Default opening contact stiffness OPSF will be used.
@@ -680,13 +682,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8692   
  and target element 8801.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 22 and contact element type 21 has been set up.  The       
  companion pair has real constant set ID 21.  Both pairs should have     
@@ -696,8 +698,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.23062E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.23062E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.29165E-08
  Default opening contact stiffness OPSF will be used.
@@ -711,13 +713,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8732   
  and target element 8689.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 23 and contact element type 23 has been set up.  The       
  companion pair has real constant set ID 24.  Both pairs should have     
@@ -727,8 +729,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.22884E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.22884E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.12673E-07
  Default opening contact stiffness OPSF will be used.
@@ -742,13 +744,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8872   
  and target element 8981.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 24 and contact element type 23 has been set up.  The       
  companion pair has real constant set ID 23.  Both pairs should have     
@@ -758,8 +760,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.22884E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.22884E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.25751E-08
  Default opening contact stiffness OPSF will be used.
@@ -773,13 +775,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8916   
  and target element 8835.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 25 and contact element type 25 has been set up.  The       
  companion pair has real constant set ID 26.  Both pairs should have     
@@ -789,8 +791,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.20339E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.20339E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.14259E-07
  Default opening contact stiffness OPSF will be used.
@@ -804,13 +806,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.078   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 9070   
  and target element 9187.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.094   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 26 and contact element type 25 has been set up.  The       
  companion pair has real constant set ID 25.  Both pairs should have     
@@ -820,8 +822,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.20339E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.20339E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.27858E-08
  Default opening contact stiffness OPSF will be used.
@@ -835,13 +837,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.094   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 9110   
  and target element 9050.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.094   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 27 and contact element type 27 has been set up.  The       
  companion pair has real constant set ID 28.  Both pairs should have     
@@ -851,8 +853,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.25329E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.25329E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.11449E-07
  Default opening contact stiffness OPSF will be used.
@@ -866,13 +868,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.094   TIME= 07:23:37
  Max.  Initial penetration 3.97046694E-23 was detected between contact   
  element 9241 and target element 9293.                                   
  ****************************************
   
 
- *** NOTE ***                            CP =       1.688   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.094   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 28 and contact element type 27 has been set up.  The       
  companion pair has real constant set ID 27.  Both pairs should have     
@@ -882,8 +884,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.25329E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.25329E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.18000E-07
  Default opening contact stiffness OPSF will be used.
@@ -897,17 +899,92 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.703   TIME= 10:12:44
+ *** NOTE ***                            CP =       1.094   TIME= 07:23:37
  Max.  Initial penetration 1.32348898E-23 was detected between contact   
  element 9274 and target element 9237.                                   
  ****************************************
   
 
- *** WARNING ***                         CP =       1.703   TIME= 10:12:44
- Maximum contact stiffness 2.532948841E+20 is too big which can cause an 
+ *** NOTE ***                            CP =       1.094   TIME= 07:23:37
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 29 and contact element type 29 has been set up.  The       
+ companion pair has real constant set ID 30.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.45667E+20
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.96658E-08
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.80037E-09
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.16007E-06
+ Average contact pair depth                   0.96658E-07
+ Default pinball region factor PINB            1.0000    
+ *WARNING*: The default pinball radius may be too small to capture       
+ contacting zone under small sliding assumption.  Redefine the pinball   
+ radius if necessary.                                                    
+ The resulting pinball region                 0.96658E-07
+ *WARNING*: Initial penetration is included.
+ Rough contact is defined.
+
+ *** NOTE ***                            CP =       1.094   TIME= 07:23:37
+ Min.  Initial gap 5.E-08 was detected between contact element 11169 and 
+ target element 11601.                                                   
+ You may move entire target surface by: x= -2.456692009E-24, y=          
+ 2.028093337E-24, z= 5.E-08, to bring it in contact.                     
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       1.094   TIME= 07:23:37
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 30 and contact element type 29 has been set up.  The       
+ companion pair has real constant set ID 29.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Small sliding logic is assumed
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.45667E+20
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.18000E-07
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.50000E-02
+ The resulting elastic slip tolerance         0.30000E-08
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.60000E-06
+ Average contact pair depth                   0.18000E-06
+ Default pinball region factor PINB            1.0000    
+ The resulting pinball region                 0.18000E-06
+
+ *** NOTE ***                            CP =       1.094   TIME= 07:23:37
+ One of the contact searching regions contains at least 73 target        
+ elements.  You may reduce the pinball radius.                           
+ *WARNING*: Initial penetration is included.
+ Rough contact is defined.
+
+ *** NOTE ***                            CP =       1.094   TIME= 07:23:37
+ Min.  Initial gap 1.E-07 was detected between contact element 11489 and 
+ target element 9445.                                                    
+ You may move entire target surface by: x= -3.673577961E-24, y=          
+ 1.868413509E-24, z= -1.E-07, to bring it in contact.                    
+ ****************************************
+  
+
+ *** WARNING ***                         CP =       1.094   TIME= 07:23:37
+ Maximum contact stiffness 4.566666485E+19 is too big which can cause an 
  accuracy problem, you may scale the force units in the model.           
 
- *** WARNING ***                         CP =       1.703   TIME= 10:12:44
+ *** WARNING ***                         CP =       1.094   TIME= 07:23:37
  Minimum contact depth 2.575118698E-08 is too small which can cause an   
  accuracy problem, you may scale the length units in the model.          
   
@@ -917,10 +994,10 @@
   
      D I S T R I B U T E D   D O M A I N   D E C O M P O S E R
   
-  ...Number of elements: 5733
+  ...Number of elements: 8117
   ...Number of nodes:    11080
   ...Decompose to 2 CPU domains
-  ...Element load balance ratio =     1.012
+  ...Element load balance ratio =     1.092
 
 
                       L O A D   S T E P   O P T I O N S
@@ -935,7 +1012,69 @@
       ETMP        ALL               
 
 
- *** NOTE ***                            CP =       1.891   TIME= 10:12:45
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 11 and contact element type 11 has been set up.  The       
+ companion pair has real constant set ID 12.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.21047E+20
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.13779E-07
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.26204E-06
+ Average contact pair depth                   0.13779E-06
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.34447E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Max.  Initial penetration 0 was detected between contact element 8012   
+ and target element 8093.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 12 and contact element type 11 has been set up.  The       
+ companion pair has real constant set ID 11.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.21047E+20
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.28801E-08
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.63931E-07
+ Average contact pair depth                   0.28801E-07
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.72003E-08
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Max.  Initial penetration 0 was detected between contact element 8030   
+ and target element 8001.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 13 and contact element type 13 has been set up.  The       
  companion pair has real constant set ID 14.  Both pairs should have     
@@ -945,8 +1084,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.16482E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.16482E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.17595E-07
  Default opening contact stiffness OPSF will be used.
@@ -960,13 +1099,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.891   TIME= 10:12:45
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8132   
  and target element 8188.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.891   TIME= 10:12:45
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 14 and contact element type 13 has been set up.  The       
  companion pair has real constant set ID 13.  Both pairs should have     
@@ -976,8 +1115,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.16482E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.16482E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.28801E-08
  Default opening contact stiffness OPSF will be used.
@@ -991,13 +1130,75 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.891   TIME= 10:12:45
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8146   
  and target element 8128.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.891   TIME= 10:12:45
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 15 and contact element type 15 has been set up.  The       
+ companion pair has real constant set ID 16.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.23299E+20
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.12447E-07
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.26277E-06
+ Average contact pair depth                   0.12447E-06
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.31118E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Max.  Initial penetration 0 was detected between contact element 8250   
+ and target element 8334.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 16 and contact element type 15 has been set up.  The       
+ companion pair has real constant set ID 15.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.23299E+20
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.28801E-08
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.63931E-07
+ Average contact pair depth                   0.28801E-07
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.72003E-08
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Max.  Initial penetration 0 was detected between contact element 8268   
+ and target element 8237.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 17 and contact element type 17 has been set up.  The       
  companion pair has real constant set ID 18.  Both pairs should have     
@@ -1007,8 +1208,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.18302E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.18302E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.15845E-07
  Default opening contact stiffness OPSF will be used.
@@ -1022,13 +1223,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.891   TIME= 10:12:45
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8368   
  and target element 8453.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.891   TIME= 10:12:45
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 18 and contact element type 17 has been set up.  The       
  companion pair has real constant set ID 17.  Both pairs should have     
@@ -1038,8 +1239,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.18302E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.18302E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.28801E-08
  Default opening contact stiffness OPSF will be used.
@@ -1053,13 +1254,75 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.891   TIME= 10:12:45
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8384   
  and target element 8364.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.891   TIME= 10:12:45
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 19 and contact element type 19 has been set up.  The       
+ companion pair has real constant set ID 20.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.21572E+20
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.13444E-07
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.22677E-06
+ Average contact pair depth                   0.13444E-06
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.33609E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Max.  Initial penetration 0 was detected between contact element 8508   
+ and target element 8648.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 20 and contact element type 19 has been set up.  The       
+ companion pair has real constant set ID 19.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.21572E+20
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.27857E-08
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.87182E-07
+ Average contact pair depth                   0.27857E-07
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.69644E-08
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Max.  Initial penetration 0 was detected between contact element 8548   
+ and target element 8493.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 21 and contact element type 21 has been set up.  The       
  companion pair has real constant set ID 22.  Both pairs should have     
@@ -1069,8 +1332,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.23062E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.23062E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.12575E-07
  Default opening contact stiffness OPSF will be used.
@@ -1084,13 +1347,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.891   TIME= 10:12:45
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8692   
  and target element 8801.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.891   TIME= 10:12:45
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 22 and contact element type 21 has been set up.  The       
  companion pair has real constant set ID 21.  Both pairs should have     
@@ -1100,8 +1363,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.23062E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.23062E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.29165E-08
  Default opening contact stiffness OPSF will be used.
@@ -1115,13 +1378,75 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.891   TIME= 10:12:45
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 8732   
  and target element 8689.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.891   TIME= 10:12:45
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 23 and contact element type 23 has been set up.  The       
+ companion pair has real constant set ID 24.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.22884E+20
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.12673E-07
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.22033E-06
+ Average contact pair depth                   0.12673E-06
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.31682E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Max.  Initial penetration 0 was detected between contact element 8872   
+ and target element 8981.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 24 and contact element type 23 has been set up.  The       
+ companion pair has real constant set ID 23.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.22884E+20
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.25751E-08
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.80146E-07
+ Average contact pair depth                   0.25751E-07
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.64378E-08
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Max.  Initial penetration 0 was detected between contact element 8916   
+ and target element 8835.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 25 and contact element type 25 has been set up.  The       
  companion pair has real constant set ID 26.  Both pairs should have     
@@ -1131,8 +1456,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.20339E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.20339E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.14259E-07
  Default opening contact stiffness OPSF will be used.
@@ -1146,13 +1471,13 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.891   TIME= 10:12:45
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 9070   
  and target element 9187.                                                
  ****************************************
   
 
- *** NOTE ***                            CP =       1.891   TIME= 10:12:45
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
  Symmetric Deformable- deformable contact pair identified by real        
  constant set 26 and contact element type 25 has been set up.  The       
  companion pair has real constant set ID 25.  Both pairs should have     
@@ -1162,8 +1487,8 @@
  Linear contact is defined
  Contact algorithm: Augmented Lagrange method
  Contact detection at: Gauss integration point
- Contact stiffness factor FKN                  10.000    
- The resulting initial contact stiffness      0.20339E+21
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.20339E+20
  Default penetration tolerance factor FTOLN   0.10000    
  The resulting penetration tolerance          0.27858E-08
  Default opening contact stiffness OPSF will be used.
@@ -1177,9 +1502,71 @@
  Initial penetration/gap is excluded.
  Bonded contact (always) is defined.
 
- *** NOTE ***                            CP =       1.891   TIME= 10:12:45
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
  Max.  Initial penetration 0 was detected between contact element 9110   
  and target element 9050.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 27 and contact element type 27 has been set up.  The       
+ companion pair has real constant set ID 28.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.25329E+20
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.11449E-07
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.26871E-06
+ Average contact pair depth                   0.11449E-06
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.28623E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Max.  Initial penetration 3.97046694E-23 was detected between contact   
+ element 9241 and target element 9293.                                   
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 28 and contact element type 27 has been set up.  The       
+ companion pair has real constant set ID 27.  Both pairs should have     
+ the same behavior.                                                      
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.25329E+20
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.18000E-07
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.60000E-06
+ Average contact pair depth                   0.18000E-06
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.45000E-07
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       1.266   TIME= 07:23:37
+ Max.  Initial penetration 1.32348898E-23 was detected between contact   
+ element 9274 and target element 9237.                                   
  ****************************************
   
 
@@ -1224,41 +1611,43 @@
     10  0.694800E-13
 
  Range of element maximum matrix coefficients in global coordinates
- Maximum = 4413711.29 at element 9249.                                   
- Minimum = 7930.73514 at element 227.                                    
+ Maximum = 1125666.04 at element 3363.                                   
+ Minimum = 4818.51715 at element 8970.                                   
 
    *** ELEMENT MATRIX FORMULATION TIMES
      TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-        1      3362  SOLID187      0.469   0.000139
-        2        51  SOLID186      0.016   0.000306
+        1      3362  SOLID187      0.219   0.000065
+        2        51  SOLID186      0.031   0.000613
         3        51  SOLID186      0.016   0.000306
-        4        51  SOLID186      0.016   0.000306
-        5        51  SOLID186      0.016   0.000306
+        4        51  SOLID186      0.000   0.000000
+        5        51  SOLID186      0.000   0.000000
         6       185  SOLID187      0.016   0.000084
-        7       188  SOLID187      0.016   0.000083
+        7       188  SOLID187      0.031   0.000166
         8       209  SOLID187      0.031   0.000150
         9       183  SOLID187      0.016   0.000085
-       10       100  SOLID186      0.016   0.000156
-       11        61  CONTA174      0.000   0.000000
+       10       100  SOLID186      0.031   0.000313
+       11        61  CONTA174      0.016   0.000256
        12        61  TARGE170      0.000   0.000000
        13        58  CONTA174      0.016   0.000269
        14        58  TARGE170      0.000   0.000000
-       15        61  CONTA174      0.016   0.000256
+       15        61  CONTA174      0.031   0.000512
        16        61  TARGE170      0.000   0.000000
        17        58  CONTA174      0.000   0.000000
        18        58  TARGE170      0.000   0.000000
-       19        92  CONTA174      0.016   0.000170
+       19        92  CONTA174      0.000   0.000000
        20        92  TARGE170      0.000   0.000000
-       21        88  CONTA174      0.016   0.000178
+       21        88  CONTA174      0.000   0.000000
        22        88  TARGE170      0.000   0.000000
        23       100  CONTA174      0.000   0.000000
-       24       100  TARGE170      0.016   0.000156
-       25        93  CONTA174      0.000   0.000000
+       24       100  TARGE170      0.000   0.000000
+       25        93  CONTA174      0.016   0.000168
        26        93  TARGE170      0.000   0.000000
        27        40  CONTA174      0.000   0.000000
        28        40  TARGE170      0.000   0.000000
- Time at end of element matrix formulation CP = 2.421875.                
+       29      1192  CONTA174      0.188   0.000157
+       30      1192  TARGE170      0.031   0.000026
+ Time at end of element matrix formulation CP = 1.765625.                
 
   BLOCK LANCZOS CALCULATION OF UP TO     6 EIGENVECTORS.
   NUMBER OF EQUATIONS              =        32217
@@ -1268,15 +1657,15 @@
   MAXIMUM EIGENVALUE               =  0.10000E+31
 
 
-  Local memory allocated for solver              =     52.602 MB
-  Local memory required for in-core solution     =     50.164 MB
-  Local memory required for out-of-core solution =     21.367 MB
+  Local memory allocated for solver              =     52.362 MB
+  Local memory required for in-core solution     =     49.937 MB
+  Local memory required for out-of-core solution =     21.260 MB
 
-  Total memory allocated for solver              =    105.843 MB
-  Total memory required for in-core solution     =    100.938 MB
-  Total memory required for out-of-core solution =     43.398 MB
+  Total memory allocated for solver              =    103.863 MB
+  Total memory required for in-core solution     =     99.053 MB
+  Total memory required for out-of-core solution =     42.261 MB
 
- *** NOTE ***                            CP =       4.000   TIME= 10:12:53
+ *** NOTE ***                            CP =       3.281   TIME= 07:23:40
  The Distributed Sparse Matrix Solver used by the Block Lanczos          
  eigensolver is currently running in the in-core memory mode.  This      
  memory mode uses the most amount of memory in order to avoid using the  
@@ -1287,7 +1676,7 @@
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
  DISTRIBUTED ANSYS Mechanical Enterprise                       
 
- 20120530  VERSION=WINDOWS x64   10:13:02  APR 07, 2020 CP=      4.875
+ 20120530  VERSION=WINDOWS x64   07:23:41  APR 08, 2020 CP=      4.172
 
  relay--Modal (C5)                                                             
 
@@ -1298,17 +1687,17 @@
   MODE    FREQUENCY (HERTZ)      
 
 
-    1     7741221.818648    
-    2     12662959.46897    
-    3     12676497.76716    
-    4     59660436.43384    
-    5     59831112.48370    
-    6     60539497.04871    
+    1     7735083.323914    
+    2     12654079.73201    
+    3     12667840.98721    
+    4     59601846.65580    
+    5     59773383.40624    
+    6     60151915.89282    
 
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
  DISTRIBUTED ANSYS Mechanical Enterprise                       
 
- 20120530  VERSION=WINDOWS x64   10:13:02  APR 07, 2020 CP=      4.906
+ 20120530  VERSION=WINDOWS x64   07:23:42  APR 08, 2020 CP=      4.219
 
  relay--Modal (C5)                                                             
 
@@ -1319,14 +1708,14 @@
           ***** PARTICIPATION FACTOR CALCULATION *****  X  DIRECTION
                                                                                   CUMULATIVE     RATIO EFF.MASS
   MODE   FREQUENCY       PERIOD      PARTIC.FACTOR     RATIO    EFFECTIVE MASS   MASS FRACTION   TO TOTAL MASS
-     1    0.774122E+07   0.12918E-06   0.41357E-10    0.000437    0.171040E-20    0.190313E-06    0.210590E-07
-     2    0.126630E+08   0.78970E-07  -0.71002E-09    0.007507    0.504131E-18    0.562839E-04    0.620701E-05
-     3    0.126765E+08   0.78886E-07   0.84421E-09    0.008926    0.712693E-18    0.135584E-03    0.877489E-05
-     4    0.596604E+08   0.16762E-07   0.94576E-07    1.000000    0.894456E-14    0.995377        0.110128    
-     5    0.598311E+08   0.16714E-07  -0.56068E-08    0.059283    0.314357E-16    0.998875        0.387045E-03
-     6    0.605395E+08   0.16518E-07   0.31802E-08    0.033626    0.101139E-16     1.00000        0.124526E-03
+     1    0.773508E+07   0.12928E-06   0.41158E-10    0.000435    0.169394E-20    0.188338E-06    0.208563E-07
+     2    0.126541E+08   0.79026E-07  -0.72096E-09    0.007628    0.519786E-18    0.579799E-04    0.639976E-05
+     3    0.126678E+08   0.78940E-07   0.83148E-09    0.008797    0.691366E-18    0.134848E-03    0.851231E-05
+     4    0.596018E+08   0.16778E-07   0.94519E-07    1.000000    0.893386E-14    0.993430        0.109996    
+     5    0.597734E+08   0.16730E-07  -0.57663E-08    0.061006    0.332497E-16    0.997127        0.409380E-03
+     6    0.601519E+08   0.16625E-07   0.50837E-08    0.053784    0.258435E-16     1.00000        0.318193E-03
  -----------------------------------------------------------------------------------------------------------------
-   sum                                                            0.898732E-14                    0.110655    
+   sum                                                            0.899416E-14                    0.110739    
  -----------------------------------------------------------------------------------------------------------------
 
 
@@ -1334,14 +1723,14 @@
           ***** PARTICIPATION FACTOR CALCULATION *****  Y  DIRECTION
                                                                                   CUMULATIVE     RATIO EFF.MASS
   MODE   FREQUENCY       PERIOD      PARTIC.FACTOR     RATIO    EFFECTIVE MASS   MASS FRACTION   TO TOTAL MASS
-     1    0.774122E+07   0.12918E-06  -0.12339E-11    0.000013    0.152248E-23    0.169306E-09    0.187453E-10
-     2    0.126630E+08   0.78970E-07  -0.85894E-09    0.009074    0.737775E-18    0.820436E-04    0.908370E-05
-     3    0.126765E+08   0.78886E-07  -0.68976E-09    0.007287    0.475773E-18    0.134951E-03    0.585786E-05
-     4    0.596604E+08   0.16762E-07   0.55959E-08    0.059118    0.313139E-16    0.361717E-02    0.385546E-03
-     5    0.598311E+08   0.16714E-07   0.94657E-07    1.000000    0.895992E-14    0.999995        0.110317    
-     6    0.605395E+08   0.16518E-07   0.22085E-09    0.002333    0.487730E-19     1.00000        0.600508E-06
+     1    0.773508E+07   0.12928E-06  -0.13717E-11    0.000014    0.188161E-23    0.209085E-09    0.231669E-10
+     2    0.126541E+08   0.79026E-07  -0.84701E-09    0.008946    0.717426E-18    0.797210E-04    0.883316E-05
+     3    0.126678E+08   0.78940E-07  -0.70059E-09    0.007399    0.490831E-18    0.134262E-03    0.604325E-05
+     4    0.596018E+08   0.16778E-07   0.57415E-08    0.060640    0.329651E-16    0.379737E-02    0.405876E-03
+     5    0.597734E+08   0.16730E-07   0.94683E-07    1.000000    0.896482E-14    0.999974        0.110378    
+     6    0.601519E+08   0.16625E-07   0.48541E-09    0.005127    0.235623E-18     1.00000        0.290106E-05
  -----------------------------------------------------------------------------------------------------------------
-   sum                                                            0.899249E-14                    0.110718    
+   sum                                                            0.899923E-14                    0.110801    
  -----------------------------------------------------------------------------------------------------------------
 
 
@@ -1349,14 +1738,14 @@
           ***** PARTICIPATION FACTOR CALCULATION *****  Z  DIRECTION
                                                                                   CUMULATIVE     RATIO EFF.MASS
   MODE   FREQUENCY       PERIOD      PARTIC.FACTOR     RATIO    EFFECTIVE MASS   MASS FRACTION   TO TOTAL MASS
-     1    0.774122E+07   0.12918E-06   0.97597E-07    1.000000    0.952526E-14    0.999998        0.117278    
-     2    0.126630E+08   0.78970E-07  -0.10423E-10    0.000107    0.108643E-21    0.999998        0.133765E-08
-     3    0.126765E+08   0.78886E-07   0.89503E-10    0.000917    0.801076E-20    0.999999        0.986308E-07
-     4    0.596604E+08   0.16762E-07  -0.91497E-10    0.000937    0.837162E-20     1.00000        0.103074E-06
-     5    0.598311E+08   0.16714E-07   0.12882E-11    0.000013    0.165937E-23     1.00000        0.204306E-10
-     6    0.605395E+08   0.16518E-07   0.19999E-10    0.000205    0.399946E-21     1.00000        0.492426E-08
+     1    0.773508E+07   0.12928E-06   0.97598E-07    1.000000    0.952541E-14    0.999998        0.117280    
+     2    0.126541E+08   0.79026E-07  -0.93540E-11    0.000096    0.874981E-22    0.999998        0.107730E-08
+     3    0.126678E+08   0.78940E-07   0.88013E-10    0.000902    0.774636E-20    0.999999        0.953755E-07
+     4    0.596018E+08   0.16778E-07  -0.92149E-10    0.000944    0.849149E-20     1.00000        0.104550E-06
+     5    0.597734E+08   0.16730E-07   0.17231E-11    0.000018    0.296898E-23     1.00000        0.365549E-10
+     6    0.601519E+08   0.16625E-07   0.20827E-10    0.000213    0.433749E-21     1.00000        0.534045E-08
  -----------------------------------------------------------------------------------------------------------------
-   sum                                                            0.952528E-14                    0.117278    
+   sum                                                            0.952543E-14                    0.117280    
  -----------------------------------------------------------------------------------------------------------------
 
 
@@ -1364,14 +1753,14 @@
           ***** PARTICIPATION FACTOR CALCULATION *****ROTX DIRECTION
                                                                                   CUMULATIVE     RATIO EFF.MASS
   MODE   FREQUENCY       PERIOD      PARTIC.FACTOR     RATIO    EFFECTIVE MASS   MASS FRACTION   TO TOTAL MASS
-     1    0.774122E+07   0.12918E-06    0.0000        0.000000     0.00000         0.00000         0.00000    
-     2    0.126630E+08   0.78970E-07  -0.81298E-13    1.000000    0.660933E-26    0.726546        0.291245E-01
-     3    0.126765E+08   0.78886E-07  -0.49016E-13    0.602924    0.240260E-26    0.990658        0.105872E-01
-     4    0.596604E+08   0.16762E-07    0.0000        0.000000     0.00000        0.990658         0.00000    
-     5    0.598311E+08   0.16714E-07  -0.92172E-14    0.113376    0.849571E-28    0.999998        0.374369E-03
-     6    0.605395E+08   0.16518E-07    0.0000        0.000000     0.00000        0.999998         0.00000    
+     1    0.773508E+07   0.12928E-06    0.0000        0.000000     0.00000         0.00000         0.00000    
+     2    0.126541E+08   0.79026E-07  -0.80842E-13    1.000000    0.653550E-26    0.718457        0.287991E-01
+     3    0.126678E+08   0.78940E-07  -0.49763E-13    0.615561    0.247640E-26    0.990691        0.109124E-01
+     4    0.596018E+08   0.16778E-07    0.0000        0.000000     0.00000        0.990691         0.00000    
+     5    0.597734E+08   0.16730E-07  -0.92011E-14    0.113815    0.846602E-28    0.999998        0.373061E-03
+     6    0.601519E+08   0.16625E-07    0.0000        0.000000     0.00000        0.999998         0.00000    
  -----------------------------------------------------------------------------------------------------------------
-   sum                                                            0.909691E-26                    0.400862E-01
+   sum                                                            0.909658E-26                    0.400847E-01
  -----------------------------------------------------------------------------------------------------------------
 
 
@@ -1379,14 +1768,14 @@
           ***** PARTICIPATION FACTOR CALCULATION *****ROTY DIRECTION
                                                                                   CUMULATIVE     RATIO EFF.MASS
   MODE   FREQUENCY       PERIOD      PARTIC.FACTOR     RATIO    EFFECTIVE MASS   MASS FRACTION   TO TOTAL MASS
-     1    0.774122E+07   0.12918E-06    0.0000        0.000000     0.00000         0.00000         0.00000    
-     2    0.126630E+08   0.78970E-07   0.49011E-13    0.602768    0.240210E-26    0.264010        0.105850E-01
-     3    0.126765E+08   0.78886E-07  -0.81310E-13    1.000000    0.661136E-26    0.990652        0.291334E-01
-     4    0.596604E+08   0.16762E-07   0.92160E-14    0.113344    0.849354E-28    0.999987        0.374274E-03
-     5    0.598311E+08   0.16714E-07    0.0000        0.000000     0.00000        0.999987         0.00000    
-     6    0.605395E+08   0.16518E-07    0.0000        0.000000     0.00000        0.999987         0.00000    
+     1    0.773508E+07   0.12928E-06    0.0000        0.000000     0.00000         0.00000         0.00000    
+     2    0.126541E+08   0.79026E-07   0.49758E-13    0.615400    0.247588E-26    0.272130        0.109101E-01
+     3    0.126678E+08   0.78940E-07  -0.80855E-13    1.000000    0.653753E-26    0.990686        0.288081E-01
+     4    0.596018E+08   0.16778E-07   0.91914E-14    0.113677    0.844812E-28    0.999971        0.372272E-03
+     5    0.597734E+08   0.16730E-07    0.0000        0.000000     0.00000        0.999971         0.00000    
+     6    0.601519E+08   0.16625E-07    0.0000        0.000000     0.00000        0.999971         0.00000    
  -----------------------------------------------------------------------------------------------------------------
-   sum                                                            0.909851E-26                    0.400932E-01
+   sum                                                            0.909815E-26                    0.400916E-01
  -----------------------------------------------------------------------------------------------------------------
 
 
@@ -1394,18 +1783,18 @@
           ***** PARTICIPATION FACTOR CALCULATION *****ROTZ DIRECTION
                                                                                   CUMULATIVE     RATIO EFF.MASS
   MODE   FREQUENCY       PERIOD      PARTIC.FACTOR     RATIO    EFFECTIVE MASS   MASS FRACTION   TO TOTAL MASS
-     1    0.774122E+07   0.12918E-06    0.0000        0.000000     0.00000         0.00000         0.00000    
-     2    0.126630E+08   0.78970E-07    0.0000        0.000000     0.00000         0.00000         0.00000    
-     3    0.126765E+08   0.78886E-07    0.0000        0.000000     0.00000         0.00000         0.00000    
-     4    0.596604E+08   0.16762E-07    0.0000        0.000000     0.00000         0.00000         0.00000    
-     5    0.598311E+08   0.16714E-07    0.0000        0.000000     0.00000         0.00000         0.00000    
-     6    0.605395E+08   0.16518E-07    0.0000        0.000000     0.00000         0.00000         0.00000    
+     1    0.773508E+07   0.12928E-06    0.0000        0.000000     0.00000         0.00000         0.00000    
+     2    0.126541E+08   0.79026E-07    0.0000        0.000000     0.00000         0.00000         0.00000    
+     3    0.126678E+08   0.78940E-07    0.0000        0.000000     0.00000         0.00000         0.00000    
+     4    0.596018E+08   0.16778E-07    0.0000        0.000000     0.00000         0.00000         0.00000    
+     5    0.597734E+08   0.16730E-07    0.0000        0.000000     0.00000         0.00000         0.00000    
+     6    0.601519E+08   0.16625E-07    0.0000        0.000000     0.00000         0.00000         0.00000    
 
 
 
 
 
- *** NOTE ***                            CP =       4.906   TIME= 10:13:02
+ *** NOTE ***                            CP =       4.219   TIME= 07:23:42
  The modes requested are mass normalized (Nrmkey on MODOPT).  However,   
  the modal masses and kinetic energies below are calculated with unit    
  normalized modes.                                                       
@@ -1414,23 +1803,23 @@
 
                                                                          EFFECTIVE MASS
   MODE  FREQUENCY   MODAL MASS     KENE      |      X-DIR      RATIO%   Y-DIR      RATIO%   Z-DIR      RATIO% 
-     1  0.7741E+07  0.8618E-14   10.19       |    0.1710E-20    0.00  0.1522E-23    0.00  0.9525E-14   11.73
-     2  0.1266E+08  0.1708E-14   5.407       |    0.5041E-18    0.00  0.7378E-18    0.00  0.1086E-21    0.00
-     3  0.1268E+08  0.1707E-14   5.416       |    0.7127E-18    0.00  0.4758E-18    0.00  0.8011E-20    0.00
-     4  0.5966E+08  0.8564E-14   601.7       |    0.8945E-14   11.01  0.3131E-16    0.04  0.8372E-20    0.00
-     5  0.5983E+08  0.8679E-14   613.3       |    0.3144E-16    0.04  0.8960E-14   11.03  0.1659E-23    0.00
-     6  0.6054E+08  0.1506E-14   108.9       |    0.1011E-16    0.01  0.4877E-19    0.00  0.3999E-21    0.00
+     1  0.7735E+07  0.8618E-14   10.18       |    0.1694E-20    0.00  0.1882E-23    0.00  0.9525E-14   11.73
+     2  0.1265E+08  0.1695E-14   5.356       |    0.5198E-18    0.00  0.7174E-18    0.00  0.8750E-22    0.00
+     3  0.1267E+08  0.1694E-14   5.365       |    0.6914E-18    0.00  0.4908E-18    0.00  0.7746E-20    0.00
+     4  0.5960E+08  0.8550E-14   599.5       |    0.8934E-14   11.00  0.3297E-16    0.04  0.8491E-20    0.00
+     5  0.5977E+08  0.8701E-14   613.6       |    0.3325E-16    0.04  0.8965E-14   11.04  0.2969E-23    0.00
+     6  0.6015E+08  0.1501E-14   107.2       |    0.2584E-16    0.03  0.2356E-18    0.00  0.4337E-21    0.00
  --------------------------------------------------------------------------------------------------------------
-   sum                                       |    0.8987E-14   11.07  0.8992E-14   11.07  0.9525E-14   11.73
+   sum                                       |    0.8994E-14   11.07  0.8999E-14   11.08  0.9525E-14   11.73
  --------------------------------------------------------------------------------------------------------------
 
 
  *** ANSYS BINARY FILE STATISTICS
   BUFFER SIZE USED= 16384
-        3.125 MB WRITTEN ON ELEMENT SAVED DATA FILE: file0.esav
-       10.562 MB WRITTEN ON ASSEMBLED MATRIX FILE: file0.full
-        1.125 MB WRITTEN ON MODAL MATRIX FILE: file0.mode
-        2.000 MB WRITTEN ON RESULTS FILE: file0.rst
+        5.750 MB WRITTEN ON ELEMENT SAVED DATA FILE: file0.esav
+       11.000 MB WRITTEN ON ASSEMBLED MATRIX FILE: file0.full
+        1.250 MB WRITTEN ON MODAL MATRIX FILE: file0.mode
+        2.250 MB WRITTEN ON RESULTS FILE: file0.rst
  *************** Write FE CONNECTORS *********
 
  WRITE OUT CONSTRAINT EQUATIONS TO FILE= file.ce                                                                                                                                                                                                                                                             
@@ -1440,18 +1829,18 @@
  FINISH SOLUTION PROCESSING
 
 
- ***** ROUTINE COMPLETED *****  CP =         5.016
+ ***** ROUTINE COMPLETED *****  CP =         4.406
 
 
 
  PRINTOUT RESUMED BY /GOP
 
- *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  10.2175000    
+ *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  7.39500000    
 
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
  DISTRIBUTED ANSYS Mechanical Enterprise                       
 
- 20120530  VERSION=WINDOWS x64   10:13:03  APR 07, 2020 CP=      5.031
+ 20120530  VERSION=WINDOWS x64   07:23:42  APR 08, 2020 CP=      4.406
 
  relay--Modal (C5)                                                             
 
@@ -1459,7 +1848,7 @@
 
           ***** ANSYS RESULTS INTERPRETATION (POST1) *****
 
- *** NOTE ***                            CP =       5.031   TIME= 10:13:03
+ *** NOTE ***                            CP =       4.406   TIME= 07:23:42
  Reading results into the database (SET command) will update the current 
  displacement and force boundary conditions in the database with the     
  values from the results file for that load set.  Note that any          
@@ -1479,29 +1868,29 @@
  EXIT THE ANSYS POST1 DATABASE PROCESSOR
 
 
- ***** ROUTINE COMPLETED *****  CP =         5.062
+ ***** ROUTINE COMPLETED *****  CP =         4.422
 
 
 
  PRINTOUT RESUMED BY /GOP
 
- *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  10.2175000    
+ *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  7.39500000    
 
  PARAMETER _PREPTIME =     0.000000000    
 
- PARAMETER _SOLVTIME =     20.00000000    
+ PARAMETER _SOLVTIME =     5.000000000    
 
  PARAMETER _POSTTIME =     0.000000000    
 
- PARAMETER _TOTALTIM =     20.00000000    
+ PARAMETER _TOTALTIM =     5.000000000    
 
- *GET  _DLBRATIO  FROM  ACTI  ITEM=SOLU DLBR  VALUE=  1.01243684    
+ *GET  _DLBRATIO  FROM  ACTI  ITEM=SOLU DLBR  VALUE=  1.09228863    
 
- *GET  _COMBTIME  FROM  ACTI  ITEM=SOLU COMB  VALUE= 0.271115200    
+ *GET  _COMBTIME  FROM  ACTI  ITEM=SOLU COMB  VALUE= 0.147007400    
  --- Number of total nodes = 11080
- --- Number of total elements = 5733
- --- Element load balance ratio = 1.01243684
- --- Time to combine distributed files = 0.2711152
+ --- Number of total elements = 8117
+ --- Element load balance ratio = 1.09228863
+ --- Time to combine distributed files = 0.1470074
 
  EXIT ANSYS WITHOUT SAVING DATABASE
 
@@ -1512,7 +1901,7 @@
 +--------- D I S T R I B U T E D   A N S Y S   S T A T I S T I C S ------------+
 
 Release: 2020 R1            Build: 20.1       Update: UP20191203   Platform: WINDOWS x64 
-Date Run: 04/07/2020   Time: 10:13     Process ID: 8988
+Date Run: 04/08/2020   Time: 07:23     Process ID: 2188
 Operating System: Windows 10  (Build: 18363)
 
 Processor Model: Intel(R) Core(TM) i5-6360U CPU @ 2.00GHz
@@ -1538,28 +1927,28 @@ Input File: dummy.dat
 
   Core                Machine Name   Working Directory
  -----------------------------------------------------
-     0             DESKTOP-H2RNGL6   C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr487B
-     1             DESKTOP-H2RNGL6   C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr487B
+     0             DESKTOP-H2RNGL6   C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr7EDF
+     1             DESKTOP-H2RNGL6   C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr7EDF
  
-Latency time from master to core     1 =    3.911 microseconds
+Latency time from master to core     1 =   52.809 microseconds
  
-Communication speed from master to core     1 =  1520.88 MB/sec
+Communication speed from master to core     1 =  1587.93 MB/sec
 
-Total CPU time for main thread                    :        4.8 seconds
-Total CPU time summed for all threads             :        5.1 seconds
+Total CPU time for main thread                    :        4.3 seconds
+Total CPU time summed for all threads             :        4.4 seconds
 
-Elapsed time spent obtaining a license            :        1.4 seconds
-Elapsed time spent pre-processing model (/PREP7)  :        0.5 seconds
-Elapsed time spent solution - preprocessing       :        1.0 seconds
-Elapsed time spent computing solution             :       17.5 seconds
-Elapsed time spent solution - postprocessing      :        0.3 seconds
-Elapsed time spent post-processing model (/POST1) :        0.1 seconds
+Elapsed time spent obtaining a license            :        1.1 seconds
+Elapsed time spent pre-processing model (/PREP7)  :        0.1 seconds
+Elapsed time spent solution - preprocessing       :        0.4 seconds
+Elapsed time spent computing solution             :        4.4 seconds
+Elapsed time spent solution - postprocessing      :        0.1 seconds
+Elapsed time spent post-processing model (/POST1) :        0.0 seconds
  
 Eigensolver used                                  :            Block Lanczos
-Equation solver computational rate                :        0.4 Gflops
-Equation solver effective I/O rate                :        0.2 GB/sec
+Equation solver computational rate                :        8.0 Gflops
+Equation solver effective I/O rate                :        2.4 GB/sec
 
-Maximum total memory used                         :      368.0 MB
+Maximum total memory used                         :      380.0 MB
 Maximum total memory allocated                    :     3136.0 MB
 Total physical memory available                   :          4 GB
 
@@ -1580,11 +1969,11 @@ Total amount of I/O read from disk                :        0.0 GB
  |---------------------------------------------------------------------------|
  |                                                                           |
  | Database Requested(-db)  1024 MB    Scratch Memory Requested      1024 MB |
- | Maximum Database Used       8 MB    Maximum Scratch Memory Used    182 MB |
+ | Maximum Database Used      11 MB    Maximum Scratch Memory Used    189 MB |
  |                                                                           |
  |---------------------------------------------------------------------------|
  |                                                                           |
- |        CP Time      (sec) =          5.125       Time  =  10:13:03        |
- |        Elapsed Time (sec) =         24.000       Date  =  04/07/2020      |
+ |        CP Time      (sec) =          4.438       Time  =  07:23:42        |
+ |        Elapsed Time (sec) =          8.000       Date  =  04/08/2020      |
  |                                                                           |
  *---------------------------------------------------------------------------*
