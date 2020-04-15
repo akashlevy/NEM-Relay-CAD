@@ -2,10 +2,10 @@
 <Storage>
   <Project Version="9.1">
     <base-designpoint-name valType="String">0</base-designpoint-name>
-    <timestamp-max valType="Int64">101033</timestamp-max>
+    <timestamp-max valType="Int64">103147</timestamp-max>
     <framework-build-version valType="String">20.1.164.0</framework-build-version>
     <external-version-string valType="String">2020 R1</external-version-string>
-    <last-saved-utc valType="String">04/10/2020 14:32:28</last-saved-utc>
+    <last-saved-utc valType="String">04/14/2020 04:40:44</last-saved-utc>
     <managed-categories valType="String">[report, misc, progress]</managed-categories>
     <logHistory valType="StringArray">
       <ArrayEntry Index="0">AkashLevy@DESKTOP-8U7FQ8E:C:\Users\AkashLevy\AppData\Local\Temp\WorkbenchLogs\CoreEvents8004.log</ArrayEntry>
@@ -26,6 +26,7 @@
       <ArrayEntry Index="15">Akash Levy@DESKTOP-H2RNGL6:C:\Users\Akash Levy\AppData\Local\Temp\WorkbenchLogs\CoreEvents4920.log</ArrayEntry>
       <ArrayEntry Index="16">Akash Levy@DESKTOP-H2RNGL6:C:\Users\Akash Levy\AppData\Local\Temp\WorkbenchLogs\CoreEvents5844.log</ArrayEntry>
       <ArrayEntry Index="17">Akash Levy@DESKTOP-H2RNGL6:C:\Users\Akash Levy\AppData\Local\Temp\WorkbenchLogs\CoreEvents4024.log</ArrayEntry>
+      <ArrayEntry Index="18">Akash Levy@DESKTOP-H2RNGL6:C:\Users\Akash Levy\AppData\Local\Temp\WorkbenchLogs\CoreEvents8008.log</ArrayEntry>
     </logHistory>
     <expression-scope-container valType="String">Parameters</expression-scope-container>
     <project-type valType="String">WB2</project-type>
@@ -136,7 +137,33 @@
 "bf6bce80-44aa-4ac0-9dca-ed07532338c1": "/FileTypesContainer/FileType:AnsysResultFileType",
 "67a2e1d3-0248-4144-9ce9-a505a5fe5728": "/FileContainer/FileReference:F102",
 "ea8e5780-783c-4207-88b2-d5e776e490a5": "/FileContainer/FileReference:F88",
-"bac66b75-5911-431b-8615-1c2e58867d89": "/FileTypesContainer/FileType:FLUENTSolutionTranscript"
+"bac66b75-5911-431b-8615-1c2e58867d89": "/FileTypesContainer/FileType:FLUENTSolutionTranscript",
+"499fb782-79ab-4528-8547-53b08df32d22": "/FileContainer/FileReference:F159",
+"0be06302-1579-4bd9-b019-6680843e3d7c": "/Schematic/System:CFX",
+"ef215169-6139-40d9-9d92-b525865fd6af": "/Schematic/Component:Setup 7",
+"0361bc50-4838-46e9-88d6-a54560600e2e": "/Schematic/Component:Solution 7",
+"a16a6ba6-3fc5-48f7-8c11-9c556d6b4b88": "/Schematic/Component:Geometry 6",
+"a6a7ca4f-77ca-46ae-91b1-82738f7d3fca": "/Schematic/Component:Mesh 1",
+"59ab2cf0-c392-48bd-a24a-f4dcd4d11068": "/Schematic/Component:Setup 6",
+"101624a4-e9b6-4037-989c-6f6d3b2040ed": "/Schematic/Component:Solution 6",
+"27ef14de-4744-49b4-9d41-31493a8f9a32": "/Schematic/Component:Results 5",
+"4d7cb7dd-255b-4e94-b2e3-024b3bc2b4c1": "/Schematic/System:SC 1",
+"8676be5b-1af0-43f1-a3e0-f7269ce091e0": "/FileContainer/FileReference:F160",
+"e5abc3ad-d04e-4091-a5f9-c2bddd9020a3": "/FileContainer/FileReference:F161",
+"f8c54b29-4552-4468-975e-f6c0e213f57a": "/FileTypesContainer/FileType:CMDBMeshFileType",
+"193933a7-bab0-482c-9101-c4f24dc7ee62": "/FileTypesContainer/FileType:CFXPreCase",
+"c93d4673-7539-44cb-9752-db856216166b": "/FileContainer/FileReference:F166",
+"ac4d65f2-e366-4f19-bf10-97620d743af3": "/Schematic/Component:Results 6",
+"4b589198-74dc-46e5-9ca0-ed87e34e0d4c": "/Schematic/Component:Solution 8",
+"793f6bfc-9846-4be5-8a35-ba080cde6786": "/Schematic/Component:Setup 8",
+"03d5d650-f6a4-4517-8649-582e7ac84ff0": "/Schematic/Component:Model 3",
+"13f1f67c-732d-444d-9b2b-70b1b7c0592d": "/Schematic/Component:Geometry 7",
+"3591e842-c25d-4acf-ba3f-9df69a18c667": "/Schematic/Component:Engineering Data 3",
+"aa4f2ed6-d72b-4814-a09e-b380f4e69534": "/Schematic/System:SYS 3",
+"0fad902c-e01d-4d5f-94be-2b2fb37c9fc5": "/FileTypesContainer/FileType:CFXSolverInput",
+"e5294eb5-e403-43e1-80dd-24d3a3b4a4dc": "/FileTypesContainer/FileType:CFXSolverOutput",
+"5d5ddb92-d6cc-4d30-8f74-738aad1efde8": "/FileTypesContainer/FileType:default",
+"41cf92df-661b-4ea6-aaa6-e33517103395": "/FileTypesContainer/FileType:CFXSolverResults"
 }</ReferenceList>
       </ProjectReferenceList>
       <DesignPointReferenceListCollection>
@@ -271,7 +298,6 @@
 "b44a4e40-40b9-422e-8169-27d836354cb9": "/Solution 5/AxisContinuous:AxisX",
 "768a2790-eaf9-44bc-be11-8ce0b3ce2078": "/Solution 5/AxisContinuous:AxisY",
 "18d2ac27-2306-4f71-a3ea-12116f77b644": "/Solution 2/MechanicalSolution:SolutionData for Structural|Transient|ANSYS",
-"de0c7241-bd94-4bc3-9d62-8c2ac3afa4d3": "/Results 3/SolutionDataLink:SolutionData for Structural|Transient|ANSYS",
 "45912178-b800-4ad3-857e-c6bfef05c75c": "/Setup 5/SystemCouplingTransientCoSimulationParticipant:Solution 3",
 "46555538-8f8c-472f-8549-432506d1162a": "/Setup 3/SystemCouplingTransientCoSimulationParticipant:Solution 3",
 "c8fb175d-d709-46a0-a092-1b0d16d053f1": "/Setup 3/SystemCouplingRegion:outside_wall",
@@ -288,7 +314,54 @@
 "71559314-88a0-4afa-b569-5d3bb1a7dc80": "/Solution 5/ChartVariable:Solution 3:Data Transfer 2:Change:RMS",
 "bbc2ada5-a35a-4d1d-9925-62954e8034b4": "/Solution 5/AxisContinuous:AxisX 1",
 "5173c26c-9dfd-4136-9b5c-449b43a5ed23": "/Solution 5/AxisContinuous:AxisY 1",
-"38a4f951-1f06-462b-8335-e9f35b0a6b0a": "/Solution 5/ConvergenceChart:Chart"
+"38a4f951-1f06-462b-8335-e9f35b0a6b0a": "/Solution 5/ConvergenceChart:Chart",
+"c699a5c0-2d20-4570-b6b0-5339caedf9fa": "/Solution 7/ContainerInputConnections:CouplingContainerInputConnections",
+"617fc9a2-c4a7-40aa-8214-bcb22f7b5458": "/Setup 7/CouplingSetupProvider:Setup 7Provider",
+"a2a32636-02d3-4f6e-9bc4-1f14ff5e33c3": "/Setup 7/ContainerInputConnections:CouplingContainerInputConnections",
+"d69fc057-01c2-4aeb-8f20-6be45ce3236e": "/Setup 6/SystemCouplingSetupData:Setup Coupling Data",
+"1ffa5d1a-7b7e-4d5c-8b27-d11a487f7c1b": "/Mesh 1/MechanicalModel:MechanicalModel",
+"9e92cdc3-f51c-4b2b-86fa-5413f9322f61": "/Mesh 1/MeshingGeneratedMeshOutputProvider:MeshingGeneratedMeshOutputProvider",
+"17a7c3e0-2214-4fd6-96b6-343488d760fe": "/Mesh 1/GeneratedMeshOutputForAQWAModelProvider:GeneratedMeshOutputForAQWAModelProvider",
+"9f07760e-b8e0-454c-9fa6-01ca4d406b9b": "/Mesh 1/MeshingMesh:MeshingMeshDataObject",
+"a4cabbe6-ee81-4a3f-91b0-cd8fcca23b28": "/Setup 6/CFXMeshDataLink:MeshingMeshDataObject",
+"46794d6c-9180-4ab7-b70d-d4e29afb19f0": "/Setup 6/CFXSetupProperties:Setup 6 Source",
+"f533dcbc-e651-41fc-b077-3bfb44d21282": "/Setup 6/CFXSetup:Setup 6 Provider",
+"092d33d0-77ce-435e-afbf-94e0daac3003": "/Solution 6/CFXSetupDataLink:Setup 6 Provider",
+"77409884-b60b-44bf-ad2e-fdea21dbc3d3": "/Solution 6/CFXSolutionProperties:Solution 6 Source",
+"a2e176f9-44bf-42b3-9975-0528fac10daf": "/Solution 6/CFXSolution:Solution 6 Provider",
+"4f608718-6eee-4cef-8a3a-cece9e2f9297": "/Results 5/SolutionDataLink:Solution 6 Provider",
+"d177cfd5-dc0c-4a42-8f29-10194f9426ee": "/Results 5/CFDResults:Results 5 Source",
+"f9f8340e-7c20-48bd-82c7-1652d4ce38ab": "/Mesh 1/MechanicalMeshFile:CMDBMesh",
+"6cd7f3ec-3f2d-4dbb-bead-663179cdb08a": "/Setup 6/SystemCouplingTransientCoSimulationParticipant:Solution 6",
+"756698df-66d6-4dbb-8e2f-3790fa486eef": "/Setup 6/SystemCouplingRegion:Relay",
+"29cfaca6-e770-412c-81c8-3d15fc1a16b7": "/Setup 6/SystemCouplingRegion:Walls",
+"a75d8082-30b2-49fa-a36e-2330cc1351fb": "/Setup 6/SystemCouplingVariable:Total Force",
+"8931e2de-6c0b-4404-a75a-f7e9014f1be0": "/Setup 6/SystemCouplingVariable:Mesh Displacement",
+"3ee5b818-b594-4164-906e-3afa69b4597b": "/Setup 7/SystemCouplingTransientCoSimulationParticipant:Solution 6",
+"52af32f3-11d6-4f5c-8995-ecb8d71d9350": "/Setup 7/SystemCouplingTransientCoSimulationParticipant:Solution 2",
+"35b906d5-4dfc-4d94-b26c-f04130d46376": "/Setup 7/SystemCouplingRegion:Relay",
+"d3c7da04-0178-4612-97fd-1189297f4e31": "/Setup 7/SystemCouplingRegion:Walls",
+"80490145-d472-4bbc-bdb5-ed727edbc2a5": "/Setup 7/SystemCouplingVariable:Total Force",
+"b4ac220a-16f8-4c07-9c5e-72cfd8ebdc25": "/Setup 7/SystemCouplingVariable:Mesh Displacement",
+"35273758-a136-4f46-8229-7a0d56caa824": "/Setup 7/SystemCouplingRegion:FSIN_1",
+"8a2fd3a1-bf6b-4638-b877-c0420f13f82f": "/Setup 7/SystemCouplingVariable:FORC",
+"7a781f3f-288d-48ca-8ddb-f0b2b66ea403": "/Setup 7/SystemCouplingVariable:INCD",
+"f7fa2efe-346e-47e2-9c04-d4b0ec7f9fee": "/Solution 7/ChartVariable:Solution 6:Data Transfer:Change:RMS",
+"3824ce47-f252-4ad5-a948-6918b45dde14": "/Solution 7/ChartVariable:Solution 2:Data Transfer 2:Change:RMS",
+"f5af079d-753a-4b9e-83b4-9a00c9d990f9": "/Solution 7/AxisContinuous:AxisX",
+"611c13e4-7798-46ce-b06d-6e2712ef4d37": "/Solution 7/AxisContinuous:AxisY",
+"3be5a61f-6121-408d-9f30-a75adab51670": "/Solution 7/ConvergenceChart:Chart",
+"d39d2843-09aa-493c-9fcb-7395cb80773e": "/Setup 7/DataTransferSettings:Data Transfer:TransferSettings 1",
+"34a43386-bca3-4aeb-b4f0-2c51bb5f78f4": "/Setup 7/DataTransferSettings:Data Transfer 2:TransferSettings",
+"33878e33-1b4a-4ff6-8b96-3fe9f9c5187d": "/Results 6/SimulationResults:ResultsObject for Structural|Transient|ANSYS",
+"fe587867-aab8-49cc-b6f5-a76dfae5ebc5": "/Setup 8/SimulationSetup:SetupObject for Structural|Transient|ANSYS",
+"7fbf3ce7-7bc1-41a9-bff1-40437aba5459": "/Solution 8/SimulationSolution:SolutionObject for Structural|Transient|ANSYS",
+"ccd84620-6cfd-458f-ab07-8f9542c27b7f": "/Setup 2/SystemCouplingTransientCoSimulationParticipant:Solution 2",
+"a6a98795-4748-4c63-8574-760e51a71060": "/Setup 2/SystemCouplingRegion:FSIN_1",
+"ea3f20ab-03be-4a53-95f4-284758498e32": "/Setup 2/SystemCouplingVariable:FORC",
+"5ccf233c-4a64-4be5-939c-388665fe6508": "/Setup 2/SystemCouplingVariable:INCD",
+"e9d26213-58f9-427b-89b2-95fc994c346e": "/Results 6/SimulationResultsStlZip:SimulationResultsStlZip",
+"3989eb7e-ba86-4d73-a8de-f8adf195e2b8": "/Results 6/TopologyOptimizationResultsCDB:TopologyOptimizationResultsCDB"
 }</ReferenceList>
         </DesignPointReferenceList>
       </DesignPointReferenceListCollection>
@@ -314,7 +387,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 101030, "Input": 1376, "Output": 1376}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 103141, "Input": 1376, "Output": 1376}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
       <Object Name="/FileContainer/FileReference:F20" Version="1.0">
@@ -345,7 +418,7 @@
       <Object Name="/FileContainer/FileReference:F11" Version="1.0">
         <class-type valType="String">FileReference</class-type>
         <object-name valType="String">F11</object-name>
-        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$81b137ec-37cd-40e1-8743-22122dba50a6, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 48}</member-data>
+        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$81b137ec-37cd-40e1-8743-22122dba50a6, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 55}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F12" Version="1.0">
         <class-type valType="String">FileReference</class-type>
@@ -402,15 +475,1243 @@
         <object-name valType="String">F69</object-name>
         <member-data valType="String">{"DisplayText": "file1.rst", "FileType": $$bf6bce80-44aa-4ac0-9dca-ed07532338c1, "DependentFiles": [], "ContainerAssociations": ["Solution 2"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\SYS-14\MECH\file1.rst", "ReferenceCount": 4}</member-data>
       </Object>
+      <Object Name="/FileContainer/FileReference:F159" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F159</object-name>
+        <member-data valType="String">{"DisplayText": "CFX.mshdb", "FileType": $$d61e0703-ebb4-462f-afbb-ba8312855b86, "DependentFiles": [], "ContainerAssociations": ["Mesh 1"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\global\MECH\CFX.mshdb", "ReferenceCount": 1}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F160" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F160</object-name>
+        <member-data valType="String">{"DisplayText": "CFX.cmdb", "FileType": $$f8c54b29-4552-4468-975e-f6c0e213f57a, "DependentFiles": [], "ContainerAssociations": ["Mesh 1"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\CFX\MECH\CFX.cmdb", "ReferenceCount": 1}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F161" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F161</object-name>
+        <member-data valType="String">{"DisplayText": "Fluid Flow CFX.cfx", "FileType": $$193933a7-bab0-482c-9101-c4f24dc7ee62, "DependentFiles": [], "ContainerAssociations": ["Setup 6"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\CFX\CFX\Fluid Flow CFX.cfx", "ReferenceCount": 1}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F166" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F166</object-name>
+        <member-data valType="String">{"DisplayText": "Fluid Flow CFX.def", "FileType": $$0fad902c-e01d-4d5f-94be-2b2fb37c9fc5, "DependentFiles": [], "ContainerAssociations": ["Setup 6"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\CFX\CFX\Fluid Flow CFX.def", "ReferenceCount": 1}</member-data>
+      </Object>
     </Container>
     <Container Name="Messages" Version="1.0">
       <container-type valType="String">Project:Messages</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 101031, "Input": 1377, "Output": 1377}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 103142, "Input": 1377, "Output": 1377}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/Messages/StoredMessage:Message 7" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 7</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(315) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 17:04:24, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 6" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 6</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(316) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 17:04:17, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 5" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 5</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(315) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 17:04:17, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 4" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 4</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(316) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 16:42:22, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 3" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 3</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(315) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 16:42:22, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 2" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 2</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "Update failed for the Solution component in System Coupling.  The coupled update for system Fluid Flow (CFX) threw an exception. The solver failed with a non-zero exit code of : 2", "Details": None, "Association": "", "DateTimeStamp": 04/13/2020 16:10:48, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": $$0361bc50-4838-46e9-88d6-a54560600e2e, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 1" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 1</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "A solver failure occurred during the run in the Fluid Flow (CFX) system", "Details": None, "Association": "", "DateTimeStamp": 04/13/2020 16:10:42, "Visibility": "Information", "MessageSourceContainer": "Solution 7", "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "Participant Solution 6 encountered a fatal error. Message: Stopped in routine SYNP_CHKCONV_SC Please do not save the project if you would like to recover to the last saved state.", "Details": None, "Association": "", "DateTimeStamp": 04/13/2020 16:10:35, "Visibility": "Information", "MessageSourceContainer": "Solution 7", "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 8" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 8</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(316) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 17:04:24, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 9" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 9</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(315) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 17:04:49, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 10" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 10</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(316) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 17:04:49, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 11" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 11</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(315) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 17:08:33, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 12" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 12</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(316) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 17:08:33, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 13" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 13</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(315) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 17:08:52, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 14" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 14</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(316) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 17:08:52, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 15" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 15</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(315) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 17:10:34, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 16" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 16</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(316) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 17:10:34, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 17" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 17</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(315) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 17:23:44, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 18" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 18</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(316) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 17:23:44, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 19" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 19</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(315) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 18:43:06, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 20" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 20</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(316) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 18:43:06, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 21" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 21</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(315) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 19:06:57, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 22" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 22</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(316) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 19:06:57, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 23" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 23</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "Participant Solution 6 encountered a fatal error. Message: Stopped in routine SYNP_CHKCONV_SC Please do not save the project if you would like to recover to the last saved state.", "Details": None, "Association": "", "DateTimeStamp": 04/13/2020 19:23:18, "Visibility": "Information", "MessageSourceContainer": "Solution 7", "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 24" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 24</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "A solver failure occurred during the run in the Fluid Flow (CFX) system", "Details": None, "Association": "", "DateTimeStamp": 04/13/2020 19:24:39, "Visibility": "Information", "MessageSourceContainer": "Solution 7", "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 25" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 25</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": "Update failed for the Solution component in System Coupling.  The coupled update for system Fluid Flow (CFX) threw an exception. The solver failed with a non-zero exit code of : 2", "Details": None, "Association": "", "DateTimeStamp": 04/13/2020 19:24:43, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": $$0361bc50-4838-46e9-88d6-a54560600e2e, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 26" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 26</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(315) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 21:03:02, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 27" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 27</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": """id(316) name(VariableXY.?) type.id(31) type(...art::Chart::VariableXYVis)  caught exception in RenderLoop-HitOverlay @
+	bool __cdecl Ans::Chart::Render::HitTopLoop::HitOverlay(const class Ans::Chart::Core::Ptr&lt;class Ans::Chart::Render::Vis&gt; &amp;,class Ans::Chart::Render::DrawContext &amp;,const class Ans::Chart::Render::PickPoint &amp;,class std::vector&lt;class Ans::Chart::Render::HitRecord,class std::allocator&lt;class Ans::Chart::Render::HitRecord&gt; &gt; &amp;,struct Ans::Chart::Render::HitTopLoop::Hits &amp;,unsigned int &amp;,unsigned int &amp;,class std::stack&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::deque&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt;,class std::allocator&lt;class Ans::Chart::Core::WeakPtr&lt;class Ans::Chart::Render::Vis&gt; &gt; &gt; &gt; &amp;) @line376""", "Details": """System.Exception: backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AAE2523  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x47	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+With inner error: \"_program &amp;&amp; _program-&gt;IsActive()\" - class boost::shared_ptr&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt; __cdecl Ans::Chart::Ogl::Shader::QueryAttributes&lt;class Ans::Chart::Ogl::GLSLBuiltinAttributes&gt;(void)
+backtrace: 	0000000024B235BE  	AnsDebug	ansdebug::callstack::callstack + 0x7A	(no file)
+	00007FF88AB5368F  	Ans.Chart.Scene	Ans::Chart::Scene::Window::WatchNodeForDeletion + 0x17947	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88AAE2547  	Ans.Chart.Scene	Ans::Chart::Scene::ErrorHandler::ExceptionHandlerToError + 0x6B	(no file)
+	00007FF88AAF41B1  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::HandleException + 0x91	(no file)
+	00007FF88AA07535  	Ans.Chart.Vis	Ans::Chart::Render::EventHandler::OnScroll + 0x7FE5	(no file)
+	00007FF8B2511030  	VCRUNTIME140	(no symbol)	(no file)
+	00007FF8B2513298  	VCRUNTIME140	is_exception_typeof + 0x1078	(no file)
+	00007FF8BFAA0666  	ntdll	RtlCaptureContext + 0x566	(no file)
+	00007FF88A9B8D17  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0x6BB	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B92E7  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::HitOverlay + 0xC8B	(no file)
+	00007FF88A9B70A2  	Ans.Chart.Vis	Ans::Chart::Render::HitTopLoop::operator() + 0x356	(no file)
+	00007FF88AAB3233  	Ans.Chart.Scene	Ans::Chart::Scene::Selector::UserRecord::operator= + 0x23FB	(no file)
+	00007FF88AAFA2AD  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0xB59	(no file)
+	00007FF88AAF67A6  	Ans.Chart.Scene	Ans::Chart::Scene::EventDispatcher::SelectToggle + 0x11F2	(no file)
+	00007FF88AAFAC18  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x14C4	(no file)
+	00007FF88AAFAE26  	Ans.Chart.Scene	Ans::Chart::Scene::EventProcessor::~EventProcessor + 0x16D2	(no file)
+	00007FF8BDC47BD4  	KERNEL32	BaseThreadInitThunk + 0x14	(no file)
+	00007FF8BFA6CED1  	ntdll	RtlUserThreadStart + 0x21	(no file)
+
+
+""", "Association": "", "DateTimeStamp": 04/13/2020 21:03:03, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 28" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 28</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\dp0\CFX\CFX\Fluid Flow CFX_003.res.err""", "Details": None, "Association": "", "DateTimeStamp": 04/13/2020 21:37:30, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 29" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 29</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Warning", "MessageCategory": "None", "Summary": r"""The following project file may not have been backed up before it was modified:
+C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\dp0\SC-1\SC\SyC\scLog.scl""", "Details": None, "Association": "", "DateTimeStamp": 04/13/2020 21:37:54, "Visibility": "Warning", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
     </Container>
     <Container Name="Parameters" Version="1.0">
       <container-type valType="String">Ansys.ParameterManager.ParameterManagerAddin:parameters</container-type>
@@ -419,13 +1720,13 @@
       <maxUpdateOrder valType="Double">1</maxUpdateOrder>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 100421, "Input": 97963, "Output": 1380}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 102831, "Input": 97963, "Output": 1380}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Parameters/DesignPoint:0" Version="1.0">
         <class-type valType="String">DesignPoint</class-type>
         <object-name valType="String">0</object-name>
-        <member-data valType="String">{"DisplayText": "DP 0", "JustDuplicated": False, "PartiallyRetainedData": [], "ValidRetainedData": [], "ErrorsOnLastUpdate": {"$$4d660802-f272-415b-b960-066a2827b25a": "Update of the Solution component in System Coupling failed: The coupled update for system Fluid Flow (Fluent) threw an exception. Update Solution Failed"}, "LastUpdateInformation": {"DidUpdate": "True", "DidPreRsmUpdate": "False", "UpdatedComponents": "Setup 2 in SYS 2, Setup 5 in SC, Solution 5 in SC"}, "Parameters": {}, "ParameterErrors": {}, "CurrentValues": {}, "ParameterStatus": {}, "Note": None, "IsUpToDate": False, "Exported": True, "Retained": True, "CurrentStateExported": False, "IsDataModelValid": True, "HasRetainedData": True, "HasBeenSolved": True, "UpdateOrder": 1}</member-data>
+        <member-data valType="String">{"DisplayText": "DP 0", "JustDuplicated": False, "PartiallyRetainedData": [], "ValidRetainedData": [], "ErrorsOnLastUpdate": {"$$0361bc50-4838-46e9-88d6-a54560600e2e": "Update of the Solution component in System Coupling failed: The coupled update for system Fluid Flow (CFX) threw an exception. The solver failed with a non-zero exit code of : 2"}, "LastUpdateInformation": {"DidUpdate": "True", "DidPreRsmUpdate": "False", "UpdatedComponents": "Setup 2 in SYS 2, Setup 7 in SC 1, Solution 7 in SC 1"}, "Parameters": {}, "ParameterErrors": {}, "CurrentValues": {}, "ParameterStatus": {}, "Note": None, "IsUpToDate": False, "Exported": True, "Retained": True, "CurrentStateExported": False, "IsDataModelValid": True, "HasRetainedData": True, "HasBeenSolved": True, "UpdateOrder": 1}</member-data>
         <properties-setByUserFlag-data valType="String">["IsDataModelValid"]</properties-setByUserFlag-data>
       </Object>
       <Object Name="/Parameters/DesignPointReportSetting:Design Points Report Setting" Version="1.0">
@@ -441,7 +1742,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 100773, "Input": 100789, "Output": 1383}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 102968, "Input": 102972, "Output": 1383}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Schematic/System:SYS" Version="1.0">
@@ -469,7 +1770,7 @@
       <Object Name="/Schematic/System:SYS 2" Version="1.0">
         <class-type valType="String">System</class-type>
         <object-name valType="String">SYS 2</object-name>
-        <member-data valType="String">{"DisplayText": "EM Transient", "Components": [$$6b0f42de-002f-4bd1-ade9-cce318665529, $$76671e9b-f9e8-4066-9fc6-188346bf17ca, $$23bccf75-f6af-4df2-8b55-0f936cecfade, $$488965fd-6e04-4deb-8f2f-eb463dfcaf6e, $$707ac187-6ba1-40d4-a8bc-fa05667dc641, $$700278f3-be7f-4331-bc80-343de83c4b03], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [$$23bccf75-f6af-4df2-8b55-0f936cecfade, $$488965fd-6e04-4deb-8f2f-eb463dfcaf6e], "ExcludedComponentTemplates": [], "Attributes": {"PhysicsType": "Structural", "AnalysisType": "Transient", "SolverType": "ANSYS", "SolverTypeDisplayString": "Mechanical APDL", "PhysicsTypeDisplayString": "Structural", "AnalysisTypeDisplayString": "Transient", "SystemName": "Transient Structural (ANSYS)", "AlreadyInSystem": "Yes", "VOLATILE:SystemName": "SYS 2"}, "SystemType": "Transient Structural (ANSYS)", "HeaderText": "Transient Structural", "SystemTypeAbbreviation": "SYS", "UniqueSystemDirectoryName": "SYS-14", "Physics": [], "AnalysisType": None, "SystemHelpId": "wb2sb_ transstructAN", "AdditionalSystemHelpId": None, "IsParametric": False, "CreatedFromTemplate": $$91c9394d-792a-47a9-80f0-fb97c460e02d, "Notes": None, "LayoutChildren": [$$b349d1e5-67e7-493f-a1ba-18c01e71af0b], "LayoutIndex": 0}</member-data>
+        <member-data valType="String">{"DisplayText": "EM Transient", "Components": [$$6b0f42de-002f-4bd1-ade9-cce318665529, $$76671e9b-f9e8-4066-9fc6-188346bf17ca, $$23bccf75-f6af-4df2-8b55-0f936cecfade, $$488965fd-6e04-4deb-8f2f-eb463dfcaf6e, $$707ac187-6ba1-40d4-a8bc-fa05667dc641, $$700278f3-be7f-4331-bc80-343de83c4b03], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [$$23bccf75-f6af-4df2-8b55-0f936cecfade, $$488965fd-6e04-4deb-8f2f-eb463dfcaf6e], "ExcludedComponentTemplates": [], "Attributes": {"PhysicsType": "Structural", "AnalysisType": "Transient", "SolverType": "ANSYS", "SolverTypeDisplayString": "Mechanical APDL", "PhysicsTypeDisplayString": "Structural", "AnalysisTypeDisplayString": "Transient", "SystemName": "Transient Structural (ANSYS)", "AlreadyInSystem": "Yes", "VOLATILE:SystemName": "SYS 2"}, "SystemType": "Transient Structural (ANSYS)", "HeaderText": "Transient Structural", "SystemTypeAbbreviation": "SYS", "UniqueSystemDirectoryName": "SYS-14", "Physics": [], "AnalysisType": None, "SystemHelpId": "wb2sb_ transstructAN", "AdditionalSystemHelpId": None, "IsParametric": False, "CreatedFromTemplate": $$91c9394d-792a-47a9-80f0-fb97c460e02d, "Notes": None, "LayoutChildren": [$$aa4f2ed6-d72b-4814-a09e-b380f4e69534], "LayoutIndex": 0}</member-data>
         <properties-setByUserFlag-data valType="String">["DisplayText"]</properties-setByUserFlag-data>
       </Object>
       <Object Name="/Schematic/System:FFF" Version="1.0">
@@ -481,6 +1782,21 @@
         <class-type valType="String">System</class-type>
         <object-name valType="String">SC</object-name>
         <member-data valType="String">{"DisplayText": "System Coupling", "Components": [$$1a1a3266-ba1f-4c63-b364-9834e3add168, $$4d660802-f272-415b-b960-066a2827b25a], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [$$1a1a3266-ba1f-4c63-b364-9834e3add168, $$4d660802-f272-415b-b960-066a2827b25a], "ExcludedComponentTemplates": [], "Attributes": {"PhysicsType": "Multiphysics", "AnalysisType": "Any", "SolverType": "System Coupling", "SolverTypeDisplayString": "System Coupling", "PhysicsTypeDisplayString": "Multiphysics", "AnalysisTypeDisplayString": "Any", "SystemName": "System Coupling", "VOLATILE:SystemName": "SC"}, "SystemType": "System Coupling", "HeaderText": "System Coupling", "SystemTypeAbbreviation": "SC", "UniqueSystemDirectoryName": "SC", "Physics": [], "AnalysisType": None, "SystemHelpId": "wb2sb_mpcapp", "AdditionalSystemHelpId": None, "IsParametric": False, "CreatedFromTemplate": $$9733c859-dff4-4146-86d2-72f3ed6e10b7, "Notes": None, "LayoutChildren": [], "LayoutIndex": 0}</member-data>
+      </Object>
+      <Object Name="/Schematic/System:SC 1" Version="1.0">
+        <class-type valType="String">System</class-type>
+        <object-name valType="String">SC 1</object-name>
+        <member-data valType="String">{"DisplayText": "System Coupling", "Components": [$$ef215169-6139-40d9-9d92-b525865fd6af, $$0361bc50-4838-46e9-88d6-a54560600e2e], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [$$ef215169-6139-40d9-9d92-b525865fd6af, $$0361bc50-4838-46e9-88d6-a54560600e2e], "ExcludedComponentTemplates": [], "Attributes": {"PhysicsType": "Multiphysics", "AnalysisType": "Any", "SolverType": "System Coupling", "SolverTypeDisplayString": "System Coupling", "PhysicsTypeDisplayString": "Multiphysics", "AnalysisTypeDisplayString": "Any", "SystemName": "System Coupling", "VOLATILE:SystemName": "SC 1"}, "SystemType": "System Coupling", "HeaderText": "System Coupling", "SystemTypeAbbreviation": "SC", "UniqueSystemDirectoryName": "SC-1", "Physics": [], "AnalysisType": None, "SystemHelpId": "wb2sb_mpcapp", "AdditionalSystemHelpId": None, "IsParametric": False, "CreatedFromTemplate": $$9733c859-dff4-4146-86d2-72f3ed6e10b7, "Notes": None, "LayoutChildren": [], "LayoutIndex": 0}</member-data>
+      </Object>
+      <Object Name="/Schematic/System:CFX" Version="1.0">
+        <class-type valType="String">System</class-type>
+        <object-name valType="String">CFX</object-name>
+        <member-data valType="String">{"DisplayText": "Fluid Flow (CFX)", "Components": [$$a16a6ba6-3fc5-48f7-8c11-9c556d6b4b88, $$a6a7ca4f-77ca-46ae-91b1-82738f7d3fca, $$59ab2cf0-c392-48bd-a24a-f4dcd4d11068, $$101624a4-e9b6-4037-989c-6f6d3b2040ed, $$27ef14de-4744-49b4-9d41-31493a8f9a32], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [], "ExcludedComponentTemplates": [], "Attributes": {"PhysicsType": "Fluids", "AnalysisType": None, "SolverType": "CFX", "PhysicsTypeDisplayString": "Fluids", "SystemName": "Fluid Flow (CFX)", "IsCreated": "True", "VOLATILE:SystemName": "CFX"}, "SystemType": "Fluid Flow (CFX)", "HeaderText": "Fluid Flow (CFX)", "SystemTypeAbbreviation": "CFX", "UniqueSystemDirectoryName": "CFX", "Physics": [], "AnalysisType": None, "SystemHelpId": "wb2sb_ffCFX", "AdditionalSystemHelpId": None, "IsParametric": False, "CreatedFromTemplate": $$589a4eff-3474-408e-b6bf-42a11d0e3cbd, "Notes": None, "LayoutChildren": [$$4d7cb7dd-255b-4e94-b2e3-024b3bc2b4c1], "LayoutIndex": 0}</member-data>
+      </Object>
+      <Object Name="/Schematic/System:SYS 3" Version="1.0">
+        <class-type valType="String">System</class-type>
+        <object-name valType="String">SYS 3</object-name>
+        <member-data valType="String">{"DisplayText": "Copy of EM Transient", "Components": [$$3591e842-c25d-4acf-ba3f-9df69a18c667, $$13f1f67c-732d-444d-9b2b-70b1b7c0592d, $$03d5d650-f6a4-4517-8649-582e7ac84ff0, $$793f6bfc-9846-4be5-8a35-ba080cde6786, $$4b589198-74dc-46e5-9ca0-ed87e34e0d4c, $$ac4d65f2-e366-4f19-bf10-97620d743af3], "ComponentGroups": [], "SystemVisible": True, "RequiredComponents": [$$03d5d650-f6a4-4517-8649-582e7ac84ff0, $$793f6bfc-9846-4be5-8a35-ba080cde6786], "ExcludedComponentTemplates": [], "Attributes": {"PhysicsType": "Structural", "AnalysisType": "Transient", "SolverType": "ANSYS", "SolverTypeDisplayString": "Mechanical APDL", "PhysicsTypeDisplayString": "Structural", "AnalysisTypeDisplayString": "Transient", "SystemName": "Transient Structural (ANSYS)", "AlreadyInSystem": "Yes", "VOLATILE:SystemName": "SYS 3"}, "SystemType": "Transient Structural (ANSYS)", "HeaderText": "Transient Structural", "SystemTypeAbbreviation": "SYS", "UniqueSystemDirectoryName": "SYS-15", "Physics": [], "AnalysisType": None, "SystemHelpId": "wb2sb_ transstructAN", "AdditionalSystemHelpId": None, "IsParametric": False, "CreatedFromTemplate": $$91c9394d-792a-47a9-80f0-fb97c460e02d, "Notes": None, "LayoutChildren": [$$b349d1e5-67e7-493f-a1ba-18c01e71af0b, $$0be06302-1579-4bd9-b019-6680843e3d7c], "LayoutIndex": 0}</member-data>
       </Object>
       <Object Name="/Schematic/SchematicSettings:Schematic Settings" Version="1.0">
         <class-type valType="String">SchematicSettings</class-type>
@@ -546,7 +1862,7 @@
       <Object Name="/Schematic/Component:Model 4" Version="1.0">
         <class-type valType="String">Component</class-type>
         <object-name valType="String">Model 4</object-name>
-        <member-data valType="String">{"DisplayText": "Model", "ImageName": "model2", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Model 4", "_overwrittenUpdatable": None, "Template": $$8f73b9b0-fa06-4d0a-a59e-5ef0295c1a9d, "InSystem": $$cfb6321f-fccb-4633-a17b-6e32ca1363f5, "MasterSources": {"Sources": [[{"DataType": "EngineeringData", "Component": $$236e01e6-6b3d-42ff-8609-cf6065072262, "Transfer": None}], [{"DataType": "Geometry", "Component": $$05a27fff-1e1a-40ef-96a6-f7b5c5aa334c, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+        <member-data valType="String">{"DisplayText": "Model", "ImageName": "model2", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Model 4", "_overwrittenUpdatable": None, "Template": $$8f73b9b0-fa06-4d0a-a59e-5ef0295c1a9d, "InSystem": $$cfb6321f-fccb-4633-a17b-6e32ca1363f5, "MasterSources": {"Sources": [[{"DataType": "EngineeringData", "Component": $$236e01e6-6b3d-42ff-8609-cf6065072262, "Transfer": None}], [{"DataType": "Geometry", "Component": $$05a27fff-1e1a-40ef-96a6-f7b5c5aa334c, "Transfer": None}]]}, "Notes": None, "UsedLicenses": {"ansys": 1}, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
       </Object>
       <Object Name="/Schematic/Component:Engineering Data 5" Version="1.0">
         <class-type valType="String">Component</class-type>
@@ -686,17 +2002,82 @@
       <Object Name="/Schematic/Component:Results 3" Version="1.0">
         <class-type valType="String">Component</class-type>
         <object-name valType="String">Results 3</object-name>
-        <member-data valType="String">{"DisplayText": "Results", "ImageName": "results", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Results 3", "_overwrittenUpdatable": None, "Template": $$349522bd-8e18-413f-94e1-3e2ab66b61b7, "InSystem": $$b349d1e5-67e7-493f-a1ba-18c01e71af0b, "MasterSources": {"Sources": [[{"DataType": "FluentSolution", "Component": $$b8772915-da47-40e3-8285-f93075f9dcae, "Transfer": None}], [{"DataType": "MechanicalSolution", "Component": $$707ac187-6ba1-40d4-a8bc-fa05667dc641, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+        <member-data valType="String">{"DisplayText": "Results", "ImageName": "results", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Results 3", "_overwrittenUpdatable": None, "Template": $$349522bd-8e18-413f-94e1-3e2ab66b61b7, "InSystem": $$b349d1e5-67e7-493f-a1ba-18c01e71af0b, "MasterSources": {"Sources": [[{"DataType": "FluentSolution", "Component": $$b8772915-da47-40e3-8285-f93075f9dcae, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
       </Object>
       <Object Name="/Schematic/Component:Setup 5" Version="1.0">
         <class-type valType="String">Component</class-type>
         <object-name valType="String">Setup 5</object-name>
-        <member-data valType="String">{"DisplayText": "Setup", "ImageName": "setup_mpc", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Setup 5", "_overwrittenUpdatable": None, "Template": $$ecd08ad2-d8be-49f3-95ab-3bf815d05ba3, "InSystem": $$9e5a686c-8aa5-4013-925a-eb42e2d198d0, "MasterSources": {"Sources": [[{"DataType": "SystemCouplingSetupData", "Component": $$74ea3fac-6cfc-46f3-8d1b-d4a141ea36fd, "Transfer": None}], [{"DataType": "SystemCouplingSetupData", "Component": $$488965fd-6e04-4deb-8f2f-eb463dfcaf6e, "Transfer": None}]]}, "Notes": None, "UsedLicenses": {}, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+        <member-data valType="String">{"DisplayText": "Setup", "ImageName": "setup_mpc", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Setup 5", "_overwrittenUpdatable": None, "Template": $$ecd08ad2-d8be-49f3-95ab-3bf815d05ba3, "InSystem": $$9e5a686c-8aa5-4013-925a-eb42e2d198d0, "MasterSources": {"Sources": [[{"DataType": "SystemCouplingSetupData", "Component": $$74ea3fac-6cfc-46f3-8d1b-d4a141ea36fd, "Transfer": None}]]}, "Notes": None, "UsedLicenses": {}, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
       </Object>
       <Object Name="/Schematic/Component:Solution 5" Version="1.0">
         <class-type valType="String">Component</class-type>
         <object-name valType="String">Solution 5</object-name>
-        <member-data valType="String">{"DisplayText": "Solution", "ImageName": "solution_mpc", "ComponentStateOnLastFailure": "Incomplete", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": ["Solution 3", "Solution 2"], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Solution 5", "_overwrittenUpdatable": None, "Template": $$62a99b20-a3f6-4dc0-a7f1-58c12cd2c1a2, "InSystem": $$9e5a686c-8aa5-4013-925a-eb42e2d198d0, "MasterSources": {"Sources": [[{"DataType": "CouplingSetupProvider", "Component": $$1a1a3266-ba1f-4c63-b364-9834e3add168, "Transfer": None}]]}, "Notes": None, "UsedLicenses": {"acfd_3": 1}, "ActiveTransferComponents": [], "Solver": "System Coupling", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+        <member-data valType="String">{"DisplayText": "Solution", "ImageName": "solution_mpc", "ComponentStateOnLastFailure": "Incomplete", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": ["Solution 3"], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Solution 5", "_overwrittenUpdatable": None, "Template": $$62a99b20-a3f6-4dc0-a7f1-58c12cd2c1a2, "InSystem": $$9e5a686c-8aa5-4013-925a-eb42e2d198d0, "MasterSources": {"Sources": [[{"DataType": "CouplingSetupProvider", "Component": $$1a1a3266-ba1f-4c63-b364-9834e3add168, "Transfer": None}]]}, "Notes": None, "UsedLicenses": {"acfd_3": 1}, "ActiveTransferComponents": [], "Solver": "System Coupling", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Setup 7" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Setup 7</object-name>
+        <member-data valType="String">{"DisplayText": "Setup", "ImageName": "setup_mpc", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Setup 7", "_overwrittenUpdatable": None, "Template": $$ecd08ad2-d8be-49f3-95ab-3bf815d05ba3, "InSystem": $$4d7cb7dd-255b-4e94-b2e3-024b3bc2b4c1, "MasterSources": {"Sources": [[{"DataType": "SystemCouplingSetupData", "Component": $$59ab2cf0-c392-48bd-a24a-f4dcd4d11068, "Transfer": None}], [{"DataType": "SystemCouplingSetupData", "Component": $$488965fd-6e04-4deb-8f2f-eb463dfcaf6e, "Transfer": None}]]}, "Notes": None, "UsedLicenses": {}, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Solution 7" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Solution 7</object-name>
+        <member-data valType="String">{"DisplayText": "Solution", "ImageName": "solution_mpc", "ComponentStateOnLastFailure": "Incomplete", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": ["Solution 6", "Solution 2"], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Solution 7", "_overwrittenUpdatable": None, "Template": $$62a99b20-a3f6-4dc0-a7f1-58c12cd2c1a2, "InSystem": $$4d7cb7dd-255b-4e94-b2e3-024b3bc2b4c1, "MasterSources": {"Sources": [[{"DataType": "CouplingSetupProvider", "Component": $$ef215169-6139-40d9-9d92-b525865fd6af, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "System Coupling", "IsFailedState": True, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Geometry 6" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Geometry 6</object-name>
+        <member-data valType="String">{"DisplayText": "Geometry", "ImageName": "cad_spaceclaim", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": $$05a27fff-1e1a-40ef-96a6-f7b5c5aa334c, "DataSharing": "Full", "DataContainer": "Geometry 4", "_overwrittenUpdatable": None, "Template": $$22529ecf-ef38-4800-b0a0-8d5968e1cef0, "InSystem": $$0be06302-1579-4bd9-b019-6680843e3d7c, "MasterSources": None, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Mesh 1" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Mesh 1</object-name>
+        <member-data valType="String">{"DisplayText": "Mesh", "ImageName": "model2", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Mesh 1", "_overwrittenUpdatable": None, "Template": $$ee6063f3-ccdd-4c2f-9579-c50481a94ee0, "InSystem": $$0be06302-1579-4bd9-b019-6680843e3d7c, "MasterSources": {"Sources": [[{"DataType": "Geometry", "Component": $$a16a6ba6-3fc5-48f7-8c11-9c556d6b4b88, "Transfer": None}]]}, "Notes": None, "UsedLicenses": {}, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Setup 6" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Setup 6</object-name>
+        <member-data valType="String">{"DisplayText": "Setup", "ImageName": "setup", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Setup 6", "_overwrittenUpdatable": None, "Template": $$cdfe1911-85ed-487a-897e-a86e0b1c6134, "InSystem": $$0be06302-1579-4bd9-b019-6680843e3d7c, "MasterSources": {"Sources": [[{"DataType": "SimulationGeneratedMesh", "Component": $$a6a7ca4f-77ca-46ae-91b1-82738f7d3fca, "Transfer": None}], [{"DataType": "SimulationGeneratedMesh", "Component": $$59ab2cf0-c392-48bd-a24a-f4dcd4d11068, "Transfer": None}], [{"DataType": "CFXMesh", "Component": $$59ab2cf0-c392-48bd-a24a-f4dcd4d11068, "Transfer": None}], [{"DataType": "MechanicalSetup", "Component": $$59ab2cf0-c392-48bd-a24a-f4dcd4d11068, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Solution 6" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Solution 6</object-name>
+        <member-data valType="String">{"DisplayText": "Solution", "ImageName": "solution", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Solution 6", "_overwrittenUpdatable": None, "Template": $$9691d334-7af8-41ee-a674-0dfb814ebc61, "InSystem": $$0be06302-1579-4bd9-b019-6680843e3d7c, "MasterSources": {"Sources": [[{"DataType": "CFXSetup", "Component": $$59ab2cf0-c392-48bd-a24a-f4dcd4d11068, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "CFX", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Results 5" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Results 5</object-name>
+        <member-data valType="String">{"DisplayText": "Results", "ImageName": "results", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Results 5", "_overwrittenUpdatable": None, "Template": $$349522bd-8e18-413f-94e1-3e2ab66b61b7, "InSystem": $$0be06302-1579-4bd9-b019-6680843e3d7c, "MasterSources": {"Sources": [[{"DataType": "CFXSolution", "Component": $$101624a4-e9b6-4037-989c-6f6d3b2040ed, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Engineering Data 3" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Engineering Data 3</object-name>
+        <member-data valType="String">{"DisplayText": "Engineering Data", "ImageName": "EngDataComponent16x16", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": [], "CoupledClients": [], "SubComponents": [], "DataSharedFrom": $$6b0f42de-002f-4bd1-ade9-cce318665529, "DataSharing": "Full", "DataContainer": "Engineering Data 4", "_overwrittenUpdatable": None, "Template": $$8b706c59-e546-4db1-b935-d45769b340ae, "InSystem": $$aa4f2ed6-d72b-4814-a09e-b380f4e69534, "MasterSources": None, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Geometry 7" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Geometry 7</object-name>
+        <member-data valType="String">{"DisplayText": "Geometry", "ImageName": "cad_spaceclaim", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": [], "CoupledClients": [], "SubComponents": [], "DataSharedFrom": $$76671e9b-f9e8-4066-9fc6-188346bf17ca, "DataSharing": "Full", "DataContainer": "Geometry 4", "_overwrittenUpdatable": None, "Template": $$22529ecf-ef38-4800-b0a0-8d5968e1cef0, "InSystem": $$aa4f2ed6-d72b-4814-a09e-b380f4e69534, "MasterSources": None, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Model 3" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Model 3</object-name>
+        <member-data valType="String">{"DisplayText": "Model", "ImageName": "model2", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": [], "CoupledClients": [], "SubComponents": [], "DataSharedFrom": $$23bccf75-f6af-4df2-8b55-0f936cecfade, "DataSharing": "Full", "DataContainer": "Model 4", "_overwrittenUpdatable": None, "Template": $$8f73b9b0-fa06-4d0a-a59e-5ef0295c1a9d, "InSystem": $$aa4f2ed6-d72b-4814-a09e-b380f4e69534, "MasterSources": None, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Setup 8" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Setup 8</object-name>
+        <member-data valType="String">{"DisplayText": "Setup", "ImageName": "setup", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Setup 8", "_overwrittenUpdatable": None, "Template": $$bc6bfe18-93a9-4bd7-96ed-71ef0cf7a1f9, "InSystem": $$aa4f2ed6-d72b-4814-a09e-b380f4e69534, "MasterSources": {"Sources": [[{"DataType": "MechanicalModel", "Component": $$03d5d650-f6a4-4517-8649-582e7ac84ff0, "Transfer": None}], [{"DataType": "MechanicalMesh", "Component": $$03d5d650-f6a4-4517-8649-582e7ac84ff0, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "ANSYS", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Solution 8" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Solution 8</object-name>
+        <member-data valType="String">{"DisplayText": "Solution", "ImageName": "Mechanical_Solution", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Solution 8", "_overwrittenUpdatable": None, "Template": $$a37ee2d6-4b1d-49c3-8269-093bb87a1004, "InSystem": $$aa4f2ed6-d72b-4814-a09e-b380f4e69534, "MasterSources": {"Sources": [[{"DataType": "SimulationSetup", "Component": $$793f6bfc-9846-4be5-8a35-ba080cde6786, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "ANSYS", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
+      </Object>
+      <Object Name="/Schematic/Component:Results 6" Version="1.0">
+        <class-type valType="String">Component</class-type>
+        <object-name valType="String">Results 6</object-name>
+        <member-data valType="String">{"DisplayText": "Results", "ImageName": "results", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Results 6", "_overwrittenUpdatable": None, "Template": $$d0d296fa-d1ff-4657-9324-bc479636f0f6, "InSystem": $$aa4f2ed6-d72b-4814-a09e-b380f4e69534, "MasterSources": {"Sources": [[{"DataType": "SimulationSolution", "Component": $$4b589198-74dc-46e5-9ca0-ed87e34e0d4c, "Transfer": None}]]}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "ANSYS", "IsFailedState": False, "UpdateConditionParameter": None}</member-data>
       </Object>
     </Container>
     <Container Name="ReportDataContainer" Version="1.0">
@@ -715,7 +2096,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 100961, "Input": 1678, "Output": 1678}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 101207, "Input": 1678, "Output": 1678}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
     </Container>

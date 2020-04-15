@@ -1,0 +1,2756 @@
+# encoding: utf-8
+# 2020 R1
+SetScriptVersion(Version="20.1.164")
+template1 = GetTemplate(TemplateName="System Coupling")
+system1 = GetSystem(Name="SC")
+system2 = template1.CreateSystem(
+    Position="Below",
+    RelativeTo=system1)
+template2 = GetTemplate(
+    TemplateName="Fluid Flow",
+    Solver="CFX")
+system3 = template2.CreateSystem(
+    Position="Left",
+    RelativeTo=system2)
+geometryComponent1 = system3.GetComponent(Name="Geometry")
+system4 = GetSystem(Name="FFF")
+geometryComponent2 = system4.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system3,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system4)
+geometryComponent1.DeleteShare(System=system3)
+system2.Delete()
+system3.Delete()
+system5 = template2.CreateSystem(
+    Position="Below",
+    RelativeTo=system4)
+geometryComponent3 = system5.GetComponent(Name="Geometry")
+system6 = GetSystem(Name="SYS 4")
+geometryComponent4 = system6.GetComponent(Name="Geometry")
+geometryComponent3.ReplaceWithShare(
+    TargetSystem=system5,
+    ComponentToShare=geometryComponent4,
+    SourceSystem=system6)
+system7 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system5)
+setupComponent1 = system5.GetComponent(Name="Setup")
+setupComponent2 = system7.GetComponent(Name="Setup")
+setupComponent1.TransferData(TargetComponent=setupComponent2)
+setupComponent3 = system4.GetComponent(Name="Setup")
+setupComponent3.TransferData(TargetComponent=setupComponent2)
+system8 = GetSystem(Name="SYS 2")
+setupComponent4 = system8.GetComponent(Name="Setup")
+setupComponent4.TransferData(TargetComponent=setupComponent2)
+setupComponent5 = system1.GetComponent(Name="Setup")
+setupComponent4.DeleteTransfer(TargetComponent=setupComponent5)
+solutionComponent1 = system8.GetComponent(Name="Solution")
+resultsComponent1 = system4.GetComponent(Name="Results")
+solutionComponent1.DeleteTransfer(TargetComponent=resultsComponent1)
+setupComponent4.TransferData(TargetComponent=setupComponent2)
+meshComponent1 = system5.GetComponent(Name="Mesh")
+meshComponent1.Refresh()
+mesh1 = system5.GetContainer(ComponentName="Mesh")
+mesh1.Edit()
+Save(Overwrite=True)
+mesh1.Exit()
+setup1 = system5.GetContainer(ComponentName="Setup")
+setup1.Edit()
+meshComponent1.Update(AllDependencies=True)
+setupComponent1.Refresh()
+setup1.SendCommand(Command="""VIEW:View 1
+  Camera Mode = User Specified
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pivot Point = 0, 0, 1.45e-06
+    Scale = 195629
+    Pan = 0, 0
+    Rotation Quaternion = -0.353134, -0.585745, -0.549728, 0.479573
+    
+  END
+
+END
+
+> update
+FLOW: Flow Analysis 1
+  DOMAIN: Default Domain
+&replace     BOUNDARY: Boundary 1
+      Boundary Type = WALL
+      Create Other Side = Off
+      Interface Boundary = Off
+      Location = walls
+      BOUNDARY CONDITIONS: 
+        MASS AND MOMENTUM: 
+          Option = No Slip Wall
+        END # MASS AND MOMENTUM:
+        WALL ROUGHNESS: 
+          Option = Smooth Wall
+        END # WALL ROUGHNESS:
+      END # BOUNDARY CONDITIONS:
+    END # BOUNDARY:Boundary 1
+  END # DOMAIN:Default Domain
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+setup1.SendCommand(Command="""VIEW:View 1
+  Camera Mode = User Specified
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pivot Point = 0, 0, 1.45e-06
+    Scale = 340225
+    Pan = 0, 0
+    Rotation Quaternion = -0.243191, -0.460002, -0.594928, 0.61262
+    
+  END
+
+END
+
+> update
+PRIMITIVE2D:F1817.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1818.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1819.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1820.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1821.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1822.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1823.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1824.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1825.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1826.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1827.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1828.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1829.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1830.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1831.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1832.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1833.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1834.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1835.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1836.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1837.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1838.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1839.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1840.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1841.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1842.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1843.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1844.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1845.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1846.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1847.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1848.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1849.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1850.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1851.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1852.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1853.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1854.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1855.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1856.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1857.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1858.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1859.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1860.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1861.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1862.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1863.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1864.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1865.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1866.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1867.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1868.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1869.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1870.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1871.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1872.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1873.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1874.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1875.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1876.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1877.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1878.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1879.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1880.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1881.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1882.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1883.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1884.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1885.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1886.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1887.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1888.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1889.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1890.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1891.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1892.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1893.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1894.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1895.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1896.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1897.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1898.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1899.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1900.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1901.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1902.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1903.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1904.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1905.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1906.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1907.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1908.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1909.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1910.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1911.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1912.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1913.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1914.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1915.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1916.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1917.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1918.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1919.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1920.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1921.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1922.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1923.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1924.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1925.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1926.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1927.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1928.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1929.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1930.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1931.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1932.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1933.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1934.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1935.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1936.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1937.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1938.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1939.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1940.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1941.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1942.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1943.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1944.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1945.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1946.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1947.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1948.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1949.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1950.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1951.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1952.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1953.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1954.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1955.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1956.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1957.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1958.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1959.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1960.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1961.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1962.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1963.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1964.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1965.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1966.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1967.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1968.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1969.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1970.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1971.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1972.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1973.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1974.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1975.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1976.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1977.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1978.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1979.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1980.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1981.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1982.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1983.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1984.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1985.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1986.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1987.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1988.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1989.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1990.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1991.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1992.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1993.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1994.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1995.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1996.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1997.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1998.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1999.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2000.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2001.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2002.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2003.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2004.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2005.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2006.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2007.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2008.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2009.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2010.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2011.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2012.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2013.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2014.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2015.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2016.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2017.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2018.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2019.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2020.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2021.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2022.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2023.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2024.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2025.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2026.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2027.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2028.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2029.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2030.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2031.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2032.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2033.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2034.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2035.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2036.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2037.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2038.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2039.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2040.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2041.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2042.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2043.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2044.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2045.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2046.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2047.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2048.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2049.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2050.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2051.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2052.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2053.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2054.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2055.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2056.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2057.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2058.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2059.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2060.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2061.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2062.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2063.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2064.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2065.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2066.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2067.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2068.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2069.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2070.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2071.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2072.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2073.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2074.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2075.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2076.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2077.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2078.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2079.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2080.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2081.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2082.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2083.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2084.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2085.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2086.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2087.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2088.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2089.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2090.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2091.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2092.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2093.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2094.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2095.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2096.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2097.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2098.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2099.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2100.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2101.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2102.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2103.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2104.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2105.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2106.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2107.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2108.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2109.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2110.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2111.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2112.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2113.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2114.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2115.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2116.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2117.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2118.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2119.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2120.1810
+  Prim2d Visibility = True
+END""")
+setup1.SendCommand(Command="""PRIMITIVE2D:F1817.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1818.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1819.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1820.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1821.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1822.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1823.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1824.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1825.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1826.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1827.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1828.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1829.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1830.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1831.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1832.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1833.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1834.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1835.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1836.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1837.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1838.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1839.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1840.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1841.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1842.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1843.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1844.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1845.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1846.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1847.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1848.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1849.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1850.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1851.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1852.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1853.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1854.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1855.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1856.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1857.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1858.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1859.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1860.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1861.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1862.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1863.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1864.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1865.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1866.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1867.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1868.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1869.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1870.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1871.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1872.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1873.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1874.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1875.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1876.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1877.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1878.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1879.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1880.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1881.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1882.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1883.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1884.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1885.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1886.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1887.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1888.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1889.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1890.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1891.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1892.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1893.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1894.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1895.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1896.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1897.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1898.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1899.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1900.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1901.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1902.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1903.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1904.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1905.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1906.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1907.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1908.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1909.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1910.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1911.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1912.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1913.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1914.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1915.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1916.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1917.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1918.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1919.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1920.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1921.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1922.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1923.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1924.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1925.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1926.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1927.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1928.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1929.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1930.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1931.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1932.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1933.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1934.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1935.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1936.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1937.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1938.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1939.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1940.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1941.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1942.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1943.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1944.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1945.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1946.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1947.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1948.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1949.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1950.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1951.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1952.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1953.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1954.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1955.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1956.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1957.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1958.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1959.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1960.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1961.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1962.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1963.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1964.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1965.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1966.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1967.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1968.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1969.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1970.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1971.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1972.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1973.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1974.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1975.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1976.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1977.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1978.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1979.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1980.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1981.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1982.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1983.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1984.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1985.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1986.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1987.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1988.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1989.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1990.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1991.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1992.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1993.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1994.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1995.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1996.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1997.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1998.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1999.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2000.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2001.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2002.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2003.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2004.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2005.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2006.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2007.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2008.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2009.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2010.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2011.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2012.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2013.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2014.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2015.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2016.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2017.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2018.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2019.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2020.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2021.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2022.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2023.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2024.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2025.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2026.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2027.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2028.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2029.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2030.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2031.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2032.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2033.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2034.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2035.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2036.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2037.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2038.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2039.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2040.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2041.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2042.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2043.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2044.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2045.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2046.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2047.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2048.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2049.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2050.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2051.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2052.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2053.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2054.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2055.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2056.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2057.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2058.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2059.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2060.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2061.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2062.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2063.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2064.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2065.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2066.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2067.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2068.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2069.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2070.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2071.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2072.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2073.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2074.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2075.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2076.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2077.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2078.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2079.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2080.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2081.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2082.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2083.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2084.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2085.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2086.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2087.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2088.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2089.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2090.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2091.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2092.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2093.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2094.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2095.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2096.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2097.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2098.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2099.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2100.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2101.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2102.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2103.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2104.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2105.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2106.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2107.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2108.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2109.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2110.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2111.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2112.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2113.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2114.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2115.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2116.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2117.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2118.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2119.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F2120.1810
+  Prim2d Visibility = True
+END""")
+setup1.SendCommand(Command=">rename from=/FLOW:Flow Analysis 1/DOMAIN:Default Domain/BOUNDARY:Default Domain Default,to=Relay")
+setup1.SendCommand(Command="""PRIMITIVE2D:F1811.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1812.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1813.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1814.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1815.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1816.1810
+  Prim2d Visibility = True
+END""")
+setup1.SendCommand(Command="""PRIMITIVE2D:F1811.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1812.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1813.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1814.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1815.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1816.1810
+  Prim2d Visibility = True
+END""")
+setup1.SendCommand(Command=">rename from=/FLOW:Flow Analysis 1/DOMAIN:Default Domain/BOUNDARY:Boundary 1,to=ls")
+setup1.SendCommand(Command="""PRIMITIVE2D:F1811.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1812.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1813.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1814.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1815.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1816.1810
+  Prim2d Visibility = True
+END""")
+setup1.SendCommand(Command="""PRIMITIVE2D:F1811.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1812.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1813.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1814.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1815.1810
+  Prim2d Visibility = True
+END
+PRIMITIVE2D:F1816.1810
+  Prim2d Visibility = True
+END""")
+setup1.SendCommand(Command=">rename from=/FLOW:Flow Analysis 1/DOMAIN:Default Domain/BOUNDARY:ls,to=Walls")
+setup1.SendCommand(Command="""FLOW: Flow Analysis 1
+&replace   ANALYSIS TYPE: 
+    Option = Transient
+    EXTERNAL SOLVER COUPLING: 
+      Option = None
+    END # EXTERNAL SOLVER COUPLING:
+    INITIAL TIME: 
+      Option = Automatic with Value
+      Time = 0 [s]
+    END # INITIAL TIME:
+    TIME DURATION: 
+      Option = Total Time
+      Total Time = 1e-7 [s]
+    END # TIME DURATION:
+    TIME STEPS: 
+      Option = Timesteps
+      Timesteps = 1e-08 [s]
+    END # TIME STEPS:
+  END # ANALYSIS TYPE:
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+setup1.SendCommand(Command="""FLOW: Flow Analysis 1
+&replace   ANALYSIS TYPE: 
+    Option = Transient
+    EXTERNAL SOLVER COUPLING: 
+      Option = None
+    END # EXTERNAL SOLVER COUPLING:
+    INITIAL TIME: 
+      Option = Automatic with Value
+      Time = 0 [s]
+    END # INITIAL TIME:
+    TIME DURATION: 
+      Option = Total Time
+      Total Time = 1e-7 [s]
+    END # TIME DURATION:
+    TIME STEPS: 
+      Option = Timesteps
+      Timesteps = 1e-08 [s]
+    END # TIME STEPS:
+  END # ANALYSIS TYPE:
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+setup1.SendCommand(Command="""FLOW: Flow Analysis 1
+&replace   ANALYSIS TYPE: 
+    Option = Transient
+    EXTERNAL SOLVER COUPLING: 
+      Option = None
+    END # EXTERNAL SOLVER COUPLING:
+    INITIAL TIME: 
+      Option = Automatic with Value
+      Time = 0 [s]
+    END # INITIAL TIME:
+    TIME DURATION: 
+      Option = Total Time
+      Total Time = 1e-7 [s]
+    END # TIME DURATION:
+    TIME STEPS: 
+      Option = Timesteps
+      Timesteps = 1e-08 [s]
+    END # TIME STEPS:
+  END # ANALYSIS TYPE:
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+setup1.SendCommand(Command="""VIEW:View 1
+  Camera Mode = User Specified
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pivot Point = 0, 0, 1.45e-06
+    Scale = 340225
+    Pan = 0, 0
+    Rotation Quaternion = -0.0331021, -0.34009, -0.693109, 0.634687
+    
+  END
+
+END
+
+> update
+LIBRARY: 
+&replace   MATERIAL: Air at 25 C
+    Material Description = Air at 25 C and 1 atm (dry)
+    Material Group = Air Data,Constant Property Gases
+    Object Origin = Default
+    Option = Pure Substance
+    Thermodynamic State = Gas
+    PROPERTIES: 
+      Option = General Material
+      ABSORPTION COEFFICIENT: 
+        Absorption Coefficient = 0.01 [m^-1]
+        Option = Value
+      END # ABSORPTION COEFFICIENT:
+      DYNAMIC VISCOSITY: 
+        Dynamic Viscosity = 1.831E-05 [kg m^-1 s^-1]
+        Option = Value
+      END # DYNAMIC VISCOSITY:
+      EQUATION OF STATE: 
+        Density = 1.185 [kg m^-3]
+        Molar Mass = 28.96 [kg kmol^-1]
+        Option = Value
+      END # EQUATION OF STATE:
+      REFERENCE STATE: 
+        Option = Specified Point
+        Reference Pressure = 1 [atm]
+        Reference Specific Enthalpy = 0. [J/kg]
+        Reference Specific Entropy = 0. [J/kg/K]
+        Reference Temperature = 25 [C]
+      END # REFERENCE STATE:
+      REFRACTIVE INDEX: 
+        Option = Value
+        Refractive Index = 1.0 [m m^-1]
+      END # REFRACTIVE INDEX:
+      SCATTERING COEFFICIENT: 
+        Option = Value
+        Scattering Coefficient = 0.0 [m^-1]
+      END # SCATTERING COEFFICIENT:
+      SPECIFIC HEAT CAPACITY: 
+        Option = Value
+        Specific Heat Capacity = 1.0044E+03 [J kg^-1 K^-1]
+        Specific Heat Type = Constant Pressure
+      END # SPECIFIC HEAT CAPACITY:
+      THERMAL CONDUCTIVITY: 
+        Option = Value
+        Thermal Conductivity = 2.61E-02 [W m^-1 K^-1]
+      END # THERMAL CONDUCTIVITY:
+      THERMAL EXPANSIVITY: 
+        Option = Value
+        Thermal Expansivity = 0.003356 [K^-1]
+      END # THERMAL EXPANSIVITY:
+    END # PROPERTIES:
+  END # MATERIAL:Air at 25 C
+END # LIBRARY:
+
+
+PARAMETERIZATION:
+END""")
+setup1.SendCommand(Command="""FLOW: Flow Analysis 1
+&replace   DOMAIN: Default Domain
+    Coord Frame = Coord 0
+    Domain Type = Fluid
+    Location = B1810
+    BOUNDARY: Relay
+      Boundary Type = WALL
+      Create Other Side = Off
+      Interface Boundary = Off
+      Location = F1817.1810,F1818.1810,F1819.1810,F1820.1810,F1821.1810,F1822.1810,F1823.1810,F1824.1810,F1825.1810,F1826.1810,F1827.1810,F1828.1810,F1829.1810,F1830.1810,F1831.1810,F1832.1810,F1833.1810,F1834.1810,F1835.1810,F1836.1810,F1837.1810,F1838.1810,F1839.1810,F1840.1810,F1841.1810,F1842.1810,F1843.1810,F1844.1810,F1845.1810,F1846.1810,F1847.1810,F1848.1810,F1849.1810,F1850.1810,F1851.1810,F1852.1810,F1853.1810,F1854.1810,F1855.1810,F1856.1810,F1857.1810,F1858.1810,F1859.1810,F1860.1810,F1861.1810,F1862.1810,F1863.1810,F1864.1810,F1865.1810,F1866.1810,F1867.1810,F1868.1810,F1869.1810,F1870.1810,F1871.1810,F1872.1810,F1873.1810,F1874.1810,F1875.1810,F1876.1810,F1877.1810,F1878.1810,F1879.1810,F1880.1810,F1881.1810,F1882.1810,F1883.1810,F1884.1810,F1885.1810,F1886.1810,F1887.1810,F1888.1810,F1889.1810,F1890.1810,F1891.1810,F1892.1810,F1893.1810,F1894.1810,F1895.1810,F1896.1810,F1897.1810,F1898.1810,F1899.1810,F1900.1810,F1901.1810,F1902.1810,F1903.1810,F1904.1810,F1905.1810,F1906.1810,F1907.1810,F1908.1810,F1909.1810,F1910.1810,F1911.1810,F1912.1810,F1913.1810,F1914.1810,F1915.1810,F1916.1810,F1917.1810,F1918.1810,F1919.1810,F1920.1810,F1921.1810,F1922.1810,F1923.1810,F1924.1810,F1925.1810,F1926.1810,F1927.1810,F1928.1810,F1929.1810,F1930.1810,F1931.1810,F1932.1810,F1933.1810,F1934.1810,F1935.1810,F1936.1810,F1937.1810,F1938.1810,F1939.1810,F1940.1810,F1941.1810,F1942.1810,F1943.1810,F1944.1810,F1945.1810,F1946.1810,F1947.1810,F1948.1810,F1949.1810,F1950.1810,F1951.1810,F1952.1810,F1953.1810,F1954.1810,F1955.1810,F1956.1810,F1957.1810,F1958.1810,F1959.1810,F1960.1810,F1961.1810,F1962.1810,F1963.1810,F1964.1810,F1965.1810,F1966.1810,F1967.1810,F1968.1810,F1969.1810,F1970.1810,F1971.1810,F1972.1810,F1973.1810,F1974.1810,F1975.1810,F1976.1810,F1977.1810,F1978.1810,F1979.1810,F1980.1810,F1981.1810,F1982.1810,F1983.1810,F1984.1810,F1985.1810,F1986.1810,F1987.1810,F1988.1810,F1989.1810,F1990.1810,F1991.1810,F1992.1810,F1993.1810,F1994.1810,F1995.1810,F1996.1810,F1997.1810,F1998.1810,F1999.1810,F2000.1810,F2001.1810,F2002.1810,F2003.1810,F2004.1810,F2005.1810,F2006.1810,F2007.1810,F2008.1810,F2009.1810,F2010.1810,F2011.1810,F2012.1810,F2013.1810,F2014.1810,F2015.1810,F2016.1810,F2017.1810,F2018.1810,F2019.1810,F2020.1810,F2021.1810,F2022.1810,F2023.1810,F2024.1810,F2025.1810,F2026.1810,F2027.1810,F2028.1810,F2029.1810,F2030.1810,F2031.1810,F2032.1810,F2033.1810,F2034.1810,F2035.1810,F2036.1810,F2037.1810,F2038.1810,F2039.1810,F2040.1810,F2041.1810,F2042.1810,F2043.1810,F2044.1810,F2045.1810,F2046.1810,F2047.1810,F2048.1810,F2049.1810,F2050.1810,F2051.1810,F2052.1810,F2053.1810,F2054.1810,F2055.1810,F2056.1810,F2057.1810,F2058.1810,F2059.1810,F2060.1810,F2061.1810,F2062.1810,F2063.1810,F2064.1810,F2065.1810,F2066.1810,F2067.1810,F2068.1810,F2069.1810,F2070.1810,F2071.1810,F2072.1810,F2073.1810,F2074.1810,F2075.1810,F2076.1810,F2077.1810,F2078.1810,F2079.1810,F2080.1810,F2081.1810,F2082.1810,F2083.1810,F2084.1810,F2085.1810,F2086.1810,F2087.1810,F2088.1810,F2089.1810,F2090.1810,F2091.1810,F2092.1810,F2093.1810,F2094.1810,F2095.1810,F2096.1810,F2097.1810,F2098.1810,F2099.1810,F2100.1810,F2101.1810,F2102.1810,F2103.1810,F2104.1810,F2105.1810,F2106.1810,F2107.1810,F2108.1810,F2109.1810,F2110.1810,F2111.1810,F2112.1810,F2113.1810,F2114.1810,F2115.1810,F2116.1810,F2117.1810,F2118.1810,F2119.1810,F2120.1810
+      BOUNDARY CONDITIONS: 
+        MASS AND MOMENTUM: 
+          Option = No Slip Wall
+        END # MASS AND MOMENTUM:
+        WALL ROUGHNESS: 
+          Option = Smooth Wall
+        END # WALL ROUGHNESS:
+      END # BOUNDARY CONDITIONS:
+    END # BOUNDARY:Relay
+    BOUNDARY: Walls
+      Boundary Type = WALL
+      Create Other Side = Off
+      Interface Boundary = Off
+      Location = walls
+      BOUNDARY CONDITIONS: 
+        MASS AND MOMENTUM: 
+          Option = No Slip Wall
+        END # MASS AND MOMENTUM:
+        WALL ROUGHNESS: 
+          Option = Smooth Wall
+        END # WALL ROUGHNESS:
+      END # BOUNDARY CONDITIONS:
+    END # BOUNDARY:Walls
+    DOMAIN MODELS: 
+      BUOYANCY MODEL: 
+        Option = Non Buoyant
+      END # BUOYANCY MODEL:
+      DOMAIN MOTION: 
+        Option = Stationary
+      END # DOMAIN MOTION:
+      MESH DEFORMATION: 
+        Displacement Relative To = Previous Mesh
+        Option = Regions of Motion Specified
+        MESH MOTION MODEL: 
+          Option = Displacement Diffusion
+          MESH STIFFNESS: 
+            Option = Increase near Small Volumes
+            Stiffness Model Exponent = 2.0
+            REFERENCE VOLUME: 
+              Option = Mean Control Volume
+            END # REFERENCE VOLUME:
+          END # MESH STIFFNESS:
+        END # MESH MOTION MODEL:
+      END # MESH DEFORMATION:
+      REFERENCE PRESSURE: 
+        Reference Pressure = 1 [atm]
+      END # REFERENCE PRESSURE:
+    END # DOMAIN MODELS:
+    FLUID DEFINITION: Fluid 1
+      Material = Air at 25 C
+      Option = Material Library
+      MORPHOLOGY: 
+        Option = Continuous Fluid
+      END # MORPHOLOGY:
+    END # FLUID DEFINITION:Fluid 1
+    FLUID MODELS: 
+      COMBUSTION MODEL: 
+        Option = None
+      END # COMBUSTION MODEL:
+      HEAT TRANSFER MODEL: 
+        Fluid Temperature = 25 [C]
+        Option = Isothermal
+      END # HEAT TRANSFER MODEL:
+      THERMAL RADIATION MODEL: 
+        Option = None
+      END # THERMAL RADIATION MODEL:
+      TURBULENCE MODEL: 
+        Option = k epsilon
+      END # TURBULENCE MODEL:
+      TURBULENT WALL FUNCTIONS: 
+        Option = Scalable
+      END # TURBULENT WALL FUNCTIONS:
+    END # FLUID MODELS:
+  END # DOMAIN:Default Domain
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+setup1.SendCommand(Command="""VIEW:View 1
+  Camera Mode = User Specified
+  CAMERA:
+    Option = Pivot Point and Quaternion
+    Pivot Point = 0, 0, 1.45e-06
+    Scale = 183514
+    Pan = 0, 0
+    Rotation Quaternion = -0.0331021, -0.34009, -0.693109, 0.634687
+    
+  END
+
+END
+
+> update
+FLOW: Flow Analysis 1
+&replace   DOMAIN: Default Domain
+    Coord Frame = Coord 0
+    Domain Type = Fluid
+    Location = B1810
+    BOUNDARY: Relay
+      Boundary Type = WALL
+      Create Other Side = Off
+      Interface Boundary = Off
+      Location = F1817.1810,F1818.1810,F1819.1810,F1820.1810,F1821.1810,F1822.1810,F1823.1810,F1824.1810,F1825.1810,F1826.1810,F1827.1810,F1828.1810,F1829.1810,F1830.1810,F1831.1810,F1832.1810,F1833.1810,F1834.1810,F1835.1810,F1836.1810,F1837.1810,F1838.1810,F1839.1810,F1840.1810,F1841.1810,F1842.1810,F1843.1810,F1844.1810,F1845.1810,F1846.1810,F1847.1810,F1848.1810,F1849.1810,F1850.1810,F1851.1810,F1852.1810,F1853.1810,F1854.1810,F1855.1810,F1856.1810,F1857.1810,F1858.1810,F1859.1810,F1860.1810,F1861.1810,F1862.1810,F1863.1810,F1864.1810,F1865.1810,F1866.1810,F1867.1810,F1868.1810,F1869.1810,F1870.1810,F1871.1810,F1872.1810,F1873.1810,F1874.1810,F1875.1810,F1876.1810,F1877.1810,F1878.1810,F1879.1810,F1880.1810,F1881.1810,F1882.1810,F1883.1810,F1884.1810,F1885.1810,F1886.1810,F1887.1810,F1888.1810,F1889.1810,F1890.1810,F1891.1810,F1892.1810,F1893.1810,F1894.1810,F1895.1810,F1896.1810,F1897.1810,F1898.1810,F1899.1810,F1900.1810,F1901.1810,F1902.1810,F1903.1810,F1904.1810,F1905.1810,F1906.1810,F1907.1810,F1908.1810,F1909.1810,F1910.1810,F1911.1810,F1912.1810,F1913.1810,F1914.1810,F1915.1810,F1916.1810,F1917.1810,F1918.1810,F1919.1810,F1920.1810,F1921.1810,F1922.1810,F1923.1810,F1924.1810,F1925.1810,F1926.1810,F1927.1810,F1928.1810,F1929.1810,F1930.1810,F1931.1810,F1932.1810,F1933.1810,F1934.1810,F1935.1810,F1936.1810,F1937.1810,F1938.1810,F1939.1810,F1940.1810,F1941.1810,F1942.1810,F1943.1810,F1944.1810,F1945.1810,F1946.1810,F1947.1810,F1948.1810,F1949.1810,F1950.1810,F1951.1810,F1952.1810,F1953.1810,F1954.1810,F1955.1810,F1956.1810,F1957.1810,F1958.1810,F1959.1810,F1960.1810,F1961.1810,F1962.1810,F1963.1810,F1964.1810,F1965.1810,F1966.1810,F1967.1810,F1968.1810,F1969.1810,F1970.1810,F1971.1810,F1972.1810,F1973.1810,F1974.1810,F1975.1810,F1976.1810,F1977.1810,F1978.1810,F1979.1810,F1980.1810,F1981.1810,F1982.1810,F1983.1810,F1984.1810,F1985.1810,F1986.1810,F1987.1810,F1988.1810,F1989.1810,F1990.1810,F1991.1810,F1992.1810,F1993.1810,F1994.1810,F1995.1810,F1996.1810,F1997.1810,F1998.1810,F1999.1810,F2000.1810,F2001.1810,F2002.1810,F2003.1810,F2004.1810,F2005.1810,F2006.1810,F2007.1810,F2008.1810,F2009.1810,F2010.1810,F2011.1810,F2012.1810,F2013.1810,F2014.1810,F2015.1810,F2016.1810,F2017.1810,F2018.1810,F2019.1810,F2020.1810,F2021.1810,F2022.1810,F2023.1810,F2024.1810,F2025.1810,F2026.1810,F2027.1810,F2028.1810,F2029.1810,F2030.1810,F2031.1810,F2032.1810,F2033.1810,F2034.1810,F2035.1810,F2036.1810,F2037.1810,F2038.1810,F2039.1810,F2040.1810,F2041.1810,F2042.1810,F2043.1810,F2044.1810,F2045.1810,F2046.1810,F2047.1810,F2048.1810,F2049.1810,F2050.1810,F2051.1810,F2052.1810,F2053.1810,F2054.1810,F2055.1810,F2056.1810,F2057.1810,F2058.1810,F2059.1810,F2060.1810,F2061.1810,F2062.1810,F2063.1810,F2064.1810,F2065.1810,F2066.1810,F2067.1810,F2068.1810,F2069.1810,F2070.1810,F2071.1810,F2072.1810,F2073.1810,F2074.1810,F2075.1810,F2076.1810,F2077.1810,F2078.1810,F2079.1810,F2080.1810,F2081.1810,F2082.1810,F2083.1810,F2084.1810,F2085.1810,F2086.1810,F2087.1810,F2088.1810,F2089.1810,F2090.1810,F2091.1810,F2092.1810,F2093.1810,F2094.1810,F2095.1810,F2096.1810,F2097.1810,F2098.1810,F2099.1810,F2100.1810,F2101.1810,F2102.1810,F2103.1810,F2104.1810,F2105.1810,F2106.1810,F2107.1810,F2108.1810,F2109.1810,F2110.1810,F2111.1810,F2112.1810,F2113.1810,F2114.1810,F2115.1810,F2116.1810,F2117.1810,F2118.1810,F2119.1810,F2120.1810
+      BOUNDARY CONDITIONS: 
+        MASS AND MOMENTUM: 
+          Option = No Slip Wall
+        END # MASS AND MOMENTUM:
+        WALL ROUGHNESS: 
+          Option = Smooth Wall
+        END # WALL ROUGHNESS:
+      END # BOUNDARY CONDITIONS:
+    END # BOUNDARY:Relay
+    BOUNDARY: Walls
+      Boundary Type = WALL
+      Create Other Side = Off
+      Interface Boundary = Off
+      Location = walls
+      BOUNDARY CONDITIONS: 
+        MASS AND MOMENTUM: 
+          Option = No Slip Wall
+        END # MASS AND MOMENTUM:
+        WALL ROUGHNESS: 
+          Option = Smooth Wall
+        END # WALL ROUGHNESS:
+      END # BOUNDARY CONDITIONS:
+    END # BOUNDARY:Walls
+    DOMAIN MODELS: 
+      BUOYANCY MODEL: 
+        Option = Non Buoyant
+      END # BUOYANCY MODEL:
+      DOMAIN MOTION: 
+        Option = Stationary
+      END # DOMAIN MOTION:
+      MESH DEFORMATION: 
+        Displacement Relative To = Previous Mesh
+        Option = Regions of Motion Specified
+        MESH MOTION MODEL: 
+          Option = Displacement Diffusion
+          MESH STIFFNESS: 
+            Option = Increase near Small Volumes
+            Stiffness Model Exponent = 2.0
+            REFERENCE VOLUME: 
+              Option = Mean Control Volume
+            END # REFERENCE VOLUME:
+          END # MESH STIFFNESS:
+        END # MESH MOTION MODEL:
+      END # MESH DEFORMATION:
+      REFERENCE PRESSURE: 
+        Reference Pressure = 1 [atm]
+      END # REFERENCE PRESSURE:
+    END # DOMAIN MODELS:
+    FLUID DEFINITION: Fluid 1
+      Material = Air at 25 C
+      Option = Material Library
+      MORPHOLOGY: 
+        Option = Continuous Fluid
+      END # MORPHOLOGY:
+    END # FLUID DEFINITION:Fluid 1
+    FLUID MODELS: 
+      COMBUSTION MODEL: 
+        Option = None
+      END # COMBUSTION MODEL:
+      HEAT TRANSFER MODEL: 
+        Fluid Temperature = 25 [C]
+        Option = Isothermal
+      END # HEAT TRANSFER MODEL:
+      THERMAL RADIATION MODEL: 
+        Option = None
+      END # THERMAL RADIATION MODEL:
+      TURBULENCE MODEL: 
+        Option = k epsilon
+      END # TURBULENCE MODEL:
+      TURBULENT WALL FUNCTIONS: 
+        Option = Scalable
+      END # TURBULENT WALL FUNCTIONS:
+    END # FLUID MODELS:
+  END # DOMAIN:Default Domain
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+setup1.SendCommand(Command="""FLOW: Flow Analysis 1
+&replace   SOLVER CONTROL: 
+    Turbulence Numerics = First Order
+    ADVECTION SCHEME: 
+      Option = High Resolution
+    END # ADVECTION SCHEME:
+    CONVERGENCE CONTROL: 
+      Maximum Number of Coefficient Loops = 20
+      Minimum Number of Coefficient Loops = 1
+      Timescale Control = Coefficient Loops
+    END # CONVERGENCE CONTROL:
+    CONVERGENCE CRITERIA: 
+      Residual Target = 1.E-4
+      Residual Type = RMS
+    END # CONVERGENCE CRITERIA:
+    INTERRUPT CONTROL: 
+      Option = Any Interrupt
+      CONVERGENCE CONDITIONS: 
+        Option = Default Conditions
+      END # CONVERGENCE CONDITIONS:
+    END # INTERRUPT CONTROL:
+    TRANSIENT SCHEME: 
+      Option = Second Order Backward Euler
+      TIMESTEP INITIALISATION: 
+        Option = Automatic
+      END # TIMESTEP INITIALISATION:
+    END # TRANSIENT SCHEME:
+  END # SOLVER CONTROL:
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+setup1.SendCommand(Command="""FLOW: Flow Analysis 1
+&replace   SOLVER CONTROL: 
+    Turbulence Numerics = First Order
+    ADVECTION SCHEME: 
+      Option = High Resolution
+    END # ADVECTION SCHEME:
+    CONVERGENCE CONTROL: 
+      Maximum Number of Coefficient Loops = 20
+      Minimum Number of Coefficient Loops = 1
+      Timescale Control = Coefficient Loops
+    END # CONVERGENCE CONTROL:
+    CONVERGENCE CRITERIA: 
+      Residual Target = 1.E-4
+      Residual Type = RMS
+    END # CONVERGENCE CRITERIA:
+    INTERRUPT CONTROL: 
+      Option = Any Interrupt
+      CONVERGENCE CONDITIONS: 
+        Option = Default Conditions
+      END # CONVERGENCE CONDITIONS:
+    END # INTERRUPT CONTROL:
+    TRANSIENT SCHEME: 
+      Option = Second Order Backward Euler
+      TIMESTEP INITIALISATION: 
+        Option = Automatic
+      END # TIMESTEP INITIALISATION:
+    END # TRANSIENT SCHEME:
+  END # SOLVER CONTROL:
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+Save(Overwrite=True)
+setup1.SendCommand(Command="""FLOW: Flow Analysis 1
+  DOMAIN: Default Domain
+&replace     BOUNDARY: Relay
+      Boundary Type = WALL
+      Create Other Side = Off
+      Interface Boundary = Off
+      Location = F1817.1810,F1818.1810,F1819.1810,F1820.1810,F1821.1810,F1822.1810,F1823.1810,F1824.1810,F1825.1810,F1826.1810,F1827.1810,F1828.1810,F1829.1810,F1830.1810,F1831.1810,F1832.1810,F1833.1810,F1834.1810,F1835.1810,F1836.1810,F1837.1810,F1838.1810,F1839.1810,F1840.1810,F1841.1810,F1842.1810,F1843.1810,F1844.1810,F1845.1810,F1846.1810,F1847.1810,F1848.1810,F1849.1810,F1850.1810,F1851.1810,F1852.1810,F1853.1810,F1854.1810,F1855.1810,F1856.1810,F1857.1810,F1858.1810,F1859.1810,F1860.1810,F1861.1810,F1862.1810,F1863.1810,F1864.1810,F1865.1810,F1866.1810,F1867.1810,F1868.1810,F1869.1810,F1870.1810,F1871.1810,F1872.1810,F1873.1810,F1874.1810,F1875.1810,F1876.1810,F1877.1810,F1878.1810,F1879.1810,F1880.1810,F1881.1810,F1882.1810,F1883.1810,F1884.1810,F1885.1810,F1886.1810,F1887.1810,F1888.1810,F1889.1810,F1890.1810,F1891.1810,F1892.1810,F1893.1810,F1894.1810,F1895.1810,F1896.1810,F1897.1810,F1898.1810,F1899.1810,F1900.1810,F1901.1810,F1902.1810,F1903.1810,F1904.1810,F1905.1810,F1906.1810,F1907.1810,F1908.1810,F1909.1810,F1910.1810,F1911.1810,F1912.1810,F1913.1810,F1914.1810,F1915.1810,F1916.1810,F1917.1810,F1918.1810,F1919.1810,F1920.1810,F1921.1810,F1922.1810,F1923.1810,F1924.1810,F1925.1810,F1926.1810,F1927.1810,F1928.1810,F1929.1810,F1930.1810,F1931.1810,F1932.1810,F1933.1810,F1934.1810,F1935.1810,F1936.1810,F1937.1810,F1938.1810,F1939.1810,F1940.1810,F1941.1810,F1942.1810,F1943.1810,F1944.1810,F1945.1810,F1946.1810,F1947.1810,F1948.1810,F1949.1810,F1950.1810,F1951.1810,F1952.1810,F1953.1810,F1954.1810,F1955.1810,F1956.1810,F1957.1810,F1958.1810,F1959.1810,F1960.1810,F1961.1810,F1962.1810,F1963.1810,F1964.1810,F1965.1810,F1966.1810,F1967.1810,F1968.1810,F1969.1810,F1970.1810,F1971.1810,F1972.1810,F1973.1810,F1974.1810,F1975.1810,F1976.1810,F1977.1810,F1978.1810,F1979.1810,F1980.1810,F1981.1810,F1982.1810,F1983.1810,F1984.1810,F1985.1810,F1986.1810,F1987.1810,F1988.1810,F1989.1810,F1990.1810,F1991.1810,F1992.1810,F1993.1810,F1994.1810,F1995.1810,F1996.1810,F1997.1810,F1998.1810,F1999.1810,F2000.1810,F2001.1810,F2002.1810,F2003.1810,F2004.1810,F2005.1810,F2006.1810,F2007.1810,F2008.1810,F2009.1810,F2010.1810,F2011.1810,F2012.1810,F2013.1810,F2014.1810,F2015.1810,F2016.1810,F2017.1810,F2018.1810,F2019.1810,F2020.1810,F2021.1810,F2022.1810,F2023.1810,F2024.1810,F2025.1810,F2026.1810,F2027.1810,F2028.1810,F2029.1810,F2030.1810,F2031.1810,F2032.1810,F2033.1810,F2034.1810,F2035.1810,F2036.1810,F2037.1810,F2038.1810,F2039.1810,F2040.1810,F2041.1810,F2042.1810,F2043.1810,F2044.1810,F2045.1810,F2046.1810,F2047.1810,F2048.1810,F2049.1810,F2050.1810,F2051.1810,F2052.1810,F2053.1810,F2054.1810,F2055.1810,F2056.1810,F2057.1810,F2058.1810,F2059.1810,F2060.1810,F2061.1810,F2062.1810,F2063.1810,F2064.1810,F2065.1810,F2066.1810,F2067.1810,F2068.1810,F2069.1810,F2070.1810,F2071.1810,F2072.1810,F2073.1810,F2074.1810,F2075.1810,F2076.1810,F2077.1810,F2078.1810,F2079.1810,F2080.1810,F2081.1810,F2082.1810,F2083.1810,F2084.1810,F2085.1810,F2086.1810,F2087.1810,F2088.1810,F2089.1810,F2090.1810,F2091.1810,F2092.1810,F2093.1810,F2094.1810,F2095.1810,F2096.1810,F2097.1810,F2098.1810,F2099.1810,F2100.1810,F2101.1810,F2102.1810,F2103.1810,F2104.1810,F2105.1810,F2106.1810,F2107.1810,F2108.1810,F2109.1810,F2110.1810,F2111.1810,F2112.1810,F2113.1810,F2114.1810,F2115.1810,F2116.1810,F2117.1810,F2118.1810,F2119.1810,F2120.1810
+      BOUNDARY CONDITIONS: 
+        MASS AND MOMENTUM: 
+          Option = No Slip Wall
+          Wall Velocity Relative To = Mesh Motion
+        END # MASS AND MOMENTUM:
+        MESH MOTION: 
+          Option = System Coupling
+        END # MESH MOTION:
+        WALL ROUGHNESS: 
+          Option = Smooth Wall
+        END # WALL ROUGHNESS:
+      END # BOUNDARY CONDITIONS:
+    END # BOUNDARY:Relay
+  END # DOMAIN:Default Domain
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+setup1.SendCommand(Command="""FLOW: Flow Analysis 1
+  DOMAIN: Default Domain
+&replace     BOUNDARY: Relay
+      Boundary Type = WALL
+      Create Other Side = Off
+      Interface Boundary = Off
+      Location = F1817.1810,F1818.1810,F1819.1810,F1820.1810,F1821.1810,F1822.1810,F1823.1810,F1824.1810,F1825.1810,F1826.1810,F1827.1810,F1828.1810,F1829.1810,F1830.1810,F1831.1810,F1832.1810,F1833.1810,F1834.1810,F1835.1810,F1836.1810,F1837.1810,F1838.1810,F1839.1810,F1840.1810,F1841.1810,F1842.1810,F1843.1810,F1844.1810,F1845.1810,F1846.1810,F1847.1810,F1848.1810,F1849.1810,F1850.1810,F1851.1810,F1852.1810,F1853.1810,F1854.1810,F1855.1810,F1856.1810,F1857.1810,F1858.1810,F1859.1810,F1860.1810,F1861.1810,F1862.1810,F1863.1810,F1864.1810,F1865.1810,F1866.1810,F1867.1810,F1868.1810,F1869.1810,F1870.1810,F1871.1810,F1872.1810,F1873.1810,F1874.1810,F1875.1810,F1876.1810,F1877.1810,F1878.1810,F1879.1810,F1880.1810,F1881.1810,F1882.1810,F1883.1810,F1884.1810,F1885.1810,F1886.1810,F1887.1810,F1888.1810,F1889.1810,F1890.1810,F1891.1810,F1892.1810,F1893.1810,F1894.1810,F1895.1810,F1896.1810,F1897.1810,F1898.1810,F1899.1810,F1900.1810,F1901.1810,F1902.1810,F1903.1810,F1904.1810,F1905.1810,F1906.1810,F1907.1810,F1908.1810,F1909.1810,F1910.1810,F1911.1810,F1912.1810,F1913.1810,F1914.1810,F1915.1810,F1916.1810,F1917.1810,F1918.1810,F1919.1810,F1920.1810,F1921.1810,F1922.1810,F1923.1810,F1924.1810,F1925.1810,F1926.1810,F1927.1810,F1928.1810,F1929.1810,F1930.1810,F1931.1810,F1932.1810,F1933.1810,F1934.1810,F1935.1810,F1936.1810,F1937.1810,F1938.1810,F1939.1810,F1940.1810,F1941.1810,F1942.1810,F1943.1810,F1944.1810,F1945.1810,F1946.1810,F1947.1810,F1948.1810,F1949.1810,F1950.1810,F1951.1810,F1952.1810,F1953.1810,F1954.1810,F1955.1810,F1956.1810,F1957.1810,F1958.1810,F1959.1810,F1960.1810,F1961.1810,F1962.1810,F1963.1810,F1964.1810,F1965.1810,F1966.1810,F1967.1810,F1968.1810,F1969.1810,F1970.1810,F1971.1810,F1972.1810,F1973.1810,F1974.1810,F1975.1810,F1976.1810,F1977.1810,F1978.1810,F1979.1810,F1980.1810,F1981.1810,F1982.1810,F1983.1810,F1984.1810,F1985.1810,F1986.1810,F1987.1810,F1988.1810,F1989.1810,F1990.1810,F1991.1810,F1992.1810,F1993.1810,F1994.1810,F1995.1810,F1996.1810,F1997.1810,F1998.1810,F1999.1810,F2000.1810,F2001.1810,F2002.1810,F2003.1810,F2004.1810,F2005.1810,F2006.1810,F2007.1810,F2008.1810,F2009.1810,F2010.1810,F2011.1810,F2012.1810,F2013.1810,F2014.1810,F2015.1810,F2016.1810,F2017.1810,F2018.1810,F2019.1810,F2020.1810,F2021.1810,F2022.1810,F2023.1810,F2024.1810,F2025.1810,F2026.1810,F2027.1810,F2028.1810,F2029.1810,F2030.1810,F2031.1810,F2032.1810,F2033.1810,F2034.1810,F2035.1810,F2036.1810,F2037.1810,F2038.1810,F2039.1810,F2040.1810,F2041.1810,F2042.1810,F2043.1810,F2044.1810,F2045.1810,F2046.1810,F2047.1810,F2048.1810,F2049.1810,F2050.1810,F2051.1810,F2052.1810,F2053.1810,F2054.1810,F2055.1810,F2056.1810,F2057.1810,F2058.1810,F2059.1810,F2060.1810,F2061.1810,F2062.1810,F2063.1810,F2064.1810,F2065.1810,F2066.1810,F2067.1810,F2068.1810,F2069.1810,F2070.1810,F2071.1810,F2072.1810,F2073.1810,F2074.1810,F2075.1810,F2076.1810,F2077.1810,F2078.1810,F2079.1810,F2080.1810,F2081.1810,F2082.1810,F2083.1810,F2084.1810,F2085.1810,F2086.1810,F2087.1810,F2088.1810,F2089.1810,F2090.1810,F2091.1810,F2092.1810,F2093.1810,F2094.1810,F2095.1810,F2096.1810,F2097.1810,F2098.1810,F2099.1810,F2100.1810,F2101.1810,F2102.1810,F2103.1810,F2104.1810,F2105.1810,F2106.1810,F2107.1810,F2108.1810,F2109.1810,F2110.1810,F2111.1810,F2112.1810,F2113.1810,F2114.1810,F2115.1810,F2116.1810,F2117.1810,F2118.1810,F2119.1810,F2120.1810
+      BOUNDARY CONDITIONS: 
+        MASS AND MOMENTUM: 
+          Option = No Slip Wall
+          Wall Velocity Relative To = Mesh Motion
+        END # MASS AND MOMENTUM:
+        MESH MOTION: 
+          Option = System Coupling
+        END # MESH MOTION:
+        WALL ROUGHNESS: 
+          Option = Smooth Wall
+        END # WALL ROUGHNESS:
+      END # BOUNDARY CONDITIONS:
+    END # BOUNDARY:Relay
+  END # DOMAIN:Default Domain
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+setup1.SendCommand(Command="""FLOW: Flow Analysis 1
+  DOMAIN: Default Domain
+&replace     BOUNDARY: Walls
+      Boundary Type = WALL
+      Create Other Side = Off
+      Interface Boundary = Off
+      Location = walls
+      BOUNDARY CONDITIONS: 
+        MASS AND MOMENTUM: 
+          Option = No Slip Wall
+          Wall Velocity Relative To = Mesh Motion
+        END # MASS AND MOMENTUM:
+        MESH MOTION: 
+          Option = Stationary
+        END # MESH MOTION:
+        WALL ROUGHNESS: 
+          Option = Smooth Wall
+        END # WALL ROUGHNESS:
+      END # BOUNDARY CONDITIONS:
+    END # BOUNDARY:Walls
+  END # DOMAIN:Default Domain
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+setup1.SendCommand(Command="""FLOW: Flow Analysis 1
+  DOMAIN: Default Domain
+&replace     BOUNDARY: Walls
+      Boundary Type = WALL
+      Create Other Side = Off
+      Interface Boundary = Off
+      Location = walls
+      BOUNDARY CONDITIONS: 
+        MASS AND MOMENTUM: 
+          Option = No Slip Wall
+          Wall Velocity Relative To = Mesh Motion
+        END # MASS AND MOMENTUM:
+        MESH MOTION: 
+          Option = Stationary
+        END # MESH MOTION:
+        WALL ROUGHNESS: 
+          Option = Smooth Wall
+        END # WALL ROUGHNESS:
+      END # BOUNDARY CONDITIONS:
+    END # BOUNDARY:Walls
+  END # DOMAIN:Default Domain
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+setup1.SendCommand(Command="""FLOW: Flow Analysis 1
+&replace   ANALYSIS TYPE: 
+    Option = Transient
+    EXTERNAL SOLVER COUPLING: 
+      Option = None
+    END # EXTERNAL SOLVER COUPLING:
+    INITIAL TIME: 
+      Option = Automatic
+    END # INITIAL TIME:
+    TIME DURATION: 
+      Option = Total Time
+      Total Time = 1e-7 [s]
+    END # TIME DURATION:
+    TIME STEPS: 
+      Option = Timesteps
+      Timesteps = 1e-08 [s]
+    END # TIME STEPS:
+  END # ANALYSIS TYPE:
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+setup1.SendCommand(Command="""FLOW: Flow Analysis 1
+&replace   ANALYSIS TYPE: 
+    Option = Transient
+    EXTERNAL SOLVER COUPLING: 
+      Option = None
+    END # EXTERNAL SOLVER COUPLING:
+    INITIAL TIME: 
+      Option = Automatic with Value
+      Time = 0 [s]
+    END # INITIAL TIME:
+    TIME DURATION: 
+      Option = Total Time
+      Total Time = 1e-7 [s]
+    END # TIME DURATION:
+    TIME STEPS: 
+      Option = Timesteps
+      Timesteps = 1e-08 [s]
+    END # TIME STEPS:
+  END # ANALYSIS TYPE:
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+setup1.SendCommand(Command="""FLOW: Flow Analysis 1
+&replace   ANALYSIS TYPE: 
+    Option = Transient
+    EXTERNAL SOLVER COUPLING: 
+      Option = None
+    END # EXTERNAL SOLVER COUPLING:
+    INITIAL TIME: 
+      Option = Automatic with Value
+      Time = 0 [s]
+    END # INITIAL TIME:
+    TIME DURATION: 
+      Option = Total Time
+      Total Time = 1e-7 [s]
+    END # TIME DURATION:
+    TIME STEPS: 
+      Option = Timesteps
+      Timesteps = 1e-08 [s]
+    END # TIME STEPS:
+  END # ANALYSIS TYPE:
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+Save(Overwrite=True)
+setup2 = system7.GetContainer(ComponentName="Setup")
+dataTransfer1 = setup2.CreateDataTransfer(Name="Data Transfer")
+dataTransfer1.Delete()
+solutionComponent2 = system7.GetComponent(Name="Solution")
+solutionComponent2.Update(AllDependencies=True)
+setup3 = system8.GetContainer(ComponentName="Setup")
+setup3.Edit()
+Save(Overwrite=True)
+setupComponent4.UpdateUpstreamComponents()
+setupComponent4.Update(AllDependencies=True)
+solutionComponent2.Update(AllDependencies=True)
+Save(Overwrite=True)
+solutionComponent2.Update(AllDependencies=True)
+ClearMessages()
+AnalysisSettings1 = setup2.GetAnalysisSettings()
+AnalysisSettings1.EndTime = "1E-07 [s]"
+AnalysisSettings1.StepSize = "1E-08 [s]"
+AnalysisSettings1.MaximumIteration = 20
+participant1 = setup2.GetParticipant(Name="Solution 2")
+region1 = participant1.GetRegion(Name="FSIN_1")
+variable1 = region1.GetVariable(Name="INCD")
+participant2 = setup2.GetParticipant(Name="Solution 6")
+region2 = participant2.GetRegion(Name="Relay")
+variable2 = region2.GetVariable(Name="Mesh Displacement")
+dataTransfer2 = setup2.CreateDataTransfer(
+    Name="Data Transfer",
+    SourceParticipant=participant1,
+    SourceRegion=region1,
+    SourceVariable=variable1,
+    TargetParticipant=participant2,
+    TargetRegion=region2,
+    TargetVariable=variable2)
+variable1 = region2.GetVariable(Name="Total Force")
+variable2 = region1.GetVariable(Name="FORC")
+dataTransfer3 = setup2.CreateDataTransfer(
+    Name="Data Transfer 2",
+    SourceParticipant=participant2,
+    SourceRegion=region2,
+    SourceVariable=variable1,
+    TargetParticipant=participant1,
+    TargetRegion=region1,
+    TargetVariable=variable2)
+solutionComponent2.Update(AllDependencies=True)
+setupComponent1.Refresh()
+setup1.SendCommand(Command="""FLOW: Flow Analysis 1
+&replace   INITIALISATION: 
+    Option = Automatic
+    INITIAL CONDITIONS: 
+      Velocity Type = Cartesian
+      CARTESIAN VELOCITY COMPONENTS: 
+        Option = Automatic with Value
+        U = 0 [m s^-1]
+        V = 0 [m s^-1]
+        W = 0 [m s^-1]
+      END # CARTESIAN VELOCITY COMPONENTS:
+      STATIC PRESSURE: 
+        Option = Automatic with Value
+        Relative Pressure = 0 [Pa]
+      END # STATIC PRESSURE:
+      TURBULENCE INITIAL CONDITIONS: 
+        Option = Medium Intensity and Eddy Viscosity Ratio
+      END # TURBULENCE INITIAL CONDITIONS:
+    END # INITIAL CONDITIONS:
+  END # INITIALISATION:
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+setup1.SendCommand(Command="""FLOW: Flow Analysis 1
+&replace   INITIALISATION: 
+    Option = Automatic
+    INITIAL CONDITIONS: 
+      Velocity Type = Cartesian
+      CARTESIAN VELOCITY COMPONENTS: 
+        Option = Automatic with Value
+        U = 0 [m s^-1]
+        V = 0 [m s^-1]
+        W = 0 [m s^-1]
+      END # CARTESIAN VELOCITY COMPONENTS:
+      STATIC PRESSURE: 
+        Option = Automatic with Value
+        Relative Pressure = 0 [Pa]
+      END # STATIC PRESSURE:
+      TURBULENCE INITIAL CONDITIONS: 
+        Option = Medium Intensity and Eddy Viscosity Ratio
+      END # TURBULENCE INITIAL CONDITIONS:
+    END # INITIAL CONDITIONS:
+  END # INITIALISATION:
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+setup1.SendCommand(Command="""FLOW: Flow Analysis 1
+&replace   OUTPUT CONTROL: 
+    RESULTS: 
+      File Compression Level = Default
+      Option = Standard
+    END # RESULTS:
+    TRANSIENT RESULTS: Transient Results 1
+      File Compression Level = Default
+      Option = Standard
+      OUTPUT FREQUENCY: 
+        Option = Every Timestep
+      END # OUTPUT FREQUENCY:
+    END # TRANSIENT RESULTS:Transient Results 1
+  END # OUTPUT CONTROL:
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+setup1.SendCommand(Command="""FLOW: Flow Analysis 1
+&replace   OUTPUT CONTROL: 
+    RESULTS: 
+      File Compression Level = Default
+      Option = Standard
+    END # RESULTS:
+    TRANSIENT RESULTS: Transient Results 1
+      File Compression Level = Default
+      Option = Standard
+      OUTPUT FREQUENCY: 
+        Option = Every Timestep
+      END # OUTPUT FREQUENCY:
+    END # TRANSIENT RESULTS:Transient Results 1
+  END # OUTPUT CONTROL:
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+setup1.SendCommand(Command="""FLOW: Flow Analysis 1
+&replace   SOLUTION UNITS: 
+    Angle Units = [rad]
+    Length Units = [m]
+    Mass Units = [kg]
+    Solid Angle Units = [sr]
+    Temperature Units = [K]
+    Time Units = [s]
+  END # SOLUTION UNITS:
+END # FLOW:Flow Analysis 1
+
+
+PARAMETERIZATION:
+END""")
+solutionComponent2.Update(AllDependencies=True)
+setupComponent1.Refresh()
+setup1.Edit()
+solution1 = system5.GetContainer(ComponentName="Solution")
+solution1.Exit()
+ClearMessages()
+AnalysisSettings1.EndTime = "5E-08 [s]"
+AnalysisSettings1.StepSize = "1E-09 [s]"
+solutionComponent2.Update(AllDependencies=True)
+AnalysisSettings1.StepSize = "1E-10 [s]"
+Save(Overwrite=True)
+AnalysisSettings1.StepSize = "2E-10 [s]"
+solutionComponent2.Update(AllDependencies=True)
+solution1.Exit()
+solutionComponent2.Clean()
+resultsComponent2 = system5.GetComponent(Name="Results")
+resultsComponent2.Clean()
+resultsComponent3 = system8.GetComponent(Name="Results")
+resultsComponent3.Clean()
+Save(Overwrite=True)
+system9 = GetSystem(Name="SYS 3")
+system9.Delete()

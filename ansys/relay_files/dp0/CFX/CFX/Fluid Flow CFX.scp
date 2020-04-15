@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<CouplingParticipant>
+
+  <ExecutionControl>
+    <InitialInput>Fluid Flow CFX.def</InitialInput>
+    <WorkingDirectory>C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\dp0\CFX\CFX</WorkingDirectory>
+  </ExecutionControl>
+
+  <CosimulationControl>
+    <Type>CFX</Type>
+    <AnalysisType>Transient</AnalysisType>
+    <DisplayName>CFX</DisplayName>
+    <Regions>
+      <Region>
+        <Name>Relay</Name>
+        <DisplayName>Relay</DisplayName>
+        <Topology>Surface</Topology>
+        <InputVariables>
+          <Variable>Mesh Displacement</Variable>
+        </InputVariables>
+        <OutputVariables>
+          <Variable>Total Force</Variable>
+        </OutputVariables>
+      </Region>
+      <Region>
+        <Name>Walls</Name>
+        <DisplayName>Walls</DisplayName>
+        <Topology>Surface</Topology>
+        <OutputVariables>
+          <Variable>Total Force</Variable>
+        </OutputVariables>
+      </Region>
+    </Regions>
+    <Variables>
+      <Variable>
+        <Name>Total Force</Name>
+        <DisplayName>Force</DisplayName>
+        <QuantityType>Force</QuantityType>
+      </Variable>
+      <Variable>
+        <Name>Mesh Displacement</Name>
+        <DisplayName>Mesh Displacement</DisplayName>
+        <QuantityType>Incremental Displacement</QuantityType>
+      </Variable>
+    </Variables>
+  </CosimulationControl>
+
+</CouplingParticipant>
+

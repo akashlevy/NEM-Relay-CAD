@@ -2,9 +2,10 @@
 <Storage>
   <Project Version="9.1" />
   <Addins>
-    <addin-list valType="String">[Ansys.ParameterManager.ParameterManagerAddin, Ansys.CFX.CFDPost.CFDPostAddin, Ansys.Dpdb.DpdbAddin, Ansys.Fluent.Addin, Ansys.Simulation.Core.Addin, Ansys.Meshing.Core.Addin, Ansys.EngineeringData.Commands.Addin, Ansys.MultiphysicsCoupling.Core.Addin, Ansys.DesignModeler.Core.Addin]</addin-list>
+    <addin-list valType="String">[Ansys.ParameterManager.ParameterManagerAddin, Ansys.CFX.CFDPost.CFDPostAddin, Ansys.CFX.CFXCore.CFXCoreAddin, Ansys.Dpdb.DpdbAddin, Ansys.Fluent.Addin, Ansys.Simulation.Core.Addin, Ansys.Meshing.Core.Addin, Ansys.EngineeringData.Commands.Addin, Ansys.MultiphysicsCoupling.Core.Addin, Ansys.DesignModeler.Core.Addin]</addin-list>
     <Addin Name="Ansys.ParameterManager.ParameterManagerAddin" Version="7.3" />
     <Addin Name="Ansys.CFX.CFDPost.CFDPostAddin" Version="17.0.0.0" />
+    <Addin Name="Ansys.CFX.CFXCore.CFXCoreAddin" Version="19.4.0.0" />
     <Addin Name="Ansys.Dpdb.DpdbAddin" Version="4.0">
       <is-optional-on-resume valType="Boolean">true</is-optional-on-resume>
     </Addin>
@@ -16,7 +17,7 @@
     <Addin Name="Ansys.DesignModeler.Core.Addin" Version="20.1.1.0" />
   </Addins>
   <Containers>
-    <container-map valType="String">{"Scopes": Ansys.ParameterManager.ParameterManagerAddin:scopes, "Solution 4": Ansys.Simulation.Core.Addin:SimulationSolution, "Setup 4": Ansys.Simulation.Core.Addin:SimulationSetup, "Engineering Data 4": "Ansys.EngineeringData.Commands.Addin:Engineering Data", "Geometry 4": Ansys.DesignModeler.Core.Addin:Geometry, "Model 4": Ansys.Simulation.Core.Addin:SimulationModel, "Results 4": Ansys.Simulation.Core.Addin:SimulationResults, "Setup": Ansys.Simulation.Core.Addin:SimulationSetup, "Solution": Ansys.Simulation.Core.Addin:SimulationSolution, "Results": Ansys.Simulation.Core.Addin:SimulationResults, "Setup 1": Ansys.Simulation.Core.Addin:SimulationSetup, "Solution 1": Ansys.Simulation.Core.Addin:SimulationSolution, "Results 1": Ansys.Simulation.Core.Addin:SimulationResults, "Setup 2": Ansys.Simulation.Core.Addin:SimulationSetup, "Solution 2": Ansys.Simulation.Core.Addin:SimulationSolution, "Results 2": Ansys.Simulation.Core.Addin:SimulationResults, "Mesh": Ansys.Meshing.Core.Addin:SimulationModel, "Setup 3": Ansys.Fluent.Addin:SetupContainer, "Solution 3": Ansys.Fluent.Addin:SolutionContainer, "Setup 5": Ansys.MultiphysicsCoupling.Core.Addin:Setup, "Solution 5": Ansys.MultiphysicsCoupling.Core.Addin:Solution, "Results 3": Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer}</container-map>
+    <container-map valType="String">{"Scopes": Ansys.ParameterManager.ParameterManagerAddin:scopes, "Solution 4": Ansys.Simulation.Core.Addin:SimulationSolution, "Setup 4": Ansys.Simulation.Core.Addin:SimulationSetup, "Engineering Data 4": "Ansys.EngineeringData.Commands.Addin:Engineering Data", "Geometry 4": Ansys.DesignModeler.Core.Addin:Geometry, "Model 4": Ansys.Simulation.Core.Addin:SimulationModel, "Results 4": Ansys.Simulation.Core.Addin:SimulationResults, "Setup": Ansys.Simulation.Core.Addin:SimulationSetup, "Solution": Ansys.Simulation.Core.Addin:SimulationSolution, "Results": Ansys.Simulation.Core.Addin:SimulationResults, "Setup 1": Ansys.Simulation.Core.Addin:SimulationSetup, "Solution 1": Ansys.Simulation.Core.Addin:SimulationSolution, "Results 1": Ansys.Simulation.Core.Addin:SimulationResults, "Setup 2": Ansys.Simulation.Core.Addin:SimulationSetup, "Solution 2": Ansys.Simulation.Core.Addin:SimulationSolution, "Results 2": Ansys.Simulation.Core.Addin:SimulationResults, "Mesh": Ansys.Meshing.Core.Addin:SimulationModel, "Setup 3": Ansys.Fluent.Addin:SetupContainer, "Solution 3": Ansys.Fluent.Addin:SolutionContainer, "Setup 5": Ansys.MultiphysicsCoupling.Core.Addin:Setup, "Solution 5": Ansys.MultiphysicsCoupling.Core.Addin:Solution, "Results 3": Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer, "Solution 7": Ansys.MultiphysicsCoupling.Core.Addin:Solution, "Setup 7": Ansys.MultiphysicsCoupling.Core.Addin:Setup, "Mesh 1": Ansys.Meshing.Core.Addin:SimulationModel, "Setup 6": Ansys.CFX.CFXCore.CFXCoreAddin:CFXSetupContainer, "Solution 6": Ansys.CFX.CFXCore.CFXCoreAddin:CFXSolutionContainer, "Results 5": Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer, "Setup 8": Ansys.Simulation.Core.Addin:SimulationSetup, "Solution 8": Ansys.Simulation.Core.Addin:SimulationSolution, "Results 6": Ansys.Simulation.Core.Addin:SimulationResults}</container-map>
     <static-container-ids valType="String">{"Scopes": Scopes}</static-container-ids>
     <Container Name="Scopes" Version="1.0">
       <container-type valType="String">Ansys.ParameterManager.ParameterManagerAddin:scopes</container-type>
@@ -38,9 +39,9 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">97013</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 97008, "Input": 97008, "Output": 97008}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 101987, "Input": 101987, "Output": 101987}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 94934, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 94935, "Setup": 96620, "Solution": 96633, "Results": 96640, "Setup 1": 96644, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 96677, "Solution 2": 96414, "Results 2": 96431, "Mesh": 94986, "Setup 3": 96331, "Solution 3": 96418, "Setup 5": 96689, "Solution 5": 96424, "Results 3": 96726}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 101973, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 0, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 0, "Mesh 1": 101802, "Setup 6": 101930, "Solution 6": 0, "Results 5": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-11</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Solution 4/MechanicalSystemType:SystemClass for Structural|Static|ANSYS" Version="1.0">
@@ -107,9 +108,9 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">97012</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 97007, "Input": 97007, "Output": 97007}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 101986, "Input": 101986, "Output": 101986}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 94934, "Setup 4": 94933, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 94935, "Setup": 96620, "Solution": 96633, "Results": 96640, "Setup 1": 96644, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 96677, "Solution 2": 96414, "Results 2": 96431, "Mesh": 94986, "Setup 3": 96331, "Solution 3": 96418, "Setup 5": 96689, "Solution 5": 96424, "Results 3": 96726}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 101973, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 0, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 0, "Mesh 1": 101802, "Setup 6": 101930, "Solution 6": 0, "Results 5": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-11</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Setup 4/MechanicalSystemType:SystemClass for Structural|Static|ANSYS" Version="1.0">
@@ -523,15 +524,15 @@
       <container-type valType="String">Ansys.DesignModeler.Core.Addin:Geometry</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">94858</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 101033, "Input": 94856, "Output": 94856}</last-modified-by-usage>
+      <last-updated valType="Int64">101724</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 103147, "Input": 94856, "Output": 94856}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <unique-system-dir valType="String">SYS-10</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Geometry 4/Geometry:GeometryDataObject" Version="1.0">
         <class-type valType="String">Geometry</class-type>
         <object-name valType="String">GeometryDataObject</object-name>
-        <member-data valType="String">{"DisplayText": "GeometryDataObject", "_geometryFileRelativePath": r"dp0\SYS-10\DM\SYS-10.scdoc", "_geometryTeamcenterConnection": None, "_geometryPlugInName": "SpaceClaim[9432]", "GeomFileReference": $$ea8e5780-783c-4207-88b2-d5e776e490a5, "GeomRepositoryFileReference": None, "GeometryImportSolidBodies": True, "GeometryImportSurfaceBodies": True, "GeometryImportLineBodies": False, "GeometryImportParameters": "CADImportParameterType_Independent", "GeometryImportParametersFilter": "ANS;DS", "GeometryImportCadAttributes": False, "GeometryImportCadAttributesFilter": "SDFEA;DDM", "GeometryImportNamedSelections": False, "GeometryImportNamedSelectionsFilter": "NS", "GeometryImportMaterialProperties": False, "GeometryImportAnalysisType": "AnalysisType_3D", "GeometryImportCadAssociativity": True, "GeometryImportCoordinateSystems": False, "GeometryImportCoordinateSystemsFilter": "", "GeometryImportWorkPoints": False, "GeometryImportSavePartFile": False, "GeometryImportImportUsingInstances": True, "GeometryImportSmartUpdate": True, "GeometryImportComparePartsOnUpdate": "ComparePartsMethod_None", "GeometryImportComparePartsTolerance": "ComparePartsTolerance_Tight", "GeometryImportProcessEnclosures": True, "GeometryImportDecomposeDisjointFaces": True, "GeometryImportMixedResolutionOption": "MixedImport_None", "GeometryImportWeightclass": "ImportWeightclass_Heavyweight", "GeometryImportFlattenAssembly": True, "GeometryImportCleanGeometryOnImport": False, "GeometryImportStitchSurfacesOnImport": "StitchPreference_None", "GeometryImportStitchTolerance": 1E-07, "GeometryImportSpaceClaimExplodeUnsharedComponents": True, "Guid": "8139bb14-a1ac-4e49-b2a5-c8dde9ca39ee", "ObjectState": 0, "UpstreamConnections": {}, "ImportedFeatures": {}, "IsSpaceClaimGeometry": True, "_isModelerModeEnabled": False, "AreParametersOutOfDate": False, "RegisteredExternalFilesInfo": {"$$ea8e5780-783c-4207-88b2-d5e776e490a5": {"FilePathInDM": r"C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\dp0\SYS-10\DM\SYS-10.scdoc", "FilePathAfterRepair": r"C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\dp0\SYS-10\DM\SYS-10.scdoc", "IsFileRepaired": False, "CadSourceType": "SpaceClaim"}}, "AreParametersMigratedFromLegacyDatabaseImport": False}</member-data>
+        <member-data valType="String">{"DisplayText": "GeometryDataObject", "_geometryFileRelativePath": r"dp0\SYS-10\DM\SYS-10.scdoc", "_geometryTeamcenterConnection": None, "_geometryPlugInName": "SpaceClaim[9432]", "GeomFileReference": $$ea8e5780-783c-4207-88b2-d5e776e490a5, "GeomRepositoryFileReference": None, "GeometryImportSolidBodies": True, "GeometryImportSurfaceBodies": True, "GeometryImportLineBodies": True, "GeometryImportParameters": "CADImportParameterType_Independent", "GeometryImportParametersFilter": "", "GeometryImportCadAttributes": True, "GeometryImportCadAttributesFilter": "", "GeometryImportNamedSelections": True, "GeometryImportNamedSelectionsFilter": "", "GeometryImportMaterialProperties": True, "GeometryImportAnalysisType": "AnalysisType_3D", "GeometryImportCadAssociativity": True, "GeometryImportCoordinateSystems": True, "GeometryImportCoordinateSystemsFilter": "", "GeometryImportWorkPoints": True, "GeometryImportSavePartFile": False, "GeometryImportImportUsingInstances": True, "GeometryImportSmartUpdate": True, "GeometryImportComparePartsOnUpdate": "ComparePartsMethod_None", "GeometryImportComparePartsTolerance": "ComparePartsTolerance_Tight", "GeometryImportProcessEnclosures": True, "GeometryImportDecomposeDisjointFaces": True, "GeometryImportMixedResolutionOption": "MixedImport_None", "GeometryImportWeightclass": "ImportWeightclass_Heavyweight", "GeometryImportFlattenAssembly": True, "GeometryImportCleanGeometryOnImport": False, "GeometryImportStitchSurfacesOnImport": "StitchPreference_None", "GeometryImportStitchTolerance": 1E-07, "GeometryImportSpaceClaimExplodeUnsharedComponents": True, "Guid": "8139bb14-a1ac-4e49-b2a5-c8dde9ca39ee", "ObjectState": 0, "UpstreamConnections": {}, "ImportedFeatures": {}, "IsSpaceClaimGeometry": True, "_isModelerModeEnabled": False, "AreParametersOutOfDate": False, "RegisteredExternalFilesInfo": {"$$ea8e5780-783c-4207-88b2-d5e776e490a5": {"FilePathInDM": r"C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\dp0\SYS-10\DM\SYS-10.scdoc", "FilePathAfterRepair": r"C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\dp0\SYS-10\DM\SYS-10.scdoc", "IsFileRepaired": False, "CadSourceType": "SpaceClaim"}}, "AreParametersMigratedFromLegacyDatabaseImport": False}</member-data>
         <properties-setByUserFlag-data valType="String">["ObjectState"]</properties-setByUserFlag-data>
       </Object>
       <Object Name="/Geometry 4/SimulationGeneratedMesh:MeshFileObject" Version="1.0">
@@ -542,7 +543,7 @@
       <Object Name="/Geometry 4/TransferData:Geometry" Version="1.0">
         <class-type valType="String">TransferData</class-type>
         <object-name valType="String">Geometry</object-name>
-        <member-data valType="String">{"DisplayText": "Geometry", "ConnectionKeys": ["9541a0d3-11f9-4a67-9cd5-d4acaa79c176", "9acb0261-150b-473d-9339-61c5795bf95e"], "Data": $$29c0ab64-8bab-4037-8758-06227491da84}</member-data>
+        <member-data valType="String">{"DisplayText": "Geometry", "ConnectionKeys": ["9541a0d3-11f9-4a67-9cd5-d4acaa79c176", "9acb0261-150b-473d-9339-61c5795bf95e", "223bccb6-91c2-4ffb-bc24-325ce9dad25b"], "Data": $$29c0ab64-8bab-4037-8758-06227491da84}</member-data>
       </Object>
       <Object Name="/Geometry 4/SpaceClaimCallBackData:SCDataObject" Version="1.0">
         <class-type valType="String">SpaceClaimCallBackData</class-type>
@@ -629,21 +630,31 @@
         <object-name valType="String">SCDataObject 16</object-name>
         <member-data valType="String">{"DisplayText": "SCDataObject", "Guid": "8139bb14-a1ac-4e49-b2a5-c8dde9ca39ee"}</member-data>
       </Object>
+      <Object Name="/Geometry 4/SpaceClaimCallBackData:SCDataObject 17" Version="1.0">
+        <class-type valType="String">SpaceClaimCallBackData</class-type>
+        <object-name valType="String">SCDataObject 17</object-name>
+        <member-data valType="String">{"DisplayText": "SCDataObject", "Guid": "8139bb14-a1ac-4e49-b2a5-c8dde9ca39ee"}</member-data>
+      </Object>
+      <Object Name="/Geometry 4/SpaceClaimCallBackData:SCDataObject 18" Version="1.0">
+        <class-type valType="String">SpaceClaimCallBackData</class-type>
+        <object-name valType="String">SCDataObject 18</object-name>
+        <member-data valType="String">{"DisplayText": "SCDataObject", "Guid": "8139bb14-a1ac-4e49-b2a5-c8dde9ca39ee"}</member-data>
+      </Object>
     </Container>
     <Container Name="Model 4" Version="1.0">
       <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationModel</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">94894</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 101029, "Input": 94893, "Output": 94893}</last-modified-by-usage>
-      <outputs-generated-by-type valType="String">{"MechanicalModel": 100134, "MechanicalMesh": 100134}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 92746, "Setup 4": 92745, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 92723, "Results 4": 92747, "Setup": 92760, "Solution": 92761, "Results": 92762, "Setup 1": 93848, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 94707, "Solution 2": 94762, "Results 2": 94432, "Mesh": 93628, "Setup 3": 94643, "Solution 3": 0, "Setup 5": 94719, "Solution 5": 94398, "Results 3": 94430}</last-update-regen-times>
+      <last-updated valType="Int64">101973</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 103143, "Input": 101971, "Output": 101971}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 101972, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 0, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 0, "Mesh 1": 101802, "Setup 6": 101930, "Solution 6": 0, "Results 5": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-10</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Model 4/SimulationConnection:SimulationConnection" Version="1.0">
         <class-type valType="String">SimulationConnection</class-type>
         <object-name valType="String">SimulationConnection</object-name>
-        <member-data valType="String">{"DisplayText": "SimulationConnection", "Caption": "SimulationConnection", "EventIdToDataReferenceMap": {"411": None, "497": None, "554": None, "622": None, "653": None}, "DSIdToDataReferenceMap": {"13": {"CellModel": $$2b7fb108-a237-45be-a3dd-d26a5f93a341}, "12": {"CellModel": $$2b7fb108-a237-45be-a3dd-d26a5f93a341}, "14": {"CellModel": $$2b7fb108-a237-45be-a3dd-d26a5f93a341}, "112": {"CellSetup": $$8f924644-41c4-4cf4-8dcb-c57e7df61cdf}, "113": {"CellSolution": $$bc38844b-f5a3-424d-9c13-1663f129a1ce, "CellResults": $$8921c255-6152-4db9-b0c8-3d1383ec8f8f}, "125": {"CellSetup": $$b36db146-eed8-4be6-a210-f886e0265ab0}, "126": {"CellSolution": $$493339a2-2037-4ffd-b721-6582a210b368, "CellResults": $$15f3384f-2637-45e0-9ce6-43cbe5c59aa2}, "130": {"CellSetup": $$02cf3476-ee2a-4a23-95e7-7ca907e11200}, "131": {"CellSolution": $$f9eea8c4-326d-4299-80d6-6f6359563e01, "CellResults": $$ba8a43d7-366e-4047-9294-25c3c7c87634}, "134": {"CellSetup": $$95d12056-9e55-4e17-b015-ad1c51fd408c}, "135": {"CellSolution": $$d7b72032-ab1f-4baf-a92d-5abdcbfd5239, "CellResults": $$e1000af3-11d3-44c2-af16-a3d8a7f85721}}, "Attributes": {}}</member-data>
+        <member-data valType="String">{"DisplayText": "SimulationConnection", "Caption": "SimulationConnection", "EventIdToDataReferenceMap": {"411": None, "497": None, "554": None, "622": None, "653": None, "730": $$33878e33-1b4a-4ff6-8b96-3fe9f9c5187d}, "DSIdToDataReferenceMap": {"13": {"CellModel": $$2b7fb108-a237-45be-a3dd-d26a5f93a341}, "12": {"CellModel": $$2b7fb108-a237-45be-a3dd-d26a5f93a341}, "14": {"CellModel": $$2b7fb108-a237-45be-a3dd-d26a5f93a341}, "112": {"CellSetup": $$8f924644-41c4-4cf4-8dcb-c57e7df61cdf}, "113": {"CellSolution": $$bc38844b-f5a3-424d-9c13-1663f129a1ce, "CellResults": $$8921c255-6152-4db9-b0c8-3d1383ec8f8f}, "125": {"CellSetup": $$b36db146-eed8-4be6-a210-f886e0265ab0}, "126": {"CellSolution": $$493339a2-2037-4ffd-b721-6582a210b368, "CellResults": $$15f3384f-2637-45e0-9ce6-43cbe5c59aa2}, "130": {"CellSetup": $$02cf3476-ee2a-4a23-95e7-7ca907e11200}, "131": {"CellSolution": $$f9eea8c4-326d-4299-80d6-6f6359563e01, "CellResults": $$ba8a43d7-366e-4047-9294-25c3c7c87634}, "134": {"CellSetup": $$95d12056-9e55-4e17-b015-ad1c51fd408c}, "135": {"CellSolution": $$d7b72032-ab1f-4baf-a92d-5abdcbfd5239, "CellResults": $$e1000af3-11d3-44c2-af16-a3d8a7f85721}, "721": {"CellSetup": $$fe587867-aab8-49cc-b6f5-a76dfae5ebc5}, "730": {"CellSolution": $$7fbf3ce7-7bc1-41a9-bff1-40437aba5459, "CellResults": $$33878e33-1b4a-4ff6-8b96-3fe9f9c5187d}}, "Attributes": {}}</member-data>
       </Object>
       <Object Name="/Model 4/MechanicalSystemType:SystemClass for Any|Mechanical|Any" Version="1.0">
         <class-type valType="String">MechanicalSystemType</class-type>
@@ -737,9 +748,9 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">97014</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 97011, "Input": 97011, "Output": 97011}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 97011, "Input": 97011, "Output": 101957}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 94935, "Setup": 96620, "Solution": 96633, "Results": 96640, "Setup 1": 96644, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 96677, "Solution 2": 96414, "Results 2": 96431, "Mesh": 94986, "Setup 3": 96331, "Solution 3": 96418, "Setup 5": 96689, "Solution 5": 96424, "Results 3": 96726}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 94894, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 0, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 0, "Mesh 1": 101802, "Setup 6": 101930, "Solution 6": 0, "Results 5": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-11</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Results 4/MechanicalSystemType:SystemClass for Structural|Static|ANSYS" Version="1.0">
@@ -809,9 +820,9 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">97027</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 97018, "Input": 97018, "Output": 97018}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 101958, "Input": 97018, "Output": 101959}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 97014, "Setup": 96620, "Solution": 96633, "Results": 96640, "Setup 1": 96644, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 96677, "Solution 2": 96414, "Results 2": 96431, "Mesh": 94986, "Setup 3": 96331, "Solution 3": 96418, "Setup 5": 96689, "Solution 5": 96424, "Results 3": 96726}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 101973, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 0, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 0, "Mesh 1": 101802, "Setup 6": 101930, "Solution 6": 0, "Results 5": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-12</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Setup/MechanicalSystemType:SystemClass for Structural|Modal|ANSYS" Version="1.0">
@@ -868,9 +879,9 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">97028</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 97019, "Input": 97019, "Output": 97019}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 97019, "Input": 97019, "Output": 101960}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 97014, "Setup": 97027, "Solution": 96633, "Results": 96640, "Setup 1": 96644, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 96677, "Solution 2": 96414, "Results 2": 96431, "Mesh": 94986, "Setup 3": 96331, "Solution 3": 96418, "Setup 5": 96689, "Solution 5": 96424, "Results 3": 96726}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 94894, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 0, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 0, "Mesh 1": 101802, "Setup 6": 101930, "Solution 6": 0, "Results 5": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-12</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Solution/MechanicalSystemType:SystemClass for Structural|Modal|ANSYS" Version="1.0">
@@ -937,9 +948,9 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">97029</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 97026, "Input": 97026, "Output": 97026}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 97026, "Input": 97026, "Output": 101961}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 96640, "Setup 1": 96644, "Solution 1": 91195, "Results 1": 91196, "Setup 2": 96677, "Solution 2": 96414, "Results 2": 96431, "Mesh": 94986, "Setup 3": 96331, "Solution 3": 96418, "Setup 5": 96689, "Solution 5": 96424, "Results 3": 96726}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 94894, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 0, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 0, "Mesh 1": 101802, "Setup 6": 101930, "Solution 6": 0, "Results 5": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-12</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Results/MechanicalSystemType:SystemClass for Structural|Modal|ANSYS" Version="1.0">
@@ -1009,9 +1020,9 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 99883, "Input": 100777, "Output": 99883}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 101989, "Input": 101989, "Output": 101989}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{"SimulationSetup": 100778}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 97048, "Solution 1": 97049, "Results 1": 97050, "Setup 2": 99233, "Solution 2": 99862, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 99824, "Setup 5": 99770, "Solution 5": 0, "Results 3": 99569}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 101973, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 0, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 0, "Mesh 1": 101802, "Setup 6": 101930, "Solution 6": 0, "Results 5": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-13</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Setup 1/MechanicalSystemType:SystemClass for Structural|Static|ANSYS" Version="1.0">
@@ -1088,9 +1099,9 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 99884, "Input": 99884, "Output": 100781}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 101990, "Input": 101990, "Output": 101990}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{"SimulationSolution": 100779, "SimulationSolutionDataInternal": 100779}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 100271, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 101973, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 0, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 0, "Mesh 1": 101802, "Setup 6": 101930, "Solution 6": 0, "Results 5": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-13</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Solution 1/MechanicalSystemType:SystemClass for Structural|Static|ANSYS" Version="1.0">
@@ -1157,9 +1168,9 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">97050</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 99888, "Input": 99888, "Output": 100785}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 99888, "Input": 99888, "Output": 101964}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 100271, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 94894, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 0, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 0, "Mesh 1": 101802, "Setup 6": 101930, "Solution 6": 0, "Results 5": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-13</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Results 1/MechanicalSystemType:SystemClass for Structural|Static|ANSYS" Version="1.0">
@@ -1228,10 +1239,10 @@
       <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationSetup</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
-      <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 100969, "Input": 100965, "Output": 100970}</last-modified-by-usage>
-      <outputs-generated-by-type valType="String">{"SimulationSetup": 100966}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 0, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
+      <last-updated valType="Int64">102580</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 102888, "Input": 102888, "Output": 102888}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 101973, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 102580, "Solution 2": 102673, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 102593, "Mesh 1": 101802, "Setup 6": 102223, "Solution 6": 0, "Results 5": 0, "Setup 8": 0}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-14</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Setup 2/MechanicalSystemType:SystemClass for Structural|Transient|ANSYS" Version="1.0">
@@ -1252,7 +1263,7 @@
       <Object Name="/Setup 2/SystemCouplingSetupData:Setup Coupling Data" Version="1.0">
         <class-type valType="String">SystemCouplingSetupData</class-type>
         <object-name valType="String">Setup Coupling Data</object-name>
-        <member-data valType="String">{"DisplayText": "Setup Coupling Data", "DataConnections": ["a66192d7-4593-43a9-bb94-31cea2b0ce89"], "TransferDataObject": None}</member-data>
+        <member-data valType="String">{"DisplayText": "Setup Coupling Data", "DataConnections": ["3e044997-18e5-44ef-9efe-569f3c7367d8"], "TransferDataObject": $$ccd84620-6cfd-458f-ab07-8f9542c27b7f}</member-data>
       </Object>
       <Object Name="/Setup 2/DesignAssessmentSetupSettingsType:DesignAssessmentSetupSettingsType" Version="1.0">
         <class-type valType="String">DesignAssessmentSetupSettingsType</class-type>
@@ -1268,7 +1279,7 @@
         <class-type valType="String">Ansys.Simulation.Core.DataModel.DynamicSetupObject, Ans.Simulation.Core</class-type>
         <type-spec valType="String">{"SpecType": "Ansys.Core.DataModel.DataEntitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "System", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "JournalVariableName": "simulationSetup", "Methods": {"AcquireDataConnection": "Mechanical.AcquireSetupDataConnection", "RetrieveData": "Mechanical.RetrieveSimulationData", "ReleaseDataConnection": "Mechanical.ReleaseSimulationDataConnection"}, "Version": 1, "Members": {"DisplayText": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Display Text", "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": True}, "EnvironmentId": {"SpecType": "Ansys.Core.DataSpecs.IntegerSpec`1[[System.Int32, mscorlib]], Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": -1, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "UndefinedValue": 2147483647}, "SolveHandlerName": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}, "IsCreating": {"SpecType": "Ansys.Core.DataSpecs.BooleanSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": False, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}, "SetupOnly": {"SpecType": "Ansys.Core.DataSpecs.BooleanSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": False, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}, "ConnectionGUID": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}, "IsModifiedDueToDataTransferOnlyChange": {"SpecType": "Ansys.Core.DataSpecs.BooleanSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": False, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}, "Attributes": {"SpecType": "Ansys.Core.DataSpecs.DictionarySpec`2[[System.String, mscorlib],[System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib]], Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": {}, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "KeySpec": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}, "ElementSpec": {"SpecType": "Ansys.Core.DataSpecs.ListSpec`1[[System.String, mscorlib]], Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": [], "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "ElementSpec": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}, "MaxLength": 2147483647, "MinLength": 0}}}, "DataTypeHierarchy": "SimulationSetup,DataEntity"}</type-spec>
         <object-name valType="String">SetupObject for Structural|Transient|ANSYS</object-name>
-        <member-data valType="String">{"DisplayText": "SetupObject for Structural|Transient|ANSYS", "EnvironmentId": 134, "SolveHandlerName": None, "IsCreating": False, "SetupOnly": False, "ConnectionGUID": None, "IsModifiedDueToDataTransferOnlyChange": False, "Attributes": {}}</member-data>
+        <member-data valType="String">{"DisplayText": "SetupObject for Structural|Transient|ANSYS", "EnvironmentId": 134, "SolveHandlerName": None, "IsCreating": False, "SetupOnly": False, "ConnectionGUID": None, "IsModifiedDueToDataTransferOnlyChange": True, "Attributes": {}}</member-data>
         <custom-data>
           <EnvironmentState valType="String">5</EnvironmentState>
           <AttentionRequired valType="String">False</AttentionRequired>
@@ -1682,15 +1693,115 @@
         <object-name valType="String">TBULK 19</object-name>
         <member-data valType="String">{"DisplayText": "Convection Reference Temperature", "InternalName": "TBULK", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
       </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:INCD" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">INCD</object-name>
+        <member-data valType="String">{"DisplayText": "Incremental Displacement", "InternalName": "INCD", "PhysicalType": "Length", "DataType": "VectorXYZ", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:FORC" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">FORC</object-name>
+        <member-data valType="String">{"DisplayText": "Force", "InternalName": "FORC", "PhysicalType": "Force", "DataType": "VectorXYZ", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TEMP 20" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TEMP 20</object-name>
+        <member-data valType="String">{"DisplayText": "Temperature", "InternalName": "TEMP", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HFLW 20" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HFLW 20</object-name>
+        <member-data valType="String">{"DisplayText": "Heat Flow", "InternalName": "HFLW", "PhysicalType": "Heat Rate", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HCOEF 20" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HCOEF 20</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Coefficient", "InternalName": "HCOEF", "PhysicalType": "Heat Transfer Coefficient", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TBULK 20" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TBULK 20</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Reference Temperature", "InternalName": "TBULK", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TEMP 21" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TEMP 21</object-name>
+        <member-data valType="String">{"DisplayText": "Temperature", "InternalName": "TEMP", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HFLW 21" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HFLW 21</object-name>
+        <member-data valType="String">{"DisplayText": "Heat Flow", "InternalName": "HFLW", "PhysicalType": "Heat Rate", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HCOEF 21" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HCOEF 21</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Coefficient", "InternalName": "HCOEF", "PhysicalType": "Heat Transfer Coefficient", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TBULK 21" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TBULK 21</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Reference Temperature", "InternalName": "TBULK", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TEMP 22" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TEMP 22</object-name>
+        <member-data valType="String">{"DisplayText": "Temperature", "InternalName": "TEMP", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HFLW 22" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HFLW 22</object-name>
+        <member-data valType="String">{"DisplayText": "Heat Flow", "InternalName": "HFLW", "PhysicalType": "Heat Rate", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HCOEF 22" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HCOEF 22</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Coefficient", "InternalName": "HCOEF", "PhysicalType": "Heat Transfer Coefficient", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TBULK 22" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TBULK 22</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Reference Temperature", "InternalName": "TBULK", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TEMP 23" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TEMP 23</object-name>
+        <member-data valType="String">{"DisplayText": "Temperature", "InternalName": "TEMP", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HFLW 23" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HFLW 23</object-name>
+        <member-data valType="String">{"DisplayText": "Heat Flow", "InternalName": "HFLW", "PhysicalType": "Heat Rate", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:HCOEF 23" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">HCOEF 23</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Coefficient", "InternalName": "HCOEF", "PhysicalType": "Heat Transfer Coefficient", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingVariable:TBULK 23" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">TBULK 23</object-name>
+        <member-data valType="String">{"DisplayText": "Convection Reference Temperature", "InternalName": "TBULK", "PhysicalType": "Temperature", "DataType": "Scalar", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingRegion:FSIN_1" Version="1.0">
+        <class-type valType="String">SystemCouplingRegion</class-type>
+        <object-name valType="String">FSIN_1</object-name>
+        <member-data valType="String">{"DisplayText": "Fluid Solid Interface", "InternalName": "FSIN_1", "Topology": "Surface", "OutputVariableNames": ["INCD"], "InputVariableNames": ["FORC"]}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingTransientCoSimulationParticipant:Solution 2" Version="1.0">
+        <class-type valType="String">SystemCouplingTransientCoSimulationParticipant</class-type>
+        <object-name valType="String">Solution 2</object-name>
+        <member-data valType="String">{"DisplayText": "EM Transient", "InternalName": "Solution 2", "UnitSystem": "MKS_STANDARD", "BaseUnits": {"Length": "m", "Mass": "kg", "Angle": "radian", "SolidAngle": "sr", "Temperature": "C", "ChemicalAmount": "mol", "Time": "s", "Current": "A", "Luminance": "cd"}, "Times": [5E-08], "Steps": None, "RegionReferences": [$$a6a98795-4748-4c63-8574-760e51a71060], "VariableReferences": [$$ea3f20ab-03be-4a53-95f4-284758498e32, $$5ccf233c-4a64-4be5-939c-388665fe6508], "SupportsRestarts": True, "SolverName": "MAPDL", "CouplingIterationsSupported": True}</member-data>
+      </Object>
     </Container>
     <Container Name="Solution 2" Version="1.0">
       <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationSolution</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 100292, "Input": 100292, "Output": 100971}</last-modified-by-usage>
-      <outputs-generated-by-type valType="String">{"SimulationSolution": 101028, "SimulationSolutionDataInternal": 101028}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 0, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
+      <last-modified-by-usage valType="String">{"Extrinsic": 102602, "Input": 102602, "Output": 103136}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{"SimulationSolution": 103134, "SimulationSolutionDataInternal": 103134}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 101973, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 102580, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 102593, "Mesh 1": 101802, "Setup 6": 102223, "Solution 6": 0, "Results 5": 0, "Setup 8": 102984, "Solution 8": 102985, "Results 6": 102986}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-14</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Solution 2/MechanicalSystemType:SystemClass for Structural|Transient|ANSYS" Version="1.0">
@@ -1705,15 +1816,7 @@
         <member-data valType="String">{"DisplayText": "SolutionData for Structural|Transient|ANSYS", "TransferType": None}</member-data>
         <custom-data>
           <dictionary-keys valType="String">[transferDataMap]</dictionary-keys>
-          <transferDataMap>
-            <dictionary-keys valType="String">[MechanicalSolution]</dictionary-keys>
-            <MechanicalSolution>
-              <Name valType="String">MechanicalSolution</Name>
-              <Guid0 valType="String">0c6b2d33-7935-452c-8b1d-85c11d5f2952</Guid0>
-              <UpToDate valType="String">False</UpToDate>
-              <value-keys valType="String">{"Name": System.String, "Guid0": System.String, "UpToDate": System.Boolean}</value-keys>
-            </MechanicalSolution>
-          </transferDataMap>
+          <transferDataMap />
         </custom-data>
       </Object>
       <Object Name="/Solution 2/SimulationSolutionDataInternal:SolutionDataInternal for Structural|Transient|ANSYS" Version="1.0">
@@ -1765,9 +1868,9 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">99863</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 100578, "Input": 100578, "Output": 100975}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 103144, "Input": 102835, "Output": 103145}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 0, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0}</last-update-regen-times>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 101973, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 102580, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 102593, "Mesh 1": 101802, "Setup 6": 102223, "Solution 6": 0, "Results 5": 0, "Setup 8": 102984, "Solution 8": 102985, "Results 6": 102986}</last-update-regen-times>
       <unique-system-dir valType="String">SYS-14</unique-system-dir>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Results 2/MechanicalSystemType:SystemClass for Structural|Transient|ANSYS" Version="1.0">
@@ -2101,7 +2204,7 @@
     <Container Name="Setup 5" Version="1.0">
       <container-type valType="String">Ansys.MultiphysicsCoupling.Core.Addin:Setup</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
-      <deleted-sources valType="String">[]</deleted-sources>
+      <deleted-sources valType="String">[Setup 2]</deleted-sources>
       <last-updated valType="Int64">100284</last-updated>
       <last-modified-by-usage valType="String">{"Extrinsic": 100279, "Input": 100244, "Output": 93745}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
@@ -2111,7 +2214,7 @@
       <Object Name="/Setup 5/CouplingPartcipantConnectionsDataObject:CouplingParticipantConnections" Version="1.0">
         <class-type valType="String">CouplingPartcipantConnectionsDataObject</class-type>
         <object-name valType="String">CouplingParticipantConnections</object-name>
-        <member-data valType="String">{"DisplayText": "CouplingParticipantConnections", "InputConnections": $$bed1feda-93e2-44bd-b845-250ac2a6a3ef, "InputConnectionsToRemove": [], "UpstreamMpcParticipantData": {"Setup 3": $$45912178-b800-4ad3-857e-c6bfef05c75c, "Setup 2": $$6b8883d4-2e05-45cb-a882-56671d2f58ef}, "CouplingServiceInputFile": None, "HighlightLinkedNodes": True, "SetupAttributes": {}, "RefreshResult": "RefreshSuccessful"}</member-data>
+        <member-data valType="String">{"DisplayText": "CouplingParticipantConnections", "InputConnections": $$bed1feda-93e2-44bd-b845-250ac2a6a3ef, "InputConnectionsToRemove": ["Setup 2"], "UpstreamMpcParticipantData": {"Setup 3": $$45912178-b800-4ad3-857e-c6bfef05c75c, "Setup 2": $$6b8883d4-2e05-45cb-a882-56671d2f58ef}, "CouplingServiceInputFile": None, "HighlightLinkedNodes": True, "SetupAttributes": {}, "RefreshResult": "RefreshSuccessful"}</member-data>
       </Object>
       <Object Name="/Setup 5/AnalysisSettings:AnalysisSettings" Version="1.0">
         <class-type valType="String">AnalysisSettings</class-type>
@@ -2153,7 +2256,7 @@
       <Object Name="/Setup 5/ContainerInputConnections:CouplingContainerInputConnections" Version="1.0">
         <class-type valType="String">ContainerInputConnections</class-type>
         <object-name valType="String">CouplingContainerInputConnections</object-name>
-        <member-data valType="String">{"DisplayText": "CouplingContainerInputConnections", "Connections": {"Setup 2": {"$$9f1b7017-65ce-4b44-abf6-31a0046a8e69": {"SystemCouplingSetupData": ["a66192d7-4593-43a9-bb94-31cea2b0ce89"]}}, "Setup 3": {"$$6d90c9e9-82c3-497d-98a0-39d97319e010": {"SystemCouplingSetupData": ["f0141422-332f-443c-a88d-4fe6a438381d"]}}}}</member-data>
+        <member-data valType="String">{"DisplayText": "CouplingContainerInputConnections", "Connections": {"Setup 3": {"$$6d90c9e9-82c3-497d-98a0-39d97319e010": {"SystemCouplingSetupData": ["f0141422-332f-443c-a88d-4fe6a438381d"]}}}}</member-data>
       </Object>
       <Object Name="/Setup 5/SystemCouplingRegion:outside_wall" Version="1.0">
         <class-type valType="String">SystemCouplingRegion</class-type>
@@ -2316,9 +2419,9 @@
     <Container Name="Results 3" Version="1.0">
       <container-type valType="String">Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer</container-type>
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
-      <deleted-sources valType="String">[]</deleted-sources>
+      <deleted-sources valType="String">[Solution 2]</deleted-sources>
       <last-updated valType="Int64">99569</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 99546, "Input": 99568, "Output": 93508}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 101713, "Input": 99568, "Output": 93508}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 94858, "Model 4": 94894, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 97048, "Solution 1": 97049, "Results 1": 97050, "Setup 2": 99233, "Solution 2": 99416, "Results 2": 99417, "Mesh": 94986, "Setup 3": 99182, "Solution 3": 99387, "Setup 5": 99257, "Solution 5": 0, "Results 3": 99065}</last-update-regen-times>
       <unique-system-dir valType="String">FFF-1</unique-system-dir>
@@ -2326,13 +2429,11 @@
       <Object Name="/Results 3/CFDResults:Results 3 Source" Version="1.0">
         <class-type valType="String">CFDResults</class-type>
         <object-name valType="String">Results 3 Source</object-name>
-        <member-data valType="String">{"DisplayText": "Results 3 Source", "DataLinks": {"$$13e4ce7a-a480-4698-85a3-ff735f59a9b2": $$9bdcdf8a-d946-4f0d-bd2e-58f888485743, "$$18d2ac27-2306-4f71-a3ea-12116f77b644": $$de0c7241-bd94-4bc3-9d62-8c2ac3afa4d3}, "UpstreamContainersRemovedSinceRefresh": False, "State": "UpToDate", "ForceRefresh": False, "ExternalFileMap": {}, "InitCCL": None, "UseInitCCL": False, "PostStateFile": $$177ea7a3-8160-4f4a-9b1e-195816cf5e55, "_reportFiles": None, "_htmReportFile": None, "_xmlReportFile": None, "MRESLoadOptionsMsg": "See Solution component properties for multi-configuration options (CFX only).", "ClearState": False, "LoadReport": "None", "CustomReportTemplate": "", "RunSessionScript": False, "UpdateScriptCCL": "", "StateInitializationFile": "", "GenerateReport": False, "ReportName": "Report", "ReportLocationDirectory": "", "LastResultsID": 4}</member-data>
+        <member-data valType="String">{"DisplayText": "Results 3 Source", "DataLinks": {"$$13e4ce7a-a480-4698-85a3-ff735f59a9b2": $$9bdcdf8a-d946-4f0d-bd2e-58f888485743}, "UpstreamContainersRemovedSinceRefresh": True, "State": "UpToDate", "ForceRefresh": False, "ExternalFileMap": {}, "InitCCL": None, "UseInitCCL": False, "PostStateFile": $$177ea7a3-8160-4f4a-9b1e-195816cf5e55, "_reportFiles": None, "_htmReportFile": None, "_xmlReportFile": None, "MRESLoadOptionsMsg": "See Solution component properties for multi-configuration options (CFX only).", "ClearState": False, "LoadReport": "None", "CustomReportTemplate": "", "RunSessionScript": False, "UpdateScriptCCL": "", "StateInitializationFile": "", "GenerateReport": False, "ReportName": "Report", "ReportLocationDirectory": "", "LastResultsID": 4}</member-data>
         <custom-data>
           <DataSource1 valType="String">Solution 3</DataSource1>
           <EntityType1 valType="String">FluentSolution</EntityType1>
-          <DataSource2 valType="String">Solution 2</DataSource2>
-          <EntityType2 valType="String">MechanicalSolution</EntityType2>
-          <value-keys valType="String">{"DataSource1": System.String, "EntityType1": System.String, "DataSource2": System.String, "EntityType2": System.String}</value-keys>
+          <value-keys valType="String">{"DataSource1": System.String, "EntityType1": System.String}</value-keys>
         </custom-data>
       </Object>
       <Object Name="/Results 3/CFDAnalysis:Results 3 Provider" Version="1.0">
@@ -2345,10 +2446,669 @@
         <object-name valType="String">SolutionDataProvider</object-name>
         <member-data valType="String">{"DisplayText": "SolutionDataProvider", "Entity": $$13e4ce7a-a480-4698-85a3-ff735f59a9b2, "DataType": "FluentSolution", "ConnectionKey": "997519f9-1b99-4d7b-9349-a970e0fe4d59", "RefreshTimestamp": 99387, "ID": 1, "SecondID": 2, "DataEntityType": "FluentSolution", "SystemName": "FFF 1", "LastFilename": {"FluentSolution": r"C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\dp0\FFF-1\Fluent\FFF-1.2-3-00024.dat.gz"}}</member-data>
       </Object>
-      <Object Name="/Results 3/SolutionDataLink:SolutionData for Structural|Transient|ANSYS" Version="1.0">
+    </Container>
+    <Container Name="Solution 7" Version="1.0">
+      <container-type valType="String">Ansys.MultiphysicsCoupling.Core.Addin:Solution</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 102828, "Input": 102597, "Output": 101677}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 101973, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 102580, "Solution 2": 102536, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 102593, "Mesh 1": 101802, "Setup 6": 102223, "Solution 6": 0, "Results 5": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">SC-1</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Solution 7/SolutionConnectionsDataObject:CouplingSolutionConnections" Version="1.0">
+        <class-type valType="String">SolutionConnectionsDataObject</class-type>
+        <object-name valType="String">CouplingSolutionConnections</object-name>
+        <member-data valType="String">{"DisplayText": "CouplingSolutionConnections", "InputConnections": $$c699a5c0-2d20-4570-b6b0-5339caedf9fa, "InputConnectionsToRemove": [], "StandaloneStatusQuery": "MultiphysicsCoupling.BackgroundTaskGetStatus", "FinalSCLFile": None, "FinalSCRFile": None, "SetupProvider": $$617fc9a2-c4a7-40aa-8214-bcb22f7b5458, "ShutdownCode": -1, "SystemCouplingErrorMessage": "Participant Solution 6 encountered a fatal error. Message: Stopped in routine SYNP_CHKCONV_SC Please do not save the project if you would like to recover to the last saved state.", "NameDisplayNameMap": {"Data Transfer": "Data Transfer", "Data Transfer 2": "Data Transfer 2"}}</member-data>
+      </Object>
+      <Object Name="/Solution 7/SolutionComponentProperties:SolutionComponentProperties" Version="1.0">
+        <class-type valType="String">SolutionComponentProperties</class-type>
+        <object-name valType="String">SolutionComponentProperties</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionComponentProperties", "UpdateOption": "Foreground", "CommandLineOptions": None}</member-data>
+      </Object>
+      <Object Name="/Solution 7/SolutionInformation:solutionInformation" Version="1.0">
+        <class-type valType="String">SolutionInformation</class-type>
+        <object-name valType="String">solutionInformation</object-name>
+        <member-data valType="String">{"DisplayText": "System Coupling", "RelativePath": None, "IsDefault": True, "Participant": None}</member-data>
+      </Object>
+      <Object Name="/Solution 7/SolutionInformation:Solution 6" Version="1.0">
+        <class-type valType="String">SolutionInformation</class-type>
+        <object-name valType="String">Solution 6</object-name>
+        <member-data valType="String">{"DisplayText": "Fluid Flow (CFX)", "RelativePath": None, "IsDefault": False, "Participant": $$3ee5b818-b594-4164-906e-3afa69b4597b}</member-data>
+      </Object>
+      <Object Name="/Solution 7/SolutionInformation:Solution 2" Version="1.0">
+        <class-type valType="String">SolutionInformation</class-type>
+        <object-name valType="String">Solution 2</object-name>
+        <member-data valType="String">{"DisplayText": "EM Transient", "RelativePath": None, "IsDefault": False, "Participant": $$52af32f3-11d6-4f5c-8995-ecb8d71d9350}</member-data>
+      </Object>
+      <Object Name="/Solution 7/SystemCouplingSettings:systemCouplingSettings" Version="1.0">
+        <class-type valType="String">Ansys.Core.DataModel.DataObjects.DynamicDataObject, Ans.Core</class-type>
+        <type-spec valType="String">{"SpecType": "Ansys.Core.DataModel.DataEntitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "System", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "JournalVariableName": "systemCouplingSettings", "Methods": {}, "Version": 1, "Members": {"DisplayText": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Display Text", "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": True}, "IsSceneGraphOn": {"SpecType": "Ansys.Core.DataSpecs.BooleanSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": False, "Exposure": "System", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": True, "IsParameterizable": False, "ReuseJournalVariables": False}}, "DataTypeHierarchy": "SystemCouplingSettings,DataEntity"}</type-spec>
+        <object-name valType="String">systemCouplingSettings</object-name>
+        <member-data valType="String">{"DisplayText": "systemCouplingSettings", "IsSceneGraphOn": True}</member-data>
+      </Object>
+      <Object Name="/Solution 7/ContainerInputConnections:CouplingContainerInputConnections" Version="1.0">
+        <class-type valType="String">ContainerInputConnections</class-type>
+        <object-name valType="String">CouplingContainerInputConnections</object-name>
+        <member-data valType="String">{"DisplayText": "CouplingContainerInputConnections", "Connections": {"Setup 7": {"$$617fc9a2-c4a7-40aa-8214-bcb22f7b5458": {"CouplingSetupProvider": ["8de27a7b-353e-44ed-a03a-53855bb34176"]}}}}</member-data>
+      </Object>
+      <Object Name="/Solution 7/ConvergenceChart:Chart" Version="1.0">
+        <class-type valType="String">ConvergenceChart</class-type>
+        <object-name valType="String">Chart</object-name>
+        <member-data valType="String">{"DisplayText": "Chart", "ObjectState": "UpToDate", "Errors": {}, "Warnings": {}, "XAxis": "Coupling Iteration", "Variables": [$$f7fa2efe-346e-47e2-9c04-d4b0ec7f9fee, $$3824ce47-f252-4ad5-a948-6918b45dde14], "Chart": None, "IsDefault": True, "IsUserTouched": False, "AxisX": $$f5af079d-753a-4b9e-83b4-9a00c9d990f9, "AxisY": $$611c13e4-7798-46ce-b06d-6e2712ef4d37}</member-data>
+        <properties-setByUserFlag-data valType="String">["Variables"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Solution 7/AxisContinuous:AxisX" Version="1.0">
+        <class-type valType="String">AxisContinuous</class-type>
+        <object-name valType="String">AxisX</object-name>
+        <member-data valType="String">{"DisplayText": "Coupling Iteration", "QuantityName": "Coupling Iteration", "Title": "Coupling Iteration", "Scale": "Linear", "AutomaticRange": True, "RangeMinimum": -Infinity, "RangeMaximum": Infinity}</member-data>
+      </Object>
+      <Object Name="/Solution 7/AxisContinuous:AxisY" Version="1.0">
+        <class-type valType="String">AxisContinuous</class-type>
+        <object-name valType="String">AxisY</object-name>
+        <member-data valType="String">{"DisplayText": "", "QuantityName": "Coupling Iteration", "Title": "", "Scale": "CommonLog", "AutomaticRange": True, "RangeMinimum": -Infinity, "RangeMaximum": Infinity}</member-data>
+      </Object>
+      <Object Name="/Solution 7/ChartVariable:Solution 6:Data Transfer:Change:RMS" Version="1.0">
+        <class-type valType="String">ChartVariable</class-type>
+        <object-name valType="String">Solution 6:Data Transfer:Change:RMS</object-name>
+        <member-data valType="String">{"DisplayText": "Fluid Flow (CFX):Data Transfer:Change:RMS", "QualifiedName": "Solution 6:Data Transfer:Change:RMS", "RefinementLevel": "Coupling Iteration", "ContainingChart": $$3be5a61f-6121-408d-9f30-a75adab51670, "ChartVariable": None, "MinX": 0, "MaxX": 0, "MinY": 0, "MaxY": 0, "LineWidth": 1, "Color": "255 0 0 255", "SymbolSize": 4}</member-data>
+      </Object>
+      <Object Name="/Solution 7/ChartVariable:Solution 2:Data Transfer 2:Change:RMS" Version="1.0">
+        <class-type valType="String">ChartVariable</class-type>
+        <object-name valType="String">Solution 2:Data Transfer 2:Change:RMS</object-name>
+        <member-data valType="String">{"DisplayText": "EM Transient:Data Transfer 2:Change:RMS", "QualifiedName": "Solution 2:Data Transfer 2:Change:RMS", "RefinementLevel": "Coupling Iteration", "ContainingChart": $$3be5a61f-6121-408d-9f30-a75adab51670, "ChartVariable": None, "MinX": 0, "MaxX": 0, "MinY": 0, "MaxY": 0, "LineWidth": 1, "Color": "0 255 0 255", "SymbolSize": 4}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Setup 7" Version="1.0">
+      <container-type valType="String">Ansys.MultiphysicsCoupling.Core.Addin:Setup</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">102593</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 102588, "Input": 102558, "Output": 101688}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 101973, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 102580, "Solution 2": 102536, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 102592, "Mesh 1": 101802, "Setup 6": 102223, "Solution 6": 0, "Results 5": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">SC-1</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Setup 7/CouplingPartcipantConnectionsDataObject:CouplingParticipantConnections" Version="1.0">
+        <class-type valType="String">CouplingPartcipantConnectionsDataObject</class-type>
+        <object-name valType="String">CouplingParticipantConnections</object-name>
+        <member-data valType="String">{"DisplayText": "CouplingParticipantConnections", "InputConnections": $$a2a32636-02d3-4f6e-9bc4-1f14ff5e33c3, "InputConnectionsToRemove": [], "UpstreamMpcParticipantData": {"Setup 6": $$3ee5b818-b594-4164-906e-3afa69b4597b, "Setup 2": $$52af32f3-11d6-4f5c-8995-ecb8d71d9350}, "CouplingServiceInputFile": None, "HighlightLinkedNodes": True, "SetupAttributes": {}, "RefreshResult": "RefreshSuccessful"}</member-data>
+      </Object>
+      <Object Name="/Setup 7/AnalysisSettings:AnalysisSettings" Version="1.0">
+        <class-type valType="String">AnalysisSettings</class-type>
+        <object-name valType="String">AnalysisSettings</object-name>
+        <member-data valType="String">{"DisplayText": "AnalysisSettings", "AnalysisType": "Transient", "Initialization": "ProgramControlled", "StartTime": None, "StepSize": "2E-10 [s]", "DurationDefinedBy": "EndTime", "NumberOfSteps": 1, "EndTime": "5E-08 [s]", "MinimumIteration": 1, "MaximumIteration": 20, "RestartStep": 0, "RestartTime": None, "ObjectState": "UpToDate", "Messages": {}, "Errors": {}, "RestartStepTime": {}, "RestartStepFile": {}, "DisableSolutionUpdate": False}</member-data>
+        <properties-setByUserFlag-data valType="String">["EndTime", "StepSize", "MaximumIteration"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 7/ExecutionControlSettings:ExecutionControl" Version="1.0">
+        <class-type valType="String">ExecutionControlSettings</class-type>
+        <object-name valType="String">ExecutionControl</object-name>
+        <member-data valType="String">{"DisplayText": "ExecutionControl", "EngineVersion": 2}</member-data>
+      </Object>
+      <Object Name="/Setup 7/SequenceControl:SequenceControls" Version="1.0">
+        <class-type valType="String">SequenceControl</class-type>
+        <object-name valType="String">SequenceControls</object-name>
+        <member-data valType="String">{"DisplayText": "SequenceControls", "Sequence": {"$$3ee5b818-b594-4164-906e-3afa69b4597b": 2, "$$52af32f3-11d6-4f5c-8995-ecb8d71d9350": 1}}</member-data>
+      </Object>
+      <Object Name="/Setup 7/DebugOutputControls:DebugOutputControls" Version="1.0">
+        <class-type valType="String">DebugOutputControls</class-type>
+        <object-name valType="String">DebugOutputControls</object-name>
+        <member-data valType="String">{"DisplayText": "DebugOutputControls", "GlobalLevel": "None", "Startup": "Default", "ParticipantConnection": "Default", "AnalysisInitialization": "Default", "SolutionInitialization": "Default", "DataTransfersLevel": "Default", "SourceMeshCoordinates": "Default", "SourceMeshTopology": "Default", "SourceData": "Default", "TargetMeshCoordinates": "Default", "TargetMeshTopology": "Default", "TargetData": "Default", "ConvergenceChecks": "Default", "Shutdown": "Default"}</member-data>
+      </Object>
+      <Object Name="/Setup 7/ExpertSettings:ExpertSettings" Version="1.0">
+        <class-type valType="String">ExpertSettings</class-type>
+        <object-name valType="String">ExpertSettings</object-name>
+        <member-data valType="String">{"DisplayText": "ExpertSettings", "Settings": {}}</member-data>
+      </Object>
+      <Object Name="/Setup 7/IntermediateResultFilesOutputControls:IntermediateResultFilesOutputControls" Version="1.0">
+        <class-type valType="String">IntermediateResultFilesOutputControls</class-type>
+        <object-name valType="String">IntermediateResultFilesOutputControls</object-name>
+        <member-data valType="String">{"DisplayText": "IntermediateResultFilesOutputControls", "OutputFrequency": "None", "StepInterval": 1, "ObjectState": "UpToDate", "Messages": {}, "Errors": {}}</member-data>
+      </Object>
+      <Object Name="/Setup 7/CouplingSetupProvider:Setup 7Provider" Version="1.0">
+        <class-type valType="String">CouplingSetupProvider</class-type>
+        <object-name valType="String">Setup 7Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Setup 7Provider", "DataConnections": ["8de27a7b-353e-44ed-a03a-53855bb34176"], "TransferDataObject": None}</member-data>
+      </Object>
+      <Object Name="/Setup 7/ContainerInputConnections:CouplingContainerInputConnections" Version="1.0">
+        <class-type valType="String">ContainerInputConnections</class-type>
+        <object-name valType="String">CouplingContainerInputConnections</object-name>
+        <member-data valType="String">{"DisplayText": "CouplingContainerInputConnections", "Connections": {"Setup 6": {"$$d69fc057-01c2-4aeb-8f20-6be45ce3236e": {"SystemCouplingSetupData": ["ab0f0f23-e2a5-4220-a735-ebc5bf556782"]}}, "Setup 2": {"$$9f1b7017-65ce-4b44-abf6-31a0046a8e69": {"SystemCouplingSetupData": ["3e044997-18e5-44ef-9efe-569f3c7367d8"]}}}}</member-data>
+      </Object>
+      <Object Name="/Setup 7/DataTransfer:Data Transfer" Version="1.0">
+        <class-type valType="String">DataTransfer</class-type>
+        <object-name valType="String">Data Transfer</object-name>
+        <member-data valType="String">{"DisplayText": "Data Transfer", "SourceParticipant": $$52af32f3-11d6-4f5c-8995-ecb8d71d9350, "TargetParticipant": $$3ee5b818-b594-4164-906e-3afa69b4597b, "SourceRegion": $$35273758-a136-4f46-8229-7a0d56caa824, "TargetRegion": $$35b906d5-4dfc-4d94-b26c-f04130d46376, "SourceVariable": $$7a781f3f-288d-48ca-8ddb-f0b2b66ea403, "TargetVariable": $$b4ac220a-16f8-4c07-9c5e-72cfd8ebdc25, "TransferSettings": $$d39d2843-09aa-493c-9fcb-7395cb80773e, "IsSuppressed": False, "ObjectState": "UpToDate", "Messages": {}, "Errors": {}}</member-data>
+      </Object>
+      <Object Name="/Setup 7/DataTransfer:Data Transfer 2" Version="1.0">
+        <class-type valType="String">DataTransfer</class-type>
+        <object-name valType="String">Data Transfer 2</object-name>
+        <member-data valType="String">{"DisplayText": "Data Transfer 2", "SourceParticipant": $$3ee5b818-b594-4164-906e-3afa69b4597b, "TargetParticipant": $$52af32f3-11d6-4f5c-8995-ecb8d71d9350, "SourceRegion": $$35b906d5-4dfc-4d94-b26c-f04130d46376, "TargetRegion": $$35273758-a136-4f46-8229-7a0d56caa824, "SourceVariable": $$80490145-d472-4bbc-bdb5-ed727edbc2a5, "TargetVariable": $$8a2fd3a1-bf6b-4638-b877-c0420f13f82f, "TransferSettings": $$34a43386-bca3-4aeb-b4f0-2c51bb5f78f4, "IsSuppressed": False, "ObjectState": "UpToDate", "Messages": {}, "Errors": {}}</member-data>
+      </Object>
+      <Object Name="/Setup 7/DataTransferSettings:Data Transfer:TransferSettings" Version="1.0">
+        <class-type valType="String">DataTransferSettings</class-type>
+        <object-name valType="String">Data Transfer:TransferSettings</object-name>
+        <member-data valType="String">{"DisplayText": "Data Transfer:TransferSettings", "TransferAt": "StartOfIteration", "Ramping": "None", "UnderRelaxationFactor": 1, "ConvergenceTarget": 0.01, "ObjectState": "UpToDate", "Messages": {}, "Errors": {}}</member-data>
+      </Object>
+      <Object Name="/Setup 7/DataTransferSettings:Data Transfer:TransferSettings 1" Version="1.0">
+        <class-type valType="String">DataTransferSettings</class-type>
+        <object-name valType="String">Data Transfer:TransferSettings 1</object-name>
+        <member-data valType="String">{"DisplayText": "Data Transfer:TransferSettings", "TransferAt": "StartOfIteration", "Ramping": "None", "UnderRelaxationFactor": 1, "ConvergenceTarget": 0.01, "ObjectState": "UpToDate", "Messages": {}, "Errors": {}}</member-data>
+      </Object>
+      <Object Name="/Setup 7/DataTransferSettings:Data Transfer 2:TransferSettings" Version="1.0">
+        <class-type valType="String">DataTransferSettings</class-type>
+        <object-name valType="String">Data Transfer 2:TransferSettings</object-name>
+        <member-data valType="String">{"DisplayText": "Data Transfer 2:TransferSettings", "TransferAt": "StartOfIteration", "Ramping": "None", "UnderRelaxationFactor": 1, "ConvergenceTarget": 0.01, "ObjectState": "UpToDate", "Messages": {}, "Errors": {}}</member-data>
+      </Object>
+      <Object Name="/Setup 7/SystemCouplingTransientCoSimulationParticipant:Solution 6" Version="1.0">
+        <class-type valType="String">SystemCouplingTransientCoSimulationParticipant</class-type>
+        <object-name valType="String">Solution 6</object-name>
+        <member-data valType="String">{"DisplayText": "Fluid Flow (CFX)", "InternalName": "Solution 6", "UnitSystem": "SI", "BaseUnits": {"Length": "m", "Mass": "kg", "Angle": "radian", "SolidAngle": "sr", "Temperature": "K", "ChemicalAmount": "mol", "Time": "s", "Current": "A", "Luminance": "cd"}, "Times": [], "Steps": [], "RegionReferences": [$$35b906d5-4dfc-4d94-b26c-f04130d46376, $$d3c7da04-0178-4612-97fd-1189297f4e31], "VariableReferences": [$$80490145-d472-4bbc-bdb5-ed727edbc2a5, $$b4ac220a-16f8-4c07-9c5e-72cfd8ebdc25], "SupportsRestarts": True, "SolverName": "CFX", "CouplingIterationsSupported": True}</member-data>
+        <properties-setByUserFlag-data valType="String">["DisplayText", "InternalName", "UnitSystem", "BaseUnits.Length", "BaseUnits.Mass", "BaseUnits.Angle", "BaseUnits.SolidAngle", "BaseUnits.Temperature", "BaseUnits.ChemicalAmount", "BaseUnits.Time", "BaseUnits.Current", "BaseUnits.Luminance", "RegionReferences", "VariableReferences", "SupportsRestarts", "SolverName", "CouplingIterationsSupported"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 7/SystemCouplingTransientCoSimulationParticipant:Solution 2" Version="1.0">
+        <class-type valType="String">SystemCouplingTransientCoSimulationParticipant</class-type>
+        <object-name valType="String">Solution 2</object-name>
+        <member-data valType="String">{"DisplayText": "EM Transient", "InternalName": "Solution 2", "UnitSystem": "MKS_STANDARD", "BaseUnits": {"Length": "m", "Mass": "kg", "Angle": "radian", "SolidAngle": "sr", "Temperature": "C", "ChemicalAmount": "mol", "Time": "s", "Current": "A", "Luminance": "cd"}, "Times": [5E-08], "Steps": None, "RegionReferences": [$$35273758-a136-4f46-8229-7a0d56caa824], "VariableReferences": [$$8a2fd3a1-bf6b-4638-b877-c0420f13f82f, $$7a781f3f-288d-48ca-8ddb-f0b2b66ea403], "SupportsRestarts": True, "SolverName": "MAPDL", "CouplingIterationsSupported": True}</member-data>
+        <properties-setByUserFlag-data valType="String">["DisplayText", "InternalName", "UnitSystem", "BaseUnits.Length", "BaseUnits.Mass", "BaseUnits.Angle", "BaseUnits.SolidAngle", "BaseUnits.Temperature", "BaseUnits.ChemicalAmount", "BaseUnits.Time", "BaseUnits.Current", "BaseUnits.Luminance", "Times[0]", "Steps", "RegionReferences", "VariableReferences", "SupportsRestarts", "SolverName", "CouplingIterationsSupported"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 7/SystemCouplingRegion:Relay" Version="1.0">
+        <class-type valType="String">SystemCouplingRegion</class-type>
+        <object-name valType="String">Relay</object-name>
+        <member-data valType="String">{"DisplayText": "Relay", "InternalName": "Relay", "Topology": "Surface", "OutputVariableNames": ["Total Force"], "InputVariableNames": ["Mesh Displacement"]}</member-data>
+        <properties-setByUserFlag-data valType="String">["DisplayText", "InternalName", "Topology", "OutputVariableNames[0]", "InputVariableNames[0]"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 7/SystemCouplingRegion:Walls" Version="1.0">
+        <class-type valType="String">SystemCouplingRegion</class-type>
+        <object-name valType="String">Walls</object-name>
+        <member-data valType="String">{"DisplayText": "Walls", "InternalName": "Walls", "Topology": "Surface", "OutputVariableNames": ["Total Force"], "InputVariableNames": []}</member-data>
+        <properties-setByUserFlag-data valType="String">["DisplayText", "InternalName", "Topology", "OutputVariableNames[0]"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 7/SystemCouplingRegion:FSIN_1" Version="1.0">
+        <class-type valType="String">SystemCouplingRegion</class-type>
+        <object-name valType="String">FSIN_1</object-name>
+        <member-data valType="String">{"DisplayText": "Fluid Solid Interface", "InternalName": "FSIN_1", "Topology": "Surface", "OutputVariableNames": ["INCD"], "InputVariableNames": ["FORC"]}</member-data>
+        <properties-setByUserFlag-data valType="String">["DisplayText", "InternalName", "Topology", "OutputVariableNames[0]", "InputVariableNames[0]"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 7/SystemCouplingVariable:Total Force" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">Total Force</object-name>
+        <member-data valType="String">{"DisplayText": "Force", "InternalName": "Total Force", "PhysicalType": "Force", "DataType": "VectorXY", "Exposure": "Standard"}</member-data>
+        <properties-setByUserFlag-data valType="String">["DisplayText", "InternalName", "PhysicalType", "DataType", "Exposure"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 7/SystemCouplingVariable:Mesh Displacement" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">Mesh Displacement</object-name>
+        <member-data valType="String">{"DisplayText": "Mesh Displacement", "InternalName": "Mesh Displacement", "PhysicalType": "Length", "DataType": "VectorXY", "Exposure": "Standard"}</member-data>
+        <properties-setByUserFlag-data valType="String">["DisplayText", "InternalName", "PhysicalType", "DataType", "Exposure"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 7/SystemCouplingVariable:FORC" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">FORC</object-name>
+        <member-data valType="String">{"DisplayText": "Force", "InternalName": "FORC", "PhysicalType": "Force", "DataType": "VectorXYZ", "Exposure": "Standard"}</member-data>
+        <properties-setByUserFlag-data valType="String">["DisplayText", "InternalName", "PhysicalType", "DataType", "Exposure"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 7/SystemCouplingVariable:INCD" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">INCD</object-name>
+        <member-data valType="String">{"DisplayText": "Incremental Displacement", "InternalName": "INCD", "PhysicalType": "Length", "DataType": "VectorXYZ", "Exposure": "Standard"}</member-data>
+        <properties-setByUserFlag-data valType="String">["DisplayText", "InternalName", "PhysicalType", "DataType", "Exposure"]</properties-setByUserFlag-data>
+      </Object>
+    </Container>
+    <Container Name="Mesh 1" Version="1.0">
+      <container-type valType="String">Ansys.Meshing.Core.Addin:SimulationModel</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">101802</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 101801, "Input": 101783, "Output": 101783}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 94894, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 0, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 0, "Mesh 1": 0, "Setup 6": 0, "Solution 6": 0, "Results 5": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">CFX</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Mesh 1/SimulationConnection:SimulationConnection" Version="1.0">
+        <class-type valType="String">SimulationConnection</class-type>
+        <object-name valType="String">SimulationConnection</object-name>
+        <member-data valType="String">{"DisplayText": "SimulationConnection", "_IsAssemblyMeshing": False, "_MeshingSolverSetting": 1, "Caption": "SimulationConnection", "EventIdToDataReferenceMap": {}, "DSIdToDataReferenceMap": {"11": {"CellModel": $$1ffa5d1a-7b7e-4d5c-8b27-d11a487f7c1b}, "10": {"CellModel": $$1ffa5d1a-7b7e-4d5c-8b27-d11a487f7c1b}, "12": {"CellModel": $$1ffa5d1a-7b7e-4d5c-8b27-d11a487f7c1b}}, "Attributes": {}}</member-data>
+      </Object>
+      <Object Name="/Mesh 1/MechanicalSystemType:SystemType for Fluids||CFX" Version="1.0">
+        <class-type valType="String">MechanicalSystemType</class-type>
+        <object-name valType="String">SystemType for Fluids||CFX</object-name>
+        <member-data valType="String">{"DisplayText": None, "PhysicsType": "Fluids", "AnalysisType": None, "SolverType": "CFX", "PhysicsTypeDisplayString": "CFD", "AnalysisTypeDisplayString": "", "SolverTypeDisplayString": "CFX", "SystemTypeCombination": None, "DelimitedSystemTypeCominbation": None, "SetupEntityType": "SimulationSetup", "SolutionEntityType": "SimulationSolution", "ResultsEntityType": "SimulationResults", "SetupDataEntityType": "MechanicalSetup", "SolutionDataEntityType": "MechanicalSolution", "ResultsDataEntityType": "MechanicalResults", "Id": None, "SystemName": "CFX", "SystemID": "CFX", "ICEngineAutoSetup": False, "ICEngineMeshSettings": "Edit Mesh Settings", "ICEngineMeshPanelValues": None, "RefMeshSize": "0 [mm]"}</member-data>
+      </Object>
+      <Object Name="/Mesh 1/MeshingMesh:MeshingMeshDataObject" Version="1.0">
+        <class-type valType="String">MeshingMesh</class-type>
+        <object-name valType="String">MeshingMeshDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "MeshingMeshDataObject", "Caption": "Mesh", "MeshId": 12}</member-data>
+        <custom-data>
+          <AttentionRequired valType="String">False</AttentionRequired>
+          <ImportedMeshFileType valType="String">0</ImportedMeshFileType>
+          <value-keys valType="String">{"AttentionRequired": System.Boolean, "ImportedMeshFileType": System.Int32}</value-keys>
+          <dictionary-keys valType="String">[transferDataMap]</dictionary-keys>
+          <transferDataMap>
+            <dictionary-keys valType="String">[CMDBMesh]</dictionary-keys>
+            <CMDBMesh>
+              <Name valType="String">CMDBMesh</Name>
+              <Guid0 valType="String">de2ccebc-7c31-498c-af58-c1698b1aed69</Guid0>
+              <Data valType="String">f9f8340e-7c20-48bd-82c7-1652d4ce38ab</Data>
+              <UpToDate valType="String">True</UpToDate>
+              <value-keys valType="String">{"Name": System.String, "Guid0": System.String, "Data": System.String, "UpToDate": System.Boolean}</value-keys>
+            </CMDBMesh>
+          </transferDataMap>
+        </custom-data>
+      </Object>
+      <Object Name="/Mesh 1/MeshingGeneratedMeshOutputProvider:MeshingGeneratedMeshOutputProvider" Version="1.0">
+        <class-type valType="String">MeshingGeneratedMeshOutputProvider</class-type>
+        <object-name valType="String">MeshingGeneratedMeshOutputProvider</object-name>
+        <member-data valType="String">{"DisplayText": "MeshingGeneratedMeshOutputProvider", "DataConnections": [], "TransferDataObject": $$9e92cdc3-f51c-4b2b-86fa-5413f9322f61, "VersionNumber": 1, "PMDBFile": None, "ACMOFile": None, "Mechdb": None, "UnitSystem": None}</member-data>
+      </Object>
+      <Object Name="/Mesh 1/GeneratedMeshOutputForAQWAModelProvider:GeneratedMeshOutputForAQWAModelProvider" Version="1.0">
+        <class-type valType="String">GeneratedMeshOutputForAQWAModelProvider</class-type>
+        <object-name valType="String">GeneratedMeshOutputForAQWAModelProvider</object-name>
+        <member-data valType="String">{"DisplayText": "GeneratedMeshOutputForAQWAModelProvider", "DataConnections": [], "TransferDataObject": $$17a7c3e0-2214-4fd6-96b6-343488d760fe, "PMDBFile": None, "ACMOFile": None, "Mechdb": None, "UnitSystem": None}</member-data>
+      </Object>
+      <Object Name="/Mesh 1/OutputsGeneratedManagerDataEntityType:OutputsGeneratedManagerObject" Version="1.0">
+        <class-type valType="String">OutputsGeneratedManagerDataEntityType</class-type>
+        <object-name valType="String">OutputsGeneratedManagerObject</object-name>
+        <member-data valType="String">{"DisplayText": "OutputsGeneratedManagerObject", "outputGeneratedTimes": {"CMDBMesh": 101783}}</member-data>
+      </Object>
+      <Object Name="/Mesh 1/MeshProperties:MeshProperties" Version="1.0">
+        <class-type valType="String">MeshProperties</class-type>
+        <object-name valType="String">MeshProperties</object-name>
+        <member-data valType="String">{"DisplayText": "MeshProperties", "saveMeshFileInSeparateFile": False}</member-data>
+      </Object>
+      <Object Name="/Mesh 1/ContainerConnections:ModelContainerConnections" Version="1.0">
+        <class-type valType="String">ContainerConnections</class-type>
+        <object-name valType="String">ModelContainerConnections</object-name>
+        <member-data valType="String">{"DisplayText": "ModelContainerConnections", "Connections": {"Geometry 4": {"$$29c0ab64-8bab-4037-8758-06227491da84": {"Geometry": ["223bccb6-91c2-4ffb-bc24-325ce9dad25b"]}}}}</member-data>
+      </Object>
+      <Object Name="/Mesh 1/MechanicalModel:MechanicalModel" Version="1.0">
+        <class-type valType="String">MechanicalModel</class-type>
+        <object-name valType="String">MechanicalModel</object-name>
+        <member-data valType="String">{"DisplayText": "MechanicalModel", "Caption": "Model", "File": $$499fb782-79ab-4528-8547-53b08df32d22, "MeshFile": None, "EdaFile": None, "ModelId": 10, "PrototypeId": 11, "ModelHash": "5d545dc4-9989-4e3b-9c6e-928d399845cf", "GeometryHash": "5d545dc4-9989-4e3b-9c6e-928d399845cf", "IsResetNotRequired": False}</member-data>
+        <custom-data>
+          <File valType="String">499fb782-79ab-4528-8547-53b08df32d22</File>
+          <FilePath valType="String"></FilePath>
+          <AttentionRequired valType="String">False</AttentionRequired>
+          <ParameterValueModified valType="String">False</ParameterValueModified>
+          <IsModifiedDueToModelAssemblyPropertyChange valType="String">False</IsModifiedDueToModelAssemblyPropertyChange>
+          <AttachType valType="String">2</AttachType>
+          <value-keys valType="String">{"File": System.String, "FilePath": System.String, "AttentionRequired": System.Boolean, "ParameterValueModified": System.Boolean, "IsModifiedDueToModelAssemblyPropertyChange": System.Boolean, "AttachType": System.Int32}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Mesh 1/MechanicalMeshFile:CMDBMesh" Version="1.0">
+        <class-type valType="String">MechanicalMeshFile</class-type>
+        <object-name valType="String">CMDBMesh</object-name>
+        <member-data valType="String">{"DisplayText": "CMDBMesh", "TransferFile": $$8676be5b-1af0-43f1-a3e0-f7269ce091e0}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Setup 6" Version="1.0">
+      <container-type valType="String">Ansys.CFX.CFXCore.CFXCoreAddin:CFXSetupContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">102223</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 102221, "Input": 102222, "Output": 101697}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 94894, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 0, "Solution 2": 0, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 0, "Mesh 1": 101802, "Solution 6": 0, "Results 5": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">CFX</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Setup 6/CFXSetupProperties:Setup 6 Source" Version="1.0">
+        <class-type valType="String">CFXSetupProperties</class-type>
+        <object-name valType="String">Setup 6 Source</object-name>
+        <member-data valType="String">{"DisplayText": "Setup 6 Source", "DataLinks": {"$$9f07760e-b8e0-454c-9fa6-01ca4d406b9b": $$a4cabbe6-ee81-4a3f-91b0-cd8fcca23b28}, "UpstreamContainersRemovedSinceRefresh": False, "State": "UpToDate", "ForceRefresh": False, "ExternalFileMap": {}, "InitCCL": None, "UseInitCCL": False, "DEFFileTimeStamp": 102223, "SolverInputExtendedFiles": [], "CachedANSYSInputFile": None, "PhysicsStatus": "", "AllowAssemblyMeshImport": False, "PhysicsErrSuppressEnabled": False, "PhysicsStatusSummary": "", "ANSYSInputPendingDelete": False, "DeletedMeshIDs": [], "NextMeshID": 2, "SolverInputFile": $$c93d4673-7539-44cb-9752-db856216166b, "CaseFile": $$e5abc3ad-d04e-4091-a5f9-c2bddd9020a3}</member-data>
+        <custom-data>
+          <DataSource1 valType="String">Mesh 1</DataSource1>
+          <EntityType1 valType="String">SimulationGeneratedMesh</EntityType1>
+          <DataSource2 valType="String">Setup 6</DataSource2>
+          <EntityType2 valType="String">SimulationGeneratedMesh</EntityType2>
+          <DataSource3 valType="String">Setup 6</DataSource3>
+          <EntityType3 valType="String">CFXMesh</EntityType3>
+          <DataSource4 valType="String">Setup 6</DataSource4>
+          <EntityType4 valType="String">MechanicalSetup</EntityType4>
+          <value-keys valType="String">{"DataSource1": System.String, "EntityType1": System.String, "DataSource2": System.String, "EntityType2": System.String, "DataSource3": System.String, "EntityType3": System.String, "DataSource4": System.String, "EntityType4": System.String}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Setup 6/CFXSetup:Setup 6 Provider" Version="1.0">
+        <class-type valType="String">CFXSetup</class-type>
+        <object-name valType="String">Setup 6 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Setup 6 Provider", "DataSourceRef": $$46794d6c-9180-4ab7-b70d-d4e29afb19f0, "DataConnections": {"b7ef3c75-9f81-487e-9ac5-d1556eda5532": None}, "CFXSolverInputFile": $$c93d4673-7539-44cb-9752-db856216166b, "MAPDLSolverInputFile": None}</member-data>
+      </Object>
+      <Object Name="/Setup 6/SystemCouplingSetupData:Setup Coupling Data" Version="1.0">
+        <class-type valType="String">SystemCouplingSetupData</class-type>
+        <object-name valType="String">Setup Coupling Data</object-name>
+        <member-data valType="String">{"DisplayText": "Setup Coupling Data", "DataConnections": ["ab0f0f23-e2a5-4220-a735-ebc5bf556782"], "TransferDataObject": $$6cd7f3ec-3f2d-4dbb-bead-663179cdb08a}</member-data>
+      </Object>
+      <Object Name="/Setup 6/PersistedSystemCouplingData:PersistedSystemCouplingData" Version="1.0">
+        <class-type valType="String">PersistedSystemCouplingData</class-type>
+        <object-name valType="String">PersistedSystemCouplingData</object-name>
+        <member-data valType="String">{"DisplayText": "PersistedSystemCouplingData", "Xml": """&lt;?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?&gt;
+&lt;Participant&gt;
+
+  &lt;SystemCouplingTransientCoSimulationParticipant CouplingIterationsSupported=\"true\" Name=\"CFX\" UnitSystem=\"SI\"&gt;
+    &lt;Region DisplayName=\"Relay\" Name=\"Relay\" Topology=\"Surface\"&gt;
+      &lt;Output&gt;Total Force&lt;/Output&gt;
+      &lt;Input&gt;Mesh Displacement&lt;/Input&gt;
+    &lt;/Region&gt;
+    &lt;Region DisplayName=\"Walls\" Name=\"Walls\" Topology=\"Surface\"&gt;
+      &lt;Output&gt;Total Force&lt;/Output&gt;
+    &lt;/Region&gt;
+    &lt;Variable DataType=\"VectorXY\" DisplayName=\"Force\" Name=\"Total Force\" PhysicalType=\"Force\"/&gt;
+    &lt;Variable DataType=\"VectorXY\" DisplayName=\"Mesh Displacement\" Name=\"Mesh Displacement\" PhysicalType=\"Length\"/&gt;
+  &lt;/SystemCouplingTransientCoSimulationParticipant&gt;
+
+&lt;/Participant&gt;
+""", "ParticipantName": "Solution 6"}</member-data>
+      </Object>
+      <Object Name="/Setup 6/CFXMeshDataLink:MeshingMeshDataObject" Version="1.0">
+        <class-type valType="String">CFXMeshDataLink</class-type>
+        <object-name valType="String">MeshingMeshDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "MeshingMeshDataObject", "Entity": $$9f07760e-b8e0-454c-9fa6-01ca4d406b9b, "DataType": "CMDBMesh", "ConnectionKey": "de2ccebc-7c31-498c-af58-c1698b1aed69", "RefreshTimestamp": 101802, "ID": 1}</member-data>
+      </Object>
+      <Object Name="/Setup 6/SystemCouplingVariable:Total Force" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">Total Force</object-name>
+        <member-data valType="String">{"DisplayText": "Force", "InternalName": "Total Force", "PhysicalType": "Force", "DataType": "VectorXY", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 6/SystemCouplingVariable:Mesh Displacement" Version="1.0">
+        <class-type valType="String">SystemCouplingVariable</class-type>
+        <object-name valType="String">Mesh Displacement</object-name>
+        <member-data valType="String">{"DisplayText": "Mesh Displacement", "InternalName": "Mesh Displacement", "PhysicalType": "Length", "DataType": "VectorXY", "Exposure": "Standard"}</member-data>
+      </Object>
+      <Object Name="/Setup 6/SystemCouplingRegion:Walls" Version="1.0">
+        <class-type valType="String">SystemCouplingRegion</class-type>
+        <object-name valType="String">Walls</object-name>
+        <member-data valType="String">{"DisplayText": "Walls", "InternalName": "Walls", "Topology": "Surface", "OutputVariableNames": ["Total Force"], "InputVariableNames": []}</member-data>
+      </Object>
+      <Object Name="/Setup 6/SystemCouplingRegion:Relay" Version="1.0">
+        <class-type valType="String">SystemCouplingRegion</class-type>
+        <object-name valType="String">Relay</object-name>
+        <member-data valType="String">{"DisplayText": "Relay", "InternalName": "Relay", "Topology": "Surface", "OutputVariableNames": ["Total Force"], "InputVariableNames": ["Mesh Displacement"]}</member-data>
+      </Object>
+      <Object Name="/Setup 6/SystemCouplingTransientCoSimulationParticipant:Solution 6" Version="1.0">
+        <class-type valType="String">SystemCouplingTransientCoSimulationParticipant</class-type>
+        <object-name valType="String">Solution 6</object-name>
+        <member-data valType="String">{"DisplayText": "Solution 6", "InternalName": "Solution 6", "UnitSystem": "SI", "BaseUnits": {"Length": "m", "Mass": "kg", "Angle": "radian", "SolidAngle": "sr", "Temperature": "K", "ChemicalAmount": "mol", "Time": "s", "Current": "A", "Luminance": "cd"}, "Times": [], "Steps": [], "RegionReferences": [$$756698df-66d6-4dbb-8e2f-3790fa486eef, $$29cfaca6-e770-412c-81c8-3d15fc1a16b7], "VariableReferences": [$$a75d8082-30b2-49fa-a36e-2330cc1351fb, $$8931e2de-6c0b-4404-a75a-f7e9014f1be0], "SupportsRestarts": True, "SolverName": "CFX", "CouplingIterationsSupported": True}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Solution 6" Version="1.0">
+      <container-type valType="String">Ansys.CFX.CFXCore.CFXCoreAddin:CFXSolutionContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 103133, "Input": 102785, "Output": 102785}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 101973, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 102580, "Solution 2": 102536, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 102593, "Mesh 1": 101802, "Setup 6": 102223, "Solution 6": 0, "Results 5": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">CFX</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Solution 6/CFXSolutionProperties:Solution 6 Source" Version="1.0">
+        <class-type valType="String">CFXSolutionProperties</class-type>
+        <object-name valType="String">Solution 6 Source</object-name>
+        <member-data valType="String">{"DisplayText": "Solution 6 Source", "DataLinks": {"$$f533dcbc-e651-41fc-b077-3bfb44d21282": $$092d33d0-77ce-435e-afbf-94e0daac3003}, "UpstreamContainersRemovedSinceRefresh": False, "State": "Modified", "ForceRefresh": False, "ExternalFileMap": {}, "InitCCL": None, "UseInitCCL": False, "CurrentResultsRef": None, "RunDirectory": "", "UpstreamExecutionControlCCL": "", "InitializationOption": "CurrentSolutionData", "CacheSolutionData": False, "KeepLatestSolutionOnly": True, "ExecutionControlOption": "IssueWarning", "HaveExecutionControlConflict": False, "LoadMResOptions": "LastConfigOnly", "FailedRun": None, "SolverPath": "", "SolverArguments": "", "ExecutionControlCCL": "", "SolverCommandMode": "Foreground"}</member-data>
+        <custom-data>
+          <DataSource1 valType="String">Setup 6</DataSource1>
+          <EntityType1 valType="String">CFXSetup</EntityType1>
+          <value-keys valType="String">{"DataSource1": System.String, "EntityType1": System.String}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Solution 6/ComponentSolveSettingsForAddin:ComponentSolveSettingsForAddin" Version="1.0">
+        <class-type valType="String">ComponentSolveSettingsForAddin</class-type>
+        <object-name valType="String">ComponentSolveSettingsForAddin</object-name>
+        <member-data valType="String">{"DisplayText": "ComponentSolveSettingsForAddin", "UpdateOption": "Foreground", "RsmUserString": None, "ConfiguredQueue": {"OptionIcons": None, "OptionLabels": "Local", "Options": "Local", "ReadOnlyOptions": None, "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None, "Value": "Local"}, "RsmJobName": "Workbench", "EnablePolling": True, "PollingInterval": "120 [s]", "ExecutionMode": "Serial", "NumberOfProcesses": 2}</member-data>
+      </Object>
+      <Object Name="/Solution 6/ExpertProperties:ExpertProperties" Version="1.0">
+        <class-type valType="String">ExpertProperties</class-type>
+        <object-name valType="String">ExpertProperties</object-name>
+        <member-data valType="String">{"DisplayText": "ExpertProperties", "ImportantNote": "These options are visible because a development environment variable is set", "ExpertPropertiesString": "", "EnableDebug": False, "EnableValidation": False, "EnableTesting": False, "EnableErrorReporting": True, "EnableWarningReporting": True, "EnableInfoReporting": False, "EnableFileBasedCommunication": False, "EnableSocketCommunication": False, "EnableFailureCauseReporting": True}</member-data>
+      </Object>
+      <Object Name="/Solution 6/ComponentSettingsForRsmDpUpdate:ComponentSettingsForRsmDpUpdate" Version="1.0">
+        <class-type valType="String">ComponentSettingsForRsmDpUpdate</class-type>
+        <object-name valType="String">ComponentSettingsForRsmDpUpdate</object-name>
+        <member-data valType="String">{"DisplayText": "ComponentSettingsForRsmDpUpdate", "SerialOnly": False, "UseLimitOnNumberOfCores": False, "LimitOnNumberOfCores": 2}</member-data>
+      </Object>
+      <Object Name="/Solution 6/CFXSolution:Solution 6 Provider" Version="1.0">
+        <class-type valType="String">CFXSolution</class-type>
+        <object-name valType="String">Solution 6 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Solution 6 Provider", "DataSourceRef": $$77409884-b60b-44bf-ad2e-fdea21dbc3d3, "DataConnections": {"af7f6d47-d832-456f-b34a-6989bf02f2dd": None}}</member-data>
+      </Object>
+      <Object Name="/Solution 6/CFXSolutionData:Solution 6 Provider" Version="1.0">
+        <class-type valType="String">CFXSolutionData</class-type>
+        <object-name valType="String">Solution 6 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Solution 6 Provider", "DataSourceRef": $$77409884-b60b-44bf-ad2e-fdea21dbc3d3, "DataConnections": {}}</member-data>
+      </Object>
+      <Object Name="/Solution 6/CFXSetupDataLink:Setup 6 Provider" Version="1.0">
+        <class-type valType="String">CFXSetupDataLink</class-type>
+        <object-name valType="String">Setup 6 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Setup 6 Provider", "Entity": $$f533dcbc-e651-41fc-b077-3bfb44d21282, "DataType": None, "ConnectionKey": "b7ef3c75-9f81-487e-9ac5-d1556eda5532", "RefreshTimestamp": 102223}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Results 5" Version="1.0">
+      <container-type valType="String">Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 101622, "Input": 101616, "Output": 101615}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <unique-system-dir valType="String">CFX</unique-system-dir>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/Results 5/CFDResults:Results 5 Source" Version="1.0">
+        <class-type valType="String">CFDResults</class-type>
+        <object-name valType="String">Results 5 Source</object-name>
+        <member-data valType="String">{"DisplayText": "Results 5 Source", "DataLinks": {"$$a2e176f9-44bf-42b3-9975-0528fac10daf": $$4f608718-6eee-4cef-8a3a-cece9e2f9297}, "UpstreamContainersRemovedSinceRefresh": False, "State": "UpToDate", "ForceRefresh": False, "ExternalFileMap": {}, "InitCCL": None, "UseInitCCL": False, "PostStateFile": None, "_reportFiles": None, "_htmReportFile": None, "_xmlReportFile": None, "MRESLoadOptionsMsg": "See Solution component properties for multi-configuration options (CFX only).", "ClearState": False, "LoadReport": "None", "CustomReportTemplate": "", "RunSessionScript": False, "UpdateScriptCCL": "", "StateInitializationFile": "", "GenerateReport": False, "ReportName": "Report", "ReportLocationDirectory": "", "LastResultsID": 2}</member-data>
+        <custom-data>
+          <DataSource1 valType="String">Solution 6</DataSource1>
+          <EntityType1 valType="String">CFXSolution</EntityType1>
+          <value-keys valType="String">{"DataSource1": System.String, "EntityType1": System.String}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Results 5/CFDAnalysis:Results 5 Provider" Version="1.0">
+        <class-type valType="String">CFDAnalysis</class-type>
+        <object-name valType="String">Results 5 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Results 5 Provider", "DataSourceRef": $$d177cfd5-dc0c-4a42-8f29-10194f9426ee}</member-data>
+      </Object>
+      <Object Name="/Results 5/SolutionDataLink:Solution 6 Provider" Version="1.0">
         <class-type valType="String">SolutionDataLink</class-type>
+        <object-name valType="String">Solution 6 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Solution 6 Provider", "Entity": $$a2e176f9-44bf-42b3-9975-0528fac10daf, "DataType": "CFXSolution", "ConnectionKey": "af7f6d47-d832-456f-b34a-6989bf02f2dd", "RefreshTimestamp": 0, "ID": 1, "SecondID": 2, "DataEntityType": "CFXSolution", "SystemName": "", "LastFilename": {}}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Setup 8" Version="1.0">
+      <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationSetup</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">102984</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 102978, "Input": 102978, "Output": 102978}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 101973, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 102580, "Solution 2": 102673, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 102593, "Mesh 1": 101802, "Setup 6": 102223, "Solution 6": 0, "Results 5": 0, "Setup 8": 0, "Solution 8": 0, "Results 6": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">SYS-15</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Setup 8/MechanicalSystemType:SystemClass for Structural|Transient|ANSYS" Version="1.0">
+        <class-type valType="String">MechanicalSystemType</class-type>
+        <object-name valType="String">SystemClass for Structural|Transient|ANSYS</object-name>
+        <member-data valType="String">{"DisplayText": "SystemClass for Structural|Transient|ANSYS", "PhysicsType": "Structural", "AnalysisType": "Transient", "SolverType": "ANSYS", "PhysicsTypeDisplayString": "Structural", "AnalysisTypeDisplayString": "Transient", "SolverTypeDisplayString": "Mechanical APDL", "SystemTypeCombination": "StructuralTransientANSYS", "DelimitedSystemTypeCominbation": "Structural|Transient|ANSYS", "SetupEntityType": "SimulationSetup", "SolutionEntityType": "SimulationSolution", "ResultsEntityType": "SimulationResults", "SetupDataEntityType": "MechanicalSetup", "SolutionDataEntityType": "MechanicalSolution", "ResultsDataEntityType": "MechanicalResults", "Id": "Transient Structural (ANSYS)", "SystemName": "SYS-15", "SystemID": "SYS-15"}</member-data>
+      </Object>
+      <Object Name="/Setup 8/MechanicalSetup:SetupData for Structural|Transient|ANSYS" Version="1.0">
+        <class-type valType="String">Ansys.Simulation.Core.DataModel.DynamicSetupData, Ans.Simulation.Core</class-type>
+        <type-spec valType="String">{"SpecType": "Ansys.Core.DataModel.DataEntitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "System", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "JournalVariableName": "mechanicalSetup", "Methods": {"AcquireDataConnection": "Mechanical.AcquireSetupDataConnection", "RetrieveData": "Mechanical.RetrieveSimulationData", "ReleaseDataConnection": "Mechanical.ReleaseSimulationDataConnection"}, "Version": 1, "Members": {"DisplayText": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Display Text", "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": True}, "TransferType": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}}, "DataTypeHierarchy": "MechanicalSetup,DataEntity"}</type-spec>
+        <object-name valType="String">SetupData for Structural|Transient|ANSYS</object-name>
+        <member-data valType="String">{"DisplayText": "SetupData for Structural|Transient|ANSYS", "TransferType": None}</member-data>
+        <custom-data>
+          <dictionary-keys valType="String">[transferDataMap]</dictionary-keys>
+          <transferDataMap />
+        </custom-data>
+      </Object>
+      <Object Name="/Setup 8/SystemCouplingSetupData:Setup Coupling Data" Version="1.0">
+        <class-type valType="String">SystemCouplingSetupData</class-type>
+        <object-name valType="String">Setup Coupling Data</object-name>
+        <member-data valType="String">{"DisplayText": "Setup Coupling Data", "DataConnections": [], "TransferDataObject": None}</member-data>
+      </Object>
+      <Object Name="/Setup 8/DesignAssessmentSetupSettingsType:DesignAssessmentSetupSettingsType" Version="1.0">
+        <class-type valType="String">DesignAssessmentSetupSettingsType</class-type>
+        <object-name valType="String">DesignAssessmentSetupSettingsType</object-name>
+        <member-data valType="String">{"DisplayText": "DesignAssessmentSetupSettingsType", "SolverTarget": "", "UserAttributeFile": ""}</member-data>
+      </Object>
+      <Object Name="/Setup 8/SimulationSetup:SetupObject for Structural|Transient|ANSYS" Version="1.0">
+        <class-type valType="String">Ansys.Simulation.Core.DataModel.DynamicSetupObject, Ans.Simulation.Core</class-type>
+        <type-spec valType="String">{"SpecType": "Ansys.Core.DataModel.DataEntitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "System", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "JournalVariableName": "simulationSetup", "Methods": {"AcquireDataConnection": "Mechanical.AcquireSetupDataConnection", "RetrieveData": "Mechanical.RetrieveSimulationData", "ReleaseDataConnection": "Mechanical.ReleaseSimulationDataConnection"}, "Version": 1, "Members": {"DisplayText": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Display Text", "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": True}, "EnvironmentId": {"SpecType": "Ansys.Core.DataSpecs.IntegerSpec`1[[System.Int32, mscorlib]], Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": -1, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "UndefinedValue": 2147483647}, "SolveHandlerName": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}, "IsCreating": {"SpecType": "Ansys.Core.DataSpecs.BooleanSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": False, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}, "SetupOnly": {"SpecType": "Ansys.Core.DataSpecs.BooleanSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": False, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}, "ConnectionGUID": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}, "IsModifiedDueToDataTransferOnlyChange": {"SpecType": "Ansys.Core.DataSpecs.BooleanSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": False, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}, "Attributes": {"SpecType": "Ansys.Core.DataSpecs.DictionarySpec`2[[System.String, mscorlib],[System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib]], Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": {}, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "KeySpec": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}, "ElementSpec": {"SpecType": "Ansys.Core.DataSpecs.ListSpec`1[[System.String, mscorlib]], Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": [], "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "ElementSpec": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}, "MaxLength": 2147483647, "MinLength": 0}}}, "DataTypeHierarchy": "SimulationSetup,DataEntity"}</type-spec>
+        <object-name valType="String">SetupObject for Structural|Transient|ANSYS</object-name>
+        <member-data valType="String">{"DisplayText": "SetupObject for Structural|Transient|ANSYS", "EnvironmentId": 721, "SolveHandlerName": None, "IsCreating": False, "SetupOnly": False, "ConnectionGUID": None, "IsModifiedDueToDataTransferOnlyChange": False, "Attributes": {}}</member-data>
+        <custom-data>
+          <EnvironmentState valType="String">5</EnvironmentState>
+          <AttentionRequired valType="String">False</AttentionRequired>
+          <ParameterValueModified valType="String">False</ParameterValueModified>
+          <FutureIntent valType="String">False</FutureIntent>
+          <IsUsingDP0BasedWorkingDirectory valType="String">False</IsUsingDP0BasedWorkingDirectory>
+          <MechanicalBusyPendingChange valType="String">False</MechanicalBusyPendingChange>
+          <ModelContainerInputParameterValueWhichReallyAffectsTheSetupContainerHasBeenModified valType="String">False</ModelContainerInputParameterValueWhichReallyAffectsTheSetupContainerHasBeenModified>
+          <ExternalLoadsCount valType="String">0</ExternalLoadsCount>
+          <DesignAssessmentFileRef valType="String">null</DesignAssessmentFileRef>
+          <value-keys valType="String">{"EnvironmentState": System.Int32, "AttentionRequired": System.Boolean, "ParameterValueModified": System.Boolean, "FutureIntent": System.Boolean, "IsUsingDP0BasedWorkingDirectory": System.Boolean, "MechanicalBusyPendingChange": System.Boolean, "ModelContainerInputParameterValueWhichReallyAffectsTheSetupContainerHasBeenModified": System.Boolean, "ExternalLoadsCount": System.Int32, "DesignAssessmentFileRef": System.String}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Setup 8/ContainerConnections:ModelContainerConnections" Version="1.0">
+        <class-type valType="String">ContainerConnections</class-type>
+        <object-name valType="String">ModelContainerConnections</object-name>
+        <member-data valType="String">{"DisplayText": "ModelContainerConnections", "Connections": {}}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Solution 8" Version="1.0">
+      <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationSolution</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">102985</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 102979, "Input": 102979, "Output": 102979}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 101973, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 102580, "Solution 2": 102673, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 102593, "Mesh 1": 101802, "Setup 6": 102223, "Solution 6": 0, "Results 5": 0, "Setup 8": 102984, "Solution 8": 0, "Results 6": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">SYS-15</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Solution 8/MechanicalSystemType:SystemClass for Structural|Transient|ANSYS" Version="1.0">
+        <class-type valType="String">MechanicalSystemType</class-type>
+        <object-name valType="String">SystemClass for Structural|Transient|ANSYS</object-name>
+        <member-data valType="String">{"DisplayText": "SystemClass for Structural|Transient|ANSYS", "PhysicsType": "Structural", "AnalysisType": "Transient", "SolverType": "ANSYS", "PhysicsTypeDisplayString": "Structural", "AnalysisTypeDisplayString": "Transient", "SolverTypeDisplayString": "Mechanical APDL", "SystemTypeCombination": "StructuralTransientANSYS", "DelimitedSystemTypeCominbation": "Structural|Transient|ANSYS", "SetupEntityType": "SimulationSetup", "SolutionEntityType": "SimulationSolution", "ResultsEntityType": "SimulationResults", "SetupDataEntityType": "MechanicalSetup", "SolutionDataEntityType": "MechanicalSolution", "ResultsDataEntityType": "MechanicalResults", "Id": "Transient Structural (ANSYS)", "SystemName": "SYS-15", "SystemID": "SYS-15"}</member-data>
+      </Object>
+      <Object Name="/Solution 8/MechanicalSolution:SolutionData for Structural|Transient|ANSYS" Version="1.0">
+        <class-type valType="String">Ansys.Simulation.Core.DataModel.DynamicSolutionData, Ans.Simulation.Core</class-type>
+        <type-spec valType="String">{"SpecType": "Ansys.Core.DataModel.DataEntitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "System", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "JournalVariableName": "mechanicalSolution", "Methods": {"AcquireDataConnection": "Mechanical.AcquireSimulationSolutionConnection", "RetrieveData": "Mechanical.RetrieveSimulationData", "ReleaseDataConnection": "Mechanical.ReleaseSimulationDataConnection"}, "Version": 1, "Members": {"DisplayText": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Display Text", "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": True}, "TransferType": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}}, "DataTypeHierarchy": "MechanicalSolution,DataEntity"}</type-spec>
         <object-name valType="String">SolutionData for Structural|Transient|ANSYS</object-name>
-        <member-data valType="String">{"DisplayText": "SolutionData for Structural|Transient|ANSYS", "Entity": $$18d2ac27-2306-4f71-a3ea-12116f77b644, "DataType": "MechanicalSolution", "ConnectionKey": "0c6b2d33-7935-452c-8b1d-85c11d5f2952", "RefreshTimestamp": 99416, "ID": 3, "SecondID": 4, "DataEntityType": "MechanicalSolution", "SystemName": "EM Transient", "LastFilename": {"MechanicalSolution": r"C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\dp0\SYS-14\MECH\file.rst"}}</member-data>
+        <member-data valType="String">{"DisplayText": "SolutionData for Structural|Transient|ANSYS", "TransferType": None}</member-data>
+        <custom-data>
+          <dictionary-keys valType="String">[transferDataMap]</dictionary-keys>
+          <transferDataMap />
+        </custom-data>
+      </Object>
+      <Object Name="/Solution 8/SimulationSolutionDataInternal:SolutionDataInternal for Structural|Transient|ANSYS" Version="1.0">
+        <class-type valType="String">Ansys.Simulation.Core.DataModel.DynamicSolutionDataInternal, Ans.Simulation.Core</class-type>
+        <type-spec valType="String">{"SpecType": "Ansys.Core.DataModel.DataEntitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "System", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "JournalVariableName": "simulationSolutionDataInternal", "Methods": {}, "Version": 1, "Members": {"DisplayText": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Display Text", "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": True}}, "DataTypeHierarchy": "SimulationSolutionDataInternal,DataEntity"}</type-spec>
+        <object-name valType="String">SolutionDataInternal for Structural|Transient|ANSYS</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionDataInternal for Structural|Transient|ANSYS"}</member-data>
+      </Object>
+      <Object Name="/Solution 8/SimulationSolutionOutputProvider:SimulationSolutionOutputProvider" Version="1.0">
+        <class-type valType="String">SimulationSolutionOutputProvider</class-type>
+        <object-name valType="String">SimulationSolutionOutputProvider</object-name>
+        <member-data valType="String">{"DisplayText": "SimulationSolutionOutputProvider", "DataConnections": {}}</member-data>
+      </Object>
+      <Object Name="/Solution 8/SimulationSolutionSettings:SimulationSolutionSettingsEntity" Version="1.0">
+        <class-type valType="String">SimulationSolutionSettings</class-type>
+        <object-name valType="String">SimulationSolutionSettingsEntity</object-name>
+        <member-data valType="String">{"DisplayText": "SimulationSolutionSettingsEntity", "UpdateOption": "Use application default", "SolveProcessSetting": ""}</member-data>
+      </Object>
+      <Object Name="/Solution 8/RemoteUpdateInformationStorage:RemoteUpdateInformationStorage" Version="1.0">
+        <class-type valType="String">RemoteUpdateInformationStorage</class-type>
+        <object-name valType="String">RemoteUpdateInformationStorage</object-name>
+        <member-data valType="String">{"DisplayText": "RemoteUpdateInformationStorage", "RemoteUpdateInformationMap": {}}</member-data>
+      </Object>
+      <Object Name="/Solution 8/ExpertProperties:ExpertProperties" Version="1.0">
+        <class-type valType="String">ExpertProperties</class-type>
+        <object-name valType="String">ExpertProperties</object-name>
+        <member-data valType="String">{"DisplayText": "ExpertProperties", "ImportantNote": "These options are visible because a development environment variable is set", "ExpertPropertiesString": "", "EnableDebug": False, "EnableValidation": False, "EnableTesting": False, "EnableErrorReporting": False, "EnableWarningReporting": False, "EnableInfoReporting": False, "EnableFileBasedCommunication": False, "EnableSocketCommunication": False, "EnableFailureCauseReporting": True}</member-data>
+      </Object>
+      <Object Name="/Solution 8/ExtendedComponentSettingsForRsmDpUpdate:ExtendedComponentSettingsForRsmDpUpdate" Version="1.0">
+        <class-type valType="String">ExtendedComponentSettingsForRsmDpUpdate</class-type>
+        <object-name valType="String">ExtendedComponentSettingsForRsmDpUpdate</object-name>
+        <member-data valType="String">{"DisplayText": "ExtendedComponentSettingsForRsmDpUpdate", "SerialOnly": False, "UseLimitOnNumberOfCores": False, "LimitOnNumberOfCores": 2, "SharedMemoryParallel": False}</member-data>
+      </Object>
+      <Object Name="/Solution 8/SimulationSolution:SolutionObject for Structural|Transient|ANSYS" Version="1.0">
+        <class-type valType="String">Ansys.Simulation.Core.DataModel.DynamicSolutionObject, Ans.Simulation.Core</class-type>
+        <type-spec valType="String">{"SpecType": "Ansys.Core.DataModel.DataEntitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "System", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "JournalVariableName": "simulationSolution", "Methods": {}, "Version": 1, "Members": {"DisplayText": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Display Text", "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": True}, "Caption": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": "Solution", "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "ID_Spec_Solution_Caption", "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}, "ResultId": {"SpecType": "Ansys.Core.DataSpecs.IntegerSpec`1[[System.Int32, mscorlib]], Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": -1, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "UndefinedValue": 2147483647}, "ShouldInvalidateSolutionOnNextMechanicalStart": {"SpecType": "Ansys.Core.DataSpecs.BooleanSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": False, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}}, "DataTypeHierarchy": "SimulationSolution,DataEntity"}</type-spec>
+        <object-name valType="String">SolutionObject for Structural|Transient|ANSYS</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionObject for Structural|Transient|ANSYS", "Caption": "Solution", "ResultId": 730, "ShouldInvalidateSolutionOnNextMechanicalStart": False}</member-data>
+        <custom-data>
+          <AnalysisState valType="String">6</AnalysisState>
+          <ResultsDownloadRequired valType="String">False</ResultsDownloadRequired>
+          <AttentionRequired valType="String">False</AttentionRequired>
+          <value-keys valType="String">{"AnalysisState": System.Int32, "ResultsDownloadRequired": System.Boolean, "AttentionRequired": System.Boolean}</value-keys>
+        </custom-data>
+      </Object>
+    </Container>
+    <Container Name="Results 6" Version="1.0">
+      <container-type valType="String">Ansys.Simulation.Core.Addin:SimulationResults</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">102986</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 102987, "Input": 102987, "Output": 102987}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "Scopes": 0, "Solution 4": 97013, "Setup 4": 97012, "Engineering Data 4": 88975, "Geometry 4": 101724, "Model 4": 101973, "Results 4": 97014, "Setup": 97027, "Solution": 97028, "Results": 97029, "Setup 1": 0, "Solution 1": 0, "Results 1": 97050, "Setup 2": 102580, "Solution 2": 102673, "Results 2": 99863, "Mesh": 94986, "Setup 3": 99702, "Solution 3": 0, "Setup 5": 100284, "Solution 5": 0, "Results 3": 99569, "EngineeringDataGeneratedChartData": 0, "EngineeringDataCurveFit": 0, "EngineeringDataFavoriteItems": 0, "Solution 7": 0, "SpaceClaimSessionContainer": 0, "Setup 7": 102593, "Mesh 1": 101802, "Setup 6": 102223, "Solution 6": 0, "Results 5": 0, "Setup 8": 102984, "Solution 8": 102985, "Results 6": 102986}</last-update-regen-times>
+      <unique-system-dir valType="String">SYS-15</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Results 6/MechanicalSystemType:SystemClass for Structural|Transient|ANSYS" Version="1.0">
+        <class-type valType="String">MechanicalSystemType</class-type>
+        <object-name valType="String">SystemClass for Structural|Transient|ANSYS</object-name>
+        <member-data valType="String">{"DisplayText": "SystemClass for Structural|Transient|ANSYS", "PhysicsType": "Structural", "AnalysisType": "Transient", "SolverType": "ANSYS", "PhysicsTypeDisplayString": "Structural", "AnalysisTypeDisplayString": "Transient", "SolverTypeDisplayString": "Mechanical APDL", "SystemTypeCombination": "StructuralTransientANSYS", "DelimitedSystemTypeCominbation": "Structural|Transient|ANSYS", "SetupEntityType": "SimulationSetup", "SolutionEntityType": "SimulationSolution", "ResultsEntityType": "SimulationResults", "SetupDataEntityType": "MechanicalSetup", "SolutionDataEntityType": "MechanicalSolution", "ResultsDataEntityType": "MechanicalResults", "Id": "Transient Structural (ANSYS)", "SystemName": "SYS-15", "SystemID": "SYS-15"}</member-data>
+      </Object>
+      <Object Name="/Results 6/MechanicalResults:ResultsData for Structural|Transient|ANSYS" Version="1.0">
+        <class-type valType="String">Ansys.Simulation.Core.DataModel.DynamicResultData, Ans.Simulation.Core</class-type>
+        <type-spec valType="String">{"SpecType": "Ansys.Core.DataModel.DataEntitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "System", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "JournalVariableName": "mechanicalResults", "Methods": {"AcquireDataConnection": "Mechanical.AcquireSimulationResultsConnection", "RetrieveData": "Mechanical.RetrieveSimulationData", "ReleaseDataConnection": "Mechanical.ReleaseSimulationDataConnection"}, "Version": 1, "Members": {"DisplayText": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Display Text", "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": True}, "TransferType": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False}}, "DataTypeHierarchy": "MechanicalResults,DataEntity"}</type-spec>
+        <object-name valType="String">ResultsData for Structural|Transient|ANSYS</object-name>
+        <member-data valType="String">{"DisplayText": "ResultsData for Structural|Transient|ANSYS", "TransferType": None}</member-data>
+        <custom-data>
+          <dictionary-keys valType="String">[transferDataMap]</dictionary-keys>
+          <transferDataMap />
+        </custom-data>
+      </Object>
+      <Object Name="/Results 6/SimulationResultsStlZip:SimulationResultsStlZip" Version="1.0">
+        <class-type valType="String">SimulationResultsStlZip</class-type>
+        <object-name valType="String">SimulationResultsStlZip</object-name>
+        <member-data valType="String">{"DisplayText": "SimulationResultsStlZip", "DataConnections": [], "TransferDataObject": $$e9d26213-58f9-427b-89b2-95fc994c346e, "VersionNumber": 1, "TransferFile": None}</member-data>
+      </Object>
+      <Object Name="/Results 6/TopologyOptimizationResultsCDB:TopologyOptimizationResultsCDB" Version="1.0">
+        <class-type valType="String">TopologyOptimizationResultsCDB</class-type>
+        <object-name valType="String">TopologyOptimizationResultsCDB</object-name>
+        <member-data valType="String">{"DisplayText": "TopologyOptimizationResultsCDB", "DataConnections": [], "TransferDataObject": $$3989eb7e-ba86-4d73-a8de-f8adf195e2b8, "VersionNumber": 1, "Dsid": 0, "TransferFiles": {}, "ResultFileNames": None}</member-data>
+      </Object>
+      <Object Name="/Results 6/ExternalModelOutputProvider:ExternalModelOutputProvider" Version="1.0">
+        <class-type valType="String">ExternalModelOutputProvider</class-type>
+        <object-name valType="String">ExternalModelOutputProvider</object-name>
+        <member-data valType="String">{"DisplayText": "ExternalModelOutputProvider", "DataConnections": [], "TransferDataObject": None, "SignalModifiedDuringAcquire": True}</member-data>
+      </Object>
+      <Object Name="/Results 6/ExternalModelOutput:ExternalModelOutput" Version="1.0">
+        <class-type valType="String">ExternalModelOutput</class-type>
+        <object-name valType="String">ExternalModelOutput</object-name>
+        <member-data valType="String">{"DisplayText": "ExternalModelOutput", "TransferFile": None, "InputFiles": [], "InputAssemblyFiles": []}</member-data>
+        <custom-data>
+          <CurrentVersion valType="String">1</CurrentVersion>
+          <value-keys valType="String">{"CurrentVersion": System.Int32}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Results 6/SimulationImportOptionsForResult:SimulationImportOptionsForResult" Version="1.0">
+        <class-type valType="String">SimulationImportOptionsForResult</class-type>
+        <object-name valType="String">SimulationImportOptionsForResult</object-name>
+        <member-data valType="String">{"DisplayText": "SimulationImportOptionsForResult", "CurrentVersion": 1, "LengthUnit": "m", "NumberOfCopies": 0, "RenumberMeshElementsAutomatically": True, "RigidTransform": {"TransformOriginal": False, "OriginX": "0 [m]", "OriginY": "0 [m]", "OriginZ": "0 [m]", "ThetaXY": "0 [radian]", "ThetaYZ": "0 [radian]", "ThetaZX": "0 [radian]"}, "Source": "Mechanical"}</member-data>
+      </Object>
+      <Object Name="/Results 6/StaticOptionsForCdb:StaticOptionsForCdb" Version="1.0">
+        <class-type valType="String">StaticOptionsForCdb</class-type>
+        <object-name valType="String">StaticOptionsForCdb</object-name>
+        <member-data valType="String">{"DisplayText": "StaticOptionsForCdb", "CurrentVersion": 1, "Time": 0, "ScaleFactor": 1}</member-data>
+      </Object>
+      <Object Name="/Results 6/SimulationResults:ResultsObject for Structural|Transient|ANSYS" Version="1.0">
+        <class-type valType="String">Ansys.Simulation.Core.DataModel.DynamicResultsObject, Ans.Simulation.Core</class-type>
+        <type-spec valType="String">{"SpecType": "Ansys.Core.DataModel.DataEntitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "System", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "JournalVariableName": "simulationResults", "Methods": {}, "Version": 1, "Members": {"DisplayText": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Display Text", "Usage": "Extrinsic", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": True}, "AnswerSetId": {"SpecType": "Ansys.Core.DataSpecs.IntegerSpec`1[[System.Int32, mscorlib]], Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": -1, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "UndefinedValue": 2147483647}}, "DataTypeHierarchy": "SimulationResults,DataEntity"}</type-spec>
+        <object-name valType="String">ResultsObject for Structural|Transient|ANSYS</object-name>
+        <member-data valType="String">{"DisplayText": "ResultsObject for Structural|Transient|ANSYS", "AnswerSetId": 730}</member-data>
+        <custom-data>
+          <FindAnswersState valType="String">6</FindAnswersState>
+          <AttentionRequired valType="String">False</AttentionRequired>
+          <ParameterValueModified valType="String">False</ParameterValueModified>
+          <value-keys valType="String">{"FindAnswersState": System.Int32, "AttentionRequired": System.Boolean, "ParameterValueModified": System.Boolean}</value-keys>
+        </custom-data>
       </Object>
     </Container>
   </Containers>
