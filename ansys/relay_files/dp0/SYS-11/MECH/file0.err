@@ -1,0 +1,21 @@
+/COM,ANSYS RELEASE 2020 R1           BUILD 20.1      UP20191203       07:09:14
+
+ *** WARNING ***                         CP =       0.938   TIME= 07:09:16
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       2.250   TIME= 07:09:17
+ Maximum contact stiffness 1.306863824E+20 is too big which can cause an 
+ accuracy problem, you may scale the force units in the model.           
+
+ *** WARNING ***                         CP =       2.250   TIME= 07:09:17
+ Minimum contact depth 2.642615979E-08 is too small which can cause an   
+ accuracy problem, you may scale the length units in the model.          
+
+ *** WARNING ***                         CP =       8.703   TIME= 07:09:30
+ A reference force value times the tolerance is used by the              
+ Newton-Raphson method for checking convergence.  The calculated         
+ reference FORCE CONVERGENCE VALUE = 3.545534398E-09 is less than a      
+ threshold.  This threshold is internally calculated.  You can           
+ overwrite it by specifying MINREF on the CNVTOL command.  Check         
+ results carefully.                                                      

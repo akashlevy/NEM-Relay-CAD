@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--  ************************************************************ -->
+<!--  ************************************************************ -->
+<!--  File Name: parm.xml -->
+<!--  ************************************************************ -->
+<!--  ************************************************************ -->
+<ANSYSDOC xmlns="http://www.ansys.com/caedoc_ns">
+<HEADER>
+   <NAME>ANSYS</NAME>
+   <VERSION>20.1</VERSION>
+   <OS>WINDOWS x64</OS>
+   <DESCRIPTION></DESCRIPTION>
+</HEADER>
+<PARM ID="ANSINTER_">0</PARM>
+<PARM ID="CID">80</PARM>
+<PARM ID="ELM">145181</PARM>
+<PARM ID="EPSR">4.7</PARM>
+<PARM ID="I">1448</PARM>
+<PARM ID="KN">.1</PARM>
+<PARM ID="NELEMS">1448</PARM>
+<PARM ID="R5">112.797077503</PARM>
+<PARM ID="R5_NEW">11.27970775</PARM>
+<PARM ID="R7">0</PARM>
+<PARM ID="R7_NEW">0</PARM>
+<PARM ID="RNUM">1529</PARM>
+<PARM ID="TEMPERATURE">TEMP    </PARM>
+<PARM ID="TID">81</PARM>
+<PARM ID="_ASMDIAG">.000008494704</PARM>
+<PARM ID="_DS_PROGRESS">999</PARM>
+<PARM ID="_LOADVARI179" TABLE="2 1 1">
+ 0
+ 0
+ .150000000000E-06
+ 10
+ .151000000000E-06
+ 0
+</PARM>
+<PARM ID="_MAXELEMNUM">145181</PARM>
+<PARM ID="_MAXELEMTYPE">82</PARM>
+<PARM ID="_MAXNODENUM">175429</PARM>
+<PARM ID="_MAXREALCONST">1529</PARM>
+<PARM ID="_NUMELEM">22779</PARM>
+<PARM ID="_NUMNODE">21572</PARM>
+<PARM ID="_RETURN">0</PARM>
+<PARM ID="_STATUS">0</PARM>
+<PARM ID="_THICKRATIO">0</PARM>
+<PARM ID="_TRNO1">_CM179  </PARM>
+<PARM ID="_WALLASOL">8.69</PARM>
+<PARM ID="_WALLBSOL">8.5</PARM>
+<PARM ID="_WALLSTRT">8.493888889</PARM>
+<PARM ID="_WB_PROJECTSCRATCH_DIR" STRING="248 1 1">
+ C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\ScrDC18\                                                                                                                                                                              
+</PARM>
+<PARM ID="_WB_SOLVERFILES_DIR" STRING="248 1 1">
+ C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\dp0\SYS-14\MECH\                                                                                                                                                                          
+</PARM>
+<PARM ID="_WB_USERFILES_DIR" STRING="248 1 1">
+ C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\relay_files\user_files\                                                                                                                                                                               
+</PARM>
+<PARM ID="_XMAX">.000003</PARM>
+<PARM ID="_XMIN">-.000003</PARM>
+<PARM ID="_YMAX">.000003</PARM>
+<PARM ID="_YMIN">-.000003</PARM>
+<FEAMODEL>
+<TABLES>
+</TABLES>
+<LOADCASE ID="1">
+   <LOADSTEP  STEP="3" SUB="32" TIME=".300000000000E-06">
+      <BOUNDARY_CONDITIONS>
+      </BOUNDARY_CONDITIONS>
+   </LOADSTEP>
+</LOADCASE>
+</FEAMODEL>
+</ANSYSDOC>

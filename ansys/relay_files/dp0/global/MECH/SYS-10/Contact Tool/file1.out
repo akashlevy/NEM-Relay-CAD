@@ -1,0 +1,151 @@
+
+ ANSYS Mechanical Enterprise                       
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *            ANSYS 2020 R1          LEGAL NOTICES             *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2020 ANSYS, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of ANSYS, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the ANSYS, Inc. online documentation or the ANSYS, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * ANSYS, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * ANSYS, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the ANSYS, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the ANSYS, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ 2020 R1 
+     
+ Point Releases and Patches installed:   
+     
+ ANSYS, Inc. Products 2020 R1
+ SpaceClaim 2020 R1  
+ AIM 2020 R1 
+ Live (includes SpaceClaim) 2020 R1  
+ Autodyn 2020 R1 
+ LS-DYNA 2020 R1 
+ CFX (includes CFD-Post) 2020 R1 
+ Chemkin 2020 R1 
+ EnSight 2020 R1 
+ FENSAP-ICE 2020 R1  
+ Fluent (includes CFD-Post) 2020 R1  
+ Forte 2020 R1   
+ Polyflow (includes CFD-Post) 2020 R1
+ TurboGrid 2020 R1   
+ ICEM CFD 2020 R1
+ Aqwa 2020 R1
+ Customization Files for User Programmable Features 2020 R1  
+ Mechanical Products 2020 R1 
+ Additive 2020 R1
+ ANSYS Sherlock 2020 R1  
+ Icepak (includes CFD-Post) 2020 R1  
+ ACIS Geometry Interface 2020 R1 
+ AutoCAD Geometry Interface 2020 R1  
+ Catia, Version 4 Geometry Interface 2020 R1 
+ Catia, Version 5 Geometry Interface 2020 R1 
+ Catia, Version 6 Geometry Interface 2020 R1 
+ Creo Elements/Direct Modeling Geometry Interface 2020 R1
+ Creo Parametric Geometry Interface 2020 R1  
+ Inventor Geometry Interface 2020 R1 
+ JTOpen Geometry Interface 2020 R1   
+ NX Geometry Interface 2020 R1   
+ Parasolid Geometry Interface  2020 R1   
+ Solid Edge Geometry Interface 2020 R1   
+ SOLIDWORKS Geometry Interface 2020 R1   
+ ANSYS, Inc. License Manager 2020 R1 
+
+
+          *****  ANSYS COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = NOLIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  DISTRIBUTED MEMORY PARALLEL REQUESTED
+       2 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
+    TOTAL OF     2 CORES REQUESTED
+  INPUT FILE NAME              = CONIN$
+  OUTPUT FILE NAME             = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr0EE0\file1.out
+  START-UP FILE MODE           = NOREAD
+  STOP FILE MODE               = NOREAD
+
+ RELEASE= 2020 R1              BUILD= 20.1      UP20191203   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file1  07:07:43  APR 16, 2020 CP=      0.016
+
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         0.078
+
+
+
+ PRINTOUT RESUMED BY /GOP
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          0
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          0
+
+
+ *---------------------------------------------------------------------------*
+ |                                                                           |
+ |                       DISTRIBUTED ANSYS RUN COMPLETED                     |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Ansys 2020 R1               Build 20.1         UP20191203     WINDOWS x64 |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Database Requested(-db)     1 MB    Scratch Memory Requested      1024 MB |
+ | Maximum Database Used       1 MB    Maximum Scratch Memory Used      4 MB |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ |        CP Time      (sec) =          0.094       Time  =  07:07:46        |
+ |        Elapsed Time (sec) =          5.000       Date  =  04/16/2020      |
+ |                                                                           |
+ *---------------------------------------------------------------------------*
