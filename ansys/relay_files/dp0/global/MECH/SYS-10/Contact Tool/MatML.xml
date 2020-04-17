@@ -115,7 +115,7 @@
               <Qualifier name="Localized Name">Temperature</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr6">
+          <PropertyData property="pr4">
             <Data format="string">-</Data>
             <Qualifier name="Temperature">Temperature:TEMP</Qualifier>
             <Qualifier name="Localized Name">Field Variable</Qualifier>
@@ -233,7 +233,7 @@
               <Qualifier name="Localized Name">Temperature</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr6">
+          <PropertyData property="pr4">
             <Data format="string">-</Data>
             <Qualifier name="Temperature">Temperature:TEMP</Qualifier>
             <Qualifier name="Localized Name">Field Variable</Qualifier>
@@ -336,7 +336,7 @@
               <Qualifier name="Field Units">C</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr4">
+          <PropertyData property="pr5">
             <Data format="string">-</Data>
             <Qualifier name="Localized Name">Tensile Yield Strength</Qualifier>
             <ParameterValue parameter="pa12" format="float">
@@ -345,7 +345,7 @@
               <Qualifier name="Localized Name">Tensile Yield Strength</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr5">
+          <PropertyData property="pr6">
             <Data format="string">-</Data>
             <Qualifier name="Localized Name">Compressive Yield Strength</Qualifier>
             <ParameterValue parameter="pa13" format="float">
@@ -354,7 +354,7 @@
               <Qualifier name="Localized Name">Compressive Yield Strength</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr6">
+          <PropertyData property="pr4">
             <Data format="string">-</Data>
             <Qualifier name="Temperature">Temperature:TEMP</Qualifier>
             <Qualifier name="Localized Name">Field Variable</Qualifier>
@@ -401,6 +401,23 @@
             </Unit>
           </Units>
         </ParameterDetails>
+        <ParameterDetails id="pa11">
+          <Name>Resistivity</Name>
+          <Units name="Electrical Resistivity">
+            <Unit>
+              <Name>kg</Name>
+            </Unit>
+            <Unit power="3">
+              <Name>m</Name>
+            </Unit>
+            <Unit power="-2">
+              <Name>A</Name>
+            </Unit>
+            <Unit power="-3">
+              <Name>s</Name>
+            </Unit>
+          </Units>
+        </ParameterDetails>
         <ParameterDetails id="pa7">
           <Name>Young's Modulus</Name>
           <Units name="Stress">
@@ -426,23 +443,6 @@
           <Units name="Stress">
             <Unit>
               <Name>Pa</Name>
-            </Unit>
-          </Units>
-        </ParameterDetails>
-        <ParameterDetails id="pa11">
-          <Name>Resistivity</Name>
-          <Units name="Electrical Resistivity">
-            <Unit>
-              <Name>kg</Name>
-            </Unit>
-            <Unit power="3">
-              <Name>m</Name>
-            </Unit>
-            <Unit power="-2">
-              <Name>A</Name>
-            </Unit>
-            <Unit power="-3">
-              <Name>s</Name>
             </Unit>
           </Units>
         </ParameterDetails>
@@ -480,15 +480,15 @@
         </PropertyDetails>
         <PropertyDetails id="pr4">
           <Unitless />
-          <Name>Tensile Yield Strength</Name>
+          <Name>Field Variable</Name>
         </PropertyDetails>
         <PropertyDetails id="pr5">
           <Unitless />
-          <Name>Compressive Yield Strength</Name>
+          <Name>Tensile Yield Strength</Name>
         </PropertyDetails>
         <PropertyDetails id="pr6">
           <Unitless />
-          <Name>Field Variable</Name>
+          <Name>Compressive Yield Strength</Name>
         </PropertyDetails>
       </Metadata>
     </MatML_Doc>

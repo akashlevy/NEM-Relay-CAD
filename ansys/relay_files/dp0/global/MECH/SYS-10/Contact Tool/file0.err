@@ -1,9 +1,14 @@
-/COM,ANSYS RELEASE 2020 R1           BUILD 20.1      UP20191203       07:07:42
+/COM,ANSYS RELEASE 2020 R1           BUILD 20.1      UP20191203       20:42:53
 
- *** WARNING ***                         CP =       2.125   TIME= 07:07:44
- Maximum contact stiffness 1.306863824E+20 is too big which can cause an 
+ *** WARNING ***                         CP =       2.359   TIME= 20:42:57
+ Maximum friction coefficient 0.5 is defined in the model.  Switch to    
+ the unsymmetric solver (NROP,UNSYM) instead if convergence difficulty   
+ is encountered.                                                         
+
+ *** WARNING ***                         CP =       2.359   TIME= 20:42:57
+ Maximum contact stiffness 1.501920395E+20 is too big which can cause an 
  accuracy problem, you may scale the force units in the model.           
 
- *** WARNING ***                         CP =       2.125   TIME= 07:07:44
+ *** WARNING ***                         CP =       2.359   TIME= 20:42:57
  Minimum contact depth 2.642615979E-08 is too small which can cause an   
  accuracy problem, you may scale the length units in the model.          

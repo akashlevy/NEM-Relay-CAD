@@ -106,12 +106,12 @@
        2 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
     TOTAL OF     2 CORES REQUESTED
   INPUT FILE NAME              = CONIN$
-  OUTPUT FILE NAME             = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr0EE0\file1.out
+  OUTPUT FILE NAME             = C:\Users\Akash Levy\Documents\NEM-Relay-CAD\ansys\_ProjectScratch\Scr45B6\file1.out
   START-UP FILE MODE           = NOREAD
   STOP FILE MODE               = NOREAD
 
  RELEASE= 2020 R1              BUILD= 20.1      UP20191203   VERSION=WINDOWS x64 
- CURRENT JOBNAME=file1  07:07:43  APR 16, 2020 CP=      0.016
+ CURRENT JOBNAME=file1  20:42:54  APR 16, 2020 CP=      0.016
 
 
  *****  ANSYS SOLUTION ROUTINE  *****
@@ -119,7 +119,7 @@
  FINISH SOLUTION PROCESSING
 
 
- ***** ROUTINE COMPLETED *****  CP =         0.078
+ ***** ROUTINE COMPLETED *****  CP =         0.125
 
 
 
@@ -145,7 +145,7 @@
  |                                                                           |
  |---------------------------------------------------------------------------|
  |                                                                           |
- |        CP Time      (sec) =          0.094       Time  =  07:07:46        |
- |        Elapsed Time (sec) =          5.000       Date  =  04/16/2020      |
+ |        CP Time      (sec) =          0.125       Time  =  20:42:59        |
+ |        Elapsed Time (sec) =          7.000       Date  =  04/16/2020      |
  |                                                                           |
  *---------------------------------------------------------------------------*
