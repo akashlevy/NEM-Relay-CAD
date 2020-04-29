@@ -22,10 +22,12 @@ L_anc = L_via + 200         # side length of anchor attachment
 
 circ_cont = 1               # circular or grid contact mode
 n_cont = 16                 # number of contacts
-L_cont = 200                # side length of contact
-r_cont = 1380               # radius of circle along which to place contacts
+L_cont = 150                # side length of contact
+r_cont = 1000               # radius of circle along which to place contacts
 t_cont = 0.04               # thickness of contact
 t_chan = 0.02               # thickness of channel
+
+g_land = 50                 # spacing between landing pad
 
 t_land = 0.1                # thickness of landing contact
 
@@ -58,6 +60,7 @@ nemchan = layout.layer(2, 0)
 nemcont = layout.layer(3, 0)
 nembody = layout.layer(4, 0)
 nemholes = layout.layer(5, 0)
+nemsub = layout.layer(6, 0)
 
 # Create anchors
 ancloc = L_plate/2 + W_cant + L_anc/2
@@ -65,6 +68,7 @@ ancloc = pya.Point(ancloc, ancloc)
 anchor = pya.Box(-L_via/2, -L_via/2, L_via/2, L_via/2).move(ancloc)
 for _ in range(n_sides):
     top.shapes(nemanc).insert(anchor)
+    top.shapes(nemsub).insert(anchor)
     anchor = anchor.transformed(rotate)
 
 # Create relay body
@@ -93,13 +97,20 @@ for i, n in enumerate(n_hole):
             #relay.insert_hole(hole)
 top.shapes(nembody).insert(relay)
 
-# Create contact layer
+# Create relay substrate
+top.shapes(nemsub).insert(plate)
+
+# Create contact layer and landing pads
 for i in range(n_cont):
     contx = r_cont * cos(2*pi*(i-0.5)/n_cont)
     conty = r_cont * sin(2*pi*(i-0.5)/n_cont)
     contloc = pya.Point(contx, conty)
     cont = pya.Box(-L_cont/2, -L_cont/2, L_cont/2, L_cont/2).moved(contloc)
+    padl = L_cont + g_land*2
+    lgap = pya.Box(-padl/2, -padl/2, padl/2, padl/2).moved(contloc)
     top.shapes(nemcont).insert(cont)
+    top.shapes(nemsub).insert(lgap)
+    top.shapes(nemsub).insert(cont)
 
 # Create channel layer
 chanlen = pi * r_cont / n_cont * 2
