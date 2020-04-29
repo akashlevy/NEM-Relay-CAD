@@ -61,6 +61,8 @@ nemcont = layout.layer(3, 0)
 nembody = layout.layer(4, 0)
 nemholes = layout.layer(5, 0)
 nemsub = layout.layer(6, 0)
+nemsubg = layout.layer(7, 0)
+nemland = layout.layer(8, 0)
 
 # Create anchors
 ancloc = L_plate/2 + W_cant + L_anc/2
@@ -109,8 +111,8 @@ for i in range(n_cont):
     padl = L_cont + g_land*2
     lgap = pya.Box(-padl/2, -padl/2, padl/2, padl/2).moved(contloc)
     top.shapes(nemcont).insert(cont)
-    top.shapes(nemsub).insert(lgap)
-    top.shapes(nemsub).insert(cont)
+    top.shapes(nemsubg).insert(lgap)
+    top.shapes(nemland).insert(cont)
 
 # Create channel layer
 chanlen = pi * r_cont / n_cont * 2
