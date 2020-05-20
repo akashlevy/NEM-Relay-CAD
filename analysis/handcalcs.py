@@ -63,7 +63,8 @@ def calcs():
 
     L_c1 = L_cant/2
 
-    k_tot = (E_poly * W_cant * t_poly**3) / (2 * L_c1**3) # clamped-guided
+    #k_tot = (E_poly * W_cant * t_poly**3) / (2 * L_c1**3) # clamped-guided
+    k_tot = 3 * E_poly * W_cant * t_poly**3 / L_c1**3 # pg. 22 of Hei Kam's book
 
     M = rho_poly * A_plate * t_poly
 

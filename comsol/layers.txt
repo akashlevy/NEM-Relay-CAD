@@ -1,0 +1,8 @@
+Anchor LAYER1 Metal "g_act + t_sp" 0 on
+Channel LAYER2 Metal t_chan g_act-t_chan on
+Contact LAYER3 Metal t_cont g_act-t_cont on
+Body LAYER4 Metal t_poly g_act on
+Holes LAYER5 Metal t_poly g_act on
+"Substrate Metal" LAYER6 Metal t_sub -t_sub on
+"Substrate Gap" LAYER7 Metal t_sub -t_sub on
+"Substrate Landing Pads" LAYER8 Metal t_sub -t_sub on
