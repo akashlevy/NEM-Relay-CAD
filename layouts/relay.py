@@ -23,7 +23,7 @@ L_anc = L_via + 200         # side length of anchor attachment
 circ_cont = 1               # circular or grid contact mode
 n_cont = 16                 # number of contacts
 L_cont = 150                # side length of contact
-r_cont = 1000               # radius of circle along which to place contacts
+r_cont = 1000                # radius of circle along which to place contacts
 t_cont = 0.04               # thickness of contact
 t_chan = 0.02               # thickness of channel
 
@@ -33,11 +33,13 @@ t_land = 0.1                # thickness of landing contact
 
 t_sp = 0.025                # thickness of spacer
 
-L_hole = 80                 # side length of release hole
-r_hole_pl = 0.784*L_plate/2 # distance from center
+L_hole = 100                # side length of release hole
+r_hole_pl = 0.78*L_plate/2  # distance from center
 d_hole_pl = 200             # distance apart from release hole
-max_hole = 3                # last hole to have full circle in range
-n_hole = [1, 6, 12, 18, 24] # number of release holes at each layer
+max_hole = 2                # last hole to have full circle in range
+n_hole = [1, 8, 16, 24]     # number of release holes at each layer
+
+cont_rot_factor = 0.1       # contact rotation factor
 
 
 # Create layout and top cell
@@ -88,7 +90,7 @@ for _ in range(n_sides):
 relay = ep.merge_to_polygon(relaycomps, 0, True, True)[0]
 
 # Insert relay holes
-bound = pya.Box(-r_hole_pl, -r_hole_pl, r_hole_pl, r_hole_pl)
+bound = pya.Box(-r_hole_pl*1.1, -r_hole_pl*1.1, r_hole_pl*1.1, r_hole_pl*1.1)
 for i, n in enumerate(n_hole):
     r = float(i) / max_hole * r_hole_pl
     for h in range(n):
@@ -104,8 +106,12 @@ top.shapes(nemsub).insert(plate)
 
 # Create contact layer and landing pads
 for i in range(n_cont):
-    contx = r_cont * cos(2*pi*(i-0.5)/n_cont)
-    conty = r_cont * sin(2*pi*(i-0.5)/n_cont)
+    if i % 4 in [2, 3]:
+        r_cont = 830
+    else:
+        r_cont = 1000
+    contx = r_cont * cos(2*pi*(i+(0.5-cont_rot_factor))/n_cont)
+    conty = r_cont * sin(2*pi*(i+(0.5-cont_rot_factor))/n_cont)
     contloc = pya.Point(contx, conty)
     cont = pya.Box(-L_cont/2, -L_cont/2, L_cont/2, L_cont/2).moved(contloc)
     padl = L_cont + g_land*2
@@ -115,16 +121,21 @@ for i in range(n_cont):
     top.shapes(nemland).insert(cont)
 
 # Create channel layer
-chanlen = pi * r_cont / n_cont * 2
-chanpts = []
-chanpts.append((-chanlen/2, r_cont*cos(pi/n_cont) - L_cont/2))
-chanpts.append((-chanlen/2, r_cont*cos(pi/n_cont) + L_cont/2))
-chanpts.append((chanlen/2, r_cont*cos(pi/n_cont) + L_cont/2))
-chanpts.append((chanlen/2, r_cont*cos(pi/n_cont) - L_cont/2))
 for i in range(n_cont/2):
+    if i % 2 == 1:
+        r_cont = 830
+    else:
+        r_cont = 1000
+    chanlen = pi * r_cont / n_cont * 2
+    chanpts = []
+    chanpts.append((-chanlen/2, r_cont*cos(pi/n_cont) - L_cont/2))
+    chanpts.append((-chanlen/2, r_cont*cos(pi/n_cont) + L_cont/2))
+    chanpts.append((chanlen/2, r_cont*cos(pi/n_cont) + L_cont/2))
+    chanpts.append((chanlen/2, r_cont*cos(pi/n_cont) - L_cont/2))
+    chanpts = map(lambda pt : ptrotate(pt, pi/n_cont*2*(1-cont_rot_factor)), chanpts)
+    chanpts = map(lambda pt : ptrotate(pt, 4 * pi * i/n_cont), chanpts)
     chan = pya.Polygon([pya.Point(*chanpt) for chanpt in chanpts])
     top.shapes(nemchan).insert(chan)
-    chanpts = map(lambda pt : ptrotate(pt, 4 * pi/n_cont), chanpts)
 
 # Write drawing output
 layout.write("relay.gds")
