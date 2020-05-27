@@ -107,7 +107,7 @@ top.shapes(nemsub).insert(plate)
 # Create contact layer and landing pads
 for i in range(n_cont):
     if i % 4 in [2, 3]:
-        r_cont = 830
+        r_cont = 825
     else:
         r_cont = 1000
     contx = r_cont * cos(2*pi*(i+(0.5-cont_rot_factor))/n_cont)
@@ -123,7 +123,7 @@ for i in range(n_cont):
 # Create channel layer
 for i in range(n_cont/2):
     if i % 2 == 1:
-        r_cont = 830
+        r_cont = 825
     else:
         r_cont = 1000
     chanlen = pi * r_cont / n_cont * 2
