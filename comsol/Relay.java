@@ -895,8 +895,8 @@ public class Relay {
     model.component("relay").material("sw1").feature("mat15").propertyGroup("def")
          .set("molarmass", "0.02897[kg/mol]");
     model.component("relay").material("sw1").feature("mat15").propertyGroup("def").set("bulkviscosity", "muB(T)");
-    model.component("relay").material("sw1").feature("mat15").propertyGroup("def")
-         .descr("thermalexpansioncoefficient_symmetry", "");
+//     model.component("relay").material("sw1").feature("mat15").propertyGroup("def")
+//          .descr("thermalexpansioncoefficient_symmetry", "");
     model.component("relay").material("sw1").feature("mat15").propertyGroup("def").descr("molarmass_symmetry", "");
     model.component("relay").material("sw1").feature("mat15").propertyGroup("def")
          .descr("bulkviscosity_symmetry", "");
@@ -933,10 +933,10 @@ public class Relay {
     model.component("relay").material("sw1").feature("mat15").materialType("nonSolid");
     model.component("relay").material("sw1").feature("mat16").label("Castor Oil");
     model.component("relay").material("sw1").feature("mat16").set("family", "air");
-    model.component("relay").material("sw1").feature("mat16").propertyGroup("def")
-         .set("thermalexpansioncoefficient_symmetry", "3");
-    model.component("relay").material("sw1").feature("mat16").propertyGroup("def")
-         .descr("thermalexpansioncoefficient_symmetry", "");
+//     model.component("relay").material("sw1").feature("mat16").propertyGroup("def")
+//          .set("thermalexpansioncoefficient_symmetry", "3");
+//     model.component("relay").material("sw1").feature("mat16").propertyGroup("def")
+//          .descr("thermalexpansioncoefficient_symmetry", "");
     model.component("relay").material("sw1").feature("mat16").propertyGroup("def").set("molarmass_symmetry", "0");
     model.component("relay").material("sw1").feature("mat16").propertyGroup("def").descr("molarmass_symmetry", "");
     model.component("relay").material("sw1").feature("mat16").propertyGroup("def").set("bulkviscosity_symmetry", "0");
@@ -989,7 +989,7 @@ public class Relay {
     model.component("relay").material("mat7").propertyGroup("def").set("resistivity", "");
     model.component("relay").material("mat7").propertyGroup("def")
          .set("thermalexpansioncoefficient", new String[]{"2.6e-6[1/K]", "0", "0", "0", "2.6e-6[1/K]", "0", "0", "0", "2.6e-6[1/K]"});
-    model.component("relay").material("mat7").propertyGroup("def").descr("thermalexpansioncoefficient_symmetry", "");
+//     model.component("relay").material("mat7").propertyGroup("def").descr("thermalexpansioncoefficient_symmetry", "");
     model.component("relay").material("mat7").propertyGroup("def").set("heatcapacity", "678[J/(kg*K)]");
     model.component("relay").material("mat7").propertyGroup("def").descr("heatcapacity_symmetry", "");
     model.component("relay").material("mat7").propertyGroup("def")
@@ -1026,7 +1026,7 @@ public class Relay {
     model.component("relay").material("mat8").propertyGroup("def").descr("electricconductivity_symmetry", "");
     model.component("relay").material("mat8").propertyGroup("def")
          .set("thermalexpansioncoefficient", new String[]{"4.5e-6[1/K]", "0", "0", "0", "4.5e-6[1/K]", "0", "0", "0", "4.5e-6[1/K]"});
-    model.component("relay").material("mat8").propertyGroup("def").descr("thermalexpansioncoefficient_symmetry", "");
+//     model.component("relay").material("mat8").propertyGroup("def").descr("thermalexpansioncoefficient_symmetry", "");
     model.component("relay").material("mat8").propertyGroup("def").set("heatcapacity", "132[J/(kg*K)]");
     model.component("relay").material("mat8").propertyGroup("def").descr("heatcapacity_symmetry", "");
     model.component("relay").material("mat8").propertyGroup("def").set("density", "19350[kg/m^3]");
@@ -1047,7 +1047,7 @@ public class Relay {
     model.component("relay").material("mat11").propertyGroup("def").descr("electricconductivity_symmetry", "");
     model.component("relay").material("mat11").propertyGroup("def")
          .set("thermalexpansioncoefficient", new String[]{"6.5e-6[1/K]", "0", "0", "0", "6.5e-6[1/K]", "0", "0", "0", "6.5e-6[1/K]"});
-    model.component("relay").material("mat11").propertyGroup("def").descr("thermalexpansioncoefficient_symmetry", "");
+//     model.component("relay").material("mat11").propertyGroup("def").descr("thermalexpansioncoefficient_symmetry", "");
     model.component("relay").material("mat11").propertyGroup("def").set("heatcapacity", "730[J/(kg*K)]");
     model.component("relay").material("mat11").propertyGroup("def").descr("heatcapacity_symmetry", "");
     model.component("relay").material("mat11").propertyGroup("def")
@@ -1118,7 +1118,7 @@ public class Relay {
     model.component("relay").material("mat12").propertyGroup("def").set("resistivity_symmetry", "0");
     model.component("relay").material("mat12").propertyGroup("def")
          .set("thermalexpansioncoefficient", new String[]{"(alpha_solid_1(T[1/K])[1/K]+(Tempref-293[K])*if(abs(T-Tempref)>1e-3,(alpha_solid_1(T[1/K])[1/K]-alpha_solid_1(Tempref[1/K])[1/K])/(T-Tempref),d(alpha_solid_1(T[1/K])[1/K],T)))/(1+alpha_solid_1(Tempref[1/K])[1/K]*(Tempref-293[K]))", "0", "0", "0", "(alpha_solid_1(T[1/K])[1/K]+(Tempref-293[K])*if(abs(T-Tempref)>1e-3,(alpha_solid_1(T[1/K])[1/K]-alpha_solid_1(Tempref[1/K])[1/K])/(T-Tempref),d(alpha_solid_1(T[1/K])[1/K],T)))/(1+alpha_solid_1(Tempref[1/K])[1/K]*(Tempref-293[K]))", "0", "0", "0", "(alpha_solid_1(T[1/K])[1/K]+(Tempref-293[K])*if(abs(T-Tempref)>1e-3,(alpha_solid_1(T[1/K])[1/K]-alpha_solid_1(Tempref[1/K])[1/K])/(T-Tempref),d(alpha_solid_1(T[1/K])[1/K],T)))/(1+alpha_solid_1(Tempref[1/K])[1/K]*(Tempref-293[K]))"});
-    model.component("relay").material("mat12").propertyGroup("def").set("thermalexpansioncoefficient_symmetry", "0");
+//     model.component("relay").material("mat12").propertyGroup("def").set("thermalexpansioncoefficient_symmetry", "0");
     model.component("relay").material("mat12").propertyGroup("def")
          .set("heatcapacity", "C_solid_1(T[1/K])[J/(kg*K)]");
     model.component("relay").material("mat12").propertyGroup("def")
@@ -1206,7 +1206,7 @@ public class Relay {
     model.component("relay").material("mat13").propertyGroup("def").descr("electricconductivity_symmetry", "");
     model.component("relay").material("mat13").propertyGroup("def")
          .set("thermalexpansioncoefficient", new String[]{"4.5e-6[1/K]", "0", "0", "0", "4.5e-6[1/K]", "0", "0", "0", "4.5e-6[1/K]"});
-    model.component("relay").material("mat13").propertyGroup("def").descr("thermalexpansioncoefficient_symmetry", "");
+//     model.component("relay").material("mat13").propertyGroup("def").descr("thermalexpansioncoefficient_symmetry", "");
     model.component("relay").material("mat13").propertyGroup("def").set("heatcapacity", "132[J/(kg*K)]");
     model.component("relay").material("mat13").propertyGroup("def").descr("heatcapacity_symmetry", "");
     model.component("relay").material("mat13").propertyGroup("def").set("density", "19350[kg/m^3]");
@@ -1227,7 +1227,7 @@ public class Relay {
     model.component("relay").material("mat14").propertyGroup("def").descr("electricconductivity_symmetry", "");
     model.component("relay").material("mat14").propertyGroup("def")
          .set("thermalexpansioncoefficient", new String[]{"0.5e-6[1/K]", "0", "0", "0", "0.5e-6[1/K]", "0", "0", "0", "0.5e-6[1/K]"});
-    model.component("relay").material("mat14").propertyGroup("def").descr("thermalexpansioncoefficient_symmetry", "");
+//     model.component("relay").material("mat14").propertyGroup("def").descr("thermalexpansioncoefficient_symmetry", "");
     model.component("relay").material("mat14").propertyGroup("def").set("heatcapacity", "730[J/(kg*K)]");
     model.component("relay").material("mat14").propertyGroup("def").descr("heatcapacity_symmetry", "");
     model.component("relay").material("mat14").propertyGroup("def")
