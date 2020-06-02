@@ -57,7 +57,7 @@ public class Relay {
     model.result().evaluationGroup().create("eg4", "EvaluationGroup");
     model.result().evaluationGroup("std2EvgFrq").create("gev1", "EvalGlobal");
     model.result().evaluationGroup("eg1").create("max1", "MaxSurface");
-    model.result().evaluationGroup("eg3").create("gmev3", "EvalGlobalMatrix");
+//     model.result().evaluationGroup("eg3").create("gmev3", "EvalGlobalMatrix");
     model.result().evaluationGroup("eg4").create("int1", "IntSurface");
     model.result().evaluationGroup("eg4").create("int2", "IntSurface");
     model.result().evaluationGroup("eg4").create("int3", "IntSurface");
@@ -2052,22 +2052,22 @@ public class Relay {
          .set("const", new String[][]{{"solid.refpntx", "0", "Reference point for moment computation, x coordinate"}, {"solid.refpnty", "0", "Reference point for moment computation, y coordinate"}, {"solid.refpntz", "0", "Reference point for moment computation, z coordinate"}});
     model.result().evaluationGroup("eg1").feature("max1").selection().named("box2");
     model.result().evaluationGroup("eg3").label("Parasitic Extraction (Off)");
-    model.result().evaluationGroup("eg3").feature("gmev3").label("Mutual capacitance");
-    model.result().evaluationGroup("eg3").feature("gmev3").set("data", "dset13");
-    model.result().evaluationGroup("eg3").feature("gmev3").set("looplevelinput", new String[]{"all", "last"});
-    model.result().evaluationGroup("eg3").feature("gmev3").set("expr", "root.relay.es2.Cinv");
-    model.result().evaluationGroup("eg3").feature("gmev3").set("unit", "1/F");
-    model.result().evaluationGroup("eg3").feature("gmev3").set("descr", "Inverse Maxwell capacitance");
-    model.result().evaluationGroup("eg3").feature("gmev3")
-         .set("const", new String[][]{{"solid.refpntx", "0", "Reference point for moment computation, x coordinate"}, 
-         {"solid.refpnty", "0", "Reference point for moment computation, y coordinate"}, 
-         {"solid.refpntz", "0", "Reference point for moment computation, z coordinate"}, 
-         {"root.relay.solid2.refpntx", "0", "Reference point for moment computation, x coordinate"}, 
-         {"root.relay.solid2.refpnty", "0", "Reference point for moment computation, y coordinate"}, 
-         {"root.relay.solid2.refpntz", "0", "Reference point for moment computation, z coordinate"}});
-    model.result().evaluationGroup("eg3").feature("gmev3").set("dataseries", "average");
-    model.result().evaluationGroup("eg3").feature("gmev3").set("outerdataseries", "none");
-    model.result().evaluationGroup("eg3").feature("gmev3").set("trans", "invmaxwellmutual");
+//     model.result().evaluationGroup("eg3").feature("gmev3").label("Mutual capacitance");
+//     model.result().evaluationGroup("eg3").feature("gmev3").set("data", "dset13");
+//     model.result().evaluationGroup("eg3").feature("gmev3").set("looplevelinput", new String[]{"all", "last"});
+//     model.result().evaluationGroup("eg3").feature("gmev3").set("expr", "root.relay.es2.Cinv");
+//     model.result().evaluationGroup("eg3").feature("gmev3").set("unit", "1/F");
+//     model.result().evaluationGroup("eg3").feature("gmev3").set("descr", "Inverse Maxwell capacitance");
+//     model.result().evaluationGroup("eg3").feature("gmev3")
+//          .set("const", new String[][]{{"solid.refpntx", "0", "Reference point for moment computation, x coordinate"}, 
+//          {"solid.refpnty", "0", "Reference point for moment computation, y coordinate"}, 
+//          {"solid.refpntz", "0", "Reference point for moment computation, z coordinate"}, 
+//          {"root.relay.solid2.refpntx", "0", "Reference point for moment computation, x coordinate"}, 
+//          {"root.relay.solid2.refpnty", "0", "Reference point for moment computation, y coordinate"}, 
+//          {"root.relay.solid2.refpntz", "0", "Reference point for moment computation, z coordinate"}});
+//     model.result().evaluationGroup("eg3").feature("gmev3").set("dataseries", "average");
+//     model.result().evaluationGroup("eg3").feature("gmev3").set("outerdataseries", "none");
+//     model.result().evaluationGroup("eg3").feature("gmev3").set("trans", "invmaxwellmutual");
     model.result().evaluationGroup("eg4").label("Contact Force and Resistance");
     model.result().evaluationGroup("eg4").set("data", "dset8");
     model.result().evaluationGroup("eg4").set("looplevelinput", new String[]{"manual"});
