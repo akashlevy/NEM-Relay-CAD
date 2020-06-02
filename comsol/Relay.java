@@ -1257,6 +1257,7 @@ public class Relay {
     model.component("relay").physics("es").feature("term6").set("TerminalType", "Voltage");
     model.component("relay").physics("es").feature("term6").set("V0", "tri1(t[1/s])*V_gate");
     model.component("relay").physics("es").feature("term6").label("Electric Potential Gate Sweep");
+    model.component("relay").physics("es").feature("term6").set("TerminalName", "101");
     model.component("relay").physics("es").feature("term61").set("TerminalName", "3");
     model.component("relay").physics("es").feature("term61").set("TerminalType", "Voltage");
     model.component("relay").physics("es").feature("term61").set("V0", "rect1(t[1/s])*V_gate");
