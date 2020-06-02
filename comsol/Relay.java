@@ -1450,9 +1450,9 @@ public class Relay {
          .set("disabledphysics", new String[]{"solid/bndl1", "es", "es2", "solid/bndl10", "solid/bndl11", "solid/lemm1/dmp1", "solid2"});
     model.study("std2").feature("eig").set("disableFrameControl", new String[]{"frame:material1", "frame:spatial1"});
     model.study("std2").feature("eig").set("disabledcoupling", new String[]{"eme1", "eme2"});
-    model.study("std2").feature("eig")
-         .set("activate", new String[]{"es", "off", "es2", "off", "solid", "on", "solid2", "off", "frame:spatial1", "off", 
-         "frame:material1", "off"});
+//     model.study("std2").feature("eig")
+//          .set("activate", new String[]{"es", "off", "es2", "off", "solid", "on", "solid2", "off", "frame:spatial1", "off", 
+//          "frame:material1", "off"});
     model.study("std2").feature("eig").set("activateCoupling", new String[]{"eme1", "off", "eme2", "off"});
     model.study().create("std4");
     model.study("std4").create("matsw", "MaterialSweep");
@@ -1460,9 +1460,9 @@ public class Relay {
     model.study("std4").feature("stssw").set("useadvanceddisable", true);
     model.study("std4").feature("stssw").set("disabledphysics", new String[]{"solid2"});
     model.study("std4").feature("stssw").set("disabledcoupling", new String[]{"eme2", "eme1"});
-    model.study("std4").feature("stssw")
-         .set("activate", new String[]{"es", "off", "es2", "on", "solid", "off", "solid2", "off", "frame:spatial1", "off", 
-         "frame:material1", "on"});
+//     model.study("std4").feature("stssw")
+//          .set("activate", new String[]{"es", "off", "es2", "on", "solid", "off", "solid2", "off", "frame:spatial1", "off", 
+//          "frame:material1", "on"});
     model.study("std4").feature("stssw").set("activateCoupling", new String[]{"eme1", "off", "eme2", "off"});
     model.study().create("std5");
     model.study("std5").create("matsw", "MaterialSweep");
@@ -1471,9 +1471,9 @@ public class Relay {
     model.study("std5").feature("time")
          .set("disabledphysics", new String[]{"solid/bndl1", "es2", "es/term61", "solid2"});
     model.study("std5").feature("time").set("disabledcoupling", new String[]{"eme2"});
-    model.study("std5").feature("time")
-         .set("activate", new String[]{"es", "on", "es2", "off", "solid", "on", "solid2", "off", "frame:spatial1", "on", 
-         "frame:material1", "on"});
+//     model.study("std5").feature("time")
+//          .set("activate", new String[]{"es", "on", "es2", "off", "solid", "on", "solid2", "off", "frame:spatial1", "on", 
+//          "frame:material1", "on"});
     model.study("std5").feature("time").set("activateCoupling", new String[]{"eme1", "on", "eme2", "off"});
     model.study().create("std7");
     model.study("std7").create("param", "Parametric");
@@ -1482,9 +1482,9 @@ public class Relay {
     model.study("std7").feature("time")
          .set("disabledphysics", new String[]{"es2", "solid/lemm1/dmp1", "es/term6", "solid/bndl1", "solid", "solid2/lemm1/dmp2"});
     model.study("std7").feature("time").set("disabledcoupling", new String[]{"eme1"});
-    model.study("std7").feature("time")
-         .set("activate", new String[]{"es", "on", "es2", "off", "solid", "off", "solid2", "on", "frame:spatial1", "on", 
-         "frame:material1", "on"});
+//     model.study("std7").feature("time")
+//          .set("activate", new String[]{"es", "on", "es2", "off", "solid", "off", "solid2", "on", "frame:spatial1", "on", 
+//          "frame:material1", "on"});
 
     model.sol().create("sol1");
     model.sol("sol1").study("std1");
