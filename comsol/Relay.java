@@ -1438,9 +1438,9 @@ public class Relay {
     model.study("std1").feature("stat")
          .set("disabledphysics", new String[]{"es2", "es", "solid/lemm1/dmp1", "solid2", "solid/bndl10", "solid/bndl11"});
     model.study("std1").feature("stat").set("disabledcoupling", new String[]{"eme1", "eme2"});
-    model.study("std1").feature("stat")
-         .set("activate", new String[]{"es", "off", "es2", "off", "solid", "on", "solid2", "off", "frame:spatial1", "off", 
-         "frame:material1", "off"});
+//     model.study("std1").feature("stat")
+//          .set("activate", new String[]{"es", "off", "es2", "off", "solid", "on", "solid2", "off", "frame:spatial1", "off", 
+//          "frame:material1", "off"});
     model.study("std1").feature("stat").set("activateCoupling", new String[]{"eme1", "off", "eme2", "off"});
     model.study().create("std2");
     model.study("std2").create("param", "Parametric");
