@@ -638,8 +638,8 @@ public class Relay {
     model.component("relay").common("sym1").selection().named("adj2");
 
     model.component("relay").physics().create("es", "Electrostatics", "geom1");
-//     model.component("relay").physics("es").create("term6", "Terminal", 2);
-//     model.component("relay").physics("es").feature("term6").selection().named("adj6");
+    model.component("relay").physics("es").create("term6", "Terminal", 2);
+    model.component("relay").physics("es").feature("term6").selection().named("adj6");
     model.component("relay").physics("es").create("term61", "Terminal", 2);
     model.component("relay").physics("es").feature("term61").selection().named("adj6");
     model.component("relay").physics("es").create("term7", "Terminal", 2);
@@ -1254,10 +1254,10 @@ public class Relay {
     model.component("relay").physics("es").feature("ccn1").label("Charge Conservation, Solid");
     model.component("relay").physics("es").feature("zc1").label("Zero Charge");
     model.component("relay").physics("es").feature("init1").label("Initial Values");
-//     model.component("relay").physics("es").feature("term6").set("TerminalType", "Voltage");
-//     model.component("relay").physics("es").feature("term6").set("V0", "tri1(t[1/s])*V_gate");
-//     model.component("relay").physics("es").feature("term6").label("Electric Potential Gate Sweep");
-//     model.component("relay").physics("es").feature("term6").set("TerminalName", "101");
+    model.component("relay").physics("es").feature("term6").set("TerminalType", "Voltage");
+    model.component("relay").physics("es").feature("term6").set("V0", "tri1(t[1/s])*V_gate");
+    model.component("relay").physics("es").feature("term6").label("Electric Potential Gate Sweep");
+    model.component("relay").physics("es").feature("term6").set("TerminalName", "101");
     model.component("relay").physics("es").feature("term61").set("TerminalName", "103");
     model.component("relay").physics("es").feature("term61").set("TerminalType", "Voltage");
     model.component("relay").physics("es").feature("term61").set("V0", "rect1(t[1/s])*V_gate");
@@ -1481,7 +1481,7 @@ public class Relay {
     model.study("std7").create("time", "Transient");
     model.study("std7").feature("time").set("useadvanceddisable", true);
     model.study("std7").feature("time")
-         .set("disabledphysics", new String[]{"es2", "solid/lemm1/dmp1", "solid/bndl1", "solid", "solid2/lemm1/dmp2"}); //"es/term6", 
+         .set("disabledphysics", new String[]{"es2", "solid/lemm1/dmp1", "es/term6", "solid/bndl1", "solid", "solid2/lemm1/dmp2"});
     model.study("std7").feature("time").set("disabledcoupling", new String[]{"eme1"});
 //     model.study("std7").feature("time")
 //          .set("activate", new String[]{"es", "on", "es2", "off", "solid", "off", "solid2", "on", "frame:spatial1", "on", 
