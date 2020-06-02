@@ -1257,62 +1257,62 @@ public class Relay {
     model.component("relay").physics("es").feature("term6").set("TerminalType", "Voltage");
     model.component("relay").physics("es").feature("term6").set("V0", "tri1(t[1/s])*V_gate");
     model.component("relay").physics("es").feature("term6").label("Electric Potential Gate Sweep");
-    model.component("relay").physics("es").feature("term61").set("TerminalName", "t3");
+    model.component("relay").physics("es").feature("term61").set("TerminalName", "3");
     model.component("relay").physics("es").feature("term61").set("TerminalType", "Voltage");
     model.component("relay").physics("es").feature("term61").set("V0", "rect1(t[1/s])*V_gate");
     model.component("relay").physics("es").feature("term61").label("Electric Potential Gate Step Down");
-    model.component("relay").physics("es").feature("term7").set("TerminalName", "t2");
+    model.component("relay").physics("es").feature("term7").set("TerminalName", "2");
     model.component("relay").physics("es").feature("term7").set("TerminalType", "Voltage");
     model.component("relay").physics("es").feature("term7").set("V0", 0);
     model.component("relay").physics("es").feature("term7").label("Ground");
     model.component("relay").physics("es").feature("ccn2").label("Charge Conservation, Nonsolid");
-    model.component("relay").physics("es").feature("term41").set("TerminalName", "t11");
+    model.component("relay").physics("es").feature("term41").set("TerminalName", "11");
     model.component("relay").physics("es").feature("term41").label("Floating Channel 1");
-    model.component("relay").physics("es").feature("term42").set("TerminalName", "t12");
+    model.component("relay").physics("es").feature("term42").set("TerminalName", "12");
     model.component("relay").physics("es").feature("term42").label("Floating Channel 2");
-    model.component("relay").physics("es").feature("term43").set("TerminalName", "t13");
+    model.component("relay").physics("es").feature("term43").set("TerminalName", "13");
     model.component("relay").physics("es").feature("term43").label("Floating Channel 3");
-    model.component("relay").physics("es").feature("term44").set("TerminalName", "t14");
+    model.component("relay").physics("es").feature("term44").set("TerminalName", "14");
     model.component("relay").physics("es").feature("term44").label("Floating Channel 4");
-    model.component("relay").physics("es").feature("term45").set("TerminalName", "t15");
+    model.component("relay").physics("es").feature("term45").set("TerminalName", "15");
     model.component("relay").physics("es").feature("term45").label("Floating Channel 5");
-    model.component("relay").physics("es").feature("term46").set("TerminalName", "t16");
+    model.component("relay").physics("es").feature("term46").set("TerminalName", "16");
     model.component("relay").physics("es").feature("term46").label("Floating Channel 6");
-    model.component("relay").physics("es").feature("term47").set("TerminalName", "t17");
+    model.component("relay").physics("es").feature("term47").set("TerminalName", "17");
     model.component("relay").physics("es").feature("term47").label("Floating Channel 7");
-    model.component("relay").physics("es").feature("term48").set("TerminalName", "t18");
+    model.component("relay").physics("es").feature("term48").set("TerminalName", "18");
     model.component("relay").physics("es").feature("term48").label("Floating Channel 8");
-    model.component("relay").physics("es").feature("term37").set("TerminalName", "t21");
+    model.component("relay").physics("es").feature("term37").set("TerminalName", "21");
     model.component("relay").physics("es").feature("term37").label("Floating Landing Pad 1");
-    model.component("relay").physics("es").feature("term38").set("TerminalName", "t22");
+    model.component("relay").physics("es").feature("term38").set("TerminalName", "22");
     model.component("relay").physics("es").feature("term38").label("Floating Landing Pad 2");
-    model.component("relay").physics("es").feature("term39").set("TerminalName", "t23");
+    model.component("relay").physics("es").feature("term39").set("TerminalName", "23");
     model.component("relay").physics("es").feature("term39").label("Floating Landing Pad 3");
-    model.component("relay").physics("es").feature("term40").set("TerminalName", "t24");
+    model.component("relay").physics("es").feature("term40").set("TerminalName", "24");
     model.component("relay").physics("es").feature("term40").label("Floating Landing Pad 4");
-    model.component("relay").physics("es").feature("term49").set("TerminalName", "t25");
+    model.component("relay").physics("es").feature("term49").set("TerminalName", "25");
     model.component("relay").physics("es").feature("term49").label("Floating Landing Pad 5");
-    model.component("relay").physics("es").feature("term50").set("TerminalName", "t26");
+    model.component("relay").physics("es").feature("term50").set("TerminalName", "26");
     model.component("relay").physics("es").feature("term50").label("Floating Landing Pad 6");
-    model.component("relay").physics("es").feature("term51").set("TerminalName", "t27");
+    model.component("relay").physics("es").feature("term51").set("TerminalName", "27");
     model.component("relay").physics("es").feature("term51").label("Floating Landing Pad 7");
-    model.component("relay").physics("es").feature("term52").set("TerminalName", "t28");
+    model.component("relay").physics("es").feature("term52").set("TerminalName", "28");
     model.component("relay").physics("es").feature("term52").label("Floating Landing Pad 8");
-    model.component("relay").physics("es").feature("term53").set("TerminalName", "t29");
+    model.component("relay").physics("es").feature("term53").set("TerminalName", "29");
     model.component("relay").physics("es").feature("term53").label("Floating Landing Pad 9");
-    model.component("relay").physics("es").feature("term54").set("TerminalName", "t30");
+    model.component("relay").physics("es").feature("term54").set("TerminalName", "30");
     model.component("relay").physics("es").feature("term54").label("Floating Landing Pad 10");
-    model.component("relay").physics("es").feature("term55").set("TerminalName", "t31");
+    model.component("relay").physics("es").feature("term55").set("TerminalName", "31");
     model.component("relay").physics("es").feature("term55").label("Floating Landing Pad 11");
-    model.component("relay").physics("es").feature("term56").set("TerminalName", "t32");
+    model.component("relay").physics("es").feature("term56").set("TerminalName", "32");
     model.component("relay").physics("es").feature("term56").label("Floating Landing Pad 12");
-    model.component("relay").physics("es").feature("term57").set("TerminalName", "t33");
+    model.component("relay").physics("es").feature("term57").set("TerminalName", "33");
     model.component("relay").physics("es").feature("term57").label("Floating Landing Pad 13");
-    model.component("relay").physics("es").feature("term58").set("TerminalName", "t34");
+    model.component("relay").physics("es").feature("term58").set("TerminalName", "34");
     model.component("relay").physics("es").feature("term58").label("Floating Landing Pad 14");
-    model.component("relay").physics("es").feature("term59").set("TerminalName", "t35");
+    model.component("relay").physics("es").feature("term59").set("TerminalName", "35");
     model.component("relay").physics("es").feature("term59").label("Floating Landing Pad 15");
-    model.component("relay").physics("es").feature("term60").set("TerminalName", "t36");
+    model.component("relay").physics("es").feature("term60").set("TerminalName", "36");
     model.component("relay").physics("es").feature("term60").label("Floating Landing Pad 16");
     model.component("relay").physics("es2").label("Parasitic Extraction");
     model.component("relay").physics("es2").prop("PortSweepSettings").set("PortParamName", "PortName");
@@ -1438,10 +1438,10 @@ public class Relay {
     model.study("std1").feature("stat")
          .set("disabledphysics", new String[]{"es2", "es", "solid/lemm1/dmp1", "solid2", "solid/bndl10", "solid/bndl11"});
     model.study("std1").feature("stat").set("disabledcoupling", new String[]{"eme1", "eme2"});
-//     model.study("std1").feature("stat")
-//          .set("activate", new String[]{"es", "off", "es2", "off", "solid", "on", "solid2", "off", "frame:spatial1", "off", 
-//          "frame:material1", "off"});
-//     model.study("std1").feature("stat").set("activateCoupling", new String[]{"eme1", "off", "eme2", "off"});
+    model.study("std1").feature("stat")
+         .set("activate", new String[]{"es", "off", "es2", "off", "solid", "on", "solid2", "off", "frame:spatial1", "off", 
+         "frame:material1", "off"});
+    model.study("std1").feature("stat").set("activateCoupling", new String[]{"eme1", "off", "eme2", "off"});
     model.study().create("std2");
     model.study("std2").create("param", "Parametric");
     model.study("std2").create("eig", "Eigenfrequency");
@@ -1450,20 +1450,20 @@ public class Relay {
          .set("disabledphysics", new String[]{"solid/bndl1", "es", "es2", "solid/bndl10", "solid/bndl11", "solid/lemm1/dmp1", "solid2"});
     model.study("std2").feature("eig").set("disableFrameControl", new String[]{"frame:material1", "frame:spatial1"});
     model.study("std2").feature("eig").set("disabledcoupling", new String[]{"eme1", "eme2"});
-//     model.study("std2").feature("eig")
-//          .set("activate", new String[]{"es", "off", "es2", "off", "solid", "on", "solid2", "off", "frame:spatial1", "off", 
-//          "frame:material1", "off"});
-//     model.study("std2").feature("eig").set("activateCoupling", new String[]{"eme1", "off", "eme2", "off"});
+    model.study("std2").feature("eig")
+         .set("activate", new String[]{"es", "off", "es2", "off", "solid", "on", "solid2", "off", "frame:spatial1", "off", 
+         "frame:material1", "off"});
+    model.study("std2").feature("eig").set("activateCoupling", new String[]{"eme1", "off", "eme2", "off"});
     model.study().create("std4");
     model.study("std4").create("matsw", "MaterialSweep");
     model.study("std4").create("stssw", "StationarySourceSweep");
     model.study("std4").feature("stssw").set("useadvanceddisable", true);
     model.study("std4").feature("stssw").set("disabledphysics", new String[]{"solid2"});
     model.study("std4").feature("stssw").set("disabledcoupling", new String[]{"eme2", "eme1"});
-//     model.study("std4").feature("stssw")
-//          .set("activate", new String[]{"es", "off", "es2", "on", "solid", "off", "solid2", "off", "frame:spatial1", "off", 
-//          "frame:material1", "on"});
-//     model.study("std4").feature("stssw").set("activateCoupling", new String[]{"eme1", "off", "eme2", "off"});
+    model.study("std4").feature("stssw")
+         .set("activate", new String[]{"es", "off", "es2", "on", "solid", "off", "solid2", "off", "frame:spatial1", "off", 
+         "frame:material1", "on"});
+    model.study("std4").feature("stssw").set("activateCoupling", new String[]{"eme1", "off", "eme2", "off"});
     model.study().create("std5");
     model.study("std5").create("matsw", "MaterialSweep");
     model.study("std5").create("time", "Transient");
@@ -1471,10 +1471,10 @@ public class Relay {
     model.study("std5").feature("time")
          .set("disabledphysics", new String[]{"solid/bndl1", "es2", "es/term61", "solid2"});
     model.study("std5").feature("time").set("disabledcoupling", new String[]{"eme2"});
-//     model.study("std5").feature("time")
-//          .set("activate", new String[]{"es", "on", "es2", "off", "solid", "on", "solid2", "off", "frame:spatial1", "on", 
-//          "frame:material1", "on"});
-//     model.study("std5").feature("time").set("activateCoupling", new String[]{"eme1", "on", "eme2", "off"});
+    model.study("std5").feature("time")
+         .set("activate", new String[]{"es", "on", "es2", "off", "solid", "on", "solid2", "off", "frame:spatial1", "on", 
+         "frame:material1", "on"});
+    model.study("std5").feature("time").set("activateCoupling", new String[]{"eme1", "on", "eme2", "off"});
     model.study().create("std7");
     model.study("std7").create("param", "Parametric");
     model.study("std7").create("time", "Transient");
@@ -1482,9 +1482,9 @@ public class Relay {
     model.study("std7").feature("time")
          .set("disabledphysics", new String[]{"es2", "solid/lemm1/dmp1", "es/term6", "solid/bndl1", "solid", "solid2/lemm1/dmp2"});
     model.study("std7").feature("time").set("disabledcoupling", new String[]{"eme1"});
-//     model.study("std7").feature("time")
-//          .set("activate", new String[]{"es", "on", "es2", "off", "solid", "off", "solid2", "on", "frame:spatial1", "on", 
-//          "frame:material1", "on"});
+    model.study("std7").feature("time")
+         .set("activate", new String[]{"es", "on", "es2", "off", "solid", "off", "solid2", "on", "frame:spatial1", "on", 
+         "frame:material1", "on"});
 
     model.sol().create("sol1");
     model.sol("sol1").study("std1");
