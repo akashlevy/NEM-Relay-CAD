@@ -26,18 +26,23 @@ module OHMIC_CANTILEVER_RF_MEMS_SWITCH(s,d,g);
 
     // Dimensions 
     parameter real g_0=0.6e-6 from (0:inf); // nominal gap height [m]
-    parameter real g_d=0.2e-6 from (0:inf); // nominal gap height minus dimple thickness [m]
-    parameter real l=75e-6 from (0:inf); // beam length [m]
+    //parameter real g_0=2e-6 from (0:inf);
+	parameter real g_d=0.1e-6 from (0:inf); // nominal gap height minus dimple thickness [m]
+	parameter real l=75e-6 from (0:inf); // beam length [m]
+	//parameter real l=75e-6 from (0:inf);
     parameter real t=5e-6 from (0:inf); // beam thickness [m]
+	//parameter real t=0.5e-6 from (0:inf);
     parameter real w=30e-6 from (0:inf); // beam width [m]
     parameter real W_c=10e-6 from (0:inf); // contact width [m]
-    parameter real W=10e-6 from (0:inf); // electrode width [m]
+    parameter real W=100e-6 from (0:inf); // electrode width [m]
     parameter real x=30e-6 from (0:inf); // beam anchor to electrode edge distance [m]
-    // Electrical parameters
+    //parameter real x=3e-6 from (0:inf);
+	// Electrical parameters
     parameter real R_c=1.0 from [0:inf); // contact resistance [Ohm]
     // Material parameters: beam (gold)
     parameter real rho=19.2e3 from (0:inf); // mass density [kg/m^3]
-    parameter real E=78e9 from (0:inf); // Young's modulus [Pa]
+    //parameter real E=145e6 from (0:inf); // Young's modulus [Pa]
+	parameter real E=78e6 from (0:inf);
     // Material parameters: gas (air):
     parameter real lambda=1.5e-7 from [0:inf); // mean-free path [m]
     parameter real mu=1.845e-5 from (0:inf); // viscosity coefficient [kg/(m.s)]
@@ -55,6 +60,7 @@ module OHMIC_CANTILEVER_RF_MEMS_SWITCH(s,d,g);
 		m=0.4*rho*l*t*w;
 		$strobe("%M: m (effective beam mass [kg]) = %E",m);
 		k_1=2*E*w*pow(t/l,3)*(1-x/l)/(3-4*pow(x/l,3)+pow(x/l,4));
+		//k_1=k_1/500;
 		$strobe("%M: k_1 (spring constant [N/m]) = %E",k_1);
 		V_H=sqrt(2*k_1*(g_0-g_d)*pow(g_d,2)/(`P_EPS0*A));
 		$strobe("%M: V_H (hold-down voltage [V]) = %E",V_H);
@@ -79,6 +85,7 @@ module OHMIC_CANTILEVER_RF_MEMS_SWITCH(s,d,g);
 	Q_e=Q_m*pow(1.1-pow(g_d*tanh(Pos(z)/g_d)/g_0,2),1.5)*(1+9.9638*pow(lambda/(g_0-g_d*tanh(Pos(z)/g_d)),1.159));
 	$strobe("\n%M: Q_e (displacement-compensated mechanical quality factor []) = %E",Q_e);
 	b=k_1/(2*`M_PI*f_m_0*Q_e);
+	//b=10*b;
 	$strobe("%M: b (damping coefficient [N.s/m]) = %E",b);
 
         // Forces
@@ -99,12 +106,20 @@ module OHMIC_CANTILEVER_RF_MEMS_SWITCH(s,d,g);
 	I1=ddt(C_ds*V(d,s));
 	I2=V(d,s)/R_c+white_noise(4*`P_K*$temperature/R_c, "JOHNSON_NYQUIST_NOISE_R_c");
 	if (Pos(z)<g_d)
+	begin
 		I(d,s)<+I1;
+		$strobe("<<<<< In Pos(z)<g_d");
+	end
 	else
+	begin
 		I(d,s)<+I2;
+		$strobe(">>>>>>>>>>>> In Pos(z)>g_d");
+	end
 
 	C_gs=`P_EPS0*A/(g_0-Pos(z));
 	I(g,s)<+ddt(C_gs*V(g,s));
+
+	$strobe("Z = ", Pos(z));
 
     end
 
