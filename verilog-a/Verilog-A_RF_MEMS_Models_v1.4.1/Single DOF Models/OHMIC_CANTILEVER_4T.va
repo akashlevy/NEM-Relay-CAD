@@ -19,29 +19,50 @@ IEEE Microwave Magazine, vol. 13, no. 1, pp. 83-110, Jan.-Feb. 2012 */
 `include "disciplines.vams"
 `include "constants.vams"
 
-module OHMIC_CANTILEVER_RF_MEMS_SWITCH(s,d,g);
-    inout s, d, g;
-    electrical s, d, g;
+module OHMIC_CANTILEVER_4T(s,d,g,b);
+    inout s, d, g, b;
+    electrical s, d, g, b;
     kinematic z, velocity;
 
-    // Dimensions 
+    // // Dimensions 
+    // parameter real g_0=0.6e-6 from (0:inf); // nominal gap height [m]
+    // parameter real g_d=0.2e-6 from (0:inf); // nominal gap height minus dimple thickness [m]
+    // parameter real l=75e-6 from (0:inf); // beam length [m]
+    // parameter real t=5e-6 from (0:inf); // beam thickness [m]
+    // parameter real w=30e-6 from (0:inf); // beam width [m]
+    // parameter real W_c=10e-6 from (0:inf); // contact width [m]
+    // parameter real W=10e-6 from (0:inf); // electrode width [m]
+    // parameter real x=30e-6 from (0:inf); // beam anchor to electrode edge distance [m]
+    // // Electrical parameters
+    // parameter real R_c=1.0 from [0:inf); // contact resistance [Ohm]
+    // // Material parameters: beam (gold)
+    // parameter real rho=19.2e3 from (0:inf); // mass density [kg/m^3]
+    // parameter real E=78e9 from (0:inf); // Young's modulus [Pa]
+    // // Material parameters: gas (air):
+    // parameter real lambda=1.5e-7 from [0:inf); // mean-free path [m]
+    // parameter real mu=1.845e-5 from (0:inf); // viscosity coefficient [kg/(m.s)]
+    // // van der Waals and nuclear force coefficients
+    // parameter real c_1=10e-80 from [0:inf); // van der Waals force coefficient [N.m]
+    // parameter real c_2=10e-75 from [0:inf); // nuclear force coefficient [N.m^8]
+
+	// Dimensions 
     parameter real g_0=0.6e-6 from (0:inf); // nominal gap height [m]
     //parameter real g_0=2e-6 from (0:inf);
 	parameter real g_d=0.1e-6 from (0:inf); // nominal gap height minus dimple thickness [m]
 	parameter real l=75e-6 from (0:inf); // beam length [m]
 	//parameter real l=75e-6 from (0:inf);
-    parameter real t=5e-6 from (0:inf); // beam thickness [m]
+    parameter real t=4e-6 from (0:inf); // beam thickness [m]
 	//parameter real t=0.5e-6 from (0:inf);
     parameter real w=30e-6 from (0:inf); // beam width [m]
     parameter real W_c=10e-6 from (0:inf); // contact width [m]
-    parameter real W=100e-6 from (0:inf); // electrode width [m]
+    parameter real W=150e-6 from (0:inf); // electrode width [m]
     parameter real x=30e-6 from (0:inf); // beam anchor to electrode edge distance [m]
     //parameter real x=3e-6 from (0:inf);
 	// Electrical parameters
     parameter real R_c=1.0 from [0:inf); // contact resistance [Ohm]
     // Material parameters: beam (gold)
     parameter real rho=19.2e3 from (0:inf); // mass density [kg/m^3]
-    //parameter real E=145e6 from (0:inf); // Young's modulus [Pa]
+    //parameter real E=78e9 from (0:inf); // Young's modulus [Pa]
 	parameter real E=78e6 from (0:inf);
     // Material parameters: gas (air):
     parameter real lambda=1.5e-7 from [0:inf); // mean-free path [m]
@@ -50,7 +71,7 @@ module OHMIC_CANTILEVER_RF_MEMS_SWITCH(s,d,g);
     parameter real c_1=10e-80 from [0:inf); // van der Waals force coefficient [N.m]
     parameter real c_2=10e-75 from [0:inf); // nuclear force coefficient [N.m^8]
 
-    real A, b, C_ds, C_gs, C_u, F_c, F_e, F_s, f_m_0, I1, I2, IIP3, k_1, m, Q_e, Q_m, t_s_max, t_s_min, V_H, V_P, V_S;
+    real A, b_damp, C_ds, C_gs, C_u, F_c, F_e, F_s, f_m_0, I1, I2, IIP3, k_1, m, Q_e, Q_m, t_s_max, t_s_min, V_H, V_P, V_S;
 
     analog begin
 
@@ -60,7 +81,6 @@ module OHMIC_CANTILEVER_RF_MEMS_SWITCH(s,d,g);
 		m=0.4*rho*l*t*w;
 		$strobe("%M: m (effective beam mass [kg]) = %E",m);
 		k_1=2*E*w*pow(t/l,3)*(1-x/l)/(3-4*pow(x/l,3)+pow(x/l,4));
-		//k_1=k_1/500;
 		$strobe("%M: k_1 (spring constant [N/m]) = %E",k_1);
 		V_H=sqrt(2*k_1*(g_0-g_d)*pow(g_d,2)/(`P_EPS0*A));
 		$strobe("%M: V_H (hold-down voltage [V]) = %E",V_H);
@@ -84,14 +104,13 @@ module OHMIC_CANTILEVER_RF_MEMS_SWITCH(s,d,g);
 	// b: damping coefficient [N.s/m] (displacement-compensated squeeze-film damping)
 	Q_e=Q_m*pow(1.1-pow(g_d*tanh(Pos(z)/g_d)/g_0,2),1.5)*(1+9.9638*pow(lambda/(g_0-g_d*tanh(Pos(z)/g_d)),1.159));
 	$strobe("\n%M: Q_e (displacement-compensated mechanical quality factor []) = %E",Q_e);
-	b=k_1/(2*`M_PI*f_m_0*Q_e);
-	//b=10*b;
-	$strobe("%M: b (damping coefficient [N.s/m]) = %E",b);
+	b_damp=k_1/(2*`M_PI*f_m_0*Q_e);
+	$strobe("%M: b (damping coefficient [N.s/m]) = %E",b_damp);
 
         // Forces
 	F_c=c_1*W_c*w/pow(g_d-g_d*tanh(Pos(z)/g_d)+1e-9,3)-c_2*W_c*w/pow(g_d-g_d*tanh(Pos(z)/g_d)+1e-9,10);
 	$strobe("%M: F_c (attractive van der Waals and repulsive nuclear forces [N]) = %E",F_c);
-        F_e=`P_EPS0*A*pow(V(s,g),2)/2*1/pow(g_0-Pos(z),2);
+        F_e=`P_EPS0*A*pow(V(g,b),2)/2*1/pow(g_0-Pos(z),2);
 	//F_e=`P_EPS0*A*pow(V(s,g),2)/2*1/pow(g_0-g_d*tanh(Pos(z)/g_d),2); // Envelope simulation
 	$strobe("%M: F_e (electrostatic force [N]) = %E",F_e);
         F_s=k_1*Pos(z);
@@ -100,26 +119,18 @@ module OHMIC_CANTILEVER_RF_MEMS_SWITCH(s,d,g);
 
 	// Nonlinear state-space description
 	Pos(velocity):ddt(Pos(z))==Pos(velocity);
-	Pos(z):ddt(Pos(velocity))==1/m*(-b*Pos(velocity)-F_s+F_e+F_c+white_noise(4*`P_K*$temperature*b, "BROWNIAN_NOISE"));
+	Pos(z):ddt(Pos(velocity))==1/m*(-b_damp*Pos(velocity)-F_s+F_e+F_c+white_noise(4*`P_K*$temperature*b_damp, "BROWNIAN_NOISE"));
 
 	C_ds=`P_EPS0*W_c*w/(g_0-Pos(z));
 	I1=ddt(C_ds*V(d,s));
 	I2=V(d,s)/R_c+white_noise(4*`P_K*$temperature/R_c, "JOHNSON_NYQUIST_NOISE_R_c");
 	if (Pos(z)<g_d)
-	begin
 		I(d,s)<+I1;
-		$strobe("<<<<< In Pos(z)<g_d");
-	end
 	else
-	begin
 		I(d,s)<+I2;
-		$strobe(">>>>>>>>>>>> In Pos(z)>g_d");
-	end
 
 	C_gs=`P_EPS0*A/(g_0-Pos(z));
-	I(g,s)<+ddt(C_gs*V(g,s));
-
-	$strobe("Z = ", Pos(z));
+	I(b,g)<+ddt(C_gs*V(b,g));
 
     end
 
