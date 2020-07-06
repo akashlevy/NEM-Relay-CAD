@@ -85,3 +85,10 @@ for i in range(len(input_patt)):
         f.write("Vin" + str(i) + " s" + str(i)+ " 0 " + str(v_s_hi) + "\n")
     if (input_patt[i]=="L"):
         f.write("Vin" + str(i) + " s" + str(i)+ " 0 " + str(v_s_lo) + "\n")
+
+f.write("\n")
+f.write("\n")
+
+f.write(".tran 0.2us 50us\n")
+f.write(".probe PAR('abs(I(Vd))') V(d" + str(halfway) + "a)\n")
+f.write(".end")
