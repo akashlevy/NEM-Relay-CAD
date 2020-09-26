@@ -8,9 +8,6 @@ import pya
 # RELAY PARAMETERS (lengths are in units of nm)
 n_sides = 4                 # number of polygon sides
 
-g_act = 100                 # actuation gap: gap between c
-
-t_poly = 200                # thickness of poly-SiGe layer
 L_plate = 3000              # side length of parallel plate
 
 L_cant = L_plate            # length of cantilever
@@ -24,14 +21,8 @@ circ_cont = 1               # circular or grid contact mode
 n_cont = 16                 # number of contacts
 L_cont = 150                # side length of contact
 r_cont = 1000                # radius of circle along which to place contacts
-t_cont = 0.04               # thickness of contact
-t_chan = 0.02               # thickness of channel
 
 g_land = 50                 # spacing between landing pad
-
-t_land = 0.1                # thickness of landing contact
-
-t_sp = 0.025                # thickness of spacer
 
 L_hole = 100                # side length of release hole
 r_hole_pl = 0.78*L_plate/2  # distance from center
@@ -40,7 +31,6 @@ max_hole = 2                # last hole to have full circle in range
 n_hole = [1, 8, 16, 24]     # number of release holes at each layer
 
 cont_rot_factor = 0.1       # contact rotation factor
-
 
 # Create layout and top cell
 layout = pya.Layout()
