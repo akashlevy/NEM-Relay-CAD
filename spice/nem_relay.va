@@ -1,0 +1,227 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module nem_relay(d, g, s, b);
+    inout d;
+    electrical d;
+    inout g;
+    electrical g;
+    inout s;
+    electrical s;
+    inout b;
+    electrical b;
+
+// ==============================================================
+// This is a model of a nano-electro-mechanical relay structure
+// designed to implement digital logic. It is a simplified model.
+// ==============================================================
+
+// ===============================
+// Convenient function definitions
+// ===============================
+analog function real smoothstep;
+    input x, k;
+    real x, k;
+    begin
+        smoothstep = 0.5*(1+tanh(k*x));
+    end
+endfunction
+
+analog function real smoothclip;
+    input x, k;
+    real x, k;
+    begin
+        smoothclip = 0.5*k*x + 0.5*ln(cosh(k*x));
+    end
+endfunction
+
+analog function real smoothabs;
+    input x, k;
+    real x, k;
+    begin
+        smoothabs = x*tanh(k*x);
+    end
+endfunction
+
+analog function real smoothhump;
+    input x, k;
+    real x, k;
+    begin
+        smoothhump = pow(cosh(k*x),-1.0);
+    end
+endfunction
+
+// ==================================
+// Defining Internal Solver Variables
+// ==================================
+// - c - channel voltage
+// - cd - channel at the drain end
+// - cs - channel at the source end
+// - so - contact point between source and channel
+// - do - contact point between drain and channel
+// - mbr - mechanical ground, the position of the substrate
+// - np - normalized position of the structure
+// - nv - normalized velocity of the structure
+electrical c, cd, cs, so, do;
+kinematic mbr, np, nv;
+
+// =============================
+// Include Technology Parameters
+// =============================
+`include "tech_params.va"
+
+// ===============================================
+// Design values: set as parameters of the program
+// ===============================================
+// k - spring constant of structure
+// m - effective mass of relay plate
+// A - plate area
+// dh - thickness of contacts
+// gap - gap height
+// wo - first resonant frequency
+// Qf - quality factor
+parameter real k = 25.56;
+parameter real m = 1e-17;
+parameter real A = 9e-12;
+parameter real dh = 25e-9;
+parameter real gap = 60e-9;
+parameter real wo = 1e7;
+parameter real Qf = 0.5;
+
+//========================================
+// Electrical and miscellaneous parameters
+//========================================
+// Rds - contact resistance to the drain/source
+// Rc - resistance across the channel
+// Rair - resistance of the air gap
+// Cdsb - capacitance from the drain/source to the body
+// Cgc - gate to channel capacitance
+parameter real Rds = 1.0e3;
+parameter real Rc = 1;
+parameter real Rair = 1.0e15;
+
+parameter real Cdsb = 5.03e-17;
+parameter real Cgc = 5.03e-17;
+
+// ======================
+// Convergence Parameters
+// ======================
+// Rturnonfrac - fraction of gap where air resistance turns off
+// Rturnonsharp - sharpness of air resistance turn off function
+// cturnonfrac - fraction of gap where convergence force turns on
+// cturnonsharp - sharpens of convergence turn on function
+// cturnonval - initial value of convergence force, affect Vpi a bit
+// zOvdw = Van Der Waal's screening length ~ 5 Angstrom in Si
+// Ftotvdw - total expected surface adhesion force
+parameter real Rturnonfrac = 0.95;
+parameter real Rturnonsharp = 5000.0;
+parameter real cturnonfrac = 0.99;
+parameter real cturnonsharp = 1000.0;
+parameter real cturnonval = 0.01;
+parameter real Ftotvdw = 0.10;
+parameter real zOvdw = 5.0e-10;
+
+// ==============================
+// Internal variable declarations
+// ==============================
+real eo, me, hbar, q, kb, er;
+real C0, m, dr, CdscO, Qcd, Qcs, CdsgO, Qgd, Qgs;
+real Qgc, Qdb, Qsb, Qgb, nfel, nfk, nfconv, Vpi;
+
+analog begin
+
+// =========
+// Constants
+// =========
+// - eo - permittivity of free space 8.85e-12 F/m
+// - me - mass of electron
+// - hbar - Planck's constant over 2pi
+// - q - charge on an electron
+// - kb - Boltzmann's Constant
+// - er - relative permittivity of gate oxide
+eo = 8.85e-12;
+me = 9.1e-31;
+hbar = 1.055e-34;
+q = 1.6e-19;
+kb = 1.38e-23;
+er = 5.7;
+
+// ==============
+// Derived Values
+// ==============
+// C0 - Initial capacitance of the gap
+// Vpi - pull-in voltage
+// dr - dimple ratio: the normalized distance from channel to dimples
+C0 = eo*(A)/(gap);
+dr = dh/(gap);
+Vpi = pow(8*k*pow(gap,2)/27/C0,0.5);
+
+CdscO = eo*Acds/gap;
+CdsgO = eo*Adsg/gap;
+
+// ====================
+// Electrical Equations
+// ====================
+// I(s,so) - Contact resistances
+I(s,so)<+V(s,so)/Rds;
+I(d,do)<+V(d,do)/Rds;
+
+// I(c,cs) - Channel parasitic resistances
+I(c,cs)<+2*V(c,cs)/Rc; 
+I(c,cd)<+2*V(c,cd)/Rc;
+
+// I(g,c) - Gate to channel cap current
+Qgc = V(g,c)*Cgc;
+I(g,c)<+ddt(Qgc);
+
+// I(slo,bl) - drain/source to bulk cap
+Qdb = V(do,b)*Cdsb;
+Qsb = V(so,b)*Cdsb;
+I(do,b)<+ddt(Qdb);
+I(so,b)<+ddt(Qsb);
+
+// I(g,bl) - gate to bulk varible cap
+Qgb = V(g,b)*C0*(1/(1-Pos(np,mbr)));
+I(g,b)<+ddt(Qgb);
+
+// I(cls,slo) - channel end to contact variable resistance and cap
+I(cs,so)<+V(cs,so)/
+    (Rair*(smoothstep(-1.0*(Pos(np,mbr)-Rturnonfrac*dr),Rturnonsharp)));
+I(cd,do)<+V(cd,do)/
+    (Rair*(smoothstep(-1.0*(Pos(np,mbr)-Rturnonfrac*dr),Rturnonsharp)));
+
+Qcs = V(cs,so)*CdscO*(1/(1-Pos(np,mbr)));
+Qcd = V(cd,do)*CdscO*(1/(1-Pos(np,mbr)));
+I(cs,so)<+ddt(Qcs);
+I(cd,do)<+ddt(Qcd);
+
+// I(g,so) - gate to drain/source cap
+Qgd = V(g,do)*CdsgO*(1/(1-Pos(np,mbr)));
+Qgs = V(g,so)*CdsgO*(1/(1-Pos(np,mbr)));
+I(g,do)<+ddt(Qgd);
+I(g,so)<+ddt(Qgs);
+
+// ===========================================
+// F(np,mbr) - Normalized Mechanical Equations
+// ===========================================
+// Define mechanical nodes - mbr to ground and nv ddt(np)
+Pos(mbr)<+0.0;
+Pos(nv,mbr)<+ddt(Pos(np,mbr));
+
+// Normalized forces: Definitions of force values
+// normalized spring force (nfk)
+// normalized electric force (nfel)
+// normalized convergence force (nfconv)
+nfk = Pos(np,mbr);
+nfel = 4.0/27.0*pow(V(g,b)/Vpi / (1-Pos(np,mbr)), 2);
+nfconv = cturnonval*dr*limexp(cturnonsharp*(Pos(np,mbr)-cturnonfrac*dr));
+
+// Force Balance Equation - Define all of the important BCRs
+F(np,mbr)<+ -1.0*Pos(nv,mbr)/Qf/wo +
+    -1.0*ddt(Pos(nv,mbr))/wo/wo + 
+    -1.0*nfk +
+    1.0*nfel +
+    -1.0*nfconv;
+
+end
+endmodule
