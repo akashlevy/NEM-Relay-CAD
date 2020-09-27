@@ -1,0 +1,34 @@
+// ===============================
+// Convenient function definitions
+// ===============================
+analog function real smoothstep;
+    input x, k;
+    real x, k;
+    begin
+        smoothstep = 0.5*(1+tanh(k*x));
+    end
+endfunction
+
+analog function real smoothclip;
+    input x, k;
+    real x, k;
+    begin
+        smoothclip = 0.5*k*x + 0.5*ln(cosh(k*x));
+    end
+endfunction
+
+analog function real smoothabs;
+    input x, k;
+    real x, k;
+    begin
+        smoothabs = x*tanh(k*x);
+    end
+endfunction
+
+analog function real smoothhump;
+    input x, k;
+    real x, k;
+    begin
+        smoothhump = pow(cosh(k*x),-1.0);
+    end
+endfunction

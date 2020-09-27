@@ -1,2 +1,3 @@
-Relay.mph.lock
 RelaySolutions.mph
+*.lock
+*.pyc

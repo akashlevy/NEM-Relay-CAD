@@ -1,0 +1,28 @@
+{
+    "L_plate": 3000,
+    "L_cant": 3000,
+    "W_cant": 200,
+    "g_cant": 200,
+    "L_via": 400,
+    "L_anc": 600,
+    "n_cont": 16,
+    "L_cont": 150,
+    "r_cont": 1000,
+    "g_land": 50,
+    "L_hole": 100,
+    "r_hole_pl": 1170,
+    "d_hole_pl": 200,
+    "n_hole": [1, 8, 16, 24],
+    "cont_rot_factor": 0.1,
+
+    "t_poly": 120,
+    "t_cont": 25,
+    "t_sp": 30,
+    "t_chan": 10,
+    "t_sub": 1000,
+    "g_act": 100,
+
+    "Qf": 0.5,
+    "Rcont": 1e3,
+    "Rair": 1e15
+}

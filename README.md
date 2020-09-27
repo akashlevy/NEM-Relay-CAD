@@ -4,6 +4,8 @@ This repository contains almost everything a researcher would need to get starte
 
 A video tutorial of the COMSOL model is available: https://www.youtube.com/watch?v=YCjhU6pspo0
 
+TODO: instructions
+
 <img src="demo/mode1comsol.gif" alt="Modal Analysis in COMSOL" width="500"/>
 
 ## KLayout NEM relay layout generator

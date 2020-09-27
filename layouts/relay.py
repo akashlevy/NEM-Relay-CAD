@@ -3,34 +3,8 @@
 
 # Import klayout
 from math import sin, cos, pi
+from load_params import *
 import pya
-
-# RELAY PARAMETERS (lengths are in units of nm)
-n_sides = 4                 # number of polygon sides
-
-L_plate = 3000              # side length of parallel plate
-
-L_cant = L_plate            # length of cantilever
-W_cant = 200                # width of cantilever
-g_cant = W_cant             # gap between plate and cantilever
-
-L_via = 400                 # side length of via
-L_anc = L_via + 200         # side length of anchor attachment
-
-circ_cont = 1               # circular or grid contact mode
-n_cont = 16                 # number of contacts
-L_cont = 150                # side length of contact
-r_cont = 1000                # radius of circle along which to place contacts
-
-g_land = 50                 # spacing between landing pad
-
-L_hole = 100                # side length of release hole
-r_hole_pl = 0.78*L_plate/2  # distance from center
-d_hole_pl = 200             # distance apart from release hole
-max_hole = 2                # last hole to have full circle in range
-n_hole = [1, 8, 16, 24]     # number of release holes at each layer
-
-cont_rot_factor = 0.1       # contact rotation factor
 
 # Create layout and top cell
 layout = pya.Layout()

@@ -1,36 +1,38 @@
-
-// ===============================================
-// Design values: set as parameters of the program
-// ===============================================
-// k - spring constant of structure
-// m - effective mass of relay plate
-// A - plate area
-// dh - thickness of contacts
-// gap - gap height
-// wo - first resonant frequency
-// Qf - quality factor
-parameter real m = 1e-17;
-parameter real A = 9e-12;
-parameter real dh = 25e-9;
-parameter real gap = 60e-9;
-parameter real wo = 1e7;
-parameter real Qf = 0.5;
-
-//========================================
-// Electrical and miscellaneous parameters
-//========================================
-// Rcont - contact resistance
-// Rc - resistance across the channel
-// Rair - resistance of the air gap
-// Cdsb - capacitance from the drain/source to the body
-// Cgc - gate to channel capacitance
-// CdscO - drain/source to channel capacitance
-// CdsgO - drain/source to gate capacitance
-parameter real Rcont = 1.0e3;
-parameter real Rc = 1;
-parameter real Rair = 1.0e15;
-
-parameter real Cdsb = 5.03e-17;
-parameter real Cgc = 5.03e-17;
-parameter real CdscO = 5.03e-17;
-parameter real CdsgO = 5.03e-17;
+real parameter r_hole_pl = 1170;
+real parameter g_act = 100;
+real parameter g_land = 50;
+real parameter W_cant = 200;
+real parameter Rair = 1e+15;
+real parameter L_plate = 3000;
+real parameter L_cant = 3000;
+real parameter t_sub = 1000;
+real parameter t_chan = 10;
+real parameter r_cont = 1000;
+real parameter d_hole_pl = 200;
+real parameter L_via = 400;
+real parameter L_hole = 100;
+real parameter g_cant = 200;
+real parameter Qf = 0.5;
+real parameter t_sp = 30;
+real parameter L_cont = 150;
+real parameter t_poly = 120;
+real parameter cont_rot_factor = 0.1;
+real parameter t_cont = 25;
+real parameter Rcont = 1000.0;
+real parameter n_cont = 16;
+real parameter L_anc = 600;
+real parameter k = 26.26729735876597;
+real parameter m = 1.0521873121592042e-14;
+real parameter w0 = 9066167.477593858;
+real parameter Ccb = 1.0925903134346668e-16;
+real parameter Ccds = 1.134065205093799e-18;
+real parameter Ccg = 1.1590445693410967e-17;
+real parameter Cbc = 1.092598642907462e-16;
+real parameter Cbds = 8.955647446016116e-19;
+real parameter Cbg = 1.4585555099404994e-15;
+real parameter Cdsc = 1.1340606091811814e-18;
+real parameter Cdsb = 8.954626434736725e-19;
+real parameter Cdsg = 5.894958594571222e-17;
+real parameter Cgc = 1.1590321992852958e-17;
+real parameter Cgb = 1.4585552920271913e-15;
+real parameter Cgds = 5.89495515353624e-17;
