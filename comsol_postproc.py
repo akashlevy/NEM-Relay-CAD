@@ -17,10 +17,13 @@ propdf = pd.read_csv('output/mechprops.csv', header=None)
 props = {'k': propdf[1][0], 'm': propdf[2][0], 'w0': propdf[3][0]}
 
 # Get params
-params = OrderedDict(json.load(open("params.json")).items() + props.items() + caps.items())
+params = json.load(open("params.json"))
 del params['n_hole'] # bad format for Verilog-A and not needed
+params = {k: v*1e-9 for k, v in params.items()} # convert from nm to m
 
 # Generate tech_params.va
 with open('spice/tech_params.va', 'w') as f:
-    for param, val in params.items():
+    for param, val in params.items() + props.items() + caps.items():
         f.write("real parameter %s = %s;\n" % (param, val))
+
+# TODO: test SPICE model now
