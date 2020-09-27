@@ -1,0 +1,36 @@
+
+// ===============================================
+// Design values: set as parameters of the program
+// ===============================================
+// k - spring constant of structure
+// m - effective mass of relay plate
+// A - plate area
+// dh - thickness of contacts
+// gap - gap height
+// wo - first resonant frequency
+// Qf - quality factor
+parameter real m = 1e-17;
+parameter real A = 9e-12;
+parameter real dh = 25e-9;
+parameter real gap = 60e-9;
+parameter real wo = 1e7;
+parameter real Qf = 0.5;
+
+//========================================
+// Electrical and miscellaneous parameters
+//========================================
+// Rcont - contact resistance
+// Rc - resistance across the channel
+// Rair - resistance of the air gap
+// Cdsb - capacitance from the drain/source to the body
+// Cgc - gate to channel capacitance
+// CdscO - drain/source to channel capacitance
+// CdsgO - drain/source to gate capacitance
+parameter real Rcont = 1.0e3;
+parameter real Rc = 1;
+parameter real Rair = 1.0e15;
+
+parameter real Cdsb = 5.03e-17;
+parameter real Cgc = 5.03e-17;
+parameter real CdscO = 5.03e-17;
+parameter real CdsgO = 5.03e-17;
