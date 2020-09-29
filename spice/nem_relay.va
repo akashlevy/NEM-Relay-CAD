@@ -35,9 +35,9 @@ kinematic mbr, z;
 // ======================
 // Convergence Parameters
 // ======================
-// Rturnonfrac - fraction of gap where air resistance turns off
+// Rturnonfrac - fraction of t_gap where air resistance turns off
 // Rturnonsharp - sharpness of air resistance turn off function
-// cturnonfrac - fraction of gap where convergence force turns on
+// cturnonfrac - fraction of t_gap where convergence force turns on
 // cturnonsharp - sharpness of convergence force turn on function
 // cturnonval - initial value of convergence force
 parameter real Rturnonfrac = 0.95;
@@ -45,6 +45,12 @@ parameter real Rturnonsharp = 5000.0;
 parameter real cturnonfrac = 0.99;
 parameter real cturnonsharp = 1000.0;
 parameter real cturnonval = 10;
+
+// ==================
+// Derived quantities
+// ==================
+// cgap - distance between contact and substrate
+parameter real cgap = g_act - t_cont;
 
 // ==============================
 // Internal variable declarations
@@ -67,24 +73,24 @@ I(d,g)<+ddt(Qdg);
 I(s,g)<+ddt(Qsg);
 
 // I(b,d), I(b,s) - body to drain/source variable cap
-Qbd = V(b,d)*Cbds*gap/Pos(z,mbr);
-Qbs = V(b,s)*Cbds*gap/Pos(z,mbr);
+Qbd = V(b,d)*Cbds*(t_gap + t_sp/K_sp)/Pos(z,mbr);
+Qbs = V(b,s)*Cbds*(t_gap + t_sp/K_sp)/Pos(z,mbr);
 I(b,d)<+ddt(Qbd);
 I(b,s)<+ddt(Qbs);
 
 // I(g,b) - gate to body variable cap
-Qgb = V(g,b)*Cgb*gap/(Pos(z,mbr) + t_sp/K_sp);
+Qgb = V(g,b)*Cgb*(t_gap + t_sp/K_sp)/(Pos(z,mbr) + t_sp/K_sp);
 I(g,b)<+ddt(Qgb);
 
 // I(g,c) - gate to channel variable cap
-Qgc = V(g,c)*Cgc*gap/(Pos(z,mbr) - (gap - cgap));
+Qgc = V(g,c)*Cgc*t_gap/(Pos(z,mbr) - (t_gap - cgap));
 I(g,c)<+ddt(Qgc);
 
 // I(d,c), I(s,c) - channel to drain/source variable contact resistance
 I(d,c)<+V(d,c)/
-    (Rcont + Rair * smoothstep((gap - cgap) - Pos(z,mbr), Rturnonsharp));
+    (Rcont + Rair * smoothstep((t_gap - cgap) - Pos(z,mbr), Rturnonsharp));
 I(s,c)<+V(s,c)/
-    (Rcont + Rair * smoothstep((gap - cgap) - Pos(z,mbr), Rturnonsharp));
+    (Rcont + Rair * smoothstep((t_gap - cgap) - Pos(z,mbr), Rturnonsharp));
 
 // ===========================================
 // F(z,mbr) - Normalized Mechanical Equations
@@ -95,9 +101,9 @@ Pos(mbr)<+0.0;
 // Force Balance Equation
 F(z,mbr) <+ meff * ddt(ddt(Pos(z,mbr)));
 F(z,mbr) <+ meff * w0/Qf * ddt(Pos(z,mbr));
-F(z,mbr) <+ meff * w0*w0 * (gap - Pos(z,mbr));
+F(z,mbr) <+ meff * w0*w0 * (t_gap - Pos(z,mbr));
 F(z,mbr) <+ - Cgb * V(g,b) * V(g,b) / (2 * Pos(z,mbr));
-F(z,mbr) <+ - cturnonval*limexp(cturnonsharp*((gap - cgap) - Pos(z,mbr)));
+F(z,mbr) <+ - cturnonval*limexp(cturnonsharp*((t_gap - cgap) - Pos(z,mbr)));
 
 end
 endmodule

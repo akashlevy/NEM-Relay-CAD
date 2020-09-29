@@ -3,13 +3,13 @@ import json
 # INITIALIZE RELAY PARAMETERS (lengths are in units of nm)
 try:
     params = json.load(open("../params.json"))
-    n_sides = 4; L_plate = params["L_plate"]; L_cant = params["L_cant"]
-    W_cant = params["W_cant"]; g_cant = params["g_cant"]
-    L_via = params["L_via"]; L_anc = params["L_anc"]
-    n_cont = params["n_cont"]; L_cont = params["L_cont"]
-    r_cont = params["r_cont"]; g_land = params["g_land"]
-    L_hole = params["L_hole"]; r_hole_pl = params["r_hole_pl"]
-    d_hole_pl = params["d_hole_pl"]; max_hole = 2
+    n_sides = 4; L_plate = params["L_plate"] * 1e9; L_cant = params["L_cant"] * 1e9
+    W_cant = params["W_cant"] * 1e9; g_cant = params["g_cant"] * 1e9
+    L_via = params["L_via"] * 1e9; L_anc = params["L_anc"] * 1e9
+    n_cont = params["n_cont"]; L_cont = params["L_cont"] * 1e9
+    r_cont = params["r_cont"] * 1e9; g_land = params["g_land"] * 1e9
+    L_hole = params["L_hole"] * 1e9; r_hole_pl = params["r_hole_pl"] * 1e9
+    d_hole_pl = params["d_hole_pl"] * 1e9; max_hole = 2
     n_hole = params["n_hole"]; cont_rot_factor = params["cont_rot_factor"]
 except IOError, ValueError:
     print("Could not load parameter JSON file, using defaults")

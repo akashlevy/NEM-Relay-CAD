@@ -1,0 +1,29 @@
+{
+    "L_plate": "Side length of relay plate",
+    "L_cant": "Length of cantilever beam",
+    "L_cont": "Side length of contact",
+    "L_hole": "Side length of release hole",
+    "L_via": "Side length of via",
+    "L_anc": "Side length of anchor extension",
+    "W_cant": "Width of cantilever beam",
+    "g_cant": "Gap between cantilever beam and relay body",
+    "g_land": "Gap for spacing between landing pads and gate",
+
+    "r_hole_pl": "Radius along which to place holes",
+    "d_hole_pl": "Diameter along which to place holes",
+
+    "t_poly": "Thickness of poly",
+    "t_cont": "Thickness of contact",
+    "t_sp": "Thickness of spacer",
+    "t_chan": "Thickness of channel",
+    "t_sub": "Thickness of substrate",
+    "t_gap": "Gap between poly body and substrate",
+    
+    "g_act": "Gap between poly body and substrate",
+
+    "Qf": "Quality factor of relay motion",
+    "Rcont": "Contact resistance",
+    "Rair": "Air resistance",
+
+    "K_sp": "Relative permittivity of dielectric spacer"
+}

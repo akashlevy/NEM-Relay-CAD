@@ -1,0 +1,7 @@
+t_poly 0.12[um] "Thickness of poly-SiGe layer + dielectric"
+t_cont 0.025[um] "Thickness of contacts"
+t_sp 0.03[um] "Thickness of dielectric"
+t_chan 0.01[um] "Thickness of channel"
+t_sub 0.5[um] "Thickness of substrate"
+g_act 0.06[um] "Actuation gap"
+L_plate 3[um] "Side length of plate"
