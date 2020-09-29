@@ -19,7 +19,7 @@ rho_W = 55e-9 # Ohm m (W)
 H_W = 1.1e9 # Pa
 lambda_W = 33e-9 # m
 k = 4.7 # dielectric constant of Castor oil
-xi_W = 0.1
+xi_W = 0.25 # elastic contact constant
 
 # Calculations
 V_pi = ((8 * k_tot * t_gap**3)/(27 * k * eps_0 * L_plate**2))**0.5
@@ -29,7 +29,7 @@ V_po = ((2 * (k_tot * (t_gap - t_cont) - F_A) * t_cont**2)/(k * eps_0 * L_plate*
 print("Pull-in voltage: %s V" % V_pi)
 print("Pull-out voltage: %s V" % V_po)
 
-for i, F_cont in enumerate(open("output/fcont.csv").read().split(",")):
+for i, F_cont in enumerate(open("output/fcont.csv").read().split(",")[1:]):
     try:
         A_r = float(F_cont) / (xi_W * H_W)
         R_cont = 4 * rho_W * lambda_W / (3 * A_r)
