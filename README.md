@@ -21,7 +21,13 @@ Running `cd layouts; python relay.py` will generate layouts based on the paramet
 ### COMSOL model
 
 The COMSOL model has 5 studies that predict the physics of the multi-pole NEM relay. These are:
-1. 
+1. Spring Constant: determine spring constant by applying force to plate
+2. Modal Analysis: determine eigenmodes and shapes
+3. Parasitic Extraction: extract parasitic mutual capacitances between all terminals
+4. Quasi-Static Sweep: find pull-in and pull-out voltages, contact forces, displacement contour, etc.
+5. Transient Sweep: find out pull-in speed
+
+TODO: instructions on how to load parameter settings and modify things.
 
 ### ANSYS model (unfinished)
 
