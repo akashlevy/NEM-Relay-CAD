@@ -19,8 +19,9 @@
     "t_cont": 25,
     "t_sp": 30,
     "t_chan": 10,
-    "t_sub": 1000,
+    "t_sub": 500,
     "g_act": 100,
+    "TODO": "double check these #s",
 
     "Qf": 0.5,
     "Rcont": 1e3,
