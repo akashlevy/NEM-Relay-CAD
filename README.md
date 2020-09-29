@@ -41,10 +41,10 @@ This model is adapted from "Micro-Relay Technology For Energy-Efficient Integrat
 
 TODO
 
-### Mathematica model (validation only)
-
-Running the Mathematica notebook will solve the damped ODE model of the NEM relay and yield the transient displacemnt curve. It is good for understanding the effect of Q-factor damping.
-
 ### Step 5: Liberty model
 
 TODO
+
+### Mathematica model (validation only)
+
+Running the Mathematica notebook will solve the damped ODE model of the NEM relay and yield the transient displacemnt curve. It is good for understanding the effect of Q-factor damping.
