@@ -8,7 +8,7 @@ params_desc = json.load(open("helper/params_desc.json"), object_pairs_hook=Order
 params["g_act"] = params["t_gap"]
 
 # Parameter units and multipliers
-param_units = {
+params_unit = {
     "L_plate": ("um", 1e-6),
     "L_cant": ("um", 1e-6),
     "L_cont": ("nm", 1e-9),
@@ -32,8 +32,8 @@ param_units = {
     "g_act": ("nm", 1e-9),
 
     "Qf": None,
-    "Rcont": ("ohm", 1e-9),
-    "Rair": "Air resistance",
+    "Rcont": ("ohm", 1),
+    "Rair": ("ohm", 1),
 
     "K_sp": None
 }
@@ -41,6 +41,10 @@ param_units = {
 # Output parameters
 with open("comsol/params.txt", "w") as f:
     for key in params:
-        if type(params[key]) not in [float, int] or key not in params_text:
+        if type(params[key]) not in [float, int] or key not in params_desc:
             continue
-        f.write("%s %s %s")
+        if params_unit[key] is None:
+            f.write('%s %s "%s"\n' % (key, params[key], params_desc[key]))
+        else:
+            unit, mult = params_unit[key]
+            f.write('%s %s[%s] "%s"\n' % (key, params[key]/mult, unit, params_desc[key]))
