@@ -1,5 +1,5 @@
 .title <test_relay.sp>
-.hdl nem_relay_4T.va
+.hdl nem_relay.va
 
 Xnem gnd Vg Vsrc gnd nem_relay
 

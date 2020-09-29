@@ -6,7 +6,6 @@
 
 `include "constants.vams"
 `include "disciplines.vams"
-`include "helper/vafns.va"
 
 module nem_relay(d, g, s, b);
     inout d;
@@ -27,10 +26,11 @@ module nem_relay(d, g, s, b);
 electrical c;
 kinematic mbr;
 
-// =============================
-// Include Technology Parameters
-// =============================
+// ==================================================
+// Include Technology Parameters and Helper Functions
+// ==================================================
 `include "tech_params.va"
+`include "helper/vafns.va"
 
 // ======================
 // Convergence Parameters
