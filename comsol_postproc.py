@@ -14,7 +14,7 @@ for chan1 in chani:
 
 # Get mechanical properties
 propdf = pd.read_csv('output/mechprops.csv', header=None)
-props = {'k': propdf[1][0], 'm': propdf[2][0], 'w0': propdf[3][0]}
+props = {'k': propdf[1][0], 'meff': propdf[2][0], 'w0': propdf[3][0]}
 
 # Get params
 params = json.load(open("params.json"))

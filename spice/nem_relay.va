@@ -24,7 +24,7 @@ module nem_relay(d, g, s, b);
 // - mbr - mechanical ground, position of the substrate
 // - z - position of the relay
 electrical c;
-kinematic mbr;
+kinematic mbr, z;
 
 // ==================================================
 // Include Technology Parameters and Helper Functions
@@ -93,11 +93,11 @@ I(s,c)<+V(s,c)/
 Pos(mbr)<+0.0;
 
 // Force Balance Equation
-F(z,mbr) <+ m * ddt(ddt(Pos(z,mbr)));
-F(z,mbr) <+ m * w0/Qf * ddt(Pos(z,mbr));
-F(z,mbr) <+ m * w0*w0 * (gap - Pos(z,mbr));
-F(z,mbr) <- Cgb * V(g,b) * V(g,b) / (2 * Pos(z,mbr));
-F(z,mbr) <- cturnonval*limexp(cturnonsharp*((gap - cgap) - Pos(z,mbr)));
+F(z,mbr) <+ meff * ddt(ddt(Pos(z,mbr)));
+F(z,mbr) <+ meff * w0/Qf * ddt(Pos(z,mbr));
+F(z,mbr) <+ meff * w0*w0 * (gap - Pos(z,mbr));
+F(z,mbr) <+ - Cgb * V(g,b) * V(g,b) / (2 * Pos(z,mbr));
+F(z,mbr) <+ - cturnonval*limexp(cturnonsharp*((gap - cgap) - Pos(z,mbr)));
 
 end
 endmodule
