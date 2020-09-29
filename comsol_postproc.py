@@ -25,5 +25,3 @@ params = {k: v*1e-9 for k, v in params.items()} # convert from nm to m
 with open('spice/tech_params.va', 'w') as f:
     for param, val in params.items() + props.items() + caps.items():
         f.write("real parameter %s = %s;\n" % (param, val))
-
-# TODO: test SPICE model now

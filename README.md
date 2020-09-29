@@ -8,6 +8,7 @@ A video tutorial of the COMSOL model is available: https://www.youtube.com/watch
 
 ## Configure NEM relay parameters
 
+The configuration file `params.json` controls the parameters for all models.
 
 ## KLayout NEM relay layout generator
 
