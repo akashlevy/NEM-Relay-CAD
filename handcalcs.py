@@ -17,7 +17,7 @@ E_poly = 145E9 # Pa
 rho_poly = 4126 # kg/m^3
 rho_W = 55e-9 # Ohm m (W)
 H_W = 1.1e9 # Pa
-lambda_W = 33e-09 # m
+lambda_W = 33e-9 # m
 k = 4.7 # dielectric constant of Castor oil
 xi_W = 0.1
 
