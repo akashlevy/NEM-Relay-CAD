@@ -7,6 +7,9 @@ propdf = pd.read_csv("output/mechprops.csv", header=None)
 k_tot = propdf[1][0]
 m = propdf[2][0]
 L_plate = params["L_plate"]
+n_cont = params["n_cont"]
+L_cont = params["L_cont"]
+A_gate = L_plate**2 - n_cont * L_cont**2
 t_cont = params["t_cont"]
 t_gap = params["t_gap"] + params["t_sp"] / params["K_sp"]
 F_A = 0
@@ -22,8 +25,8 @@ k = 4.7 # dielectric constant of Castor oil
 xi_W = 0.25 # elastic contact constant
 
 # Calculations
-V_pi = ((8 * k_tot * t_gap**3)/(27 * k * eps_0 * L_plate**2))**0.5
-V_po = ((2 * (k_tot * (t_gap - t_cont) - F_A) * t_cont**2)/(k * eps_0 * L_plate**2))**0.5
+V_pi = ((8 * k_tot * t_gap**3)/(27 * k * eps_0 * A_gate))**0.5
+V_po = ((2 * (k_tot * (t_gap - t_cont) - F_A) * t_cont**2)/(k * eps_0 * A_gate))**0.5
 
 # Results
 print("Pull-in voltage: %s V" % V_pi)

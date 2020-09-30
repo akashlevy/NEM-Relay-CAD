@@ -1,4 +1,6 @@
+# Import necessary libraries
 import json
+from math import sin, cos, pi
 
 # INITIALIZE RELAY PARAMETERS (lengths are in units of nm)
 try:
@@ -10,7 +12,7 @@ try:
     r_cont = params["r_cont"] * 1e9; g_land = params["g_land"] * 1e9
     L_hole = params["L_hole"] * 1e9; r_hole_pl = params["r_hole_pl"] * 1e9
     d_hole_pl = params["d_hole_pl"] * 1e9; max_hole = 2
-    n_hole = params["n_hole"]; cont_rot_factor = params["cont_rot_factor"]
+    n_hole = params["n_hole"]
 except IOError, ValueError:
     print("Could not load parameter JSON file, using defaults")
     n_sides = 4                 # number of polygon sides
@@ -37,3 +39,18 @@ except IOError, ValueError:
     n_hole = [1, 8, 16, 24]     # number of release holes at each layer
 
     cont_rot_factor = 0.1       # contact rotation factor
+
+# GET CONTACT LOCATIONS
+try:
+    # Load chosen contact points from JSON and convert units
+    contpts = json.load(open("../contpts.json"))
+    contpts = [[val * 1e9 for val in pt] for pt in contpts]
+except IOError, ValueError:
+    # By default, use circular contact placement
+    contpts = [(r_cont * cos(2*pi*(i-0.5)/n_cont), r_cont * sin(2*pi*(i-0.5)/n_cont)) for i in range(n_cont)]
+    
+# Output params in COMSOL format
+with open("../comsol/contpts.txt", "w") as f:
+    for i, (x, y) in enumerate(contpts):
+        f.write('cont%sx %s[nm] "Contact %s x position (center)"\n' % (i+1, x, i+1))
+        f.write('cont%sy %s[nm] "Contact %s y position (center)"\n' % (i+1, y, i+1))

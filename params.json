@@ -13,9 +13,8 @@
     "d_hole_pl": 200e-9,
     "n_hole": [1, 8, 16, 24],
 
-    "r_cont": 1000e-9,
+    "r_cont": 800e-9,
     "n_cont": 16,
-    "cont_rot_factor": 0.1,
 
     "t_poly": 120e-9,
     "t_cont": 25e-9,
