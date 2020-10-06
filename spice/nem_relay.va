@@ -78,7 +78,7 @@ Qgb = V(g,b)*Cgb*(t_gap + t_sp/K_sp)/(Pos(z,mbr) + t_sp/K_sp);
 I(g,b)<+ddt(Qgb);
 
 // I(g,c) - gate to channel variable cap
-Qgc = V(g,c)*Cgc*(t_gap - t_chan)/(Pos(z,mbr) - t_chan));
+Qgc = V(g,c)*Cgc*(t_gap - t_chan)/(Pos(z,mbr) - t_chan);
 I(g,c)<+ddt(Qgc);
 
 // I(d,c), I(s,c) - channel to drain/source variable contact resistance
