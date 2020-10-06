@@ -42,7 +42,7 @@ kinematic mbr, z;
 // cturnonsharp - sharpness of convergence force turn on function
 // cturnonval - initial value of convergence force
 parameter real Rturnonfrac = 0.95;
-parameter real Rturnonsharp = 5000.0;
+parameter real Rturnonsharp = 5e10;
 parameter real cturnonfrac = 0.99;
 parameter real cturnonsharp = 1000.0;
 parameter real cturnonval = 1e6;
