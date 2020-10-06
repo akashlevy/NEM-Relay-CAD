@@ -1,0 +1,1317 @@
+
+*pvaI* current limit stacksize=10485760, set new limit stacksize=62914560
+ --------------------------------------------------------
+|                                                        |
+|             Synopsys Unified Verilog-A (pVA)           |
+|                                                        |
+|                 Machine Name: nanopower                |
+| Copyright (c) 2015 Synopsys Inc., All Rights Reserved. |
+|                                                        |
+ --------------------------------------------------------
+
+libepva built by pvamgr synmake_pva_build  on Mon Jul 31 14:32:23 PDT 2017 - p4:4618024
+HSP_HOME:   /cad/synopsys/hspice/M-2017.03-SP2/hspice
+HSP_ARCH:   linux64
+HSP_GCC :   /cad/synopsys/hspice/M-2017.03-SP2/hspice/GNU/linux64/gcc/bin/gcc -m64 
+HSP_GCC_VER:   5.2.0
+Working-Dir: /miele/users/akashl/NEM-Relay-CAD/spice
+Args:        -p hsp -t spi -f transient_sweep.pvadir/pvaHDL.lis -o transient_sweep.pvadir 
+
+### optimize mode ###
+Args: pva -p hsp -t spi -f transient_sweep.pvadir/pvaHDL.lis -o transient_sweep.pvadir
+
+Begin of pVA compiling on Tue Oct  6 10:14:09 2020	GTM/In-use: 0.6250/0.5370 MB
+
+Parsing 'nem_relay.va'
+Parsing include file '/cad/synopsys/hspice/M-2017.03-SP2/hspice/include/constants.vams'
+Parsing include file '/cad/synopsys/hspice/M-2017.03-SP2/hspice/include/disciplines.vams'
+Parsing include file 'tech_params.va'
+Parsing include file 'helper/vafns.va'
+
+End of pVA compiling on Tue Oct  6 10:14:09 2020	GTM/In-use: 0.8750/0.7319 MB
+
+
+End of build pVA DB on Tue Oct  6 10:14:09 2020	GTM/In-use: 1.8750/1.8022 MB
+
+
+transient_sweep.pvadir/pvaRTL_linux64.so is reused
+
+End of pVA elaboration on Tue Oct  6 10:14:09 2020	GTM/In-use: 1.8750/1.8662 MB
+
+*pvaI* Creating VA module (nem_relay) for instance XNEM with gmd reduction
+*pvaI*        termCount=11 diwSize=74 probeSize=66 Qsize=10 Isize=8
+End of GMD creation on Tue Oct  6 10:14:09 2020	GTM/In-use: 1.8750/0.9482 MB
+
+End of pVA setup    on Tue Oct  6 10:14:09 2020	GTM/In-use: 1.8750/0.9491 MB
+
+Begin of pVA simulation on Tue Oct  6 10:14:09 2020	GTM/In-use: 1.8750/0.9491 MB
+
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 0.000000e+00
+Pos(mbr,z) = 6.000000e-08
+Ftot = -0.000000e+00
+Fdamp = -0.000000e+00
+Fk = 0.000000e+00
+Fel = 0.000000e+00
+Fcont = 9.929590e-163
+END
+*pvaI* minimum timestep = 1e-19
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = -2.575864e-171
+Pos(mbr,z) = 6.000000e-08
+Ftot = -9.926138e-163
+Fdamp = -3.452331e-166
+Fk = -3.001820e-170
+Fel = 0.000000e+00
+Fcont = 9.929590e-163
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = -7.726697e-171
+Pos(mbr,z) = 6.000000e-08
+Ftot = -9.922686e-163
+Fdamp = -6.903462e-166
+Fk = -9.004415e-170
+Fel = 0.000000e+00
+Fcont = 9.929590e-163
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = -2.420936e-170
+Pos(mbr,z) = 6.000000e-08
+Ftot = -9.911640e-163
+Fdamp = -1.794708e-165
+Fk = -2.821272e-169
+Fel = 0.000000e+00
+Fcont = 9.929590e-163
+END
+
+BEGIN
+Vgate = 2.441406e-03
+Pos(z) = 4.760523e-28
+Pos(mbr,z) = 6.000000e-08
+Ftot = 4.808969e-14
+Fdamp = 3.266737e-20
+Fk = 5.547743e-27
+Fel = 6.660471e-14
+Fcont = 9.929590e-163
+END
+
+BEGIN
+Vgate = 8.374023e-03
+Pos(z) = 4.743731e-26
+Pos(mbr,z) = 6.000000e-08
+Ftot = 7.835964e-13
+Fdamp = 1.326151e-18
+Fk = 5.528174e-25
+Fel = 7.835977e-13
+Fcont = 9.929590e-163
+END
+
+BEGIN
+Vgate = 2.735840e-02
+Pos(z) = 1.566557e-24
+Pos(mbr,z) = 6.000000e-08
+Ftot = 8.363823e-12
+Fdamp = 2.548560e-17
+Fk = 1.825609e-23
+Fel = 8.363848e-12
+Fcont = 9.929590e-163
+END
+
+BEGIN
+Vgate = 8.810840e-02
+Pos(z) = 1.565504e-22
+Pos(mbr,z) = 6.000000e-08
+Ftot = 8.674716e-11
+Fdamp = 8.293246e-16
+Fk = 1.824382e-21
+Fel = 8.674799e-11
+Fcont = 9.929590e-163
+END
+
+BEGIN
+Vgate = 2.825084e-01
+Pos(z) = 1.647364e-20
+Pos(mbr,z) = 6.000000e-08
+Ftot = 8.918139e-10
+Fdamp = 2.729459e-14
+Fk = 1.919778e-19
+Fel = 8.918412e-10
+Fcont = 9.929590e-163
+END
+
+BEGIN
+Vgate = 9.045884e-01
+Pos(z) = 1.730178e-18
+Pos(mbr,z) = 6.000000e-08
+Ftot = 9.142907e-09
+Fdamp = 8.957423e-13
+Fk = 2.016287e-17
+Fel = 9.143803e-09
+Fcont = 9.929591e-163
+END
+
+BEGIN
+Vgate = 2.895244e+00
+Pos(z) = 1.814854e-16
+Pos(mbr,z) = 6.000000e-08
+Ftot = 9.363951e-08
+Fdamp = 2.936048e-11
+Fk = 2.114965e-15
+Fel = 9.366887e-08
+Fcont = 9.929608e-163
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 1.236174e-15
+Pos(mbr,z) = 6.000000e-08
+Ftot = 2.792218e-07
+Fdamp = 1.385400e-10
+Fk = 1.440592e-14
+Fel = 2.793604e-07
+Fcont = 9.929713e-163
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 1.352980e-15
+Pos(mbr,z) = 6.000000e-08
+Ftot = 2.792116e-07
+Fdamp = 1.487597e-10
+Fk = 1.576715e-14
+Fel = 2.793604e-07
+Fcont = 9.929725e-163
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 1.583764e-15
+Pos(mbr,z) = 6.000000e-08
+Ftot = 2.791926e-07
+Fdamp = 1.677399e-10
+Fk = 1.845661e-14
+Fel = 2.793604e-07
+Fcont = 9.929748e-163
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 2.508260e-15
+Pos(mbr,z) = 6.000000e-08
+Ftot = 2.791319e-07
+Fdamp = 2.284681e-10
+Fk = 2.923036e-14
+Fel = 2.793604e-07
+Fcont = 9.929839e-163
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 7.370440e-15
+Pos(mbr,z) = 5.999999e-08
+Ftot = 2.789377e-07
+Fdamp = 4.227094e-10
+Fk = 8.589246e-14
+Fel = 2.793605e-07
+Fcont = 9.930322e-163
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 4.240045e-14
+Pos(mbr,z) = 5.999996e-08
+Ftot = 2.783169e-07
+Fdamp = 1.043374e-09
+Fk = 4.941197e-13
+Fel = 2.793608e-07
+Fcont = 9.933801e-163
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.531024e-13
+Pos(mbr,z) = 5.999965e-08
+Ftot = 2.763391e-07
+Fdamp = 3.020239e-09
+Fk = 4.114928e-12
+Fel = 2.793634e-07
+Fcont = 9.964714e-163
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.355870e-12
+Pos(mbr,z) = 5.999664e-08
+Ftot = 2.700976e-07
+Fdamp = 9.252462e-09
+Fk = 3.910811e-11
+Fel = 2.793891e-07
+Fcont = 1.026847e-162
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.273422e-11
+Pos(mbr,z) = 5.996727e-08
+Ftot = 2.509890e-07
+Fdamp = 2.827038e-08
+Fk = 3.814728e-10
+Fel = 2.796408e-07
+Fcont = 1.377508e-162
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.056985e-10
+Pos(mbr,z) = 5.969430e-08
+Ftot = 1.977546e-07
+Fdamp = 8.067885e-08
+Fk = 3.562500e-09
+Fel = 2.819960e-07
+Fcont = 2.111363e-161
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 2.450231e-09
+Pos(mbr,z) = 5.754977e-08
+Ftot = 8.621901e-08
+Fdamp = 1.868072e-07
+Fk = 2.855411e-08
+Fel = 3.015803e-07
+Fcont = 4.346591e-152
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 5.600950e-09
+Pos(mbr,z) = 5.439905e-08
+Ftot = 3.836351e-08
+Fdamp = 2.306388e-07
+Fk = 6.527146e-08
+Fel = 3.342738e-07
+Fcont = 2.096755e-138
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 1.090966e-08
+Pos(mbr,z) = 4.909034e-08
+Ftot = 1.698805e-08
+Fdamp = 2.586344e-07
+Fk = 1.271372e-07
+Fel = 4.027597e-07
+Fcont = 2.382161e-115
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 1.720617e-08
+Pos(mbr,z) = 4.279383e-08
+Ftot = 3.042991e-08
+Fdamp = 2.842698e-07
+Fk = 2.005145e-07
+Fel = 5.152143e-07
+Fcont = 5.276865e-88
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 1.887936e-08
+Pos(mbr,z) = 4.112064e-08
+Ftot = 3.935456e-08
+Fdamp = 2.936872e-07
+Fk = 2.200133e-07
+Fel = 5.530551e-07
+Fcont = 9.748746e-81
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 2.026163e-08
+Pos(mbr,z) = 3.973837e-08
+Ftot = 4.828209e-08
+Fdamp = 3.031484e-07
+Fk = 2.361218e-07
+Fel = 5.875524e-07
+Fcont = 9.819591e-75
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 2.511796e-08
+Pos(mbr,z) = 3.488204e-08
+Ftot = 9.346726e-08
+Fdamp = 3.521187e-07
+Fk = 2.927157e-07
+Fel = 7.383017e-07
+Fcont = 1.210214e-53
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 2.931877e-08
+Pos(mbr,z) = 3.068123e-08
+Ftot = 1.621110e-07
+Fdamp = 4.171746e-07
+Fk = 3.416705e-07
+Fel = 9.209560e-07
+Fcont = 2.121993e-35
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.398138e-08
+Pos(mbr,z) = 2.601862e-08
+Ftot = 2.967279e-07
+Fdamp = 5.232218e-07
+Fk = 3.960068e-07
+Fel = 1.215957e-06
+Fcont = 3.768559e-15
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.498353e-08
+Pos(mbr,z) = 2.501647e-08
+Ftot = 3.381585e-07
+Fdamp = 5.518475e-07
+Fk = 4.076855e-07
+Fel = 1.297776e-06
+Fcont = 8.481183e-11
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.520804e-08
+Pos(mbr,z) = 2.479196e-08
+Ftot = 3.478206e-07
+Fdamp = 5.583142e-07
+Fk = 4.103018e-07
+Fel = 1.317237e-06
+Fcont = 8.007521e-10
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.527705e-08
+Pos(mbr,z) = 2.472295e-08
+Ftot = 3.502831e-07
+Fdamp = 5.603219e-07
+Fk = 4.111061e-07
+Fel = 1.323308e-06
+Fcont = 1.596704e-09
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.538013e-08
+Pos(mbr,z) = 2.461987e-08
+Ftot = 3.523430e-07
+Fdamp = 5.633263e-07
+Fk = 4.123073e-07
+Fel = 1.332452e-06
+Fcont = 4.475770e-09
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.541831e-08
+Pos(mbr,z) = 2.458169e-08
+Ftot = 3.521167e-07
+Fdamp = 5.644382e-07
+Fk = 4.127523e-07
+Fel = 1.335864e-06
+Fcont = 6.556921e-09
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.548352e-08
+Pos(mbr,z) = 2.451648e-08
+Ftot = 3.492982e-07
+Fdamp = 5.663238e-07
+Fk = 4.135123e-07
+Fel = 1.341721e-06
+Fcont = 1.258693e-08
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.569354e-08
+Pos(mbr,z) = 2.430646e-08
+Ftot = 2.704296e-07
+Fdamp = 5.716552e-07
+Fk = 4.159597e-07
+Fel = 1.360848e-06
+Fcont = 1.028034e-07
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.605749e-08
+Pos(mbr,z) = 2.394251e-08
+Ftot = -3.381211e-06
+Fdamp = 4.418190e-07
+Fk = 4.202011e-07
+Fel = 1.394976e-06
+Fcont = 3.914167e-06
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.611685e-08
+Pos(mbr,z) = 2.388315e-08
+Ftot = -6.503210e-06
+Fdamp = 3.964272e-07
+Fk = 4.208928e-07
+Fel = 1.400664e-06
+Fcont = 7.086554e-06
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.615764e-08
+Pos(mbr,z) = 2.384236e-08
+Ftot = -1.001304e-05
+Fdamp = 3.405151e-07
+Fk = 4.213682e-07
+Fel = 1.404593e-06
+Fcont = 1.065575e-05
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.618460e-08
+Pos(mbr,z) = 2.381540e-08
+Ftot = -1.324893e-05
+Fdamp = 2.813303e-07
+Fk = 4.216824e-07
+Fel = 1.407199e-06
+Fcont = 1.395311e-05
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.623268e-08
+Pos(mbr,z) = 2.376732e-08
+Ftot = -2.160818e-05
+Fdamp = 3.219168e-08
+Fk = 4.222426e-07
+Fel = 1.411863e-06
+Fcont = 2.256561e-05
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.601062e-08
+Pos(mbr,z) = 2.398938e-08
+Ftot = -9.938838e-07
+Fdamp = -4.847573e-07
+Fk = 4.196549e-07
+Fel = 1.390509e-06
+Fcont = 2.449496e-06
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.563271e-08
+Pos(mbr,z) = 2.436729e-08
+Ftot = 1.362083e-06
+Fdamp = -4.780202e-07
+Fk = 4.152508e-07
+Fel = 1.355266e-06
+Fcont = 5.595174e-08
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.461970e-08
+Pos(mbr,z) = 2.538030e-08
+Ftot = 1.192159e-06
+Fdamp = -3.284649e-07
+Fk = 4.034455e-07
+Fel = 1.267142e-06
+Fcont = 2.230291e-12
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.403794e-08
+Pos(mbr,z) = 2.596206e-08
+Ftot = 1.041239e-06
+Fdamp = -2.175387e-07
+Fk = 3.966659e-07
+Fel = 1.220366e-06
+Fcont = 6.634709e-15
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.359281e-08
+Pos(mbr,z) = 2.640719e-08
+Ftot = 8.810574e-07
+Fdamp = -8.623388e-08
+Fk = 3.914785e-07
+Fel = 1.186302e-06
+Fcont = 7.738273e-17
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.349827e-08
+Pos(mbr,z) = 2.650173e-08
+Ftot = 7.776146e-07
+Fdamp = 1.125987e-08
+Fk = 3.903768e-07
+Fel = 1.179251e-06
+Fcont = 3.006573e-17
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.405905e-08
+Pos(mbr,z) = 2.594095e-08
+Ftot = 6.327654e-07
+Fdamp = 1.923402e-07
+Fk = 3.969119e-07
+Fel = 1.222018e-06
+Fcont = 8.194112e-15
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.556459e-08
+Pos(mbr,z) = 2.443541e-08
+Ftot = 5.589663e-07
+Fdamp = 3.473194e-07
+Fk = 4.144570e-07
+Fel = 1.349056e-06
+Fcont = 2.831357e-08
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.592611e-08
+Pos(mbr,z) = 2.407389e-08
+Ftot = -4.141208e-07
+Fdamp = 3.259061e-07
+Fk = 4.186700e-07
+Fel = 1.382510e-06
+Fcont = 1.052054e-06
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.615257e-08
+Pos(mbr,z) = 2.384743e-08
+Ftot = -9.213634e-06
+Fdamp = 6.767191e-08
+Fk = 4.213091e-07
+Fel = 1.404103e-06
+Fcont = 1.012876e-05
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.607420e-08
+Pos(mbr,z) = 2.392580e-08
+Ftot = -3.564251e-06
+Fdamp = -8.518874e-08
+Fk = 4.203957e-07
+Fel = 1.396573e-06
+Fcont = 4.625617e-06
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.557987e-08
+Pos(mbr,z) = 2.442013e-08
+Ftot = 1.153441e-06
+Fdamp = -2.506173e-07
+Fk = 4.146350e-07
+Fel = 1.350445e-06
+Fcont = 3.298644e-08
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.517624e-08
+Pos(mbr,z) = 2.482376e-08
+Ftot = 7.390091e-07
+Fdamp = 1.649313e-07
+Fk = 4.099312e-07
+Fel = 1.314454e-06
+Fcont = 5.826194e-10
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.527524e-08
+Pos(mbr,z) = 2.472476e-08
+Ftot = 7.272478e-07
+Fdamp = 1.832471e-07
+Fk = 4.110850e-07
+Fel = 1.323148e-06
+Fcont = 1.568049e-09
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.556782e-08
+Pos(mbr,z) = 2.443218e-08
+Ftot = 6.760098e-07
+Fdamp = 2.296032e-07
+Fk = 4.144946e-07
+Fel = 1.349349e-06
+Fcont = 2.924187e-08
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.572702e-08
+Pos(mbr,z) = 2.427298e-08
+Ftot = 5.552007e-07
+Fdamp = 2.487053e-07
+Fk = 4.163498e-07
+Fel = 1.363934e-06
+Fcont = 1.436785e-07
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.606293e-08
+Pos(mbr,z) = 2.393707e-08
+Ftot = -3.295160e-06
+Fdamp = 1.376628e-07
+Fk = 4.202644e-07
+Fel = 1.395496e-06
+Fcont = 4.132728e-06
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.604181e-08
+Pos(mbr,z) = 2.395819e-08
+Ftot = -2.357180e-06
+Fdamp = -1.518449e-08
+Fk = 4.200183e-07
+Fel = 1.393479e-06
+Fcont = 3.345825e-06
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.566525e-08
+Pos(mbr,z) = 2.433475e-08
+Ftot = 1.019153e-06
+Fdamp = -1.540039e-07
+Fk = 4.156300e-07
+Fel = 1.358247e-06
+Fcont = 7.746844e-08
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.564099e-08
+Pos(mbr,z) = 2.435901e-08
+Ftot = 8.867059e-07
+Fdamp = -6.811748e-09
+Fk = 4.153473e-07
+Fel = 1.356024e-06
+Fcont = 6.078226e-08
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.565623e-08
+Pos(mbr,z) = 2.434377e-08
+Ftot = 8.497080e-07
+Fdamp = 2.139836e-08
+Fk = 4.155249e-07
+Fel = 1.357420e-06
+Fcont = 7.078882e-08
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.579162e-08
+Pos(mbr,z) = 2.420838e-08
+Ftot = 5.812764e-07
+Fdamp = 9.741172e-08
+Fk = 4.171027e-07
+Fel = 1.369920e-06
+Fcont = 2.741297e-07
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.600804e-08
+Pos(mbr,z) = 2.399196e-08
+Ftot = -1.378268e-06
+Fdamp = -3.806321e-08
+Fk = 4.196247e-07
+Fel = 1.390264e-06
+Fcont = 2.386971e-06
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.591058e-08
+Pos(mbr,z) = 2.408942e-08
+Ftot = 7.853541e-08
+Fdamp = -1.670374e-08
+Fk = 4.184890e-07
+Fel = 1.381047e-06
+Fcont = 9.007263e-07
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.590909e-08
+Pos(mbr,z) = 2.409091e-08
+Ftot = 7.530856e-08
+Fdamp = -3.182506e-10
+Fk = 4.184717e-07
+Fel = 1.380907e-06
+Fcont = 8.874452e-07
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.592391e-08
+Pos(mbr,z) = 2.407609e-08
+Ftot = -6.778253e-08
+Fdamp = 2.301746e-09
+Fk = 4.186443e-07
+Fel = 1.382302e-06
+Fcont = 1.029138e-06
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.591075e-08
+Pos(mbr,z) = 2.408925e-08
+Ftot = 6.315594e-08
+Fdamp = -2.852272e-09
+Fk = 4.184910e-07
+Fel = 1.381063e-06
+Fcont = 9.022684e-07
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.592322e-08
+Pos(mbr,z) = 2.407678e-08
+Ftot = -6.150996e-08
+Fdamp = 3.015331e-09
+Fk = 4.186363e-07
+Fel = 1.382237e-06
+Fcont = 1.022096e-06
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.591102e-08
+Pos(mbr,z) = 2.408898e-08
+Ftot = 6.092676e-08
+Fdamp = -3.069820e-09
+Fk = 4.184942e-07
+Fel = 1.381089e-06
+Fcont = 9.047377e-07
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.592309e-08
+Pos(mbr,z) = 2.407691e-08
+Ftot = -6.033317e-08
+Fdamp = 3.123742e-09
+Fk = 4.186348e-07
+Fel = 1.382225e-06
+Fcont = 1.020800e-06
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.591117e-08
+Pos(mbr,z) = 2.408883e-08
+Ftot = 5.972930e-08
+Fdamp = -3.177014e-09
+Fk = 4.184959e-07
+Fel = 1.381102e-06
+Fcont = 9.060544e-07
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.592296e-08
+Pos(mbr,z) = 2.407704e-08
+Ftot = -5.911529e-08
+Fdamp = 3.229701e-09
+Fk = 4.186333e-07
+Fel = 1.382213e-06
+Fcont = 1.019465e-06
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.591132e-08
+Pos(mbr,z) = 2.408868e-08
+Ftot = 5.849123e-08
+Fdamp = -3.281721e-09
+Fk = 4.184976e-07
+Fel = 1.381117e-06
+Fcont = 9.074095e-07
+END
+
+BEGIN
+Vgate = 5.000000e+00
+Pos(z) = 3.592280e-08
+Pos(mbr,z) = 2.407720e-08
+Ftot = -5.761103e-08
+Fdamp = 3.352736e-09
+Fk = 4.186314e-07
+Fel = 1.382198e-06
+Fcont = 1.017825e-06
+END
+
+BEGIN
+Vgate = 2.500000e+00
+Pos(z) = 3.592284e-08
+Pos(mbr,z) = 2.407716e-08
+Ftot = -1.093892e-06
+Fdamp = 2.591821e-09
+Fk = 4.186319e-07
+Fel = 3.455504e-07
+Fcont = 1.018218e-06
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.592287e-08
+Pos(mbr,z) = 2.407713e-08
+Ftot = -1.438889e-06
+Fdamp = 1.710915e-09
+Fk = 4.186322e-07
+Fel = 0.000000e+00
+Fcont = 1.018545e-06
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.592288e-08
+Pos(mbr,z) = 2.407712e-08
+Ftot = -1.438568e-06
+Fdamp = 1.310645e-09
+Fk = 4.186323e-07
+Fel = 0.000000e+00
+Fcont = 1.018625e-06
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.592289e-08
+Pos(mbr,z) = 2.407711e-08
+Ftot = -1.437516e-06
+Fdamp = 1.294247e-10
+Fk = 4.186325e-07
+Fel = 0.000000e+00
+Fcont = 1.018754e-06
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.592286e-08
+Pos(mbr,z) = 2.407714e-08
+Ftot = -1.435132e-06
+Fdamp = -1.962373e-09
+Fk = 4.186322e-07
+Fel = 0.000000e+00
+Fcont = 1.018463e-06
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.592271e-08
+Pos(mbr,z) = 2.407729e-08
+Ftot = -1.430506e-06
+Fdamp = -4.986322e-09
+Fk = 4.186303e-07
+Fel = 0.000000e+00
+Fcont = 1.016862e-06
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.592129e-08
+Pos(mbr,z) = 2.407871e-08
+Ftot = -1.406607e-06
+Fdamp = -1.456664e-08
+Fk = 4.186138e-07
+Fel = 0.000000e+00
+Fcont = 1.002560e-06
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.590788e-08
+Pos(mbr,z) = 2.409212e-08
+Ftot = -1.251883e-06
+Fdamp = -4.329350e-08
+Fk = 4.184575e-07
+Fel = 0.000000e+00
+Fcont = 8.767194e-07
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.579622e-08
+Pos(mbr,z) = 2.420378e-08
+Ftot = -5.969837e-07
+Fdamp = -1.072241e-07
+Fk = 4.171564e-07
+Fel = 0.000000e+00
+Fcont = 2.870515e-07
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.565340e-08
+Pos(mbr,z) = 2.434660e-08
+Ftot = -3.508654e-07
+Fdamp = -1.334441e-07
+Fk = 4.154920e-07
+Fel = 0.000000e+00
+Fcont = 6.881752e-08
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.552002e-08
+Pos(mbr,z) = 2.447998e-08
+Ftot = -2.845631e-07
+Fdamp = -1.475061e-07
+Fk = 4.139376e-07
+Fel = 0.000000e+00
+Fcont = 1.813164e-08
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.540431e-08
+Pos(mbr,z) = 2.459569e-08
+Ftot = -2.611224e-07
+Fdamp = -1.571670e-07
+Fk = 4.125891e-07
+Fel = 0.000000e+00
+Fcont = 5.700303e-09
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.530661e-08
+Pos(mbr,z) = 2.469339e-08
+Ftot = -2.492015e-07
+Fdamp = -1.643948e-07
+Fk = 4.114505e-07
+Fel = 0.000000e+00
+Fcont = 2.145760e-09
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.522534e-08
+Pos(mbr,z) = 2.477466e-08
+Ftot = -2.415006e-07
+Fdamp = -1.699548e-07
+Fk = 4.105034e-07
+Fel = 0.000000e+00
+Fcont = 9.519816e-10
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.515840e-08
+Pos(mbr,z) = 2.484160e-08
+Ftot = -2.359284e-07
+Fdamp = -1.742824e-07
+Fk = 4.097234e-07
+Fel = 0.000000e+00
+Fcont = 4.874344e-10
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.505535e-08
+Pos(mbr,z) = 2.494465e-08
+Ftot = -2.281323e-07
+Fdamp = -1.805642e-07
+Fk = 4.085225e-07
+Fel = 0.000000e+00
+Fcont = 1.739407e-10
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.497062e-08
+Pos(mbr,z) = 2.502938e-08
+Ftot = -2.221852e-07
+Fdamp = -1.854243e-07
+Fk = 4.075350e-07
+Fel = 0.000000e+00
+Fcont = 7.454023e-11
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.486257e-08
+Pos(mbr,z) = 2.513743e-08
+Ftot = -2.150311e-07
+Fdamp = -1.912700e-07
+Fk = 4.062759e-07
+Fel = 0.000000e+00
+Fcont = 2.530182e-11
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.454607e-08
+Pos(mbr,z) = 2.545393e-08
+Ftot = -1.960714e-07
+Fdamp = -2.065172e-07
+Fk = 4.025875e-07
+Fel = 0.000000e+00
+Fcont = 1.068131e-12
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.339217e-08
+Pos(mbr,z) = 2.660783e-08
+Ftot = -1.424467e-07
+Fdamp = -2.466937e-07
+Fk = 3.891404e-07
+Fel = 0.000000e+00
+Fcont = 1.040632e-17
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 2.913700e-08
+Pos(mbr,z) = 3.086300e-08
+Ftot = -3.093014e-08
+Fdamp = -3.086220e-07
+Fk = 3.395522e-07
+Fel = 0.000000e+00
+Fcont = 3.446134e-36
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 2.511735e-08
+Pos(mbr,z) = 3.488265e-08
+Ftot = 1.939535e-08
+Fdamp = -3.121040e-07
+Fk = 2.927086e-07
+Fel = 0.000000e+00
+Fcont = 1.202858e-53
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 1.928024e-08
+Pos(mbr,z) = 4.071976e-08
+Ftot = 5.372635e-08
+Fdamp = -2.784114e-07
+Fk = 2.246850e-07
+Fel = 0.000000e+00
+Fcont = 5.369748e-79
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 1.108095e-08
+Pos(mbr,z) = 4.891905e-08
+Ftot = 5.772421e-08
+Fdamp = -1.868576e-07
+Fk = 1.291334e-07
+Fel = 0.000000e+00
+Fcont = 1.320956e-114
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 6.985034e-09
+Pos(mbr,z) = 5.301497e-08
+Ftot = 4.347463e-08
+Fdamp = -1.248757e-07
+Fk = 8.140108e-08
+Fel = 0.000000e+00
+Fcont = 2.150544e-132
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 4.017428e-09
+Pos(mbr,z) = 5.598257e-08
+Ftot = 2.837771e-08
+Fdamp = -7.519538e-08
+Fk = 4.681766e-08
+Fel = 0.000000e+00
+Fcont = 2.782267e-145
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 1.891831e-09
+Pos(mbr,z) = 5.810817e-08
+Ftot = 1.490674e-08
+Fdamp = -3.695346e-08
+Fk = 2.204672e-08
+Fel = 0.000000e+00
+Fcont = 1.633236e-154
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 6.732629e-10
+Pos(mbr,z) = 5.932674e-08
+Ftot = 5.837327e-09
+Fdamp = -1.368329e-08
+Fk = 7.845964e-09
+Fel = 0.000000e+00
+Fcont = 8.334410e-160
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 1.247537e-10
+Pos(mbr,z) = 5.987525e-08
+Ftot = 1.208276e-09
+Fdamp = -2.662112e-09
+Fk = 1.453835e-09
+Fel = 0.000000e+00
+Fcont = 3.457244e-162
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 4.834180e-12
+Pos(mbr,z) = 5.999517e-08
+Ftot = 5.718931e-11
+Fdamp = -1.135251e-10
+Fk = 5.633580e-11
+Fel = 0.000000e+00
+Fcont = 1.042140e-162
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = -8.924118e-13
+Pos(mbr,z) = 6.000089e-08
+Ftot = -1.055428e-11
+Fdamp = 2.095413e-11
+Fk = -1.039985e-11
+Fel = 0.000000e+00
+Fcont = 9.841372e-163
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 3.500356e-13
+Pos(mbr,z) = 5.999965e-08
+Ftot = 4.139277e-12
+Fdamp = -8.218466e-12
+Fk = 4.079189e-12
+Fel = 0.000000e+00
+Fcont = 9.964408e-163
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = -2.216374e-13
+Pos(mbr,z) = 6.000022e-08
+Ftot = -2.620796e-12
+Fdamp = 5.203679e-12
+Fk = -2.582883e-12
+Fel = 0.000000e+00
+Fcont = 9.907607e-163
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 1.507764e-13
+Pos(mbr,z) = 5.999985e-08
+Ftot = 1.782811e-12
+Fdamp = -3.539906e-12
+Fk = 1.757094e-12
+Fel = 0.000000e+00
+Fcont = 9.944573e-163
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = -1.025700e-13
+Pos(mbr,z) = 6.000010e-08
+Ftot = -1.212758e-12
+Fdamp = 2.408071e-12
+Fk = -1.195314e-12
+Fel = 0.000000e+00
+Fcont = 9.919411e-163
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 6.977557e-14
+Pos(mbr,z) = 5.999993e-08
+Ftot = 8.249717e-13
+Fdamp = -1.638111e-12
+Fk = 8.131394e-13
+Fel = 0.000000e+00
+Fcont = 9.936521e-163
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = -4.746602e-14
+Pos(mbr,z) = 6.000005e-08
+Ftot = -5.611779e-13
+Fdamp = 1.114330e-12
+Fk = -5.531520e-13
+Fel = 0.000000e+00
+Fcont = 9.924878e-163
+END
+
+BEGIN
+Vgate = 0.000000e+00
+Pos(z) = 4.266700e-15
+Pos(mbr,z) = 6.000000e-08
+Ftot = 5.041513e-14
+Fdamp = -1.001377e-13
+Fk = 4.972259e-14
+Fel = 0.000000e+00
+Fcont = 9.930014e-163
+END
+
+			pVA malloc          0.159 Mbytes         1192 times
+			pVA calloc          1.684 Mbytes         3583 times
+			pVA realloc         0.009 Mbytes           71 times
+			pVA valloc          0.000 Mbytes            0 times
+			pVA alloca          0.000 Mbytes            0 times
+
+			pVA TOT-MEM         1.853 Mbytes         4846 times
+			pVA free                                 1118 times
+			pVA strdup          0.000 Mbytes            0 times
+
+
+pVA concluded on Tue Oct  6 10:14:09 2020	GTM/In-use: 1.8750/0.8359 MB
+

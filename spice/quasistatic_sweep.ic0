@@ -1,0 +1,16 @@
+* "simulator" "HSPICE" 
+* "version" "M-2017.03-SP2 linux64"
+* "format" "HSP"
+* "rundate" "10:05:35 10/06/2020 "
+* "netlist" "quasistatic_sweep.sp "
+* "runtitle" ".title <test_relay.sp>"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ vg =   0.            
++ vsrc =   1.0000        
++ z =   0.            
+***   END: Saved Operating Point ***                     

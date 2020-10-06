@@ -2,3 +2,4 @@ Relay54Sol*.mph
 *.lock
 *.pyc
 .nfs*
+*.pvadir
