@@ -103,12 +103,17 @@ Fcont = cturnonval*limexp(-cturnonsharp*(Pos(z,mbr) - t_cont));
 F(z,mbr) <+ Ftot + Fdamp + Fk - Fel;
 
 // DEBUG
+$strobe("\nBEGIN");
+$strobe("Vgate = %e", V(g))
+$strobe("Pos(z) = %e", Pos(z))
+$strobe("Pos(z,mbr) = %e", Pos(z,mbr))
 $strobe("Ftot = %e", Ftot);
 $strobe("Ftot = %e", Ftot);
 $strobe("Fdamp = %e", Fdamp);
 $strobe("Fk = %e", Fk);
 $strobe("Fel = %e", Fel);
 $strobe("Fcont = %e", Fcont);
+$strobe("END");
 
 end
 endmodule
