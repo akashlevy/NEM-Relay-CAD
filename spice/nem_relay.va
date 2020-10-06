@@ -45,7 +45,7 @@ parameter real Rturnonfrac = 0.95;
 parameter real Rturnonsharp = 5000.0;
 parameter real cturnonfrac = 0.99;
 parameter real cturnonsharp = 1000.0;
-parameter real cturnonval = 10;
+parameter real cturnonval = 1e6;
 
 // ==============================
 // Internal variable declarations
@@ -98,7 +98,7 @@ F(z,mbr) <+ meff * ddt(ddt(Pos(z,mbr)));
 F(z,mbr) <+ meff * w0/Qf * ddt(Pos(z,mbr));
 F(z,mbr) <+ meff * w0*w0 * Pos(z);
 F(z,mbr) <+ - Qgb * V(g,b) / (2 * Pos(z,mbr));
-F(z,mbr) <+ cturnonval*limexp(cturnonsharp*(-Pos(z,mbr)));
+F(z,mbr) <+ cturnonval*limexp(-cturnonsharp*Pos(z,mbr));
 
 end
 endmodule
