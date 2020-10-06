@@ -23,7 +23,7 @@ module nem_relay(d, g, s, b, z);
 // ==================================
 // - c - channel voltage
 // - mbr - mechanical ground, position of the substrate
-// - z - position of the relay
+// - z - position of the relay body (bottom of dielectric spacer)
 electrical c;
 kinematic mbr, z;
 
@@ -47,12 +47,6 @@ parameter real cturnonfrac = 0.99;
 parameter real cturnonsharp = 1000.0;
 parameter real cturnonval = 10;
 
-// ==================
-// Derived quantities
-// ==================
-// cgap - distance between contact and substrate
-parameter real cgap = t_gap - t_cont;
-
 // ==============================
 // Internal variable declarations
 // ==============================
@@ -74,8 +68,8 @@ I(d,g)<+ddt(Qdg);
 I(s,g)<+ddt(Qsg);
 
 // I(b,d), I(b,s) - body to drain/source variable cap
-Qbd = V(b,d)*Cbds*(t_gap + t_sp/K_sp)/Pos(z,mbr);
-Qbs = V(b,s)*Cbds*(t_gap + t_sp/K_sp)/Pos(z,mbr);
+Qbd = V(b,d)*Cbds*(t_gap + t_sp/K_sp)/(Pos(z,mbr) + t_sp/K_sp);
+Qbs = V(b,s)*Cbds*(t_gap + t_sp/K_sp)/(Pos(z,mbr) + t_sp/K_sp);
 I(b,d)<+ddt(Qbd);
 I(b,s)<+ddt(Qbs);
 
@@ -84,27 +78,27 @@ Qgb = V(g,b)*Cgb*(t_gap + t_sp/K_sp)/(Pos(z,mbr) + t_sp/K_sp);
 I(g,b)<+ddt(Qgb);
 
 // I(g,c) - gate to channel variable cap
-Qgc = V(g,c)*Cgc*t_gap/(Pos(z,mbr) - (t_gap - cgap));
+Qgc = V(g,c)*Cgc*(t_gap - t_chan)/(Pos(z,mbr) - t_chan));
 I(g,c)<+ddt(Qgc);
 
 // I(d,c), I(s,c) - channel to drain/source variable contact resistance
 I(d,c)<+V(d,c)/
-    (Rcont + Rair * smoothstep((t_gap - cgap) - Pos(z,mbr), Rturnonsharp));
+    (Rcont + Rair * smoothstep((t_gap - t_cont) - Pos(z,mbr), Rturnonsharp));
 I(s,c)<+V(s,c)/
-    (Rcont + Rair * smoothstep((t_gap - cgap) - Pos(z,mbr), Rturnonsharp));
+    (Rcont + Rair * smoothstep((t_gap - t_cont) - Pos(z,mbr), Rturnonsharp));
 
 // ===========================================
 // F(z,mbr) - Normalized Mechanical Equations
 // ===========================================
 // Set mbr to mechanical ground
-Pos(mbr)<+0.0;
+Pos(mbr) <+ -t_gap;
 
 // Force Balance Equation
 F(z,mbr) <+ meff * ddt(ddt(Pos(z,mbr)));
 F(z,mbr) <+ meff * w0/Qf * ddt(Pos(z,mbr));
 F(z,mbr) <+ meff * w0*w0 * (t_gap - Pos(z,mbr));
-F(z,mbr) <+ - Cgb * V(g,b) * V(g,b) / (2 * Pos(z,mbr));
-F(z,mbr) <+ - cturnonval*limexp(cturnonsharp*((t_gap - cgap) - Pos(z,mbr)));
+F(z,mbr) <+ - Qgb * V(g,b) / (2 * Pos(z,mbr));
+F(z,mbr) <+ cturnonval*limexp(cturnonsharp*((t_gap - t_cont) - Pos(z,mbr)));
 
 end
 endmodule
