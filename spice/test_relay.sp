@@ -12,7 +12,7 @@ Vsrc Vsrc gnd 1V
 Vg Vg gnd 0V PWL(0s 0V 1us 0V 2us 10V 3us 0V 5us 10V 7us 0V 11us 10V 15us 0V)
 
 ** Generate I-V plot **
-.tran 0.001us 14us
+.tran 0.0001us 14us
 
 .probe V(Vg) V(Vsrc) PAR('abs(I(Vsrc))') z
 .option post=2
