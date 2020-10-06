@@ -69,4 +69,4 @@ TODO
 
 ### Mathematica model (validation only)
 
-Running the Mathematica notebook will solve the damped ODE model of the NEM relay and yield the transient displacemnt curve. It is good for validating the effect of Q-factor damping.
+Running the Mathematica notebook will solve the damped ODE model of the NEM relay and yield the transient displacement curve. It is good for validating the effect of Q-factor damping.

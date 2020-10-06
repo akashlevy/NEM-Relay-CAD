@@ -25,5 +25,22 @@
     "Rcont": "Contact resistance",
     "Rair": "Air resistance",
 
-    "K_sp": "Relative permittivity of dielectric spacer"
+    "K_sp": "Relative permittivity of dielectric spacer",
+
+    "Cbc": "Body to channel capacitance",
+    "Ccb": "Channel to body capacitance",
+    "Cbg": "Body to gate capacitance",
+    "Cgb": "Gate to body capacitance",
+    "Cbds": "Body to drain/source capacitance",
+    "Cdsb": "Drain/source to body capacitance",
+    "Ccg": "Channel to gate capacitance",
+    "Cgc": "Gate to channel capacitance",
+    "Ccds": "Channel to drain/source capacitance",
+    "Cdsc": "Drain/source to channel capacitance",
+    "Cgds": "Gate to drain/source capacitance",
+    "Cdsg": "Drain/source to gate capacitance",
+
+    "k": "Relay spring constant",
+    "meff": "Relay effective mass",
+    "w0": "First eigenfrequency (angular)"
 }

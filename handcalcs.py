@@ -32,10 +32,14 @@ V_po = ((2 * (k_tot * (t_gap - t_cont) - F_A) * t_cont**2)/(k * eps_0 * A_gate))
 print("Pull-in voltage: %s V" % V_pi)
 print("Pull-out voltage: %s V" % V_po)
 
-for i, F_cont in enumerate(open("output/fcont.csv").read().split(",")[1:]):
-    try:
-        A_r = float(F_cont) / (xi_W * H_W)
-        R_cont = 4 * rho_W * lambda_W / (3 * A_r)
-        print("Contact resistance %s: %s Ohm" % (i, R_cont))
-    except:
-        pass
+# Contact force/resistance
+F_cont = np.genfromtxt("output/fcont.csv", delimiter=',', usecols=range(1,16+1))
+print("Mean contact force: %s N" % F_cont.mean())
+print("Stdev. contact force: %s N" % F_cont.std())
+A_r = F_cont / (xi_W * H_W)
+R_cont = 4 * rho_W * lambda_W / (3 * A_r)
+print("Mean contact resistance: %s Ohm" % R_cont.mean())
+print("Stdev. contact resistance: %s Ohm" % R_cont.std())
+print("Mean contact conductance: %s S" % (1/R_cont).mean())
+print("Stdev. contact resistance: %s S" % (1/R_cont).std())
+
