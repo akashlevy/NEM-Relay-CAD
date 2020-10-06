@@ -94,11 +94,12 @@ I(s,c)<+V(s,c)/
 Pos(mbr) <+ -t_gap;
 
 // Force Balance Equation
-real Ftot = meff * ddt(ddt(Pos(z,mbr)));
-real Fdamp = meff * w0/Qf * ddt(Pos(z,mbr));
-real Fk = meff * w0*w0 * Pos(z);
-real Fel = Qgb * V(g,b) / (2 * (Pos(z,mbr) + t_sp/K_sp));
-real Fcont = cturnonval*limexp(-cturnonsharp*(Pos(z,mbr) - t_cont));
+real Ftot, Fdamp, Fk, Fel, Fcont;
+Ftot = meff * ddt(ddt(Pos(z,mbr)));
+Fdamp = meff * w0/Qf * ddt(Pos(z,mbr));
+Fk = meff * w0*w0 * Pos(z);
+Fel = Qgb * V(g,b) / (2 * (Pos(z,mbr) + t_sp/K_sp));
+Fcont = cturnonval*limexp(-cturnonsharp*(Pos(z,mbr) - t_cont));
 F(z,mbr) <+ Ftot + Fdamp + Fk - Fel;
 
 // DEBUG
