@@ -7,7 +7,7 @@
 `include "constants.vams"
 `include "disciplines.vams"
 
-module nem_relay(d, g, s, b);
+module nem_relay(d, g, s, b, z);
     inout d;
     electrical d;
     inout g;
@@ -16,6 +16,7 @@ module nem_relay(d, g, s, b);
     electrical s;
     inout b;
     electrical b;
+    inout z;
 
 // ==================================
 // Defining Internal Solver Variables
