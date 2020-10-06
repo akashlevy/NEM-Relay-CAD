@@ -3,7 +3,7 @@
 
 ** Create relay and start at z=0 **
 Xnem gnd Vg Vsrc gnd z nem_relay
-.ic z 0
+.ic V(z) 0
 
 ** Test fast transitions **
 Vsrc Vsrc gnd 1V
