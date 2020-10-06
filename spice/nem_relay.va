@@ -83,9 +83,9 @@ I(g,c)<+ddt(Qgc);
 
 // I(d,c), I(s,c) - channel to drain/source variable contact resistance
 I(d,c)<+V(d,c)/
-    (Rcont + Rair * smoothstep(Pos(z,mbr) - (t_gap - t_cont), Rturnonsharp));
+    (Rcont + Rair * smoothstep(-Pos(z,mbr), Rturnonsharp));
 I(s,c)<+V(s,c)/
-    (Rcont + Rair * smoothstep(Pos(z,mbr) - (t_gap - t_cont), Rturnonsharp));
+    (Rcont + Rair * smoothstep(-Pos(z,mbr), Rturnonsharp));
 
 // ===========================================
 // F(z,mbr) - Normalized Mechanical Equations
