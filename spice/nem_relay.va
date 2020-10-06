@@ -50,7 +50,7 @@ parameter real cturnonval = 10;
 // Derived quantities
 // ==================
 // cgap - distance between contact and substrate
-parameter real cgap = g_act - t_cont;
+parameter real cgap = t_gap - t_cont;
 
 // ==============================
 // Internal variable declarations
