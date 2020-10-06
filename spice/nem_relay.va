@@ -44,7 +44,7 @@ kinematic mbr, z;
 parameter real Rturnonfrac = 0.95;
 parameter real Rturnonsharp = 5e10;
 parameter real cturnonfrac = 0.99;
-parameter real cturnonsharp = 1000.0;
+parameter real cturnonsharp = 1e15;
 parameter real cturnonval = 1e6;
 
 // ==============================
@@ -107,7 +107,6 @@ $strobe("\nBEGIN");
 $strobe("Vgate = %e", V(g));
 $strobe("Pos(z) = %e", Pos(z));
 $strobe("Pos(z,mbr) = %e", Pos(z,mbr));
-$strobe("Ftot = %e", Ftot);
 $strobe("Ftot = %e", Ftot);
 $strobe("Fdamp = %e", Fdamp);
 $strobe("Fk = %e", Fk);
