@@ -107,7 +107,7 @@ $strobe("Ftot = %e", Ftot);
 $strobe("Ftot = %e", Ftot);
 $strobe("Fdamp = %e", Fdamp);
 $strobe("Fk = %e", Fk);
-$strobe("Fel = %e", Fcont);
+$strobe("Fel = %e", Fel);
 $strobe("Fcont = %e", Fcont);
 
 end
