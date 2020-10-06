@@ -46,7 +46,7 @@ kinematic mbr, z;
 // cturnonval - initial value of convergence force
 parameter real Rturnonfrac = 0.95;
 parameter real Rturnonsharp = 5e10;
-parameter real cturnonsharp = 1e9;
+parameter real cturnonsharp = 1e10;
 parameter real cturnonval = 1e-10;
 
 // ==============================
