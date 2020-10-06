@@ -51,6 +51,7 @@ parameter real cturnonval = 1e6;
 // Internal variable declarations
 // ==============================
 real Qbc, Qdg, Qsg, Qbd, Qbs, Qgb, Qgc;
+real Ftot, Fdamp, Fk, Fel, Fcont;
 
 analog begin
 
@@ -94,7 +95,6 @@ I(s,c)<+V(s,c)/
 Pos(mbr) <+ -t_gap;
 
 // Force Balance Equation
-real Ftot, Fdamp, Fk, Fel, Fcont;
 Ftot = meff * ddt(ddt(Pos(z,mbr)));
 Fdamp = meff * w0/Qf * ddt(Pos(z,mbr));
 Fk = meff * w0*w0 * Pos(z);
