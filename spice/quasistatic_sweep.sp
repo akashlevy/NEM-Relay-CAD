@@ -9,10 +9,10 @@ Xnem gnd Vg Vsrc gnd z nem_relay
 Vsrc Vsrc gnd 1V
 
 ** Sweep voltage (unipolar) **
-Vg Vg gnd 0V PWL(0s 0V 100us 0V 200us 5V 300us 0V)
+Vg Vg gnd 0V PWL(0s 0V 1000us 0V 2000us 5V 3000us 0V)
 
 ** Generate I-V plot **
-.tran 0.0001us 300us
+.tran 0.0001us 3000us
 
 .probe V(Vg) V(Vsrc) PAR('abs(I(Vsrc))') z
 .option post=2
