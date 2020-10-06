@@ -98,7 +98,7 @@ F(z,mbr) <+ meff * ddt(ddt(Pos(z,mbr)));
 F(z,mbr) <+ meff * w0/Qf * ddt(Pos(z,mbr));
 F(z,mbr) <+ meff * w0*w0 * Pos(z);
 F(z,mbr) <+ - Qgb * V(g,b) / (2 * Pos(z,mbr));
-//F(z,mbr) <+ cturnonval*limexp(-cturnonsharp*Pos(z,mbr));
+F(z,mbr) <+ cturnonval*limexp(-cturnonsharp*(Pos(z,mbr) - t_cont));
 
 end
 endmodule
