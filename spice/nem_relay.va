@@ -101,7 +101,7 @@ Ftot = meff * ddt(ddt(Pos(z)));
 Fdamp = meff * w0/Qf * ddt(Pos(z));
 Fk = meff * w0*w0 * Pos(z);
 Fel = Qgb * V(g,b) / (2 * (Pos(mbr,z) + t_sp/K_sp));
-Fcont = cturnonval*exp(-cturnonsharp*(Pos(mbr,z) - t_cont));
+Fcont = cturnonval*limexp(-cturnonsharp*(Pos(mbr,z) - t_cont));
 F(mbr,z) <+ Ftot + Fdamp + Fk - Fel + Fcont;
 
 // DEBUG
