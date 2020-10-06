@@ -38,14 +38,12 @@ kinematic mbr, z;
 // ======================
 // Rturnonfrac - fraction of t_gap where air resistance turns off
 // Rturnonsharp - sharpness of air resistance turn off function
-// cturnonfrac - fraction of t_gap where convergence force turns on
 // cturnonsharp - sharpness of convergence force turn on function
 // cturnonval - initial value of convergence force
 parameter real Rturnonfrac = 0.95;
 parameter real Rturnonsharp = 5e10;
-parameter real cturnonfrac = 0.99;
-parameter real cturnonsharp = 1e15;
-parameter real cturnonval = 1e6;
+parameter real cturnonsharp = 1e9;
+parameter real cturnonval = 1e-10;
 
 // ==============================
 // Internal variable declarations
@@ -99,7 +97,7 @@ Ftot = meff * ddt(ddt(Pos(z,mbr)));
 Fdamp = meff * w0/Qf * ddt(Pos(z,mbr));
 Fk = meff * w0*w0 * Pos(z);
 Fel = Qgb * V(g,b) / (2 * (Pos(z,mbr) + t_sp/K_sp));
-Fcont = cturnonval*limexp(-cturnonsharp*(Pos(z,mbr) - t_cont));
+Fcont = cturnonval*exp(-cturnonsharp*(Pos(z,mbr) - t_cont));
 F(z,mbr) <+ Ftot + Fdamp + Fk - Fel;
 
 // DEBUG
