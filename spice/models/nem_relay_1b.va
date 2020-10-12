@@ -1,0 +1,119 @@
+// ==============================================================
+// This is a model of a nano-electro-mechanical relay structure
+// designed to implement digital logic. It is a simplified model.
+// Model adapted from Kam and Chen. Author: Akash Levy
+// ==============================================================
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module nem_relay(d0, s0, g, b, z);
+    inout d0;
+    electrical d0;
+    inout s0;
+    electrical s0;
+    inout g;
+    electrical g;
+    inout b;
+    electrical b;
+    inout z;
+
+// ==================================
+// Defining Internal Solver Variables
+// ==================================
+// NOTE: Pos(z) = downwards displacement
+// NOTE: Pos(mbr, z) is height above substrate 
+// - c - channel voltage
+// - mbr - mechanical ground
+// - z - position of the relay body (bottom of dielectric spacer)
+electrical c;
+kinematic mbr, z;
+
+// ==================================================
+// Include Technology Parameters and Helper Functions
+// ==================================================
+`include "tech_params.va"
+`include "helper/vafns.va"
+
+// ======================
+// Convergence Parameters
+// ======================
+// Rturnonfrac - fraction of t_gap where air resistance turns off
+// Rturnonsharp - sharpness of air resistance turn off function
+// cturnonsharp - sharpness of convergence force turn on function
+// cturnonval - initial value of convergence force
+parameter real Rturnonfrac = 0.95;
+parameter real Rturnonsharp = 5e10;
+parameter real cturnonsharp = 1e10;
+parameter real cturnonval = 1e-10;
+
+// ==============================
+// Internal variable declarations
+// ==============================
+real Qbc, Qgb, Qgc;
+real Qdg0, Qsg0, Qbd0, Qbs0;
+real Ftot, Fdamp, Fk, Fel, Fcont;
+
+analog begin
+
+// ====================
+// Electrical Equations
+// ====================
+// I(b,c) - body to channel cap
+Qbc = V(b,c)*Cbc;
+I(b,c)<+ddt(Qbc);
+
+// I(g,b) - gate to body variable cap
+Qgb = V(g,b)*Cgb*(t_gap + t_sp/K_sp)/(Pos(mbr,z) + t_sp/K_sp);
+I(g,b)<+ddt(Qgb);
+
+// I(g,c) - gate to channel variable cap
+Qgc = V(g,c)*Cgc*(t_gap - t_chan)/(Pos(mbr,z) - t_chan);
+I(g,c)<+ddt(Qgc);
+
+// I(d0,g), I(s0,g) - drain/source to gate cap
+Qdg0 = V(d0,g)*Cgds;
+Qsg0 = V(s0,g)*Cgds;
+I(d0,g)<+ddt(Qdg0);
+I(s0,g)<+ddt(Qsg0);
+
+// I(b,d0), I(b,s0) - body to drain/source variable cap
+Qbd0 = V(b,d0)*Cbds*(t_gap + t_sp/K_sp)/(Pos(mbr,z) + t_sp/K_sp);
+Qbs0 = V(b,s0)*Cbds*(t_gap + t_sp/K_sp)/(Pos(mbr,z) + t_sp/K_sp);
+I(b,d0)<+ddt(Qbd0);
+I(b,s0)<+ddt(Qbs0);
+
+// I(d0,c), I(s0,c) - channel to drain/source variable contact resistance
+I(d0,c)<+V(d0,c)/
+    (Rcont + Rair * smoothstep(Pos(mbr,z) - t_cont, Rturnonsharp));
+I(s0,c)<+V(s0,c)/
+    (Rcont + Rair * smoothstep(Pos(mbr,z) - t_cont, Rturnonsharp));
+
+// ===========================================
+// F(mbr,z) - Normalized Mechanical Equations
+// ===========================================
+// Set mbr to mechanical ground
+Pos(mbr) <+ t_gap;
+
+// Force Balance Equation
+Ftot = meff * ddt(ddt(Pos(z)));
+Fdamp = meff * w0/Qf * ddt(Pos(z));
+Fk = meff * w0*w0 * Pos(z);
+Fel = Qgb * V(g,b) / (2 * (Pos(mbr,z) + t_sp/K_sp));
+Fcont = cturnonval*limexp(-cturnonsharp*(Pos(mbr,z) - t_cont));
+F(mbr,z) <+ Ftot + Fdamp + Fk - Fel + Fcont;
+
+// DEBUG
+$debug("\nBEGIN");
+$debug("Vgate = %e", V(g));
+$debug("Pos(z) = %e", Pos(z));
+$debug("Pos(mbr,z) = %e", Pos(mbr,z));
+$debug("Ftot = %e", Ftot);
+$debug("Fdamp = %e", Fdamp);
+$debug("Fk = %e", Fk);
+$debug("Fel = %e", Fel);
+$debug("Fcont = %e", Fcont);
+$debug("END");
+
+end
+endmodule

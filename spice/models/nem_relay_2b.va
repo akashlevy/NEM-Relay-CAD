@@ -7,13 +7,17 @@
 `include "constants.vams"
 `include "disciplines.vams"
 
-module nem_relay(d, g, s, b, z);
-    inout d;
-    electrical d;
+module nem_relay(d0, s0, d1, s1, g, b, z);
+    inout d0;
+    electrical d0;
+    inout s0;
+    electrical s0;
+    inout d1;
+    electrical d1;
+    inout s1;
+    electrical s1;
     inout g;
     electrical g;
-    inout s;
-    electrical s;
     inout b;
     electrical b;
     inout z;
@@ -28,8 +32,6 @@ module nem_relay(d, g, s, b, z);
 // - z - position of the relay body (bottom of dielectric spacer)
 electrical c;
 kinematic mbr, z;
-
-
 
 // ==================================================
 // Include Technology Parameters and Helper Functions
@@ -52,7 +54,8 @@ parameter real cturnonval = 1e-10;
 // ==============================
 // Internal variable declarations
 // ==============================
-real Qbc, Qdg, Qsg, Qbd, Qbs, Qgb, Qgc;
+real Qbc, Qgb, Qgc;
+real Qdg0, Qsg0, Qbd0, Qbs0, Qdg1, Qsg1, Qbd1, Qbs1;
 real Ftot, Fdamp, Fk, Fel, Fcont;
 
 analog begin
@@ -64,18 +67,6 @@ analog begin
 Qbc = V(b,c)*Cbc;
 I(b,c)<+ddt(Qbc);
 
-// I(d,g), I(s,g) - drain/source to gate cap
-Qdg = V(d,g)*Cgds;
-Qsg = V(s,g)*Cgds;
-I(d,g)<+ddt(Qdg);
-I(s,g)<+ddt(Qsg);
-
-// I(b,d), I(b,s) - body to drain/source variable cap
-Qbd = V(b,d)*Cbds*(t_gap + t_sp/K_sp)/(Pos(mbr,z) + t_sp/K_sp);
-Qbs = V(b,s)*Cbds*(t_gap + t_sp/K_sp)/(Pos(mbr,z) + t_sp/K_sp);
-I(b,d)<+ddt(Qbd);
-I(b,s)<+ddt(Qbs);
-
 // I(g,b) - gate to body variable cap
 Qgb = V(g,b)*Cgb*(t_gap + t_sp/K_sp)/(Pos(mbr,z) + t_sp/K_sp);
 I(g,b)<+ddt(Qgb);
@@ -84,10 +75,40 @@ I(g,b)<+ddt(Qgb);
 Qgc = V(g,c)*Cgc*(t_gap - t_chan)/(Pos(mbr,z) - t_chan);
 I(g,c)<+ddt(Qgc);
 
-// I(d,c), I(s,c) - channel to drain/source variable contact resistance
-I(d,c)<+V(d,c)/
+// I(d0,g), I(s0,g) - drain/source to gate cap
+Qdg0 = V(d0,g)*Cgds;
+Qsg0 = V(s0,g)*Cgds;
+I(d0,g)<+ddt(Qdg0);
+I(s0,g)<+ddt(Qsg0);
+
+// I(b,d0), I(b,s0) - body to drain/source variable cap
+Qbd0 = V(b,d0)*Cbds*(t_gap + t_sp/K_sp)/(Pos(mbr,z) + t_sp/K_sp);
+Qbs0 = V(b,s0)*Cbds*(t_gap + t_sp/K_sp)/(Pos(mbr,z) + t_sp/K_sp);
+I(b,d0)<+ddt(Qbd0);
+I(b,s0)<+ddt(Qbs0);
+
+// I(d0,c), I(s0,c) - channel to drain/source variable contact resistance
+I(d0,c)<+V(d0,c)/
     (Rcont + Rair * smoothstep(Pos(mbr,z) - t_cont, Rturnonsharp));
-I(s,c)<+V(s,c)/
+I(s0,c)<+V(s0,c)/
+    (Rcont + Rair * smoothstep(Pos(mbr,z) - t_cont, Rturnonsharp));
+
+// I(d1,g), I(s1,g) - drain/source to gate cap
+Qdg1 = V(d1,g)*Cgds;
+Qsg1 = V(s1,g)*Cgds;
+I(d1,g)<+ddt(Qdg1);
+I(s1,g)<+ddt(Qsg1);
+
+// I(b,d1), I(b,s1) - body to drain/source variable cap
+Qbd1 = V(b,d1)*Cbds*(t_gap + t_sp/K_sp)/(Pos(mbr,z) + t_sp/K_sp);
+Qbs1 = V(b,s1)*Cbds*(t_gap + t_sp/K_sp)/(Pos(mbr,z) + t_sp/K_sp);
+I(b,d1)<+ddt(Qbd1);
+I(b,s1)<+ddt(Qbs1);
+
+// I(d1,c), I(s1,c) - channel to drain/source variable contact resistance
+I(d1,c)<+V(d1,c)/
+    (Rcont + Rair * smoothstep(Pos(mbr,z) - t_cont, Rturnonsharp));
+I(s1,c)<+V(s1,c)/
     (Rcont + Rair * smoothstep(Pos(mbr,z) - t_cont, Rturnonsharp));
 
 // ===========================================
@@ -105,16 +126,16 @@ Fcont = cturnonval*limexp(-cturnonsharp*(Pos(mbr,z) - t_cont));
 F(mbr,z) <+ Ftot + Fdamp + Fk - Fel + Fcont;
 
 // DEBUG
-$strobe("\nBEGIN");
-$strobe("Vgate = %e", V(g));
-$strobe("Pos(z) = %e", Pos(z));
-$strobe("Pos(mbr,z) = %e", Pos(mbr,z));
-$strobe("Ftot = %e", Ftot);
-$strobe("Fdamp = %e", Fdamp);
-$strobe("Fk = %e", Fk);
-$strobe("Fel = %e", Fel);
-$strobe("Fcont = %e", Fcont);
-$strobe("END");
+$debug("\nBEGIN");
+$debug("Vgate = %e", V(g));
+$debug("Pos(z) = %e", Pos(z));
+$debug("Pos(mbr,z) = %e", Pos(mbr,z));
+$debug("Ftot = %e", Ftot);
+$debug("Fdamp = %e", Fdamp);
+$debug("Fk = %e", Fk);
+$debug("Fel = %e", Fel);
+$debug("Fcont = %e", Fcont);
+$debug("END");
 
 end
 endmodule
