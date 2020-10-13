@@ -1,5 +1,5 @@
 .title <ohmux_test_2i_1b_ref.sp>
-.hdl ../models/nem_ohmux_2i_1b_ref.va
+.include ../models/nem_ohmux_2i_1b_ref.sp
 
 ** Create relay and start at z=0 **
 Xnem I0 I1 S0 S1 Z nem_ohmux_2i_1b
