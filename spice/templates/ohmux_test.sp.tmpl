@@ -1,0 +1,19 @@
+.title <ohmux_test_${M}i_${N}b_ref.sp>
+.include ../models/nem_ohmux_${M}i_${N}b_ref.sp
+
+** Tests one-hot multiplexer using analog inputs **
+
+** Create relay and start at z=0 **
+Xmux $pins nem_ohmux_${M}i_${N}b
+
+** Source voltage **
+$VI
+$VS
+$RZ
+
+** Options **
+.tran 0.0001us ${tmax}ns
+.option post=2
+.option runlvl=5 accurate
+
+.end

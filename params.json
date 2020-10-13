@@ -27,5 +27,9 @@
     "Rcont": 1e3,
     "Rair": 1e15,
 
-    "K_sp": 5.7
+    "K_sp": 5.7,
+
+    "Vbody": 0,
+    "Vop": 5,
+    "Vhold": 3.1
 }

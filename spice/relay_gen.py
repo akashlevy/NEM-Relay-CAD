@@ -4,7 +4,7 @@ from string import Template
 
 # Parse arguments
 parser = argparse.ArgumentParser(description="Generate N-bit NEM relay Verilog-A model")
-parser.add_argument('N', help="Number of bits to route with one relay", type=int, default=1)
+parser.add_argument('N', help="Number of bits to route with one relay", type=int)
 args = parser.parse_args()
 
 # Initialize substitution dictionary
