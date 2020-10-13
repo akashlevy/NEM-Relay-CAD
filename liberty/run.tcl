@@ -5,9 +5,6 @@ set cells {nem_ohmux_2i_1b nem_ohmux_10i_8b}
 set charpoint nems40tt
 create $charpoint 
 set_log_file $charpoint/sis.log
-
-# Configure and set location
-exec cp configure.tcl ${charpoint}/config/configure.tcl
 set_location $charpoint
 
 # FR with just netlists
