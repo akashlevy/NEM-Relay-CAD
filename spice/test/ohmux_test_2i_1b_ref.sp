@@ -12,7 +12,7 @@ VS1 S1 gnd 0V PWL(0s 0V 1ns 0V 1000ns 0V 1001ns 5V 2000ns 5V)
 Rout Z gnd 1G
 
 ** Options **
-.tran 0.0001us 3000us
+.tran 0.0001us 3000ns
 .probe PAR('abs(I(I0))') PAR('abs(I(I1))')
 .option post=2
 .option runlvl=5 accurate
