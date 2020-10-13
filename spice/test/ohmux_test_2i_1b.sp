@@ -1,5 +1,5 @@
-.title <ohmux_test_2i_1b_ref.sp>
-.include ../models/nem_ohmux_2i_1b_ref.sp
+.title <ohmux_test_2i_1b.sp>
+.include ../models/nem_ohmux_2i_1b.sp
 
 ** Tests one-hot multiplexer using analog inputs **
 
