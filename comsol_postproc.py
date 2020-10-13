@@ -23,7 +23,7 @@ desc = json.load(open("helper/params_desc.json"), object_pairs_hook=OrderedDict)
 print(desc)
 
 # Generate tech_params.va
-with open('spice/tech_params.va', 'w') as f:
+with open('spice/models/tech_params.va', 'w') as f:
     for param, val in params.items() + caps.items() + props.items():
         if type(val) in [int, float, np.float64] and param in desc:
             f.write("parameter real %s = %s; // %s\n" % (param, val, desc[param]))
