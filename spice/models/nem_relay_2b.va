@@ -7,7 +7,7 @@
 `include "constants.vams"
 `include "disciplines.vams"
 
-module nem_relay(d0, s0, d1, s1, g, b, z);
+module nem_relay_2b(d0, s0, d1, s1, g, b, z);
     inout d0;
     electrical d0;
     inout s0;

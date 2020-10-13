@@ -2,7 +2,7 @@
 .hdl ../models/nem_relay_1b.va
 
 ** Create relay and start at z=0 **
-Xnem gnd Vsrc Vg gnd z nem_relay
+Xnem gnd Vsrc Vg gnd z nem_relay_1b
 .ic V(z)=0
 
 ** Source voltage **

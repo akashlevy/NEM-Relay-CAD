@@ -1,8 +1,8 @@
-.title <transient_sweep_${N}b.sp>
-.hdl ../models/nem_relay_${N}b.va
+.title <transient_sweep_4b.sp>
+.hdl ../models/nem_relay_4b.va
 
 ** Create relay and start at z=0 **
-Xnem ${dspins} Vg gnd z nem_relay_{N}b
+Xnem gnd Vsrc gnd Vsrc gnd Vsrc gnd Vsrc Vg gnd z nem_relay_{N}b
 .ic V(z)=0
 
 ** Source voltage **
