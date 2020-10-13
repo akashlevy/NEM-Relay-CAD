@@ -1,5 +1,5 @@
 .title <nem_ohmux_2i_1b.sp>
-.hdl nem_relay_1b.va
+.hdl ../models/nem_relay_1b.va
 
 ** Create relay and start at z=0 **
 ** Format is Z{I}_{B} where {I} is input number, {B} is bit index
