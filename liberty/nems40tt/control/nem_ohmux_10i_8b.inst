@@ -1,4 +1,4 @@
-set_netlist_file [get_location]../../spice/models/nem_ohmux_10i_8b.sp
+set_netlist_file [get_location]/../../spice/models/nem_ohmux_10i_8b.sp
 
 
 ## 
