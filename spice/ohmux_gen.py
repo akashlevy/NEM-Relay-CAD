@@ -27,7 +27,7 @@ for i in range(M):
     subs['relays'] += '    Xnem{i} '.format(i=i)
     for b in range(N):
         subs['relays'] += 'I{i}_{b} Z_{b} '.format(i=i, b=b)
-    subs['relays'] += 'S{i} Vbody z{i} nem_relay_{N}b\n'.format(i=i, N=N)
+    subs['relays'] += 'S{i} VB z{i} nem_relay_{N}b\n'.format(i=i, N=N)
 subs['relays'] = subs['relays'][4:-1]
 
 # Mux initial conditions
@@ -41,8 +41,8 @@ subs['VS'] = ''
 for i in range(M):
     subs['VS'] += 'VS{i} S{i} gnd 0V PWL(0s 0V'.format(i=i)
     for j in range(M):
-        V = 'VDD' if i==j else '0V'
-        subs['VS'] += ' {t0}ns {V} {tf}ns {V}'.format(t0=j*1000+1, tf=(j+1)*1000, V=V)
+        V = subs['VDD'] if i==j else 0
+        subs['VS'] += ' {t0}ns {V}V {tf}ns {V}V'.format(t0=j*1000+1, tf=(j+1)*1000, V=V)
     subs['VS'] += ')\n'
 subs['VS'] = subs['VS'][:-1]
 
