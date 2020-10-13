@@ -3,27 +3,25 @@ import argparse, json
 from string import Template
 
 # Parse arguments
-parser = argparse.ArgumentParser(description="Generate N-bit-wide M-signal one-hot multiplexer SPICE model")
+parser = argparse.ArgumentParser(description="Generate N-bit-wide M-option one-hot multiplexer SPICE model")
 parser.add_argument('N', help="Bit width i.e. number of bits to route with one relay", type=int)
 parser.add_argument('M', help="Number of inputs to multiplexer", type=int)
 args = parser.parse_args()
 N, M = args.N, args.M
 
-# Load params
-params = json.load(open("../params.json"))
-
-# Initialize substitution dictionary
-subs = {}
+# Initialize substitution dictionary from params
+subs = json.load(open("../params.json"))
 
 # Copy from params to subs
 subs['N'] = N
 subs['M'] = M
-subs['Vbody'] = params['Vbody']
 
+# Mux pins
 subs['pins'] = ' '.join(['I{i}_{b}'.format(i=i, b=b) for i in range(M) for b in range(N)]) + ' '
 subs['pins'] += ' '.join(['S{i}'.format(i=i) for i in range(M)]) + ' '
 subs['pins'] += ' '.join(['Z_{b}'.format(b=b) for b in range(N)])
 
+# Mux relay instantiation
 subs['relays'] = ''
 for i in range(M):
     subs['relays'] += '    Xnem{i} '.format(i=i)
@@ -32,16 +30,19 @@ for i in range(M):
     subs['relays'] += 'S{i} Vbody z{i} nem_relay_{N}b\n'.format(i=i, N=N)
 subs['relays'] = subs['relays'][4:-1]
 
+# Mux initial conditions
 subs['ics'] = '\n'.join(['    .ic V(z{i})=0'.format(i=i) for i in range(M)])[4:]
 
+# Input voltages
 subs['VI'] = '\n'.join(['VI{i}_{b} I{i}_{b} gnd {V}V'.format(i=i, b=b, V=(i*N+b+1.)/(N*M)) for i in range(M) for b in range(N)])
 
+# Select voltages
 subs['VS'] = ''
 for i in range(M):
     subs['VS'] += 'VS{i} S{i} gnd 0V PWL(0s 0V'.format(i=i)
     for j in range(M):
-        V = params['Vop'] if i==j else 0
-        subs['VS'] += ' {t0}ns {V}V {tf}ns {V}V'.format(t0=j*1000+1, tf=(j+1)*1000, V=V)
+        V = 'VDD' if i==j else '0V'
+        subs['VS'] += ' {t0}ns {V} {tf}ns {V}'.format(t0=j*1000+1, tf=(j+1)*1000, V=V)
     subs['VS'] += ')\n'
 subs['VS'] = subs['VS'][:-1]
 

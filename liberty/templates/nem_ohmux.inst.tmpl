@@ -1,0 +1,24 @@
+set_netlist_file [get_location]../../spice/models/nem_ohmux_${M}i_${N}b.sp
+
+
+## 
+## Pin definitions.
+##
+$pindefs
+
+
+## 
+## Cell function definitions.
+## 
+$fndefs
+
+
+## 
+## User-specified characterization and modeling configuration options.
+## 
+create_parameter cut_netlist
+set_config_opt -opcond __default__ -- cut_netlist nem_ohmux_${M}i_${N}b.sp
+set_liberty_attribute -cell nem_ohmux_${M}i_${N}b area $area
+
+create_parameter state_partitions
+set_config_opt -- state_partitions $spart

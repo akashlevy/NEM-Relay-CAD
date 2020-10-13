@@ -9,10 +9,10 @@ Xnem gnd Vsrc gnd Vsrc gnd Vsrc gnd Vsrc Vg gnd z nem_relay_4b
 Vsrc Vsrc gnd 1V
 
 ** Sweep gate voltage **
-Vg Vg gnd 0V PWL(0s 0V 1000us 0V 2000us 5V 3000us 0V)
+Vg Vg gnd 0V PWL(0s 0V 10000us 0V 20000us 5V 30000us 0V)
 
 ** Options **
-.tran 0.0001us 3000us
+.tran 0.0001us 30000us
 .probe V(Vg) V(Vsrc) PAR('abs(I(Vsrc))') z
 .option post=2
 .option runlvl=5 accurate

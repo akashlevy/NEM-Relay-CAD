@@ -18,6 +18,8 @@ Running `cd layouts; python relay.py` will generate layouts in DXF, GDSII, and C
 
 You can also get predictions of the pull-in/pull-out voltages and parasitic capacitances based on the parallel-plate model by running `python handcalcs.py`. This will use the params specified in `params.json` to calculate and print these numbers.
 
+SIDE NOTE: when we wanted to use the layout with Virtuoso, we combined layers in KLayout by doing layer operations: layer 6 = layer 6 - layer 7 + layer 8.
+
 ## Step 3: Finite element modeling (FEM)
 
 ### COMSOL model
@@ -62,10 +64,16 @@ There is an unfinished ANSYS 2020 Workbench model. It builds the NEM relay geome
 This model is adapted from "Micro-Relay Technology For Energy-Efficient Integrated Circuit" (Hei Kam, Fred Chen) and is designed for use with SPECTRE or HSPICE. Has been tested with HSPICE 2017.03. May also work with other SPICE simulators.
 
 TODO
+Talk about how to create the particular types of muxes we want to characterize
+How would you modify to characterize the things you want? Could this be a config setting?
 
 ### Liberty model
 
-TODO
+SiliconSmart
+TODO: update properly
+- Use `python ohmux_inst_gen.py` to generate the run.tcl, netlists, and templates
+- Use `siliconsmart run.tcl` to run the characterization flow
+- Use `lc_shell -f compile.tcl` to compile the libs to dbs
 
 ### Mathematica model (validation only)
 

@@ -4,12 +4,15 @@
 ** Tests one-hot multiplexer using analog inputs **
 
 ** Create relay and start at z=0 **
-Xmux $pins nem_ohmux_${M}i_${N}b
+Xmux $pins VDD VB VSS nem_ohmux_${M}i_${N}b
 
 ** Source voltage **
 $VI
 $VS
 $RZ
+VDD VDD gnd ${VDD}V
+VB VB gnd ${VB}V
+VSS VS gnd 0V
 
 ** Options **
 .tran 0.0001us ${tmax}ns
