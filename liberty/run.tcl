@@ -1,5 +1,5 @@
 # Set cell lists for import
-set cells {{nem_ohmux_2i_1b}}
+set cells [list nem_ohmux_2i_1b]
 
 # Set and create characterization point
 set charpoint nems40tt
