@@ -3,7 +3,7 @@
 
 ** Create relay and start at z=0 **
 Xnem I0 I1 S0 S1 Z nem_ohmux_2i_1b
-.ic Z=0
+.ic V(Z)=0
 
 ** Source voltage **
 VI0 I0 gnd 1V
