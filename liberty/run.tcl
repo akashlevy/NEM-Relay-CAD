@@ -8,7 +8,7 @@ set_log_file $charpoint/sis.log
 set_location $charpoint
 
 # FR with just netlists
-import -fast -extension .sp -netlist_dir ../../spice/templates/models/ $cells
+import -fast -extension .sp -netlist_dir /../../spice/templates/models/ $cells
 
 # Configure and characterize
 configure -fast -timing -power -ccs $cells
