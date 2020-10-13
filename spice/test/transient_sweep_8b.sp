@@ -2,7 +2,7 @@
 .hdl ../models/nem_relay_8b.va
 
 ** Create relay and start at z=0 **
-Xnem gnd Vsrc gnd Vsrc gnd Vsrc gnd Vsrc gnd Vsrc gnd Vsrc gnd Vsrc gnd Vsrc Vg gnd z nem_relay_{N}b
+Xnem gnd Vsrc gnd Vsrc gnd Vsrc gnd Vsrc gnd Vsrc gnd Vsrc gnd Vsrc gnd Vsrc Vg gnd z nem_relay_8b
 .ic V(z)=0
 
 ** Source voltage **
