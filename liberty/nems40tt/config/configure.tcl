@@ -88,8 +88,8 @@ define_parameters default {
     }
 
     # Simulation resolution
-    set time_res_high 1e-13
-    set time_res_low 100e-13
+    set time_res_high 1e-14
+    set time_res_low 100e-14
     #set gate_leakage_time_scaling_factor 100
     
     # Controls which supplies are measured for power consumption
@@ -132,6 +132,7 @@ pintype default {
     set explicit_points_slew { 4.1e-12 9.9e-12 2.17e-11 4.53e-11 9.24e-11 1.866e-10 3.751e-10 }
     set driver_mode emulated
     set max_tout 1e-6
+	set autorange_timeshift 0
 }
 
 
