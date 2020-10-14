@@ -129,7 +129,7 @@ pintype default {
     set prop_delay_out_level_rise 0.5
     set prop_delay_out_level_fall 0.5
     set explicit_points_load { 3.1e-16 5.7e-16 1.08e-15 2.1e-15 4.14e-15 8.22e-15 1.639e-14 }
-    set explicit_points_slew { 4.1e-12 9.9e-12 2.17e-11 4.53e-11 9.24e-11 1.866e-10 3.751e-10 }
+    set explicit_points_slew { 4.1e-12 9.9e-12 2.17e-11 4.53e-11 9.24e-11 1.866e-10 3.751e-10 1e-7 }
     set driver_mode emulated
 }
 
