@@ -6,8 +6,8 @@ set_netlist_file [get_location]/netlists/nem_ohmux_2i_1b.sp
 ##
 add_pin I0_0 default -input
 add_pin I1_0 default -input
-add_pin S0 default -input
-add_pin S1 default -input
+add_pin S0 selbit -input
+add_pin S1 selbit -input
 add_pin Z_0 default -output
 
 

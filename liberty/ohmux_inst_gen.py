@@ -11,13 +11,14 @@ N, M = args.N, args.M
 
 # Pin definitions
 pindefs = ["add_pin I{i}_{b} default -input".format(i=i, b=b) for i in range(M) for b in range(N)]
-pindefs += ["add_pin S{i} default -input".format(i=i) for i in range(M)]
+pindefs += ["add_pin S{i} selbit -input".format(i=i) for i in range(M)]
 pindefs += ["add_pin Z_{b} default -output".format(b=b) for b in range(N)]
 pindefs = "\n".join(pindefs)
 
 # Function definition
 fndefs = []
 for b in range(N):
+    ipins = " ".join(["I{i}_{b}".format(i=i, b=b) for i in range(M)])
     spins = " ".join(["S{i}".format(i=i) for i in range(M)])
     fndefs.append("add_one_hot Z_%d { %s } { %s }" % (b, spins, ipins))
 fndefs = '\n'.join(fndefs)

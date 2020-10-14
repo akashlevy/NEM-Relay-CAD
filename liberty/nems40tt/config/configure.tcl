@@ -1,5 +1,6 @@
 # See SiliconSmart User Guide Appendix B for a complete list of parameters and definitions
 
+
 #################################
 # OPERATING CONDITIONS DEFINITION
 #################################
@@ -12,6 +13,7 @@ set_opc_process nems40tt []
 # set_opc_process nems40tt [subst {
 #     { .lib '/tsmc40r/pdk/ams/5x2z/TN40CMSP015K3_1_3_2A/models/hspice/toplevel.l' TOP_TT }
 # }]
+
 
 #################################
 # GLOBAL CONFIGURATION PARAMETERS
@@ -130,6 +132,21 @@ pintype default {
     set explicit_points_slew { 4.1e-12 9.9e-12 2.17e-11 4.53e-11 9.24e-11 1.866e-10 3.751e-10 }
     set driver_mode emulated
 }
+pintype selbit {
+    set logic_high_name VDD
+    set logic_low_name VSS
+    set logic_high_threshold 0.7
+    set logic_low_threshold 0.3
+    set prop_delay_inp_level_rise 0.5
+    set prop_delay_inp_level_fall 0.5
+    set prop_delay_out_level_rise 0.5
+    set prop_delay_out_level_fall 0.5
+    set explicit_points_load { 3.1e-16 5.7e-16 1.08e-15 2.1e-15 4.14e-15 8.22e-15 1.639e-14 }
+    set explicit_points_slew { 4.1e-12 9.9e-12 2.17e-11 4.53e-11 9.24e-11 1.866e-10 3.751e-10 }
+    set driver_mode emulated
+    set max_tout 1e-6
+}
+
 
 #####################################
 # LIBERTY MODEL GENERATION PARAMETERS
