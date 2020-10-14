@@ -8,7 +8,7 @@ set_log_file $charpoint/sis.log
 set_location $charpoint
 
 # Copy stuff over
-exec ln -s $charpoint/netlists ../../spice/models
+exec ln -s $charpoint/netlists $charpoint/../../spice/models
 
 # Configure and characterize
 configure -fast -timing -power -ccs $cells

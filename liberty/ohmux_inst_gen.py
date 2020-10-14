@@ -19,7 +19,6 @@ pindefs = "\n".join(pindefs)
 fndefs = []
 for b in range(N):
     spins = " ".join(["S{i}".format(i=i) for i in range(M)])
-    ipins = " ".join(["I{i}_{b}".format(i=i, b=b) for i in range(M)])
     fndefs.append("add_one_hot Z_%d { %s } { %s }" % (b, spins, ipins))
 fndefs = '\n'.join(fndefs)
 
