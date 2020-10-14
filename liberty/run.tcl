@@ -9,7 +9,7 @@ set_location $charpoint
 
 # Symlink
 exec rmdir $charpoint/netlists
-exec ln -s $charpoint/../../spice/models $charpoint/netlists
+exec ln -s ../../spice/models $charpoint/netlists
 
 # Configure and characterize
 configure -fast -timing -power -ccs $cells
