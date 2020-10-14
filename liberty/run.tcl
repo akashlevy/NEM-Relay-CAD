@@ -8,7 +8,7 @@ set_log_file $charpoint/sis.log
 set_location $charpoint
 
 # Symlink
-exec rmdir $charpoint/netlists
+exec rm -r $charpoint/netlists
 exec ln -s ../../spice/models $charpoint/netlists
 
 # Configure and characterize

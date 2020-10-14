@@ -90,7 +90,7 @@ define_parameters default {
     # Simulation resolution
     set time_res_high 1e-14
     set time_res_low 100e-14
-    #set gate_leakage_time_scaling_factor 100
+    set gate_leakage_time_scaling_factor 100
     
     # Controls which supplies are measured for power consumption
     #set power_meas_supplies { VDD VDDH VDDL }
@@ -105,8 +105,8 @@ define_parameters default {
     set slew_derate_upper_threshold 0.9
     set slew_derate_lower_threshold 0.1
 
-	set archive_condition_on_success yes
-	set archive_condition_on_failure yes
+    set archive_condition_on_success yes
+    set archive_condition_on_failure yes
 
     # LOAD SHARE PARAMETERS
     #  job_scheduler: 'lsf' (Platform), 'grid' (SunGrid), or 'standalone' (local machine)
@@ -131,8 +131,6 @@ pintype default {
     set explicit_points_load { 3.1e-16 5.7e-16 1.08e-15 2.1e-15 4.14e-15 8.22e-15 1.639e-14 }
     set explicit_points_slew { 4.1e-12 9.9e-12 2.17e-11 4.53e-11 9.24e-11 1.866e-10 3.751e-10 }
     set driver_mode emulated
-    set max_tout 1e-6
-	set autorange_timeshift 0
 }
 
 
