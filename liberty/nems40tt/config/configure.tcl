@@ -86,8 +86,8 @@ define_parameters default {
     }
 
     # Simulation resolution
-    set time_res_high 1e-15
-    set time_res_low 100e-15
+    set time_res_high 1e-13
+    set time_res_low 100e-13
     #set gate_leakage_time_scaling_factor 100
     
     # Controls which supplies are measured for power consumption

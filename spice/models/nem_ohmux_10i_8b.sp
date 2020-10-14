@@ -15,14 +15,14 @@
     Xnem7 I7_0 Z_0 I7_1 Z_1 I7_2 Z_2 I7_3 Z_3 I7_4 Z_4 I7_5 Z_5 I7_6 Z_6 I7_7 Z_7 S7 VB z7 nem_relay_8b
     Xnem8 I8_0 Z_0 I8_1 Z_1 I8_2 Z_2 I8_3 Z_3 I8_4 Z_4 I8_5 Z_5 I8_6 Z_6 I8_7 Z_7 S8 VB z8 nem_relay_8b
     Xnem9 I9_0 Z_0 I9_1 Z_1 I9_2 Z_2 I9_3 Z_3 I9_4 Z_4 I9_5 Z_5 I9_6 Z_6 I9_7 Z_7 S9 VB z9 nem_relay_8b
-    .ic V(z0)=0
-    .ic V(z1)=0
-    .ic V(z2)=0
-    .ic V(z3)=0
-    .ic V(z4)=0
-    .ic V(z5)=0
-    .ic V(z6)=0
-    .ic V(z7)=0
-    .ic V(z8)=0
-    .ic V(z9)=0
+    *.ic V(z0)=0
+    *.ic V(z1)=0
+    *.ic V(z2)=0
+    *.ic V(z3)=0
+    *.ic V(z4)=0
+    *.ic V(z5)=0
+    *.ic V(z6)=0
+    *.ic V(z7)=0
+    *.ic V(z8)=0
+    *.ic V(z9)=0
 .ends

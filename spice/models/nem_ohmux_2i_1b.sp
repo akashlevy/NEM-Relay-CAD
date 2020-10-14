@@ -7,6 +7,6 @@
 .subckt nem_ohmux_2i_1b I0_0 I1_0 S0 S1 Z_0 VDD VB VSS
     Xnem0 I0_0 Z_0 S0 VB z0 nem_relay_1b
     Xnem1 I1_0 Z_0 S1 VB z1 nem_relay_1b
-    .ic V(z0)=0
-    .ic V(z1)=0
+    *.ic V(z0)=0
+    *.ic V(z1)=0
 .ends
