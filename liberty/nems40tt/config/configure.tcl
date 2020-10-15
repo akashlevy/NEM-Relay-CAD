@@ -134,6 +134,7 @@ pintype default {
     set explicit_points_slew { 4.1e-12 9.9e-12 2.17e-11 4.53e-11 9.24e-11 1.866e-10 3.751e-10 }
     set total_slew_multiplier 25
     set driver_mode emulated
+    set initial_delay 1e-6
 }
 
 
@@ -150,7 +151,6 @@ define_parameters liberty_model {
     set default_cell_leakage_power 0.0
     set default_leakage_power_density  0.0
     set in_place_swap_mode match_footprint
-    set initial_delay 1e-6
 }
 
 
