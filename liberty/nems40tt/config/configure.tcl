@@ -88,8 +88,8 @@ define_parameters default {
     }
 
     # Simulation resolution
-    set time_res_high 1e-14
-    set time_res_low 100e-14
+    set time_res_high 1e-15
+    set time_res_low 100e-15
     #set gate_leakage_time_scaling_factor 100
     
     # Controls which supplies are measured for power consumption
@@ -99,7 +99,7 @@ define_parameters default {
     set power_meas_grounds { VSS }
 
     # power period
-    set power_period 3e-6
+    set power_period 5e-6
 
     # specifies which multi-rail format to be used in Liberty model; none, v1, or v2.
     set liberty_multi_rail_format v2
