@@ -3,3 +3,4 @@ Relay54Sol*.mph
 *.pyc
 .nfs*
 *.pvadir
+*.log
