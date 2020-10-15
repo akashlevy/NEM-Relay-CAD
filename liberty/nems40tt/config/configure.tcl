@@ -99,7 +99,7 @@ define_parameters default {
     # list of ground supplies used (required for Functional Recognition)
     set power_meas_grounds { VSS }
 
-    # power periodxw
+    # power period
     set power_period 3e-6
 
     # specifies which multi-rail format to be used in Liberty model; none, v1, or v2.
