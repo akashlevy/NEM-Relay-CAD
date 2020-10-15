@@ -1,6 +1,6 @@
 # Stanford Accelerate NEM Relay Models
 
-This repository contains almost everything a researcher would need to get started with NEM relays (or MEM relays): (1) a parametric layout generator with KLayout, (2) finite elment models (FEM) with COMSOL/ANSYS, (3) static/dynamic compact model generators with Mathematica/SPICE, (4) scripts for characterization with Synopsys SiliconSmart.
+This repository contains almost everything a researcher might need to get started with NEM relays (MEM relays): (1) a parametric layout generator with KLayout, (2) finite elment models (FEM) with COMSOL/ANSYS, (3) static/dynamic compact model generators with SPICE/Verilog-A (and validation in Mathematica), (4) scripts for characterization with Synopsys SiliconSmart to produce Liberty files for VLSI flows.
 
 A video tutorial of the COMSOL model is available: https://www.youtube.com/watch?v=YCjhU6pspo0
 
@@ -55,7 +55,7 @@ For SPICE modeling, make sure to run `python comsol_postproc.py`, which generate
 
 ### ANSYS model (unfinished, skip this for now)
 
-There is an unfinished ANSYS 2020 Workbench model. It builds the NEM relay geometry using SpaceClaim. More work would be needed for this model to accurately predict anything, but it may serve as a good starting point/reference for people trying to model a NEM relay in ANSYS (though I would recommend against it; COMSOL is simply better than ANSYS for modeling any physics problems with coupled interactions).
+There is an unfinished ANSYS 2020 Workbench model. It builds the NEM relay geometry using a SpaceClaim script. More work would be needed for this model to accurately predict anything, but it may serve as a good starting point/reference for people trying to model a NEM relay in ANSYS (although COMSOL is better than ANSYS at accurately modeling coupled interactions).
 
 ## Step 4: Compact modeling
 
@@ -69,7 +69,7 @@ How would you modify to characterize the things you want? Could this be a config
 
 ### Liberty model
 
-SiliconSmart
+Tested with SiliconSmart M-2017.03-2. Library Compiler (LC) also needs to be loaded to compile the Liberty (.lib) files to DB (.db) files.
 TODO: update properly
 - Use `python ohmux_inst_gen.py` to generate the run.tcl, netlists, and templates
 - Use `siliconsmart run.tcl` to run the characterization flow
