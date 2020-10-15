@@ -3,13 +3,16 @@ set cells [list nem_ohmux_2i_1b]
 
 # Set and create characterization point
 set charpoint nems40tt
+# exec rm -r $charpoint
 create $charpoint 
 set_log_file $charpoint/sis.log
 set_location $charpoint
 
-# Symlink
+# Copy and symlink as necessary
+exec cp $charpoint/../configure.tcl $charpoint/config
 exec rm -r $charpoint/netlists
 exec ln -s ../../spice/models $charpoint/netlists
+# exec cp -r $charpoint/../../spice/models/ $charpoint/netlists
 
 # Configure and characterize
 configure -fast -timing -power -ccs $cells
