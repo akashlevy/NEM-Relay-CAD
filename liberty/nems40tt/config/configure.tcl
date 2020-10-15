@@ -90,10 +90,9 @@ define_parameters default {
     # Simulation resolution
     set time_res_high 1e-14
     set time_res_low 100e-14
-    set gate_leakage_time_scaling_factor 100
+    #set gate_leakage_time_scaling_factor 100
     
     # Controls which supplies are measured for power consumption
-    #set power_meas_supplies { VDD VDDH VDDL }
     set power_meas_supplies { VDD VB }
     
     # list of ground supplies used (required for Functional Recognition)
@@ -151,6 +150,7 @@ define_parameters liberty_model {
     set default_cell_leakage_power 0.0
     set default_leakage_power_density  0.0
     set in_place_swap_mode match_footprint
+    set initial_delay 1e-6
 }
 
 
