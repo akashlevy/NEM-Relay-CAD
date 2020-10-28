@@ -77,7 +77,7 @@ for b in range(N):
     fndefs.append("add_function ZN_%d !Z_%d" % (b, b))
 fndefs = '\n'.join(fndefs)
 
-# Area
+# Area (TODO: MAKE THIS EQUAL TO INVERTER AREA)
 area = 0
 
 # State partitions
