@@ -51,6 +51,7 @@ subs['VS'] = subs['VS'][:-1]
 
 # Output resistance
 subs['RZ'] = '\n'.join(['RZ_{b} Z_{b} gnd 1G'.format(b=b) for b in range(N)])
+subs['RZN'] = '\n'.join(['RZN_{b} ZN_{b} gnd 1G'.format(b=b) for b in range(N)])
 
 # Time window
 subs['tmax'] = 1000*M
