@@ -10,9 +10,6 @@ add_opc_supplies nems40tt VDD 1.1 VB -2.6
 add_opc_grounds nems40tt VSS 0.0
 set_opc_temperature nems40tt 25
 set_opc_process nems40tt []
-# set_opc_process nems40tt [subst {
-#     { .lib '/tsmc40r/pdk/ams/5x2z/TN40CMSP015K3_1_3_2A/models/hspice/toplevel.l' TOP_TT }
-# }]
 
 
 #################################
