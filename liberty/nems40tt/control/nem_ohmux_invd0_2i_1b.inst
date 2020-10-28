@@ -8,7 +8,7 @@ add_pin I0_0 default -input
 add_pin I1_0 default -input
 add_pin S0 default -input
 add_pin S1 default -input
-add_pin Z_0 default -output
+add_pin ZN_0 default -output
 
 
 ## 

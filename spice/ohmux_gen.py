@@ -65,7 +65,7 @@ subs['invs'] = subs['invs'][4:-1]
 # Pin definitions
 pindefs = ["add_pin I{i}_{b} default -input".format(i=i, b=b) for i in range(M) for b in range(N)]
 pindefs += ["add_pin S{i} default -input".format(i=i) for i in range(M)]
-pindefs += ["add_pin Z_{b} default -output".format(b=b) for b in range(N)]
+pindefs += ["add_pin ZN_{b} default -output".format(b=b) for b in range(N)]
 pindefs = "\n".join(pindefs)
 
 # Function definition
