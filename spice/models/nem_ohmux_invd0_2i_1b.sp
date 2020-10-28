@@ -1,6 +1,6 @@
 .title <nem_ohmux_invd0_2i_1b.sp>
 .include tsmc40inc.sp
-.hdl nem_relay_1b.va
+.include nem_ohmux_2i_1b.sp
 .global VDD VB VSS
 
 ** Create relay and start at z=0 **
