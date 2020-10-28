@@ -1,4 +1,4 @@
-set_netlist_file [get_location]/netlists/nem_ohmux_2i_1b.sp
+set_netlist_file [get_location]/netlists/nem_ohmux_invd0_2i_1b.sp
 
 
 ## 
@@ -22,8 +22,8 @@ add_function ZN_0 !Z_0
 ## User-specified characterization and modeling configuration options.
 ## 
 create_parameter cut_netlist
-set_config_opt -opcond __default__ -- cut_netlist nem_ohmux_2i_1b.sp
-set_liberty_attribute -cell nem_ohmux_2i_1b area 0
+set_config_opt -opcond __default__ -- cut_netlist nem_ohmux_invd0_2i_1b.sp
+set_liberty_attribute -cell nem_ohmux_invd0_2i_1b area 0
 
 create_parameter state_partitions
 set_config_opt -- state_partitions one

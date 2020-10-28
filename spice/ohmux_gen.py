@@ -105,6 +105,6 @@ open("test/ohmux_test_invd{D}_{M}i_{N}b.sp".format(D=D, M=M, N=N), 'w').write(ou
 
 # Template substitution for SiliconSmart instance
 template = Template(open("../liberty/templates/nem_ohmux.inst.tmpl").read())
-output = template.substitute(N=N, M=M, pindefs=pindefs, fndefs=fndefs, area=area, spart=spart)
+output = template.substitute(D=D, N=N, M=M, pindefs=pindefs, fndefs=fndefs, area=area, spart=spart)
 outfname = "../liberty/nems40tt/control/nem_ohmux_invd{D}_{M}i_{N}b.inst".format(D=D, M=M, N=N)
 open(outfname, "w").write(output)
