@@ -7,8 +7,8 @@
 Xmux I0_0 I1_0 S0 S1 ZN_0 VDD VB VSS nem_ohmux_invd0_2i_1b
 
 ** Source voltage **
-VI0_0 I0_0 gnd 0.5V
-VI1_0 I1_0 gnd 1.0V
+VI0_0 I0_0 gnd 0V
+VI1_0 I1_0 gnd 1.1V
 VS0 S0 gnd 0V PWL(0s 0V 100ns 1.1V 1000ns 1.1V 1001ns 0V 2000ns 0V)
 VS1 S1 gnd 0V PWL(0s 0V 100ns 0V 1000ns 0V 1001ns 1.1V 2000ns 1.1V)
 RZN_0 ZN_0 gnd 1G
