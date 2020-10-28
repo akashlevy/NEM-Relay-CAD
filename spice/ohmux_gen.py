@@ -45,7 +45,7 @@ for i in range(M):
     subs['VS'] += 'VS{i} S{i} gnd 0V PWL(0s 0V'.format(i=i)
     for j in range(M):
         V = subs['VDD'] if i==j else 0
-        subs['VS'] += ' {t0}ns {V}V {tf}ns {V}V'.format(t0=j*1000+1, tf=(j+1)*1000, V=V)
+        subs['VS'] += ' {t0}ns {V}V {tf}ns {V}V'.format(t0=j*5000+1, tf=(j+1)*5000, V=V)
     subs['VS'] += ')\n'
 subs['VS'] = subs['VS'][:-1]
 
@@ -54,7 +54,7 @@ subs['RZ'] = '\n'.join(['RZ_{b} Z_{b} gnd 1G'.format(b=b) for b in range(N)])
 subs['RZN'] = '\n'.join(['RZN_{b} ZN_{b} gnd 1G'.format(b=b) for b in range(N)])
 
 # Time window
-subs['tmax'] = 1000*M
+subs['tmax'] = 5000*M
 
 # Inverters for ohmux inv
 subs['invs'] = ''
