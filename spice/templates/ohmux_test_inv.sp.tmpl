@@ -1,0 +1,22 @@
+.title <ohmux_test_invd${D}_${M}i_${N}b.sp>
+.include ../models/nem_ohmux_invd${D}_${M}i_${N}b.sp
+
+** Tests one-hot multiplexer with inverter using analog inputs **
+
+** Create relay and start at z=0 **
+Xmux $invpins VDD VB VSS nem_ohmux_invd${D}_${M}i_${N}b
+
+** Source voltage **
+$VI
+$VS
+$RZ
+VDD VDD gnd ${VDD}V
+VB VB gnd ${VB}V
+VSS VS gnd 0V
+
+** Options **
+.tran 0.0001us ${tmax}ns
+.option post=2
+.option runlvl=5 accurate
+
+.end

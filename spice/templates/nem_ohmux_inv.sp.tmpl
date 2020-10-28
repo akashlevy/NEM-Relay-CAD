@@ -1,0 +1,12 @@
+.title <nem_ohmux_invd${D}_${M}i_${N}b.sp>
+.include tsmc40inc.sp
+.hdl nem_relay_${N}b.va
+.global VDD VB VSS
+
+** Create relay and start at z=0 **
+** Format is I{i}_{b} where {i} is input number, {b} is bit index **
+.subckt nem_ohmux_invd${D}_${M}i_${N}b $invpins VDD VB VSS
+    Xmux $pins VDD VB VSS nem_ohmux_${M}i_${N}b
+    $invs
+.ends
+    

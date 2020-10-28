@@ -15,6 +15,7 @@ add_pin Z_0 default -output
 ## Cell function definitions.
 ## 
 add_one_hot Z_0 { S0 S1 } { I0_0 I1_0 }
+add_function ZN_0 !Z_0
 
 
 ## 
