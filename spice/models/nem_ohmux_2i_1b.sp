@@ -9,5 +9,5 @@
     Xnem1 I1_0 Z_0 S1 VB z1 nem_relay_1b
     *.ic V(z0)=0
     *.ic V(z1)=0
-    .ic V(Z_0)=0
+    *.ic V(Z_0)=0
 .ends
