@@ -34,7 +34,7 @@ for i in range(M):
 subs['relays'] = subs['relays'][4:-1]
 
 # Mux initial conditions
-subs['ics'] = '\n'.join(['    *.ic V(z{i})=0'.format(i=i) for i in range(M)] + ['    .ic V(Z_{b})=0'.format(b=b) for b in range(N)])[4:]
+subs['ics'] = '\n'.join(['    *.ic V(z{i})=0'.format(i=i) for i in range(M)] + ['    *.ic V(Z_{b})=0'.format(b=b) for b in range(N)])[4:]
 
 # Input voltages
 subs['VI'] = '\n'.join(['VI{i}_{b} I{i}_{b} gnd {V}V'.format(i=i, b=b, V=(i*N+b+1.)/(N*M)) for i in range(M) for b in range(N)])
