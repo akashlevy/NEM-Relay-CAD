@@ -61,19 +61,19 @@ There is an unfinished ANSYS 2020 Workbench model. It builds the NEM relay geome
 
 ### SPICE/Verilog-A model
 
-This model is adapted from "Micro-Relay Technology For Energy-Efficient Integrated Circuit" (Hei Kam, Fred Chen) and is designed for use with SPECTRE or HSPICE. Has been tested with HSPICE 2017.03. May also work with other SPICE simulators.
+The Verilog-A model is adapted from "Micro-Relay Technology For Energy-Efficient Integrated Circuit" (Hei Kam, Fred Chen) and is designed for use with SPECTRE or HSPICE. It has only been tested with HSPICE 2017.03, but it may also work with other SPICE simulators if simulation settings are adapted correctly.
 
-TODO
-Talk about how to create the particular types of muxes we want to characterize
-How would you modify to characterize the things you want? Could this be a config setting?
+There are three settings specific to the Verilog-A model in `params.json`. There is the Q-factor damping `Qf`, contact resistance `Rcont`, and air resistance `Rair`. These should be adjusted before simulation. All parameters are taken from the COMSOL model export: `comsol_postproc.py` must be run to generate `models/tech_params.va` that is used to define the simulation parameters.
+
+The first thing to do is generate your Verilog-A model based on the number of bits you want to route with a single relay. You can do this by going into the `spice/` directory and running `python relay_gen.py {N}` where `N` is the number of bits to route. This will generate the Verilog-A file in the `models/` subdirectory called `nem_relay_{N}b.va` and quasistatic/transient SPICE testbenches in `test/` subdirectory. Running these simulations will verify the functionality of the relays by toggling them to see the quasistatic (slow sweep) and transient (fast sweep) response curves.
+
+Next, you can generate one-hot multiplexers from the NEM relays and test these as well. The first step is to run `python ohmux_gen.py {N} {M}`, where `N` is the number of bits to route, and `M` is the number of inputs to the multiplexer. This will generate several files: a SPICE model for the multiplexer without buffering (`models/nem_ohmux_{M}i_{N}b.sp`), a SPICE model for the multiplexer with an inverter to buffer the signal (`models/nem_ohmux_invd{D}_{M}i_{N}b.sp`), testbenches for both of these (`test/ohmux_test_{M}i_{N}b.sp`, `test/ohmux_test_invd{D}_{M}i_{N}b.sp`), and finally an instance file (`liberty/control/nem_ohmux_invd{D}_{M}i_{N}b.inst`) that can be used to characterize the SPICE model with SiliconSmart. By default, the inverter is taken from TSMC40 library through `tsmc40inc.sp`; using a different inverter is a matter of swapping out the implementation. The inverter drive strength can be specified through a command-line option e.g. `python ohmux_gen.py 1 2 -D1` will create a D1 inverter, and the area of a signle inverter can optionally be specified with `--area` option. The inverter area will be automatically multiplied by the number of bits to get the total area.
+
+TODO: non-one-hot multiplexers
 
 ### Liberty model
 
-Tested with SiliconSmart M-2017.03-2. Library Compiler (LC) also needs to be loaded to compile the Liberty (.lib) files to DB (.db) files.
-TODO: update properly
-- Use `python ohmux_inst_gen.py` to generate the run.tcl, netlists, and templates
-- Use `siliconsmart run.tcl` to run the characterization flow
-- Use `lc_shell -f compile.tcl` to compile the libs to dbs
+The Liberty model generation has been tested with SiliconSmart M-2017.03-2. Library Compiler (LC) also needs to be loaded to compile the Liberty (.lib) files to DB (.db) files. In order to use SiliconSmart, first create the SPICE models in the previous step. Then simply run `siliconsmart run.tcl` to run the characterization flow. This will generate the library with all the .libs and .dbs necessary for a standard EDA flow.
 
 ### Mathematica model (validation only)
 

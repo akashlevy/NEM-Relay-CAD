@@ -4,7 +4,6 @@
 #################################
 # OPERATING CONDITIONS DEFINITION
 #################################
-# TODO: get operating condition voltages from config!
 create_operating_condition nems40tt
 add_opc_supplies nems40tt VDD 1.1 VB -2.6
 add_opc_grounds nems40tt VSS 0.0
@@ -128,9 +127,8 @@ pintype default {
     set prop_delay_out_level_rise 0.5
     set prop_delay_out_level_fall 0.5
     set explicit_points_load { 3.1e-16 5.7e-16 1.08e-15 2.1e-15 4.14e-15 8.22e-15 1.639e-14 }
-    set explicit_points_slew { 4.1e-12 9.9e-12 2.17e-11 4.53e-11 9.24e-11 1.866e-10 3.751e-10 }
+    set explicit_points_slew { 2.05e-12 4.95e-12 1.085e-11 2.265e-11 4.62e-11 9.33e-11 1.8755e-10 }
     set total_slew_multiplier 25
-    set driver_mode emulated
     set initial_delay 1e-6
 }
 

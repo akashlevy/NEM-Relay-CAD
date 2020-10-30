@@ -1,7 +1,3 @@
-# Set cell lists for import
-# TODO: set list from file?
-set cells [list nem_ohmux_invd0_2i_1b]
-
 # Set and create characterization point
 set charpoint nems40tt
 # exec rm -r $charpoint
@@ -15,6 +11,9 @@ exec rm -r $charpoint/netlists
 exec ln -s ../../spice/models $charpoint/netlists
 exec rm -r $charpoint/control
 exec ln -s ../control $charpoint/control
+
+# Set cell lists for import
+set cells [lmap f [glob control/*.inst] {file rootname $f}]
 
 # Configure and characterize
 configure -fast -timing -power -ccs $cells
