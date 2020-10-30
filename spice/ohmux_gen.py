@@ -7,8 +7,9 @@ parser = argparse.ArgumentParser(description="Generate N-bit-wide M-option one-h
 parser.add_argument('N', help="Bit width i.e. number of bits to route with one relay", type=int)
 parser.add_argument('M', help="Number of inputs to multiplexer", type=int)
 parser.add_argument('-D', help="Drive strength of output inverter", type=int, default=0)
+parser.add_argument('-A', '--area', help="Area of each inverter (um^2) to determine lib area", type=float, default=0)
 args = parser.parse_args()
-N, M, D = args.N, args.M, args.D
+N, M, D, area = args.N, args.M, args.D, args.area * args.N
 
 # Initialize substitution dictionary from params
 subs = json.load(open("../params.json"))
@@ -78,9 +79,6 @@ for b in range(N):
     fndefs.append("add_function ZN_%d !Z_%d" % (b, b))
 fndefs = '\n'.join(fndefs)
 
-# Area (TODO: MAKE THIS EQUAL TO INVERTER AREA)
-area = 0
-
 # State partitions
 spart = "one"
 
@@ -107,5 +105,5 @@ open("test/ohmux_test_invd{D}_{M}i_{N}b.sp".format(D=D, M=M, N=N), 'w').write(ou
 # Template substitution for SiliconSmart instance
 template = Template(open("../liberty/templates/nem_ohmux.inst.tmpl").read())
 output = template.substitute(D=D, N=N, M=M, pindefs=pindefs, fndefs=fndefs, area=area, spart=spart)
-outfname = "../liberty/nems40tt/control/nem_ohmux_invd{D}_{M}i_{N}b.inst".format(D=D, M=M, N=N)
+outfname = "../liberty/control/nem_ohmux_invd{D}_{M}i_{N}b.inst".format(D=D, M=M, N=N)
 open(outfname, "w").write(output)
