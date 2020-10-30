@@ -1,12 +1,13 @@
 # Set and create characterization point
 set charpoint nems40tt
-# exec rm -rf $charpoint
+# exec rm -r $charpoint
 create $charpoint 
 set_log_file $charpoint/sis.log
 set_location $charpoint
 
 # Copy and symlink as necessary
-exec cp $charpoint/../configure.tcl $charpoint/config
+exec rm -rf $charpoint/config/configure.tcl
+exec ln -s ../../configure.tcl $charpoint/config/configure.tcl
 exec rm -rf $charpoint/netlists
 exec ln -s ../../spice/models $charpoint/netlists
 exec rm -rf $charpoint/control
