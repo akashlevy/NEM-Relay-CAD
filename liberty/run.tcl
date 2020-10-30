@@ -6,7 +6,7 @@ set_log_file $charpoint/sis.log
 set_location $charpoint
 
 # Copy and symlink as necessary
-exec cp ../configure.tcl $charpoint/config/configure.tcl
+exec cp $charpoint/../configure.tcl $charpoint/config
 exec rm -rf $charpoint/netlists
 exec ln -s ../../spice/models $charpoint/netlists
 exec rm -rf $charpoint/control
