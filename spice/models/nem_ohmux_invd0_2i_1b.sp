@@ -8,7 +8,5 @@
 .subckt nem_ohmux_invd0_2i_1b I0_0 I1_0 S0 S1 ZN_0 VDD VB VSS
     Xmux I0_0 I1_0 S0 S1 Z_0 VDD VB VSS nem_ohmux_2i_1b
     Xinv0 Z_0 ZN_0 VDD VSS INVD0BWP
-    Cpar Z_0 VSS 0.0001f
-    Rpar Z_0 VSS 100G
 .ends
     

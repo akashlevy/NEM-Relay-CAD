@@ -73,7 +73,7 @@ define_parameters default {
 	"common,finesim_embedded: probe=1 finesim_output=fsdb finesim_mode=spicehd finesim_method=gearv numdgt=7 measdgt=7"
 	"common,finesim: probe=1 finesim_output=fsdb finesim_mode=spicehd finesim_method=gearv numdgt=7 measdgt=7"
 	"power,finesim_embedded: probe=1 finesim_output=tr0 finesim_mode=spice2  finesim_qlevel=3 finesim_method=gear finesim_leakage_mode=1"
-	"common,hspice: probe=0 runlvl=5 numdgt=7 measdgt=7 acct=1 nopage post=2 method=gear"
+	"common,hspice: probe=0 runlvl=5 numdgt=7 measdgt=7 acct=1 nopage post=2 method=gear vntol=1f"
 	
 	"common,spectre6: compression=yes step=10ps maxstep=1ns relref=allglobal"
 	"common,spectre6: method=trap lteratio=4 gmin=1e-18 autostop=0 save=none"
