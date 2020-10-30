@@ -6,14 +6,15 @@ set_log_file $charpoint/sis.log
 set_location $charpoint
 
 # Copy and symlink as necessary
-exec ln -s ../configure.tcl $charpoint/config/configure.tcl
+exec rm -r $charpoint/config/configure.tcl
+exec ln -s ../../configure.tcl $charpoint/config/configure.tcl
 exec rm -r $charpoint/netlists
 exec ln -s ../../spice/models $charpoint/netlists
 exec rm -r $charpoint/control
 exec ln -s ../control $charpoint/control
 
 # Set cell lists for import
-set cells [lmap f [glob -tails control/*.inst] {file rootname $f}]
+set cells [lmap f [glob -directory control -tails *.inst] {file rootname $f}]
 
 # Configure and characterize
 configure -fast -timing -power -ccs $cells
