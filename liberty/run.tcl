@@ -13,7 +13,7 @@ exec rm -r $charpoint/control
 exec ln -s ../control $charpoint/control
 
 # Set cell lists for import
-set cells [lmap f [glob control/*.inst] {file rootname $f}]
+set cells [lmap f [glob -tails control/*.inst] {file rootname $f}]
 
 # Configure and characterize
 configure -fast -timing -power -ccs $cells
