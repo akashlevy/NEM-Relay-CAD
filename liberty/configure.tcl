@@ -146,7 +146,7 @@ define_parameters liberty_model {
     set default_cell_leakage_power 0.0
     set default_leakage_power_density  0.0
     set in_place_swap_mode match_footprint
-    set liberty_leakage_power_unit 1nW
+    set leakage_power_unit 1nW
 }
 
 
