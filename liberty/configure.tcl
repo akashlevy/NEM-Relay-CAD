@@ -160,7 +160,9 @@ define_parameters validation {
     set qualification_lc_suppress { LBDB-366 LBDB-75 LIBG-242 UIL-2 }
 }
 
+#
 # VALIDATION SUPPRESSED WARNING INFORMATION
+#
 # NOTE: Extra timing arc and x_function are needed for ohmux.
 # Warning: Line 11, The 'internal_power_calculation' attribute in char_config group is required for NLPM library. 
 #         No default can be applied to this attribute. (LBDB-366)
@@ -171,3 +173,5 @@ define_parameters validation {
 # Warning: Line 128, Cell 'nem_ohmux_invd0_2i_1b', The 'nem_ohmux_invd0_2i_1b' cell has signal pins specified with 'x_function' attribute hence
 #         it is a black box for optimization tools. (LIBG-242)
 # Warning: Overwriting an old technology library '/home/akashl/NEM-Relay-CAD/liberty/nems40tt/models/liberty/nems40tt.db' file with a new one. (UIL-2)
+# NOTE: Verilog has timing models only so power groups will not show up.
+# Warning: Line 134, Cell 'nem_ohmux_invd0_2i_1b', pin 'I0_0', The pin 'I0_0' does not have a internal_power group. (LBDB-607)
