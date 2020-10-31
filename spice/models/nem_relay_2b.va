@@ -54,8 +54,7 @@ parameter real cturnonval = 1e-10;
 // ==============================
 // Internal variable declarations
 // ==============================
-real Qbc, Qgb, Qgc;
-real Qdg0, Qsg0, Qbd0, Qbs0, Qdg1, Qsg1, Qbd1, Qbs1;
+real Qgb, Qbc0, Qgc0, Qdg0, Qsg0, Qbd0, Qbs0, Qbc1, Qgc1, Qdg1, Qsg1, Qbd1, Qbs1;
 real Ftot, Fdamp, Fk, Fel, Fcont;
 
 analog begin

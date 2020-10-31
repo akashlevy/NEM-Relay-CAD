@@ -15,7 +15,7 @@ subs['N'] = args.N
 subs['sdparams'] = ', '.join(["d{i}, s{i}".format(i=i) for i in range(args.N)])
 subs['sddefs'] = '\n'.join(["    inout {ds}{i};\n    electrical {ds}{i};".format(ds=ds, i=i) for i in range(args.N) for ds in 'ds'])[4:]
 subs['cs'] = ', '.join(["c{i}".format(i=i) for i in range(args.N)])
-subs['Qdefs'] = ', '.join(["Qdg{i}, Qsg{i}, Qbd{i}, Qbs{i}".format(i=i) for i in range(args.N)])
+subs['Qdefs'] = ', '.join(["Qbc{i}, Qgc{i}, Qdg{i}, Qsg{i}, Qbd{i}, Qbs{i}".format(i=i) for i in range(args.N)])
 subs['dseqns'] = '\n\n'.join(["""// I(b,c{i}) - body to channel cap
 Qbc{i} = V(b,c{i})*Cbc;
 I(b,c{i})<+ddt(Qbc{i});
