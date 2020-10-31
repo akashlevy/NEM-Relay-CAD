@@ -25,6 +25,8 @@ define_parameters default {
     set path_constraint_mode off
 
     set liberty_resistance_unit 1kohm
+    set liberty_leakage_power_unit 1nW
+    set liberty_max_transition 1
 
     # List of operating conditions as defined by create_operation_condition
     set active_pvts nems40tt
@@ -147,7 +149,6 @@ define_parameters liberty_model {
     set default_leakage_power_density  0.0
     set in_place_swap_mode match_footprint
     set max_transition 1
-    set leakage_power_unit 1nW
 }
 
 
