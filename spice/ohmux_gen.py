@@ -75,12 +75,15 @@ fndefs = []
 for b in range(N):
     ipins = " ".join(["I{i}_{b}".format(i=i, b=b) for i in range(M)])
     spins = " ".join(["S{i}".format(i=i) for i in range(M)])
-    fndefs.append("add_one_hot ZN_%d { %s } { %s }" % (b, spins, ipins))
+    #fndefs.append("add_one_hot ZN_%d { %s } { %s }" % (b, spins, ipins))
+    selcombos = list(combinations(["S{i}".format(i=i) for i in range(M)], 2))
     illegals = ["&".join(["!S{i}".format(i=i) for i in range(M)])]
-    illegals += ["&".join(c) for c in combinations(["S{i}".format(i=i) for i in range(M)],2)]
+    illegals += ["&".join(c) for c in selcombos]
     conds = ["S{i}&I{i}_{b}".format(i=i, b=b) for i in range(M)]
     fndefs.append("add_function ZN_%d {!( %s )} -illegal { %s }" % (b, " | ".join(conds), " | ".join(illegals)))
     fndefs.append("add_forbidden_state { %s }" % " | ".join(illegals))
+    for selcombo in selcombos:
+        fndefs.append("add_switch_tuple { %s }" % " ".join(selcombo))
 fndefs = '\n'.join(fndefs)
 
 # State partitions
