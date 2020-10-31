@@ -61,7 +61,7 @@ subs['tmax'] = 5000*M
 # Inverters for ohmux inv
 subs['invs'] = ''
 for i in range(N):
-    subs['invs'] += '    Xinv{b} Z_{b} ZN_{b} VDD VSS INVD{D}BWP\n'.format(D=D, b=b)
+    subs['invs'] += '    Xinv{i} Z_{i} ZN_{i} VDD VSS INVD{D}BWP\n'.format(D=D, i=i)
 subs['invs'] = subs['invs'][4:-1]
 
 # Pin definitions
@@ -72,18 +72,18 @@ pindefs = "\n".join(pindefs)
 
 # Function definition
 fndefs = []
+selcombos = list(combinations(["S{i}".format(i=i) for i in range(M)], 2))
 for b in range(N):
     ipins = " ".join(["I{i}_{b}".format(i=i, b=b) for i in range(M)])
     spins = " ".join(["S{i}".format(i=i) for i in range(M)])
     #fndefs.append("add_one_hot ZN_%d { %s } { %s }" % (b, spins, ipins))
-    selcombos = list(combinations(["S{i}".format(i=i) for i in range(M)], 2))
     illegals = ["&".join(["!S{i}".format(i=i) for i in range(M)])]
     illegals += ["&".join(c) for c in selcombos]
     conds = ["S{i}&I{i}_{b}".format(i=i, b=b) for i in range(M)]
     fndefs.append("add_function ZN_%d {!( %s )} -illegal { %s }" % (b, " | ".join(conds), " | ".join(illegals)))
     fndefs.append("add_forbidden_state { %s }" % " | ".join(illegals))
-    for selcombo in selcombos:
-        fndefs.append("add_switch_tuple { %s }" % " ".join(selcombo))
+for selcombo in selcombos:
+    fndefs.append("add_switch_tuple { %s }" % " ".join(selcombo))
 fndefs = '\n'.join(fndefs)
 
 # State partitions
