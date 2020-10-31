@@ -1,9 +1,7 @@
 # Set and create characterization point
 set charpoint nems40tt
 # exec rm -r $charpoint
-create $charpoint 
-set_log_file $charpoint/sis.log
-set_location $charpoint
+create $charpoint
 
 # Copy and symlink as necessary
 exec rm -rf $charpoint/config/configure.tcl
@@ -12,6 +10,10 @@ exec rm -rf $charpoint/netlists
 exec ln -s ../../spice/models $charpoint/netlists
 exec rm -rf $charpoint/control
 exec ln -s ../control $charpoint/control
+
+# Setup log and location
+set_log_file $charpoint/sis.log
+set_location $charpoint
 
 # Set cell lists for import
 set cells [lmap f [glob -directory control -tails *.inst] {file rootname $f}]
