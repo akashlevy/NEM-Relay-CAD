@@ -141,6 +141,7 @@ pintype default {
 define_parameters liberty_model {
     # Add Liberty header attributes here for use with "model -create_new_model"
     set delay_model "table_lookup"
+    set default_operating_conditions nems40tt
     set default_fanout_load 1.0
     set default_inout_pin_cap 0.0006825
     set default_input_pin_cap 0.0006825
