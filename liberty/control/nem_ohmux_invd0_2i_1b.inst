@@ -15,8 +15,7 @@ add_pin ZN_0 default -output
 ## Cell function definitions.
 ## 
 add_one_hot ZN_0 { S0 S1 } { I0_0 I1_0 }
-set illegal_0 { !S0&!S1 | S0&S1 }
-add_function ZN_0 { S0&I0_0 | S1&I1_0 } -illegal illegal_0
+add_function ZN_0 { S0&I0_0 | S1&I1_0 } -illegal !S0&!S1 | S0&S1
 add_forbidden_state illegal_0
 
 
