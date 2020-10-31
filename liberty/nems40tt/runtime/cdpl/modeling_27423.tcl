@@ -17,7 +17,7 @@ define_parameters liberty_model {
     set default_output_pin_cap 0.0
     set delay_model table_lookup
     set in_place_swap_mode match_footprint
-    set liberty_leakage_power_unit 1nW
+    set leakage_power_unit 1nW
 }
 
 pintype default {
@@ -25,6 +25,7 @@ pintype default {
 }
 
 # Liberty attributes set by user
+set_liberty_attribute -cell nem_ohmux_invd0_10i_1b area 0
 set_liberty_attribute -cell nem_ohmux_invd0_2i_1b area 0
 # Liberty groups added by the user
 # Liberty attributes cleared by user
@@ -39,17 +40,11 @@ add_opc_grounds nems40tt VSS 0.0
 ## User-specified characterization and modeling configuration options.
 ## 
 
-create_parameter is_char_mode
-set_config_opt -- is_char_mode 0
-
 create_parameter liberty_multi_rail_format
 set_config_opt -- liberty_multi_rail_format v2
 
 create_parameter lvf_license
 set_config_opt -- lvf_license 0
-
-create_parameter simulator_version_info
-set_config_opt -- simulator_version_info M-2017.03-SP2
 
 } err ] } {
 

@@ -86,4 +86,4 @@ export CDS_INST_DIR='/cad/cadence/IC_06.18.020_lnx86'
 export PS_HWPC='OFF'
 unset LS_COLORS
 cd /home/akashl/NEM-Relay-CAD/liberty
-/cad/synopsys/SiliconSmart/M-2017.03-2/bin/siliconsmart  -server /home/akashl/NEM-Relay-CAD/liberty/nems40tt/runtime/cdpl/driver_1245.tcl
+/cad/synopsys/SiliconSmart/M-2017.03-2/bin/siliconsmart  -server /home/akashl/NEM-Relay-CAD/liberty/nems40tt/runtime/cdpl/driver_9233.tcl

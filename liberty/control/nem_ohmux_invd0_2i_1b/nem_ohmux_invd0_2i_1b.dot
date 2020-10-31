@@ -1,0 +1,16 @@
+graph G {
+	rankdir=LR;
+
+
+	0 [shape=box label=NEM_OHMUX_INVD0_2I_1B height=2.4 rankdir=TB];
+	I0_0 [shape=none];
+	I0_0 -- 0
+	I1_0 [shape=none];
+	I1_0 -- 0
+	S0 [shape=none];
+	S0 -- 0
+	S1 [shape=none];
+	S1 -- 0
+	ZN_0 [shape=none];
+	0 -- ZN_0
+}
