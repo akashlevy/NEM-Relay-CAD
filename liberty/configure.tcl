@@ -27,6 +27,7 @@ define_parameters default {
     set liberty_resistance_unit 1kohm
     set liberty_leakage_power_unit 1nW
     set liberty_max_transition 1
+    set calculate_max_transition 1
 
     # List of operating conditions as defined by create_operation_condition
     set active_pvts nems40tt
@@ -163,15 +164,16 @@ define_parameters validation {
 #
 # VALIDATION SUPPRESSED WARNING INFORMATION
 #
+# NOTE: SiliconSmart produces a define(char_when) statement which is seemingly redundant.
+# Warning: Line 39, The 'char_when' attribute is already defined for receiver_capacitance groups.
+#         It cannot be redefined. (LBDB-29)
 # NOTE: Extra timing arc and x_function are needed for ohmux.
 # Warning: Line 11, The 'internal_power_calculation' attribute in char_config group is required for NLPM library. 
 #         No default can be applied to this attribute. (LBDB-366)
 # Warning: Line 324, Cell 'nem_ohmux_invd0_2i_1b', pin 'ZN_0', There is an extra timing arc between 'S0' and 
 #         'ZN_0' pins in the 'nem_ohmux_invd0_2i_1b' cell. (LBDB-75)
-# Warning: Line 324, Cell 'nem_ohmux_invd0_2i_1b', pin 'ZN_0', There is an extra timing arc between 'S1' and 
-#         'ZN_0' pins in the 'nem_ohmux_invd0_2i_1b' cell. (LBDB-75)
 # Warning: Line 128, Cell 'nem_ohmux_invd0_2i_1b', The 'nem_ohmux_invd0_2i_1b' cell has signal pins specified with 'x_function' attribute hence
 #         it is a black box for optimization tools. (LIBG-242)
 # Warning: Overwriting an old technology library '/home/akashl/NEM-Relay-CAD/liberty/nems40tt/models/liberty/nems40tt.db' file with a new one. (UIL-2)
-# NOTE: Verilog has timing models only so power groups will not show up.
+# NOTE: Verilog has timing models only, so power groups will not appear.
 # Warning: Line 134, Cell 'nem_ohmux_invd0_2i_1b', pin 'I0_0', The pin 'I0_0' does not have a internal_power group. (LBDB-607)
