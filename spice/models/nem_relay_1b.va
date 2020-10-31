@@ -23,10 +23,10 @@ module nem_relay_1b(d0, s0, g, b, z);
 // ==================================
 // NOTE: Pos(z) = downwards displacement
 // NOTE: Pos(mbr, z) is height above substrate 
-// - c - channel voltage
+// - c{n} - channel n voltage
 // - mbr - mechanical ground
 // - z - position of the relay body (bottom of dielectric spacer)
-electrical c;
+electrical c0;
 kinematic mbr, z;
 
 // ==================================================
@@ -59,17 +59,17 @@ analog begin
 // ====================
 // Electrical Equations
 // ====================
-// I(b,c) - body to channel cap
-Qbc = V(b,c)*Cbc;
-I(b,c)<+ddt(Qbc);
-
 // I(g,b) - gate to body variable cap
 Qgb = V(g,b)*Cgb*(t_gap + t_sp/K_sp)/(Pos(mbr,z) + t_sp/K_sp);
 I(g,b)<+ddt(Qgb);
 
-// I(g,c) - gate to channel variable cap
-Qgc = V(g,c)*Cgc*(t_gap - t_chan)/(Pos(mbr,z) - t_chan);
-I(g,c)<+ddt(Qgc);
+// I(b,c0) - body to channel cap
+Qbc0 = V(b,c0)*Cbc;
+I(b,c0)<+ddt(Qbc0);
+
+// I(g,c0) - gate to channel variable cap
+Qgc0 = V(g,c0)*Cgc*(t_gap - t_chan)/(Pos(mbr,z) - t_chan);
+I(g,c0)<+ddt(Qgc0);
 
 // I(d0,g), I(s0,g) - drain/source to gate cap
 Qdg0 = V(d0,g)*Cgds;
@@ -83,10 +83,10 @@ Qbs0 = V(b,s0)*Cbds*(t_gap + t_sp/K_sp)/(Pos(mbr,z) + t_sp/K_sp);
 I(b,d0)<+ddt(Qbd0);
 I(b,s0)<+ddt(Qbs0);
 
-// I(d0,c), I(s0,c) - channel to drain/source variable contact resistance
-I(d0,c)<+V(d0,c)/
+// I(d0,c0), I(s0,c0) - channel to drain/source variable contact resistance
+I(d0,c0)<+V(d0,c0)/
     (Rcont + Rair * smoothstep(Pos(mbr,z) - t_cont, Rturnonsharp));
-I(s0,c)<+V(s0,c)/
+I(s0,c0)<+V(s0,c0)/
     (Rcont + Rair * smoothstep(Pos(mbr,z) - t_cont, Rturnonsharp));
 
 // ===========================================

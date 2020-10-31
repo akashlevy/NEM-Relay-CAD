@@ -14,8 +14,17 @@ subs = {}
 subs['N'] = args.N
 subs['sdparams'] = ', '.join(["d{i}, s{i}".format(i=i) for i in range(args.N)])
 subs['sddefs'] = '\n'.join(["    inout {ds}{i};\n    electrical {ds}{i};".format(ds=ds, i=i) for i in range(args.N) for ds in 'ds'])[4:]
+subs['cs'] = ', '.join(["c{i}".format(i=i) for i in range(args.N)])
 subs['Qdefs'] = ', '.join(["Qdg{i}, Qsg{i}, Qbd{i}, Qbs{i}".format(i=i) for i in range(args.N)])
-subs['dseqns'] = '\n\n'.join(["""// I(d{i},g), I(s{i},g) - drain/source to gate cap
+subs['dseqns'] = '\n\n'.join(["""// I(b,c{i}) - body to channel cap
+Qbc{i} = V(b,c{i})*Cbc;
+I(b,c{i})<+ddt(Qbc{i});
+
+// I(g,c{i}) - gate to channel variable cap
+Qgc{i} = V(g,c{i})*Cgc*(t_gap - t_chan)/(Pos(mbr,z) - t_chan);
+I(g,c{i})<+ddt(Qgc{i});
+
+// I(d{i},g), I(s{i},g) - drain/source to gate cap
 Qdg{i} = V(d{i},g)*Cgds;
 Qsg{i} = V(s{i},g)*Cgds;
 I(d{i},g)<+ddt(Qdg{i});
@@ -27,10 +36,10 @@ Qbs{i} = V(b,s{i})*Cbds*(t_gap + t_sp/K_sp)/(Pos(mbr,z) + t_sp/K_sp);
 I(b,d{i})<+ddt(Qbd{i});
 I(b,s{i})<+ddt(Qbs{i});
 
-// I(d{i},c), I(s{i},c) - channel to drain/source variable contact resistance
-I(d{i},c)<+V(d{i},c)/
+// I(d{i},c{i}), I(s{i},c{i}) - channel to drain/source variable contact resistance
+I(d{i},c{i})<+V(d{i},c{i})/
     (Rcont + Rair * smoothstep(Pos(mbr,z) - t_cont, Rturnonsharp));
-I(s{i},c)<+V(s{i},c)/
+I(s{i},c{i})<+V(s{i},c{i})/
     (Rcont + Rair * smoothstep(Pos(mbr,z) - t_cont, Rturnonsharp));""".format(i=i) for i in range(args.N)])
 subs['dspins'] = ('gnd Vsrc '*args.N)[:-1]
 

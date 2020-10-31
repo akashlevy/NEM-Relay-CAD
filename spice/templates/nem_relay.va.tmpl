@@ -20,10 +20,10 @@ module nem_relay_${N}b($sdparams, g, b, z);
 // ==================================
 // NOTE: Pos(z) = downwards displacement
 // NOTE: Pos(mbr, z) is height above substrate 
-// - c - channel voltage
+// - c{n} - channel n voltage
 // - mbr - mechanical ground
 // - z - position of the relay body (bottom of dielectric spacer)
-electrical c;
+electrical $cs;
 kinematic mbr, z;
 
 // ==================================================
@@ -56,17 +56,9 @@ analog begin
 // ====================
 // Electrical Equations
 // ====================
-// I(b,c) - body to channel cap
-Qbc = V(b,c)*Cbc;
-I(b,c)<+ddt(Qbc);
-
 // I(g,b) - gate to body variable cap
 Qgb = V(g,b)*Cgb*(t_gap + t_sp/K_sp)/(Pos(mbr,z) + t_sp/K_sp);
 I(g,b)<+ddt(Qgb);
-
-// I(g,c) - gate to channel variable cap
-Qgc = V(g,c)*Cgc*(t_gap - t_chan)/(Pos(mbr,z) - t_chan);
-I(g,c)<+ddt(Qgc);
 
 $dseqns
 
