@@ -1,5 +1,6 @@
 # Import libraries
 import argparse, json
+from itertools import combinations
 from string import Template
 
 # Parse arguments
@@ -66,7 +67,6 @@ subs['invs'] = subs['invs'][4:-1]
 # Pin definitions
 pindefs = ["add_pin I{i}_{b} default -input".format(i=i, b=b) for i in range(M) for b in range(N)]
 pindefs += ["add_pin S{i} default -input".format(i=i) for i in range(M)]
-pindefs += ["add_pin Z_{b} default -internal".format(b=b) for b in range(N)]
 pindefs += ["add_pin ZN_{b} default -output".format(b=b) for b in range(N)]
 pindefs = "\n".join(pindefs)
 
@@ -75,8 +75,13 @@ fndefs = []
 for b in range(N):
     ipins = " ".join(["I{i}_{b}".format(i=i, b=b) for i in range(M)])
     spins = " ".join(["S{i}".format(i=i) for i in range(M)])
-    fndefs.append("add_one_hot Z_%d { %s } { %s }" % (b, spins, ipins))
-    fndefs.append("add_function ZN_%d !Z_%d" % (b, b))
+    fndefs.append("add_one_hot ZN_%d { %s } { %s }" % (b, spins, ipins))
+    illegals = ["&".join(["!S{i}".format(i=i) for i in range(M)])]
+    illegals += ["&".join(c) for c in combinations(["S{i}".format(i=i) for i in range(M)],2)]
+    fndefs.append("set illegal_%d { %s }" % (b, " | ".join(illegals)))
+    conds = ["S{i}&I{i}_{b}".format(i=i, b=b) for i in range(M)]
+    fndefs.append("add_function ZN_%d { %s } -illegal illegal_%d" % (b, " | ".join(conds), b))
+    fndefs.append("add_forbidden_state illegal_%d" % b)
 fndefs = '\n'.join(fndefs)
 
 # State partitions

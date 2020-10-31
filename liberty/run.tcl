@@ -25,6 +25,13 @@ model -verilog -output verilog $cells
 model -timing -power -output nldm $cells
 model -timing -power -ccs -output ccs $cells
 
+# Qualify models
+qualify_library $charpoint/models/liberty/nldm_nems40tt.lib
+qualify_library $charpoint/models/liberty/ccs_nems40tt.lib
+
+# Generate datasheets
+generate_datasheet $cells
+
 # Compile models
 exec lc_shell -f compile.tcl
 
