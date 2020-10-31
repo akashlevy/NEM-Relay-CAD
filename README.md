@@ -73,7 +73,7 @@ TODO: non-one-hot multiplexers
 
 ### Liberty model
 
-The Liberty model generation has been tested with SiliconSmart M-2017.03-2. Library Compiler (LC) also needs to be loaded to compile the Liberty (.lib) files to DB (.db) files. In order to use SiliconSmart, first create the SPICE models in the previous step. Then simply run `siliconsmart run.tcl` to run the characterization flow (you may need to run it twice to not get an error). This will generate the library with all the .libs and .dbs necessary for a standard EDA flow. To debug, see the SPICE simulations for the different characterizations.
+The Liberty model generation has been tested with SiliconSmart M-2017.03-2. Library Compiler (LC) also needs to be loaded to compile the Liberty (.lib) files to DB (.db) files. In order to use SiliconSmart, first create the SPICE models in the previous step. Then simply run `siliconsmart run.tcl` to run the characterization flow. This will generate the library with all the .libs and .dbs necessary for a standard EDA flow. To debug, see the SPICE simulations for the different characterizations.
 
 ### Mathematica model (validation only)
 

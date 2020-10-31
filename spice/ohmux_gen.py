@@ -79,7 +79,7 @@ for b in range(N):
     illegals = ["&".join(["!S{i}".format(i=i) for i in range(M)])]
     illegals += ["&".join(c) for c in combinations(["S{i}".format(i=i) for i in range(M)],2)]
     conds = ["S{i}&I{i}_{b}".format(i=i, b=b) for i in range(M)]
-    fndefs.append("add_function ZN_%d { %s } -illegal { %s }" % (b, " | ".join(conds), " | ".join(illegals)))
+    fndefs.append("add_function ZN_%d !{ %s } -illegal { %s }" % (b, " | ".join(conds), " | ".join(illegals)))
     fndefs.append("add_forbidden_state { %s }" % " | ".join(illegals))
 fndefs = '\n'.join(fndefs)
 
