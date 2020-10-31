@@ -157,4 +157,5 @@ define_parameters liberty_model {
 #######################
 define_parameters validation {
     # Add validation parameters here
+    set qualification_lc_suppress { LBDB-366 LBDB-75 LIBG-242 UIL-2 }
 }
