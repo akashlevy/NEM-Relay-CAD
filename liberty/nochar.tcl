@@ -10,7 +10,6 @@ set cells [lmap f [glob -directory control -tails *.inst] {file rootname $f}]
 
 # Configure and characterize
 configure -fast -timing -power -ccs $cells
-characterize $cells
 
 # Output models
 model -verilog -output verilog $cells

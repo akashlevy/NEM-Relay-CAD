@@ -177,3 +177,9 @@ define_parameters validation {
 # Warning: Overwriting an old technology library '/home/akashl/NEM-Relay-CAD/liberty/nems40tt/models/liberty/nems40tt.db' file with a new one. (UIL-2)
 # NOTE: Verilog has timing models only, so power groups will not appear.
 # Warning: Line 134, Cell 'nem_ohmux_invd0_2i_1b', pin 'I0_0', The pin 'I0_0' does not have a internal_power group. (LBDB-607)
+#
+# VALIDATION UNSUPPRESSED WARNING INFORMATION
+#
+# Warning: Line 296, Cell 'nem_ohmux_invd0_2i_1b', pin 'I0_0', The max value of 1st index of group 'receiver_capacitance1_fall' is 0.372,
+#         which is less than max transition of pin 'I0_0', 0.3751. (LBDB-680)
+# NOTE: max transition can be slightly extrapolated in this context
