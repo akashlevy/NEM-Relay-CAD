@@ -22,6 +22,6 @@ VSS VS gnd 0V
 ** Options **
 .tran 0.0001us 10000ns
 .option post=2
-.option runlvl=5 accurate
+.option runlvl=5 accurate method=gear vntol=1f
 
 .end
