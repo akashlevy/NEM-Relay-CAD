@@ -1,0 +1,159 @@
+set vectors ""
+
+## delay__I0_0__lh__ZN_0__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00001011  10001001  "
+
+## delay__I0_0__hl__ZN_0__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 10001001  00001011  "
+
+## delay__I0_1__lh__ZN_1__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00001011  01001010  "
+
+## delay__I0_1__hl__ZN_1__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 01001010  00001011  "
+
+## delay__I1_0__lh__ZN_0__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00000111  00100101  "
+
+## delay__I1_0__hl__ZN_0__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00100101  00000111  "
+
+## delay__I1_1__lh__ZN_1__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00000111  00010110  "
+
+## delay__I1_1__hl__ZN_1__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00010110  00000111  "
+
+## delay__S1__lh__ZN_0__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 10001001  10000111  "
+
+## delay__S0__hl__ZN_0__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 10001001  10000111  "
+
+## delay__S1__lh__ZN_0__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00101011  00100101  "
+
+## delay__S0__hl__ZN_0__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00101011  00100101  "
+
+## delay__S1__lh__ZN_1__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 01001010  01000111  "
+
+## delay__S0__hl__ZN_1__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 01001010  01000111  "
+
+## delay__S1__lh__ZN_1__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00011011  00010110  "
+
+## delay__S0__hl__ZN_1__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00011011  00010110  "
+
+## delay__S1__hl__ZN_0__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00100101  00101011  "
+
+## delay__S0__lh__ZN_0__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00100101  00101011  "
+
+## delay__S1__hl__ZN_0__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 10000111  10001001  "
+
+## delay__S0__lh__ZN_0__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 10000111  10001001  "
+
+## delay__S1__hl__ZN_1__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00010110  00011011  "
+
+## delay__S0__lh__ZN_1__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00010110  00011011  "
+
+## delay__S1__hl__ZN_1__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 01000111  01001010  "
+
+## delay__S0__lh__ZN_1__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 01000111  01001010  "
+
+## energy__S1__lh__ZN_0__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 10001001  10000111  "
+
+## energy__S0__hl__ZN_0__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 10001001  10000111  "
+
+## energy__S1__lh__ZN_0__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00101011  00100101  "
+
+## energy__S0__hl__ZN_0__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00101011  00100101  "
+
+## energy__S1__lh__ZN_1__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 01001010  01000111  "
+
+## energy__S0__hl__ZN_1__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 01001010  01000111  "
+
+## energy__S1__lh__ZN_1__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00011011  00010110  "
+
+## energy__S0__hl__ZN_1__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00011011  00010110  "
+
+## energy__S1__hl__ZN_0__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00100101  00101011  "
+
+## energy__S0__lh__ZN_0__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00100101  00101011  "
+
+## energy__S1__hl__ZN_0__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 10000111  10001001  "
+
+## energy__S0__lh__ZN_0__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 10000111  10001001  "
+
+## energy__S1__hl__ZN_1__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00010110  00011011  "
+
+## energy__S0__lh__ZN_1__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00010110  00011011  "
+
+## energy__S1__hl__ZN_1__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 01000111  01001010  "
+
+## energy__S0__lh__ZN_1__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 01000111  01001010  "
+
+## energy__I0_0__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00000111  10000111  "
+
+## energy__I0_0__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 10000111  00000111  "
+
+## energy__I0_1__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00000111  01000111  "
+
+## energy__I0_1__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 01000111  00000111  "
+
+## energy__I1_0__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00001011  00101011  "
+
+## energy__I1_0__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00101011  00001011  "
+
+## energy__I1_1__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00001011  00011011  "
+
+## energy__I1_1__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00011011  00001011  "
+
+## energy__S1__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00001011  00000111  "
+
+## energy__S0__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00001011  00000111  "
+
+## energy__S1__hl__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00000111  00001011  "
+
+## energy__S0__lh__ACQ_1
+append vectors " {pins { I0_0 I0_1 I1_0 I1_1 S0 S1 } { ZN_0 ZN_1 }} 00000111  00001011  "
+
+return $vectors
