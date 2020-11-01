@@ -10,7 +10,7 @@ parser.add_argument('M', help="Number of inputs to multiplexer", type=int)
 parser.add_argument('-D', help="Drive strength of output inverter", type=int, default=0)
 parser.add_argument('-A', '--area', help="Area of each inverter (um^2) to determine lib area", type=float, default=0)
 args = parser.parse_args()
-N, M, D, area = args.N, args.M, args.D, args.area * args.N
+N, M, D, subs['area'] = args.N, args.M, args.D, args.area * args.N
 
 # Initialize substitution dictionary from params
 subs = json.load(open("../params.json"))
@@ -65,29 +65,34 @@ for i in range(N):
 subs['invs'] = subs['invs'][4:-1]
 
 # Pin definitions
-pindefs = ["add_pin I{i}_{b} default -input".format(i=i, b=b) for i in range(M) for b in range(N)]
-pindefs += ["add_pin S{i} default -input".format(i=i) for i in range(M)]
-pindefs += ["add_pin ZN_{b} default -output".format(b=b) for b in range(N)]
-pindefs = "\n".join(pindefs)
+subs['pindefs'] = ["add_pin I{i} default -input".format(i=i) for i in range(M)]
+subs['pindefs'] += ["add_pin S{i} default -input".format(i=i) for i in range(M)]
+subs['pindefs'] += ["add_pin ZN default -output"]
+subs['pindefs'] = "\n".join(subs['pindefs'])
 
 # Function definition
-fndefs = []
+subs['fndefs'] = []
 selcombos = list(combinations(["S{i}".format(i=i) for i in range(M)], 2))
-for b in range(N):
-    ipins = " ".join(["I{i}_{b}".format(i=i, b=b) for i in range(M)])
-    spins = " ".join(["S{i}".format(i=i) for i in range(M)])
-    #fndefs.append("add_one_hot ZN_%d { %s } { %s }" % (b, spins, ipins))
-    illegals = ["&".join(["!S{i}".format(i=i) for i in range(M)])]
-    illegals += ["&".join(c) for c in selcombos]
-    conds = ["S{i}&I{i}_{b}".format(i=i, b=b) for i in range(M)]
-    fndefs.append("add_function ZN_%d {!( %s )} -illegal { %s }" % (b, " | ".join(conds), " | ".join(illegals)))
-    fndefs.append("add_forbidden_state { %s }" % " | ".join(illegals))
+ipins = " ".join(["I{i}".format(i=i) for i in range(M)])
+spins = " ".join(["S{i}".format(i=i) for i in range(M)])
+#subs['fndefs'].append("add_one_hot ZN { %s } { %s }" % (spins, ipins))
+illegals = ["&".join(["!S{i}".format(i=i) for i in range(M)])]
+illegals += ["&".join(c) for c in selcombos]
+conds = ["S{i}&I{i}".format(i=i) for i in range(M)]
+subs['fndefs'].append("add_function ZN {!( %s )} -illegal { %s }" % (" | ".join(conds), " | ".join(illegals)))
+subs['fndefs'].append("add_forbidden_state { %s }" % " | ".join(illegals))
 for selcombo in selcombos:
-    fndefs.append("add_switch_tuple { %s }" % " ".join(selcombo))
-fndefs = '\n'.join(fndefs)
+    subs['fndefs'].append("add_switch_tuple { %s }" % " ".join(selcombo))
+subs['fndefs'] = '\n'.join(subs['fndefs'])
+
+# Bundle defintion
+subs['bundles'] = []
+subs['bundles'] += ["set_config_opt -pin %s -members { %s } " % (ipin, " ".join(["I{i}_{b}".format(i=i,b=b) for b in range(N)]) ) for i,ipin in enumerate(ipins)]
+subs['bundles'] += ["set_config_opt -pin ZN -members { %s } " % " ".join(["ZN_{b}".format(b=b) for b in range(N)])]
+subs['bundles'] = '\n'.join(subs['bundles'])
 
 # State partitions
-spart = "one"
+subs['spart'] = "one"
 
 # Template substitution for SPICE model
 template = Template(open('templates/nem_ohmux.sp.tmpl').read())
@@ -111,6 +116,6 @@ open("test/ohmux_test_invd{D}_{M}i_{N}b.sp".format(D=D, M=M, N=N), 'w').write(ou
 
 # Template substitution for SiliconSmart instance
 template = Template(open("../liberty/templates/nem_ohmux.inst.tmpl").read())
-output = template.substitute(D=D, N=N, M=M, pindefs=pindefs, fndefs=fndefs, area=area, spart=spart)
+output = template.substitute(subs)
 outfname = "../liberty/control/nem_ohmux_invd{D}_{M}i_{N}b.inst".format(D=D, M=M, N=N)
 open(outfname, "w").write(output)

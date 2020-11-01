@@ -24,6 +24,8 @@ define_parameters default {
     set smc_degrade 0.1
     set path_constraint_mode off
 
+    set bundle_bit_independent_descriptor 1
+
     set liberty_resistance_unit 1kohm
     set liberty_leakage_power_unit 1nW
     set liberty_max_transition 1
