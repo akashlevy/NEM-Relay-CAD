@@ -1,0 +1,181 @@
+set_netlist_file [get_location]/netlists/nem_ohmux_invd0_10i_8b.sp
+
+
+## 
+## Pin definitions.
+##
+add_pin I0_0 default -input
+add_pin I0_1 default -input
+add_pin I0_2 default -input
+add_pin I0_3 default -input
+add_pin I0_4 default -input
+add_pin I0_5 default -input
+add_pin I0_6 default -input
+add_pin I0_7 default -input
+add_pin I1_0 default -input
+add_pin I1_1 default -input
+add_pin I1_2 default -input
+add_pin I1_3 default -input
+add_pin I1_4 default -input
+add_pin I1_5 default -input
+add_pin I1_6 default -input
+add_pin I1_7 default -input
+add_pin I2_0 default -input
+add_pin I2_1 default -input
+add_pin I2_2 default -input
+add_pin I2_3 default -input
+add_pin I2_4 default -input
+add_pin I2_5 default -input
+add_pin I2_6 default -input
+add_pin I2_7 default -input
+add_pin I3_0 default -input
+add_pin I3_1 default -input
+add_pin I3_2 default -input
+add_pin I3_3 default -input
+add_pin I3_4 default -input
+add_pin I3_5 default -input
+add_pin I3_6 default -input
+add_pin I3_7 default -input
+add_pin I4_0 default -input
+add_pin I4_1 default -input
+add_pin I4_2 default -input
+add_pin I4_3 default -input
+add_pin I4_4 default -input
+add_pin I4_5 default -input
+add_pin I4_6 default -input
+add_pin I4_7 default -input
+add_pin I5_0 default -input
+add_pin I5_1 default -input
+add_pin I5_2 default -input
+add_pin I5_3 default -input
+add_pin I5_4 default -input
+add_pin I5_5 default -input
+add_pin I5_6 default -input
+add_pin I5_7 default -input
+add_pin I6_0 default -input
+add_pin I6_1 default -input
+add_pin I6_2 default -input
+add_pin I6_3 default -input
+add_pin I6_4 default -input
+add_pin I6_5 default -input
+add_pin I6_6 default -input
+add_pin I6_7 default -input
+add_pin I7_0 default -input
+add_pin I7_1 default -input
+add_pin I7_2 default -input
+add_pin I7_3 default -input
+add_pin I7_4 default -input
+add_pin I7_5 default -input
+add_pin I7_6 default -input
+add_pin I7_7 default -input
+add_pin I8_0 default -input
+add_pin I8_1 default -input
+add_pin I8_2 default -input
+add_pin I8_3 default -input
+add_pin I8_4 default -input
+add_pin I8_5 default -input
+add_pin I8_6 default -input
+add_pin I8_7 default -input
+add_pin I9_0 default -input
+add_pin I9_1 default -input
+add_pin I9_2 default -input
+add_pin I9_3 default -input
+add_pin I9_4 default -input
+add_pin I9_5 default -input
+add_pin I9_6 default -input
+add_pin I9_7 default -input
+add_pin S0 default -input
+add_pin S1 default -input
+add_pin S2 default -input
+add_pin S3 default -input
+add_pin S4 default -input
+add_pin S5 default -input
+add_pin S6 default -input
+add_pin S7 default -input
+add_pin S8 default -input
+add_pin S9 default -input
+add_pin ZN_0 default -output
+add_pin ZN_1 default -output
+add_pin ZN_2 default -output
+add_pin ZN_3 default -output
+add_pin ZN_4 default -output
+add_pin ZN_5 default -output
+add_pin ZN_6 default -output
+add_pin ZN_7 default -output
+
+
+## 
+## Cell function definitions.
+## 
+add_function ZN_0 {!( S0&I0_0 | S1&I1_0 | S2&I2_0 | S3&I3_0 | S4&I4_0 | S5&I5_0 | S6&I6_0 | S7&I7_0 | S8&I8_0 | S9&I9_0 )} -illegal { !S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9 }
+add_forbidden_state { !S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9 }
+add_function ZN_1 {!( S0&I0_1 | S1&I1_1 | S2&I2_1 | S3&I3_1 | S4&I4_1 | S5&I5_1 | S6&I6_1 | S7&I7_1 | S8&I8_1 | S9&I9_1 )} -illegal { !S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9 }
+add_forbidden_state { !S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9 }
+add_function ZN_2 {!( S0&I0_2 | S1&I1_2 | S2&I2_2 | S3&I3_2 | S4&I4_2 | S5&I5_2 | S6&I6_2 | S7&I7_2 | S8&I8_2 | S9&I9_2 )} -illegal { !S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9 }
+add_forbidden_state { !S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9 }
+add_function ZN_3 {!( S0&I0_3 | S1&I1_3 | S2&I2_3 | S3&I3_3 | S4&I4_3 | S5&I5_3 | S6&I6_3 | S7&I7_3 | S8&I8_3 | S9&I9_3 )} -illegal { !S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9 }
+add_forbidden_state { !S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9 }
+add_function ZN_4 {!( S0&I0_4 | S1&I1_4 | S2&I2_4 | S3&I3_4 | S4&I4_4 | S5&I5_4 | S6&I6_4 | S7&I7_4 | S8&I8_4 | S9&I9_4 )} -illegal { !S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9 }
+add_forbidden_state { !S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9 }
+add_function ZN_5 {!( S0&I0_5 | S1&I1_5 | S2&I2_5 | S3&I3_5 | S4&I4_5 | S5&I5_5 | S6&I6_5 | S7&I7_5 | S8&I8_5 | S9&I9_5 )} -illegal { !S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9 }
+add_forbidden_state { !S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9 }
+add_function ZN_6 {!( S0&I0_6 | S1&I1_6 | S2&I2_6 | S3&I3_6 | S4&I4_6 | S5&I5_6 | S6&I6_6 | S7&I7_6 | S8&I8_6 | S9&I9_6 )} -illegal { !S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9 }
+add_forbidden_state { !S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9 }
+add_function ZN_7 {!( S0&I0_7 | S1&I1_7 | S2&I2_7 | S3&I3_7 | S4&I4_7 | S5&I5_7 | S6&I6_7 | S7&I7_7 | S8&I8_7 | S9&I9_7 )} -illegal { !S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9 }
+add_forbidden_state { !S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9 }
+add_switch_tuple { S0 S1 }
+add_switch_tuple { S0 S2 }
+add_switch_tuple { S0 S3 }
+add_switch_tuple { S0 S4 }
+add_switch_tuple { S0 S5 }
+add_switch_tuple { S0 S6 }
+add_switch_tuple { S0 S7 }
+add_switch_tuple { S0 S8 }
+add_switch_tuple { S0 S9 }
+add_switch_tuple { S1 S2 }
+add_switch_tuple { S1 S3 }
+add_switch_tuple { S1 S4 }
+add_switch_tuple { S1 S5 }
+add_switch_tuple { S1 S6 }
+add_switch_tuple { S1 S7 }
+add_switch_tuple { S1 S8 }
+add_switch_tuple { S1 S9 }
+add_switch_tuple { S2 S3 }
+add_switch_tuple { S2 S4 }
+add_switch_tuple { S2 S5 }
+add_switch_tuple { S2 S6 }
+add_switch_tuple { S2 S7 }
+add_switch_tuple { S2 S8 }
+add_switch_tuple { S2 S9 }
+add_switch_tuple { S3 S4 }
+add_switch_tuple { S3 S5 }
+add_switch_tuple { S3 S6 }
+add_switch_tuple { S3 S7 }
+add_switch_tuple { S3 S8 }
+add_switch_tuple { S3 S9 }
+add_switch_tuple { S4 S5 }
+add_switch_tuple { S4 S6 }
+add_switch_tuple { S4 S7 }
+add_switch_tuple { S4 S8 }
+add_switch_tuple { S4 S9 }
+add_switch_tuple { S5 S6 }
+add_switch_tuple { S5 S7 }
+add_switch_tuple { S5 S8 }
+add_switch_tuple { S5 S9 }
+add_switch_tuple { S6 S7 }
+add_switch_tuple { S6 S8 }
+add_switch_tuple { S6 S9 }
+add_switch_tuple { S7 S8 }
+add_switch_tuple { S7 S9 }
+add_switch_tuple { S8 S9 }
+
+
+## 
+## User-specified characterization and modeling configuration options.
+## 
+create_parameter cut_netlist
+set_config_opt -opcond __default__ -- cut_netlist nem_ohmux_invd0_10i_8b.sp
+set_liberty_attribute -cell nem_ohmux_invd0_10i_8b area 0
+
+create_parameter state_partitions
+set_config_opt -- state_partitions one

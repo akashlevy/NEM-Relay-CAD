@@ -15,7 +15,7 @@ exec ln -s ../control $charpoint/control
 set_log_file $charpoint/sis.log
 set_location $charpoint
 
-# Set cell lists for import
+# Set cell lists for import from control directory .inst files
 set cells [lmap f [glob -directory control -tails *.inst] {file rootname $f}]
 
 # Configure and characterize
