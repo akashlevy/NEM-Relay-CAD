@@ -10,10 +10,10 @@ parser.add_argument('M', help="Number of inputs to multiplexer", type=int)
 parser.add_argument('-D', help="Drive strength of output inverter", type=int, default=0)
 parser.add_argument('-A', '--area', help="Area of each inverter (um^2) to determine lib area", type=float, default=0)
 args = parser.parse_args()
-N, M, D, subs['area'] = args.N, args.M, args.D, args.area * args.N
 
 # Initialize substitution dictionary from params
 subs = json.load(open("../params.json"))
+N, M, D, subs['area'] = args.N, args.M, args.D, args.area * args.N
 
 # Copy from params to subs
 subs['N'] = N
@@ -87,7 +87,7 @@ subs['fndefs'] = '\n'.join(subs['fndefs'])
 
 # Bundle defintion
 subs['bundles'] = []
-subs['bundles'] += ["set_config_opt -pin %s -members { %s } " % (ipin, " ".join(["I{i}_{b}".format(i=i,b=b) for b in range(N)]) ) for i,ipin in enumerate(ipins)]
+subs['bundles'] += ["set_config_opt -pin %s -members { %s } " % (ipin, " ".join(["I{i}_{b}".format(i=i,b=b) for b in range(N)]) ) for i,ipin in enumerate(ipins.split())]
 subs['bundles'] += ["set_config_opt -pin ZN -members { %s } " % " ".join(["ZN_{b}".format(b=b) for b in range(N)])]
 subs['bundles'] = '\n'.join(subs['bundles'])
 
