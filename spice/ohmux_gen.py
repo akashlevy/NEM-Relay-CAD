@@ -87,8 +87,8 @@ subs['fndefs'] = '\n'.join(subs['fndefs'])
 
 # Bundle defintion
 subs['bundles'] = []
-subs['bundles'] += ["set_config_opt -pin %s -members { %s } " % (ipin, " ".join(["I{i}_{b}".format(i=i,b=b) for b in range(N)]) ) for i,ipin in enumerate(ipins.split())]
-subs['bundles'] += ["set_config_opt -pin ZN -members { %s } " % " ".join(["ZN_{b}".format(b=b) for b in range(N)])]
+subs['bundles'] += ["set_config_opt -pin %s members { %s } " % (ipin, " ".join(["I{i}_{b}".format(i=i,b=b) for b in range(N)]) ) for i,ipin in enumerate(ipins.split())]
+subs['bundles'] += ["set_config_opt -pin ZN members { %s } " % " ".join(["ZN_{b}".format(b=b) for b in range(N)])]
 subs['bundles'] = '\n'.join(subs['bundles'])
 
 # State partitions

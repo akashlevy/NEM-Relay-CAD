@@ -136,21 +136,21 @@ add_switch_tuple { S12 S13 }
 ## 
 ## Cell bundling.
 ## 
-set_config_opt -pin I0 -members { I0_0 } 
-set_config_opt -pin I1 -members { I1_0 } 
-set_config_opt -pin I2 -members { I2_0 } 
-set_config_opt -pin I3 -members { I3_0 } 
-set_config_opt -pin I4 -members { I4_0 } 
-set_config_opt -pin I5 -members { I5_0 } 
-set_config_opt -pin I6 -members { I6_0 } 
-set_config_opt -pin I7 -members { I7_0 } 
-set_config_opt -pin I8 -members { I8_0 } 
-set_config_opt -pin I9 -members { I9_0 } 
-set_config_opt -pin I10 -members { I10_0 } 
-set_config_opt -pin I11 -members { I11_0 } 
-set_config_opt -pin I12 -members { I12_0 } 
-set_config_opt -pin I13 -members { I13_0 } 
-set_config_opt -pin ZN -members { ZN_0 } 
+set_config_opt -pin I0 members { I0_0 } 
+set_config_opt -pin I1 members { I1_0 } 
+set_config_opt -pin I2 members { I2_0 } 
+set_config_opt -pin I3 members { I3_0 } 
+set_config_opt -pin I4 members { I4_0 } 
+set_config_opt -pin I5 members { I5_0 } 
+set_config_opt -pin I6 members { I6_0 } 
+set_config_opt -pin I7 members { I7_0 } 
+set_config_opt -pin I8 members { I8_0 } 
+set_config_opt -pin I9 members { I9_0 } 
+set_config_opt -pin I10 members { I10_0 } 
+set_config_opt -pin I11 members { I11_0 } 
+set_config_opt -pin I12 members { I12_0 } 
+set_config_opt -pin I13 members { I13_0 } 
+set_config_opt -pin ZN members { ZN_0 } 
 
 
 ## 

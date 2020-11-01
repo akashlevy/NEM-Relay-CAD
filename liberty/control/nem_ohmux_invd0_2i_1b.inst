@@ -22,9 +22,9 @@ add_switch_tuple { S0 S1 }
 ## 
 ## Cell bundling.
 ## 
-set_config_opt -pin I0 -members { I0_0 } 
-set_config_opt -pin I1 -members { I1_0 } 
-set_config_opt -pin ZN -members { ZN_0 } 
+set_config_opt -pin I0 members { I0_0 } 
+set_config_opt -pin I1 members { I1_0 } 
+set_config_opt -pin ZN members { ZN_0 } 
 
 
 ## 
