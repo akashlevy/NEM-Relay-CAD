@@ -25,6 +25,7 @@ define_parameters default {
     set path_constraint_mode off
 
     set bundle_bit_independent_descriptor 1
+    set liberty_attributes_at_bundle 1
 
     set liberty_resistance_unit 1kohm
     set liberty_leakage_power_unit 1nW
