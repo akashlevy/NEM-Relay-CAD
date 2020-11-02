@@ -65,21 +65,31 @@ for i in range(N):
 subs['invs'] = subs['invs'][4:-1]
 
 # Pin definitions
-subs['pindefs'] = ["add_pin I{i} default -input".format(i=i) for i in range(M)]
-subs['pindefs'] += ["add_pin S{i} default -input".format(i=i) for i in range(M)]
-subs['pindefs'] += ["add_pin ZN default -output"]
+if N == 1:
+    subs['pindefs'] = ["add_pin I{i}_0 default -input".format(i=i) for i in range(M)]
+    subs['pindefs'] += ["add_pin S{i} default -input".format(i=i) for i in range(M)]
+    subs['pindefs'] += ["add_pin ZN_0 default -output"]
+else:
+    subs['pindefs'] = ["add_pin I{i} default -input".format(i=i) for i in range(M)]
+    subs['pindefs'] += ["add_pin S{i} default -input".format(i=i) for i in range(M)]
+    subs['pindefs'] += ["add_pin ZN default -output"]
 subs['pindefs'] = "\n".join(subs['pindefs'])
 
 # Function definition
 subs['fndefs'] = []
 selcombos = list(combinations(["S{i}".format(i=i) for i in range(M)], 2))
-ipins = " ".join(["I{i}".format(i=i) for i in range(M)])
 spins = " ".join(["S{i}".format(i=i) for i in range(M)])
-#subs['fndefs'].append("add_one_hot ZN { %s } { %s }" % (spins, ipins))
-illegals = ["&".join(["!S{i}".format(i=i) for i in range(M)])]
-illegals += ["&".join(c) for c in selcombos]
-conds = ["S{i}&I{i}".format(i=i) for i in range(M)]
-subs['fndefs'].append("add_function ZN {!( %s )} -illegal { %s }" % (" | ".join(conds), " | ".join(illegals)))
+illegals = ["&".join(["!S{i}".format(i=i) for i in range(M)])] + ["&".join(c) for c in selcombos]
+if N == 1:
+    ipins = " ".join(["I{i}_0".format(i=i) for i in range(M)])
+    #subs['fndefs'].append("add_one_hot ZN_0 { %s } { %s }" % (spins, ipins))
+    conds = ["S{i}&I{i}_0".format(i=i) for i in range(M)]
+    subs['fndefs'].append("add_function ZN_0 {!( %s )} -illegal { %s }" % (" | ".join(conds), " | ".join(illegals)))
+else:
+    ipins = " ".join(["I{i}".format(i=i) for i in range(M)])
+    #subs['fndefs'].append("add_one_hot ZN { %s } { %s }" % (spins, ipins))
+    conds = ["S{i}&I{i}".format(i=i) for i in range(M)]
+    subs['fndefs'].append("add_function ZN {!( %s )} -illegal { %s }" % (" | ".join(conds), " | ".join(illegals)))
 subs['fndefs'].append("add_forbidden_state { %s }" % " | ".join(illegals))
 for selcombo in selcombos:
     subs['fndefs'].append("add_switch_tuple { %s }" % " ".join(selcombo))
@@ -89,7 +99,7 @@ subs['fndefs'] = '\n'.join(subs['fndefs'])
 subs['bundles'] = []
 subs['bundles'] += ["set_config_opt -pin %s members { %s } " % (ipin, " ".join(["I{i}_{b}".format(i=i,b=b) for b in range(N)]) ) for i,ipin in enumerate(ipins.split())]
 subs['bundles'] += ["set_config_opt -pin ZN members { %s } " % " ".join(["ZN_{b}".format(b=b) for b in range(N)])]
-subs['bundles'] = '\n'.join(subs['bundles'])
+subs['bundles'] = '\n'.join(subs['bundles']) if N != 1 else ''
 
 # State partitions
 subs['spart'] = "one"
