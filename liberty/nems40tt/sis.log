@@ -1,0 +1,799 @@
+----------------------------------------------------------------------
+Info:    Switching log from siliconsmart.log at Sun Nov  1 18:46:52 2020
+Info:    Log written by SiliconSmart version M-2017.03-2 on Sun Nov  1 18:46:52 2020
+Info:    Build date: Apr 12, 2017 14:36:58
+Info:    SiliconSmart Path: /cad/synopsys/SiliconSmart/M-2017.03-2/linux64/bin/siliconsmart
+Info:    Host Name: r6cad-tsmc40r.stanford.edu, User Name: akashl, PID: 16941
+Info:    CPU: 8 x 2200 MHz, Common KVM processor (2 socket, 4 core)
+Info:    Memory: 32 GB RAM, 10 GB Swap
+Info:    Directory: /home/akashl/NEM-Relay-CAD/liberty
+Info:    Maximum virtual memory size: 582.49MB
+Info:    The char directory is /home/akashl/NEM-Relay-CAD/liberty/nems40tt
+Info:    ===================================================
+Info:    Sun Nov 01 18:46:53 PST 2020: Begin configure stage
+Info:    Configure starting, distributing work via adaptive job manager... (IOSH-29)
+Info:    Start generating configuration tasks. ... (SMSC-63)
+Info:    Generated 5 tasks. Bundling tasks into jobs and submitting... (SMSC-64)
+Info:    Using 10 standalone slots
+Info:    [CDPL] Tasks: 0/5, (0.0%, 0 Failed); Active Workers: 0, Pending Workers: 5, Elapsed: 0m00s
+Info:    [CDPL] Tasks: 5/5, (100.0%, 0 Failed); Active Workers: 5, Pending Workers: 0, Elapsed: 0m30s
+Info:    [CDPL] Summary: 
+Info:      All tasks finished successfully.
+Info:    Sun Nov 01 18:47:24 PST 2020: Done configure stage (Elapsed: 31 seconds | 0.01 hours  Memory: 631.53MB)
+Info:    =======================================================================================================
+Info:    ======================================================
+Info:    Sun Nov 01 18:47:24 PST 2020: Begin characterize stage
+Info:    Simulator used is hspice M-2017.03-SP2
+Info:    Simulator command is /cad/synopsys/hspice/M-2017.03-SP2/hspice/bin/hspice
+Info:    Optimizing cell order for efficiency...
+Info:    Checking templates...
+Info:    Loading information for 5 cells... (SMSC-62)
+Info:    Start generating characterization tasks. ... (SMSC-63)
+Info:    Generated 391 tasks. Bundling tasks into jobs and submitting... (SMSC-64)
+Info:    Characterization starting, distributing work via adaptive job manager... (IOSH-29)
+Info:    Using 10 standalone slots
+Info:    [CDPL] Tasks: 0/195, (0.0%, 0 Cached, 0 Failed); Active Workers: 5, Pending Workers: 5, Elapsed: 0m00s
+Info:    [CDPL] Tasks: 0/195, (0.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 0m30s
+Info:    [CDPL] Tasks: 0/195, (0.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 1m00s
+Info:    [CDPL] Tasks: 0/195, (0.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 1m30s
+Info:    [CDPL] Tasks: 0/195, (0.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 2m00s
+Info:    [CDPL] Tasks: 0/195, (0.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 2m30s
+Info:    [CDPL] Tasks: 0/195, (0.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 3m00s
+Info:    [CDPL] Tasks: 2/195, (1.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 3m30s
+Info:    [CDPL] Tasks: 2/195, (1.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 4m00s
+Info:    [CDPL] Tasks: 2/195, (1.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 4m27s
+Info:    [CDPL] Tasks: 2/195, (1.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 4m57s
+Info:    [CDPL] Tasks: 2/195, (1.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 5m27s
+Info:    [CDPL] Tasks: 2/195, (1.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 5m57s
+Info:    [CDPL] Tasks: 2/195, (1.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 6m27s
+Info:    [CDPL] Tasks: 2/195, (1.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 6m57s
+Info:    [CDPL] Tasks: 2/195, (1.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 7m27s
+Info:    [CDPL] Tasks: 2/195, (1.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 7m57s
+Info:    [CDPL] Tasks: 2/195, (1.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 8m27s
+Info:    [CDPL] Tasks: 2/195, (1.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 8m57s
+Info:    [CDPL] Tasks: 2/195, (1.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 9m27s
+Info:    [CDPL] Tasks: 2/195, (1.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 9m57s
+Info:    [CDPL] Tasks: 2/195, (1.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 10m27s
+Info:    [CDPL] Tasks: 2/195, (1.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 10m57s
+Info:    [CDPL] Tasks: 2/195, (1.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 11m27s
+Info:    [CDPL] Tasks: 3/195, (1.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 11m57s
+Info:    [CDPL] Tasks: 3/195, (1.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 12m27s
+Info:    [CDPL] Tasks: 3/195, (1.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 12m57s
+Info:    [CDPL] Tasks: 3/195, (1.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 13m27s
+Info:    [CDPL] Tasks: 3/195, (1.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 13m57s
+Info:    [CDPL] Tasks: 3/195, (1.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 14m27s
+Info:    [CDPL] Tasks: 4/195, (2.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 14m57s
+Info:    [CDPL] Tasks: 4/195, (2.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 15m27s
+Info:    [CDPL] Tasks: 4/195, (2.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 15m57s
+Info:    [CDPL] Tasks: 4/195, (2.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 16m27s
+Info:    [CDPL] Tasks: 4/195, (2.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 16m57s
+Info:    [CDPL] Tasks: 5/195, (2.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 17m27s
+Info:    [CDPL] Tasks: 6/195, (3.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 17m57s
+Info:    [CDPL] Tasks: 6/195, (3.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 18m27s
+Info:    [CDPL] Tasks: 6/195, (3.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 18m57s
+Info:    [CDPL] Tasks: 6/195, (3.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 19m27s
+Info:    [CDPL] Tasks: 6/195, (3.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 19m57s
+Info:    [CDPL] Tasks: 6/195, (3.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 20m27s
+Info:    [CDPL] Tasks: 8/195, (4.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 20m57s
+Info:    [CDPL] Tasks: 9/195, (4.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 21m27s
+Info:    [CDPL] Tasks: 10/195, (5.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 21m57s
+Info:    [CDPL] Tasks: 11/195, (5.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 22m27s
+Info:    [CDPL] Tasks: 11/195, (5.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 22m57s
+Info:    [CDPL] Tasks: 11/195, (5.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 23m27s
+Info:    [CDPL] Tasks: 11/195, (5.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 23m57s
+Info:    [CDPL] Tasks: 11/195, (5.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 24m27s
+Info:    [CDPL] Tasks: 11/195, (5.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 24m57s
+Info:    [CDPL] Tasks: 12/195, (6.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 25m27s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 25m57s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 26m27s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 26m57s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 27m27s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 27m57s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 28m27s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 28m57s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 29m27s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 29m57s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 30m27s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 30m57s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 31m27s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 31m57s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 32m27s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 32m57s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 33m27s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 33m57s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 34m27s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 34m57s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 35m27s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 35m57s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 36m27s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 36m57s
+Info:    [CDPL] Tasks: 13/195, (6.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 37m27s
+Info:    [CDPL] Tasks: 14/195, (7.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 37m57s
+Info:    [CDPL] Tasks: 14/195, (7.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 38m27s
+Info:    [CDPL] Tasks: 14/195, (7.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 38m57s
+Info:    [CDPL] Tasks: 15/195, (7.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 39m27s
+Info:    [CDPL] Tasks: 16/195, (8.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 39m57s
+Info:    [CDPL] Tasks: 16/195, (8.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 40m27s
+Info:    [CDPL] Tasks: 16/195, (8.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 40m57s
+Info:    [CDPL] Tasks: 17/195, (8.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 41m27s
+Info:    [CDPL] Tasks: 17/195, (8.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 41m57s
+Info:    [CDPL] Tasks: 18/195, (9.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 42m27s
+Info:    [CDPL] Tasks: 18/195, (9.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 42m57s
+Info:    [CDPL] Tasks: 18/195, (9.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 43m27s
+Info:    [CDPL] Tasks: 18/195, (9.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 43m57s
+Info:    [CDPL] Tasks: 18/195, (9.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 44m27s
+Info:    [CDPL] Tasks: 19/195, (9.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 44m57s
+Info:    [CDPL] Tasks: 19/195, (9.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 45m27s
+Info:    [CDPL] Tasks: 19/195, (9.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 45m57s
+Info:    [CDPL] Tasks: 19/195, (9.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 46m27s
+Info:    [CDPL] Tasks: 19/195, (9.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 46m57s
+Info:    [CDPL] Tasks: 19/195, (9.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 47m27s
+Info:    [CDPL] Tasks: 19/195, (9.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 47m57s
+Info:    [CDPL] Tasks: 21/195, (10.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 48m27s
+Info:    [CDPL] Tasks: 22/195, (11.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 48m57s
+Info:    [CDPL] Tasks: 22/195, (11.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 49m27s
+Info:    [CDPL] Tasks: 22/195, (11.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 49m57s
+Info:    [CDPL] Tasks: 22/195, (11.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 50m27s
+Info:    [CDPL] Tasks: 22/195, (11.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 50m57s
+Info:    [CDPL] Tasks: 23/195, (11.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 51m27s
+Info:    [CDPL] Tasks: 23/195, (11.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 51m57s
+Info:    [CDPL] Tasks: 23/195, (11.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 52m27s
+Info:    [CDPL] Tasks: 24/195, (12.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 52m57s
+Info:    [CDPL] Tasks: 24/195, (12.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 53m27s
+Info:    [CDPL] Tasks: 24/195, (12.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 53m57s
+Info:    [CDPL] Tasks: 25/195, (12.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 54m27s
+Info:    [CDPL] Tasks: 25/195, (12.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 54m57s
+Info:    [CDPL] Tasks: 25/195, (12.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 55m27s
+Info:    [CDPL] Tasks: 25/195, (12.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 55m57s
+Info:    [CDPL] Tasks: 25/195, (12.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 56m27s
+Info:    [CDPL] Tasks: 25/195, (12.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 56m57s
+Info:    [CDPL] Tasks: 25/195, (12.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 57m27s
+Info:    [CDPL] Tasks: 25/195, (12.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 57m57s
+Info:    [CDPL] Tasks: 25/195, (12.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 58m27s
+Info:    [CDPL] Tasks: 25/195, (12.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 58m57s
+Info:    [CDPL] Tasks: 26/195, (13.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 59m27s
+Info:    [CDPL] Tasks: 27/195, (13.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 59m57s
+Info:    [CDPL] Tasks: 27/195, (13.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 60m27s
+Info:    [CDPL] Tasks: 27/195, (13.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 60m57s
+Info:    [CDPL] Tasks: 28/195, (14.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 61m27s
+Info:    [CDPL] Tasks: 28/195, (14.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 61m57s
+Info:    [CDPL] Tasks: 29/195, (14.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 62m27s
+Info:    [CDPL] Tasks: 30/195, (15.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 62m57s
+Info:    [CDPL] Tasks: 31/195, (15.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 63m27s
+Info:    [CDPL] Tasks: 31/195, (15.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 63m57s
+Info:    [CDPL] Tasks: 31/195, (15.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 64m27s
+Info:    [CDPL] Tasks: 31/195, (15.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 64m57s
+Info:    [CDPL] Tasks: 31/195, (15.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 65m27s
+Info:    [CDPL] Tasks: 32/195, (16.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 65m57s
+Info:    [CDPL] Tasks: 32/195, (16.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 66m27s
+Info:    [CDPL] Tasks: 32/195, (16.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 66m57s
+Info:    [CDPL] Tasks: 32/195, (16.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 67m27s
+Info:    [CDPL] Tasks: 32/195, (16.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 67m57s
+Info:    [CDPL] Tasks: 32/195, (16.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 68m27s
+Info:    [CDPL] Tasks: 32/195, (16.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 68m57s
+Info:    [CDPL] Tasks: 32/195, (16.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 69m27s
+Info:    [CDPL] Tasks: 33/195, (16.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 69m57s
+Info:    [CDPL] Tasks: 33/195, (16.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 70m27s
+Info:    [CDPL] Tasks: 33/195, (16.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 70m57s
+Info:    [CDPL] Tasks: 34/195, (17.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 71m27s
+Info:    [CDPL] Tasks: 34/195, (17.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 71m57s
+Info:    [CDPL] Tasks: 34/195, (17.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 72m27s
+Info:    [CDPL] Tasks: 34/195, (17.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 72m57s
+Info:    [CDPL] Tasks: 34/195, (17.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 73m27s
+Info:    [CDPL] Tasks: 34/195, (17.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 73m57s
+Info:    [CDPL] Tasks: 34/195, (17.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 74m27s
+Info:    [CDPL] Tasks: 35/195, (17.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 74m57s
+Info:    [CDPL] Tasks: 35/195, (17.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 75m27s
+Info:    [CDPL] Tasks: 35/195, (17.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 75m57s
+Info:    [CDPL] Tasks: 35/195, (17.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 76m27s
+Info:    [CDPL] Tasks: 35/195, (17.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 76m57s
+Info:    [CDPL] Tasks: 35/195, (17.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 77m27s
+Info:    [CDPL] Tasks: 36/195, (18.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 77m57s
+Info:    [CDPL] Tasks: 36/195, (18.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 78m27s
+Info:    [CDPL] Tasks: 36/195, (18.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 78m57s
+Info:    [CDPL] Tasks: 36/195, (18.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 79m27s
+Info:    [CDPL] Tasks: 36/195, (18.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 79m57s
+Info:    [CDPL] Tasks: 37/195, (19.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 80m27s
+Info:    [CDPL] Tasks: 37/195, (19.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 80m57s
+Info:    [CDPL] Tasks: 37/195, (19.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 81m27s
+Info:    [CDPL] Tasks: 37/195, (19.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 81m57s
+Info:    [CDPL] Tasks: 37/195, (19.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 82m27s
+Info:    [CDPL] Tasks: 38/195, (19.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 82m57s
+Info:    [CDPL] Tasks: 38/195, (19.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 83m27s
+Info:    [CDPL] Tasks: 38/195, (19.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 83m57s
+Info:    [CDPL] Tasks: 38/195, (19.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 84m27s
+Info:    [CDPL] Tasks: 38/195, (19.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 84m57s
+Info:    [CDPL] Tasks: 38/195, (19.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 85m27s
+Info:    [CDPL] Tasks: 38/195, (19.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 85m57s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 86m27s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 86m57s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 87m27s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 87m57s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 88m27s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 88m57s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 89m27s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 89m57s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 90m27s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 90m57s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 91m27s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 91m57s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 92m27s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 92m57s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 93m27s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 93m57s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 94m27s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 94m57s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 95m27s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 95m57s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 96m27s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 96m57s
+Info:    [CDPL] Tasks: 39/195, (20.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 97m27s
+Info:    [CDPL] Tasks: 40/195, (20.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 97m57s
+Info:    [CDPL] Tasks: 40/195, (20.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 98m27s
+Info:    [CDPL] Tasks: 41/195, (21.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 98m57s
+Info:    [CDPL] Tasks: 41/195, (21.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 99m27s
+Info:    [CDPL] Tasks: 41/195, (21.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 99m57s
+Info:    [CDPL] Tasks: 42/195, (21.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 100m27s
+Info:    [CDPL] Tasks: 43/195, (22.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 100m57s
+Info:    [CDPL] Tasks: 43/195, (22.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 101m27s
+Info:    [CDPL] Tasks: 43/195, (22.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 101m57s
+Info:    [CDPL] Tasks: 43/195, (22.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 102m27s
+Info:    [CDPL] Tasks: 43/195, (22.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 102m57s
+Info:    [CDPL] Tasks: 43/195, (22.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 103m27s
+Info:    [CDPL] Tasks: 46/195, (23.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 103m57s
+Info:    [CDPL] Tasks: 47/195, (24.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 104m27s
+Info:    [CDPL] Tasks: 47/195, (24.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 104m57s
+Info:    [CDPL] Tasks: 47/195, (24.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 105m27s
+Info:    [CDPL] Tasks: 48/195, (24.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 105m57s
+Info:    [CDPL] Tasks: 48/195, (24.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 106m27s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 106m57s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 107m27s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 107m57s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 108m27s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 108m57s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 109m27s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 109m57s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 110m27s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 110m57s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 111m27s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 111m57s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 112m27s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 112m57s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 113m27s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 113m57s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 114m27s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 114m57s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 115m27s
+Info:    [CDPL] Tasks: 49/195, (25.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 115m57s
+Info:    [CDPL] Tasks: 50/195, (25.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 116m27s
+Info:    [CDPL] Tasks: 50/195, (25.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 116m57s
+Info:    [CDPL] Tasks: 50/195, (25.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 117m27s
+Info:    [CDPL] Tasks: 50/195, (25.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 117m57s
+Info:    [CDPL] Tasks: 50/195, (25.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 118m27s
+Info:    [CDPL] Tasks: 50/195, (25.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 118m57s
+Info:    [CDPL] Tasks: 50/195, (25.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 119m27s
+Info:    [CDPL] Tasks: 51/195, (26.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 119m57s
+Info:    [CDPL] Tasks: 51/195, (26.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 120m27s
+Info:    [CDPL] Tasks: 51/195, (26.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 120m57s
+Info:    [CDPL] Tasks: 51/195, (26.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 121m27s
+Info:    [CDPL] Tasks: 51/195, (26.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 121m57s
+Info:    [CDPL] Tasks: 51/195, (26.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 122m27s
+Info:    [CDPL] Tasks: 51/195, (26.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 122m57s
+Info:    [CDPL] Tasks: 52/195, (26.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 123m27s
+Info:    [CDPL] Tasks: 52/195, (26.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 123m57s
+Info:    [CDPL] Tasks: 52/195, (26.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 124m27s
+Info:    [CDPL] Tasks: 52/195, (26.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 124m57s
+Info:    [CDPL] Tasks: 52/195, (26.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 125m27s
+Info:    [CDPL] Tasks: 53/195, (27.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 125m57s
+Info:    [CDPL] Tasks: 54/195, (27.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 126m27s
+Info:    [CDPL] Tasks: 54/195, (27.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 126m57s
+Info:    [CDPL] Tasks: 54/195, (27.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 127m27s
+Info:    [CDPL] Tasks: 54/195, (27.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 127m57s
+Info:    [CDPL] Tasks: 54/195, (27.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 128m27s
+Info:    [CDPL] Tasks: 54/195, (27.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 128m57s
+Info:    [CDPL] Tasks: 54/195, (27.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 129m27s
+Info:    [CDPL] Tasks: 55/195, (28.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 129m57s
+Info:    [CDPL] Tasks: 55/195, (28.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 130m27s
+Info:    [CDPL] Tasks: 55/195, (28.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 130m57s
+Info:    [CDPL] Tasks: 55/195, (28.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 131m27s
+Info:    [CDPL] Tasks: 55/195, (28.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 131m57s
+Info:    [CDPL] Tasks: 55/195, (28.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 132m27s
+Info:    [CDPL] Tasks: 55/195, (28.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 132m57s
+Info:    [CDPL] Tasks: 56/195, (28.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 133m27s
+Info:    [CDPL] Tasks: 56/195, (28.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 133m57s
+Info:    [CDPL] Tasks: 56/195, (28.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 134m27s
+Info:    [CDPL] Tasks: 56/195, (28.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 134m57s
+Info:    [CDPL] Tasks: 56/195, (28.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 135m27s
+Info:    [CDPL] Tasks: 56/195, (28.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 135m57s
+Info:    [CDPL] Tasks: 56/195, (28.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 136m27s
+Info:    [CDPL] Tasks: 57/195, (29.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 136m57s
+Info:    [CDPL] Tasks: 57/195, (29.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 137m27s
+Info:    [CDPL] Tasks: 59/195, (30.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 137m57s
+Info:    [CDPL] Tasks: 59/195, (30.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 138m27s
+Info:    [CDPL] Tasks: 59/195, (30.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 138m57s
+Info:    [CDPL] Tasks: 59/195, (30.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 139m27s
+Info:    [CDPL] Tasks: 59/195, (30.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 139m57s
+Info:    [CDPL] Tasks: 59/195, (30.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 140m27s
+Info:    [CDPL] Tasks: 59/195, (30.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 140m57s
+Info:    [CDPL] Tasks: 59/195, (30.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 141m27s
+Info:    [CDPL] Tasks: 60/195, (30.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 141m57s
+Info:    [CDPL] Tasks: 60/195, (30.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 142m27s
+Info:    [CDPL] Tasks: 60/195, (30.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 142m57s
+Info:    [CDPL] Tasks: 60/195, (30.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 143m27s
+Info:    [CDPL] Tasks: 60/195, (30.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 143m57s
+Info:    [CDPL] Tasks: 60/195, (30.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 144m27s
+Info:    [CDPL] Tasks: 60/195, (30.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 144m57s
+Info:    [CDPL] Tasks: 60/195, (30.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 145m27s
+Info:    [CDPL] Tasks: 61/195, (31.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 145m57s
+Info:    [CDPL] Tasks: 61/195, (31.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 146m27s
+Info:    [CDPL] Tasks: 61/195, (31.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 146m57s
+Info:    [CDPL] Tasks: 62/195, (31.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 147m27s
+Info:    [CDPL] Tasks: 62/195, (31.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 147m57s
+Info:    [CDPL] Tasks: 62/195, (31.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 148m27s
+Info:    [CDPL] Tasks: 63/195, (32.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 148m57s
+Info:    [CDPL] Tasks: 64/195, (32.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 149m27s
+Info:    [CDPL] Tasks: 64/195, (32.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 149m57s
+Info:    [CDPL] Tasks: 64/195, (32.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 150m27s
+Info:    [CDPL] Tasks: 65/195, (33.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 150m57s
+Info:    [CDPL] Tasks: 65/195, (33.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 151m27s
+Info:    [CDPL] Tasks: 65/195, (33.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 151m57s
+Info:    [CDPL] Tasks: 66/195, (33.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 152m27s
+Info:    [CDPL] Tasks: 66/195, (33.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 152m57s
+Info:    [CDPL] Tasks: 66/195, (33.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 153m27s
+Info:    [CDPL] Tasks: 66/195, (33.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 153m57s
+Info:    [CDPL] Tasks: 66/195, (33.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 154m27s
+Info:    [CDPL] Tasks: 66/195, (33.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 154m57s
+Info:    [CDPL] Tasks: 66/195, (33.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 155m27s
+Info:    [CDPL] Tasks: 66/195, (33.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 155m57s
+Info:    [CDPL] Tasks: 66/195, (33.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 156m27s
+Info:    [CDPL] Tasks: 66/195, (33.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 156m57s
+Info:    [CDPL] Tasks: 66/195, (33.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 157m27s
+Info:    [CDPL] Tasks: 66/195, (33.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 157m57s
+Info:    [CDPL] Tasks: 66/195, (33.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 158m27s
+Info:    [CDPL] Tasks: 67/195, (34.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 158m57s
+Info:    [CDPL] Tasks: 67/195, (34.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 159m27s
+Info:    [CDPL] Tasks: 67/195, (34.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 159m57s
+Info:    [CDPL] Tasks: 67/195, (34.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 160m27s
+Info:    [CDPL] Tasks: 68/195, (34.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 160m57s
+Info:    [CDPL] Tasks: 68/195, (34.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 161m27s
+Info:    [CDPL] Tasks: 68/195, (34.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 161m57s
+Info:    [CDPL] Tasks: 68/195, (34.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 162m27s
+Info:    [CDPL] Tasks: 69/195, (35.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 162m57s
+Info:    [CDPL] Tasks: 69/195, (35.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 163m27s
+Info:    [CDPL] Tasks: 69/195, (35.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 163m57s
+Info:    [CDPL] Tasks: 71/195, (36.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 164m27s
+Info:    [CDPL] Tasks: 71/195, (36.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 164m57s
+Info:    [CDPL] Tasks: 71/195, (36.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 165m27s
+Info:    [CDPL] Tasks: 71/195, (36.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 165m57s
+Info:    [CDPL] Tasks: 72/195, (36.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 166m27s
+Info:    [CDPL] Tasks: 73/195, (37.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 166m57s
+Info:    [CDPL] Tasks: 73/195, (37.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 167m27s
+Info:    [CDPL] Tasks: 75/195, (38.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 167m57s
+Info:    [CDPL] Tasks: 75/195, (38.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 168m27s
+Info:    [CDPL] Tasks: 75/195, (38.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 168m57s
+Info:    [CDPL] Tasks: 75/195, (38.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 169m27s
+Info:    [CDPL] Tasks: 76/195, (39.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 169m57s
+Info:    [CDPL] Tasks: 77/195, (39.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 170m27s
+Info:    [CDPL] Tasks: 77/195, (39.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 170m57s
+Info:    [CDPL] Tasks: 78/195, (40.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 171m27s
+Info:    [CDPL] Tasks: 78/195, (40.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 171m57s
+Info:    [CDPL] Tasks: 78/195, (40.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 172m27s
+Info:    [CDPL] Tasks: 78/195, (40.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 172m57s
+Info:    [CDPL] Tasks: 79/195, (40.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 173m27s
+Info:    [CDPL] Tasks: 81/195, (41.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 173m57s
+Info:    [CDPL] Tasks: 81/195, (41.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 174m27s
+Info:    [CDPL] Tasks: 81/195, (41.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 174m57s
+Info:    [CDPL] Tasks: 81/195, (41.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 175m27s
+Info:    [CDPL] Tasks: 81/195, (41.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 175m57s
+Info:    [CDPL] Tasks: 81/195, (41.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 176m27s
+Info:    [CDPL] Tasks: 83/195, (42.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 176m57s
+Info:    [CDPL] Tasks: 83/195, (42.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 177m27s
+Info:    [CDPL] Tasks: 83/195, (42.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 177m57s
+Info:    [CDPL] Tasks: 83/195, (42.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 178m27s
+Info:    [CDPL] Tasks: 84/195, (43.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 178m57s
+Info:    [CDPL] Tasks: 84/195, (43.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 179m27s
+Info:    [CDPL] Tasks: 84/195, (43.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 179m57s
+Info:    [CDPL] Tasks: 86/195, (44.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 180m27s
+Info:    [CDPL] Tasks: 86/195, (44.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 180m57s
+Info:    [CDPL] Tasks: 86/195, (44.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 181m27s
+Info:    [CDPL] Tasks: 86/195, (44.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 181m57s
+Info:    [CDPL] Tasks: 87/195, (44.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 182m27s
+Info:    [CDPL] Tasks: 88/195, (45.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 182m57s
+Info:    [CDPL] Tasks: 89/195, (45.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 183m27s
+Info:    [CDPL] Tasks: 90/195, (46.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 183m57s
+Info:    [CDPL] Tasks: 90/195, (46.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 184m27s
+Info:    [CDPL] Tasks: 90/195, (46.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 184m57s
+Info:    [CDPL] Tasks: 91/195, (46.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 185m27s
+Info:    [CDPL] Tasks: 91/195, (46.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 185m57s
+Info:    [CDPL] Tasks: 91/195, (46.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 186m27s
+Info:    [CDPL] Tasks: 91/195, (46.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 186m57s
+Info:    [CDPL] Tasks: 91/195, (46.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 187m27s
+Info:    [CDPL] Tasks: 92/195, (47.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 187m57s
+Info:    [CDPL] Tasks: 92/195, (47.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 188m27s
+Info:    [CDPL] Tasks: 92/195, (47.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 188m57s
+Info:    [CDPL] Tasks: 93/195, (47.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 189m27s
+Info:    [CDPL] Tasks: 93/195, (47.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 189m57s
+Info:    [CDPL] Tasks: 95/195, (48.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 190m27s
+Info:    [CDPL] Tasks: 96/195, (49.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 190m57s
+Info:    [CDPL] Tasks: 96/195, (49.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 191m27s
+Info:    [CDPL] Tasks: 96/195, (49.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 191m57s
+Info:    [CDPL] Tasks: 97/195, (49.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 192m27s
+Info:    [CDPL] Tasks: 97/195, (49.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 192m57s
+Info:    [CDPL] Tasks: 97/195, (49.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 193m27s
+Info:    [CDPL] Tasks: 98/195, (50.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 193m57s
+Info:    [CDPL] Tasks: 98/195, (50.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 194m27s
+Info:    [CDPL] Tasks: 99/195, (50.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 194m57s
+Info:    [CDPL] Tasks: 99/195, (50.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 195m27s
+Info:    [CDPL] Tasks: 99/195, (50.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 195m57s
+Info:    [CDPL] Tasks: 99/195, (50.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 196m27s
+Info:    [CDPL] Tasks: 99/195, (50.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 196m57s
+Info:    [CDPL] Tasks: 99/195, (50.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 197m27s
+Info:    [CDPL] Tasks: 99/195, (50.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 197m57s
+Info:    [CDPL] Tasks: 100/195, (51.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 198m27s
+Info:    [CDPL] Tasks: 100/195, (51.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 198m57s
+Info:    [CDPL] Tasks: 100/196, (51.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 199m27s
+Info:    [CDPL] Tasks: 100/196, (51.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 199m57s
+Info:    [CDPL] Tasks: 102/196, (52.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 200m27s
+Info:    [CDPL] Tasks: 104/196, (53.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 200m57s
+Info:    [CDPL] Tasks: 104/196, (53.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 201m27s
+Info:    [CDPL] Tasks: 104/196, (53.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 201m57s
+Info:    [CDPL] Tasks: 104/196, (53.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 202m27s
+Info:    [CDPL] Tasks: 105/196, (53.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 202m57s
+Info:    [CDPL] Tasks: 105/196, (53.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 203m27s
+Info:    [CDPL] Tasks: 105/196, (53.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 203m57s
+Info:    [CDPL] Tasks: 105/196, (53.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 204m27s
+Info:    [CDPL] Tasks: 106/196, (54.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 204m57s
+Info:    [CDPL] Tasks: 106/196, (54.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 205m27s
+Info:    [CDPL] Tasks: 106/196, (54.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 205m57s
+Info:    [CDPL] Tasks: 106/196, (54.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 206m27s
+Info:    [CDPL] Tasks: 107/196, (54.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 206m57s
+Info:    [CDPL] Tasks: 108/196, (55.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 207m27s
+Info:    [CDPL] Tasks: 108/196, (55.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 207m57s
+Info:    [CDPL] Tasks: 109/196, (55.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 208m27s
+Info:    [CDPL] Tasks: 110/196, (56.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 208m57s
+Info:    [CDPL] Tasks: 110/196, (56.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 209m27s
+Info:    [CDPL] Tasks: 110/196, (56.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 209m57s
+Info:    [CDPL] Tasks: 110/196, (56.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 210m27s
+Info:    [CDPL] Tasks: 110/196, (56.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 210m57s
+Info:    [CDPL] Tasks: 110/196, (56.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 211m27s
+Info:    [CDPL] Tasks: 110/196, (56.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 211m57s
+Info:    [CDPL] Tasks: 110/196, (56.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 212m27s
+Info:    [CDPL] Tasks: 110/196, (56.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 212m57s
+Info:    [CDPL] Tasks: 110/196, (56.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 213m27s
+Info:    [CDPL] Tasks: 110/196, (56.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 213m57s
+Info:    [CDPL] Tasks: 110/196, (56.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 214m27s
+Info:    [CDPL] Tasks: 110/196, (56.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 214m57s
+Info:    [CDPL] Tasks: 110/196, (56.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 215m27s
+Info:    [CDPL] Tasks: 110/196, (56.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 215m57s
+Info:    [CDPL] Tasks: 110/196, (56.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 216m27s
+Info:    [CDPL] Tasks: 110/196, (56.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 216m57s
+Info:    [CDPL] Tasks: 110/196, (56.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 217m27s
+Info:    [CDPL] Tasks: 112/196, (57.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 217m57s
+Info:    [CDPL] Tasks: 113/196, (57.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 218m27s
+Info:    [CDPL] Tasks: 113/196, (57.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 218m57s
+Info:    [CDPL] Tasks: 113/196, (57.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 219m27s
+Info:    [CDPL] Tasks: 113/196, (57.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 219m57s
+Info:    [CDPL] Tasks: 114/196, (58.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 220m27s
+Info:    [CDPL] Tasks: 114/196, (58.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 220m57s
+Info:    [CDPL] Tasks: 114/196, (58.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 221m27s
+Info:    [CDPL] Tasks: 114/196, (58.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 221m57s
+Info:    [CDPL] Tasks: 116/196, (59.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 222m27s
+Info:    [CDPL] Tasks: 117/196, (59.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 222m57s
+Info:    [CDPL] Tasks: 117/196, (59.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 223m27s
+Info:    [CDPL] Tasks: 117/196, (59.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 223m57s
+Info:    [CDPL] Tasks: 117/196, (59.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 224m27s
+Info:    [CDPL] Tasks: 120/196, (61.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 224m57s
+Info:    [CDPL] Tasks: 120/196, (61.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 225m27s
+Info:    [CDPL] Tasks: 120/196, (61.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 225m57s
+Info:    [CDPL] Tasks: 120/196, (61.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 226m27s
+Info:    [CDPL] Tasks: 120/196, (61.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 226m57s
+Info:    [CDPL] Tasks: 123/196, (62.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 227m27s
+Info:    [CDPL] Tasks: 124/196, (63.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 227m57s
+Info:    [CDPL] Tasks: 124/196, (63.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 228m27s
+Info:    [CDPL] Tasks: 124/196, (63.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 228m57s
+Info:    [CDPL] Tasks: 124/196, (63.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 229m27s
+Info:    [CDPL] Tasks: 127/196, (64.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 229m57s
+Info:    [CDPL] Tasks: 127/196, (64.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 230m27s
+Info:    [CDPL] Tasks: 127/196, (64.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 230m57s
+Info:    [CDPL] Tasks: 127/196, (64.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 231m27s
+Info:    [CDPL] Tasks: 127/196, (64.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 231m57s
+Info:    [CDPL] Tasks: 127/196, (64.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 232m27s
+Info:    [CDPL] Tasks: 127/196, (64.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 232m57s
+Info:    [CDPL] Tasks: 127/196, (64.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 233m27s
+Info:    [CDPL] Tasks: 127/196, (64.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 233m57s
+Info:    [CDPL] Tasks: 127/196, (64.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 234m27s
+Info:    [CDPL] Tasks: 127/196, (64.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 234m57s
+Info:    [CDPL] Tasks: 127/196, (64.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 235m27s
+Info:    [CDPL] Tasks: 128/196, (65.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 235m57s
+Info:    [CDPL] Tasks: 128/196, (65.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 236m27s
+Info:    [CDPL] Tasks: 128/196, (65.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 236m57s
+Info:    [CDPL] Tasks: 128/196, (65.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 237m27s
+Info:    [CDPL] Tasks: 128/196, (65.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 237m57s
+Info:    [CDPL] Tasks: 128/196, (65.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 238m27s
+Info:    [CDPL] Tasks: 129/196, (65.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 238m57s
+Info:    [CDPL] Tasks: 129/196, (65.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 239m27s
+Info:    [CDPL] Tasks: 129/196, (65.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 239m57s
+Info:    [CDPL] Tasks: 129/196, (65.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 240m27s
+Info:    [CDPL] Tasks: 130/196, (66.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 240m57s
+Info:    [CDPL] Tasks: 130/196, (66.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 241m27s
+Info:    [CDPL] Tasks: 130/196, (66.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 241m57s
+Info:    [CDPL] Tasks: 131/196, (66.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 242m27s
+Info:    [CDPL] Tasks: 132/196, (67.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 242m57s
+Info:    [CDPL] Tasks: 133/196, (67.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 243m27s
+Info:    [CDPL] Tasks: 133/196, (67.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 243m57s
+Info:    [CDPL] Tasks: 134/196, (68.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 244m27s
+Info:    [CDPL] Tasks: 134/196, (68.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 244m57s
+Info:    [CDPL] Tasks: 134/196, (68.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 245m27s
+Info:    [CDPL] Tasks: 136/196, (69.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 245m57s
+Info:    [CDPL] Tasks: 136/196, (69.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 246m27s
+Info:    [CDPL] Tasks: 138/197, (70.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 246m57s
+Info:    [CDPL] Tasks: 138/197, (70.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 247m27s
+Info:    [CDPL] Tasks: 138/197, (70.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 247m57s
+Info:    [CDPL] Tasks: 139/197, (70.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 248m27s
+Info:    [CDPL] Tasks: 139/197, (70.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 248m57s
+Info:    [CDPL] Tasks: 139/197, (70.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 249m27s
+Info:    [CDPL] Tasks: 139/197, (70.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 249m57s
+Info:    [CDPL] Tasks: 139/197, (70.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 250m27s
+Info:    [CDPL] Tasks: 139/197, (70.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 250m57s
+Info:    [CDPL] Tasks: 139/197, (70.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 251m27s
+Info:    [CDPL] Tasks: 140/197, (71.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 251m57s
+Info:    [CDPL] Tasks: 141/197, (71.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 252m27s
+Info:    [CDPL] Tasks: 141/197, (71.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 252m57s
+Info:    [CDPL] Tasks: 141/197, (71.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 253m27s
+Info:    [CDPL] Tasks: 142/197, (72.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 253m57s
+Info:    [CDPL] Tasks: 143/197, (72.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 254m27s
+Info:    [CDPL] Tasks: 143/197, (72.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 254m57s
+Info:    [CDPL] Tasks: 143/197, (72.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 255m27s
+Info:    [CDPL] Tasks: 144/197, (73.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 255m57s
+Info:    [CDPL] Tasks: 146/197, (74.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 256m27s
+Info:    [CDPL] Tasks: 146/197, (74.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 256m57s
+Info:    [CDPL] Tasks: 146/197, (74.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 257m27s
+Info:    [CDPL] Tasks: 148/197, (75.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 257m57s
+Info:    [CDPL] Tasks: 148/197, (75.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 258m27s
+Info:    [CDPL] Tasks: 148/197, (75.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 258m57s
+Info:    [CDPL] Tasks: 148/197, (75.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 259m27s
+Info:    [CDPL] Tasks: 148/197, (75.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 259m57s
+Info:    [CDPL] Tasks: 150/197, (76.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 260m27s
+Info:    [CDPL] Tasks: 150/197, (76.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 260m57s
+Info:    [CDPL] Tasks: 150/197, (76.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 261m27s
+Info:    [CDPL] Tasks: 150/197, (76.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 261m57s
+Info:    [CDPL] Tasks: 150/197, (76.1%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 262m27s
+Info:    [CDPL] Tasks: 151/197, (76.6%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 262m57s
+Info:    [CDPL] Tasks: 152/197, (77.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 263m27s
+Info:    [CDPL] Tasks: 152/197, (77.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 263m57s
+Info:    [CDPL] Tasks: 152/197, (77.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 264m27s
+Info:    [CDPL] Tasks: 153/197, (77.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 264m57s
+Info:    [CDPL] Tasks: 153/197, (77.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 265m27s
+Info:    [CDPL] Tasks: 154/197, (78.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 265m57s
+Info:    [CDPL] Tasks: 154/197, (78.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 266m27s
+Info:    [CDPL] Tasks: 154/197, (78.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 266m57s
+Info:    [CDPL] Tasks: 155/197, (78.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 267m27s
+Info:    [CDPL] Tasks: 156/197, (79.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 267m57s
+Info:    [CDPL] Tasks: 156/197, (79.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 268m27s
+Info:    [CDPL] Tasks: 157/197, (79.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 268m57s
+Info:    [CDPL] Tasks: 157/197, (79.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 269m27s
+Info:    [CDPL] Tasks: 159/197, (80.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 269m57s
+Info:    [CDPL] Tasks: 159/197, (80.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 270m27s
+Info:    [CDPL] Tasks: 160/197, (81.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 270m57s
+Info:    [CDPL] Tasks: 160/197, (81.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 271m27s
+Info:    [CDPL] Tasks: 160/197, (81.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 271m57s
+Info:    [CDPL] Tasks: 160/197, (81.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 272m27s
+Info:    [CDPL] Tasks: 160/197, (81.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 272m57s
+Info:    [CDPL] Tasks: 160/197, (81.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 273m27s
+Info:    [CDPL] Tasks: 160/197, (81.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 273m57s
+Info:    [CDPL] Tasks: 160/197, (81.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 274m27s
+Info:    [CDPL] Tasks: 160/197, (81.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 274m57s
+Info:    [CDPL] Tasks: 160/197, (81.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 275m27s
+Info:    [CDPL] Tasks: 160/197, (81.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 275m57s
+Info:    [CDPL] Tasks: 160/197, (81.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 276m27s
+Info:    [CDPL] Tasks: 161/197, (81.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 276m57s
+Info:    [CDPL] Tasks: 161/197, (81.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 277m27s
+Info:    [CDPL] Tasks: 162/197, (82.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 277m57s
+Info:    [CDPL] Tasks: 162/197, (82.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 278m27s
+Info:    [CDPL] Tasks: 163/197, (82.7%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 278m57s
+Info:    [CDPL] Tasks: 164/197, (83.2%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 279m27s
+Info:    [CDPL] Tasks: 165/197, (83.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 279m57s
+Info:    [CDPL] Tasks: 167/197, (84.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 280m27s
+Info:    [CDPL] Tasks: 167/197, (84.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 280m57s
+Info:    [CDPL] Tasks: 167/197, (84.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 281m27s
+Info:    [CDPL] Tasks: 167/197, (84.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 281m57s
+Info:    [CDPL] Tasks: 167/197, (84.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 282m27s
+Info:    [CDPL] Tasks: 167/197, (84.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 282m57s
+Info:    [CDPL] Tasks: 170/197, (86.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 283m27s
+Info:    [CDPL] Tasks: 171/197, (86.8%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 283m57s
+Info:    [CDPL] Tasks: 172/197, (87.3%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 284m27s
+Info:    [CDPL] Tasks: 172/198, (86.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 284m57s
+Info:    [CDPL] Tasks: 174/198, (87.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 285m27s
+Info:    [CDPL] Tasks: 175/198, (88.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 285m57s
+Info:    [CDPL] Tasks: 177/198, (89.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 286m27s
+Info:    [CDPL] Tasks: 177/198, (89.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 286m57s
+Info:    [CDPL] Tasks: 177/198, (89.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 287m27s
+Info:    [CDPL] Tasks: 177/198, (89.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 287m57s
+Info:    [CDPL] Tasks: 177/198, (89.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 288m27s
+Info:    [CDPL] Tasks: 177/198, (89.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 288m57s
+Info:    [CDPL] Tasks: 178/198, (89.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 289m27s
+Info:    [CDPL] Tasks: 178/198, (89.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 289m57s
+Info:    [CDPL] Tasks: 178/198, (89.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 290m27s
+Info:    [CDPL] Tasks: 178/198, (89.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 290m57s
+Info:    [CDPL] Tasks: 178/198, (89.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 291m27s
+Info:    [CDPL] Tasks: 178/198, (89.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 291m57s
+Info:    [CDPL] Tasks: 178/198, (89.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 292m27s
+Info:    [CDPL] Tasks: 178/198, (89.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 292m57s
+Info:    [CDPL] Tasks: 179/198, (90.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 293m27s
+Info:    [CDPL] Tasks: 179/198, (90.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 293m57s
+Info:    [CDPL] Tasks: 179/198, (90.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 294m27s
+Info:    [CDPL] Tasks: 179/198, (90.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 294m57s
+Info:    [CDPL] Tasks: 179/198, (90.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 295m27s
+Info:    [CDPL] Tasks: 179/198, (90.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 295m57s
+Info:    [CDPL] Tasks: 179/198, (90.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 296m27s
+Info:    [CDPL] Tasks: 179/198, (90.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 296m57s
+Info:    [CDPL] Tasks: 180/198, (90.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 297m27s
+Info:    [CDPL] Tasks: 180/198, (90.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 297m57s
+Info:    [CDPL] Tasks: 180/198, (90.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 298m27s
+Info:    [CDPL] Tasks: 182/198, (91.9%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 298m57s
+Info:    [CDPL] Tasks: 185/198, (93.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 299m27s
+Info:    [CDPL] Tasks: 185/198, (93.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 299m57s
+Info:    [CDPL] Tasks: 185/198, (93.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 300m27s
+Info:    [CDPL] Tasks: 187/198, (94.4%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 300m57s
+Info:    [CDPL] Tasks: 189/198, (95.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 301m27s
+Info:    [CDPL] Tasks: 190/199, (95.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 301m57s
+Info:    [CDPL] Tasks: 191/199, (96.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 302m27s
+Info:    [CDPL] Tasks: 193/199, (97.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 302m57s
+Info:    [CDPL] Tasks: 194/199, (97.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 303m27s
+Info:    [CDPL] Tasks: 195/199, (98.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 303m57s
+Info:    [CDPL] Tasks: 195/199, (98.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 304m27s
+Info:    [CDPL] Tasks: 195/199, (98.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 304m57s
+Info:    [CDPL] Tasks: 196/199, (98.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 305m27s
+Info:    [CDPL] Tasks: 196/199, (98.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 305m57s
+Info:    [CDPL] Tasks: 197/199, (99.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 306m27s
+Info:    [CDPL] Tasks: 197/199, (99.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 306m57s
+Info:    [CDPL] Tasks: 197/199, (99.0%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 307m27s
+Info:    [CDPL] Tasks: 198/199, (99.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 307m57s
+Info:    [CDPL] Tasks: 198/199, (99.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 308m27s
+Info:    [CDPL] Tasks: 198/199, (99.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 308m57s
+Info:    [CDPL] Tasks: 198/199, (99.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 309m27s
+Info:    [CDPL] Tasks: 198/199, (99.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 309m57s
+Info:    [CDPL] Tasks: 198/199, (99.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 310m27s
+Info:    [CDPL] Tasks: 198/199, (99.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 310m57s
+Info:    [CDPL] Tasks: 198/199, (99.5%, 0 Cached, 0 Failed); Active Workers: 10, Pending Workers: 0, Elapsed: 311m27s
+Info:    [CDPL] Tasks: 198/199, (99.5%, 0 Cached, 0 Failed); Active Workers: 9, Pending Workers: 0, Elapsed: 311m57s
+Info:    [CDPL] Tasks: 198/199, (99.5%, 0 Cached, 0 Failed); Active Workers: 8, Pending Workers: 0, Elapsed: 312m27s
+Info:    [CDPL] Tasks: 198/199, (99.5%, 0 Cached, 0 Failed); Active Workers: 6, Pending Workers: 0, Elapsed: 312m57s
+Info:    [CDPL] Tasks: 198/199, (99.5%, 0 Cached, 0 Failed); Active Workers: 5, Pending Workers: 0, Elapsed: 313m27s
+Info:    [CDPL] Tasks: 199/199, (100.0%, 0 Cached, 0 Failed); Active Workers: 4, Pending Workers: 0, Elapsed: 313m57s
+Info:    [CDPL] Tasks: 200/200, (100.0%, 0 Cached, 0 Failed); Active Workers: 4, Pending Workers: 0, Elapsed: 314m27s
+Info:    [CDPL] Summary: 
+Info:      All tasks finished successfully.
+Info:    Mon Nov 02 00:01:52 PST 2020: Done characterize stage (Elapsed: 18868 seconds | 5.24 hours  Memory: 633.56MB)
+Info:    =============================================================================================================
+Info:    ===============================================
+Info:    Mon Nov 02 00:01:52 PST 2020: Begin model stage
+Info:    Optimizing cell order for efficiency...
+Info:    Loading information for 5 cells... (SMSC-62)
+Info:    Start generating modeling tasks. ... (SMSC-63)
+Info:    Generated 5 tasks. Bundling tasks into jobs and submitting... (SMSC-64)
+Info:    Using 10 standalone slots
+Info:    [CDPL] Tasks: 0/5, (0.0%, 0 Failed); Active Workers: 4, Pending Workers: 1, Elapsed: 0m00s
+Info:    [CDPL] Tasks: 5/5, (100.0%, 0 Failed); Active Workers: 5, Pending Workers: 0, Elapsed: 0m30s
+Info:    [CDPL] Summary: 
+Info:      All tasks finished successfully.
+Info:    Merging cell level models...
+Info:    ===============================================
+Info:    Mon Nov 02 00:02:23 PST 2020: Begin merge stage
+Info:    Merging 5 cell models in /home/akashl/NEM-Relay-CAD/liberty/nems40tt/models/liberty/cells
+Info:    Merged Liberty model created /home/akashl/NEM-Relay-CAD/liberty/nems40tt/models/liberty/verilog_nems40tt.lib. (IOSH-61)
+Info:    Mon Nov 02 00:02:24 PST 2020: Done merge stage (Elapsed: 1 seconds | 0.00 hours  Memory: 633.59MB)
+Info:    ==================================================================================================
+Info:    Reading /home/akashl/NEM-Relay-CAD/liberty/nems40tt/models/liberty/verilog_nems40tt.lib ...
+Info:    Creating Verilog files in "/home/akashl/NEM-Relay-CAD/liberty/nems40tt/models/verilog".
+Info:    Mon Nov 02 00:02:25 PST 2020: Done model stage (Elapsed: 33 seconds | 0.01 hours  Memory: 642.20MB)
+Info:    ===================================================================================================
+Info:    ===============================================
+Info:    Mon Nov 02 00:02:25 PST 2020: Begin model stage
+Info:    Optimizing cell order for efficiency...
+Info:    Loading information for 5 cells... (SMSC-62)
+Info:    Start generating modeling tasks. ... (SMSC-63)
+Info:    Generated 5 tasks. Bundling tasks into jobs and submitting... (SMSC-64)
+Info:    Modeling starting, distributing work via adaptive job manager... (IOSH-29)
+Info:    Using 10 standalone slots
+Info:    [CDPL] Tasks: 0/5, (0.0%, 0 Failed); Active Workers: 5, Pending Workers: 0, Elapsed: 0m00s
+Warning: nem_ohmux_invd0_10i_8b::VB: Negative leakage power (-2.70467e-23) in state 'S9&!S8&!S3&!S2&!S1&!S0&!S7&!S6&!S5&!S4&!I9&!I8&!I1&!I3&!I2&!I5&!I4&!I7&!I6&ZN&!I0' is modeled by replace_negative_leakage_with (0)
+Warning: nem_ohmux_invd0_4i_8b::VB: Negative leakage power (-1.5191e-23) in state 'S3&!S2&!S1&!S0&!I1&!I2&!I3&ZN&!I0' is modeled by replace_negative_leakage_with (0)
+Warning: nem_ohmux_invd0_2i_8b::VB: Negative leakage power (-1.08976e-23) in state '!I1&S1&!S0&ZN&!I0' is modeled by replace_negative_leakage_with (0)
+Warning: nem_ohmux_invd0_2i_1b::VB: Negative leakage power (-5.4665e-24) in state 'S1&!S0&!I1_0&ZN_0&!I0_0' is modeled by replace_negative_leakage_with (0)
+Info:    [CDPL] Tasks: 5/5, (100.0%, 0 Failed); Active Workers: 5, Pending Workers: 0, Elapsed: 0m30s
+Info:    [CDPL] Summary: 
+Info:      All tasks finished successfully.
+Info:    Creating Liberty file "/home/akashl/NEM-Relay-CAD/liberty/nems40tt/models/liberty/nldm_nems40tt.lib".
+Info:    Library merging time: 0.113 secs.
+Info:    Mon Nov 02 00:02:56 PST 2020: Done model stage (Elapsed: 31 seconds | 0.01 hours  Memory: 642.20MB)
+Info:    ===================================================================================================
+Info:    ===============================================
+Info:    Mon Nov 02 00:02:56 PST 2020: Begin model stage
+Info:    Optimizing cell order for efficiency...
+Info:    Loading information for 5 cells... (SMSC-62)
+Info:    Start generating modeling tasks. ... (SMSC-63)
+Info:    Generated 5 tasks. Bundling tasks into jobs and submitting... (SMSC-64)
+Info:    Modeling starting, distributing work via adaptive job manager... (IOSH-29)
+Info:    Using 10 standalone slots
+Info:    [CDPL] Tasks: 0/5, (0.0%, 0 Failed); Active Workers: 5, Pending Workers: 0, Elapsed: 0m00s
+Warning: nem_ohmux_invd0_10i_8b::VB: Negative leakage power (-2.70467e-23) in state 'S9&!S8&!S3&!S2&!S1&!S0&!S7&!S6&!S5&!S4&!I9&!I8&!I1&!I3&!I2&!I5&!I4&!I7&!I6&ZN&!I0' is modeled by replace_negative_leakage_with (0)
+Warning: nem_ohmux_invd0_4i_8b::VB: Negative leakage power (-1.5191e-23) in state 'S3&!S2&!S1&!S0&!I1&!I2&!I3&ZN&!I0' is modeled by replace_negative_leakage_with (0)
+Warning: nem_ohmux_invd0_2i_8b::VB: Negative leakage power (-1.08976e-23) in state '!I1&S1&!S0&ZN&!I0' is modeled by replace_negative_leakage_with (0)
+Warning: nem_ohmux_invd0_2i_1b::VB: Negative leakage power (-5.4665e-24) in state 'S1&!S0&!I1_0&ZN_0&!I0_0' is modeled by replace_negative_leakage_with (0)
+Info:    [CDPL] Tasks: 5/5, (100.0%, 0 Failed); Active Workers: 5, Pending Workers: 0, Elapsed: 0m30s
+Info:    [CDPL] Summary: 
+Info:      All tasks finished successfully.
+Info:    Creating Liberty file "/home/akashl/NEM-Relay-CAD/liberty/nems40tt/models/liberty/ccs_nems40tt.lib".
+Info:    Library merging time: 0.142 secs.
+Info:    Mon Nov 02 00:03:27 PST 2020: Done model stage (Elapsed: 31 seconds | 0.01 hours  Memory: 642.20MB)
+Info:    ===================================================================================================
+Info:    =====================================================
+Info:    Mon Nov  2 00:03:27 2020: Begin library qualification
+Info:    Mon Nov  2 00:03:27 2020: Checked out license FEATURE SIS_ADV v2018.09 in FILE 27000@cadlic0.stanford.edu on SERVER cadlic0.stanford.edu
+Info:    Using /cad/synopsys/lc/M-2017.06-SP3/bin/lc_shell
+Info:    Reading nems40tt/models/liberty/nldm_nems40tt.lib...
+Info:    Using 10 standalone slots
+Info:    Library name is nems40tt
+Info:    Library time unit is 1ns
+Info:    Analyzing 5 of 5 library cells
+Info:    [CDPL] Tasks: 0/5, (0.0%, 0 Failed); Active Workers: 5, Pending Workers: 0, Elapsed: 0m00s
+Info:    [CDPL] Tasks: 5/5, (100.0%, 0 Failed); Active Workers: 5, Pending Workers: 0, Elapsed: 0m30s
+Info:    Checking logfiles...
+Info:    Compiling results...
+Info:    Report generation time: 0 seconds
+
+Info:    Library:  (nems40tt/models/liberty/nldm_nems40tt.lib)
+Qualification Summary:
+     5 of    5 cells analyzed
+     3 Compile failures (60.00%) 
+
+Info:    Mon Nov  2 00:04:00 2020: End library qualification (33.00 seconds)
+Info:    ==================================================================
+Info:    =====================================================
+Info:    Mon Nov  2 00:04:00 2020: Begin library qualification
+Info:    Using /cad/synopsys/lc/M-2017.06-SP3/bin/lc_shell
+Info:    Reading nems40tt/models/liberty/ccs_nems40tt.lib...
+Info:    Using 10 standalone slots
+Info:    Library name is nems40tt
+Info:    Analyzing 5 of 5 library cells
+Info:    [CDPL] Tasks: 1/5, (20.0%, 0 Failed); Active Workers: 5, Pending Workers: 0, Elapsed: 0m00s
+Info:    [CDPL] Tasks: 5/5, (100.0%, 0 Failed); Active Workers: 5, Pending Workers: 0, Elapsed: 0m30s
+Info:    Checking logfiles...
+Info:    Compiling results...
+Info:    Report generation time: 0 seconds
+
+Info:    Library:  (nems40tt/models/liberty/ccs_nems40tt.lib)
+Qualification Summary:
+     5 of    5 cells analyzed
+     3 Compile failures (60.00%) 
+
+Info:    Mon Nov  2 00:04:34 2020: End library qualification (34.00 seconds)
+Info:    ==================================================================
+Info:    using datasheet configuration in '/home/akashl/NEM-Relay-CAD/liberty/nems40tt/reports/gends_config.tcl'
+Info:    Reading characterization data...
+Warning: nem_ohmux_invd0_2i_8b::VB: Negative leakage power (-1.08976e-23) in state '!I1&S1&!S0&ZN&!I0' is modeled by replace_negative_leakage_with (0)
+Warning: nem_ohmux_invd0_4i_8b::VB: Negative leakage power (-1.5191e-23) in state 'S3&!S2&!S1&!S0&!I1&!I2&!I3&ZN&!I0' is modeled by replace_negative_leakage_with (0)
+Warning: nem_ohmux_invd0_2i_1b::VB: Negative leakage power (-5.4665e-24) in state 'S1&!S0&!I1_0&ZN_0&!I0_0' is modeled by replace_negative_leakage_with (0)
+Warning: nem_ohmux_invd0_10i_8b::VB: Negative leakage power (-2.70467e-23) in state 'S9&!S8&!S3&!S2&!S1&!S0&!S7&!S6&!S5&!S4&!I9&!I8&!I1&!I3&!I2&!I5&!I4&!I7&!I6&ZN&!I0' is modeled by replace_negative_leakage_with (0)
+
+Info:    Eclipse Public License - v 1.0.
+THE ACCOMPANYING GRAPHVIZ (GRAPH VISULATION SOFTWARE) (THE "PROGRAM") IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICENSE ("AGREEMENT") and not Synopsys's Software License Agreement with you. ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES YOUR ACCEPTANCE OF THIS AGREEMENT.  The terms of the Agreement may be found here -  http://www.graphviz.org/License.php - or if the link is broken, please contact Synopsys support.Source Code for the Program may be accessed here -  http://graphviz.org/Download.php - or if the link is broken, please contact Synopsys support.
+Info:    Generating datasheet for 'nem_ohmux_invd0_2i_8b (nems40tt)'...
+Info:    Generating datasheet for 'nem_ohmux_invd0_4i_8b (nems40tt)'...
+Info:    Generating datasheet for 'nem_ohmux_invd0_2i_1b (nems40tt)'...
+Info:    Generating datasheet for 'nem_ohmux_invd0_10i_8b (nems40tt)'...
+Info:    Generating datasheet for 'nem_ohmux_invd0_4i_1b (nems40tt)'...
+Info:    Wrote file /home/akashl/NEM-Relay-CAD/liberty/nems40tt/reports/datasheets/nem_ohmux_invd0_2i_8b_nems40tt.html.
+Info:    Wrote file /home/akashl/NEM-Relay-CAD/liberty/nems40tt/reports/datasheets/nem_ohmux_invd0_4i_8b_nems40tt.html.
+Info:    Wrote file /home/akashl/NEM-Relay-CAD/liberty/nems40tt/reports/datasheets/nem_ohmux_invd0_2i_1b_nems40tt.html.
+Info:    Wrote file /home/akashl/NEM-Relay-CAD/liberty/nems40tt/reports/datasheets/nem_ohmux_invd0_10i_8b_nems40tt.html.
+Info:    Wrote file /home/akashl/NEM-Relay-CAD/liberty/nems40tt/reports/datasheets/nem_ohmux_invd0_4i_1b_nems40tt.html.
+Info:    Wrote file /home/akashl/NEM-Relay-CAD/liberty/nems40tt/reports/datasheets/indexDataSheet_nems40tt.html.
+Info:    Generated 5 datasheet(s) plus index file.
+Info:    IAMDONE
+Info:    [CDPL] Shutting down CDPL master.
+Info:    Mon Nov  2 00:04:54 2020: Released license FEATURE SIS_ADV
+Info:    Mon Nov  2 00:04:54 2020: Released license FEATURE SIS_CHAR
+Info:    Mon Nov  2 00:04:54 2020: Program time: 19082.00 seconds | 318.03 minutes | 5.30 hours
+Info:    Maximum virtual memory size: 758.52 MB

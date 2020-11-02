@@ -1,0 +1,3922 @@
+combineArcs__ACQ_1 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_1.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_10 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_10.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_11 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_11.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_12 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_12.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_13 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_13.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_14 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_14.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_15 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_15.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_16 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_16.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_17 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_17.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_18 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_18.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_19 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_19.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_2 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_2.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_20 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_20.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_21 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_21.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_22 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_22.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_23 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_23.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_24 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_24.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_25 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_25.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_26 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_26.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_27 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_27.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_28 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_28.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_29 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_29.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_3 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_3.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_30 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_30.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_31 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_31.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_32 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_32.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_33 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_33.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_34 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_34.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_35 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_35.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_36 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_36.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_37 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_37.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_38 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_38.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_4 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_4.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_5 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_5.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_6 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_6.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_7 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_7.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_8 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_8.t
+  test combineArcs
+  when {0}
+} 
+combineArcs__ACQ_9 {
+  measType combine_arcs
+  pred {
+  } 
+  targets {
+    combine_arcs
+  } 
+  template combineArcs__ACQ_9.t
+  test combineArcs
+  when {0}
+} 
+delay__I0__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I0__hl__ZN__lh
+    Cin__I0__hl
+    Tout__ZN__lh
+    ccs_cin1__I0__hl
+    ccs_cin2__I0__hl
+    ccs_tin1__I0__hl
+    ccs_tin2__I0__hl
+    delay_ccs_native_current__I0__hl__ZN__lh
+    energy1__I0__hl__ZN__lh__VB
+    energy1__I0__hl__ZN__lh__VDD
+    energy1__I0__hl__ZN__lh__VSS
+    energy__I0__hl__ZN__lh
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I0__hl
+    cap_energy__ZN__lh
+  } 
+  template delay__I0__hl__ZN__lh__ACQ_1.t
+  test delay__I0__hl__ZN__lh
+  when {1}
+} 
+delay__I0__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I0__lh__ZN__hl
+    Cin__I0__lh
+    Tout__ZN__hl
+    ccs_cin1__I0__lh
+    ccs_cin2__I0__lh
+    ccs_tin1__I0__lh
+    ccs_tin2__I0__lh
+    delay_ccs_native_current__I0__lh__ZN__hl
+    energy1__I0__lh__ZN__hl__VB
+    energy1__I0__lh__ZN__hl__VDD
+    energy1__I0__lh__ZN__hl__VSS
+    energy__I0__lh__ZN__hl
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I0__lh
+    cap_energy__ZN__hl
+  } 
+  template delay__I0__lh__ZN__hl__ACQ_1.t
+  test delay__I0__lh__ZN__hl
+  when {1}
+} 
+delay__I1__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I1__hl__ZN__lh
+    Cin__I1__hl
+    Tout__ZN__lh
+    ccs_cin1__I1__hl
+    ccs_cin2__I1__hl
+    ccs_tin1__I1__hl
+    ccs_tin2__I1__hl
+    delay_ccs_native_current__I1__hl__ZN__lh
+    energy1__I1__hl__ZN__lh__VB
+    energy1__I1__hl__ZN__lh__VDD
+    energy1__I1__hl__ZN__lh__VSS
+    energy__I1__hl__ZN__lh
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I1__hl
+    cap_energy__ZN__lh
+  } 
+  template delay__I1__hl__ZN__lh__ACQ_1.t
+  test delay__I1__hl__ZN__lh
+  when {1}
+} 
+delay__I1__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I1__lh__ZN__hl
+    Cin__I1__lh
+    Tout__ZN__hl
+    ccs_cin1__I1__lh
+    ccs_cin2__I1__lh
+    ccs_tin1__I1__lh
+    ccs_tin2__I1__lh
+    delay_ccs_native_current__I1__lh__ZN__hl
+    energy1__I1__lh__ZN__hl__VB
+    energy1__I1__lh__ZN__hl__VDD
+    energy1__I1__lh__ZN__hl__VSS
+    energy__I1__lh__ZN__hl
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I1__lh
+    cap_energy__ZN__hl
+  } 
+  template delay__I1__lh__ZN__hl__ACQ_1.t
+  test delay__I1__lh__ZN__hl
+  when {1}
+} 
+delay__I2__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I2__hl__ZN__lh
+    Cin__I2__hl
+    Tout__ZN__lh
+    ccs_cin1__I2__hl
+    ccs_cin2__I2__hl
+    ccs_tin1__I2__hl
+    ccs_tin2__I2__hl
+    delay_ccs_native_current__I2__hl__ZN__lh
+    energy1__I2__hl__ZN__lh__VB
+    energy1__I2__hl__ZN__lh__VDD
+    energy1__I2__hl__ZN__lh__VSS
+    energy__I2__hl__ZN__lh
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I2__hl
+    cap_energy__ZN__lh
+  } 
+  template delay__I2__hl__ZN__lh__ACQ_1.t
+  test delay__I2__hl__ZN__lh
+  when {1}
+} 
+delay__I2__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I2__lh__ZN__hl
+    Cin__I2__lh
+    Tout__ZN__hl
+    ccs_cin1__I2__lh
+    ccs_cin2__I2__lh
+    ccs_tin1__I2__lh
+    ccs_tin2__I2__lh
+    delay_ccs_native_current__I2__lh__ZN__hl
+    energy1__I2__lh__ZN__hl__VB
+    energy1__I2__lh__ZN__hl__VDD
+    energy1__I2__lh__ZN__hl__VSS
+    energy__I2__lh__ZN__hl
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I2__lh
+    cap_energy__ZN__hl
+  } 
+  template delay__I2__lh__ZN__hl__ACQ_1.t
+  test delay__I2__lh__ZN__hl
+  when {1}
+} 
+delay__I3__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I3__hl__ZN__lh
+    Cin__I3__hl
+    Tout__ZN__lh
+    ccs_cin1__I3__hl
+    ccs_cin2__I3__hl
+    ccs_tin1__I3__hl
+    ccs_tin2__I3__hl
+    delay_ccs_native_current__I3__hl__ZN__lh
+    energy1__I3__hl__ZN__lh__VB
+    energy1__I3__hl__ZN__lh__VDD
+    energy1__I3__hl__ZN__lh__VSS
+    energy__I3__hl__ZN__lh
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I3__hl
+    cap_energy__ZN__lh
+  } 
+  template delay__I3__hl__ZN__lh__ACQ_1.t
+  test delay__I3__hl__ZN__lh
+  when {1}
+} 
+delay__I3__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I3__lh__ZN__hl
+    Cin__I3__lh
+    Tout__ZN__hl
+    ccs_cin1__I3__lh
+    ccs_cin2__I3__lh
+    ccs_tin1__I3__lh
+    ccs_tin2__I3__lh
+    delay_ccs_native_current__I3__lh__ZN__hl
+    energy1__I3__lh__ZN__hl__VB
+    energy1__I3__lh__ZN__hl__VDD
+    energy1__I3__lh__ZN__hl__VSS
+    energy__I3__lh__ZN__hl
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I3__lh
+    cap_energy__ZN__hl
+  } 
+  template delay__I3__lh__ZN__hl__ACQ_1.t
+  test delay__I3__lh__ZN__hl
+  when {1}
+} 
+delay__I4__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I4__hl__ZN__lh
+    Cin__I4__hl
+    Tout__ZN__lh
+    ccs_cin1__I4__hl
+    ccs_cin2__I4__hl
+    ccs_tin1__I4__hl
+    ccs_tin2__I4__hl
+    delay_ccs_native_current__I4__hl__ZN__lh
+    energy1__I4__hl__ZN__lh__VB
+    energy1__I4__hl__ZN__lh__VDD
+    energy1__I4__hl__ZN__lh__VSS
+    energy__I4__hl__ZN__lh
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I4__hl
+    cap_energy__ZN__lh
+  } 
+  template delay__I4__hl__ZN__lh__ACQ_1.t
+  test delay__I4__hl__ZN__lh
+  when {1}
+} 
+delay__I4__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I4__lh__ZN__hl
+    Cin__I4__lh
+    Tout__ZN__hl
+    ccs_cin1__I4__lh
+    ccs_cin2__I4__lh
+    ccs_tin1__I4__lh
+    ccs_tin2__I4__lh
+    delay_ccs_native_current__I4__lh__ZN__hl
+    energy1__I4__lh__ZN__hl__VB
+    energy1__I4__lh__ZN__hl__VDD
+    energy1__I4__lh__ZN__hl__VSS
+    energy__I4__lh__ZN__hl
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I4__lh
+    cap_energy__ZN__hl
+  } 
+  template delay__I4__lh__ZN__hl__ACQ_1.t
+  test delay__I4__lh__ZN__hl
+  when {1}
+} 
+delay__I5__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I5__hl__ZN__lh
+    Cin__I5__hl
+    Tout__ZN__lh
+    ccs_cin1__I5__hl
+    ccs_cin2__I5__hl
+    ccs_tin1__I5__hl
+    ccs_tin2__I5__hl
+    delay_ccs_native_current__I5__hl__ZN__lh
+    energy1__I5__hl__ZN__lh__VB
+    energy1__I5__hl__ZN__lh__VDD
+    energy1__I5__hl__ZN__lh__VSS
+    energy__I5__hl__ZN__lh
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I5__hl
+    cap_energy__ZN__lh
+  } 
+  template delay__I5__hl__ZN__lh__ACQ_1.t
+  test delay__I5__hl__ZN__lh
+  when {1}
+} 
+delay__I5__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I5__lh__ZN__hl
+    Cin__I5__lh
+    Tout__ZN__hl
+    ccs_cin1__I5__lh
+    ccs_cin2__I5__lh
+    ccs_tin1__I5__lh
+    ccs_tin2__I5__lh
+    delay_ccs_native_current__I5__lh__ZN__hl
+    energy1__I5__lh__ZN__hl__VB
+    energy1__I5__lh__ZN__hl__VDD
+    energy1__I5__lh__ZN__hl__VSS
+    energy__I5__lh__ZN__hl
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I5__lh
+    cap_energy__ZN__hl
+  } 
+  template delay__I5__lh__ZN__hl__ACQ_1.t
+  test delay__I5__lh__ZN__hl
+  when {1}
+} 
+delay__I6__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I6__hl__ZN__lh
+    Cin__I6__hl
+    Tout__ZN__lh
+    ccs_cin1__I6__hl
+    ccs_cin2__I6__hl
+    ccs_tin1__I6__hl
+    ccs_tin2__I6__hl
+    delay_ccs_native_current__I6__hl__ZN__lh
+    energy1__I6__hl__ZN__lh__VB
+    energy1__I6__hl__ZN__lh__VDD
+    energy1__I6__hl__ZN__lh__VSS
+    energy__I6__hl__ZN__lh
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I6__hl
+    cap_energy__ZN__lh
+  } 
+  template delay__I6__hl__ZN__lh__ACQ_1.t
+  test delay__I6__hl__ZN__lh
+  when {1}
+} 
+delay__I6__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I6__lh__ZN__hl
+    Cin__I6__lh
+    Tout__ZN__hl
+    ccs_cin1__I6__lh
+    ccs_cin2__I6__lh
+    ccs_tin1__I6__lh
+    ccs_tin2__I6__lh
+    delay_ccs_native_current__I6__lh__ZN__hl
+    energy1__I6__lh__ZN__hl__VB
+    energy1__I6__lh__ZN__hl__VDD
+    energy1__I6__lh__ZN__hl__VSS
+    energy__I6__lh__ZN__hl
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I6__lh
+    cap_energy__ZN__hl
+  } 
+  template delay__I6__lh__ZN__hl__ACQ_1.t
+  test delay__I6__lh__ZN__hl
+  when {1}
+} 
+delay__I7__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I7__hl__ZN__lh
+    Cin__I7__hl
+    Tout__ZN__lh
+    ccs_cin1__I7__hl
+    ccs_cin2__I7__hl
+    ccs_tin1__I7__hl
+    ccs_tin2__I7__hl
+    delay_ccs_native_current__I7__hl__ZN__lh
+    energy1__I7__hl__ZN__lh__VB
+    energy1__I7__hl__ZN__lh__VDD
+    energy1__I7__hl__ZN__lh__VSS
+    energy__I7__hl__ZN__lh
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I7__hl
+    cap_energy__ZN__lh
+  } 
+  template delay__I7__hl__ZN__lh__ACQ_1.t
+  test delay__I7__hl__ZN__lh
+  when {1}
+} 
+delay__I7__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I7__lh__ZN__hl
+    Cin__I7__lh
+    Tout__ZN__hl
+    ccs_cin1__I7__lh
+    ccs_cin2__I7__lh
+    ccs_tin1__I7__lh
+    ccs_tin2__I7__lh
+    delay_ccs_native_current__I7__lh__ZN__hl
+    energy1__I7__lh__ZN__hl__VB
+    energy1__I7__lh__ZN__hl__VDD
+    energy1__I7__lh__ZN__hl__VSS
+    energy__I7__lh__ZN__hl
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I7__lh
+    cap_energy__ZN__hl
+  } 
+  template delay__I7__lh__ZN__hl__ACQ_1.t
+  test delay__I7__lh__ZN__hl
+  when {1}
+} 
+delay__I8__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I8__hl__ZN__lh
+    Cin__I8__hl
+    Tout__ZN__lh
+    ccs_cin1__I8__hl
+    ccs_cin2__I8__hl
+    ccs_tin1__I8__hl
+    ccs_tin2__I8__hl
+    delay_ccs_native_current__I8__hl__ZN__lh
+    energy1__I8__hl__ZN__lh__VB
+    energy1__I8__hl__ZN__lh__VDD
+    energy1__I8__hl__ZN__lh__VSS
+    energy__I8__hl__ZN__lh
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I8__hl
+    cap_energy__ZN__lh
+  } 
+  template delay__I8__hl__ZN__lh__ACQ_1.t
+  test delay__I8__hl__ZN__lh
+  when {1}
+} 
+delay__I8__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I8__lh__ZN__hl
+    Cin__I8__lh
+    Tout__ZN__hl
+    ccs_cin1__I8__lh
+    ccs_cin2__I8__lh
+    ccs_tin1__I8__lh
+    ccs_tin2__I8__lh
+    delay_ccs_native_current__I8__lh__ZN__hl
+    energy1__I8__lh__ZN__hl__VB
+    energy1__I8__lh__ZN__hl__VDD
+    energy1__I8__lh__ZN__hl__VSS
+    energy__I8__lh__ZN__hl
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I8__lh
+    cap_energy__ZN__hl
+  } 
+  template delay__I8__lh__ZN__hl__ACQ_1.t
+  test delay__I8__lh__ZN__hl
+  when {1}
+} 
+delay__I9__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I9__hl__ZN__lh
+    Cin__I9__hl
+    Tout__ZN__lh
+    ccs_cin1__I9__hl
+    ccs_cin2__I9__hl
+    ccs_tin1__I9__hl
+    ccs_tin2__I9__hl
+    delay_ccs_native_current__I9__hl__ZN__lh
+    energy1__I9__hl__ZN__lh__VB
+    energy1__I9__hl__ZN__lh__VDD
+    energy1__I9__hl__ZN__lh__VSS
+    energy__I9__hl__ZN__lh
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I9__hl
+    cap_energy__ZN__lh
+  } 
+  template delay__I9__hl__ZN__lh__ACQ_1.t
+  test delay__I9__hl__ZN__lh
+  when {1}
+} 
+delay__I9__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+  } 
+  targets {
+    delay__I9__lh__ZN__hl
+    Cin__I9__lh
+    Tout__ZN__hl
+    ccs_cin1__I9__lh
+    ccs_cin2__I9__lh
+    ccs_tin1__I9__lh
+    ccs_tin2__I9__lh
+    delay_ccs_native_current__I9__lh__ZN__hl
+    energy1__I9__lh__ZN__hl__VB
+    energy1__I9__lh__ZN__hl__VDD
+    energy1__I9__lh__ZN__hl__VSS
+    energy__I9__lh__ZN__hl
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    time_at_voltage__I9__lh
+    cap_energy__ZN__hl
+  } 
+  template delay__I9__lh__ZN__hl__ACQ_1.t
+  test delay__I9__lh__ZN__hl
+  when {1}
+} 
+delay__S0__hl__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_1 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S0__hl__ZN__hl
+    Cin__S0__hl
+    Cin__S4__lh
+    Tout__ZN__hl
+    ccs_cin1__S0__hl
+    ccs_cin1__S4__lh
+    ccs_cin2__S0__hl
+    ccs_cin2__S4__lh
+    ccs_tin1__S0__hl
+    ccs_tin1__S4__lh
+    ccs_tin2__S0__hl
+    ccs_tin2__S4__lh
+    delay_ccs_native_current__S0__hl__ZN__hl
+    time_at_voltage__S0__hl
+    time_at_voltage__S4__lh
+  } 
+  template delay__S0__hl__ZN__hl__ACQ_1.t
+  test delay__S0__hl__ZN__hl
+  when {1}
+} 
+delay__S0__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_2 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S0__hl__ZN__lh
+    Cin__S0__hl
+    Cin__S4__lh
+    Tout__ZN__lh
+    ccs_cin1__S0__hl
+    ccs_cin1__S4__lh
+    ccs_cin2__S0__hl
+    ccs_cin2__S4__lh
+    ccs_tin1__S0__hl
+    ccs_tin1__S4__lh
+    ccs_tin2__S0__hl
+    ccs_tin2__S4__lh
+    delay_ccs_native_current__S0__hl__ZN__lh
+    time_at_voltage__S0__hl
+    time_at_voltage__S4__lh
+  } 
+  template delay__S0__hl__ZN__lh__ACQ_1.t
+  test delay__S0__hl__ZN__lh
+  when {1}
+} 
+delay__S0__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_3 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S0__lh__ZN__hl
+    Cin__S0__lh
+    Cin__S4__hl
+    Tout__ZN__hl
+    ccs_cin1__S0__lh
+    ccs_cin1__S4__hl
+    ccs_cin2__S0__lh
+    ccs_cin2__S4__hl
+    ccs_tin1__S0__lh
+    ccs_tin1__S4__hl
+    ccs_tin2__S0__lh
+    ccs_tin2__S4__hl
+    delay_ccs_native_current__S0__lh__ZN__hl
+    time_at_voltage__S0__lh
+    time_at_voltage__S4__hl
+  } 
+  template delay__S0__lh__ZN__hl__ACQ_1.t
+  test delay__S0__lh__ZN__hl
+  when {1}
+} 
+delay__S0__lh__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_4 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S0__lh__ZN__lh
+    Cin__S0__lh
+    Cin__S4__hl
+    Tout__ZN__lh
+    ccs_cin1__S0__lh
+    ccs_cin1__S4__hl
+    ccs_cin2__S0__lh
+    ccs_cin2__S4__hl
+    ccs_tin1__S0__lh
+    ccs_tin1__S4__hl
+    ccs_tin2__S0__lh
+    ccs_tin2__S4__hl
+    delay_ccs_native_current__S0__lh__ZN__lh
+    time_at_voltage__S0__lh
+    time_at_voltage__S4__hl
+  } 
+  template delay__S0__lh__ZN__lh__ACQ_1.t
+  test delay__S0__lh__ZN__lh
+  when {1}
+} 
+delay__S1__hl__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_5 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S1__hl__ZN__hl
+    Cin__S0__lh
+    Cin__S1__hl
+    Tout__ZN__hl
+    ccs_cin1__S0__lh
+    ccs_cin1__S1__hl
+    ccs_cin2__S0__lh
+    ccs_cin2__S1__hl
+    ccs_tin1__S0__lh
+    ccs_tin1__S1__hl
+    ccs_tin2__S0__lh
+    ccs_tin2__S1__hl
+    delay_ccs_native_current__S1__hl__ZN__hl
+    time_at_voltage__S0__lh
+    time_at_voltage__S1__hl
+  } 
+  template delay__S1__hl__ZN__hl__ACQ_1.t
+  test delay__S1__hl__ZN__hl
+  when {1}
+} 
+delay__S1__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_6 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S1__hl__ZN__lh
+    Cin__S0__lh
+    Cin__S1__hl
+    Tout__ZN__lh
+    ccs_cin1__S0__lh
+    ccs_cin1__S1__hl
+    ccs_cin2__S0__lh
+    ccs_cin2__S1__hl
+    ccs_tin1__S0__lh
+    ccs_tin1__S1__hl
+    ccs_tin2__S0__lh
+    ccs_tin2__S1__hl
+    delay_ccs_native_current__S1__hl__ZN__lh
+    time_at_voltage__S0__lh
+    time_at_voltage__S1__hl
+  } 
+  template delay__S1__hl__ZN__lh__ACQ_1.t
+  test delay__S1__hl__ZN__lh
+  when {1}
+} 
+delay__S1__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_7 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S1__lh__ZN__hl
+    Cin__S0__hl
+    Cin__S1__lh
+    Tout__ZN__hl
+    ccs_cin1__S0__hl
+    ccs_cin1__S1__lh
+    ccs_cin2__S0__hl
+    ccs_cin2__S1__lh
+    ccs_tin1__S0__hl
+    ccs_tin1__S1__lh
+    ccs_tin2__S0__hl
+    ccs_tin2__S1__lh
+    delay_ccs_native_current__S1__lh__ZN__hl
+    time_at_voltage__S0__hl
+    time_at_voltage__S1__lh
+  } 
+  template delay__S1__lh__ZN__hl__ACQ_1.t
+  test delay__S1__lh__ZN__hl
+  when {1}
+} 
+delay__S1__lh__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_8 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S1__lh__ZN__lh
+    Cin__S0__hl
+    Cin__S1__lh
+    Tout__ZN__lh
+    ccs_cin1__S0__hl
+    ccs_cin1__S1__lh
+    ccs_cin2__S0__hl
+    ccs_cin2__S1__lh
+    ccs_tin1__S0__hl
+    ccs_tin1__S1__lh
+    ccs_tin2__S0__hl
+    ccs_tin2__S1__lh
+    delay_ccs_native_current__S1__lh__ZN__lh
+    time_at_voltage__S0__hl
+    time_at_voltage__S1__lh
+  } 
+  template delay__S1__lh__ZN__lh__ACQ_1.t
+  test delay__S1__lh__ZN__lh
+  when {1}
+} 
+delay__S2__hl__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_9 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S2__hl__ZN__hl
+    Cin__S0__lh
+    Cin__S2__hl
+    Tout__ZN__hl
+    ccs_cin1__S0__lh
+    ccs_cin1__S2__hl
+    ccs_cin2__S0__lh
+    ccs_cin2__S2__hl
+    ccs_tin1__S0__lh
+    ccs_tin1__S2__hl
+    ccs_tin2__S0__lh
+    ccs_tin2__S2__hl
+    delay_ccs_native_current__S2__hl__ZN__hl
+    time_at_voltage__S0__lh
+    time_at_voltage__S2__hl
+  } 
+  template delay__S2__hl__ZN__hl__ACQ_1.t
+  test delay__S2__hl__ZN__hl
+  when {1}
+} 
+delay__S2__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_10 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S2__hl__ZN__lh
+    Cin__S0__lh
+    Cin__S2__hl
+    Tout__ZN__lh
+    ccs_cin1__S0__lh
+    ccs_cin1__S2__hl
+    ccs_cin2__S0__lh
+    ccs_cin2__S2__hl
+    ccs_tin1__S0__lh
+    ccs_tin1__S2__hl
+    ccs_tin2__S0__lh
+    ccs_tin2__S2__hl
+    delay_ccs_native_current__S2__hl__ZN__lh
+    time_at_voltage__S0__lh
+    time_at_voltage__S2__hl
+  } 
+  template delay__S2__hl__ZN__lh__ACQ_1.t
+  test delay__S2__hl__ZN__lh
+  when {1}
+} 
+delay__S2__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_11 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S2__lh__ZN__hl
+    Cin__S0__hl
+    Cin__S2__lh
+    Tout__ZN__hl
+    ccs_cin1__S0__hl
+    ccs_cin1__S2__lh
+    ccs_cin2__S0__hl
+    ccs_cin2__S2__lh
+    ccs_tin1__S0__hl
+    ccs_tin1__S2__lh
+    ccs_tin2__S0__hl
+    ccs_tin2__S2__lh
+    delay_ccs_native_current__S2__lh__ZN__hl
+    time_at_voltage__S0__hl
+    time_at_voltage__S2__lh
+  } 
+  template delay__S2__lh__ZN__hl__ACQ_1.t
+  test delay__S2__lh__ZN__hl
+  when {1}
+} 
+delay__S2__lh__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_12 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S2__lh__ZN__lh
+    Cin__S0__hl
+    Cin__S2__lh
+    Tout__ZN__lh
+    ccs_cin1__S0__hl
+    ccs_cin1__S2__lh
+    ccs_cin2__S0__hl
+    ccs_cin2__S2__lh
+    ccs_tin1__S0__hl
+    ccs_tin1__S2__lh
+    ccs_tin2__S0__hl
+    ccs_tin2__S2__lh
+    delay_ccs_native_current__S2__lh__ZN__lh
+    time_at_voltage__S0__hl
+    time_at_voltage__S2__lh
+  } 
+  template delay__S2__lh__ZN__lh__ACQ_1.t
+  test delay__S2__lh__ZN__lh
+  when {1}
+} 
+delay__S3__hl__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_13 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S3__hl__ZN__hl
+    Cin__S0__lh
+    Cin__S3__hl
+    Tout__ZN__hl
+    ccs_cin1__S0__lh
+    ccs_cin1__S3__hl
+    ccs_cin2__S0__lh
+    ccs_cin2__S3__hl
+    ccs_tin1__S0__lh
+    ccs_tin1__S3__hl
+    ccs_tin2__S0__lh
+    ccs_tin2__S3__hl
+    delay_ccs_native_current__S3__hl__ZN__hl
+    time_at_voltage__S0__lh
+    time_at_voltage__S3__hl
+  } 
+  template delay__S3__hl__ZN__hl__ACQ_1.t
+  test delay__S3__hl__ZN__hl
+  when {1}
+} 
+delay__S3__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_14 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S3__hl__ZN__lh
+    Cin__S0__lh
+    Cin__S3__hl
+    Tout__ZN__lh
+    ccs_cin1__S0__lh
+    ccs_cin1__S3__hl
+    ccs_cin2__S0__lh
+    ccs_cin2__S3__hl
+    ccs_tin1__S0__lh
+    ccs_tin1__S3__hl
+    ccs_tin2__S0__lh
+    ccs_tin2__S3__hl
+    delay_ccs_native_current__S3__hl__ZN__lh
+    time_at_voltage__S0__lh
+    time_at_voltage__S3__hl
+  } 
+  template delay__S3__hl__ZN__lh__ACQ_1.t
+  test delay__S3__hl__ZN__lh
+  when {1}
+} 
+delay__S3__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_15 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S3__lh__ZN__hl
+    Cin__S0__hl
+    Cin__S3__lh
+    Tout__ZN__hl
+    ccs_cin1__S0__hl
+    ccs_cin1__S3__lh
+    ccs_cin2__S0__hl
+    ccs_cin2__S3__lh
+    ccs_tin1__S0__hl
+    ccs_tin1__S3__lh
+    ccs_tin2__S0__hl
+    ccs_tin2__S3__lh
+    delay_ccs_native_current__S3__lh__ZN__hl
+    time_at_voltage__S0__hl
+    time_at_voltage__S3__lh
+  } 
+  template delay__S3__lh__ZN__hl__ACQ_1.t
+  test delay__S3__lh__ZN__hl
+  when {1}
+} 
+delay__S3__lh__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_16 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S3__lh__ZN__lh
+    Cin__S0__hl
+    Cin__S3__lh
+    Tout__ZN__lh
+    ccs_cin1__S0__hl
+    ccs_cin1__S3__lh
+    ccs_cin2__S0__hl
+    ccs_cin2__S3__lh
+    ccs_tin1__S0__hl
+    ccs_tin1__S3__lh
+    ccs_tin2__S0__hl
+    ccs_tin2__S3__lh
+    delay_ccs_native_current__S3__lh__ZN__lh
+    time_at_voltage__S0__hl
+    time_at_voltage__S3__lh
+  } 
+  template delay__S3__lh__ZN__lh__ACQ_1.t
+  test delay__S3__lh__ZN__lh
+  when {1}
+} 
+delay__S4__hl__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_3 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S4__hl__ZN__hl
+    Cin__S0__lh
+    Cin__S4__hl
+    Tout__ZN__hl
+    ccs_cin1__S0__lh
+    ccs_cin1__S4__hl
+    ccs_cin2__S0__lh
+    ccs_cin2__S4__hl
+    ccs_tin1__S0__lh
+    ccs_tin1__S4__hl
+    ccs_tin2__S0__lh
+    ccs_tin2__S4__hl
+    delay_ccs_native_current__S4__hl__ZN__hl
+    time_at_voltage__S0__lh
+    time_at_voltage__S4__hl
+  } 
+  template delay__S4__hl__ZN__hl__ACQ_1.t
+  test delay__S4__hl__ZN__hl
+  when {1}
+} 
+delay__S4__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_4 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S4__hl__ZN__lh
+    Cin__S0__lh
+    Cin__S4__hl
+    Tout__ZN__lh
+    ccs_cin1__S0__lh
+    ccs_cin1__S4__hl
+    ccs_cin2__S0__lh
+    ccs_cin2__S4__hl
+    ccs_tin1__S0__lh
+    ccs_tin1__S4__hl
+    ccs_tin2__S0__lh
+    ccs_tin2__S4__hl
+    delay_ccs_native_current__S4__hl__ZN__lh
+    time_at_voltage__S0__lh
+    time_at_voltage__S4__hl
+  } 
+  template delay__S4__hl__ZN__lh__ACQ_1.t
+  test delay__S4__hl__ZN__lh
+  when {1}
+} 
+delay__S4__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_1 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S4__lh__ZN__hl
+    Cin__S0__hl
+    Cin__S4__lh
+    Tout__ZN__hl
+    ccs_cin1__S0__hl
+    ccs_cin1__S4__lh
+    ccs_cin2__S0__hl
+    ccs_cin2__S4__lh
+    ccs_tin1__S0__hl
+    ccs_tin1__S4__lh
+    ccs_tin2__S0__hl
+    ccs_tin2__S4__lh
+    delay_ccs_native_current__S4__lh__ZN__hl
+    time_at_voltage__S0__hl
+    time_at_voltage__S4__lh
+  } 
+  template delay__S4__lh__ZN__hl__ACQ_1.t
+  test delay__S4__lh__ZN__hl
+  when {1}
+} 
+delay__S4__lh__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_2 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S4__lh__ZN__lh
+    Cin__S0__hl
+    Cin__S4__lh
+    Tout__ZN__lh
+    ccs_cin1__S0__hl
+    ccs_cin1__S4__lh
+    ccs_cin2__S0__hl
+    ccs_cin2__S4__lh
+    ccs_tin1__S0__hl
+    ccs_tin1__S4__lh
+    ccs_tin2__S0__hl
+    ccs_tin2__S4__lh
+    delay_ccs_native_current__S4__lh__ZN__lh
+    time_at_voltage__S0__hl
+    time_at_voltage__S4__lh
+  } 
+  template delay__S4__lh__ZN__lh__ACQ_1.t
+  test delay__S4__lh__ZN__lh
+  when {1}
+} 
+delay__S5__hl__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_17 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S5__hl__ZN__hl
+    Cin__S0__lh
+    Cin__S5__hl
+    Tout__ZN__hl
+    ccs_cin1__S0__lh
+    ccs_cin1__S5__hl
+    ccs_cin2__S0__lh
+    ccs_cin2__S5__hl
+    ccs_tin1__S0__lh
+    ccs_tin1__S5__hl
+    ccs_tin2__S0__lh
+    ccs_tin2__S5__hl
+    delay_ccs_native_current__S5__hl__ZN__hl
+    time_at_voltage__S0__lh
+    time_at_voltage__S5__hl
+  } 
+  template delay__S5__hl__ZN__hl__ACQ_1.t
+  test delay__S5__hl__ZN__hl
+  when {1}
+} 
+delay__S5__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_18 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S5__hl__ZN__lh
+    Cin__S0__lh
+    Cin__S5__hl
+    Tout__ZN__lh
+    ccs_cin1__S0__lh
+    ccs_cin1__S5__hl
+    ccs_cin2__S0__lh
+    ccs_cin2__S5__hl
+    ccs_tin1__S0__lh
+    ccs_tin1__S5__hl
+    ccs_tin2__S0__lh
+    ccs_tin2__S5__hl
+    delay_ccs_native_current__S5__hl__ZN__lh
+    time_at_voltage__S0__lh
+    time_at_voltage__S5__hl
+  } 
+  template delay__S5__hl__ZN__lh__ACQ_1.t
+  test delay__S5__hl__ZN__lh
+  when {1}
+} 
+delay__S5__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_19 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S5__lh__ZN__hl
+    Cin__S0__hl
+    Cin__S5__lh
+    Tout__ZN__hl
+    ccs_cin1__S0__hl
+    ccs_cin1__S5__lh
+    ccs_cin2__S0__hl
+    ccs_cin2__S5__lh
+    ccs_tin1__S0__hl
+    ccs_tin1__S5__lh
+    ccs_tin2__S0__hl
+    ccs_tin2__S5__lh
+    delay_ccs_native_current__S5__lh__ZN__hl
+    time_at_voltage__S0__hl
+    time_at_voltage__S5__lh
+  } 
+  template delay__S5__lh__ZN__hl__ACQ_1.t
+  test delay__S5__lh__ZN__hl
+  when {1}
+} 
+delay__S5__lh__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_20 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S5__lh__ZN__lh
+    Cin__S0__hl
+    Cin__S5__lh
+    Tout__ZN__lh
+    ccs_cin1__S0__hl
+    ccs_cin1__S5__lh
+    ccs_cin2__S0__hl
+    ccs_cin2__S5__lh
+    ccs_tin1__S0__hl
+    ccs_tin1__S5__lh
+    ccs_tin2__S0__hl
+    ccs_tin2__S5__lh
+    delay_ccs_native_current__S5__lh__ZN__lh
+    time_at_voltage__S0__hl
+    time_at_voltage__S5__lh
+  } 
+  template delay__S5__lh__ZN__lh__ACQ_1.t
+  test delay__S5__lh__ZN__lh
+  when {1}
+} 
+delay__S6__hl__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_21 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S6__hl__ZN__hl
+    Cin__S0__lh
+    Cin__S6__hl
+    Tout__ZN__hl
+    ccs_cin1__S0__lh
+    ccs_cin1__S6__hl
+    ccs_cin2__S0__lh
+    ccs_cin2__S6__hl
+    ccs_tin1__S0__lh
+    ccs_tin1__S6__hl
+    ccs_tin2__S0__lh
+    ccs_tin2__S6__hl
+    delay_ccs_native_current__S6__hl__ZN__hl
+    time_at_voltage__S0__lh
+    time_at_voltage__S6__hl
+  } 
+  template delay__S6__hl__ZN__hl__ACQ_1.t
+  test delay__S6__hl__ZN__hl
+  when {1}
+} 
+delay__S6__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_22 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S6__hl__ZN__lh
+    Cin__S0__lh
+    Cin__S6__hl
+    Tout__ZN__lh
+    ccs_cin1__S0__lh
+    ccs_cin1__S6__hl
+    ccs_cin2__S0__lh
+    ccs_cin2__S6__hl
+    ccs_tin1__S0__lh
+    ccs_tin1__S6__hl
+    ccs_tin2__S0__lh
+    ccs_tin2__S6__hl
+    delay_ccs_native_current__S6__hl__ZN__lh
+    time_at_voltage__S0__lh
+    time_at_voltage__S6__hl
+  } 
+  template delay__S6__hl__ZN__lh__ACQ_1.t
+  test delay__S6__hl__ZN__lh
+  when {1}
+} 
+delay__S6__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_23 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S6__lh__ZN__hl
+    Cin__S0__hl
+    Cin__S6__lh
+    Tout__ZN__hl
+    ccs_cin1__S0__hl
+    ccs_cin1__S6__lh
+    ccs_cin2__S0__hl
+    ccs_cin2__S6__lh
+    ccs_tin1__S0__hl
+    ccs_tin1__S6__lh
+    ccs_tin2__S0__hl
+    ccs_tin2__S6__lh
+    delay_ccs_native_current__S6__lh__ZN__hl
+    time_at_voltage__S0__hl
+    time_at_voltage__S6__lh
+  } 
+  template delay__S6__lh__ZN__hl__ACQ_1.t
+  test delay__S6__lh__ZN__hl
+  when {1}
+} 
+delay__S6__lh__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_24 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S6__lh__ZN__lh
+    Cin__S0__hl
+    Cin__S6__lh
+    Tout__ZN__lh
+    ccs_cin1__S0__hl
+    ccs_cin1__S6__lh
+    ccs_cin2__S0__hl
+    ccs_cin2__S6__lh
+    ccs_tin1__S0__hl
+    ccs_tin1__S6__lh
+    ccs_tin2__S0__hl
+    ccs_tin2__S6__lh
+    delay_ccs_native_current__S6__lh__ZN__lh
+    time_at_voltage__S0__hl
+    time_at_voltage__S6__lh
+  } 
+  template delay__S6__lh__ZN__lh__ACQ_1.t
+  test delay__S6__lh__ZN__lh
+  when {1}
+} 
+delay__S7__hl__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_25 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S7__hl__ZN__hl
+    Cin__S0__lh
+    Cin__S7__hl
+    Tout__ZN__hl
+    ccs_cin1__S0__lh
+    ccs_cin1__S7__hl
+    ccs_cin2__S0__lh
+    ccs_cin2__S7__hl
+    ccs_tin1__S0__lh
+    ccs_tin1__S7__hl
+    ccs_tin2__S0__lh
+    ccs_tin2__S7__hl
+    delay_ccs_native_current__S7__hl__ZN__hl
+    time_at_voltage__S0__lh
+    time_at_voltage__S7__hl
+  } 
+  template delay__S7__hl__ZN__hl__ACQ_1.t
+  test delay__S7__hl__ZN__hl
+  when {1}
+} 
+delay__S7__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_26 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S7__hl__ZN__lh
+    Cin__S0__lh
+    Cin__S7__hl
+    Tout__ZN__lh
+    ccs_cin1__S0__lh
+    ccs_cin1__S7__hl
+    ccs_cin2__S0__lh
+    ccs_cin2__S7__hl
+    ccs_tin1__S0__lh
+    ccs_tin1__S7__hl
+    ccs_tin2__S0__lh
+    ccs_tin2__S7__hl
+    delay_ccs_native_current__S7__hl__ZN__lh
+    time_at_voltage__S0__lh
+    time_at_voltage__S7__hl
+  } 
+  template delay__S7__hl__ZN__lh__ACQ_1.t
+  test delay__S7__hl__ZN__lh
+  when {1}
+} 
+delay__S7__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_27 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S7__lh__ZN__hl
+    Cin__S0__hl
+    Cin__S7__lh
+    Tout__ZN__hl
+    ccs_cin1__S0__hl
+    ccs_cin1__S7__lh
+    ccs_cin2__S0__hl
+    ccs_cin2__S7__lh
+    ccs_tin1__S0__hl
+    ccs_tin1__S7__lh
+    ccs_tin2__S0__hl
+    ccs_tin2__S7__lh
+    delay_ccs_native_current__S7__lh__ZN__hl
+    time_at_voltage__S0__hl
+    time_at_voltage__S7__lh
+  } 
+  template delay__S7__lh__ZN__hl__ACQ_1.t
+  test delay__S7__lh__ZN__hl
+  when {1}
+} 
+delay__S7__lh__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_28 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S7__lh__ZN__lh
+    Cin__S0__hl
+    Cin__S7__lh
+    Tout__ZN__lh
+    ccs_cin1__S0__hl
+    ccs_cin1__S7__lh
+    ccs_cin2__S0__hl
+    ccs_cin2__S7__lh
+    ccs_tin1__S0__hl
+    ccs_tin1__S7__lh
+    ccs_tin2__S0__hl
+    ccs_tin2__S7__lh
+    delay_ccs_native_current__S7__lh__ZN__lh
+    time_at_voltage__S0__hl
+    time_at_voltage__S7__lh
+  } 
+  template delay__S7__lh__ZN__lh__ACQ_1.t
+  test delay__S7__lh__ZN__lh
+  when {1}
+} 
+delay__S8__hl__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_29 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S8__hl__ZN__hl
+    Cin__S1__lh
+    Cin__S8__hl
+    Tout__ZN__hl
+    ccs_cin1__S1__lh
+    ccs_cin1__S8__hl
+    ccs_cin2__S1__lh
+    ccs_cin2__S8__hl
+    ccs_tin1__S1__lh
+    ccs_tin1__S8__hl
+    ccs_tin2__S1__lh
+    ccs_tin2__S8__hl
+    delay_ccs_native_current__S8__hl__ZN__hl
+    time_at_voltage__S1__lh
+    time_at_voltage__S8__hl
+  } 
+  template delay__S8__hl__ZN__hl__ACQ_1.t
+  test delay__S8__hl__ZN__hl
+  when {1}
+} 
+delay__S8__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_30 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S8__hl__ZN__lh
+    Cin__S1__lh
+    Cin__S8__hl
+    Tout__ZN__lh
+    ccs_cin1__S1__lh
+    ccs_cin1__S8__hl
+    ccs_cin2__S1__lh
+    ccs_cin2__S8__hl
+    ccs_tin1__S1__lh
+    ccs_tin1__S8__hl
+    ccs_tin2__S1__lh
+    ccs_tin2__S8__hl
+    delay_ccs_native_current__S8__hl__ZN__lh
+    time_at_voltage__S1__lh
+    time_at_voltage__S8__hl
+  } 
+  template delay__S8__hl__ZN__lh__ACQ_1.t
+  test delay__S8__hl__ZN__lh
+  when {1}
+} 
+delay__S8__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_31 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S8__lh__ZN__hl
+    Cin__S1__hl
+    Cin__S8__lh
+    Tout__ZN__hl
+    ccs_cin1__S1__hl
+    ccs_cin1__S8__lh
+    ccs_cin2__S1__hl
+    ccs_cin2__S8__lh
+    ccs_tin1__S1__hl
+    ccs_tin1__S8__lh
+    ccs_tin2__S1__hl
+    ccs_tin2__S8__lh
+    delay_ccs_native_current__S8__lh__ZN__hl
+    time_at_voltage__S1__hl
+    time_at_voltage__S8__lh
+  } 
+  template delay__S8__lh__ZN__hl__ACQ_1.t
+  test delay__S8__lh__ZN__hl
+  when {1}
+} 
+delay__S8__lh__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_32 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S8__lh__ZN__lh
+    Cin__S1__hl
+    Cin__S8__lh
+    Tout__ZN__lh
+    ccs_cin1__S1__hl
+    ccs_cin1__S8__lh
+    ccs_cin2__S1__hl
+    ccs_cin2__S8__lh
+    ccs_tin1__S1__hl
+    ccs_tin1__S8__lh
+    ccs_tin2__S1__hl
+    ccs_tin2__S8__lh
+    delay_ccs_native_current__S8__lh__ZN__lh
+    time_at_voltage__S1__hl
+    time_at_voltage__S8__lh
+  } 
+  template delay__S8__lh__ZN__lh__ACQ_1.t
+  test delay__S8__lh__ZN__lh
+  when {1}
+} 
+delay__S9__hl__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_33 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S9__hl__ZN__hl
+    Cin__S1__lh
+    Cin__S9__hl
+    Tout__ZN__hl
+    ccs_cin1__S1__lh
+    ccs_cin1__S9__hl
+    ccs_cin2__S1__lh
+    ccs_cin2__S9__hl
+    ccs_tin1__S1__lh
+    ccs_tin1__S9__hl
+    ccs_tin2__S1__lh
+    ccs_tin2__S9__hl
+    delay_ccs_native_current__S9__hl__ZN__hl
+    time_at_voltage__S1__lh
+    time_at_voltage__S9__hl
+  } 
+  template delay__S9__hl__ZN__hl__ACQ_1.t
+  test delay__S9__hl__ZN__hl
+  when {1}
+} 
+delay__S9__hl__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_34 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S9__hl__ZN__lh
+    Cin__S1__lh
+    Cin__S9__hl
+    Tout__ZN__lh
+    ccs_cin1__S1__lh
+    ccs_cin1__S9__hl
+    ccs_cin2__S1__lh
+    ccs_cin2__S9__hl
+    ccs_tin1__S1__lh
+    ccs_tin1__S9__hl
+    ccs_tin2__S1__lh
+    ccs_tin2__S9__hl
+    delay_ccs_native_current__S9__hl__ZN__lh
+    time_at_voltage__S1__lh
+    time_at_voltage__S9__hl
+  } 
+  template delay__S9__hl__ZN__lh__ACQ_1.t
+  test delay__S9__hl__ZN__lh
+  when {1}
+} 
+delay__S9__lh__ZN__hl__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_35 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S9__lh__ZN__hl
+    Cin__S1__hl
+    Cin__S9__lh
+    Tout__ZN__hl
+    ccs_cin1__S1__hl
+    ccs_cin1__S9__lh
+    ccs_cin2__S1__hl
+    ccs_cin2__S9__lh
+    ccs_tin1__S1__hl
+    ccs_tin1__S9__lh
+    ccs_tin2__S1__hl
+    ccs_tin2__S9__lh
+    delay_ccs_native_current__S9__lh__ZN__hl
+    time_at_voltage__S1__hl
+    time_at_voltage__S9__lh
+  } 
+  template delay__S9__lh__ZN__hl__ACQ_1.t
+  test delay__S9__lh__ZN__hl
+  when {1}
+} 
+delay__S9__lh__ZN__lh__ACQ_1 {
+  measType delay
+  pred {
+    combineArcs__ACQ_36 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    delay__S9__lh__ZN__lh
+    Cin__S1__hl
+    Cin__S9__lh
+    Tout__ZN__lh
+    ccs_cin1__S1__hl
+    ccs_cin1__S9__lh
+    ccs_cin2__S1__hl
+    ccs_cin2__S9__lh
+    ccs_tin1__S1__hl
+    ccs_tin1__S9__lh
+    ccs_tin2__S1__hl
+    ccs_tin2__S9__lh
+    delay_ccs_native_current__S9__lh__ZN__lh
+    time_at_voltage__S1__hl
+    time_at_voltage__S9__lh
+  } 
+  template delay__S9__lh__ZN__lh__ACQ_1.t
+  test delay__S9__lh__ZN__lh
+  when {1}
+} 
+energy__I0__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I0__hl
+    energy1__I0__hl__VB
+    energy1__I0__hl__VDD
+    energy1__I0__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I0__hl__ACQ_1.t
+  test energy__I0__hl
+  when {1}
+} 
+energy__I0__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I0__lh
+    energy1__I0__lh__VB
+    energy1__I0__lh__VDD
+    energy1__I0__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I0__lh__ACQ_1.t
+  test energy__I0__lh
+  when {1}
+} 
+energy__I1__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I1__hl
+    energy1__I1__hl__VB
+    energy1__I1__hl__VDD
+    energy1__I1__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I1__hl__ACQ_1.t
+  test energy__I1__hl
+  when {1}
+} 
+energy__I1__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I1__lh
+    energy1__I1__lh__VB
+    energy1__I1__lh__VDD
+    energy1__I1__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I1__lh__ACQ_1.t
+  test energy__I1__lh
+  when {1}
+} 
+energy__I2__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I2__hl
+    energy1__I2__hl__VB
+    energy1__I2__hl__VDD
+    energy1__I2__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I2__hl__ACQ_1.t
+  test energy__I2__hl
+  when {1}
+} 
+energy__I2__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I2__lh
+    energy1__I2__lh__VB
+    energy1__I2__lh__VDD
+    energy1__I2__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I2__lh__ACQ_1.t
+  test energy__I2__lh
+  when {1}
+} 
+energy__I3__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I3__hl
+    energy1__I3__hl__VB
+    energy1__I3__hl__VDD
+    energy1__I3__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I3__hl__ACQ_1.t
+  test energy__I3__hl
+  when {1}
+} 
+energy__I3__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I3__lh
+    energy1__I3__lh__VB
+    energy1__I3__lh__VDD
+    energy1__I3__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I3__lh__ACQ_1.t
+  test energy__I3__lh
+  when {1}
+} 
+energy__I4__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I4__hl
+    energy1__I4__hl__VB
+    energy1__I4__hl__VDD
+    energy1__I4__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I4__hl__ACQ_1.t
+  test energy__I4__hl
+  when {1}
+} 
+energy__I4__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I4__lh
+    energy1__I4__lh__VB
+    energy1__I4__lh__VDD
+    energy1__I4__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I4__lh__ACQ_1.t
+  test energy__I4__lh
+  when {1}
+} 
+energy__I5__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I5__hl
+    energy1__I5__hl__VB
+    energy1__I5__hl__VDD
+    energy1__I5__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I5__hl__ACQ_1.t
+  test energy__I5__hl
+  when {1}
+} 
+energy__I5__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I5__lh
+    energy1__I5__lh__VB
+    energy1__I5__lh__VDD
+    energy1__I5__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I5__lh__ACQ_1.t
+  test energy__I5__lh
+  when {1}
+} 
+energy__I6__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I6__hl
+    energy1__I6__hl__VB
+    energy1__I6__hl__VDD
+    energy1__I6__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I6__hl__ACQ_1.t
+  test energy__I6__hl
+  when {1}
+} 
+energy__I6__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I6__lh
+    energy1__I6__lh__VB
+    energy1__I6__lh__VDD
+    energy1__I6__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I6__lh__ACQ_1.t
+  test energy__I6__lh
+  when {1}
+} 
+energy__I7__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I7__hl
+    energy1__I7__hl__VB
+    energy1__I7__hl__VDD
+    energy1__I7__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I7__hl__ACQ_1.t
+  test energy__I7__hl
+  when {1}
+} 
+energy__I7__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I7__lh
+    energy1__I7__lh__VB
+    energy1__I7__lh__VDD
+    energy1__I7__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I7__lh__ACQ_1.t
+  test energy__I7__lh
+  when {1}
+} 
+energy__I8__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I8__hl
+    energy1__I8__hl__VB
+    energy1__I8__hl__VDD
+    energy1__I8__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I8__hl__ACQ_1.t
+  test energy__I8__hl
+  when {1}
+} 
+energy__I8__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I8__lh
+    energy1__I8__lh__VB
+    energy1__I8__lh__VDD
+    energy1__I8__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I8__lh__ACQ_1.t
+  test energy__I8__lh
+  when {1}
+} 
+energy__I9__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I9__hl
+    energy1__I9__hl__VB
+    energy1__I9__hl__VDD
+    energy1__I9__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I9__hl__ACQ_1.t
+  test energy__I9__hl
+  when {1}
+} 
+energy__I9__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__I9__lh
+    energy1__I9__lh__VB
+    energy1__I9__lh__VDD
+    energy1__I9__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__I9__lh__ACQ_1.t
+  test energy__I9__lh
+  when {1}
+} 
+energy__S0__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_37 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S0__hl
+    energy1__S0__hl__VB
+    energy1__S0__hl__VDD
+    energy1__S0__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S0__hl__ACQ_1.t
+  test energy__S0__hl
+  when {1}
+} 
+energy__S0__hl__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_1 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S0__hl__ZN__hl
+    energy1__S0__hl__ZN__hl__VB
+    energy1__S0__hl__ZN__hl__VDD
+    energy1__S0__hl__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S0__hl__ZN__hl__ACQ_1.t
+  test energy__S0__hl__ZN__hl
+  when {1}
+} 
+energy__S0__hl__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_2 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S0__hl__ZN__lh
+    energy1__S0__hl__ZN__lh__VB
+    energy1__S0__hl__ZN__lh__VDD
+    energy1__S0__hl__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S0__hl__ZN__lh__ACQ_1.t
+  test energy__S0__hl__ZN__lh
+  when {1}
+} 
+energy__S0__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_38 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S0__lh
+    energy1__S0__lh__VB
+    energy1__S0__lh__VDD
+    energy1__S0__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S0__lh__ACQ_1.t
+  test energy__S0__lh
+  when {1}
+} 
+energy__S0__lh__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_3 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S0__lh__ZN__hl
+    energy1__S0__lh__ZN__hl__VB
+    energy1__S0__lh__ZN__hl__VDD
+    energy1__S0__lh__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S0__lh__ZN__hl__ACQ_1.t
+  test energy__S0__lh__ZN__hl
+  when {1}
+} 
+energy__S0__lh__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_4 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S0__lh__ZN__lh
+    energy1__S0__lh__ZN__lh__VB
+    energy1__S0__lh__ZN__lh__VDD
+    energy1__S0__lh__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S0__lh__ZN__lh__ACQ_1.t
+  test energy__S0__lh__ZN__lh
+  when {1}
+} 
+energy__S1__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__S1__hl
+    energy1__S1__hl__VB
+    energy1__S1__hl__VDD
+    energy1__S1__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S1__hl__ACQ_1.t
+  test energy__S1__hl
+  when {1}
+} 
+energy__S1__hl__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_5 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S1__hl__ZN__hl
+    energy1__S1__hl__ZN__hl__VB
+    energy1__S1__hl__ZN__hl__VDD
+    energy1__S1__hl__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S1__hl__ZN__hl__ACQ_1.t
+  test energy__S1__hl__ZN__hl
+  when {1}
+} 
+energy__S1__hl__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_6 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S1__hl__ZN__lh
+    energy1__S1__hl__ZN__lh__VB
+    energy1__S1__hl__ZN__lh__VDD
+    energy1__S1__hl__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S1__hl__ZN__lh__ACQ_1.t
+  test energy__S1__hl__ZN__lh
+  when {1}
+} 
+energy__S1__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__S1__lh
+    energy1__S1__lh__VB
+    energy1__S1__lh__VDD
+    energy1__S1__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S1__lh__ACQ_1.t
+  test energy__S1__lh
+  when {1}
+} 
+energy__S1__lh__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_7 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S1__lh__ZN__hl
+    energy1__S1__lh__ZN__hl__VB
+    energy1__S1__lh__ZN__hl__VDD
+    energy1__S1__lh__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S1__lh__ZN__hl__ACQ_1.t
+  test energy__S1__lh__ZN__hl
+  when {1}
+} 
+energy__S1__lh__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_8 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S1__lh__ZN__lh
+    energy1__S1__lh__ZN__lh__VB
+    energy1__S1__lh__ZN__lh__VDD
+    energy1__S1__lh__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S1__lh__ZN__lh__ACQ_1.t
+  test energy__S1__lh__ZN__lh
+  when {1}
+} 
+energy__S2__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__S2__hl
+    energy1__S2__hl__VB
+    energy1__S2__hl__VDD
+    energy1__S2__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S2__hl__ACQ_1.t
+  test energy__S2__hl
+  when {1}
+} 
+energy__S2__hl__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_9 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S2__hl__ZN__hl
+    energy1__S2__hl__ZN__hl__VB
+    energy1__S2__hl__ZN__hl__VDD
+    energy1__S2__hl__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S2__hl__ZN__hl__ACQ_1.t
+  test energy__S2__hl__ZN__hl
+  when {1}
+} 
+energy__S2__hl__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_10 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S2__hl__ZN__lh
+    energy1__S2__hl__ZN__lh__VB
+    energy1__S2__hl__ZN__lh__VDD
+    energy1__S2__hl__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S2__hl__ZN__lh__ACQ_1.t
+  test energy__S2__hl__ZN__lh
+  when {1}
+} 
+energy__S2__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__S2__lh
+    energy1__S2__lh__VB
+    energy1__S2__lh__VDD
+    energy1__S2__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S2__lh__ACQ_1.t
+  test energy__S2__lh
+  when {1}
+} 
+energy__S2__lh__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_11 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S2__lh__ZN__hl
+    energy1__S2__lh__ZN__hl__VB
+    energy1__S2__lh__ZN__hl__VDD
+    energy1__S2__lh__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S2__lh__ZN__hl__ACQ_1.t
+  test energy__S2__lh__ZN__hl
+  when {1}
+} 
+energy__S2__lh__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_12 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S2__lh__ZN__lh
+    energy1__S2__lh__ZN__lh__VB
+    energy1__S2__lh__ZN__lh__VDD
+    energy1__S2__lh__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S2__lh__ZN__lh__ACQ_1.t
+  test energy__S2__lh__ZN__lh
+  when {1}
+} 
+energy__S3__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__S3__hl
+    energy1__S3__hl__VB
+    energy1__S3__hl__VDD
+    energy1__S3__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S3__hl__ACQ_1.t
+  test energy__S3__hl
+  when {1}
+} 
+energy__S3__hl__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_13 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S3__hl__ZN__hl
+    energy1__S3__hl__ZN__hl__VB
+    energy1__S3__hl__ZN__hl__VDD
+    energy1__S3__hl__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S3__hl__ZN__hl__ACQ_1.t
+  test energy__S3__hl__ZN__hl
+  when {1}
+} 
+energy__S3__hl__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_14 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S3__hl__ZN__lh
+    energy1__S3__hl__ZN__lh__VB
+    energy1__S3__hl__ZN__lh__VDD
+    energy1__S3__hl__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S3__hl__ZN__lh__ACQ_1.t
+  test energy__S3__hl__ZN__lh
+  when {1}
+} 
+energy__S3__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__S3__lh
+    energy1__S3__lh__VB
+    energy1__S3__lh__VDD
+    energy1__S3__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S3__lh__ACQ_1.t
+  test energy__S3__lh
+  when {1}
+} 
+energy__S3__lh__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_15 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S3__lh__ZN__hl
+    energy1__S3__lh__ZN__hl__VB
+    energy1__S3__lh__ZN__hl__VDD
+    energy1__S3__lh__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S3__lh__ZN__hl__ACQ_1.t
+  test energy__S3__lh__ZN__hl
+  when {1}
+} 
+energy__S3__lh__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_16 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S3__lh__ZN__lh
+    energy1__S3__lh__ZN__lh__VB
+    energy1__S3__lh__ZN__lh__VDD
+    energy1__S3__lh__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S3__lh__ZN__lh__ACQ_1.t
+  test energy__S3__lh__ZN__lh
+  when {1}
+} 
+energy__S4__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_38 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S4__hl
+    energy1__S4__hl__VB
+    energy1__S4__hl__VDD
+    energy1__S4__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S4__hl__ACQ_1.t
+  test energy__S4__hl
+  when {1}
+} 
+energy__S4__hl__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_3 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S4__hl__ZN__hl
+    energy1__S4__hl__ZN__hl__VB
+    energy1__S4__hl__ZN__hl__VDD
+    energy1__S4__hl__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S4__hl__ZN__hl__ACQ_1.t
+  test energy__S4__hl__ZN__hl
+  when {1}
+} 
+energy__S4__hl__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_4 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S4__hl__ZN__lh
+    energy1__S4__hl__ZN__lh__VB
+    energy1__S4__hl__ZN__lh__VDD
+    energy1__S4__hl__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S4__hl__ZN__lh__ACQ_1.t
+  test energy__S4__hl__ZN__lh
+  when {1}
+} 
+energy__S4__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_37 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S4__lh
+    energy1__S4__lh__VB
+    energy1__S4__lh__VDD
+    energy1__S4__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S4__lh__ACQ_1.t
+  test energy__S4__lh
+  when {1}
+} 
+energy__S4__lh__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_1 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S4__lh__ZN__hl
+    energy1__S4__lh__ZN__hl__VB
+    energy1__S4__lh__ZN__hl__VDD
+    energy1__S4__lh__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S4__lh__ZN__hl__ACQ_1.t
+  test energy__S4__lh__ZN__hl
+  when {1}
+} 
+energy__S4__lh__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_2 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S4__lh__ZN__lh
+    energy1__S4__lh__ZN__lh__VB
+    energy1__S4__lh__ZN__lh__VDD
+    energy1__S4__lh__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S4__lh__ZN__lh__ACQ_1.t
+  test energy__S4__lh__ZN__lh
+  when {1}
+} 
+energy__S5__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__S5__hl
+    energy1__S5__hl__VB
+    energy1__S5__hl__VDD
+    energy1__S5__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S5__hl__ACQ_1.t
+  test energy__S5__hl
+  when {1}
+} 
+energy__S5__hl__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_17 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S5__hl__ZN__hl
+    energy1__S5__hl__ZN__hl__VB
+    energy1__S5__hl__ZN__hl__VDD
+    energy1__S5__hl__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S5__hl__ZN__hl__ACQ_1.t
+  test energy__S5__hl__ZN__hl
+  when {1}
+} 
+energy__S5__hl__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_18 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S5__hl__ZN__lh
+    energy1__S5__hl__ZN__lh__VB
+    energy1__S5__hl__ZN__lh__VDD
+    energy1__S5__hl__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S5__hl__ZN__lh__ACQ_1.t
+  test energy__S5__hl__ZN__lh
+  when {1}
+} 
+energy__S5__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__S5__lh
+    energy1__S5__lh__VB
+    energy1__S5__lh__VDD
+    energy1__S5__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S5__lh__ACQ_1.t
+  test energy__S5__lh
+  when {1}
+} 
+energy__S5__lh__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_19 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S5__lh__ZN__hl
+    energy1__S5__lh__ZN__hl__VB
+    energy1__S5__lh__ZN__hl__VDD
+    energy1__S5__lh__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S5__lh__ZN__hl__ACQ_1.t
+  test energy__S5__lh__ZN__hl
+  when {1}
+} 
+energy__S5__lh__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_20 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S5__lh__ZN__lh
+    energy1__S5__lh__ZN__lh__VB
+    energy1__S5__lh__ZN__lh__VDD
+    energy1__S5__lh__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S5__lh__ZN__lh__ACQ_1.t
+  test energy__S5__lh__ZN__lh
+  when {1}
+} 
+energy__S6__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__S6__hl
+    energy1__S6__hl__VB
+    energy1__S6__hl__VDD
+    energy1__S6__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S6__hl__ACQ_1.t
+  test energy__S6__hl
+  when {1}
+} 
+energy__S6__hl__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_21 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S6__hl__ZN__hl
+    energy1__S6__hl__ZN__hl__VB
+    energy1__S6__hl__ZN__hl__VDD
+    energy1__S6__hl__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S6__hl__ZN__hl__ACQ_1.t
+  test energy__S6__hl__ZN__hl
+  when {1}
+} 
+energy__S6__hl__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_22 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S6__hl__ZN__lh
+    energy1__S6__hl__ZN__lh__VB
+    energy1__S6__hl__ZN__lh__VDD
+    energy1__S6__hl__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S6__hl__ZN__lh__ACQ_1.t
+  test energy__S6__hl__ZN__lh
+  when {1}
+} 
+energy__S6__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__S6__lh
+    energy1__S6__lh__VB
+    energy1__S6__lh__VDD
+    energy1__S6__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S6__lh__ACQ_1.t
+  test energy__S6__lh
+  when {1}
+} 
+energy__S6__lh__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_23 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S6__lh__ZN__hl
+    energy1__S6__lh__ZN__hl__VB
+    energy1__S6__lh__ZN__hl__VDD
+    energy1__S6__lh__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S6__lh__ZN__hl__ACQ_1.t
+  test energy__S6__lh__ZN__hl
+  when {1}
+} 
+energy__S6__lh__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_24 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S6__lh__ZN__lh
+    energy1__S6__lh__ZN__lh__VB
+    energy1__S6__lh__ZN__lh__VDD
+    energy1__S6__lh__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S6__lh__ZN__lh__ACQ_1.t
+  test energy__S6__lh__ZN__lh
+  when {1}
+} 
+energy__S7__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__S7__hl
+    energy1__S7__hl__VB
+    energy1__S7__hl__VDD
+    energy1__S7__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S7__hl__ACQ_1.t
+  test energy__S7__hl
+  when {1}
+} 
+energy__S7__hl__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_25 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S7__hl__ZN__hl
+    energy1__S7__hl__ZN__hl__VB
+    energy1__S7__hl__ZN__hl__VDD
+    energy1__S7__hl__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S7__hl__ZN__hl__ACQ_1.t
+  test energy__S7__hl__ZN__hl
+  when {1}
+} 
+energy__S7__hl__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_26 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S7__hl__ZN__lh
+    energy1__S7__hl__ZN__lh__VB
+    energy1__S7__hl__ZN__lh__VDD
+    energy1__S7__hl__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S7__hl__ZN__lh__ACQ_1.t
+  test energy__S7__hl__ZN__lh
+  when {1}
+} 
+energy__S7__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__S7__lh
+    energy1__S7__lh__VB
+    energy1__S7__lh__VDD
+    energy1__S7__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S7__lh__ACQ_1.t
+  test energy__S7__lh
+  when {1}
+} 
+energy__S7__lh__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_27 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S7__lh__ZN__hl
+    energy1__S7__lh__ZN__hl__VB
+    energy1__S7__lh__ZN__hl__VDD
+    energy1__S7__lh__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S7__lh__ZN__hl__ACQ_1.t
+  test energy__S7__lh__ZN__hl
+  when {1}
+} 
+energy__S7__lh__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_28 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S7__lh__ZN__lh
+    energy1__S7__lh__ZN__lh__VB
+    energy1__S7__lh__ZN__lh__VDD
+    energy1__S7__lh__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S7__lh__ZN__lh__ACQ_1.t
+  test energy__S7__lh__ZN__lh
+  when {1}
+} 
+energy__S8__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__S8__hl
+    energy1__S8__hl__VB
+    energy1__S8__hl__VDD
+    energy1__S8__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S8__hl__ACQ_1.t
+  test energy__S8__hl
+  when {1}
+} 
+energy__S8__hl__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_29 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S8__hl__ZN__hl
+    energy1__S8__hl__ZN__hl__VB
+    energy1__S8__hl__ZN__hl__VDD
+    energy1__S8__hl__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S8__hl__ZN__hl__ACQ_1.t
+  test energy__S8__hl__ZN__hl
+  when {1}
+} 
+energy__S8__hl__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_30 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S8__hl__ZN__lh
+    energy1__S8__hl__ZN__lh__VB
+    energy1__S8__hl__ZN__lh__VDD
+    energy1__S8__hl__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S8__hl__ZN__lh__ACQ_1.t
+  test energy__S8__hl__ZN__lh
+  when {1}
+} 
+energy__S8__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__S8__lh
+    energy1__S8__lh__VB
+    energy1__S8__lh__VDD
+    energy1__S8__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S8__lh__ACQ_1.t
+  test energy__S8__lh
+  when {1}
+} 
+energy__S8__lh__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_31 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S8__lh__ZN__hl
+    energy1__S8__lh__ZN__hl__VB
+    energy1__S8__lh__ZN__hl__VDD
+    energy1__S8__lh__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S8__lh__ZN__hl__ACQ_1.t
+  test energy__S8__lh__ZN__hl
+  when {1}
+} 
+energy__S8__lh__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_32 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S8__lh__ZN__lh
+    energy1__S8__lh__ZN__lh__VB
+    energy1__S8__lh__ZN__lh__VDD
+    energy1__S8__lh__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S8__lh__ZN__lh__ACQ_1.t
+  test energy__S8__lh__ZN__lh
+  when {1}
+} 
+energy__S9__hl__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__S9__hl
+    energy1__S9__hl__VB
+    energy1__S9__hl__VDD
+    energy1__S9__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S9__hl__ACQ_1.t
+  test energy__S9__hl
+  when {1}
+} 
+energy__S9__hl__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_33 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S9__hl__ZN__hl
+    energy1__S9__hl__ZN__hl__VB
+    energy1__S9__hl__ZN__hl__VDD
+    energy1__S9__hl__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S9__hl__ZN__hl__ACQ_1.t
+  test energy__S9__hl__ZN__hl
+  when {1}
+} 
+energy__S9__hl__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_34 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S9__hl__ZN__lh
+    energy1__S9__hl__ZN__lh__VB
+    energy1__S9__hl__ZN__lh__VDD
+    energy1__S9__hl__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S9__hl__ZN__lh__ACQ_1.t
+  test energy__S9__hl__ZN__lh
+  when {1}
+} 
+energy__S9__lh__ACQ_1 {
+  measType energy
+  pred {
+  } 
+  targets {
+    energy__S9__lh
+    energy1__S9__lh__VB
+    energy1__S9__lh__VDD
+    energy1__S9__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+  } 
+  template energy__S9__lh__ACQ_1.t
+  test energy__S9__lh
+  when {1}
+} 
+energy__S9__lh__ZN__hl__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_35 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S9__lh__ZN__hl
+    energy1__S9__lh__ZN__hl__VB
+    energy1__S9__lh__ZN__hl__VDD
+    energy1__S9__lh__ZN__hl__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__hl
+  } 
+  template energy__S9__lh__ZN__hl__ACQ_1.t
+  test energy__S9__lh__ZN__hl
+  when {1}
+} 
+energy__S9__lh__ZN__lh__ACQ_1 {
+  measType energy
+  pred {
+    combineArcs__ACQ_36 {
+      combine_arcs combine_arcs
+    } 
+  } 
+  targets {
+    energy__S9__lh__ZN__lh
+    energy1__S9__lh__ZN__lh__VB
+    energy1__S9__lh__ZN__lh__VDD
+    energy1__S9__lh__ZN__lh__VSS
+    leakage_power1__VB
+    leakage_power1__VDD
+    leakage_power1__VSS
+    leakage_power2__VB
+    leakage_power2__VDD
+    leakage_power2__VSS
+    cap_energy__ZN__lh
+  } 
+  template energy__S9__lh__ZN__lh__ACQ_1.t
+  test energy__S9__lh__ZN__lh
+  when {1}
+} 
+leakage_power__ACQ_1 {
+  measType leakage_power
+  pred {
+  } 
+  targets {
+    leakage_power
+  } 
+  template leakage_power__ACQ_1.t
+  test leakage_power
+  when {1}
+} 
+
