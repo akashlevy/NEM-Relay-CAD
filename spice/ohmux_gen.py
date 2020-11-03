@@ -99,7 +99,7 @@ subs['fndefs'] = '\n'.join(subs['fndefs'])
 subs['bundles'] = []
 subs['bundles'] += ["set_config_opt -pin %s members { %s } " % (ipin, " ".join(["I{i}_{b}".format(i=i,b=b) for b in range(N)]) ) for i,ipin in enumerate(ipins.split())]
 subs['bundles'] += ["set_config_opt -pin ZN members { %s } " % " ".join(["ZN_{b}".format(b=b) for b in range(N)])]
-subs['bundles'] += ["set_pins_to_bundle_map -bundle %s -pins { %s } " % (ipin, " ".join(["I{i}_{b}".format(i=i,b=b) for b in range(N)]) ) for i,ipin in enumerate(ipins.split())]
+subs['bundles'] = '\n'.join(subs['bundles']) if N != 1 else ''
 
 # State partitions
 subs['spart'] = "one"
