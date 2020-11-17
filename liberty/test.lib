@@ -220,7 +220,7 @@ library(nems40tt) {
       timing() { 
         related_pin : "S0" ; 
         timing_sense : non_unate ; 
-        timing_type : rising_edge ; 
+        timing_type : combinational ; 
 
         cell_fall(tmg_ntin_oload_7x7) { 
           index_1("0.0041, 0.0099, 0.0217, 0.0453, 0.0924, 0.1866, 0.3751");
@@ -274,7 +274,7 @@ library(nems40tt) {
       timing() { 
         related_pin : "S1" ; 
         timing_sense : non_unate ; 
-        timing_type : rising_edge ; 
+        timing_type : combinational ; 
 
         cell_fall(tmg_ntin_oload_7x7) { 
           index_1("0.0041, 0.0099, 0.0217, 0.0453, 0.0924, 0.1866, 0.3751");
