@@ -55,6 +55,7 @@ library(nems40tt) {
 
     pin(ZN_0) { 
       direction : output ; 
+      driver_type : resistive ;
       function : "!( S0&I0_0 | S1&I1_0 )" ; 
       x_function : "!S0&!S1 | S0&S1" ; 
       is_unbuffered : true ;
