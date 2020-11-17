@@ -68,6 +68,16 @@ library(nems40tt) {
     area : 0 ; 
     contention_condition : "!S0&!S1 | S0&S1" ; 
 
+    pg_pin(VDD) {
+      voltage_name : VDD;
+      pg_type : primary_power;
+    }
+    
+    pg_pin(VSS) {
+      voltage_name : VSS;
+      pg_type : primary_ground;
+    }
+
     pin(I0) { 
       capacitance : 0.0009942 ; 
       direction : input ; 
