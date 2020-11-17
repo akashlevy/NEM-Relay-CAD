@@ -219,7 +219,7 @@ library(nems40tt) {
 
       timing() { 
         related_pin : "S0" ; 
-        timing_sense : non_unate ; 
+        timing_sense : positive_unate ; 
         timing_type : combinational ; 
 
         cell_fall(tmg_ntin_oload_7x7) { 
@@ -273,7 +273,7 @@ library(nems40tt) {
 
       timing() { 
         related_pin : "S1" ; 
-        timing_sense : non_unate ; 
+        timing_sense : positive_unate ; 
         timing_type : combinational ; 
 
         cell_fall(tmg_ntin_oload_7x7) { 
