@@ -453,4 +453,19 @@ library(nems40tt) {
       }
     }
   }
+
+  cell(nem_feedthru) {
+    area : 0 ; 
+    short(I, Z) ; 
+    pin(I) {
+      direction: inout;
+      capacitance : 0.0009942 ; 
+      input_voltage : default ; 
+    }
+    pin(Z) {
+      direction: inout;
+      capacitance : 0.0009942 ; 
+      input_voltage : default ; 
+    }
+  }
 }
