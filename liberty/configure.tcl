@@ -136,7 +136,7 @@ pintype default {
     set explicit_points_slew { 2.05e-12 4.95e-12 1.085e-11 2.265e-11 4.62e-11 9.33e-11 1.8755e-10 }
     set total_slew_multiplier 25
     set initial_delay 1e-6
-    set subtract_leakage 1
+    #set subtract_leakage 1
 }
 
 
