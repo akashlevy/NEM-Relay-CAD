@@ -379,6 +379,24 @@ library(nems40tt) {
           values( " 0.0 ");
         }
       }
+      timing() {
+        related_pin : EN ;
+        timing_type : three_state_disable ;
+        /* 0 to Z modeling */
+        cell_rise(scalar) {
+          values( " 0.0 ");
+        }
+        rise_transition(scalar) {
+          values( " 0.0 ");
+        }
+        /* 1 to Z modeling */
+        cell_fall(scalar) {
+          values( " 0.0 ");
+        }
+        fall_transition(scalar) {
+          values( " 0.0 ");
+        }
+      }
 
       timing() { 
         related_pin : "I" ; 
