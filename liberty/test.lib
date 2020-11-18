@@ -456,7 +456,19 @@ library(nems40tt) {
 
   cell(nem_feedthru) {
     area : 0 ; 
+
+    pg_pin(VDD) {
+      voltage_name : VDD;
+      pg_type : primary_power;
+    }
+    
+    pg_pin(VSS) {
+      voltage_name : VSS;
+      pg_type : primary_ground;
+    }
+
     short(I, Z) ; 
+    
     pin(I) {
       direction: inout;
       capacitance : 0.0009942 ; 
