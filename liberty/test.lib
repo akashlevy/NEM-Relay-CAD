@@ -344,11 +344,13 @@ library(nems40tt) {
     pin(I) { 
       capacitance : 0.0009942 ; 
       direction : input ; 
+      input_voltage : default ; 
     }
 
     pin(EN) { 
       capacitance : 0.003265 ; 
       direction : input ; 
+      input_voltage : default ; 
     }
 
     pin(Z) { 
