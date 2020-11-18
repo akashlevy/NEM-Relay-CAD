@@ -357,15 +357,15 @@ library(nems40tt) {
       direction : output ; 
       function : "I" ;
       driver_type : resistive ; 
-      three_state_enable : EN ;
+      three_state : "!EN" ;
       is_unbuffered : true ;
       has_pass_gate : true ;
 
       timing() {
         related_pin : EN ;
-        timing_type : three_state_disable ;
-          /* 0 to Z modeling */
-          cell_rise(scalar) {
+        timing_type : three_state_enable ;
+        /* 0 to Z modeling */
+        cell_rise(scalar) {
           values( " 0.0 ");
         }
         rise_transition(scalar) {
@@ -434,4 +434,5 @@ library(nems40tt) {
         }
       }
     }
+  }
 }
