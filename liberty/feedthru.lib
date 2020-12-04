@@ -1,0 +1,93 @@
+library(nems40tt) { 
+  delay_model : table_lookup ; 
+  library_features(report_delay_calculation, report_power_calculation);
+  time_unit : 1ns ; 
+  voltage_unit : 1V ; 
+  current_unit : 1mA ; 
+  capacitive_load_unit(1, pf);
+  pulling_resistance_unit : 1kohm ; 
+  leakage_power_unit : 1nW ; 
+  input_threshold_pct_fall : 50 ; 
+  input_threshold_pct_rise : 50 ; 
+  output_threshold_pct_fall : 50 ; 
+  output_threshold_pct_rise : 50 ; 
+  slew_derate_from_library : 0.5 ; 
+  slew_lower_threshold_pct_fall : 30 ; 
+  slew_lower_threshold_pct_rise : 30 ; 
+  slew_upper_threshold_pct_fall : 70 ; 
+  slew_upper_threshold_pct_rise : 70 ; 
+  in_place_swap_mode : match_footprint ; 
+  nom_process : 1 ; 
+  nom_temperature : 25 ; 
+  nom_voltage : 1.1 ; 
+  default_cell_leakage_power : 0 ; 
+  default_fanout_load : 1 ; 
+  default_inout_pin_cap : 0.0006825 ; 
+  default_input_pin_cap : 0.0006825 ; 
+  default_leakage_power_density : 0 ; 
+  default_output_pin_cap : 0 ; 
+  voltage_map(VDD, 1.1);
+  voltage_map(VSS, 0);
+
+  operating_conditions(nems40tt) { 
+    process : 1 ; 
+    temperature : 25 ; 
+    voltage : 1.1 ; 
+  }
+  default_operating_conditions : nems40tt ; 
+
+  input_voltage(default) { 
+    vil : 0 ; 
+    vih : 1.1 ; 
+    vimin : 0 ; 
+    vimax : 1.1 ; 
+  }
+
+  output_voltage(default) { 
+    vol : 0 ; 
+    voh : 1.1 ; 
+    vomin : 0 ; 
+    vomax : 1.1 ; 
+  }
+
+  lu_table_template(ndw_ntin_nvolt_7x2) { 
+    variable_1 : input_net_transition ; 
+    variable_2 : normalized_voltage ; 
+    index_1("1, 2, 3, 4, 5, 6, 7");
+    index_2("1, 2");
+  }
+
+  lu_table_template(tmg_ntin_oload_7x7) { 
+    variable_1 : input_net_transition ; 
+    variable_2 : total_output_net_capacitance ; 
+    index_1("1, 2, 3, 4, 5, 6, 7");
+    index_2("1, 2, 3, 4, 5, 6, 7");
+  }
+  
+  cell(dummy_inv) {
+    area : 0 ; 
+
+    pg_pin(VDD) {
+      voltage_name : VDD;
+      pg_type : primary_power;
+    }
+    
+    pg_pin(VSS) {
+      voltage_name : VSS;
+      pg_type : primary_ground;
+    }
+
+    short(I, Z) ; 
+    
+    pin(I) {
+      direction: inout;
+      capacitance : 0 ; 
+      input_voltage : default ; 
+    }
+    pin(Z) {
+      direction: inout;
+      capacitance : 0 ; 
+      input_voltage : default ; 
+    }
+  }
+}
