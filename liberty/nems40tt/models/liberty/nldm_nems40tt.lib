@@ -127,6 +127,7 @@ library(nems40tt) {
 
   cell(nem_ohmux_invd0_2i_8b) { 
     area : 0 ; 
+    contention_condition : "!S0&!S1 | S0&S1" ;
 
     leakage_power() { 
       related_pg_pin : "VB" ; 
