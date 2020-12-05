@@ -331,7 +331,7 @@ library(nems40tt) {
       max_transition : 0.378 ; 
       min_capacitance : 0.00031 ; 
       output_voltage : "default" ; 
-      contention_condition : "!S0&!S1 | S0&S1" ; 
+      x_function : "!S0&!S1 | S0&S1" ; 
       related_power_pin : VDD ; 
       related_ground_pin : VSS ; 
 
@@ -1269,7 +1269,7 @@ library(nems40tt) {
       max_transition : 0.374 ; 
       min_capacitance : 0.00031 ; 
       output_voltage : "default" ; 
-      contention_condition : "!S0&!S1&!S2&!S3 | S0&S1 | S0&S2 | S0&S3 | S1&S2 | S1&S3 | S2&S3" ; 
+      x_function : "!S0&!S1&!S2&!S3 | S0&S1 | S0&S2 | S0&S3 | S1&S2 | S1&S3 | S2&S3" ; 
       related_power_pin : VDD ; 
       related_ground_pin : VSS ; 
 
@@ -2592,7 +2592,7 @@ library(nems40tt) {
       output_voltage : default ; 
       related_ground_pin : VSS ; 
       related_power_pin : VDD ; 
-      contention_condition : "!S0&!S1 | S0&S1" ; 
+      x_function : "!S0&!S1 | S0&S1" ; 
 
       internal_power() { 
         related_pg_pin : "VB" ; 
@@ -4038,7 +4038,7 @@ library(nems40tt) {
       max_transition : 0.37 ; 
       min_capacitance : 0.00031 ; 
       output_voltage : "default" ; 
-      contention_condition : "!S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9" ; 
+      x_function : "!S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9" ; 
       related_power_pin : VDD ; 
       related_ground_pin : VSS ; 
 
@@ -8037,7 +8037,7 @@ library(nems40tt) {
       output_voltage : default ; 
       related_ground_pin : VSS ; 
       related_power_pin : VDD ; 
-      contention_condition : "!S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9&!S10&!S11&!S12&!S13 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S0&S10 | S0&S11 | S0&S12 | S0&S13 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S1&S10 | S1&S11 | S1&S12 | S1&S13 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S2&S10 | S2&S11 | S2&S12 | S2&S13 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S3&S10 | S3&S11 | S3&S12 | S3&S13 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S4&S10 | S4&S11 | S4&S12 | S4&S13 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S5&S10 | S5&S11 | S5&S12 | S5&S13 | S6&S7 | S6&S8 | S6&S9 | S6&S10 | S6&S11 | S6&S12 | S6&S13 | S7&S8 | S7&S9 | S7&S10 | S7&S11 | S7&S12 | S7&S13 | S8&S9 | S8&S10 | S8&S11 | S8&S12 | S8&S13 | S9&S10 | S9&S11 | S9&S12 | S9&S13 | S10&S11 | S10&S12 | S10&S13 | S11&S12 | S11&S13 | S12&S13" ; 
+      x_function : "!S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9&!S10&!S11&!S12&!S13 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S0&S10 | S0&S11 | S0&S12 | S0&S13 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S1&S10 | S1&S11 | S1&S12 | S1&S13 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S2&S10 | S2&S11 | S2&S12 | S2&S13 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S3&S10 | S3&S11 | S3&S12 | S3&S13 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S4&S10 | S4&S11 | S4&S12 | S4&S13 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S5&S10 | S5&S11 | S5&S12 | S5&S13 | S6&S7 | S6&S8 | S6&S9 | S6&S10 | S6&S11 | S6&S12 | S6&S13 | S7&S8 | S7&S9 | S7&S10 | S7&S11 | S7&S12 | S7&S13 | S8&S9 | S8&S10 | S8&S11 | S8&S12 | S8&S13 | S9&S10 | S9&S11 | S9&S12 | S9&S13 | S10&S11 | S10&S12 | S10&S13 | S11&S12 | S11&S13 | S12&S13" ; 
 
       internal_power() { 
         related_pg_pin : "VB" ; 
@@ -12306,7 +12306,7 @@ library(nems40tt) {
       output_voltage : default ; 
       related_ground_pin : VSS ; 
       related_power_pin : VDD ; 
-      contention_condition : "!S0&!S1&!S2&!S3 | S0&S1 | S0&S2 | S0&S3 | S1&S2 | S1&S3 | S2&S3" ; 
+      x_function : "!S0&!S1&!S2&!S3 | S0&S1 | S0&S2 | S0&S3 | S1&S2 | S1&S3 | S2&S3" ; 
 
       internal_power() { 
         related_pg_pin : "VB" ; 
