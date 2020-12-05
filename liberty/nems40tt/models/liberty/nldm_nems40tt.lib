@@ -36,10 +36,12 @@ library(nems40tt) {
   default_input_pin_cap : 0.0006825 ; 
   default_leakage_power_density : 0 ; 
   default_output_pin_cap : 0 ; 
-  internal_power_calculation : include_switching ;
   voltage_map(VDD, 1.1);
   voltage_map(VSS, 0);
   voltage_map(VB, -2.6);
+  char_config() {
+    internal_power_calculation : include_switching ;
+  }
 
   operating_conditions(nems40tt) { 
     process : 1 ; 
