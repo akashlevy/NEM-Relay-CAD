@@ -1,0 +1,13 @@
+
+Path,nems40tt/models/liberty/ccs_nems40tt.lib
+
+Library settings,
+SiliconSmart,SiliconSmart M-2017.03-2 build date: Apr 12, 2017 14:36:58. (SMSC-2) 
+
+Qualification settings,
+Library Compiler,/cad/synopsys/lc/M-2017.06-SP3/bin/lc_shell
+
+0,CCSN validation failures
+0,CCSN voltage range check failures
+
+

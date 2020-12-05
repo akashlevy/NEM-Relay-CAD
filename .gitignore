@@ -1,3 +1,4 @@
+liberty/nems40tt/runtime/*
 Relay54Sol*.mph
 *.lock
 *.pyc
