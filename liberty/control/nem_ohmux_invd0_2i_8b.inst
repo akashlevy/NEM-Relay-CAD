@@ -33,6 +33,7 @@ set_config_opt -pin ZN members { ZN_0 ZN_1 ZN_2 ZN_3 ZN_4 ZN_5 ZN_6 ZN_7 }
 create_parameter cut_netlist
 set_config_opt -opcond __default__ -- cut_netlist nem_ohmux_invd0_2i_8b.sp
 set_liberty_attribute -cell nem_ohmux_invd0_2i_8b area 0
+set_liberty_attribute -cell nem_ohmux_invd0_2i_8b contention_condition "!S0&!S1 | S0&S1"
 
 create_parameter state_partitions
 set_config_opt -- state_partitions one

@@ -80,20 +80,22 @@ subs['fndefs'] = []
 selcombos = list(combinations(["S{i}".format(i=i) for i in range(M)], 2))
 spins = " ".join(["S{i}".format(i=i) for i in range(M)])
 illegals = ["&".join(["!S{i}".format(i=i) for i in range(M)])] + ["&".join(c) for c in selcombos]
+illegals = " | ".join(illegals)
 if N == 1:
     ipins = " ".join(["I{i}_0".format(i=i) for i in range(M)])
     #subs['fndefs'].append("add_one_hot ZN_0 { %s } { %s }" % (spins, ipins))
     conds = ["S{i}&I{i}_0".format(i=i) for i in range(M)]
-    subs['fndefs'].append("add_function ZN_0 {!( %s )} -illegal { %s }" % (" | ".join(conds), " | ".join(illegals)))
+    subs['fndefs'].append("add_function ZN_0 {!( %s )} -illegal { %s }" % (" | ".join(conds), illegals))
 else:
     ipins = " ".join(["I{i}".format(i=i) for i in range(M)])
     #subs['fndefs'].append("add_one_hot ZN { %s } { %s }" % (spins, ipins))
     conds = ["S{i}&I{i}".format(i=i) for i in range(M)]
-    subs['fndefs'].append("add_function ZN {!( %s )} -illegal { %s }" % (" | ".join(conds), " | ".join(illegals)))
-subs['fndefs'].append("add_forbidden_state { %s }" % " | ".join(illegals))
+    subs['fndefs'].append("add_function ZN {!( %s )} -illegal { %s }" % (" | ".join(conds), illegals))
+subs['fndefs'].append("add_forbidden_state { %s }" % illegals)
 for selcombo in selcombos:
     subs['fndefs'].append("add_switch_tuple { %s }" % " ".join(selcombo))
 subs['fndefs'] = '\n'.join(subs['fndefs'])
+subs['contention_condition'] = illegals
 
 # Bundle defintion
 subs['bundles'] = []

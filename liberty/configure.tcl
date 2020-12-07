@@ -5,8 +5,8 @@
 # OPERATING CONDITIONS DEFINITION
 #################################
 create_operating_condition nems40tt
-add_opc_supplies nems40tt VDD 1.1 VB -2.6
-add_opc_grounds nems40tt VSS 0.0
+add_opc_supplies nems40tt VDD 1.1
+add_opc_grounds nems40tt VSS 0.0 VB -2.6
 set_opc_temperature nems40tt 25
 set_opc_process nems40tt []
 
@@ -95,10 +95,10 @@ define_parameters default {
     #set gate_leakage_time_scaling_factor 100
     
     # Controls which supplies are measured for power consumption
-    set power_meas_supplies { VDD VB }
+    set power_meas_supplies { VDD }
     
     # list of ground supplies used (required for Functional Recognition)
-    set power_meas_grounds { VSS }
+    set power_meas_grounds { VSS VB }
 
     # power period
     set power_period 5e-6
