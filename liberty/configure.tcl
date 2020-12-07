@@ -172,6 +172,7 @@ define_parameters validation {
 # Warning: Line 39, The 'char_when' attribute is already defined for receiver_capacitance groups.
 #         It cannot be redefined. (LBDB-29)
 # NOTE: Extra timing arc and x_function are needed for ohmux.
+# NOTE: internal_power_calculation is not used in TSMC library either so it can probably be left out
 # Warning: Line 11, The 'internal_power_calculation' attribute in char_config group is required for NLPM library. 
 #         No default can be applied to this attribute. (LBDB-366)
 # Warning: Line 324, Cell 'nem_ohmux_invd0_2i_1b', pin 'ZN_0', There is an extra timing arc between 'S0' and 
