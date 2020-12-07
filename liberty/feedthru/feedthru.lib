@@ -1,4 +1,4 @@
-library(nems40tt) { 
+library(feedthru) { 
   delay_model : table_lookup ; 
   library_features(report_delay_calculation, report_power_calculation);
   time_unit : 1ns ; 
@@ -29,12 +29,12 @@ library(nems40tt) {
   voltage_map(VDD, 1.1);
   voltage_map(VSS, 0);
 
-  operating_conditions(nems40tt) { 
+  operating_conditions(feedthru) { 
     process : 1 ; 
     temperature : 25 ; 
     voltage : 1.1 ; 
   }
-  default_operating_conditions : nems40tt ; 
+  default_operating_conditions : feedthru ; 
 
   input_voltage(default) { 
     vil : 0 ; 
