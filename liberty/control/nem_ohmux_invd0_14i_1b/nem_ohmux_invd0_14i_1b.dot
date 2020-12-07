@@ -1,0 +1,64 @@
+graph G {
+	rankdir=LR;
+
+
+	0 [shape=box label=NEM_OHMUX_INVD0_14I_1B height=16.8 rankdir=TB];
+	I0_0 [shape=none];
+	I0_0 -- 0
+	I1_0 [shape=none];
+	I1_0 -- 0
+	I2_0 [shape=none];
+	I2_0 -- 0
+	I3_0 [shape=none];
+	I3_0 -- 0
+	I4_0 [shape=none];
+	I4_0 -- 0
+	I5_0 [shape=none];
+	I5_0 -- 0
+	I6_0 [shape=none];
+	I6_0 -- 0
+	I7_0 [shape=none];
+	I7_0 -- 0
+	I8_0 [shape=none];
+	I8_0 -- 0
+	I9_0 [shape=none];
+	I9_0 -- 0
+	I10_0 [shape=none];
+	I10_0 -- 0
+	I11_0 [shape=none];
+	I11_0 -- 0
+	I12_0 [shape=none];
+	I12_0 -- 0
+	I13_0 [shape=none];
+	I13_0 -- 0
+	S0 [shape=none];
+	S0 -- 0
+	S1 [shape=none];
+	S1 -- 0
+	S2 [shape=none];
+	S2 -- 0
+	S3 [shape=none];
+	S3 -- 0
+	S4 [shape=none];
+	S4 -- 0
+	S5 [shape=none];
+	S5 -- 0
+	S6 [shape=none];
+	S6 -- 0
+	S7 [shape=none];
+	S7 -- 0
+	S8 [shape=none];
+	S8 -- 0
+	S9 [shape=none];
+	S9 -- 0
+	S10 [shape=none];
+	S10 -- 0
+	S11 [shape=none];
+	S11 -- 0
+	S12 [shape=none];
+	S12 -- 0
+	S13 [shape=none];
+	S13 -- 0
+	ZN_0 [shape=none];
+	0 -- ZN_0
+}
