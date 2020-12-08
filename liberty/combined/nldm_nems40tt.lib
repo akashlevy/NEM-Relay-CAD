@@ -10032,12 +10032,10 @@ library(nems40tt) {
     pin(I) {
       direction: input;
       capacitance : 0 ; 
-      input_voltage : default ; 
     }
     pin(Z) {
       direction: output;
       capacitance : 0 ; 
-      output_voltage : default ; 
     }
   }
 
@@ -10059,12 +10057,10 @@ library(nems40tt) {
     pin(I) {
       direction: input;
       capacitance : 0 ; 
-      input_voltage : default ; 
     }
     pin(Z) {
       direction: output;
       capacitance : 0 ; 
-      output_voltage : default ; 
     }
   }
   
@@ -10086,12 +10082,10 @@ library(nems40tt) {
     pin(I) {
       direction: input;
       capacitance : 0 ; 
-      input_voltage : default ; 
     }
     pin(Z) {
       direction: output;
       capacitance : 0 ; 
-      output_voltage : default ; 
     }
   }
 
@@ -10113,12 +10107,10 @@ library(nems40tt) {
     pin(I) {
       direction: input;
       capacitance : 0 ; 
-      input_voltage : default ; 
     }
     pin(Z) {
       direction: output;
       capacitance : 0 ; 
-      output_voltage : default ; 
     }
   }
   
@@ -10140,12 +10132,10 @@ library(nems40tt) {
     pin(I) {
       direction: input;
       capacitance : 0 ; 
-      input_voltage : default ; 
     }
     pin(Z) {
       direction: output;
       capacitance : 0 ; 
-      output_voltage : default ; 
     }
   }
   
@@ -10167,12 +10157,10 @@ library(nems40tt) {
     pin(I) {
       direction: input;
       capacitance : 0 ; 
-      input_voltage : default ; 
     }
     pin(Z) {
       direction: output;
       capacitance : 0 ; 
-      output_voltage : default ; 
     }
   }
   
@@ -10194,12 +10182,10 @@ library(nems40tt) {
     pin(I) {
       direction: input;
       capacitance : 0 ; 
-      input_voltage : default ; 
     }
     pin(Z) {
       direction: output;
       capacitance : 0 ; 
-      output_voltage : default ; 
     }
   }
 
@@ -10221,12 +10207,10 @@ library(nems40tt) {
     pin(I) {
       direction: input;
       capacitance : 0 ; 
-      input_voltage : default ; 
     }
     pin(Z) {
       direction: output;
       capacitance : 0 ; 
-      output_voltage : default ; 
     }
   }
 
@@ -10248,12 +10232,10 @@ library(nems40tt) {
     pin(I) {
       direction: input;
       capacitance : 0 ; 
-      input_voltage : default ; 
     }
     pin(Z) {
       direction: output;
       capacitance : 0 ; 
-      output_voltage : default ; 
     }
   }
   
@@ -10275,12 +10257,10 @@ library(nems40tt) {
     pin(I) {
       direction: input;
       capacitance : 0 ; 
-      input_voltage : default ; 
     }
     pin(Z) {
       direction: output;
       capacitance : 0 ; 
-      output_voltage : default ; 
     }
   }
   
@@ -10302,12 +10282,10 @@ library(nems40tt) {
     pin(I) {
       direction: input;
       capacitance : 0 ; 
-      input_voltage : default ; 
     }
     pin(Z) {
       direction: output;
       capacitance : 0 ; 
-      output_voltage : default ; 
     }
   }
 }
