@@ -49,6 +49,8 @@ Once these have been computed, you can view the results:
 
 You can export the parameters as well for iterative contact placement and SPICE modeling.
 
+For quasi-static sweep, you will have to choose a point on the relay to compute the displacement for. An arbitrary point on any of the contacts should work well.
+
 For iterative contact placement, make sure to run the quasi-static sweep, then choose an operating voltage and displacement contour to extract, then export the displacement contour points. Then, run `python contpts.py` to get the next set of contacts (modify the parameters internally, if necessary, first). This generates `contpts.json`, which is used by `layouts/relay.py` to generate a new layout using the contact placement.
 
 For SPICE modeling, make sure to run `python comsol_postproc.py`, which generates `spice/tech_params.va`. These parameters are used by the Verilog-A model.
