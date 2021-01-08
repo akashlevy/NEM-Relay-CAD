@@ -34,7 +34,7 @@ RZ_5 Z_5 gnd 1G
 RZ_6 Z_6 gnd 1G
 RZ_7 Z_7 gnd 1G
 VDD VDD gnd 1.1V
-VSNEM VSNEM gnd -2.6V
+VSNEM VSNEM gnd -3.4V
 VSS VS gnd 0V
 
 ** Options **

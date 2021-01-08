@@ -106,7 +106,7 @@ RZN_5 ZN_5 gnd 1G
 RZN_6 ZN_6 gnd 1G
 RZN_7 ZN_7 gnd 1G
 VDD VDD gnd 1.1V
-VSNEM VSNEM gnd -2.6V
+VSNEM VSNEM gnd -3.4V
 VSS VS gnd 0V
 
 ** Options **

@@ -13,7 +13,7 @@ VS0 S0 gnd 0V PWL(0s 0V 1ns 1.1V 5000ns 1.1V 5001ns 0V 10000ns 0V)
 VS1 S1 gnd 0V PWL(0s 0V 1ns 0V 5000ns 0V 5001ns 1.1V 10000ns 1.1V)
 RZN_0 ZN_0 gnd 1G
 VDD VDD gnd 1.1V
-VSNEM VSNEM gnd -2.6V
+VSNEM VSNEM gnd -3.4V
 VSS VS gnd 0V
 
 ** Options **
