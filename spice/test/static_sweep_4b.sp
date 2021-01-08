@@ -1,4 +1,4 @@
-.title <quasistatic_sweep_4b.sp>
+.title <static_sweep_4b.sp>
 .hdl ../models/nem_relay_4b.va
 
 ** Create relay and start at z=0 **
