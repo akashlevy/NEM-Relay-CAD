@@ -1,6 +1,9 @@
 # Import libraries
 import json, matplotlib as mpl, matplotlib.pyplot as plt, pandas as pd
 
+# Set font size
+plt.rcParams.update({'font.size': 15})
+
 # Parameters
 params = json.load(open("params.json"))
 propdf = pd.read_csv("output/mechprops.csv", header=None)
@@ -9,7 +12,7 @@ m = propdf[2][0]
 L_plate = params["L_plate"]
 n_cont = params["n_cont"]
 L_cont = params["L_cont"]
-A_gate = L_plate**2 - n_cont * L_cont**2
+A_gate = L_plate**2 - n_cont * L_cont**2 * 2.5 # Approximate area of contact+channels as 2.5x contact area
 t_cont = params["t_cont"]
 t_gap = params["t_gap"] + params["t_sp"] / params["K_sp"]
 F_A = 0
@@ -31,13 +34,13 @@ V_po = ((2 * (k_tot * (t_gap - t_cont) - F_A) * t_cont**2)/(k * eps_0 * A_gate))
 # Plot quasi-static curves
 qs_comsol = pd.read_csv("output/quasistatic.csv", header=None, names=["Vg", "z"])
 qs_spice = pd.read_csv("output/quasistatic_sp.txt", delimiter='\t', header=0, names=["Vg", "z"])
-plt.figure(figsize=(4, 3))
-plt.xlabel("Gate-to-body Voltage $V_{gb}$ (V)")
-plt.ylabel("Relay displacement (nm)")
+plt.figure(figsize=(5, 3))
+plt.xlabel("$V_{GB}$ (V)")
+plt.ylabel("z (nm)")
 plt.plot(qs_comsol["Vg"], qs_comsol["z"]*1e3, label="FEM")
-plt.plot(qs_spice["Vg"], qs_spice["z"]*1e9, label="SPICE model")
-plt.plot([V_pi, V_pi], [0, 40], '--', label="$V_{pi}$ formula")
-plt.plot([V_po, V_po], [0, 40], '--', label="$V_{po}$ formula")
+plt.plot(qs_spice["Vg"], qs_spice["z"]*1e9, label="SPICE")
+plt.plot([V_pi, V_pi], [0, 40], '--', label="$V_{pi}$ hand")
+plt.plot([V_po, V_po], [0, 40], '--', label="$V_{po}$ hand")
 plt.xlim(0, 5)
 plt.ylim(0, 40)
 plt.legend()
@@ -50,10 +53,10 @@ tran_spice = pd.read_csv("output/transient_sp.txt", delimiter='\t', header=0, na
 tran_spice_rise = tran_spice[tran_spice["t"] >= 10000*1e-9]
 tran_spice_rise = tran_spice_rise[tran_spice_rise["t"] <= 10800*1e-9]
 tran_spice_rise["t"] = tran_spice_rise["t"] - 10000*1e-9
-plt.figure(figsize=(4, 3))
-plt.xlabel("Time (ns)")
-plt.ylabel("Relay displacement (nm)")
-plt.plot(tran_spice_rise["t"]*1e9, tran_spice_rise["z"]*1e9, label="SPICE model\n$V_{GB}$ = 5V\nQ=0.5")
+plt.figure(figsize=(5, 3))
+plt.xlabel("t (ns)")
+plt.ylabel("z (nm)")
+plt.plot(tran_spice_rise["t"]*1e9, tran_spice_rise["z"]*1e9, label="SPICE sim\n$V_{GB}$ = 5V\nQ=0.5")
 plt.xlim(0, 800)
 plt.ylim(0, 40)
 plt.legend()
@@ -65,10 +68,10 @@ plt.show()
 tran_spice_fall = tran_spice[tran_spice["t"] >= 20000*1e-9]
 tran_spice_fall = tran_spice_fall[tran_spice_fall["t"] <= 21200*1e-9]
 tran_spice_fall["t"] = tran_spice_fall["t"] - 20000*1e-9
-plt.figure(figsize=(4, 3))
-plt.xlabel("Time (ns)")
-plt.ylabel("Relay displacement (nm)")
-plt.plot(tran_spice_fall["t"]*1e9, tran_spice_fall["z"]*1e9, label="SPICE model\n$V_{GB}$ = 5V\nQ=0.5")
+plt.figure(figsize=(5, 3))
+plt.xlabel("t (ns)")
+plt.ylabel("z (nm)")
+plt.plot(tran_spice_fall["t"]*1e9, tran_spice_fall["z"]*1e9, label="SPICE sim\n$V_{GB}$ = 5V\nQ=0.5")
 plt.xlim(0, 1200)
 plt.ylim(0, 40)
 plt.legend()
