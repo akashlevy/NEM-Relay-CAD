@@ -5,8 +5,8 @@ from sklearn.neighbors import radius_neighbors_graph
 from scipy.sparse.csgraph import connected_components
 
 # Contact spacing
-dist1 = 0.22
-dist2 = 0.46
+dist1 = 0.2
+dist2 = 0.5
 
 # Get connected components and distances
 data = pd.read_csv("output/dispcont.csv", names=["x", "y", "w", "one"], usecols=["x", "y"])

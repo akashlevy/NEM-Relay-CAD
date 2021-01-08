@@ -1,6 +1,6 @@
 {
-    "L_plate": 3000e-9,
-    "L_cant": 3000e-9,
+    "L_plate": 2780e-9,
+    "L_cant": 2780e-9,
     "L_cont": 150e-9,
     "L_hole": 100e-9,
     "L_via": 400e-9,
@@ -9,7 +9,7 @@
     "g_cant": 200e-9,
     "g_land": 50e-9,
 
-    "r_hole_pl": 1170e-9,
+    "r_hole_pl": 1000e-9,
     "d_hole_pl": 200e-9,
     "n_hole": [1, 8, 16, 24],
 
@@ -24,7 +24,7 @@
     "t_gap": 60e-9,
 
     "Qf": 0.5,
-    "Rcont": 1e3,
+    "Rcont": 40,
     "Rair": 1e15,
 
     "K_sp": 5.7,

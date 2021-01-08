@@ -51,11 +51,11 @@ for _ in range(n_sides):
 relay = ep.merge_to_polygon(relaycomps, 0, True, True)[0]
 
 # Insert relay holes
-bound = pya.Box(-r_hole_pl*1.1, -r_hole_pl*1.1, r_hole_pl*1.1, r_hole_pl*1.1)
+bound = pya.Box(-r_hole_pl*1.3, -r_hole_pl*1.3, r_hole_pl*1.3, r_hole_pl*1.3)
 for i, n in enumerate(n_hole):
     r = float(i) / max_hole * r_hole_pl
     for h in range(n):
-        holeloc = pya.Point(r*cos(2*pi/n*h), r*sin(2*pi/n*h))
+        holeloc = pya.Point(r*cos(2*pi/n*(h+0.5)), r*sin(2*pi/n*(h+0.5)))
         if bound.contains(holeloc):
             hole = pya.Box(-L_hole/2, -L_hole/2, L_hole/2, L_hole/2).moved(holeloc)
             top.shapes(nemholes).insert(hole)
