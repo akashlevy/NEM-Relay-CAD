@@ -2,13 +2,15 @@
 import json, matplotlib as mpl, matplotlib.pyplot as plt, pandas as pd
 
 # Set font size
-plt.rcParams.update({'font.size': 15})
+plt.rcParams.update({'font.size': 14})
 
 # Parameters
 params = json.load(open("params.json"))
 propdf = pd.read_csv("output/mechprops.csv", header=None)
 k_tot = propdf[1][0]
 m = propdf[2][0]
+Vop = params["Vop"]
+VSNEM = params["VSNEM"]
 L_plate = params["L_plate"]
 n_cont = params["n_cont"]
 L_cont = params["L_cont"]
@@ -39,8 +41,10 @@ plt.xlabel("$V_{GB}$ (V)")
 plt.ylabel("z (nm)")
 plt.plot(qs_comsol["Vg"], qs_comsol["z"]*1e3, label="FEM")
 plt.plot(qs_spice["Vg"], qs_spice["z"]*1e9, label="SPICE")
-plt.plot([V_pi, V_pi], [0, 40], '--', label="$V_{pi}$ hand")
-plt.plot([V_po, V_po], [0, 40], '--', label="$V_{po}$ hand")
+plt.plot([V_pi, V_pi], [0, 40], '--', label="$V_{pi}$ analytical")
+plt.plot([V_po, V_po], [0, 40], '--', label="$V_{po}$ analytical")
+#plt.plot([Vop, Vop], [0, 40], '.--', label="ON state bias")
+#plt.plot([-VSNEM, -VSNEM], [0, 40], '.--', label="OFF state bias")
 plt.xlim(0, 5)
 plt.ylim(0, 40)
 plt.legend()
@@ -49,15 +53,15 @@ plt.savefig("demo/quasistatic-curve.pdf")
 plt.show()
 
 # Plot transient curve rising
-tran_spice = pd.read_csv("output/transient_sp.txt", delimiter='\t', header=0, names=["t", "Ids", "z", "Vg"])
+tran_spice = pd.read_csv("output/transient_sp.txt", delimiter='\t', header=0, names=["t", "z"])
 tran_spice_rise = tran_spice[tran_spice["t"] >= 10000*1e-9]
-tran_spice_rise = tran_spice_rise[tran_spice_rise["t"] <= 10800*1e-9]
+tran_spice_rise = tran_spice_rise[tran_spice_rise["t"] <= 20000*1e-9]
 tran_spice_rise["t"] = tran_spice_rise["t"] - 10000*1e-9
 plt.figure(figsize=(5, 3))
-plt.xlabel("t (ns)")
+plt.xlabel("t (us)")
 plt.ylabel("z (nm)")
-plt.plot(tran_spice_rise["t"]*1e9, tran_spice_rise["z"]*1e9, label="SPICE sim\n$V_{GB}$ = 5V\nQ=0.5")
-plt.xlim(0, 800)
+plt.plot(tran_spice_rise["t"]*1e6, tran_spice_rise["z"]*1e9, label="SPICE sim\n$V_{GB}$ = 5V\nQ=0.5")
+plt.xlim(0, 5)
 plt.ylim(0, 40)
 plt.legend()
 plt.tight_layout()
