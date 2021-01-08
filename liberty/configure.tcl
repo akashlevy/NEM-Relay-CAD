@@ -6,7 +6,7 @@
 #################################
 create_operating_condition nems40tt
 add_opc_supplies nems40tt VDD 1.1
-add_opc_grounds nems40tt VSS 0.0 VSNEM -2.6
+add_opc_grounds nems40tt VSS 0.0 VSNEM -3.4
 set_opc_temperature nems40tt 25
 set_opc_process nems40tt []
 

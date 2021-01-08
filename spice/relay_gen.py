@@ -1,5 +1,5 @@
 # Import libraries
-import argparse
+import argparse, json
 from string import Template
 
 # Parse arguments
@@ -9,6 +9,10 @@ args = parser.parse_args()
 
 # Initialize substitution dictionary
 subs = {}
+
+# Get params
+params = json.load(open("../params.json"))
+subs['Vop'] = params['Vop']
 
 # Copy from params to subs
 subs['N'] = args.N
@@ -47,6 +51,11 @@ subs['dspins'] = ('gnd Vsrc '*args.N)[:-1]
 template = Template(open('templates/nem_relay.va.tmpl').read())
 output = template.substitute(subs)
 open("models/nem_relay_{N}b.va".format(N=args.N), 'w').write(output)
+
+# Template substitution for static sweep SPICE test
+template = Template(open('templates/static_sweep.sp.tmpl').read())
+output = template.substitute(subs)
+open("test/static_sweep_{N}b.sp".format(N=args.N), 'w').write(output)
 
 # Template substitution for quasistatic sweep SPICE test
 template = Template(open('templates/quasistatic_sweep.sp.tmpl').read())
