@@ -13,7 +13,7 @@ try:
     L_hole = params["L_hole"] * 1e9; r_hole_pl = params["r_hole_pl"] * 1e9
     d_hole_pl = params["d_hole_pl"] * 1e9; max_hole = 2
     n_hole = params["n_hole"]
-except IOError, ValueError:
+except (IOError, ValueError):
     print("Could not load parameter JSON file, using defaults")
     n_sides = 4                 # number of polygon sides
 
@@ -45,7 +45,7 @@ try:
     # Load chosen contact points from JSON and convert units
     contpts = json.load(open("../contpts.json"))
     contpts = [[val * 1e9 for val in pt] for pt in contpts]
-except IOError, ValueError:
+except (IOError, ValueError):
     # By default, use circular contact placement
     contpts = [(r_cont * cos(2*pi*(i-0.5)/n_cont), r_cont * sin(2*pi*(i-0.5)/n_cont)) for i in range(n_cont)]
     

@@ -5,7 +5,7 @@ from collections import OrderedDict
 
 # Get mutual capacitances
 chani = {'g': [0], 'b': [1], 'c': range(2, 10), 'ds': range(10, 26, 2)} # mapping
-capmat = pd.read_csv('output/mutualcaps.csv', header=None).as_matrix()
+capmat = pd.read_csv('output/mutualcaps.csv', header=None).to_numpy()
 caps = OrderedDict()
 for chan1 in chani:
     for chan2 in chani:
@@ -24,7 +24,7 @@ desc = json.load(open("helper/params_desc.json"), object_pairs_hook=OrderedDict)
 
 # Generate tech_params.va
 with open('spice/models/tech_params.va', 'w') as f:
-    for param, val in params.items() + caps.items() + props.items():
+    for param, val in list(params.items()) + list(caps.items()) + list(props.items()):
         if type(val) in [int, float, np.float64] and param in desc:
             f.write("parameter real %s = %s; // %s\n" % (param, val, desc[param]))
 
