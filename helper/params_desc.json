@@ -9,6 +9,8 @@
     "g_cant": "Gap between cantilever beam and relay body",
     "g_land": "Gap for spacing between landing pads and gate",
 
+    "n_cont": "Number of contacts",
+
     "r_hole_pl": "Radius along which to place holes",
     "d_hole_pl": "Diameter along which to place holes",
 

@@ -59,7 +59,7 @@ analog begin
 // Electrical Equations
 // ====================
 // I(g,b) - gate to body variable cap
-Qgb = V(g,b)*Cgb*(t_gap + t_sp/K_sp)/(Pos(mbr,z) + t_sp/K_sp);
+Qgb = V(g,b)*P_EPS0*(L_plate*L_plate - L_cont*L_cont*n_cont*2.5)/(Pos(mbr,z) + t_sp/K_sp);
 I(g,b)<+ddt(Qgb);
 
 // I(b,c0) - body to channel cap
