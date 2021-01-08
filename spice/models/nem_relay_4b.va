@@ -194,6 +194,7 @@ F(mbr,z) <+ Ftot + Fdamp + Fk - Fel + Fcont;
 
 // DEBUG
 $debug("\nBEGIN");
+$debug("P_EPS0 = %e", P_EPS0);
 $debug("Vgate = %e", V(g));
 $debug("Pos(z) = %e", Pos(z));
 $debug("Pos(mbr,z) = %e", Pos(mbr,z));
