@@ -4,7 +4,7 @@
 ** Tests one-hot multiplexer with inverter using analog inputs **
 
 ** Create relay and start at z=0 **
-Xmux I0_0 I0_1 I0_2 I0_3 I0_4 I0_5 I0_6 I0_7 I1_0 I1_1 I1_2 I1_3 I1_4 I1_5 I1_6 I1_7 S0 S1 ZN_0 ZN_1 ZN_2 ZN_3 ZN_4 ZN_5 ZN_6 ZN_7 VDD VB VSS nem_ohmux_invd0_2i_8b
+Xmux I0_0 I0_1 I0_2 I0_3 I0_4 I0_5 I0_6 I0_7 I1_0 I1_1 I1_2 I1_3 I1_4 I1_5 I1_6 I1_7 S0 S1 ZN_0 ZN_1 ZN_2 ZN_3 ZN_4 ZN_5 ZN_6 ZN_7 VDD VSNEM VSS nem_ohmux_invd0_2i_8b
 
 ** Source voltage **
 VI0_0 I0_0 gnd 0.0625V
@@ -34,7 +34,7 @@ RZN_5 ZN_5 gnd 1G
 RZN_6 ZN_6 gnd 1G
 RZN_7 ZN_7 gnd 1G
 VDD VDD gnd 1.1V
-VB VB gnd -2.6V
+VSNEM VSNEM gnd -2.6V
 VSS VS gnd 0V
 
 ** Options **

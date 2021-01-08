@@ -28,6 +28,6 @@ with open('spice/models/tech_params.va', 'w') as f:
         if type(val) in [int, float, np.float64] and param in desc:
             f.write("parameter real %s = %s; // %s\n" % (param, val, desc[param]))
 
-# Update VB in Liberty characterization
-configure = re.sub('VB [^}\n]+\n', 'VB %s\n' % params['VB'], open('liberty/configure.tcl').read())
+# Update VSNEM in Liberty characterization
+configure = re.sub('VSNEM [^}\n]+\n', 'VSNEM %s\n' % params['VSNEM'], open('liberty/configure.tcl').read())
 open('liberty/configure.tcl', 'w').write(configure)

@@ -32,7 +32,7 @@ for i in range(M):
     subs['relays'] += '    Xnem{i} '.format(i=i)
     for b in range(N):
         subs['relays'] += 'I{i}_{b} Z_{b} '.format(i=i, b=b)
-    subs['relays'] += 'S{i} VB z{i} nem_relay_{N}b\n'.format(i=i, N=N)
+    subs['relays'] += 'S{i} VSNEM z{i} nem_relay_{N}b\n'.format(i=i, N=N)
 subs['relays'] = subs['relays'][4:-1]
 
 # Mux initial conditions

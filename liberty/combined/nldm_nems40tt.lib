@@ -38,7 +38,7 @@ library(nems40tt) {
   default_output_pin_cap : 0 ; 
   voltage_map(VDD, 1.1);
   voltage_map(VSS, 0);
-  voltage_map(VB, -2.6);
+  voltage_map(VSNEM, -2.6);
 
   operating_conditions(nems40tt) { 
     process : 1 ; 
@@ -134,8 +134,8 @@ library(nems40tt) {
       value : "0.335" ; 
     }
 
-    pg_pin(VB) { 
-      voltage_name : VB ; 
+    pg_pin(VSNEM) { 
+      voltage_name : VSNEM ; 
       pg_type : primary_ground ; 
     }
 
@@ -710,8 +710,8 @@ library(nems40tt) {
       value : "0.335" ; 
     }
 
-    pg_pin(VB) { 
-      voltage_name : VB ; 
+    pg_pin(VSNEM) { 
+      voltage_name : VSNEM ; 
       pg_type : primary_ground ; 
     }
 
@@ -1824,8 +1824,8 @@ library(nems40tt) {
       value : "0.04188" ; 
     }
 
-    pg_pin(VB) { 
-      voltage_name : VB ; 
+    pg_pin(VSNEM) { 
+      voltage_name : VSNEM ; 
       pg_type : primary_ground ; 
     }
 
@@ -2397,8 +2397,8 @@ library(nems40tt) {
       value : "0.335" ; 
     }
 
-    pg_pin(VB) { 
-      voltage_name : VB ; 
+    pg_pin(VSNEM) { 
+      voltage_name : VSNEM ; 
       pg_type : primary_ground ; 
     }
 
@@ -5124,8 +5124,8 @@ library(nems40tt) {
       value : "0.04188" ; 
     }
 
-    pg_pin(VB) { 
-      voltage_name : VB ; 
+    pg_pin(VSNEM) { 
+      voltage_name : VSNEM ; 
       pg_type : primary_ground ; 
     }
 
@@ -8913,8 +8913,8 @@ library(nems40tt) {
       value : "0.04188" ; 
     }
 
-    pg_pin(VB) { 
-      voltage_name : VB ; 
+    pg_pin(VSNEM) { 
+      voltage_name : VSNEM ; 
       pg_type : primary_ground ; 
     }
 

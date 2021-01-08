@@ -38,7 +38,7 @@ library(nems40tt) {
   default_output_pin_cap : 0 ; 
   voltage_map(VDD, 1.1);
   voltage_map(VSS, 0);
-  voltage_map(VB, -2.6);
+  voltage_map(VSNEM, -2.6);
 
   operating_conditions(nems40tt) { 
     process : 1 ; 
@@ -116,8 +116,8 @@ library(nems40tt) {
   cell(nem_ohmux_invd0_14i_1b) { 
     area : 0 ; 
 
-    pg_pin(VB) { 
-      voltage_name : VB ; 
+    pg_pin(VSNEM) { 
+      voltage_name : VSNEM ; 
       pg_type : primary_ground ; 
     }
 
@@ -2724,8 +2724,8 @@ library(nems40tt) {
     area : 0 ; 
     contention_condition : "!S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9" ; 
 
-    pg_pin(VB) { 
-      voltage_name : VB ; 
+    pg_pin(VSNEM) { 
+      voltage_name : VSNEM ; 
       pg_type : primary_ground ; 
     }
 
@@ -4607,8 +4607,8 @@ library(nems40tt) {
     area : 0 ; 
     contention_condition : "!S0&!S1&!S2&!S3 | S0&S1 | S0&S2 | S0&S3 | S1&S2 | S1&S3 | S2&S3" ; 
 
-    pg_pin(VB) { 
-      voltage_name : VB ; 
+    pg_pin(VSNEM) { 
+      voltage_name : VSNEM ; 
       pg_type : primary_ground ; 
     }
 
@@ -5380,8 +5380,8 @@ library(nems40tt) {
     area : 0 ; 
     contention_condition : "!S0&!S1&!S2&!S3 | S0&S1 | S0&S2 | S0&S3 | S1&S2 | S1&S3 | S2&S3" ; 
 
-    pg_pin(VB) { 
-      voltage_name : VB ; 
+    pg_pin(VSNEM) { 
+      voltage_name : VSNEM ; 
       pg_type : primary_ground ; 
     }
 
@@ -6148,8 +6148,8 @@ library(nems40tt) {
     area : 0 ; 
     contention_condition : "!S0&!S1 | S0&S1" ; 
 
-    pg_pin(VB) { 
-      voltage_name : VB ; 
+    pg_pin(VSNEM) { 
+      voltage_name : VSNEM ; 
       pg_type : primary_ground ; 
     }
 
@@ -6551,8 +6551,8 @@ library(nems40tt) {
     area : 0 ; 
     contention_condition : "!S0&!S1 | S0&S1" ; 
 
-    pg_pin(VB) { 
-      voltage_name : VB ; 
+    pg_pin(VSNEM) { 
+      voltage_name : VSNEM ; 
       pg_type : primary_ground ; 
     }
 

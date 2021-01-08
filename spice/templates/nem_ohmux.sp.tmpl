@@ -1,10 +1,10 @@
 .title <nem_ohmux_${M}i_${N}b.sp>
 .hdl nem_relay_${N}b.va
-.global VDD VB VSS
+.global VDD VSNEM VSS
 
 ** Create relay and start at z=0 **
 ** Format is I{i}_{b} where {i} is input number, {b} is bit index **
-.subckt nem_ohmux_${M}i_${N}b $pins VDD VB VSS
+.subckt nem_ohmux_${M}i_${N}b $pins VDD VSNEM VSS
     $relays
     $ics
 .ends
