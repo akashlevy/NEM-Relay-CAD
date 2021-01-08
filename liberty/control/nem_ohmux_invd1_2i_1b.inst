@@ -1,0 +1,37 @@
+set_netlist_file [get_location]/netlists/nem_ohmux_invd1_2i_1b.sp
+
+
+## 
+## Pin definitions.
+##
+add_pin I0_0 default -input
+add_pin I1_0 default -input
+add_pin S0 default -input
+add_pin S1 default -input
+add_pin ZN_0 default -output
+
+
+## 
+## Cell function definitions.
+## 
+add_function ZN_0 {!( S0&I0_0 | S1&I1_0 )} -illegal { !S0&!S1 | S0&S1 }
+add_forbidden_state { !S0&!S1 | S0&S1 }
+add_switch_tuple { S0 S1 }
+
+
+## 
+## Cell bundling.
+## 
+
+
+
+## 
+## User-specified characterization and modeling configuration options.
+## 
+create_parameter cut_netlist
+set_config_opt -opcond __default__ -- cut_netlist nem_ohmux_invd1_2i_1b.sp
+set_liberty_attribute -cell nem_ohmux_invd1_2i_1b area 0
+set_liberty_attribute -cell nem_ohmux_invd1_2i_1b contention_condition "!S0&!S1 | S0&S1"
+
+create_parameter state_partitions
+set_config_opt -- state_partitions one

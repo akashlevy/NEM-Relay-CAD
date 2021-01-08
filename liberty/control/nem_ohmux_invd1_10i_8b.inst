@@ -1,0 +1,107 @@
+set_netlist_file [get_location]/netlists/nem_ohmux_invd1_10i_8b.sp
+
+
+## 
+## Pin definitions.
+##
+add_pin I0 default -input
+add_pin I1 default -input
+add_pin I2 default -input
+add_pin I3 default -input
+add_pin I4 default -input
+add_pin I5 default -input
+add_pin I6 default -input
+add_pin I7 default -input
+add_pin I8 default -input
+add_pin I9 default -input
+add_pin S0 default -input
+add_pin S1 default -input
+add_pin S2 default -input
+add_pin S3 default -input
+add_pin S4 default -input
+add_pin S5 default -input
+add_pin S6 default -input
+add_pin S7 default -input
+add_pin S8 default -input
+add_pin S9 default -input
+add_pin ZN default -output
+
+
+## 
+## Cell function definitions.
+## 
+add_function ZN {!( S0&I0 | S1&I1 | S2&I2 | S3&I3 | S4&I4 | S5&I5 | S6&I6 | S7&I7 | S8&I8 | S9&I9 )} -illegal { !S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9 }
+add_forbidden_state { !S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9 }
+add_switch_tuple { S0 S1 }
+add_switch_tuple { S0 S2 }
+add_switch_tuple { S0 S3 }
+add_switch_tuple { S0 S4 }
+add_switch_tuple { S0 S5 }
+add_switch_tuple { S0 S6 }
+add_switch_tuple { S0 S7 }
+add_switch_tuple { S0 S8 }
+add_switch_tuple { S0 S9 }
+add_switch_tuple { S1 S2 }
+add_switch_tuple { S1 S3 }
+add_switch_tuple { S1 S4 }
+add_switch_tuple { S1 S5 }
+add_switch_tuple { S1 S6 }
+add_switch_tuple { S1 S7 }
+add_switch_tuple { S1 S8 }
+add_switch_tuple { S1 S9 }
+add_switch_tuple { S2 S3 }
+add_switch_tuple { S2 S4 }
+add_switch_tuple { S2 S5 }
+add_switch_tuple { S2 S6 }
+add_switch_tuple { S2 S7 }
+add_switch_tuple { S2 S8 }
+add_switch_tuple { S2 S9 }
+add_switch_tuple { S3 S4 }
+add_switch_tuple { S3 S5 }
+add_switch_tuple { S3 S6 }
+add_switch_tuple { S3 S7 }
+add_switch_tuple { S3 S8 }
+add_switch_tuple { S3 S9 }
+add_switch_tuple { S4 S5 }
+add_switch_tuple { S4 S6 }
+add_switch_tuple { S4 S7 }
+add_switch_tuple { S4 S8 }
+add_switch_tuple { S4 S9 }
+add_switch_tuple { S5 S6 }
+add_switch_tuple { S5 S7 }
+add_switch_tuple { S5 S8 }
+add_switch_tuple { S5 S9 }
+add_switch_tuple { S6 S7 }
+add_switch_tuple { S6 S8 }
+add_switch_tuple { S6 S9 }
+add_switch_tuple { S7 S8 }
+add_switch_tuple { S7 S9 }
+add_switch_tuple { S8 S9 }
+
+
+## 
+## Cell bundling.
+## 
+set_config_opt -pin I0 members { I0_0 I0_1 I0_2 I0_3 I0_4 I0_5 I0_6 I0_7 } 
+set_config_opt -pin I1 members { I1_0 I1_1 I1_2 I1_3 I1_4 I1_5 I1_6 I1_7 } 
+set_config_opt -pin I2 members { I2_0 I2_1 I2_2 I2_3 I2_4 I2_5 I2_6 I2_7 } 
+set_config_opt -pin I3 members { I3_0 I3_1 I3_2 I3_3 I3_4 I3_5 I3_6 I3_7 } 
+set_config_opt -pin I4 members { I4_0 I4_1 I4_2 I4_3 I4_4 I4_5 I4_6 I4_7 } 
+set_config_opt -pin I5 members { I5_0 I5_1 I5_2 I5_3 I5_4 I5_5 I5_6 I5_7 } 
+set_config_opt -pin I6 members { I6_0 I6_1 I6_2 I6_3 I6_4 I6_5 I6_6 I6_7 } 
+set_config_opt -pin I7 members { I7_0 I7_1 I7_2 I7_3 I7_4 I7_5 I7_6 I7_7 } 
+set_config_opt -pin I8 members { I8_0 I8_1 I8_2 I8_3 I8_4 I8_5 I8_6 I8_7 } 
+set_config_opt -pin I9 members { I9_0 I9_1 I9_2 I9_3 I9_4 I9_5 I9_6 I9_7 } 
+set_config_opt -pin ZN members { ZN_0 ZN_1 ZN_2 ZN_3 ZN_4 ZN_5 ZN_6 ZN_7 } 
+
+
+## 
+## User-specified characterization and modeling configuration options.
+## 
+create_parameter cut_netlist
+set_config_opt -opcond __default__ -- cut_netlist nem_ohmux_invd1_10i_8b.sp
+set_liberty_attribute -cell nem_ohmux_invd1_10i_8b area 0
+set_liberty_attribute -cell nem_ohmux_invd1_10i_8b contention_condition "!S0&!S1&!S2&!S3&!S4&!S5&!S6&!S7&!S8&!S9 | S0&S1 | S0&S2 | S0&S3 | S0&S4 | S0&S5 | S0&S6 | S0&S7 | S0&S8 | S0&S9 | S1&S2 | S1&S3 | S1&S4 | S1&S5 | S1&S6 | S1&S7 | S1&S8 | S1&S9 | S2&S3 | S2&S4 | S2&S5 | S2&S6 | S2&S7 | S2&S8 | S2&S9 | S3&S4 | S3&S5 | S3&S6 | S3&S7 | S3&S8 | S3&S9 | S4&S5 | S4&S6 | S4&S7 | S4&S8 | S4&S9 | S5&S6 | S5&S7 | S5&S8 | S5&S9 | S6&S7 | S6&S8 | S6&S9 | S7&S8 | S7&S9 | S8&S9"
+
+create_parameter state_partitions
+set_config_opt -- state_partitions one
