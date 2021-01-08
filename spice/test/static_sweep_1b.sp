@@ -12,7 +12,7 @@ Vsrc Vsrc gnd 0.1V
 Vg Vg gnd 0V
 
 ** Options **
-.dc Vg 0V START=0V STOP=5V STEP=0.01V
+.dc Vg START=0V STOP=5V STEP=0.01V
 .probe V(Vg) V(Vsrc) PAR('abs(I(Vsrc))') z
 .option post=2
 .option runlvl=5 accurate
