@@ -3,7 +3,6 @@
 
 ** Create relay and start at z=0 **
 Xnem gnd Vsrc Vg gnd z nem_relay_1b
-.ic V(z)=0
 
 ** Source voltage **
 Vsrc Vsrc gnd 0.1V
