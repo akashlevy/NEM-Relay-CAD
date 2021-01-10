@@ -1,0 +1,48 @@
+graph G {
+	rankdir=LR;
+
+
+	0 [shape=box label=NEM_OHMUX_INVD2_10I_8B height=12.0 rankdir=TB];
+	I0 [shape=none];
+	I0 -- 0
+	I1 [shape=none];
+	I1 -- 0
+	I2 [shape=none];
+	I2 -- 0
+	I3 [shape=none];
+	I3 -- 0
+	I4 [shape=none];
+	I4 -- 0
+	I5 [shape=none];
+	I5 -- 0
+	I6 [shape=none];
+	I6 -- 0
+	I7 [shape=none];
+	I7 -- 0
+	I8 [shape=none];
+	I8 -- 0
+	I9 [shape=none];
+	I9 -- 0
+	S0 [shape=none];
+	S0 -- 0
+	S1 [shape=none];
+	S1 -- 0
+	S2 [shape=none];
+	S2 -- 0
+	S3 [shape=none];
+	S3 -- 0
+	S4 [shape=none];
+	S4 -- 0
+	S5 [shape=none];
+	S5 -- 0
+	S6 [shape=none];
+	S6 -- 0
+	S7 [shape=none];
+	S7 -- 0
+	S8 [shape=none];
+	S8 -- 0
+	S9 [shape=none];
+	S9 -- 0
+	ZN [shape=none];
+	0 -- ZN
+}
