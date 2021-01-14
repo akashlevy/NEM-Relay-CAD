@@ -61,7 +61,7 @@ subs['tmax'] = 5000*M
 # Inverters for ohmux inv
 subs['invs'] = ''
 for i in range(N):
-    subs['invs'] += '    Xinv{i} Z_{i} ZN_{i} VDD VSS INVD{D}BWP\n'.format(D=D, i=i)
+    subs['invs'] += '    Xinv{i} Z_{i} ZN_{i} VDD VSS INVD{D}BWP40\n'.format(D=D, i=i)
 subs['invs'] = subs['invs'][4:-1]
 
 # Pin definitions
