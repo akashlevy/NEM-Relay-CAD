@@ -1,0 +1,49 @@
+digraph G {
+    size="8.3,11.7!";
+    node [shape="box"];
+    newrank=true;
+    subgraph cluster_cell_level {
+        style=filled;
+        color=lightgrey;
+		node [style=filled,color=white];
+        "Relay Layout\n(KLayout)" -> "FEM (COMSOL)" [label=" GDS"];
+        "FEM (COMSOL)" -> "FEM (COMSOL)" [label=" ICP"];
+        "FEM (COMSOL)" -> "SPICE Model\n(HSPICE)" [label="Params"];
+        "SPICE Model\n(HSPICE)" -> "Liberty Model\n(SiliconSmart)";
+        "FEM (COMSOL)" -> "NEMS Stdcells\n(Virtuoso)"  [label="GDS"];
+        label=<<B>NEMS Cell-Level Modeling Flow</B>>;
+    }
+    subgraph cluster_rtl_level {
+        style=filled;
+        color=lightgrey;
+		node [style=filled,color=white];
+        "  App Suite \n(Halide)" -> "RTL Simulation (Verilator)" [label="Bitstream"];
+        " CGRA Generator (Genesis2) " -> "RTL Simulation (Verilator)" [label="RTL\nTestbench"];
+        label=<<B>CGRA Digital Design Flow</B>>
+    }
+    subgraph cluster_eda_level {
+        style=filled;
+        color=lightgrey;
+		node [style=filled,color=white];
+        " CGRA Generator (Genesis2) " -> "Synthesis\n(DesignCompiler)":nw [label="RTL"];
+		"NEMS Stdcells\n(Virtuoso)" -> "Place-and-Route\n(Innovus)";
+        "Liberty Model\n(SiliconSmart)" -> "Synthesis\n(DesignCompiler)":sw;
+        "Synthesis\n(DesignCompiler)" -> "Place-and-Route\n(Innovus)" [label=" Netlist"];
+        label=<<B>EDA Flow</B>>;
+    }
+    
+    subgraph cluster_final_level {
+        style=filled;
+        color=lightgrey;
+		node [style=filled,color=white];
+        "RTL Simulation (Verilator)" -> "Gate-Level Simulation\n(VCS)":nw [label=" VCD Waveform"];
+        "Place-and-Route\n(Innovus)" -> "Gate-Level Simulation\n(VCS)":sw;
+        "Place-and-Route\n(Innovus)" -> "Power Estimation\n(PTPX)":w;
+        "Gate-Level Simulation\n(VCS)" -> "Power Estimation\n(PTPX)" [label=" Switching\nBehavior"];
+        label=<<B>Power/Delay Estimation</B>>;
+    }
+    { rank=same; "Relay Layout\n(KLayout)"; " CGRA Generator (Genesis2) "; }
+    { rank=same; "Synthesis\n(DesignCompiler)"; "SPICE Model\n(HSPICE)"; "NEMS Stdcells\n(Virtuoso)"; }
+    { rank=same; "Gate-Level Simulation\n(VCS)";  "Synthesis\n(DesignCompiler)"; }
+    { rank=same; "Place-and-Route\n(Innovus)";  "Power Estimation\n(PTPX)"; }
+}

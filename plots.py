@@ -37,8 +37,8 @@ V_po = ((2 * (k_tot * (t_gap - t_cont) - F_A) * t_cont**2)/(k * eps_0 * A_gate))
 qs_comsol = pd.read_csv("output/quasistatic.csv", header=None, names=["Vg", "z"])
 qs_spice = pd.read_csv("output/quasistatic_sp.txt", delimiter='\t', header=0, names=["Vg", "z"])
 plt.figure(figsize=(5, 3))
-plt.xlabel("$V_{GB}$ (V)")
-plt.ylabel("z (nm)")
+plt.xlabel("Gate-to-Body Voltage $V_{GB}$ (V)")
+plt.ylabel("Relay $z$-Disp. (nm)")
 plt.plot(qs_comsol["Vg"], qs_comsol["z"]*1e3, label="FEM")
 plt.plot(qs_spice["Vg"], qs_spice["z"]*1e9, label="SPICE")
 plt.plot([V_pi, V_pi], [0, 40], '--', label="$V_{pi}$ analytical")
@@ -49,7 +49,7 @@ plt.xlim(0, 5)
 plt.ylim(0, 40)
 plt.legend()
 plt.tight_layout()
-plt.savefig("demo/quasistatic-curve.pdf")
+plt.savefig("figures/quasistatic-curve.pdf")
 plt.show()
 
 # Plot transient curve rising
@@ -57,15 +57,16 @@ tran_spice = pd.read_csv("output/transient_sp.txt", delimiter='\t', header=0, na
 tran_spice_rise = tran_spice[tran_spice["t"] >= 10000*1e-9]
 tran_spice_rise = tran_spice_rise[tran_spice_rise["t"] <= 20000*1e-9]
 tran_spice_rise["t"] = tran_spice_rise["t"] - 10000*1e-9
+tran_label = "SPICE sim\n$V_{GB}$ = %.1fV\nQ=0.5" % params["Vop"]
 plt.figure(figsize=(5, 3))
-plt.xlabel("t (us)")
-plt.ylabel("z (nm)")
-plt.plot(tran_spice_rise["t"]*1e6, tran_spice_rise["z"]*1e9, label="SPICE sim\n$V_{GB}$ = 5V\nQ=0.5")
+plt.xlabel("Time ($\mu$s)")
+plt.ylabel("Relay $z$-Disp. (nm)")
+plt.plot(tran_spice_rise["t"]*1e6, tran_spice_rise["z"]*1e9, label=tran_label)
 plt.xlim(0, 5)
 plt.ylim(0, 40)
 plt.legend()
 plt.tight_layout()
-plt.savefig("demo/transient-curve-rise.pdf")
+plt.savefig("figures/transient-curve-rise.pdf")
 plt.show()
 
 # Plot transient curve falling
@@ -73,12 +74,12 @@ tran_spice_fall = tran_spice[tran_spice["t"] >= 20000*1e-9]
 tran_spice_fall = tran_spice_fall[tran_spice_fall["t"] <= 21200*1e-9]
 tran_spice_fall["t"] = tran_spice_fall["t"] - 20000*1e-9
 plt.figure(figsize=(5, 3))
-plt.xlabel("t (ns)")
-plt.ylabel("z (nm)")
-plt.plot(tran_spice_fall["t"]*1e9, tran_spice_fall["z"]*1e9, label="SPICE sim\n$V_{GB}$ = 5V\nQ=0.5")
-plt.xlim(0, 1200)
+plt.xlabel("Time ($\mu$s)")
+plt.ylabel("$z$ Displacement (nm)")
+plt.plot(tran_spice_fall["t"]*1e9, tran_spice_fall["z"]*1e9, label=tran_label)
+plt.xlim(0, 1000)
 plt.ylim(0, 40)
 plt.legend()
 plt.tight_layout()
-plt.savefig("demo/transient-curve-fall.pdf")
+plt.savefig("figures/transient-curve-fall.pdf")
 plt.show()
