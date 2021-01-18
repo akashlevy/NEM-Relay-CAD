@@ -6,14 +6,26 @@
 # Layer        Purpose        LayerNum    Datatype
 ####################################################################
 
+ M2  drawing  32  0 
+ VIA5  drawing  55  0 
+ VIA6  drawing  56  0 
  NEMANC  drawing  191  0 
  M7  drawing  37  0 
  NEMCHAN  drawing  193  0 
+ M4  drawing  34  0 
  VIA9  drawing  59  0 
+ M1  drawing  31  0 
  VIA7  drawing  57  0 
  M9  drawing  39  0 
  VIA8  drawing  58  0 
+ VIA1  drawing  51  0 
+ M3  drawing  33  0 
  M10  drawing  40  0 
+ text  drawing  230  0 
+ M5  drawing  35  0 
  NEMBODY  drawing  194  0 
+ VIA4  drawing  54  0 
+ M6  drawing  36  0 
  M8  drawing  38  0 
- NEMCONT  drawing  192  0 
+ VIA3  drawing  53  0 
+ VIA2  drawing  52  0 
