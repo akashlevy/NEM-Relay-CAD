@@ -34,6 +34,7 @@ The COMSOL model has 5 studies that predict the physics of the multi-pole NEM re
 1. Spring Constant: determine spring constant by applying force to plate
 2. Modal Analysis: determine eigenmodes and shapes
 3. Parasitic Extraction: extract parasitic mutual capacitances between all terminals
+    - A hacky way to get approximate parasitic extraction in the ON state is to set g_act = t_cont and gaptol = 1nm
 4. Quasi-Static Sweep: find pull-in and pull-out voltages, contact forces, displacement contour, etc.
 5. Transient Sweep: find out pull-in speed
 
