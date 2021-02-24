@@ -21,10 +21,14 @@ subs['M'] = M
 subs['D'] = D
 
 # Mux pins
-subs['pins'] = ' '.join(['I{i}_{b}'.format(i=i, b=b) for i in range(M) for b in range(N)]) + ' '
-subs['pins'] += ' '.join(['S{i}'.format(i=i) for i in range(M)]) + ' '
-subs['pins'] += ' '.join(['Z_{b}'.format(b=b) for b in range(N)])
+subs['inpins'] = ' '.join(['I{i}_{b}'.format(i=i, b=b) for i in range(M) for b in range(N)]) + ' '
+subs['inpins'] += ' '.join(['S{i}'.format(i=i) for i in range(M)]) + ' '
+subs['outpins'] = ' '.join(['Z_{b}'.format(b=b) for b in range(N)])
+subs['pins'] = subs['inpins'] + subs['outpins']
+subs['invoutpins'] = subs['outpins'].replace('Z', 'ZN')
 subs['invpins'] = subs['pins'].replace('Z', 'ZN')
+subs['inpins'] = subs['inpins'].strip().replace(' ', ', ')
+subs['outpins'] = subs['outpins'].strip().replace(' ', ', ')
 
 # Mux relay instantiation
 subs['relays'] = ''
@@ -106,6 +110,22 @@ subs['bundles'] = '\n'.join(subs['bundles']) if N != 1 else ''
 # State partitions
 subs['spart'] = "one"
 
+# Assigns for Verilog model
+subs['assigns'] = ''
+for i in range(N):
+    conds = ["S{j}&I{j}_{i}".format(i=i, j=j) for j in range(M)]
+    subs['assigns'] += "    assign Z_%s = !( %s );\n" % (i, " | ".join(conds))
+subs['assigns'] = subs['assigns'].strip()
+
+# Specifies for Verilog model
+subs['specifies'] = ''
+for i in range(N):
+    subs['specifies'] += "".join(["        // comb arc I{j}_{i} --> ZN_{i}\n        I{j}_{i} => ZN_{i} = (1.0,1.0);\n\n".format(i=i, j=j) for j in range(M)])
+for i in range(N):
+    for d in ['negedge', 'posedge']:
+        subs['specifies'] += "".join(["        ifnone\n        // comb arc {d} S{j} --> (ZN_{i}:S{j})\n        ({d} S{j} => (ZN_{i}:S{j})) = (1.0,1.0);\n\n".format(d=d, i=i, j=j) for j in range(M)])
+subs['specifies'] = subs['specifies'].strip()
+
 # Template substitution for SPICE model
 template = Template(open('templates/nem_ohmux.sp.tmpl').read())
 output = template.substitute(subs)
@@ -130,4 +150,10 @@ open("test/ohmux_test_invd{D}_{M}i_{N}b.sp".format(D=D, M=M, N=N), 'w').write(ou
 template = Template(open("../liberty/templates/nem_ohmux.inst.tmpl").read())
 output = template.substitute(subs)
 outfname = "../liberty/control/nem_ohmux_invd{D}_{M}i_{N}b.inst".format(D=D, M=M, N=N)
+open(outfname, "w").write(output)
+
+# Template substitution for Verilog instance
+template = Template(open("../spice/templates/nem_ohmux.v.tmpl").read())
+output = template.substitute(subs)
+outfname = "models/nem_ohmux_invd{D}_{M}i_{N}b.v".format(D=D, M=M, N=N)
 open(outfname, "w").write(output)
