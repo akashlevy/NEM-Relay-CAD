@@ -37,4 +37,7 @@ generate_datasheet $cells
 # Compile models
 exec lc_shell -f compile.tcl
 
+# Replace verilog models
+exec cat ../spice/models/*.v > nems40tt/models/verilog/verilog.v
+
 log_info "IAMDONE"
