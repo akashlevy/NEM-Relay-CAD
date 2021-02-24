@@ -28,7 +28,7 @@ subs['pins'] = subs['inpins'] + subs['outpins']
 subs['invoutpins'] = subs['outpins'].replace('Z', 'ZN')
 subs['invpins'] = subs['pins'].replace('Z', 'ZN')
 subs['inpins'] = subs['inpins'].strip().replace(' ', ', ')
-subs['outpins'] = subs['outpins'].strip().replace(' ', ', ')
+subs['invoutpins'] = subs['invoutpins'].strip().replace(' ', ', ')
 
 # Mux relay instantiation
 subs['relays'] = ''
@@ -114,7 +114,7 @@ subs['spart'] = "one"
 subs['assigns'] = ''
 for i in range(N):
     conds = ["S{j}&I{j}_{i}".format(i=i, j=j) for j in range(M)]
-    subs['assigns'] += "    assign Z_%s = !( %s );\n" % (i, " | ".join(conds))
+    subs['assigns'] += "    assign ZN_%s = !( %s );\n" % (i, " | ".join(conds))
 subs['assigns'] = subs['assigns'].strip()
 
 # Specifies for Verilog model
