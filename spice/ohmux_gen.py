@@ -120,10 +120,10 @@ subs['assigns'] = subs['assigns'].strip()
 # Specifies for Verilog model
 subs['specifies'] = ''
 for i in range(N):
-    subs['specifies'] += "".join(["        // comb arc I{j}_{i} --> ZN_{i}\n        I{j}_{i} => ZN_{i} = (1.0,1.0);\n\n".format(i=i, j=j) for j in range(M)])
+    subs['specifies'] += "".join(["        // comb arc I{j}_{i} --> ZN_{i}\n        (I{j}_{i} => ZN_{i}) = (0.0,0.0);\n\n".format(i=i, j=j) for j in range(M)])
 for i in range(N):
     for d in ['negedge', 'posedge']:
-        subs['specifies'] += "".join(["        ifnone\n        // comb arc {d} S{j} --> (ZN_{i}:S{j})\n        ({d} S{j} => (ZN_{i}:S{j})) = (1.0,1.0);\n\n".format(d=d, i=i, j=j) for j in range(M)])
+        subs['specifies'] += "".join(["        ifnone\n        // comb arc {d} S{j} --> (ZN_{i}:S{j})\n        ({d} S{j} => (ZN_{i}:S{j})) = (0.0,0.0);\n\n".format(d=d, i=i, j=j) for j in range(M)])
 subs['specifies'] = subs['specifies'].strip()
 
 # Template substitution for SPICE model
