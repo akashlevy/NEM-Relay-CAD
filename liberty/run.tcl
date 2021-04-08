@@ -17,10 +17,11 @@ set_location $charpoint
 
 # Set cell lists for import from control directory .inst files
 set cells [lmap f [glob -directory control -tails *.inst] {file rootname $f}]
+set newcells [list nem_ohmux_invd4_2i_8b nem_ohmux_invd4_4i_8b nem_ohmux_invd8_2i_8b nem_ohmux_invd8_4i_8b nem_ohmux_invd12_2i_8b nem_ohmux_invd12_4i_8b nem_ohmux_invd16_2i_8b nem_ohmux_invd16_4i_8b]
 
 # Configure and characterize
-configure -fast -timing -power -ccs $cells
-characterize $cells
+configure -fast -timing -power -ccs $newcells
+characterize $newcells
 
 # Output models
 model -verilog -output verilog $cells
