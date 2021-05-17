@@ -6,14 +6,16 @@ from string import Template
 # Parse arguments
 parser = argparse.ArgumentParser(description="Generate N-bit-wide M-option one-hot multiplexer SPICE model")
 parser.add_argument('N', help="Bit width i.e. number of bits to route with one relay", type=int)
-parser.add_argument('M', help="Number of inputs to multiplexer", type=int)
+parser.add_argument('M', help="Number of inputs to multiplex", type=int)
 parser.add_argument('-D', help="Drive strength of output inverter", type=int, default=0)
-parser.add_argument('-A', '--area', help="Area of each inverter (um^2) to determine lib area", type=float, default=0)
 args = parser.parse_args()
+
+# Get inverter cell data (output loads and area per cell)
+invcelldata = json.load(open("templates/invcelldata.json"))
 
 # Initialize substitution dictionary from params
 subs = json.load(open("../params.json"))
-N, M, D, subs['area'] = args.N, args.M, args.D, args.area * args.N
+N, M, D, subs['area'] = args.N, args.M, args.D, invcelldata[str(args.D)]['area'] * args.N
 
 # Copy from params to subs
 subs['N'] = N
@@ -109,6 +111,9 @@ subs['bundles'] = '\n'.join(subs['bundles']) if N != 1 else ''
 
 # State partitions
 subs['spart'] = "one"
+
+# Output load explicit points
+subs['loadpts'] = invcelldata[str(args.D)]['loadpts']
 
 # Assigns for Verilog model
 subs['assigns'] = ''

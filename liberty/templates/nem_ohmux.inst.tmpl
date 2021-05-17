@@ -29,3 +29,9 @@ set_liberty_attribute -cell nem_ohmux_invd${D}_${M}i_${N}b contention_condition 
 
 create_parameter state_partitions
 set_config_opt -- state_partitions $spart
+
+create_parameter explicit_points_load
+set_config_opt -type { timing noise input_capacitance } -- explicit_points_load\
+    $loadpts
+set_config_opt -type energy -- explicit_points_load\
+    $loadpts
