@@ -6,6 +6,8 @@ create $charpoint
 # Copy and symlink as necessary
 exec rm -rf $charpoint/config/configure.tcl
 exec ln -s ../../configure.tcl $charpoint/config/configure.tcl
+exec rm -rf $charpoint/config/driver.db
+exec ln -s ../../driver.db $charpoint/config/driver.db
 exec rm -rf $charpoint/netlists
 exec ln -s ../../spice/models $charpoint/netlists
 exec rm -rf $charpoint/control
@@ -17,7 +19,10 @@ set_location $charpoint
 
 # Set cell lists for import from control directory .inst files
 set cells [lmap f [glob -directory control -tails *.inst] {file rootname $f}]
-set newcells [list nem_ohmux_invd4_2i_8b nem_ohmux_invd4_4i_8b nem_ohmux_invd8_2i_8b nem_ohmux_invd8_4i_8b nem_ohmux_invd12_2i_8b nem_ohmux_invd12_4i_8b nem_ohmux_invd16_2i_8b nem_ohmux_invd16_4i_8b]
+set newcells $cells
+
+# Use driver waveform
+import_driver -driver_db $charpoint/config/driver.db -pintypes_map {tcbn40ulpbwp40_c170815tt1p1v25c default}
 
 # Configure and characterize
 configure -fast -timing -power -ccs $newcells
