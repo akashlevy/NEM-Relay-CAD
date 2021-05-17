@@ -132,7 +132,6 @@ pintype default {
     set prop_delay_inp_level_fall 0.5
     set prop_delay_out_level_rise 0.5
     set prop_delay_out_level_fall 0.5
-    set explicit_points_load { 3.1e-16 5.7e-16 1.08e-15 2.1e-15 4.14e-15 8.22e-15 1.639e-14 }
     set explicit_points_slew { 2.05e-12 4.95e-12 1.085e-11 2.265e-11 4.62e-11 9.33e-11 1.8755e-10 }
     set total_slew_multiplier 250
     set initial_delay 1e-6
@@ -154,6 +153,7 @@ define_parameters liberty_model {
     set default_cell_leakage_power 0.0
     set default_leakage_power_density  0.0
     set in_place_swap_mode match_footprint
+    set liberty_max_transition 0
 }
 
 
