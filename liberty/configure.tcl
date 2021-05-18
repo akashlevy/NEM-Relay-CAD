@@ -138,8 +138,9 @@ pintype default {
     set total_slew_multiplier 250
     set initial_delay 1e-6
 
-    #set driver_mode active-waveform
-    #set driver ndw
+    set driver_mode active-waveform
+    set driver_waveform_points { 0 0.065 0.3 0.40575 0.505974 0.605642 0.7 0.808494 0.920545 0.935027 0.947436 0.961745 0.973027 0.981964 0.988682 0.996391 1 }
+    set driver ndw
     
     #set subtract_leakage 1
 }
