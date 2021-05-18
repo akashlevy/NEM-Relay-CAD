@@ -29,8 +29,8 @@ define_parameters default {
 
     set liberty_resistance_unit 1kohm
     set liberty_leakage_power_unit 1nW
-    set liberty_max_transition 1
-    set calculate_max_transition 1
+    set liberty_max_transition 0
+    set calculate_max_transition 0
 
     # List of operating conditions as defined by create_operation_condition
     set active_pvts nems40tt
@@ -116,9 +116,7 @@ define_parameters default {
     #  job_scheduler: 'lsf' (Platform), 'grid' (SunGrid), or 'standalone' (local machine)
     set job_scheduler standalone
     set run_list_maxsize 10
-    set normal_queue {bnormal -R rusage[mem=4000]} 
-
-    set liberty_max_transition 0
+    set normal_queue {bnormal -R rusage[mem=4000]}
 }
 
 
