@@ -1,4 +1,4 @@
-set_netlist_file [get_location]/netlists/nem_ohmux_invd2_2i_8b.sp nems40tt
+set_netlist_file [get_location]/netlists/nem_ohmux_invd2_2i_8b.sp
 
 
 ## 
