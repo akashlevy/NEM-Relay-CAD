@@ -139,6 +139,7 @@ pintype default {
     set initial_delay 1e-6
 
     set driver_mode active-waveform
+    set driver ndw
     #set subtract_leakage 1
 }
 
