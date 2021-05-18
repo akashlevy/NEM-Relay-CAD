@@ -2,14 +2,7 @@
 db(db) { 
 
   driver_db(ndw) { 
-    driver_type : active ;
-    subckt : fake ;
     netlist_file : fake.spi ;
-    input_pin : I ;
-    output_pin : Z ;
-    ground_pin : VSS ;
-    supply_pin : VDD ;
-    subckt_pins : I Z VDD VSS ;
 
     Configurations(process=nems40tt supplies= temp=25 max_slew=1.212e-09) { 
       pintype_name : default ; 
