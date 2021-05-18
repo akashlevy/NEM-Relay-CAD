@@ -32,6 +32,9 @@ define_parameters default {
     set liberty_max_transition 0
     set calculate_max_transition 0
 
+    set model_significant_digits 8
+    set normalized_driver_significant_digits 8
+
     # List of operating conditions as defined by create_operation_condition
     set active_pvts nems40tt
 
@@ -115,7 +118,7 @@ define_parameters default {
     # LOAD SHARE PARAMETERS
     #  job_scheduler: 'lsf' (Platform), 'grid' (SunGrid), or 'standalone' (local machine)
     set job_scheduler standalone
-    set run_list_maxsize 10
+    set run_list_maxsize 15
     set normal_queue {bnormal -R rusage[mem=4000]}
 }
 
