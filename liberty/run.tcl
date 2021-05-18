@@ -21,10 +21,6 @@ set_location $charpoint
 set cells [lmap f [glob -directory control -tails *.inst] {file rootname $f}]
 set newcells $cells
 
-# Use driver waveform
-import_driver ndw -driver_db $charpoint/config/driver.db
-#report_drivers -verbose
-
 # Configure and characterize
 configure -fast -timing -power -ccs $newcells
 report_drivers -verbose
