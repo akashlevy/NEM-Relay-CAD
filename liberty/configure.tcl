@@ -117,6 +117,8 @@ define_parameters default {
     set job_scheduler standalone
     set run_list_maxsize 10
     set normal_queue {bnormal -R rusage[mem=4000]} 
+
+    set liberty_max_transition 0
 }
 
 
@@ -140,7 +142,6 @@ pintype default {
 
     set driver_mode active-waveform
     set driver ndw
-    set liberty_max_transition 0
     #set subtract_leakage 1
 }
 
