@@ -138,8 +138,9 @@ pintype default {
 
     set explicit_points_slew { 2.05e-12 4.95e-12 1.085e-11 2.265e-11 4.62e-11 9.33e-11 1.8755e-10 }
 
-    set total_slew_multiplier 250
-    set initial_delay 1e-6
+    # TODO: uncomment
+    #set total_slew_multiplier 250
+    #set initial_delay 1e-6
 
     set driver_mode active-waveform
     set driver_waveform_points { 0 0.065 0.3 0.40575 0.505974 0.605642 0.7 0.808494 0.920545 0.935027 0.947436 0.961745 0.973027 0.981964 0.988682 0.996391 1 }
@@ -157,9 +158,10 @@ define_parameters liberty_model {
     set delay_model "table_lookup"
     set default_operating_conditions nems40tt
     set default_fanout_load 1.0
-    set default_inout_pin_cap 0.0006825
-    set default_input_pin_cap 0.0006825
+    set default_inout_pin_cap 0.000790888
+    set default_input_pin_cap 0.000790888
     set default_output_pin_cap 0.0
+    set default_max_transition 0.75
     set default_cell_leakage_power 0.0
     set default_leakage_power_density  0.0
     set in_place_swap_mode match_footprint
