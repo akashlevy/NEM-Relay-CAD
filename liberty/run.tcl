@@ -23,7 +23,6 @@ set newcells $cells
 
 # Configure and characterize
 configure -fast -timing -power -ccs $newcells
-report_drivers -verbose
 characterize $newcells
 
 # Output models
