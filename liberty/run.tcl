@@ -22,7 +22,7 @@ set cells [lmap f [glob -directory control -tails *.inst] {file rootname $f}]
 set newcells $cells
 
 # Use driver waveform
-import_driver -driver_db $charpoint/config/driver.db -pintypes_map {tcbn40ulpbwp40_c170815tt1p1v25c default}
+import_driver ndw -driver_db $charpoint/config/driver.db -pintypes_map {tcbn40ulpbwp40_c170815tt1p1v25c default}
 
 # Configure and characterize
 configure -fast -timing -power -ccs $newcells
