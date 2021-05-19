@@ -1,5 +1,5 @@
 `celldefine
-module nem_ohmux_invd10_2i_8b (I0_0, I0_1, I0_2, I0_3, I0_4, I0_5, I0_6, I0_7, I1_0, I1_1, I1_2, I1_3, I1_4, I1_5, I1_6, I1_7, S0, S1, ZN_0, ZN_1, ZN_2, ZN_3, ZN_4, ZN_5, ZN_6, ZN_7);
+module nem_ohmux_invd5_2i_8b (I0_0, I0_1, I0_2, I0_3, I0_4, I0_5, I0_6, I0_7, I1_0, I1_1, I1_2, I1_3, I1_4, I1_5, I1_6, I1_7, S0, S1, ZN_0, ZN_1, ZN_2, ZN_3, ZN_4, ZN_5, ZN_6, ZN_7);
     input I0_0, I0_1, I0_2, I0_3, I0_4, I0_5, I0_6, I0_7, I1_0, I1_1, I1_2, I1_3, I1_4, I1_5, I1_6, I1_7, S0, S1;
     output ZN_0, ZN_1, ZN_2, ZN_3, ZN_4, ZN_5, ZN_6, ZN_7;
 

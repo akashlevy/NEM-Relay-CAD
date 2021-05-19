@@ -1,4 +1,4 @@
-set_netlist_file [get_location]/netlists/nem_ohmux_invd10_2i_8b.sp
+set_netlist_file [get_location]/netlists/nem_ohmux_invd5_2i_8b.sp
 
 
 ## 
@@ -31,15 +31,15 @@ set_config_opt -pin ZN members { ZN_0 ZN_1 ZN_2 ZN_3 ZN_4 ZN_5 ZN_6 ZN_7 }
 ## User-specified characterization and modeling configuration options.
 ## 
 create_parameter cut_netlist
-set_config_opt -opcond __default__ -- cut_netlist nem_ohmux_invd10_2i_8b.sp
-set_liberty_attribute -cell nem_ohmux_invd10_2i_8b area 21.168
-set_liberty_attribute -cell nem_ohmux_invd10_2i_8b contention_condition "!S0&!S1 | S0&S1"
+set_config_opt -opcond __default__ -- cut_netlist nem_ohmux_invd5_2i_8b.sp
+set_liberty_attribute -cell nem_ohmux_invd5_2i_8b area 12.7008
+set_liberty_attribute -cell nem_ohmux_invd5_2i_8b contention_condition "!S0&!S1 | S0&S1"
 
 create_parameter state_partitions
 set_config_opt -- state_partitions one
 
 create_parameter explicit_points_load
 set_config_opt -type { timing noise input_capacitance } -- explicit_points_load\
-    { 2.1e-16 2.81e-15 8.02e-15 1.843e-14 3.925e-14 8.09e-14 1.642e-13 3.308e-13 }
+    { 2.1e-16 1.53e-15 4.18e-15 9.48e-15 2.007e-14 4.126e-14 8.364e-14 1.684e-13 }
 set_config_opt -type energy -- explicit_points_load\
-    { 2.1e-16 2.81e-15 8.02e-15 1.843e-14 3.925e-14 8.09e-14 1.642e-13 3.308e-13 }
+    { 2.1e-16 1.53e-15 4.18e-15 9.48e-15 2.007e-14 4.126e-14 8.364e-14 1.684e-13 }
