@@ -146,7 +146,7 @@ pintype default {
     set driver_waveform_min_dt 1e-15
     set driver ndw
     
-    #set subtract_leakage 1
+    set subtract_leakage 1
 }
 
 
