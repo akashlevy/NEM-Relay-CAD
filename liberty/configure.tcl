@@ -102,11 +102,11 @@ define_parameters default {
     set power_meas_supplies { VDD }
     
     # list of ground supplies used (required for Functional Recognition)
-    set power_meas_grounds { VSS }
+    set power_meas_grounds { VSS VSNEM }
 
     # getting power numbers correct
-    set power_meas_map { VSNEM VSS }
-    #set biased_supply_pair { VDD VSS VDD VSNEM }
+    #set power_meas_map { VSNEM VSS }
+    set biased_supply_pair { VDD VSS VDD VSNEM }
 
     # power period
     set power_period 5e-6
