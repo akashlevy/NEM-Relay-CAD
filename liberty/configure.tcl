@@ -102,7 +102,7 @@ define_parameters default {
     set power_meas_supplies { VDD }
     
     # list of ground supplies used (required for Functional Recognition)
-    set power_meas_grounds { VSS VSNEM }
+    set power_meas_grounds { VSS }
 
     # getting power numbers correct
     set power_meas_map { VSNEM VSS }
