@@ -29,7 +29,7 @@ define_parameters default {
 
     set liberty_resistance_unit 1kohm
     set liberty_leakage_power_unit 1nW
-    set liberty_time_unit 1ps
+    set liberty_time_unit 1ns
     set liberty_select_min_period typ
     set liberty_max_transition 0
     set calculate_max_transition 0
@@ -96,7 +96,7 @@ define_parameters default {
 
     # Simulation resolution
     set time_res_high 1e-15
-    set time_res_low 100e-15
+    set time_res_low 1e-15
     #set gate_leakage_time_scaling_factor 100
     
     # Controls which supplies are measured for power consumption
@@ -104,6 +104,7 @@ define_parameters default {
     
     # list of ground supplies used (required for Functional Recognition)
     set power_meas_grounds { VSS VSNEM }
+    set biased_supply_pair { VDD VSS VDD VSNEM }
 
     # power period
     set power_period 5e-6
