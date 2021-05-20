@@ -102,11 +102,11 @@ define_parameters default {
     set power_meas_supplies { VDD }
     
     # list of ground supplies used (required for Functional Recognition)
-    set power_meas_grounds { VSS VSNEM }
+    set power_meas_grounds { VSS }
 
     # getting power numbers correct
-    #set power_meas_map { VSNEM VSS }
-    set biased_supply_pair { VDD VSS VDD VSNEM }
+    set power_meas_map { VSNEM VSS }
+    #set biased_supply_pair { VDD VSS VDD VSNEM }
 
     # power period
     set power_period 5e-6
@@ -151,7 +151,7 @@ pintype default {
     set driver_waveform_min_dt 1e-15
     set driver ndw
     
-    set subtract_leakage 1
+    #set subtract_leakage 1
 }
 
 
