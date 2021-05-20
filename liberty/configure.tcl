@@ -30,7 +30,6 @@ define_parameters default {
     set liberty_resistance_unit 1kohm
     set liberty_leakage_power_unit 1nW
     set liberty_time_unit 1ns
-    set liberty_select_min_period typ
     set liberty_max_transition 0
     set calculate_max_transition 0
 
