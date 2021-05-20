@@ -26,9 +26,9 @@ configure -fast -timing -power -ccs $newcells
 characterize $newcells
 
 # Output models
-model -verilog -output verilog $cells
-model -timing -power -output nldm $cells
-model -timing -power -ccs -output ccs $cells
+model -library_type typ -verilog -output verilog $cells
+model -library_type typ -timing -power -output nldm $cells
+model -library_type typ -timing -power -ccs -output ccs $cells
 
 # Qualify models
 qualify_library $charpoint/models/liberty/nldm_nems40tt.lib

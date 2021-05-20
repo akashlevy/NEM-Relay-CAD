@@ -16,8 +16,8 @@ set_opc_process nems40tt []
 #################################
 define_parameters default {
 
-    set nmos_model_names { nch }
-    set pmos_model_names { pch }
+    set nmos_model_names { nch nch_mac }
+    set pmos_model_names { pch pch_mac }
 
     set constraint_mode independent
     set smc_constraint_style relative-degradation
@@ -29,6 +29,8 @@ define_parameters default {
 
     set liberty_resistance_unit 1kohm
     set liberty_leakage_power_unit 1nW
+    set liberty_time_unit 1ps
+    set liberty_select_min_period typ
     set liberty_max_transition 0
     set calculate_max_transition 0
 
@@ -78,7 +80,7 @@ define_parameters default {
 	"common,finesim_embedded: probe=1 finesim_output=fsdb finesim_mode=spicehd finesim_method=gearv numdgt=7 measdgt=7"
 	"common,finesim: probe=1 finesim_output=fsdb finesim_mode=spicehd finesim_method=gearv numdgt=7 measdgt=7"
 	"power,finesim_embedded: probe=1 finesim_output=tr0 finesim_mode=spice2  finesim_qlevel=3 finesim_method=gear finesim_leakage_mode=1"
-	"common,hspice: probe=0 runlvl=5 numdgt=7 measdgt=7 acct=1 nopage post=2 method=gear vntol=1f accurate=1"
+	"common,hspice: probe=0 runlvl=5 numdgt=8 measdgt=8 acct=1 nopage post=2 method=gear vntol=1f accurate=1"
 	
 	"common,spectre6: compression=yes step=10ps maxstep=1ns relref=allglobal"
 	"common,spectre6: method=trap lteratio=4 gmin=1e-18 autostop=0 save=none"
@@ -146,7 +148,7 @@ pintype default {
     set driver_waveform_min_dt 1e-15
     set driver ndw
     
-    set subtract_leakage 1
+    #set subtract_leakage 1
 }
 
 
