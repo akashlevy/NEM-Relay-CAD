@@ -106,7 +106,7 @@ define_parameters default {
 
     # getting power numbers correct
     #set power_meas_map { VSNEM VSS }
-    set biased_supply_pair { VDD VSS VDD VSNEM }
+    #set biased_supply_pair { VDD VSS VDD VSNEM }
 
     # power period
     set power_period 5e-6
