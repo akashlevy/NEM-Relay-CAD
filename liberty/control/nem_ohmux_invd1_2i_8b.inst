@@ -40,6 +40,6 @@ set_config_opt -- state_partitions one
 
 create_parameter explicit_points_load
 set_config_opt -type { timing noise input_capacitance } -- explicit_points_load\
-    { 2.1e-16 4.7e-16 9.9e-16 2.03e-15 4.11e-15 8.27e-15 1.659e-14 3.323e-14 }
+    { 2.1e-16 4.7e-16 9.9e-16 2.03e-15 4.11e-15 8.27e-15 1.659e-14 3.323e-14 6.646e-14 1.329e-13 }
 set_config_opt -type energy -- explicit_points_load\
-    { 2.1e-16 4.7e-16 9.9e-16 2.03e-15 4.11e-15 8.27e-15 1.659e-14 3.323e-14 }
+    { 2.1e-16 4.7e-16 9.9e-16 2.03e-15 4.11e-15 8.27e-15 1.659e-14 3.323e-14 6.646e-14 1.329e-13 }
