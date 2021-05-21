@@ -141,7 +141,7 @@ pintype default {
     set prop_delay_out_level_rise 0.5
     set prop_delay_out_level_fall 0.5
 
-    set explicit_points_slew { 2.05e-12 4.95e-12 1.085e-11 2.265e-11 4.62e-11 9.33e-11 1.8755e-10 }
+    set explicit_points_slew { 1.95e-12 4.9e-12 1.075e-11 2.25e-11 4.6e-11 9.3e-11 1.87e-10 3.75e-10}
 
     set total_slew_multiplier 250
     set initial_delay 1e-6
