@@ -19,7 +19,7 @@ set_location $charpoint
 
 # Set cell lists for import from control directory .inst files
 set cells [lmap f [glob -directory control -tails *.inst] {file rootname $f}]
-set newcells nem_ohmux_invd0_2i_8b nem_ohmux_invd0_4i_8b
+set newcells {nem_ohmux_invd0_2i_8b nem_ohmux_invd0_4i_8b}
 
 # Configure and characterize
 configure -fast -timing -power -ccs $newcells
