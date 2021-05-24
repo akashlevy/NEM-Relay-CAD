@@ -1,0 +1,41 @@
+* File: nem_ohmux_invd1_2i_8b.pex.netlist
+* Created: Sun May 23 21:03:55 2021
+* Program "Calibre xRC"
+* Version "v2019.1_18.11"
+* 
+.include "nem_ohmux_invd1_2i_8b.pex.netlist.pex"
+.subckt nem_ohmux_invd1_2i_8b  Z_5 Z_7 Z_4 Z_0 Z_6 Z_2 Z_3 Z_1 I0_6 I0_5 I0_7
++ I0_0 S0 I0_4 I0_3 I0_1 I0_2 I1_6 I1_5 I1_7 I1_0 S1 I1_4 I1_3 I1_1 I1_2
+* 
+c_5 Z_5 0 0.066538f
+c_10 Z_7 0 0.0665235f
+c_17 Z_4 0 0.0250901f
+c_22 Z_0 0 0.0233352f
+c_29 Z_6 0 0.0349742f
+c_37 Z_2 0 0.0235875f
+c_44 Z_3 0 0.0655217f
+c_51 Z_1 0 0.0569803f
+c_57 I0_6 0 0.0205346f
+c_62 I0_5 0 0.0215982f
+c_66 I0_7 0 0.0228621f
+c_70 I0_0 0 0.0145517f
+c_77 S0 0 0.0167727f
+c_84 I0_4 0 0.0114096f
+c_94 I0_3 0 0.0116237f
+c_101 I0_1 0 0.0183358f
+c_106 I0_2 0 0.0251579f
+c_111 I1_6 0 0.0238693f
+c_117 I1_5 0 0.0222046f
+c_124 I1_7 0 0.0241529f
+c_128 I1_0 0 0.0212061f
+c_134 S1 0 0.0193242f
+c_139 I1_4 0 0.0267859f
+c_144 I1_3 0 0.0237713f
+c_150 I1_1 0 0.0234212f
+c_154 I1_2 0 0.0263216f
+*
+.include "nem_ohmux_invd1_2i_8b.pex.netlist.nem_ohmux_invd1_2i_8b.pxi"
+*
+.ends
+*
+*
