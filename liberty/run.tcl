@@ -1,7 +1,7 @@
 # Set and create characterization point
 set charpoint nems40tt
 # exec rm -r $charpoint
-# create $charpoint
+create $charpoint
 
 # Copy and symlink as necessary
 exec rm -rf $charpoint/config/configure.tcl
@@ -19,7 +19,7 @@ set_location $charpoint
 
 # Set cell lists for import from control directory .inst files
 set cells [lmap f [glob -directory control -tails *.inst] {file rootname $f}]
-set newcells {nem_ohmux_invd0_2i_8b nem_ohmux_invd0_4i_8b}
+set newcells $cells
 
 # Configure and characterize
 configure -fast -timing -power -ccs $newcells
