@@ -4,8 +4,7 @@
 * Version "v2019.1_18.11"
 * 
 .include "nem_ohmux_invd1_2i_8b.pex.netlist.pex"
-.subckt nem_ohmux_invd1_2i_8b  Z_5 Z_7 Z_4 Z_0 Z_6 Z_2 Z_3 Z_1 I0_6 I0_5 I0_7
-+ I0_0 S0 I0_4 I0_3 I0_1 I0_2 I1_6 I1_5 I1_7 I1_0 S1 I1_4 I1_3 I1_1 I1_2
+.subckt nem_ohmux_invd1_2i_8b_pex  I0_0 I0_1 I0_2 I0_3 I0_4 I0_5 I0_6 I0_7 I1_0 I1_1 I1_2 I1_3 I1_4 I1_5 I1_6 I1_7 S0 S1 Z_0 Z_1 Z_2 Z_3 Z_4 Z_5 Z_6 Z_7
 * 
 c_5 Z_5 0 0.066538f
 c_10 Z_7 0 0.0665235f
