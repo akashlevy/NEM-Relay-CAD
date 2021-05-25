@@ -194,8 +194,8 @@ library(nems40tt) {
       related_ground_pin : VSS ; 
     }
 
-    bundle(ZN) { 
-      members(ZN_0, ZN_1, ZN_2, ZN_3, ZN_4, ZN_5, ZN_6, ZN_7);
+    bundle(Z) { 
+      members(Z_0, Z_1, Z_2, Z_3, Z_4, Z_5, Z_6, Z_7);
       direction : output ; 
       function : "S0&I0 | S1&I1" ; 
       max_capacitance : 0.26532 ; 
@@ -662,8 +662,8 @@ library(nems40tt) {
       related_ground_pin : VSS ; 
     }
 
-    bundle(ZN) { 
-      members(ZN_0, ZN_1, ZN_2, ZN_3, ZN_4, ZN_5, ZN_6, ZN_7);
+    bundle(Z) { 
+      members(Z_0, Z_1, Z_2, Z_3, Z_4, Z_5, Z_6, Z_7);
       direction : output ; 
       function : "!S0&I0 | S1&I1 | S2&I2 | S3&I3" ; 
       max_capacitance : 0.26532 ; 
@@ -1608,8 +1608,8 @@ library(nems40tt) {
       related_ground_pin : VSS ; 
     }
 
-    bundle(ZN) { 
-      members(ZN_0, ZN_1, ZN_2, ZN_3, ZN_4, ZN_5, ZN_6, ZN_7);
+    bundle(Z) { 
+      members(Z_0, Z_1, Z_2, Z_3, Z_4, Z_5, Z_6, Z_7);
       direction : output ; 
       function : "S0&I0 | S1&I1 | S2&I2 | S3&I3 | S4&I4 | S5&I5 | S6&I6 | S7&I7 | S8&I8 | S9&I9" ; 
       max_capacitance : 0.26532 ; 
