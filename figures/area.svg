@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   class="marks"
+   width="275"
+   height="153.78427"
+   viewBox="0 0 275 153.78427"
+   version="1.1"
+   id="svg210"
+   sodipodi:docname="area.svg"
+   inkscape:version="1.0.2 (e86c8708, 2021-01-15)">
+  <metadata
+     id="metadata216">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs214">
+    <marker
+       style="overflow:visible"
+       id="marker2281"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path2279" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1906" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path1912" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1894" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1800"
+     inkscape:window-height="930"
+     id="namedview212"
+     showgrid="false"
+     inkscape:zoom="3.9890909"
+     inkscape:cx="137.13885"
+     inkscape:cy="77.784276"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg210"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <rect
+     width="275"
+     height="152"
+     style="fill:#ffffff"
+     id="rect10"
+     x="0"
+     y="1.784276" />
+  <path
+     class="background"
+     d="m 58.5,12.284276 h 140 V 112.28428 h -140 z"
+     style="fill:none;stroke:#dddddd;stroke-opacity:0"
+     id="path12" />
+  <path
+     class="background"
+     d="M 58.5,12.284276 Z"
+     style="fill:none"
+     id="path14" />
+  <line
+     x2="198.5"
+     y2="112.28428"
+     style="fill:none;stroke:#dddddd;stroke-width:1"
+     id="line16"
+     x1="58.5"
+     y1="112.28428" />
+  <line
+     x2="198.5"
+     y2="62.284275"
+     style="fill:none;stroke:#dddddd;stroke-width:1"
+     id="line18"
+     x1="58.5"
+     y1="62.284275" />
+  <line
+     x2="198.5"
+     y2="12.284276"
+     style="fill:none;stroke:#dddddd;stroke-width:1"
+     id="line20"
+     x1="58.5"
+     y1="12.284276" />
+  <path
+     class="foreground"
+     d=""
+     style="display:none;fill:none"
+     id="path26" />
+  <path
+     class="background"
+     d="M 58.5,112.28428 Z"
+     style="fill:none"
+     id="path32" />
+  <line
+     x2="93.5"
+     y2="117.28428"
+     style="fill:none;stroke:#888888;stroke-width:1"
+     id="line34"
+     x1="93.5"
+     y1="112.28428" />
+  <line
+     x2="163.5"
+     y2="117.28428"
+     style="fill:none;stroke:#888888;stroke-width:1"
+     id="line36"
+     x1="163.5"
+     y1="112.28428" />
+  <text
+     text-anchor="end"
+     transform="rotate(-90)"
+     style="font-size:10px;font-family:sans-serif;fill:#000000"
+     id="text40"
+     x="-119.28428"
+     y="96">CMOS</text>
+  <text
+     text-anchor="end"
+     transform="rotate(-90)"
+     style="font-size:10px;font-family:sans-serif;fill:#000000"
+     id="text42"
+     x="-119.28428"
+     y="166">NEMS</text>
+  <line
+     x2="198.5"
+     y2="112.28428"
+     style="fill:none;stroke:#888888;stroke-width:1"
+     id="line46"
+     x1="58.5"
+     y1="112.28428" />
+  <path
+     class="foreground"
+     d=""
+     style="display:none;fill:none"
+     id="path52" />
+  <path
+     class="background"
+     d="M 58.5,12.284276 Z"
+     style="fill:none"
+     id="path58" />
+  <line
+     x2="53.5"
+     y2="112.28428"
+     style="fill:none;stroke:#888888;stroke-width:1"
+     id="line60"
+     x1="58.5"
+     y1="112.28428" />
+  <line
+     x2="53.5"
+     y2="62.284275"
+     style="fill:none;stroke:#888888;stroke-width:1"
+     id="line62"
+     x1="58.5"
+     y1="62.284275" />
+  <line
+     x2="53.5"
+     y2="12.284276"
+     style="fill:none;stroke:#888888;stroke-width:1"
+     id="line64"
+     x1="58.5"
+     y1="12.284276" />
+  <text
+     text-anchor="end"
+     style="font-size:10px;font-family:sans-serif;fill:#000000"
+     id="text68"
+     x="51.5"
+     y="115.28428">0</text>
+  <text
+     text-anchor="end"
+     style="font-size:10px;font-family:sans-serif;fill:#000000"
+     id="text70"
+     x="51.5"
+     y="65.284279">5,000</text>
+  <text
+     text-anchor="end"
+     style="font-size:10px;font-family:sans-serif;fill:#000000"
+     id="text72"
+     x="51.5"
+     y="15.284276">10,000</text>
+  <line
+     x2="58.5"
+     y2="12.284276"
+     style="fill:none;stroke:#888888;stroke-width:1"
+     id="line76"
+     x1="58.5"
+     y1="112.28428" />
+  <text
+     text-anchor="middle"
+     transform="rotate(-90)"
+     style="font-weight:bold;font-size:11px;font-family:sans-serif;fill:#000000"
+     id="text80"
+     x="-62.284275"
+     y="12.914062">Total Area (um²)</text>
+  <path
+     class="foreground"
+     d=""
+     style="display:none;fill:none"
+     id="path86" />
+  <path
+     d="m 61.5,14.512026 h 63 v 16.21821 h -63 z"
+     style="fill:#4c78a8"
+     id="path92" />
+  <path
+     d="m 131.5,31.494054 h 63 v 13.768022 h -63 z"
+     style="fill:#4c78a8"
+     id="path94" />
+  <path
+     d="m 61.5,30.730236 h 63 v 3.51389 h -63 z"
+     style="fill:#f58518"
+     id="path96" />
+  <path
+     d="m 131.5,45.262076 h 63 v 3.52976 h -63 z"
+     style="fill:#f58518"
+     id="path98" />
+  <path
+     d="m 61.5,34.244126 h 63 v 27.31907 h -63 z"
+     style="fill:#e45756"
+     id="path100" />
+  <path
+     d="m 131.5,48.791836 h 63 v 26.41237 h -63 z"
+     style="fill:#e45756"
+     id="path102" />
+  <path
+     d="m 61.5,61.563196 h 63 v 50.221084 h -63 z"
+     style="fill:#72b7b2"
+     id="path104" />
+  <path
+     d="m 131.5,75.204206 h 63 v 36.580074 h -63 z"
+     style="fill:#72b7b2"
+     id="path106" />
+  <path
+     class="background"
+     d="m 216,11.784276 h 54 v 66 h -54 z"
+     style="fill:none"
+     id="path110" />
+  <path
+     class="background"
+     d="M 216,27.784276 Z"
+     style="fill:none"
+     id="path112" />
+  <path
+     class="background"
+     d="m 216,27.784276 h 53.79297 v 11 H 216 Z"
+     style="fill:none"
+     id="path114" />
+  <path
+     d="m 217,28.784276 h 10 v 10 h -10 z"
+     style="fill:#4c78a8;stroke-width:1.5"
+     id="path116" />
+  <text
+     text-anchor="start"
+     style="font-size:10px;font-family:sans-serif;fill:#000000"
+     id="text120"
+     x="232"
+     y="36.784275">CBs</text>
+  <path
+     class="foreground"
+     d=""
+     style="display:none;fill:none"
+     id="path126" />
+  <path
+     class="background"
+     d="m 216,40.784276 h 53.79297 v 11 H 216 Z"
+     style="fill:none"
+     id="path130" />
+  <path
+     d="m 217,41.784276 h 10 v 10 h -10 z"
+     style="fill:#f58518;stroke-width:1.5"
+     id="path132" />
+  <text
+     text-anchor="start"
+     style="font-size:10px;font-family:sans-serif;fill:#000000"
+     id="text136"
+     x="232"
+     y="49.784275">Other</text>
+  <path
+     class="foreground"
+     d=""
+     style="display:none;fill:none"
+     id="path142" />
+  <path
+     class="background"
+     d="m 216,53.784276 h 53.79297 v 11 H 216 Z"
+     style="fill:none"
+     id="path146" />
+  <path
+     d="m 217,54.784276 h 10 v 10 h -10 z"
+     style="fill:#e45756;stroke-width:1.5"
+     id="path148" />
+  <text
+     text-anchor="start"
+     style="font-size:10px;font-family:sans-serif;fill:#000000"
+     id="text152"
+     x="232"
+     y="62.784275">PE Core</text>
+  <path
+     class="foreground"
+     d=""
+     style="display:none;fill:none"
+     id="path158" />
+  <path
+     class="background"
+     d="m 216,66.784276 h 53.79297 v 11 H 216 Z"
+     style="fill:none"
+     id="path162" />
+  <path
+     d="m 217,67.784276 h 10 v 10 h -10 z"
+     style="fill:#72b7b2;stroke-width:1.5"
+     id="path164" />
+  <text
+     text-anchor="start"
+     style="font-size:10px;font-family:sans-serif;fill:#000000"
+     id="text168"
+     x="232"
+     y="75.784279">SB</text>
+  <path
+     class="foreground"
+     d=""
+     style="display:none;fill:none"
+     id="path174" />
+  <path
+     class="foreground"
+     d=""
+     style="display:none;fill:none"
+     id="path182" />
+  <text
+     text-anchor="start"
+     style="font-weight:bold;font-size:11px;font-family:sans-serif;fill:#000000"
+     id="text188"
+     x="216"
+     y="20.784275">Module</text>
+  <path
+     class="foreground"
+     d=""
+     style="display:none;fill:none"
+     id="path194" />
+  <path
+     class="foreground"
+     d=""
+     style="display:none;fill:none"
+     id="path202" />
+  <text
+     text-anchor="end"
+     style="font-size:10px;font-family:sans-serif;fill:#000000"
+     id="text72-8"
+     x="170.55786"
+     y="7.5976562">17.5% reduction</text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:2.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2281)"
+     d="M 90.747493,14.819828 162.94439,31.364951"
+     id="path1066" />
+</svg>
