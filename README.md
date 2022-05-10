@@ -4,6 +4,8 @@ This repository contains almost everything a researcher might need to get starte
 
 A video tutorial of the COMSOL model is available: https://www.youtube.com/watch?v=YCjhU6pspo0
 
+Also, read this paper for more info on potential applications of these models: https://ieeexplore.ieee.org/document/9712515
+
 <img src="figures/mode1comsol.gif" alt="Modal Analysis in COMSOL" width="500"/>
 
 ## Step 1: Configure NEM relay parameters
