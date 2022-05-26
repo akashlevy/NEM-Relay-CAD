@@ -16,7 +16,7 @@
     D1 T1 VSS ndio area=1n pj=10u
     D2 B1 T1 ndio area=1n pj=10u
     D3 T2 B1 ndio area=1n pj=10u
-    D3 B2 T2 ndio area=1n pj=10u
-    D3 T3 B2 ndio area=1n pj=10u
-    D3 OUT T3 ndio area=1n pj=10u
+    D4 B2 T2 ndio area=1n pj=10u
+    D5 T3 B2 ndio area=1n pj=10u
+    D6 OUT T3 ndio area=1n pj=10u
 .ends
