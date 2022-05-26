@@ -5,8 +5,8 @@
 .lib /tsmc40r/pdk/2019.10.15_TSMC/TN40CLSP058_1_5_2/T-N40-CL-SP-058_v1d5_2/models/res_metal.l TT_res_metal
 
 ** Define the charge pump **
-.subckt charge_pump IN OUT VSS
-    CT1 IN T1 1n
+.subckt charge_pump CLK OUT VSS
+    CT1 CLK T1 1n
     CT2 T1 T2 1n
     CT3 T2 T3 1n
     CB1 VSS B1 1n
