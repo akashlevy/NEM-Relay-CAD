@@ -10,9 +10,9 @@ Xpump CLK OUT VSS charge_pump
 VSS VSS 0 0V
 
 ** Clock pulse **
-VCLK CLK 0 PULSE(0V 1.8V 0 100ps 100ps 5ns 10ns)
+VCLK CLK 0 PULSE(0V 2.5V 0 100ps 100ps 5ns 10ns)
 
 ** Options **
-.tran 1ns 100us
+.tran 1ns 500us
 .option post=2
 .option runlvl=5 accurate method=gear 
