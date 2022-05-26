@@ -7,7 +7,7 @@
 ** Define the charge pump **
 .subckt charge_pump IN OUT VDD VDDIO VSS
     C1 IN MID 1n
-    D1 MID VSS ndio_25
-    D2 OUT MID ndio_25
+    D1 MID VSS pdio_25
+    D2 OUT MID pdio_25
     C2 OUT VSS 1n
 .ends
