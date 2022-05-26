@@ -4,16 +4,14 @@
 .include charge_pump.sp
 
 ** Create the charge pump **
-Xpump IN OUT VDD VDDIO VSS charge_pump
+Xpump CLK OUT VSS charge_pump
 
 ** Supply voltages **
 VDD VDD 0 1.1V
-VDDIO VDDIO 0 2.5V
 VSS VSS 0 0V
 
 ** Clock pulse **
-VIN IN 0 PULSE(0V 2.5V 0 100ps 100ps 5ns 10ns)
-
+VIN1 IN1 0 PULSE(0V 1.1V 0 100ps 100ps 5ns 10ns)
 
 ** Options **
 .tran 1ns 20us
