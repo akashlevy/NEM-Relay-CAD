@@ -4,6 +4,6 @@
 
 D1 VIN VSS ndio_25od33 area=1n pj=10u
 
-VIN vin 
+VIN vin 0 0V
 
 .dc vin -10 10 0.01
