@@ -6,8 +6,7 @@
 ** Create the charge pump **
 Xpump CLK OUT VSS charge_pump
 
-** Supply voltages **
-VDD VDD 0 1.1V
+** Supply voltages **]
 VSS VSS 0 0V
 
 ** Clock pulse **
