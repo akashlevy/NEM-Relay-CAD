@@ -16,6 +16,6 @@ VIN IN 0 PULSE(0V 2.5V 0 10ps 10ps 5ns 10ns)
 
 
 ** Options **
-.tran 0.1ns 100us
+.tran 0.01ns 20us
 .option post=2
 .option runlvl=5 accurate method=gear 
