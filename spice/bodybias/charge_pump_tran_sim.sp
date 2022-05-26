@@ -5,7 +5,7 @@
 
 ** Create the charge pump **
 Xpump CLK OUT VSS charge_pump
-Crelay OUT VSS 1n
+Crelay OUT VSS 10n
 
 ** Supply voltages **
 VSS VSS 0 0V
