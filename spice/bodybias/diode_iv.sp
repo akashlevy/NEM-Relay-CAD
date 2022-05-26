@@ -4,6 +4,8 @@
 
 D1 VIN VSS ndio_25od33 area=1n pj=10u
 
-VIN vin 0 0V
+VIN VIN 0 0V
+VSS VSS 0 0V
 
-.dc vin -10 10 0.01
+.dc VIN -10 10 0.01
+.probe V(VIN) I(VIN)
