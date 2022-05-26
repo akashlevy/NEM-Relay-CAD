@@ -5,7 +5,7 @@
 .lib /tsmc40r/pdk/2019.10.15_TSMC/TN40CLSP058_1_5_2/T-N40-CL-SP-058_v1d5_2/models/res_metal.l TT_res_metal
 
 ** Define the charge pump **
-.subckt charge_pump IN OUT VDD VDDIO VSS
+.subckt charge_pump IN OUT VSS
     C1 IN MID 1n
     D1 MID VSS ndio_25od33 area=1n pj=10u
     D2 OUT MID ndio_25od33 area=1n pj=10u
