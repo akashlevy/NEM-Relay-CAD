@@ -8,6 +8,6 @@ VIN VIN 0 0V
 VSS VSS 0 0V
 
 .dc VIN -10 10 0.01
-.probe V(VIN) I(VIN)
+.probe V(VIN) PAR('abs(I(VIN))')
 .option post=2
 .option runlvl=5 accurate method=gear 
