@@ -6,7 +6,7 @@
 .include charge_pump.sp
 
 ** Create the charge pump **
-Xpump IN OUT VDD VDDIO VSS
+Xpump IN OUT VDD VDDIO VSS charge_pump
 
 ** Supply voltages **
 VDD VDD 0 1.1V
