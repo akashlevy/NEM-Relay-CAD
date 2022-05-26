@@ -12,7 +12,7 @@ VDDIO VDDIO 0 2.5V
 VSS VSS 0 0V
 
 ** Clock pulse **
-VIN IN 0 PULSE(0V 2.5V 0 10ps 10ps 5ns 10ns)
+VIN IN 0 PULSE(0V 2.5V 0 1ps 1ps 5ns 10ns)
 
 
 ** Options **
