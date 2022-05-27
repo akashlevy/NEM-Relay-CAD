@@ -9,7 +9,7 @@ Xnem gnd Vsrc Vg gnd z nem_relay_1b
 Vsrc Vsrc gnd 1V
 
 ** Sweep gate voltage **
-Vg Vg gnd 0V PWL(0s 0V 10us 0V 10.0001us 4.5V 20us 4.5V 20.0001us 0V 30us 0V)
+Vg Vg gnd 0V PWL(0s 0V 10us 0V 10.0001us 5V 20us 5V 20.0001us 0V 30us 0V)
 
 ** Options **
 .tran 0.0001us 30us

@@ -1,5 +1,5 @@
 # Import libraries
-import json, matplotlib as mpl, matplotlib.pyplot as plt, pandas as pd
+import json, matplotlib as mpl, matplotlib.pyplot as plt, pandas as pd, numpy as np
 
 # Set font size
 plt.rcParams.update({'font.size': 14})
@@ -82,4 +82,22 @@ plt.ylim(0, 40)
 plt.legend()
 plt.tight_layout()
 plt.savefig("figures/transient-curve-fall.pdf")
+plt.show()
+
+# Body biasing plots
+cpump = pd.read_csv("output/cpump.csv", header=0, names=["t", "V(in)", "t2", "V(in,prebuf)", "t3", "vs1", "t4", "vs2", "t5", "vs3", "t6", "V(out)", "t7", "I(in)"])
+for i in range(2, 7):
+  del cpump[f"t{i}"]
+print(cpump.head())
+plt.figure(figsize=(6, 3))
+plt.xlabel("Time ($\mu$s)")
+plt.ylabel("Voltage (V)")
+plt.plot(cpump["t"]*1e6, cpump["V(in)"], label="V(in): buffered 2.5V clock", linewidth=0.8)
+plt.plot(cpump["t"]*1e6, cpump["V(out)"], label="V(out): NEM relay body bias")
+plt.plot([1e-4, 1e3], [-3.7, -3.7], 'r--', label="95% of V(out) steady state value")
+plt.xscale("log")
+plt.xlim(1e-4, 1e3)
+plt.legend(loc="lower left", bbox_to_anchor=(0.02, 0.1))
+plt.tight_layout()
+plt.savefig("figures/cpump-tran.pdf")
 plt.show()
