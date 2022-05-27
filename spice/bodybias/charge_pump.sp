@@ -6,12 +6,12 @@
 
 ** Define the charge pump **
 .subckt charge_pump CLK OUT VSS
-    CT1 CLK T1 1n
-    CT2 T1 T2 1n
-    CT3 T2 T3 1n
-    CB1 VSS B1 1n
-    CB2 B1 B2 1n
-    CB3 B2 OUT 1n
+    CT1 CLK T1 10n
+    CT2 T1 T2 10n
+    CT3 T2 T3 10n
+    CB1 VSS B1 10n
+    CB2 B1 B2 10n
+    CB3 B2 OUT 10n
 
     D1 T1 VSS ndio area=1n pj=10u
     D2 B1 T1 ndio area=1n pj=10u
