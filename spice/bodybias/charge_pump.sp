@@ -13,8 +13,8 @@
     * CB2 B1 B2 10n
     * CB3 B2 OUT 10n
 
-    D1 T1 VSS ndio_25 area=1n pj=10u
-    D2 B1 T1 ndio_25 area=1n pj=10u
+    D1 T1 VSS ndio_25 area=10n pj=10u
+    D2 B1 T1 ndio_25 area=10n pj=10u
     * D3 T2 B1 ndio area=1n pj=10u
     * D4 B2 T2 ndio area=1n pj=10u
     * D5 T3 B2 ndio area=1n pj=10u
