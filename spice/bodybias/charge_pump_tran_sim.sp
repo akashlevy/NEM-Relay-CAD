@@ -16,4 +16,4 @@ VCLK CLK 0 PULSE(0V 2.5V 0 100ps 100ps 2.5ns 5ns)
 ** Options **
 .tran 1ns 100us
 .option post=2
-.option runlvl=1 method=gear
+.option runlvl=0 method=gear
