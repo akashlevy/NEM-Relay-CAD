@@ -53,16 +53,17 @@ plt.savefig("figures/quasistatic-curve.pdf")
 plt.show()
 
 # Plot transient curve rising
-tran_spice = pd.read_csv("output/transient_sp.txt", delimiter='\t', header=0, names=["t", "z"])
+tran_spice = pd.read_csv("output/transient_sp.txt", delim_whitespace=True, header=0, names=["t", "z"])
 tran_spice_rise = tran_spice[tran_spice["t"] >= 10000*1e-9]
 tran_spice_rise = tran_spice_rise[tran_spice_rise["t"] <= 20000*1e-9]
 tran_spice_rise["t"] = tran_spice_rise["t"] - 10000*1e-9
+print(tran_spice.head())
 tran_label = "SPICE sim\n$V_{GB}$ = %.1fV\nQ=0.5" % params["Vop"]
 plt.figure(figsize=(5, 3))
 plt.xlabel("Time ($\mu$s)")
 plt.ylabel("Relay $z$-Disp. (nm)")
 plt.plot(tran_spice_rise["t"]*1e6, tran_spice_rise["z"]*1e9, label=tran_label)
-plt.xlim(0, 5)
+plt.xlim(0, 3)
 plt.ylim(0, 40)
 plt.legend()
 plt.tight_layout()
@@ -85,19 +86,19 @@ plt.savefig("figures/transient-curve-fall.pdf")
 plt.show()
 
 # Body biasing plots
-cpump = pd.read_csv("output/cpump.csv", header=0, names=["t", "V(in)", "t2", "V(in,prebuf)", "t3", "vs1", "t4", "vs2", "t5", "vs3", "t6", "V(out)", "t7", "I(in)"])
-for i in range(2, 7):
+cpump = pd.read_csv("output/cccp.csv", header=0, names=["t", "V(clkb)", "t2", "V(out)", "t3", "V(clk)", "t4", "vs1", "t5", "V(clk,raw)"])
+for i in range(2, 6):
   del cpump[f"t{i}"]
 print(cpump.head())
-plt.figure(figsize=(6, 3))
+plt.figure(figsize=(6, 3.2))
 plt.xlabel("Time ($\mu$s)")
 plt.ylabel("Voltage (V)")
-plt.plot(cpump["t"]*1e6, cpump["V(in)"], label="V(in): buffered 2.5V clock", linewidth=0.8)
+plt.plot(cpump["t"]*1e6, cpump["V(clk)"], label="V(in): buffered 2.5V clock", linewidth=0.8)
 plt.plot(cpump["t"]*1e6, cpump["V(out)"], label="V(out): NEM relay body bias")
-plt.plot([1e-4, 1e3], [-3.7, -3.7], 'r--', label="95% of V(out) steady state value")
+plt.plot([1e-4, 1e3], [0.95*-3.9, 0.95*-3.9], 'r--', label="95% of V(out) steady state")
 plt.xscale("log")
-plt.xlim(1e-4, 1e3)
-plt.legend(loc="lower left", bbox_to_anchor=(0.02, 0.1))
+plt.xlim(1e-4, 15)
+plt.legend(loc="lower left", bbox_to_anchor=(0, 0.06))
 plt.tight_layout()
 plt.savefig("figures/cpump-tran.pdf")
 plt.show()
