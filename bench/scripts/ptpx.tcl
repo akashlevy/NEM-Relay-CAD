@@ -26,6 +26,9 @@ read_verilog   [glob -directory ../synth -type f *.v *.sv]
 current_design $design_name
 link_design
 
+# Insert buffer on all inputs
+insert_buffer [all_inputs] $input_driver
+
 # Constraints
 read_sdc ../scripts/constraints.sdc
 
