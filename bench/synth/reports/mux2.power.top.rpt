@@ -1,0 +1,54 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : mux2
+Version: P-2019.03
+Date   : Fri Jun  3 23:28:39 2022
+****************************************
+
+
+Library(s) Used:
+
+    tcbn40ulpbwp40_c170815tt1p1v25c (File: /tsmc40r/organized_pdk/N40ULP/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn40ulpbwp40_c170815_130d/tcbn40ulpbwp40_c170815tt1p1v25c.db)
+
+
+Operating Conditions: tt1p1v25c   Library: tcbn40ulpbwp40_c170815tt1p1v25c
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+mux2                   ZeroWireload      tcbn40ulpbwp40_c170815tt1p1v25c
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   1.6611 uW   (87%)
+  Net Switching Power  = 241.7774 nW   (13%)
+                         ---------
+Total Dynamic Power    =   1.9029 uW  (100%)
+
+Cell Leakage Power     = 894.8370 pW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  1.6611e-03        2.4178e-04            0.8948        1.9038e-03  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total          1.6611e-03 mW     2.4178e-04 mW         0.8948 nW     1.9038e-03 mW
+1

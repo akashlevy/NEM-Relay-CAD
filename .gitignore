@@ -6,3 +6,6 @@ Relay54Sol*.mph
 *.pvadir
 *.log
 *.bak
+alib-52/
+WORK_autoread/
+*.svf
