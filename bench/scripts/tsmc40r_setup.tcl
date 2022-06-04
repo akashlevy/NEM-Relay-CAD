@@ -1,19 +1,17 @@
-puts "Info: Using TSMC PDK Gate Libraries (40nm, RRAM)"
+puts "Info: Using TSMC PDK Gate Libraries (40nm, ULP, RRAM)"
 
-set TSMC40_EDK_PATH     "/tsmc40r/pdk/2019.05.21_TSMC/tcbn40lpbwp_200a"
-set TSMC40_NLDM         "${TSMC40_EDK_PATH}/tcbn40lpbwp_200a_nldm/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn40lpbwp_200a"
-set TSMC40_MILKYWAY     "${TSMC40_EDK_PATH}/tcbn40lpbwp_200a_apf/TSMCHOME/digital/Back_End/milkyway/tcbn40lpbwp_200a"
-set TSMC40_TLUPLUS      "${TSMC40_MILKYWAY}/techfiles/tluplus/"
+set TSMC40_EDK_PATH     "/tsmc40r/organized_pdk/TSMCHOME/digital"
+set TSMC40_ULP_EDK_PATH "/tsmc40r/organized_pdk/N40ULP/TSMCHOME/digital"
+set TSMC40_NLDM         "${TSMC40_ULP_EDK_PATH}/Front_End/timing_power_noise/NLDM/tcbn40ulpbwp40_c170815_130d"
+set TSMC40_MILKYWAY     "${TSMC40_EDK_PATH}/Back_End/milkyway/tcbn40ulpbwp40_c170815_130a/cell_frame_HVH_0d5_0/tcbn40ulpbwp40_c170815"
+set TSMC40_TLUPLUS      "/tsmc40r/organized_pdk/QRC/RC_TLUplus_crn40ulp_1p7m_5x1u_alrdl_9corners_1.0a"
 
 #######
 # Library search paths and Milkyway reference libraries (Include IC Compiler ILMs here)
 #######
-set ADDITIONAL_SEARCH_PATH  " \
-${TSMC40_NLDM} \
-"
+set ADDITIONAL_SEARCH_PATH  "${TSMC40_NLDM}"
 
-set MW_REFERENCE_LIB_DIRS  [list \
-/tsmc40r/pdk/digital/5x2z/libraries/tcbn40lpbwp_200a_apt/TSMCHOME/digital/Back_End/milkyway/tcbn40lpbwp_200a/cell_frame_HVH_0d5_0/tcbn40lpbwp]
+set MW_REFERENCE_LIB_DIRS [list $TSMC40_MILKYWAY]
 
 # Reference Control File to define the MW reference libraries
 set MW_REFERENCE_CONTROL_FILE ""
@@ -21,20 +19,18 @@ set MW_REFERENCE_CONTROL_FILE ""
 #########
 # Target technology logical libraries
 #########
-set TARGET_LIBRARY_FILES " \
-tcbn40lpbwptc.db \
-"
+set TARGET_LIBRARY_FILES "tcbn40ulpbwp40_c170815tt1p1v25c.db"
 
 ########
 # Tech files and metal stack extraction models
 ########
-set tluplus_file(fast) "${TSMC40_TLUPLUS}/cln40lp_1p08m+alrdl_5x2z_rcbest.tluplus"
-set tluplus_file(slow) "${TSMC40_TLUPLUS}/cln40lp_1p08m+alrdl_5x2z_rcworst.tluplus"
-set tluplus_file(typical) "${TSMC40_TLUPLUS}/cln40lp_1p08m+alrdl_5x2z_typical.tluplus"
+set tluplus_file(fast) "${TSMC40_TLUPLUS}/RC_TLUplus_crn40ulp_1p07m+alrdl_5x1u_rcbest/crn40ulp_1p07m+alrdl_5x1u_rcbest.tluplus"
+set tluplus_file(slow) "${TSMC40_TLUPLUS}/RC_TLUplus_crn40ulp_1p07m+alrdl_5x1u_rcworst/crn40ulp_1p07m+alrdl_5x1u_rcworst.tluplus"
+set tluplus_file(typical) "${TSMC40_TLUPLUS}/RC_TLUplus_crn40ulp_1p07m+alrdl_5x1u_typical/crn40ulp_1p07m+alrdl_5x1u_typical.tluplus"
 
 # Tech files
-set TECH_FILE        "${TSMC40_MILKYWAY}/techfiles/HVH_0d5_0/tsmcn40_8lm5X2ZRDL.tf"
-set MAP_FILE         "${TSMC40_TLUPLUS}/star.map_8M"
+set TECH_FILE        "tsmc40r/organized_pdk/N40G_N40LP_fullset_Syn_v2d0a/PR_tech/Synopsys/TechFile/RDL/HVH_0d5_0/tsmcn40_7lm5X1URDL.tf"
+set MAP_FILE         "${TSMC40_EDK_PATH}/Back_End/milkyway/tcbn40lpbwp_200a/techfiles/tluplus/star.map_7M"
 set TLUPLUS_MAX_FILE "$tluplus_file(slow)"
 set TLUPLUS_MIN_FILE "$tluplus_file(fast)"
 
