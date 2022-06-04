@@ -7,5 +7,5 @@ if (-d synth/$1) then
 endif
 mkdir synth
 cd synth
-dc_shell -o "$1_syn.log" -f scripts/synthesize.tcl
+dc_shell -o "$1_syn.log" -f ../scripts/synthesize.tcl
 cd ../..
