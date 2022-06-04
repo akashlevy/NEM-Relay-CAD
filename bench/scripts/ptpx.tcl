@@ -41,7 +41,7 @@ check_power -verbose > reports/$design_name.checkpower.rpt
 # Final reports
 report_switching_activity > reports/$design_name.activity.post.rpt
 report_power -significant_digits 8 -nosplit -hierarchy -leaf > reports/$design_name.power.hier.rpt
-report_timing -nosplit -transition_time -input -to Z[0] -net -capacitance -max_paths 100 -slack_lesser_than 5 > reports/$design_name.timing.rpt
+report_timing -nosplit -transition_time -input -to Z[0] -net -capacitance -nworst 100 > reports/$design_name.timing.rpt
 
 exit
 
