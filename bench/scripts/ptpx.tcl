@@ -1,5 +1,5 @@
 # Setup technology libs
-suppress_message [list AUTOREAD-107 ELAB-311 MWLIBP-311 TFCHK-012 TFCHK-049 TFCHK-050 TFCHK-084 TFCHK-092 TIM-052 TIM-128 UISN-40 VO-4]
+suppress_message [list AUTOREAD-107 ELAB-311 MWLIBP-311 TFCHK-012 TFCHK-049 TFCHK-050 TFCHK-084 TFCHK-092 TIM-052 TIM-128 UISN-40 UITE-121 VO-4]
 
 # Set design name and output load from environment
 set design_name $::env(DESIGN)
@@ -27,29 +27,22 @@ link_design
 # Constraints
 read_sdc ../scripts/constraints.sdc
 
-# TODO: VIRTUAL CLOCK
 # TODO: SWITCHING ACTIVITY
 # TODO: UPDATE PARASITICS FOR NEMS CASE
 
-# Check/update timing/power
+# Update timing/power
 update_timing -full
 update_power
 
-check_power -verbose > reports/$design_name.checkpower.rpt
+# Check timing/power
 check_timing -verbose > reports/$design_name.checktiming.rpt
+check_power -verbose > reports/$design_name.checkpower.rpt
 
-#-------------------------------------------------------------------------
 # Final reports
-#-------------------------------------------------------------------------
-
-report_switching_activity \
-  > reports/$design_name.activity.post.rpt
-
-report_power -nosplit -hierarchy -leaf \
-  > reports/$design_name.power.hier.rpt
-
-report_timing -max_paths 100 -delay min_max -nosplit -input -net \
-  > reports/$design_name.timing.rpt
+report_switching_activity > reports/$design_name.activity.post.rpt
+report_power -significant_digits 8 -nosplit -hierarchy -leaf > reports/$design_name.power.hier.rpt
+report_timing -from I0[0] -to Z[0] -input -net > reports/$design_name.timing.rpt
+report_timing -from S -to Z[0] -input -net > reports/$design_name.timing.rpt
 
 exit
 
