@@ -24,13 +24,16 @@ read_verilog   [glob -directory ../synth -type f *.v *.sv]
 current_design $design_name
 link_design
 
+# TODO: CLOCK
 # TODO: SWITCHING ACTIVITY
 # TODO: UPDATE PARASITICS
 
-# Update timing/power
+# Check/update timing/power
 update_timing -full
-check_power > reports/$design_name.checkpower.rpt
 update_power
+
+check_power -verbose > reports/$design_name.checkpower.rpt
+check_timing -verbose > reports/$design_name.checktiming.rpt
 
 #-------------------------------------------------------------------------
 # Final reports
@@ -39,11 +42,11 @@ update_power
 report_switching_activity \
   > reports/$design_name.activity.post.rpt
 
-report_power -nosplit \
-  > reports/$design_name.power.rpt
-
 report_power -nosplit -hierarchy -leaf \
   > reports/$design_name.power.hier.rpt
+
+report_timing -max_paths 100 -delay min_max -nosplit -input -net \
+  > reports/$design_name.timing.rpt
 
 exit
 
