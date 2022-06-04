@@ -4,6 +4,7 @@
 setenv DESIGN $1
 setenv OUTPUT_LOAD $2
 mkdir -p ptpx/logs
+mkdir -p ptpx/reports
 cd ptpx
 pt_shell -o "logs/$1_ptpx.log" -f ../scripts/ptpx.tcl
 cd ..
