@@ -24,6 +24,9 @@ read_verilog   [glob -directory ../synth -type f *.v *.sv]
 current_design $design_name
 link_design
 
+# Constraints
+read_sdc ../scripts/constraints.sdc
+
 # TODO: CLOCK
 # TODO: SWITCHING ACTIVITY
 # TODO: UPDATE PARASITICS
