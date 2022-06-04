@@ -4,6 +4,7 @@
 setenv DESIGN $1
 echo set_input_transition 0 \[all_inputs\] > scripts/constraints.sdc
 echo set_load $2 \[all_outputs\] >> scripts/constraints.sdc
+echo create_clock -name clk -period 5 >> scripts/constraints.sdc
 mkdir -p ptpx/logs
 mkdir -p ptpx/reports
 cd ptpx

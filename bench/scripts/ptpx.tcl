@@ -27,9 +27,9 @@ link_design
 # Constraints
 read_sdc ../scripts/constraints.sdc
 
-# TODO: CLOCK
+# TODO: VIRTUAL CLOCK
 # TODO: SWITCHING ACTIVITY
-# TODO: UPDATE PARASITICS
+# TODO: UPDATE PARASITICS FOR NEMS CASE
 
 # Check/update timing/power
 update_timing -full
