@@ -3,7 +3,9 @@ suppress_message [list AUTOREAD-107 ELAB-311 MWLIBP-311 TFCHK-012 TFCHK-049 TFCH
 
 # Set design name and output load from environment
 set design_name $::env(DESIGN)
-set output_load $::env(OUTPUT_LOAD)
+set input_driver $::env(DRIVER)
+set output_load $::env(LOAD)
+set alias ${design_name}_${input_driver}_${output_load}
 
 # Set up paths and libraries
 set TSMC40_ULP_EDK_PATH      "/tsmc40r/organized_pdk/N40ULP/TSMCHOME/digital"
@@ -27,21 +29,40 @@ link_design
 # Constraints
 read_sdc ../scripts/constraints.sdc
 
-# TODO: SWITCHING ACTIVITY
 # TODO: UPDATE PARASITICS FOR NEMS CASE
 
-# Update timing/power
+# Update/check/report timing
 update_timing -full
+check_timing -verbose > reports/$alias.checktiming.rpt
+report_timing -nosplit -transition_time -input -to Z[0] -net -capacitance -nworst 100 -slack_lesser_than 5 > reports/$alias.timing.rpt
+
+# Get pins
+set I_pins [get_pins I*]
+set S_pins [get_pins S*]
+
+# Update/check/report power for select toggling mode (S pins toggling)
+set_switching_activity -toggle_rate 0.0 -static_probability 0.5 -base_clock clk $I_pins
+set_switching_activity -toggle_rate 0.5 -static_probability 0.5 -base_clock clk $S_pins
 update_power
+check_power -verbose > reports/$alias.sel.checkpower.rpt
+report_switching_activity > reports/$alias.sel.activity.post.rpt
+report_power -nosplit -hierarchy -leaf > reports/$alias.sel.power.hier.rpt
 
-# Check timing/power
-check_timing -verbose > reports/$design_name.checktiming.rpt
-check_power -verbose > reports/$design_name.checkpower.rpt
+# Update/check/report power for input toggling mode (S pins toggling)
+set_switching_activity -toggle_rate 0.5 -static_probability 0.5 -base_clock clk $I_pins
+set_switching_activity -toggle_rate 0.0 -static_probability 0.5 -base_clock clk $S_pins
+update_power
+check_power -verbose > reports/$alias.inp.checkpower.rpt
+report_switching_activity > reports/$alias.inp.activity.post.rpt
+report_power -nosplit -hierarchy -leaf > reports/$alias.inp.power.hier.rpt
 
-# Final reports
-report_switching_activity > reports/$design_name.activity.post.rpt
-report_power -significant_digits 8 -nosplit -hierarchy -leaf > reports/$design_name.power.hier.rpt
-report_timing -nosplit -transition_time -input -to Z[0] -net -capacitance -nworst 100 -slack_lesser_than 5 > reports/$design_name.timing.rpt
+# Update/check/report power for dual toggling mode (I and S pins toggling)
+set_switching_activity -toggle_rate 0.5 -static_probability 0.5 -base_clock clk $I_pins
+set_switching_activity -toggle_rate 0.5 -static_probability 0.5 -base_clock clk $S_pins
+update_power
+check_power -verbose > reports/$alias.dual.checkpower.rpt
+report_switching_activity > reports/$alias.dual.activity.post.rpt
+report_power -nosplit -hierarchy -leaf > reports/$alias.dual.power.hier.rpt
 
 exit
 
