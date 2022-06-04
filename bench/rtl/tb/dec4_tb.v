@@ -1,8 +1,8 @@
 module dec4_tb;
-  reg [2:0] in;
-  wire [3:0] out;
+  reg [2:0] S;
+  wire [3:0] Z;
   
-  dec4 dec(in[1:0], out);
+  dec4 dec(S[1:0], Z);
 
-  initial for (in = 0; in < 4; in++) #1 $display("%4b", out);
+  initial for (S = 0; S < 4; S++) #1 $display("%4b", Z);
 endmodule

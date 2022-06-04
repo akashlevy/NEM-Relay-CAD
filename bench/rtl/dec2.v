@@ -1,8 +1,8 @@
 module dec2 (
-  input in,
-  output [1:0] out
+  input [0:0] S,
+  output [1:0] Z
 );
 
-assign out = 2'b1 << in;
+assign Z = 2'b1 << S;
 
 endmodule

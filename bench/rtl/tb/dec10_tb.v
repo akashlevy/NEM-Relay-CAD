@@ -1,8 +1,8 @@
 module dec10_tb;
-  reg [3:0] in;
-  wire [9:0] out;
+  reg [3:0] S;
+  wire [9:0] Z;
   
-  dec10 dec(in, out);
+  dec10 dec(S, Z);
 
-  initial for (in = 0; in < 10; in++) #1 $display("%10b", out);
+  initial for (S = 0; S < 10; S++) #1 $display("%10b", Z);
 endmodule

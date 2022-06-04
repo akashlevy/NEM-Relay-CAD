@@ -1,5 +1,5 @@
 module mux2_tb;
-  reg S;
+  reg [0:0] S;
   reg [7:0] I0;
   reg [7:0] I1;
   wire [7:0] Z;

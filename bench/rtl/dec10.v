@@ -1,8 +1,8 @@
 module dec10 (
-  input [3:0] in,
-  output [9:0] out
+  input [3:0] S,
+  output [9:0] Z
 );
 
-assign out = 10'b1 << in;
+assign Z = 10'b1 << S;
 
 endmodule

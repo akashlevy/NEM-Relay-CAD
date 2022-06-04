@@ -1,5 +1,5 @@
 module mux2 (
-  input S,
+  input [0:0] S,
   input [7:0] I0,
   input [7:0] I1,
   output reg [7:0] Z

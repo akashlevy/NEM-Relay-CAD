@@ -1,8 +1,8 @@
 module dec4 (
-  input [1:0] in,
-  output [3:0] out
+  input [1:0] S,
+  output [3:0] Z
 );
 
-assign out = 4'b1 << in;
+assign Z = 4'b1 << S;
 
 endmodule
