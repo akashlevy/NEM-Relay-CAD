@@ -20,7 +20,7 @@ set_app_var power_analysis_mode   averaged
 set_app_var report_default_significant_digits 8
 
 # Read and link the design
-read_verilog   ../synth/*.v
+read_verilog   [glob -directory ../synth -type f *.v *.sv]
 current_design $design_name
 link_design
 
