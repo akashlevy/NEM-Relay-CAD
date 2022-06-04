@@ -37,28 +37,28 @@ check_timing -verbose > reports/$alias.checktiming.rpt
 report_timing -nosplit -transition_time -input -to Z[0] -net -capacitance -nworst 100 -slack_lesser_than 5 > reports/$alias.timing.rpt
 
 # Get pins
-set I_pins [get_pins I*]
-set S_pins [get_pins S*]
+set I_ports [get_ports I*]
+set S_ports [get_ports S*]
 
 # Update/check/report power for select toggling mode (S pins toggling)
-set_switching_activity -toggle_rate 0.0 -static_probability 0.5 -base_clock clk $I_pins
-set_switching_activity -toggle_rate 0.5 -static_probability 0.5 -base_clock clk $S_pins
+set_switching_activity -toggle_rate 0.0 -static_probability 0.5 -base_clock clk $I_ports
+set_switching_activity -toggle_rate 0.5 -static_probability 0.5 -base_clock clk $S_ports
 update_power
 check_power -verbose > reports/$alias.sel.checkpower.rpt
 report_switching_activity > reports/$alias.sel.activity.post.rpt
 report_power -nosplit -hierarchy -leaf > reports/$alias.sel.power.hier.rpt
 
 # Update/check/report power for input toggling mode (S pins toggling)
-set_switching_activity -toggle_rate 0.5 -static_probability 0.5 -base_clock clk $I_pins
-set_switching_activity -toggle_rate 0.0 -static_probability 0.5 -base_clock clk $S_pins
+set_switching_activity -toggle_rate 0.5 -static_probability 0.5 -base_clock clk $I_ports
+set_switching_activity -toggle_rate 0.0 -static_probability 0.5 -base_clock clk $S_ports
 update_power
 check_power -verbose > reports/$alias.inp.checkpower.rpt
 report_switching_activity > reports/$alias.inp.activity.post.rpt
 report_power -nosplit -hierarchy -leaf > reports/$alias.inp.power.hier.rpt
 
 # Update/check/report power for dual toggling mode (I and S pins toggling)
-set_switching_activity -toggle_rate 0.5 -static_probability 0.5 -base_clock clk $I_pins
-set_switching_activity -toggle_rate 0.5 -static_probability 0.5 -base_clock clk $S_pins
+set_switching_activity -toggle_rate 0.5 -static_probability 0.5 -base_clock clk $I_ports
+set_switching_activity -toggle_rate 0.5 -static_probability 0.5 -base_clock clk $S_ports
 update_power
 check_power -verbose > reports/$alias.dual.checkpower.rpt
 report_switching_activity > reports/$alias.dual.activity.post.rpt
@@ -68,7 +68,7 @@ exit
 
 
 
-# set net_0_7_name [get_attribute [get_nets -of_objects [get_pins sb_wide/sb_unq1_mux_gate_0_0_0_7/I0_0]] full_name]
+# set net_0_7_name [get_attribute [get_nets -of_objects [get_ports sb_wide/sb_unq1_mux_gate_0_0_0_7/I0_0]] full_name]
 # set_resistance -max $new_res_val $sb_unq1_mux_gate_0_1_0_7_I1_0_net
-# set_load -max [expr $I1_4_max_wire_cap_sb_unq1_mux_gate_0_0_0_7 + $Z_4_max_wire_cap_sb_unq1_mux_gate_0_0_0_7] [get_nets -of_objects [get_pins sb_wide/sb_unq1_mux_gate_0_0_0_7/I1_4]]
+# set_load -max [expr $I1_4_max_wire_cap_sb_unq1_mux_gate_0_0_0_7 + $Z_4_max_wire_cap_sb_unq1_mux_gate_0_0_0_7] [get_nets -of_objects [get_ports sb_wide/sb_unq1_mux_gate_0_0_0_7/I1_4]]
 
