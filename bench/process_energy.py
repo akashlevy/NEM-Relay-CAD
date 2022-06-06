@@ -61,10 +61,7 @@ nems80N2 = data[(data['N'] == 2) & (data['res'] == 80) & (data['name'] == 'nems'
 nems80N4 = data[(data['N'] == 4) & (data['res'] == 80) & (data['name'] == 'nems')].sort_values('load')
 nems80N10 = data[(data['N'] == 10) & (data['res'] == 80) & (data['name'] == 'nems')].sort_values('load')
 
-# plt.xscale('log')
 plt.figure(figsize=(5.6, 3.4))
-# plt.xlim(0, 55)
-# plt.ylim(0, 0.8)
 plt.xlabel("Load Capacitance (fF)")
 plt.ylabel("Switching Energy (a.u.)")
 plt.plot(cmosN2['load']*1000, cmosN2['pow'], '--', label="2i 8b CMOS", linewidth=1.2)
