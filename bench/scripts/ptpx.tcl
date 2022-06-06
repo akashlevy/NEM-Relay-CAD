@@ -40,7 +40,7 @@ check_timing -verbose > reports/$alias.checktiming.rpt
 report_timing -nosplit -transition_time -input -to Z[0] -net -capacitance -nworst 100 -slack_lesser_than 5 > reports/$alias.timing.rpt
 
 # Get pins
-set I_ports [get_ports I*]
+if {[string first "mux" $design_name] != -1} { set I_ports [get_ports I*] }
 set S_ports [get_ports S*]
 
 # Update/check/report power for select toggling mode (S pins toggling)
