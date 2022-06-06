@@ -4,6 +4,7 @@
 setenv DESIGN $1
 setenv DRIVER $2
 setenv LOAD $3
+setenv N $4
 rm -f scripts/constraints.sdc
 echo set_input_transition 0 \[all_inputs\] > scripts/constraints.sdc
 echo set_load $3 \[all_outputs\] >> scripts/constraints.sdc

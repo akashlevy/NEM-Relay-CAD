@@ -5,6 +5,7 @@ suppress_message [list AUTOREAD-107 ELAB-311 MWLIBP-311 NED-057 TFCHK-012 TFCHK-
 set design_name $::env(DESIGN)
 set input_driver $::env(DRIVER)
 set output_load $::env(LOAD)
+set N $::env(N)
 set alias ${design_name}_${input_driver}_${output_load}
 
 # Set up paths and libraries
@@ -32,7 +33,11 @@ insert_buffer [all_inputs] $input_driver
 # Constraints
 read_sdc ../scripts/constraints.sdc
 
-# TODO: UPDATE PARASITICS FOR NEMS CASE
+# Update parasitics for NEMS case
+if {[string first "feedthru" $design_name] != -1} {
+  set_resistance -max 80 $sb_unq1_mux_gate_0_1_0_7_I1_0_net
+  set_load [expr $output_load + 0.00015 + 0.0000173 + ($N+1) * (0.0007) + 0.003] [all_outputs]
+}
 
 # Update/check/report timing
 update_timing -full
