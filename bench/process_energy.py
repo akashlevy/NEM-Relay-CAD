@@ -23,7 +23,7 @@ for fname in glob.glob("ptpx/reports/muxs*.inp.power.hier.rpt"):
     names.append("cmos")
     ress.append(-1)
 
-for fname in glob.glob("ptpx/reports/feedthru*.sel.power.hier.rpt"):
+for fname in glob.glob("ptpx/reports/feedthrddu*.sel.power.hier.rpt"):
   with open(fname) as f:
     module, intpow, swpow, leakpow, totpow, pct = list(f.readlines())[15].split()
     print(fname)
