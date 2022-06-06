@@ -1,5 +1,5 @@
-module feedthru (I, Z);
-  input I;
+module feedthru (S, Z);
+  input S;
   output Z;
-  assign Z = I;
+  assign Z = S;
 endmodule
