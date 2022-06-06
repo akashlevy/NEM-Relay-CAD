@@ -67,7 +67,7 @@ set_switching_activity -toggle_rate 0.5 -static_probability 0.5 -base_clock clk 
 update_power
 check_power -verbose > reports/$alias.sel.checkpower.rpt
 report_switching_activity > reports/$alias.sel.activity.post.rpt
-report_power -nosplit -hierarchy -leaf > reports/$alias.sel.power.hier.rpt
+report_power -include_boundary_nets -nosplit -hierarchy -leaf > reports/$alias.sel.power.hier.rpt
 
 # Check if mux
 if {[string first "mux" $design_name] != -1} {
@@ -77,7 +77,7 @@ if {[string first "mux" $design_name] != -1} {
   update_power
   check_power -verbose > reports/$alias.inp.checkpower.rpt
   report_switching_activity > reports/$alias.inp.activity.post.rpt
-  report_power -nosplit -hierarchy -leaf > reports/$alias.inp.power.hier.rpt
+  report_power -include_boundary_nets -nosplit -hierarchy -leaf > reports/$alias.inp.power.hier.rpt
 
   # Update/check/report power for dual toggling mode (I and S pins toggling)
   set_switching_activity -toggle_rate 0.5 -static_probability 0.5 -base_clock clk $I_ports
@@ -85,7 +85,7 @@ if {[string first "mux" $design_name] != -1} {
   update_power
   check_power -verbose > reports/$alias.dual.checkpower.rpt
   report_switching_activity > reports/$alias.dual.activity.post.rpt
-  report_power -nosplit -hierarchy -leaf > reports/$alias.dual.power.hier.rpt
+  report_power -include_boundary_nets -nosplit -hierarchy -leaf > reports/$alias.dual.power.hier.rpt
 }
 
 # extract_model -library_cell -output ${alias} -format {lib}
