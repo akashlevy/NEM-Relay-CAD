@@ -1,5 +1,5 @@
 # Setup technology libs
-suppress_message [list AUTOREAD-107 ELAB-311 MWLIBP-311 TFCHK-012 TFCHK-049 TFCHK-050 TFCHK-084 TFCHK-092 TIM-052 TIM-128 UISN-40 UITE-121 VO-4]
+suppress_message [list AUTOREAD-107 ELAB-311 MWLIBP-311 NED-057 TFCHK-012 TFCHK-049 TFCHK-050 TFCHK-084 TFCHK-092 TIM-052 TIM-128 UISN-40 UITE-121 VO-4]
 
 # Set design name and output load from environment
 set design_name $::env(DESIGN)
@@ -70,8 +70,8 @@ if {[string first "mux" $design_name] != -1} {
   report_power -nosplit -hierarchy -leaf > reports/$alias.dual.power.hier.rpt
 }
 
-extract_model -library_cell -output ${alias} -format {lib}
-write_interface_timing reports/${alias}_interface_timing.report
+# extract_model -library_cell -output ${alias} -format {lib}
+# write_interface_timing reports/${alias}_interface_timing.report
 
 exit
 
