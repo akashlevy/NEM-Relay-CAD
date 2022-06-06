@@ -33,10 +33,13 @@ insert_buffer [all_inputs] $input_driver
 # Constraints
 read_sdc ../scripts/constraints.sdc
 
+# Units
+report_units > reports/units.rpt
+
 # Update parasitics for NEMS case
 if {[string first "feedthru" $design_name] != -1} {
-  set_resistance -min 80 [get_nets -of_objects [get_ports Z*]]
-  set_resistance -max 80 [get_nets -of_objects [get_ports Z*]]
+  set_resistance -min 0.080 [get_nets -of_objects [get_ports Z*]]
+  set_resistance -max 0.080 [get_nets -of_objects [get_ports Z*]]
   echo [expr $output_load + 0.00015 + 0.0000173 + ($N+1) * 0.0007 + 0.003] 
   set_load [expr $output_load + 0.00015 + 0.0000173 + ($N+1) * 0.0007 + 0.003] [all_outputs]
 }
