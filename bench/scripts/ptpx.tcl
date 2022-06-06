@@ -6,7 +6,7 @@ set design_name $::env(DESIGN)
 set input_driver $::env(DRIVER)
 set output_load $::env(LOAD)
 set N $::env(N)
-set alias ${design_name}_${input_driver}_${output_load}
+set alias ${design_name}${N}_${input_driver}_${output_load}
 
 # Set up paths and libraries
 set TSMC40_ULP_EDK_PATH      "/tsmc40r/organized_pdk/N40ULP/TSMCHOME/digital"
