@@ -50,18 +50,23 @@ for fname in glob.glob("ptpx/reports/feedthru*.timing.rpt"):
 data = pd.DataFrame({'N': Ns, 'D': Ds, 'load': loads, 'delay': delays, 'name': names})
 print(data.head())
 
+data = data[data['D'] <= 4]
+data = data[data['load'] <= .100]
+
 cmosN2 = data[(data['N'] == 2) & (data['name'] == 'cmos')]
 cmosN4 = data[(data['N'] == 4) & (data['name'] == 'cmos')]
 cmosN10 = data[(data['N'] == 10) & (data['name'] == 'cmos')]
 nemsN2 = data[(data['N'] == 2) & (data['name'] == 'nems')]
+print (nemsN2.head())
 nemsN4 = data[(data['N'] == 4) & (data['name'] == 'nems')]
+print (nemsN4.head())
 nemsN10 = data[(data['N'] == 10) & (data['name'] == 'nems')]
 
 ax = plt.axes(projection='3d')
-ax.plot_trisurf(cmosN2['D'], cmosN2['load'], cmosN2['delay'], edgecolor='none')
-ax.plot_trisurf(cmosN4['D'], cmosN4['load'], cmosN4['delay'], edgecolor='none')
-ax.plot_trisurf(cmosN10['D'], cmosN10['load'], cmosN10['delay'], edgecolor='none')
-ax.plot_trisurf(nemsN2['D'], nemsN2['load'], nemsN2['delay'], edgecolor='none')
-ax.plot_trisurf(nemsN4['D'], nemsN4['load'], nemsN4['delay'], edgecolor='none')
-ax.plot_trisurf(nemsN10['D'], nemsN10['load'], nemsN10['delay'], edgecolor='none')
+ax.plot_trisurf(cmosN2['D'], cmosN2['load']*1000, cmosN2['delay'], edgecolor='none')
+ax.plot_trisurf(cmosN4['D'], cmosN4['load']*1000, cmosN4['delay'], edgecolor='none')
+ax.plot_trisurf(cmosN10['D'], cmosN10['load']*1000, cmosN10['delay'], edgecolor='none')
+ax.plot_trisurf(nemsN2['D'], nemsN2['load']*1000, nemsN2['delay'], edgecolor='none')
+ax.plot_trisurf(nemsN4['D'], nemsN4['load']*1000, nemsN4['delay'], edgecolor='none')
+ax.plot_trisurf(nemsN10['D'], nemsN10['load']*1000, nemsN10['delay'], edgecolor='none')
 plt.show()
