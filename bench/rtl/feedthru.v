@@ -1,8 +1,8 @@
 module feedthru (
   input S,
-  output Z
+  output [0:0] Z
 );
 
-assign Z = S;
+assign Z[0] = S;
 
 endmodule
