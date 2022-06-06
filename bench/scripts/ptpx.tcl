@@ -35,8 +35,8 @@ read_sdc ../scripts/constraints.sdc
 
 # Update parasitics for NEMS case
 if {[string first "feedthru" $design_name] != -1} {
-  set_resistance -min 80 [all_outputs]
-  set_resistance -max 80 [all_outputs]
+  set_resistance -min 80 [get_nets -of_objects [get_ports Z]]
+  set_resistance -max 80 [get_nets -of_objects [get_ports Z]]
   set_load [expr $output_load + 0.00015 + 0.0000173 + ($N+1) * 0.0007 + 0.003] [all_outputs]
 }
 
