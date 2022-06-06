@@ -23,7 +23,7 @@ for fname in glob.glob("ptpx/reports/muxs*.inp.power.hier.rpt"):
     names.append("cmos")
     ress.append(-1)
 
-for fname in glob.glob("ptpx/reports/feedthrddu*.sel.power.hier.rpt"):
+for fname in glob.glob("ptpx/reports/feedthru*.sel.power.hier.rpt"):
   with open(fname) as f:
     module, intpow, swpow, leakpow, totpow, pct = list(f.readlines())[15].split()
     print(fname)
@@ -50,6 +50,7 @@ print(data.head())
 
 data = data[data['D'] == 1]
 data = data[data['load'] <= .100]
+data['pow'] = data['pow'] / 5e-5
 
 cmosN2 = data[(data['N'] == 2) & (data['name'] == 'cmos')].sort_values('load')
 print(cmosN2.head(20))
