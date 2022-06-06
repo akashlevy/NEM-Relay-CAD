@@ -36,7 +36,7 @@ read_sdc ../scripts/constraints.sdc
 # Update parasitics for NEMS case
 if {[string first "feedthru" $design_name] != -1} {
   set_resistance -max 80 $sb_unq1_mux_gate_0_1_0_7_I1_0_net
-  set_load [expr $output_load + 0.00015 + 0.0000173 + ($N+1) * (0.0007) + 0.003] [all_outputs]
+  set_load [expr $output_load + 0.00015 + 0.0000173 + ($N+1) * 0.0007 + 0.003] [all_outputs]
 }
 
 # Update/check/report timing
