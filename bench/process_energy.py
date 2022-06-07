@@ -1,5 +1,5 @@
 import glob, re
-import matplotlib.pyplot as plt, pandas as pd
+import matplotlib.pyplot as plt, numpy as np, pandas as pd
 
 regex_fname = re.compile("(\d+)_BUFFD(\d+)BWP40_(0.\d+)\....\.power\.hier\.rpt")
 pat1 = re.compile("Startpoint: I0\[0\].*Endpoint: Z\[0\]", re.DOTALL)
@@ -71,18 +71,25 @@ nems80N10 = data[(data['N'] == 10) & (data['res'] == 80) & (data['name'] == 'nem
 nems80N10['pow'] = nems80N10['pow']*8 + 8*(10-1)*enOFF # Multiply by 8 for 8b and add energy for gates of unselected muxes
 print(nems80N10.head(20))
 
+
+# Set cycler
+plt.rcParams["axes.prop_cycle"] = plt.cycler('color', ['#1f77b4', '#ff7f0e', '#2ca02c'])
+
+# Figure
 plt.figure(figsize=(4,3))
 plt.xscale('log')
+plt.yscale('log')
+plt.ylim(6e-2, 4)
 plt.xlabel("Load Capacitance (fF)")
 plt.ylabel("Switching Energy (a.u.)")
-plt.plot(cmosN2['load']*1000, cmosN2['pow'], '--', label="2i 8b CMOS", linewidth=1.2)
-plt.plot(cmosN4['load']*1000, cmosN4['pow'], '--', label="4i 8b CMOS", linewidth=1.2)
-plt.plot(cmosN10['load']*1000, cmosN10['pow'], '--', label="10i 8b CMOS", linewidth=1.2)
-plt.plot(nems80N2['load']*1000, nems80N2['pow'], label="2i 8b NEMS", linewidth=1.2)
-plt.plot(nems80N4['load']*1000, nems80N4['pow'], label="4i 8b NEMS", linewidth=1.2)
-plt.plot(nems80N10['load']*1000, nems80N10['pow'], label="10i 8b NEMS", linewidth=1.2)
+plt.plot(cmosN2['load']*1000, cmosN2['pow'], '--', label="2i 8b CMOS", linewidth=1.2, marker='.')
+plt.plot(cmosN4['load']*1000, cmosN4['pow'], '--', label="4i 8b CMOS", linewidth=1.2, marker='.')
+plt.plot(cmosN10['load']*1000, cmosN10['pow'], '--', label="10i 8b CMOS", linewidth=1.2, marker='.')
+plt.plot(nems80N2['load']*1000, nems80N2['pow'], label="2i 8b NEMS", linewidth=1.2, marker='*')
+plt.plot(nems80N4['load']*1000, nems80N4['pow'], label="4i 8b NEMS", linewidth=1.2, marker='*')
+plt.plot(nems80N10['load']*1000, nems80N10['pow'], label="10i 8b NEMS", linewidth=1.2, marker='*')
 
-plt.legend(title="Mux I→Z Switching Energy", prop={'size': 9}, ncol=2, handletextpad=0.25)
+plt.legend(title="Mux I→Z Switching Energy", prop={'size': 9}, ncol=2, handletextpad=0.25, columnspacing=0.8)
 plt.tight_layout()
 plt.savefig("../figures/mux-energy.pdf")
 plt.show()
