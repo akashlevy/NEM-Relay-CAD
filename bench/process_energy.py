@@ -52,6 +52,9 @@ data = data[data['D'] == 1]
 data = data[data['load'] <= .100]
 data['pow'] = data['pow'] / 5e-5
 
+# Capacitive energy to charge gates of unselected muxes
+enOFF = 1.46e-07 / 5e-5 # energy(BUFFD1 @ 0.07 fF out cap)
+
 cmosN2 = data[(data['N'] == 2) & (data['name'] == 'cmos')].sort_values('load')
 print(cmosN2.head(20))
 cmosN4 = data[(data['N'] == 4) & (data['name'] == 'cmos')].sort_values('load')
@@ -59,21 +62,27 @@ print(cmosN4.head(20))
 cmosN10 = data[(data['N'] == 10) & (data['name'] == 'cmos')].sort_values('load')
 print(cmosN10.head(20))
 nems80N2 = data[(data['N'] == 2) & (data['res'] == 80) & (data['name'] == 'nems')].sort_values('load')
+nems80N2['pow'] = nems80N2['pow']*8 + 8*(2-1)*enOFF # Multiply by 8 for 8b and add energy for gates of unselected muxes
+print(nems80N2.head(20))
 nems80N4 = data[(data['N'] == 4) & (data['res'] == 80) & (data['name'] == 'nems')].sort_values('load')
+nems80N4['pow'] = nems80N4['pow']*8 + 8*(4-1)*enOFF # Multiply by 8 for 8b and add energy for gates of unselected muxes
+print(nems80N4.head(20))
 nems80N10 = data[(data['N'] == 10) & (data['res'] == 80) & (data['name'] == 'nems')].sort_values('load')
+nems80N10['pow'] = nems80N10['pow']*8 + 8*(10-1)*enOFF # Multiply by 8 for 8b and add energy for gates of unselected muxes
+print(nems80N10.head(20))
 
-plt.figure(figsize=(5.6, 3.4))
+plt.figure(figsize=(4,3))
+plt.xscale('log')
 plt.xlabel("Load Capacitance (fF)")
 plt.ylabel("Switching Energy (a.u.)")
 plt.plot(cmosN2['load']*1000, cmosN2['pow'], '--', label="2i 8b CMOS", linewidth=1.2)
 plt.plot(cmosN4['load']*1000, cmosN4['pow'], '--', label="4i 8b CMOS", linewidth=1.2)
 plt.plot(cmosN10['load']*1000, cmosN10['pow'], '--', label="10i 8b CMOS", linewidth=1.2)
-
 plt.plot(nems80N2['load']*1000, nems80N2['pow'], label="2i 8b NEMS", linewidth=1.2)
 plt.plot(nems80N4['load']*1000, nems80N4['pow'], label="4i 8b NEMS", linewidth=1.2)
 plt.plot(nems80N10['load']*1000, nems80N10['pow'], label="10i 8b NEMS", linewidth=1.2)
 
-plt.legend(title="Mux I→Z Switching Energy", loc='center left', bbox_to_anchor=(1, 0.5), prop={'size': 9})
+plt.legend(title="Mux I→Z Switching Energy", prop={'size': 9}, ncol=2, handletextpad=0.25)
 plt.tight_layout()
 plt.savefig("../figures/mux-energy.pdf")
 plt.show()

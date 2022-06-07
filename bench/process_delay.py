@@ -75,7 +75,7 @@ nems5kN4 = data[(data['N'] == 4) & (data['res'] == 5000) & (data['name'] == 'nem
 nems5kN10 = data[(data['N'] == 10) & (data['res'] == 5000) & (data['name'] == 'nems')].sort_values('load')
 
 # plt.xscale('log')
-plt.figure(figsize=(5.6, 3.4))
+plt.figure(figsize=(7, 3.4))
 plt.xlim(0, 55)
 plt.ylim(0, 0.8)
 plt.xlabel("Load Capacitance (fF)")
