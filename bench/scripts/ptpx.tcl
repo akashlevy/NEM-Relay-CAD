@@ -49,11 +49,11 @@ if {[string first "feedthru" $design_name] != -1} {
     set_resistance -max 0.080 [get_nets -of_objects [get_ports Z*]]
   }
   if {$N == 10} {
-    echo [expr $output_load + 0.00015 + 0.0000173 + ($N+1) * 0.0007 + 0.002968] 
-    set_load [expr $output_load + 0.00015 + 0.0000173 + ($N+1) * 0.0007 + 0.002968] [all_outputs]
+    echo [expr $output_load + 0.00015 + 0.0000173 + ($N+1) * 0.00007 + 0.002968] 
+    set_load [expr $output_load + 0.00015 + 0.0000173 + ($N+1) * 0.00007 + 0.002968] [all_outputs]
   } else {
-    echo [expr $output_load + 0.00015 + 0.0000173 + ($N+1) * 0.0007 + 0.002066] 
-    set_load [expr $output_load + 0.00015 + 0.0000173 + ($N+1) * 0.0007 + 0.002066] [all_outputs]
+    echo [expr $output_load + 0.00015 + 0.0000173 + ($N+1) * 0.00007 + 0.002066] 
+    set_load [expr $output_load + 0.00015 + 0.0000173 + ($N+1) * 0.00007 + 0.002066] [all_outputs]
   }
 }
 

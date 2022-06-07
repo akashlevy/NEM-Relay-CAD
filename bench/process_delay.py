@@ -59,7 +59,7 @@ data = pd.DataFrame({'N': Ns, 'D': Ds, 'load': loads, 'delay': delays, 'name': n
 print(data.head())
 
 data = data[data['D'] == 1]
-data = data[data['load'] <= .100]
+data = data[data['load'] <= .020]
 
 cmosN2 = data[(data['N'] == 2) & (data['name'] == 'cmos')].sort_values('load')
 cmosN4 = data[(data['N'] == 4) & (data['name'] == 'cmos')].sort_values('load')
@@ -76,8 +76,9 @@ nems5kN10 = data[(data['N'] == 10) & (data['res'] == 5000) & (data['name'] == 'n
 
 # plt.xscale('log')
 plt.figure(figsize=(7, 3.4))
-plt.xlim(0, 55)
-plt.ylim(0, 0.8)
+plt.xscale('log')
+# plt.xlim(0, 55)
+# plt.ylim(0, 0.8)
 plt.xlabel("Load Capacitance (fF)")
 plt.ylabel("Delay (ns)")
 plt.plot(cmosN2['load']*1000, cmosN2['delay'], '--', label="2i 8b CMOS", linewidth=1.2)
