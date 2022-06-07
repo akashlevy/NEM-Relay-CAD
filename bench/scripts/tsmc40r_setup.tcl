@@ -98,4 +98,4 @@ set_app_var link_library "* $target_library"
 
 create_mw_lib mw_lib -technology $TECH_FILE -mw_reference_library $MW_REFERENCE_LIB_DIRS
 open_mw_lib mw_lib
-set_tlu_plus_files -max_tluplus $TLUPLUS_MAX_FILE -min_tluplus $TLUPLUS_MIN_FILE -tech2itf_map $MAP_FILE
+set_tlu_plus_files -max_tluplus $TLUPLUS_MAX_FILE -min_tluplus $TLUPLUS_MIN_FILE -tech2itf_map $MAP_FILE 
