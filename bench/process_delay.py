@@ -88,9 +88,17 @@ plt.plot(cmosN2['load']*1000, cmosN2['delay'], '--', label="2i 8b CMOS", linewid
 plt.plot(cmosN4['load']*1000, cmosN4['delay'], '--', label="4i 8b CMOS", linewidth=1.2, marker='.')
 plt.plot(cmosN10['load']*1000, cmosN10['delay'], '--', label="10i 8b CMOS", linewidth=1.2, marker='.')
 
+print(cmosN2.head(20))
+print(cmosN4.head(20))
+print(cmosN10.head(20))
+
 plt.plot(nems80N2['load']*1000, nems80N2['delay'], label="2i 8b NEMS\n($R_{DS} = 80Ω$)", linewidth=1.2, marker='*')
 plt.plot(nems80N4['load']*1000, nems80N4['delay'], label="4i 8b NEMS\n($R_{DS} = 80Ω$)", linewidth=1.2, marker='*')
 plt.plot(nems80N10['load']*1000, nems80N10['delay'], label="10i 8b NEMS\n($R_{DS} = 80Ω$)", linewidth=1.2, marker='*')
+
+print(nems80N2.head(20))
+print(nems80N4.head(20))
+print(nems80N10.head(20))
 
 # plt.plot(nems1kN2['load']*1000, nems1kN2['delay'], label="2i 8b NEMS\n($R_{DS} = 1kΩ$)", linewidth=1.2, marker='+')
 # plt.plot(nems1kN4['load']*1000, nems1kN4['delay'], label="4i 8b NEMS\n($R_{DS} = 1kΩ$)", linewidth=1.2, marker='+')
